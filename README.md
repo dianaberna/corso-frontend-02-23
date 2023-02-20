@@ -1,1 +1,5 @@
-Ciao Mondo
+# Corso Frontend
+
+Docente: Diana Bernabei
+
+Elenco partecipanti: 
