@@ -30,4 +30,4 @@ Elenco partecipanti:
 - Gianluigi Leo
 - Alfio Battiato
 - Jasmine Pizzino
-- Flavio Lovisa
+- Yo! Ci sono anche io! (Flavio Lovisa)
