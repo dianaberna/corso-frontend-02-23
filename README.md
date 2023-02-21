@@ -26,4 +26,5 @@ Elenco partecipanti:
 - Vitale Cangiano 
 - Pejman Honarpajuh
 - Federica Monica Coddura
-
+- Marco Veronelli
+- Gianluigi Leo
