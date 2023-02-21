@@ -1,4 +1,4 @@
-hola mundo
+# Corso Frontend
 
 Docente: Diana Bernabei
 
@@ -25,7 +25,8 @@ Elenco partecipanti:
 - Russo Angelo Riccardo
 - Sharon Mae Duran
 - Federico Batà
+- Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
 - Vitale Cangiano
--Federica Monica Coddura
+- Federica Monica Coddura
