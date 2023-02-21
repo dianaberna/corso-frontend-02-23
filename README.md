@@ -16,14 +16,14 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
-- Sharon Mae Duran 
+- Sharon Mae Duran
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
 - Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano 
+- Vitale Cangiano
 - Pejman Honarpajuh
 - Federica Monica Coddura
 - Marco Veronelli
@@ -31,3 +31,5 @@ Elenco partecipanti:
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
+
+-modifica Su branch mohamad-barnouss
