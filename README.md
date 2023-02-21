@@ -11,7 +11,7 @@ Elenco partecipanti:
 - Miriam Reho
 - Alessia Falanga
 - Stefano Di Paolo
-- Francesco Canzaniello
+- Francesco Canzaniello!
 - Valeria Panzetta
 - Agnese Soini
 - Khalil Ziad
