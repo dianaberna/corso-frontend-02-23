@@ -11,6 +11,6 @@ Elenco partecipanti:
 - Alessia Falanga
 - Stefano Di Paolo
 - Francesco Canzaniello
-- Agnese Soini
+- Agnese Soini!
 - Khalil Ziad
 - Daryoush Nateghi
