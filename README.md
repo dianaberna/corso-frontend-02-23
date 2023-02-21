@@ -25,4 +25,5 @@ Elenco partecipanti:
 - Khalil Ziad
 - Daryoush Nateghi
 - Russo Angelo Riccardo
-  -Barnouss Mohamad
+- Sharon Mae Duran
+- Mohamad Barnouss
