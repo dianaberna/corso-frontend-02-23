@@ -1,3 +1,5 @@
+Ciao Mondo in diana-branch
+
 # Corso Frontend
 
 Docente: Diana Bernabei
@@ -23,8 +25,11 @@ Elenco partecipanti:
 - Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano 
+- Vitale Cangiano !
 - Pejman Honarpajuh
 - Federica Monica Coddura
 - Marco Veronelli
 - Gianluigi Leo
+- Alfio Battiato
+- Jasmine Pizzino
+- Flavio Lovisa
