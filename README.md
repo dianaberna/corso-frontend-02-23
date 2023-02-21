@@ -19,12 +19,11 @@ Elenco partecipanti:
 - Alessia Falanga
 - Stefano Di Paolo
 - Francesco Canzaniello
--
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
-
 - Russo Angelo Riccardo
 - Russo Angelo Riccardo
 - Sharon Mae Duran
--MARINO BALVIN FALCONi
+- Sharon Mae Duran 
+-marino balvin
