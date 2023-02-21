@@ -14,7 +14,6 @@ Elenco partecipanti:
 - Stefano Di Paolo
 - Francesco Canzaniello
 - Agnese Soini !
-
 - Khalil Ziad
 - Daryoush Nateghi
 - Sharon Mae Duran 
