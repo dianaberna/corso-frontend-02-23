@@ -2,6 +2,8 @@
 
 Docente: Diana Bernabei
 
+Docente: Diana Bernabei !!
+
 Elenco partecipanti:
 
 - Lucia Catte
@@ -16,6 +18,9 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
+- Russo Angelo Riccardo
+- Sharon Mae Duran 
+- Cangiano Vitale
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Sharon Mae Duran
@@ -26,3 +31,6 @@ Elenco partecipanti:
 - Vitale Cangiano .
 - Pejman Honarpajuh
 - Vitale Cangiano !
+- Vitale Cangiano
+- Federica Monica Coddura
+
