@@ -14,3 +14,4 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
+- Russo Angelo Riccardo
