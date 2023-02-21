@@ -23,3 +23,4 @@ Elenco partecipanti:
 - Sharon Mae Duran
 - Federico Batà
 - Marino balvin falconi
+- Anisa Baruti
