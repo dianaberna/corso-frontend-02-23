@@ -29,3 +29,4 @@ Elenco partecipanti:
 - Marco Veronelli
 - Gianluigi Leo
 - Alfio Battiato
+- Jasmine Pizzino
