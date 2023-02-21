@@ -2,8 +2,6 @@ hola mundo
 
 Docente: Diana Bernabei
 
-Docente: Diana Bernabei !!
-
 Elenco partecipanti:
 
 - Lucia Catte
@@ -20,10 +18,7 @@ Elenco partecipanti:
 - Daryoush Nateghi
 - Russo Angelo Riccardo
 - Sharon Mae Duran 
-- Cangiano Vitale
 - Pietro Maria Pisapia
-- Russo Angelo Riccardo
-- Sharon Mae Duran
 - Federico Batà
 - Marino balvin falconi
 - Anisa Baruti
