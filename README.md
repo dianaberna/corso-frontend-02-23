@@ -19,3 +19,4 @@ Docente: Diana Bernabei !!
 - Khalil Ziad
 - Daryoush Nateghi
 
+- Russo Angelo Riccardo
