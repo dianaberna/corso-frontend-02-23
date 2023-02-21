@@ -2,6 +2,8 @@
 
 Docente: Diana Bernabei
 
-Elenco partecipanti: 
+Elenco partecipanti:
+
 - Lucia Catte
 - Mattia Schifano
+- Elisa Boscani
