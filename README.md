@@ -9,3 +9,4 @@ Elenco partecipanti:
 - Mattia Schifano
 - Miriam Reho
 - Alessia Falanga
+- Stefano Di Paolo
