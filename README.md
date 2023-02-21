@@ -27,3 +27,4 @@ Elenco partecipanti:
 - Federico Batà
 - Marino balvin falconi
 - Anisa Baruti
+- Vitale Cangiano
