@@ -13,3 +13,4 @@ Elenco partecipanti:
 - Francesco Canzaniello
 - Agnese Soini
 - Khalil Ziad
+- Federico Batà
