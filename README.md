@@ -7,7 +7,7 @@ Elenco partecipanti:
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
-- Federica Iuvara
+- Federica Iuvara!
 - Miriam Reho
 - Alessia Falanga
 - Valeria Panzetta
