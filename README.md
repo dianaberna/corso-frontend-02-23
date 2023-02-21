@@ -12,7 +12,7 @@ Elenco partecipanti:
 - Lucia Catte
 - Federica Iuvara
 - Mattia Schifano
-- Miriam Reho (prova modifica)
+- Miriam Reho
 - Alessia Falanga
 - Stefano Di Paolo
 - Francesco Canzaniello
