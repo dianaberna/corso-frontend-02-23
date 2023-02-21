@@ -20,3 +20,4 @@ Elenco partecipanti:
 - Khalil Ziad
 - Daryoush Nateghi
 - Russo Angelo Riccardo
+- Sharon Mae Duran
