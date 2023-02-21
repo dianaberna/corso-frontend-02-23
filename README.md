@@ -23,5 +23,9 @@ Elenco partecipanti:
 - Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
+- Vitale Cangiano .
+- Pejman Honarpajuh
+- Vitale Cangiano !
 - Vitale Cangiano
 - Federica Monica Coddura
+
