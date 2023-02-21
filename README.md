@@ -27,4 +27,4 @@ Elenco partecipanti:
 - Pejman Honarpajuh
 - Federica Monica Coddura
 - Marco Veronelli
-- Gianluigi Leo
+- Gianluigi Leo 
