@@ -22,9 +22,4 @@ Elenco partecipanti:
 - Daryoush Nateghi
 - Russo Angelo Riccardo
 - Sharon Mae Duran 
-- Pietro Maria Pisapia
-- Daryoush Nateghi
-- Russo Angelo Riccardo
-- Sharon Mae Duran 
-- Federico Batà
-
+- Cangiano Vitale
