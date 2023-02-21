@@ -2,8 +2,6 @@ hola mundo
 
 Docente: Diana Bernabei
 
-Docente: Diana Bernabei !!
-
 Elenco partecipanti:
 
 - Lucia Catte
@@ -24,4 +22,5 @@ Elenco partecipanti:
 - Federico Batà
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano
+- Vitale Cangiano !
+
