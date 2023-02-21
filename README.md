@@ -27,4 +27,5 @@ Elenco partecipanti:
 - Russo Angelo Riccardo
 - Sharon Mae Duran 
 - Federico Batà
+- Jasmine Pizzino
 
