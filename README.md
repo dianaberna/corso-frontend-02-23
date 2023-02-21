@@ -8,3 +8,4 @@ Elenco partecipanti:
 - Federica Iuvara
 - Mattia Schifano
 - Alessia Falanga
+- Khalil Ziad
