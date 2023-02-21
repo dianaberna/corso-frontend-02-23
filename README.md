@@ -2,8 +2,6 @@
 
 Docente: Diana Bernabei
 
-Docente: Diana Bernabei !!
-
 Elenco partecipanti:
 
 - Lucia Catte
@@ -18,12 +16,9 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
-- Russo Angelo Riccardo
 - Sharon Mae Duran 
-- Cangiano Vitale
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
-- Sharon Mae Duran
 - Federico Batà
 - Mohamad Barnouss
 - Marino balvin falconi
