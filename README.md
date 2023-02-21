@@ -2,8 +2,6 @@ hola mundo
 
 Docente: Diana Bernabei
 
-Docente: Diana Bernabei !!
-
 Elenco partecipanti:
 
 - Lucia Catte
