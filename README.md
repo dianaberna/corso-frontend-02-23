@@ -18,6 +18,7 @@ Elenco partecipanti:
 - Francesco Canzaniello
 - Agnese Soini
 - Khalil Ziad
+- Federico Batà
 - Daryoush Nateghi
 - Russo Angelo Riccardo
 - Sharon Mae Duran 
