@@ -21,9 +21,17 @@ Elenco partecipanti:
 - Francesco Canzaniello
 - Agnese Soini
 - Khalil Ziad
+- Federico Batà
 - Daryoush Nateghi
 - Russo Angelo Riccardo
 - Russo Angelo Riccardo
 - Sharon Mae Duran
 - Sharon Mae Duran 
 -marino balvin
+- Pietro Maria Pisapia
+- Daryoush Nateghi
+- Russo Angelo Riccardo
+- Sharon Mae Duran 
+- Federico Batà
+- Marino balvin falconi
+
