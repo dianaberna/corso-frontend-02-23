@@ -1,4 +1,4 @@
-hola mundo
+# Corso Frontend
 
 Docente: Diana Bernabei
 
@@ -16,11 +16,14 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
+- Sharon Mae Duran 
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
-- Sharon Mae Duran
 - Federico Batà
+- Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano !
+- Vitale Cangiano 
+- Pejman Honarpajuh
+- Federica Monica Coddura
 
