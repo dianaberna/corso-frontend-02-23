@@ -2,5 +2,9 @@
 
 Docente: Diana Bernabei !!
 
-Elenco partecipanti: 
+Elenco partecipanti:
+
 - Lucia Catte
+- Federica Iuvara
+- Mattia Schifano
+- Alessia Falanga
