@@ -25,7 +25,6 @@ Elenco partecipanti:
 - Russo Angelo Riccardo
 - Sharon Mae Duran
 - Sharon Mae Duran
-  -marino balvin
 - Pietro Maria Pisapia
 - Daryoush Nateghi
 - Russo Angelo Riccardo
