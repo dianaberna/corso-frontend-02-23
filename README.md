@@ -8,7 +8,7 @@ Elenco partecipanti:
 - Mattia Schifano
 - Elisa Boscani
 - Federica Iuvara
-- Miriam Reho !
+- Miriam Reho
 - Alessia Falanga
 - Valeria Panzetta
 - Stefano Di Paolo
