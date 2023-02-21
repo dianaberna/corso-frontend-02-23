@@ -21,5 +21,5 @@ Elenco partecipanti:
 - Daryoush Nateghi
 - Russo Angelo Riccardo
 - Sharon Mae Duran 
-- Federico Batà
+- Federico Batà !
 
