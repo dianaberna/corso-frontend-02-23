@@ -6,7 +6,7 @@ Elenco partecipanti:
 
 - Lucia Catte
 - Mattia Schifano
-- Elisa Boscani
+- Elisa Boscani !
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -23,4 +23,3 @@ Elenco partecipanti:
 - Marino balvin falconi
 - Anisa Baruti
 - Vitale Cangiano !
-
