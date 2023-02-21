@@ -21,3 +21,4 @@ Elenco partecipanti:
 - Daryoush Nateghi
 - Russo Angelo Riccardo
 - Sharon Mae Duran 
+- Pietro Maria Pisapia
