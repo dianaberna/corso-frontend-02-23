@@ -23,4 +23,4 @@ Elenco partecipanti:
 - Jasmine Pizzino
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano
+- Vitale Cangiano .
