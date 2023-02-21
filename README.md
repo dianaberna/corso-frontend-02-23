@@ -28,3 +28,4 @@ Elenco partecipanti:
 - Federica Monica Coddura
 - Marco Veronelli
 - Gianluigi Leo
+- Jasmine Pizzino
