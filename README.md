@@ -4,6 +4,7 @@ Docente: Diana Bernabei
 
 
 
+Docente: Diana Bernabei !!
 
 
 - Lucia Catte
@@ -11,5 +12,9 @@ Docente: Diana Bernabei
 - Mattia Schifano
 - Miriam Reho
 - Alessia Falanga
+- Stefano Di Paolo
 - Francesco Canzaniello
--MARINO BALVIN FALCONI
+-MARINO BALVIN FALCONi
+- Agnese Soini
+- Khalil Ziad
+- Daryoush Nateghi
