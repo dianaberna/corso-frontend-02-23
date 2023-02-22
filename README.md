@@ -14,7 +14,7 @@ Elenco partecipanti:
 - Valeria Panzetta
 - Stefano Di Paolo
 - Francesco Canzaniello
-- Agnese Soini ! ( prova pull request )
+- Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
 - Sharon Mae Duran
