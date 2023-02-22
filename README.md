@@ -6,7 +6,7 @@ Elenco partecipanti:
 
 - Lucia Catte
 - Mattia Schifano
-- Elisa Boscani
+- Elisa Boscanigit 
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -32,4 +32,4 @@ Elenco partecipanti:
 - Jasmine Pizzino
 - Flavio Lovisa
 
--modifica Su branch mohamad-barnouss
+
