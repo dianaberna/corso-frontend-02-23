@@ -7,23 +7,26 @@ Elenco partecipanti:
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
+- Elisa Boscanigit 
 - Federica Iuvara
 - Miriam Reho
-- Alessia Falanga !!
+- Alessia Falanga
 - Valeria Panzetta
 - Stefano Di Paolo
 - Francesco Canzaniello
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
-- Sharon Mae Duran 
+- Sharon Mae Duran
+- Sharon Mae Duran
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
+- Marino balvin falconi
 - Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano 
+- Vitale Cangiano
 - Pejman Honarpajuh
 - Federica Monica Coddura
 - Marco Veronelli
@@ -32,3 +35,6 @@ Elenco partecipanti:
 
 
 ciao a tutti
+- Alfio Battiato
+- Jasmine Pizzino
+- Flavio Lovisa
