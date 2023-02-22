@@ -1,6 +1,6 @@
 # Corso Frontend
 
-Docente: Diana Bernabei
+Docente: Diana Bernabei !
 
 Elenco partecipanti:
 
@@ -22,8 +22,8 @@ Elenco partecipanti:
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
-- Marino balvin falconi !
-- Mohamad Barnouss !!!
+- Marino balvin falconi
+- Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
 - Vitale Cangiano !
@@ -35,5 +35,3 @@ Elenco partecipanti:
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
-
-
