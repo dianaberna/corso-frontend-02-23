@@ -8,7 +8,7 @@ Elenco partecipanti:
 - Mattia Schifano
 - Elisa Boscani
 - Federica Iuvara
-- Miriam Reho
+- Miriam Rehoc
 - Alessia Falanga
 - Valeria Panzetta
 - Stefano Di Paolo
@@ -16,9 +16,9 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
-- Sharon Mae Duran
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
+- Sharon Mae Duran
 - Federico Batà
 - Marino balvin falconi
 - Mohamad Barnouss
