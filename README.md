@@ -7,6 +7,10 @@ Elenco partecipanti:
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
+<<<<<<< HEAD
+=======
+- Elisa Boscanigit 
+>>>>>>> 715d4ca1738ca449eb675eef40aa39ce00e8c101
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -17,13 +21,21 @@ Elenco partecipanti:
 - Khalil Ziad
 - Daryoush Nateghi
 - Sharon Mae Duran
+- Sharon Mae Duran
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
-- Mohamad Barnouss
+- Marino balvin falconi !
+- Mohamad Barnouss !!!
 - Marino balvin falconi
 - Anisa Baruti
 - Vitale Cangiano
 - Pejman Honarpajuh
 - Federica Monica Coddura
 - Marco Veronelli
+- Gianluigi Leo
+- Alfio Battiato
+- Jasmine Pizzino
+- Flavio Lovisa
+
+
