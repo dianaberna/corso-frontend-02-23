@@ -1,4 +1,4 @@
-hola mundo
+# Corso Frontend
 
 Docente: Diana Bernabei
 
@@ -6,7 +6,8 @@ Elenco partecipanti:
 
 - Lucia Catte
 - Mattia Schifano
-- Elisa Boscani !
+- Elisa Boscani
+- Elisa Boscanigit
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -16,10 +17,13 @@ Elenco partecipanti:
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi
+- Sharon Mae Duran
+- Sharon Mae Duran
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
-- Sharon Mae Duran
 - Federico Batà
+- Marino balvin falconi !
+- Mohamad Barnouss !!!
 - Marino balvin falconi
 - Anisa Baruti
 - Vitale Cangiano !
