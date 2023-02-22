@@ -20,7 +20,7 @@ Elenco partecipanti:
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
-- Mohamad Barnouss
+- Mohamad Barnouss !!!
 - Marino balvin falconi
 - Anisa Baruti
 - Vitale Cangiano
