@@ -11,7 +11,7 @@ Elenco partecipanti:
 - Elisa Boscani
 - Federica Iuvara!
 - Miriam Reho
-- Alessia Falanga
+- Alessia Falanga !!
 - Valeria Panzetta
 - Stefano Di Paolo
 - Francesco Canzaniello
