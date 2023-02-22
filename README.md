@@ -1,4 +1,3 @@
-#Lucia Branch
 # Corso Frontend
 
 Docente: Diana Bernabei
