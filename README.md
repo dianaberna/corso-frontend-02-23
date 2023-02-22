@@ -26,3 +26,4 @@ Elenco partecipanti:
 - Anisa Baruti
 - Vitale Cangiano !
 
+- Questi sono i miei colleghi.
