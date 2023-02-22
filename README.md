@@ -14,7 +14,7 @@ Elenco partecipanti:
 - Stefano Di Paolo
 - Francesco Canzaniello
 - Agnese Soini
-- Khalil Ziad
+- Khalil Ziadgit
 - Daryoush Nateghi
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
