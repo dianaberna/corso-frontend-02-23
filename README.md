@@ -7,7 +7,7 @@ Elenco partecipanti:
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
-- Elisa Boscanigit 
+- Elisa Boscanigit
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -15,7 +15,7 @@ Elenco partecipanti:
 - Stefano Di Paolo
 - Francesco Canzaniello
 - Agnese Soini
-- Khalil Ziad
+- Khalil Ziad 1444
 - Daryoush Nateghi
 - Sharon Mae Duran
 - Sharon Mae Duran
