@@ -22,8 +22,15 @@ Elenco partecipanti:
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
-- Marino balvin falconi !
-- Mohamad Barnouss !!!
+- Marino balvin falconi
+- Mohamad Barnouss
 - Marino balvin falconi
 - Anisa Baruti
-- Vitale Cangiano !
+- Vitale Cangiano
+- Pejman Honarpajuh
+- Federica Monica Coddura
+- Marco Veronelli
+- Gianluigi Leo
+- Alfio Battiato
+- Jasmine Pizzino
+- Flavio Lovisa
