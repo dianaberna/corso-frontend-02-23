@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,7 @@
     <title>Homepage corso</title>
   </head>
   <body>
-   <header>
+  <!--  <header>
     Descrizione sito
     <br> 
    </header>
@@ -21,16 +21,94 @@
       <h2>Prima sezione</h2>
       <h3>heading 3</h3>
       <h4>heading 4</h4>
-      <img width="100px" src="">
+      <img width="100px" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2043&q=80">
       <div>
       <h5>heading 5</h5>
       <ul>
         <li>prova1</li>
+        <li>prova2</li>
       </ul>
       <h6>xxx</h6>
     </div>
-    </section>
+    </section> -->
     <h2>Seconda sezione</h2>
+    <form method="post" target="" >
+      <!-- get => informazioni sono in chiaro, cioè sono visibili nel url
+      post => informazioni non sono visibili ma ci sono lo stesso-->
+      <label for="nome">Nome:</label>
+      <input id="nome" class="" type="text" placeholder="Mario"><br>
+      <label for="cognome">Cognome</label>
+      <input id="cognome" class="" type="text" placeholder="Rossi"><br>
+      <label>Email:</label>
+      <input type="email" id="email">
+      <label for="range">Range di prezzo:</label>
+      <input type="range" id="range" min="0" max="100">
+      <label for="tempo">Orario</label>
+      <input type="time" id="tempo"><br>
+      <label for="date">Data</label>
+      <input type="datetime-local" id="dataeora">
+      <label for="dataeora"></label>
+      <input type="date" id="date"> 
+      <br>
+      <label for="password">Password</label>
+      <input type="password" id="password" >
+      <br>
+      <h3>Radio e checkbox</h3>
+      <h4>Seleziona colore</h4>
+      <label for="rosso">
+      <input type="radio" name="coloreradio" value="rosso" id="rossoradio"><span>Rosso</span>
+      </label>
+      <label for="blu">
+      <input type="radio" name="coloreradio" value="blu" id="blueradio"><span>Blue</span>
+    </label>
+    <label for="giallo">
+      <input type="radio" name="coloreradio" value="giallo" id="gialloradio"><span>Giallo</span>
+    </label>
+    <label for="verde">
+      <input type="radio" name="coloreradio" value="verde" id="verderadio"><span>Verde</span>
+    </label>
+      <br>
+      <label>Seleziona colore</label>
+      <input type="checkbox" name="colorechekboz1" value="rosso">Rosso
+      <input type="checkbox" name="colorechekbox2" value="blu">Blue
+      <input type="checkbox" name="colorechekbox3" value="giallo"> Giallo 
+      <input type="checkbox" name="colorechekbox4" value="verde">Verde
+
+
+
+      <h3>Pulsanti</h3>
+      <h4>comparazione buttom e input</h4>
+      <input type="button" id="pulsante" value="ciao sono un bottone">
+      <button>sono un pulsante</button>
+      <br>
+      <h4>Pulsanti vuoti</h4>
+      <button type="button"></button>
+      <input type="button" value="">
+      <br>
+      <h4>Pulsanti submit/resert</h4>
+      <input type="reset">
+      <button></button>
+      <button><img width="100px" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2043&q=80"></button>
+      
+
+      <h4>Tutti gli altri input</h4>
+      <input type="color">
+      <input type="file">
+      <input type="hidden">
+      <input type="month">
+      <input type="week">
+      <input type="url">
+      <input type="tel">
+      <input type="number">
+
+
+      
+    </form>
+    <hr>
    </main>
+   <footer>
+    <p>prova1</p>
+    <p>prova2</p>
+   </footer>
   </body>
 </html>
