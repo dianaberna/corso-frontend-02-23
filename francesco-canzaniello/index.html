@@ -75,7 +75,12 @@
             </tbody>
 
         </table> -->
-        <form action="">
+        <h2>Form</h2>
+        <form action="", method="post", target="_blank">
+            <!--in method :
+            get=> informazioni sono in chiaro, cioè sono visibili nell'url
+            post=> informazioni non visibili, ma ci sono lo stesso
+            -->
             <label for="nome">Nome:</label>
             <input type="text", placeholder="Nome", id="nome"> <br>
             <label for="cognome">Cognome:</label>
@@ -85,7 +90,11 @@
             <label for="Range">Range:</label>
             <input type="range", id="Range"> <br>
             <label for="tempo">Orario</label>
-            <input type="time", id="tempo">
+            <input type="time", id="tempo"> <br> <br>
+            <input type="button", value="Clicca qui!">
+            <button>tag button</button>
+            <input type="submit", value="Sottoscrivi">
+            <input type="reset", value="Reimposta">
         </form>
     </main>
     <footer>
