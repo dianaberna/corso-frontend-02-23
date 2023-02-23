@@ -82,7 +82,11 @@
         </table> -->
         <hr>
         <h2>Form</h2>
-        <form>
+        <form action="" method="post" target="_self" name="formContatti">
+            <!-- 
+                get => informazioni sono in chiaro, cioè sono visibili dell'url 
+                post => informazioni non sono visibile (ma ci sono lo stesso)
+            -->
             <label for="nome">Nome:</label>
             <input id="nome" class="" type="text" placeholder="Mario"><br>
             <label for="cognome">Cognome:</label>
@@ -92,9 +96,86 @@
             <label for="range">Range di prezzo:</label>
             <input type="range" id="range" min="0" max="100"><br>
             <label for="tempo">Orario</label>
-            <input type="time" id="tempo">
-            <label for=""></label>
-            
+            <input type="time" id="tempo"><br>
+            <label for="data">Data:</label>
+            <input type="date" id="data"><br>
+            <label for="dataeora">Data e ora</label>
+            <input type="datetime-local" id="dataeora"><br>
+            <input type="month">
+            <input type="week">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" >
+            <br>
+            <h3>Radio e checkbox</h3>
+            <h4>Seleziona colore:</h4>
+            <br>
+            <label for="rossoradio">
+                <input type="radio" name="coloreradio" value="rosso" id="rossoradio"> 
+                <span>rosso</span>
+            </label>
+
+            <label for="bluradio">
+                <input type="radio" name="coloreradio" value="blu" id="bluradio"> 
+                <span>blu</span>
+            </label>
+
+            <label for="gialloradio">
+                <input type="radio" name="coloreradio" value="giallo" id="gialloradio"> 
+                <span>giallo</span>
+            </label>
+
+            <label for="verderadio">
+                <input type="radio" name="coloreradio" value="verde" id="verderadio"> 
+                <span>verde</span>
+            </label>
+            <br>
+            <label>Seleziona colore:</label>
+            <label for="rossocheckbox">
+                <input type="checkbox" name="colorecheckbox" value="rosso" id="rossocheckbox"> 
+                <span>rosso</span>
+            </label>
+            <label for="blucheckbox">
+                <input type="checkbox" name="colorecheckbox" value="blu" id="blucheckbox"> 
+                <span>blu</span>
+            </label>
+            <label for="giallocheckbox">
+                <input type="checkbox" name="colorecheckbox" value="giallo" id="giallocheckbox"> 
+                <span>giallo</span>
+            </label>
+            <label for="verdecheckbox">
+                <input type="checkbox" name="colorecheckbox" value="verde" id="verdecheckbox"> 
+                <span>verde</span>
+            </label>
+
+            <h3>Pulsanti</h3>
+            <h4>Comparazione button e input</h4>
+            <input type="button" value="ciao sono un pulsante">
+            <button type="button">ciao sono un pulsante</button>
+            <br>
+            <h4>Pulsanti vuoti</h4>
+            <button type="button"></button>
+            <input type="button" value="">
+            <br>
+            <h4>Pulsanti submit/reset</h4>
+            <input type="submit">
+            <button type="submit">Invia i dati</button>
+            <br>
+            <h4>Pulsante reset</h4>
+            <input type="reset">
+            <br>
+            <h4>Pulsante con immagine</h4>
+            <button>
+                <img width="100px" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png"/>
+            </button>
+            <input type="image" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png">
+            <h4>Tutti gli altri input</h4>
+            <input type="color">
+            <input type="file">
+            <input type="hidden">
+            <input type="url">
+            <input type="tel">
+            <input type="number">
         </form>
         <hr>
     </main>
