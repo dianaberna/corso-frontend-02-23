@@ -1,0 +1,54 @@
+
+/*
+    selettore {
+        proprietà: valore;
+        proprietà: valore;
+
+*/
+
+header{
+       background-color: rgb(237, 180, 94);
+   
+       color: rgb(75, 55, 29);
+   }
+
+
+body{
+    background-color: rgb(193, 165, 142);
+}
+
+#speciale {
+    background-color: black;
+    color: antiquewhite;
+    size: 50px;
+}
+
+.rosso {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+/* selettori combinatori */
+/* discendente */
+
+main p{
+    background-color: rgb(255, 0, 140);
+    color: aliceblue;
+}
+
+main> div> p {
+    background-color: forestgreen;
+    color: yellow;
+}
+
+
+
+/* fratello generico ~ */
+.genericbro4>p{
+    background-color: crimson;
+}
+
+/* fratello adiacente +*/
+div+p {
+    color: darkmagenta;
+}
