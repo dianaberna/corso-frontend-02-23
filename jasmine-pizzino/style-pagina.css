@@ -1,31 +1,35 @@
 body{
-font-family: 'lexend', sans-serif;
-padding: 0 6.25rem;
-}
-
-h1{
-    font-weight: 700;
-    font-size: 4.25rem;
-}
-
-header{
-text-align: center;
-margin: 0 10rem;
-}
-
-
-
-h1 ~ p{
-    color:#706D73;
-    font-weight: 500;
-    font-size: 1.25rem
-}
-
-button{
-    font-family: inherit;
-    border: 1px solid #1D1B1F;
-    border-radius: 4px;
-    background-color: #F0F0F0;
-    padding: 16px 20px;
-    box-shadow: 4px 4px 0px #1D1B1F;
-}
+    font-family: 'lexend', sans-serif;
+    padding: 0 6.25rem;
+    }
+    
+    h1{
+        font-weight: 700;
+        font-size: 4.25rem;
+    }
+    
+    header{
+    text-align: center;
+    margin: 0 10rem;
+    }
+    
+    
+    
+    h1 ~ p{
+        color:#706D73;
+        font-weight: 500;
+        font-size: 1.25rem
+    }
+    
+    button{
+        font-family: inherit;
+        border: 1px solid #1D1B1F;
+        border-radius: 4px;
+        background-color: #F0F0F0;
+        padding: 16px 20px;
+        box-shadow: 4px 4px 0px #1D1B1F;
+    }
+    
+    main{
+        text-align: center;
+        padding
