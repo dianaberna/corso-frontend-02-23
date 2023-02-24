@@ -1,8 +1,13 @@
-        
-        body{background-color: rgb(106, 156, 156);}
+
+
+
+        body{background-color: rgb(60, 78, 78);
+                font-family: 'Lexend', sans-serif;
+        font-size: 20rem;
+        color: #e70404;}
         
         /*sostituisce quello nel file html*/
-        main{background-color: brown;color: black;}
+        main{color: black;} 
        
         h1{color: chartreuse; font-size: 50px;}
         
@@ -45,14 +50,13 @@
 
         /*fratello generico ~ (alt 126)*/
 
-        /*tutti i paragrafi che s trovano sullo stesso livello del div ma anche subito dopo*/
+        /*tutti i paragrafi che sono successivi*/
         div ~ span {background-color: purple;}
         div ~ p {background-color:purple;}
         
         
-        main ~ p {background-color: purple;} 
         /*fratello adiacente + */
-        /*il primo sullo stesso livello del div*/
+        /*a differenza del generico prende solo il primo, l'adiacente*/
         div + span {background-color: blue;}
 
         
