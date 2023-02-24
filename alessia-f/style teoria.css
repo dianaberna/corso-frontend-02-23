@@ -52,3 +52,29 @@ main> div> p {
 div+p {
     color: darkmagenta;
 }
+
+
+/*margine e padding*/
+
+.margine {
+    background-color: gold;
+    color: blue;
+    margin: 20px; 20px; 20px; 20px; 20px;
+    /* in questo mdoo dico : voglio i margini in senso orario di 20 px. 
+    posso scriverlo unoo per uno con valori diveri, oppure scriverlo una sola volta per averlo tutto uguale */
+
+}
+
+.bordo{
+    color: aliceblue;
+        margin: 40PX; 
+    border-style: dashed;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 15px;
+    
+    }
+
+.sfumaturacolore{
+    background:linear-gradient(red,orange,yellow,green,blue,blueviolet,violet)
+}
