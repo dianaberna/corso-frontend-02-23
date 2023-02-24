@@ -1,6 +1,56 @@
 body{
-    background-color: red;
+    font-family:monospace
 }
-h2{
-    background-color: yellow;
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    direction: right;
+    
+   
+
+}
+
+nav ul li{
+    margin-left :10px
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    text-align: center;
+}
+.s1 {
+    padding: 150px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.s1 > h2{
+    text-align: center;
+    margin-top: 100px;
+}
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.carte>div{
+    max-width: 250px;
+    margin-bottom: -50px;
+   
+}
+.partner{
+    margin-top: 50px;
+    padding: 50px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: #F0F0F0;
+    ;
 }
