@@ -5,10 +5,116 @@
     }
 */
 
+/* questa regola andrà ad essere sovrascritta da quella nel tag style subito dopo*/
 body{
     background-color: aquamarine;
 }
 
-h3{
-    color: blueviolet;
+
+
+/* selettori semplici (tag, id, class) */
+/* selettore semplice tag */ 
+p{
+    background-color: yellow;
 }
+main{
+    background-color: darkkhaki;
+}
+footer {
+    background-color: cyan;
+}
+body{
+    background-color: blue;
+}
+
+/* 
+    operatore virgola per applicare a più elementi
+    in contemporanea lo stesso stile 
+*/
+h1, h2, h3, h4{
+    color: red;
+}
+h1, h3{
+    font-size: 50px;
+}
+
+/* 
+    h1{
+        color: red;
+        font-size: 50px;
+    }
+    h2{
+        color: red;
+    }
+    h3{
+        color: red;
+        font-size: 50px;
+    }
+    h4{
+        color: red;
+    } 
+*/
+
+/* selettore semplice -> id */
+/* #speciale {
+    background-color: green;
+} */
+
+#pippo{
+    font-size: 25px;
+}
+
+/* selettore semplice -> class */
+
+/* .rosso{
+    background-color: red;
+} */
+
+/* selettori combinatori */
+/* discendente  */
+
+main p{
+    background-color: orange;
+}
+
+/* figlio >  */
+
+main > p{
+    background-color: deeppink;
+}
+
+main > div > div > .rosa {
+    background-color: pink;
+}
+
+/* fratello generico ~ 
+    mac -> option + 5
+    windows -> alt + 126
+    linux -> alt + freccia su
+*/
+/* 
+    tutti i paragrafi che si trovano sullo stesso
+    livello del div, che si trovano subito dopo il div
+*/
+.primo-gruppo ~ p{
+    background-color: green;
+}
+
+/* fratello adiacente + */
+/* il primo tra quelli selezionati con l'operatore generico */
+div + p{
+    background-color: white;
+}
+
+
+
+ /*
+ .primo-gruppo ~ p{
+    background-color: green;
+}
+
+.secondo-gruppo ~ p{
+    background-color: red;
+}
+
+ */
