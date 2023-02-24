@@ -1,0 +1,14 @@
+/* 
+    selettore { 
+        proprietà: valore; 
+        proprietà: valore;
+    }
+*/
+
+body{
+    background-color: aquamarine;
+}
+
+h3{
+    color: blueviolet;
+}
