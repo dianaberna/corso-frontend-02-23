@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Lexend', sans-serif;
+}
+/*
+.elenco1{
+    text-align: right;
+}
+
+/*Basic landing page for big*/
+/*#home{
+    font-size: 68px;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+    color: #1D1B1F;
+}*/
+.LogoMP{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #1D1B1F;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 68px;  
+}
+header{
+    text-align: center;
+    
+}
+h1 ~ p{
+    color: #706D73;
+    font-weight: 500;
+    font-size: 20px;   
+}
+button{
+    font-family: inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px #1D1B1F;
+}
+
+.primasection{
+    text-align: center;
+}
+/*
+#P1{
+    text-align: center;
+}
+
+#P2{
+    text-align: center;
+}
+#P3{
+    text-align: center;
+}
+#P4{
+    text-align: center;
+}*/
