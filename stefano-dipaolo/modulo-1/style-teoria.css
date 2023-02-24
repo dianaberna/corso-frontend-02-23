@@ -1,0 +1,63 @@
+        
+        body{background-color: rgb(106, 156, 156);}
+        
+        /*sostituisce quello nel file html*/
+        main{background-color: brown;color: black;}
+       
+        h1{color: chartreuse; font-size: 50px;}
+        
+        p{color: rgb(255, 255, 255);}
+        
+        footer{color: darkolivegreen;background-color: darkslategrey;}
+        
+    
+        
+        h2,h3{color: black;}
+       
+        /* selettore semplice usando id*/
+        #speciale {background-color: green;}
+        
+        /*selettore semplice usando class*/
+        .rosso {
+                background-color: grey; color: red;
+                /*
+                margin-top:20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                */
+                margin: 20px;
+                
+                margin: 20px 20px 20px 20px;
+                /*top right bottom lef senso orario*/
+                }
+        
+        
+        /*selettori combinatori*/
+        
+        /*discendente 
+        main p {background-color: orange;}*/
+        
+
+        /*figlio > * */
+        main > div>   .rosso {color: rgb(0, 255, 85);} /*copre il selettore semplice .rosso ma solo degli elementi nel div*/
+        main > div > p {background-color: black;}
+
+        /*fratello generico ~ (alt 126)*/
+
+        /*tutti i paragrafi che s trovano sullo stesso livello del div ma anche subito dopo*/
+        div ~ span {background-color: purple;}
+        div ~ p {background-color:purple;}
+        
+        
+        main ~ p {background-color: purple;} 
+        /*fratello adiacente + */
+        /*il primo sullo stesso livello del div*/
+        div + span {background-color: blue;}
+
+        
+        
+        
+
+
+        
