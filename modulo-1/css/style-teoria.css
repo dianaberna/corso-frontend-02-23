@@ -1,16 +1,22 @@
 /* 
-    selettore { 
-        proprietà: valore; 
-        proprietà: valore;
-    }
+
+selettore { 
+    proprietà: valore; 
+    proprietà: valore;
+}
+
 */
+html{
+    font-size: 20px;
+}
 
 /* questa regola andrà ad essere sovrascritta da quella nel tag style subito dopo*/
 body{
-    background-color: aquamarine;
+    background-color: #0000ff;
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: #19192d
 }
-
-
 
 /* selettori semplici (tag, id, class) */
 /* selettore semplice tag */ 
@@ -25,6 +31,14 @@ footer {
 }
 body{
     background-color: blue;
+}
+button{
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px;
+    border: 5px dashed red;
+    font-size: 3rem;
+    margin-top: 100px;
 }
 
 /* 
@@ -66,9 +80,9 @@ h1, h3{
 
 /* selettore semplice -> class */
 
-/* .rosso{
+.rosso{
     background-color: red;
-} */
+}
 
 /* selettori combinatori */
 /* discendente  */
@@ -80,7 +94,25 @@ main p{
 /* figlio >  */
 
 main > p{
-    background-color: deeppink;
+    
+    /* 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    margin: 20px;
+
+    margin: 20px 20px; 
+    */
+    /* top-bottom left-right */
+
+    margin: 20px 20px 20px 20px;
+    /* top - right - bottom - left -> orario */
+
+    padding: 20px 30px 40px 100px;
+
+    border: 5px solid black;
 }
 
 main > div > div > .rosa {
@@ -96,7 +128,7 @@ main > div > div > .rosa {
     tutti i paragrafi che si trovano sullo stesso
     livello del div, che si trovano subito dopo il div
 */
-.primo-gruppo ~ p{
+div ~ p{
     background-color: green;
 }
 
@@ -106,15 +138,3 @@ div + p{
     background-color: white;
 }
 
-
-
- /*
- .primo-gruppo ~ p{
-    background-color: green;
-}
-
-.secondo-gruppo ~ p{
-    background-color: red;
-}
-
- */
