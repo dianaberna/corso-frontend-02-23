@@ -10,6 +10,8 @@ p {
 }
 h1, h3{
     color: brown;
+    font-family: cursive;
+    font-size: 30px;
 }
 h2{
     color: blue;
@@ -19,9 +21,38 @@ main{
 }
 footer{
     background-color: pink;
+   
+    /* margin e patting
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    /* questo è l'equivalente di quello sopra
+    margin: 20px;
+
+    /* top - right - bottom - left -> in senso orario */
+    margin: 20px 20px 20px 20px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+
+    /* o si può scrivere cosi
+    border: solid black 5px;
+    */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+
+    /*padding: 20px 30px 40px 100px;*/
 }
+
 body{
     background-color: chartreuse;
+    
+
 }
 
 /* selettori semplici id */
@@ -48,13 +79,16 @@ main > p{
 
 /*fratello adiacente -> ex. div + {proprietà: valore;}*/
 
+div + p {
 
+    background-color: rgb(97, 199, 97);
+}
 
 /*fratello generico -> ex. div "tilde" {proprietà: valore;}
 tutti i paragrafi che si trovano sullo stesso 
 livello del div ma mai precedenti*/
 
-div p {
+div ~ p {
 
     background-color: green;
 }
@@ -69,3 +103,5 @@ main > div > p{
 main > div > div > p{
     background-color: rgb(70, 70, 215);
 }
+
+/* margin e patting*/
