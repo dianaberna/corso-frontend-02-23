@@ -77,7 +77,8 @@ main > p{
     background-color: rgb(222, 92, 161);
 }*/
 
-/*fratello adiacente -> ex. div + {proprietà: valore;}*/
+/*fratello adiacente -> ex. div + {proprietà: valore;}
+il primo fratello che viene dopo*/
 
 div + p {
 

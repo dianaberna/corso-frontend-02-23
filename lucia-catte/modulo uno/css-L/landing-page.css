@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+}
+
+.elenco1{
+    text-align: right;
+}
+
+/*Basic landing page for big*/
+#home{
+    font-size: 68px;
+    text-align: center;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+    color: #1D1B1F;
+
+    
+
+
+}
