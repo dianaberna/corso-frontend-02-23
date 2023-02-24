@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+body{
+  font-family: 'Lexend', sans-serif;
+padding: 0px 6.25rem;
+}
+h1{
+  font-weight: 700;
+  font-size: 4.25rem;
+}
+header{
+ text-align: center;
+ margin: 0 10rem;
+}
+h1 ~ p{
+  color: #706D73;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+
+button{
+  font-family: inherit;
+  border: 1px solid #1D1B1F;
+  border-radius: 4px;
+  background-color: #F0F0F0;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0px #1D1B1F;
+  
+}
