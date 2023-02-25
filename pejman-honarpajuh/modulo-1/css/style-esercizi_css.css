@@ -32,8 +32,10 @@ h1 {
     font-size: 4.25rem;
 }
 header {
+    border:1px solid #1D1B1F; 
     text-align: center;
-    margin: 0 11rem;
+    margin: 0 8rem;
+    padding: 6.25rem; ;
 }
 h1 ~ p {
     color:#706D73;
@@ -48,6 +50,16 @@ button {
     box-shadow: 4px 4px 0px #1D1B1F;
 }
 /* Main */
+/* Section why use */
+main{
+    border:1px solid #1D1B1F;
+    margin: 0 8rem;
+    padding: 4.375rem 0;
+}
 main section h2 {
     text-align: center;
+}
+.why_use > div {
+    text-align: center;
+    border: 1px solid red ;
 }
