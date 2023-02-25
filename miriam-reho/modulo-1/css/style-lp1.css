@@ -1,0 +1,52 @@
+/*
+    selettore {
+        proprietà: valore;
+        proprietà: valore;
+    }
+*/
+
+body{
+    background-color: rgb(187, 240, 222);
+    color: blue;   
+}
+h1, h2, h3{
+    color: blueviolet;
+}
+
+/*
+    per indicare un id usa #nomeid{}
+    per indicare una class usa .nomeclass{}
+    questi avranno importanza sul resto, id in cima,
+    poi class, poi i cimbinatori
+    */
+
+#Sezione4blocchi{
+    font-size: 25px;
+}
+
+/* combinatori discendenti: tutti i disegnenti 
+del main, figli e nipoti
+*/
+
+main p{
+    background-color: bisque;
+}
+
+/* combinatori figli: tutti i figli,
+non anche nipoti
+in parole povere: tutti i p, figli di un div...*/
+
+div > p{
+    background-color:cornflowerblue;
+}
+
+/* fratello generico: scritto con la ~ (alt+5) 
+tutti i tag che scelgo che sono fratelli di un 
+altro selezionato
+in parole povere: tutti i p successivi sulla stessa
+riga di uno span....*/
+
+span ~ p{
+    background-color: darkcyan;
+}
+
