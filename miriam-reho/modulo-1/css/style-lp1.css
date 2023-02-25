@@ -51,9 +51,11 @@ riga di uno span....*/
 } 
 
 padding: top r/l bottom
+box shadow: x y blur(indicato con px per x e px per y oppure colore ecc)
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body{
     font-family: 'Lexend', sans-serif;
@@ -68,19 +70,85 @@ ul{
 
 /* HEADER */
 header{
-    padding: 0 10rem;
     text-align: center;
+    padding: 6.25rem;
+}
+
+#sottotitolo{
+    color: #706D73;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 h1{
     font-weight: 700;
     font-size: 4.25rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-/* MAIN SECTION WHYUSE */
+button{
+    font-family: inherit;
+    padding: 1rem 1.25rem;
+    border: .0625rem solid #1D1B1F;
+    border-radius: 0.25rem;
+    background: #F0F0F0;
+    margin-top: 2rem;
+    box-shadow: #1D1B1F .25rem .25rem 0;
+
+}
+
+/* MAIN */
+#whyuse{
+    height: 59.5rem;
+    padding: 7.5rem 6.25rem
+}
+
 h2{
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+#whyuse p, #howwork p{
+    color: #706D73;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#recensioni p{
+    color: #302E32;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#howwork h3{
+    text-align: left;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#whyuse div{
+    width: 22.5rem;
+    height: 260px;
+    padding: 2rem 1rem;
+}
+
+#partner{
+    height: 354px;
+    padding: 5rem 6.25rem;
+    background-color: #F0F0F0;
 }
