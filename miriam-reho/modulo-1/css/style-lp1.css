@@ -1,17 +1,17 @@
-/*
+/* /* /*
     selettore {
         proprietà: valore;
         proprietà: valore;
     }
 */
 
-body{
+/* body{
     background-color: rgb(187, 240, 222);
     color: blue;   
 }
 h1, h2, h3{
     color: blueviolet;
-}
+} */
 
 /*
     per indicare un id usa #nomeid{}
@@ -20,25 +20,25 @@ h1, h2, h3{
     poi class, poi i cimbinatori
     */
 
-#Sezione4blocchi{
+/* #Sezione4blocchi{
     font-size: 25px;
-}
+} */
 
 /* combinatori discendenti: tutti i disegnenti 
 del main, figli e nipoti
 */
 
-main p{
+/* main p{
     background-color: bisque;
-}
+} */
 
 /* combinatori figli: tutti i figli,
 non anche nipoti
 in parole povere: tutti i p, figli di un div...*/
-
+/* 
 div > p{
     background-color:cornflowerblue;
-}
+} */
 
 /* fratello generico: scritto con la ~ (alt+5) 
 tutti i tag che scelgo che sono fratelli di un 
@@ -46,7 +46,45 @@ altro selezionato
 in parole povere: tutti i p successivi sulla stessa
 riga di uno span....*/
 
-span ~ p{
+/* span ~ p{
     background-color: darkcyan;
+} 
+
+padding: top r/l bottom*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Lexend', sans-serif;
+    padding:1rem;
 }
+
+/* NAV */
+nav {
+   
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    padding: 0 10rem;
+    text-align: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 4.25rem;
+    text-align: center;
+}
+
+/* MAIN SECTION WHYUSE */
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
 
