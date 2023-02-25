@@ -50,7 +50,8 @@ riga di uno span....*/
     background-color: darkcyan;
 } 
 
-padding: top r/l bottom*/
+padding: top r/l bottom
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 
@@ -60,9 +61,6 @@ body{
 }
 
 /* NAV */
-nav {
-   
-}
 
 ul{
     list-style: none;
@@ -86,5 +84,3 @@ h2{
     font-size: 3rem;
     text-align: center;
 }
-
-
