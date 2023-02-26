@@ -31,6 +31,14 @@ h1 {
     font-weight: 700;
     font-size: 4.25rem;
 }
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 header {
     border:1px solid #1D1B1F; 
     text-align: center;
@@ -59,7 +67,39 @@ main{
 main section h2 {
     text-align: center;
 }
+.why_use {
+    border: 1px solid greenyellow;
+}
 .why_use > div {
-    text-align: center;
+    /* text-align: center; */
+    align-items: center;
     border: 1px solid red ;
+    width: 22.5em;
+    height: 16.437em;
+    display: inline-flex;
+    padding: 1.5em 1em;
+    
+}
+.why_use > .sinistra {
+    margin: 1.5em 0 1.5em 2.2em;
+}
+.why_use > .destra {
+    margin: 1.5em 2.2em 1.5em 0;
+    background-color: aqua;
+}
+.why_use > div > span {
+    width:40px ;
+    height: 40px;
+    margin-bottom: 15rem;
+}
+.why_use > div > span img {
+   display: block;
+   margin-bottom: 10rem;
+   margin-left: 9rem;
+}
+.why_use > div > h3 {
+    text-align: center;
+    width: 262px;
+    height: 29px;
+    
 }
