@@ -56,14 +56,45 @@ text-align: center;
   border: 1px solid #1D1B1F;
   background-color: #EBEBEB;
   text-align: left;
-}
-
-
-.recensioni >div   {
   padding-left: 7px;
   padding-bottom: 20px;
   font-weight: 300;
 }
-.recensioni >div ~ span {
+#nomi {
   font-weight: 500;
+}
+.secondoblocco {
+text-align: center;
+}
+.secondoblocco > h4 {
+  font-weight: 400;
+}
+
+.secondoblocco div {
+  border: 1px solid #1D1B1F;
+  text-align: left;
+  padding-left: 7px;
+  padding-bottom: 20px;
+
+}
+.secondoblocco> div > span {
+  border: 1px solid #1D1B1F;
+  
+}
+.fine{
+  background-color: #F0F0F0;
+  margin: 50px -110px;
+  padding: 150px;
+}
+footer {
+  background-color: #1D1B1F;
+  color: #D3D0D6;
+  margin:  -110px ;
+  padding: 50px;
+}
+footer > div {
+  text-align: right;
+}
+ul{
+  list-style-type: none;
 }
