@@ -27,3 +27,43 @@ button{
   box-shadow: 4px 4px 0px #1D1B1F;
   
 }
+.paginacentrale{
+  text-align: center;
+  padding-top: 6rem;
+}
+section > h2 {
+  font-weight: 600;
+font-size: 2.375rem;
+}
+.paginacentrale > div > h3 {
+font-weight: 600;
+font-size: 1.25rem;
+}
+.paginacentrale  p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.loghi {
+  text-align: center;
+background-color: #F0F0F0;
+padding: 50px;
+margin: 40px -110px;
+}
+.recensioni {
+text-align: center;
+}
+.recensioni div {
+  border: 1px solid #1D1B1F;
+  background-color: #EBEBEB;
+  text-align: left;
+}
+
+
+.recensioni >div   {
+  padding-left: 7px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.recensioni >div ~ span {
+  font-weight: 500;
+}
