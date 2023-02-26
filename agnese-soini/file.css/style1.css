@@ -1,0 +1,51 @@
+ /* selettori semplici (tag, id, class)
+selettore {
+proprietà: valore;
+proprietà: valore;
+} */
+
+p {
+    font-size: 30px;
+}
+h1, h2, h3 {
+    color: rgb(205, 23, 72);
+}
+footer {
+    background-color: rgb(4, 11, 71);
+    color: aliceblue;
+}
+.dentro {
+    border-color: red;
+    background-color: yellow;
+    border-style: solid;
+    padding:12px;
+    color: rgb(255, 0, 60);
+}
+.nondentro {
+    border-color: rgb(106, 8, 90);
+    background-color: rgb(154, 228, 151);
+    border-style: solid;
+    padding:12px;
+    margin-top: 10px;
+    color: indigo;
+}
+.testointernodiv {
+    background-color: rgb(54, 40, 4)
+}
+#speciale {
+    color: deeppink;
+    font-size: 50px;
+}
+
+
+
+/* main > p {
+    background-color: deeppink;
+}
+main > div > p {
+    background-color: olive;
+} */
+
+main > div > .forfulla {
+    color: rgb(255, 45, 136);
+}
