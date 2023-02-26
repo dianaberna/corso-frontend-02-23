@@ -4,26 +4,28 @@ body{
     font-family: "Lexend",sans-serif;
     padding: 0 6.25rem;
     }
-link {
+
+a {
     color: black;
 }
 
 #logo{
     color: black;
     font-size: 1.25rem;
+    
     /* perchè il logo rimane blu anche se imposto il nero?*/
 }
 
-#menu{
+#menù{
     text-align: right;
-
+    word-spacing: 5.5rem;
 }
-
-
 h1{
+    line-height 1.875rem;
     font-weight: 700;
     font-size: 4.25rem;
 }
+    
 
 header{
     text-align: center;
@@ -47,4 +49,19 @@ button{
     background: #F0F0F0;
     padding: 1rem 1.25rem;
     box-shadow: 4px 4px 0px #1D1B1F;
+}
+
+#whyuse{
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;    
+}
+
+.colonnasx{
+    float: left;
+    width: 45%;
+    padding: 5%
 }
