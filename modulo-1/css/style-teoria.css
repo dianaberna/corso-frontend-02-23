@@ -13,7 +13,6 @@ html{
 /* questa regola andrà ad essere sovrascritta da quella nel tag style subito dopo*/
 body{
     background-color: #0000ff;
-    font-family: 'Lexend', sans-serif;
     font-size: 2rem;
     color: #19192d
 }
