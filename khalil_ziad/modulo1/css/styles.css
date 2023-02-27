@@ -80,3 +80,57 @@ header h1{
 .cards a{
     text-decoration: none;
 }
+.floatingCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 3.125rem;
+}
+.floatingCards > div{
+    border: black solid;
+    border-radius: 1.25rem;
+    width: 500px;
+
+}
+.preFotter{
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem;
+    padding-top: 0;
+    padding-left: 0;
+    background-color: #F0F0F0;
+}
+.endFotter{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: #1D1B1F;
+    color: whitesmoke;
+    padding: 3.125rem;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.content > a{
+ text-decoration: none;
+ color: whitesmoke;
+ 
+}
+.rightContent{
+    display: flex;
+    gap: 3.125rem;
+}
+.rightContent .contacts{
+    display: flex;
+    flex-direction: column;
+}
+.rightContent .myPage ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
