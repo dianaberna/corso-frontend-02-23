@@ -56,6 +56,27 @@ header h1{
 }
 .imgCont{
     display: flex;
-    justify-content: center;
-    gap: 3.125rem;
+    justify-content:space-between;
+    
+}
+.customers{
+    margin-bottom: 3.125rem;
+}
+.customers > h2 {
+    text-align: center;
+}
+.customers .cards{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.customers .cards > div{
+    border: black solid;
+    border-radius: 1.25rem;
+    width: 15.625rem;
+    text-align: center;
+}
+.cards a{
+    text-decoration: none;
 }
