@@ -17,7 +17,7 @@ nav ul{
 }
 
 nav ul li{
-    margin-left :10px
+    margin-left :.625rem
 }
 header{
     display: flex;
@@ -28,28 +28,28 @@ header h1{
     text-align: center;
 }
 .s1 {
-    padding: 150px;
+    padding: 9.375rem;
     padding-bottom: 0;
     padding-top: 0;
 }
 .s1 > h2{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 .carte{
     display: flex;
     flex-wrap: wrap;
-    gap: 90px;
+    gap: 5.625rem;
 }
 .carte>div{
-    max-width: 250px;
-    margin-bottom: -50px;
+    max-width: 15.625rem;
+    margin-bottom: -3.125rem;
    
 }
 .partner{
-    margin-top: 50px;
-    padding: 50px;
-    padding-top: 5px;
+    margin-top: 3.125rem;
+    padding: 3.125rem;
+    padding-top: 0.3125rem;
     text-align: center;
     background-color: #F0F0F0;
     
