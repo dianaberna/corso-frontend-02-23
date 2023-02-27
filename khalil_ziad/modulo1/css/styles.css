@@ -52,5 +52,10 @@ header h1{
     padding-top: 5px;
     text-align: center;
     background-color: #F0F0F0;
-    ;
+    
+}
+.imgCont{
+    display: flex;
+    justify-content: center;
+    gap: 3.125rem;
 }
