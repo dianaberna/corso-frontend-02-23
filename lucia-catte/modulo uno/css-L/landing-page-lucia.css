@@ -129,6 +129,7 @@ button{
 footer{
     background-color: black;
     color: white;
+    border: dotted red;
 }
 
 .footer{
@@ -138,41 +139,73 @@ footer{
     justify-content: space-between;
     margin: 1rem 1rem 1rem 1rem;
     padding: 10px 10px 10px 10px;
+    border: dotted red;
 }
 
 .liste{
     display: flex;
+    border: dotted red;
+    list-style: none;
+   
+    
+
+    
+
 }
-.liste > div {
+/*.contatti {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
+}*/
+
+.liste ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 }
-.liste h5 > ul{
+.contatti{
+    border: dotted red;
+    
+}
+.mypage{
+    border: dotted red;
+}
+/*.contatti{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.liste2 ul{
+.mypage {
+    border: dotted red;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-/*.liste ul > li {
+.liste ul > li {
     margin-bottom: 1rem;
     margin-left: -2.5rem;
 }*/
+
+#contact{
+    white-space: break-spaces;
+}
+
+#menu{
+    white-space: break-spaces;
+}
 .lastline{
     font-size: x-small;
     display: flex;  
     justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 #loghisocial{
-    height: 25px;
     
-    border-radius: 0px;
-
+    
+    display: inline-flex;
+    justify-content: space-between;
+    
 }
