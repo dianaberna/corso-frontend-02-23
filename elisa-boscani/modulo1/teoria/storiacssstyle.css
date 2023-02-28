@@ -1,0 +1,39 @@
+*{
+  border: 1px dashed red
+}
+html{
+  margin: 0;
+}
+.ordine{
+  float: left;
+  width: 45%;
+}
+.clear{
+  clear: both;
+}
+.rosso{
+  background-color: red;
+  
+}
+.blu{
+  background-color: blue;
+  
+}
+.giallo{
+  background: yellow;
+  
+}
+.verde{
+  background-color: green;
+  
+}
+.flex{
+  display: flex;
+}
+.verticale{
+flex-direction: column;
+}
+.orizzontale{
+  flex-direction: row;
+}
+

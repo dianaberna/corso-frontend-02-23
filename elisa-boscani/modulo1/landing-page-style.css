@@ -1,100 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
-body{
-  font-family: 'Lexend', sans-serif;
-padding: 0px 6.25rem;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Lexend", sans-serif;
+  padding: 0px 6.25rem;
 }
-h1{
+
+nav {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 3rem 3rem 0 3rem;
+}
+ul li {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+ul {
+  display: flex;
+  gap: 7rem;
+}
+
+h1 {
   font-weight: 700;
   font-size: 4.25rem;
 }
-header{
- text-align: center;
- margin: 0 10rem;
+header {
+  text-align: center;
+  margin: 0 10rem;
 }
-h1 ~ p{
-  color: #706D73;
+h1 ~ p {
+  color: #706d73;
   font-weight: 500;
   font-size: 1.25rem;
 }
 
-
-button{
+button {
   font-family: inherit;
-  border: 1px solid #1D1B1F;
+  border: 1px solid #1d1b1f;
   border-radius: 4px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 1rem 1.25rem;
-  box-shadow: 4px 4px 0px #1D1B1F;
-  
+  box-shadow: 4px 4px 0px #1d1b1f;
 }
-.paginacentrale{
+.paginacentrale {
   text-align: center;
   padding-top: 6rem;
 }
 section > h2 {
   font-weight: 600;
-font-size: 2.375rem;
+  font-size: 2.375rem;
 }
 .paginacentrale > div > h3 {
-font-weight: 600;
-font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
 }
-.paginacentrale  p {
+.paginacentrale p {
   font-weight: 300;
   font-size: 1rem;
+  text-align: left;
+}
+.alineare {
+  display: flex;
+  gap: 2.5rem;
+  margin: 4rem;
+}
+.alineare-sinistra {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  margin: 1.25rem;
+  padding: 3.125rem;
+}
+.alineare-destra {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  margin: 1.25rem;
+  padding: 3.125rem;
 }
 .loghi {
   text-align: center;
-background-color: #F0F0F0;
-padding: 50px;
-margin: 40px -110px;
+  background-color: #f0f0f0;
+  padding: 3.125rem;
+  margin: 6.25rem -110px;
 }
-.recensioni {
-text-align: center;
+.loghi svg {
+  padding: 4rem;
+  width: 7rem;
 }
+
 .recensioni div {
-  border: 1px solid #1D1B1F;
-  background-color: #EBEBEB;
-  text-align: left;
-  padding-left: 7px;
-  padding-bottom: 20px;
+  padding-bottom: 0.625rem;
   font-weight: 300;
+}
+.recensioni h2 {
+  text-align: center;
+  padding-bottom: 1.25rem;
+}
+.recensioni p {
+  text-align: left;
+  padding: 0.4375rem;
+}
+.recensioni div span {
+  text-align: left;
+  padding: 0.4375rem;
 }
 #nomi {
   font-weight: 500;
 }
+.alineamento-immagini {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.alineamento-immagini1 {
+  border: 1px solid #1d1b1f;
+  background-color: #ebebeb;
+  display: block;
+  margin-bottom: 16rem;
+}
+
+.alineamento-immagini2 {
+  border: 1px solid #1d1b1f;
+  background-color: #ebebeb;
+  display: block;
+  margin-bottom: 13rem;
+}
+.alineamento-immagini3 {
+  border: 1px solid #1d1b1f;
+  background-color: #ebebeb;
+  display: block;
+  margin-bottom: 15rem;
+}
+
 .secondoblocco {
-text-align: center;
+  text-align: center;
 }
 .secondoblocco > h4 {
   font-weight: 400;
 }
 
 .secondoblocco div {
-  border: 1px solid #1D1B1F;
+  border: 1px solid #1d1b1f;
   text-align: left;
   padding-left: 7px;
   padding-bottom: 20px;
-
 }
-.secondoblocco> div > span {
-  border: 1px solid #1D1B1F;
-  
+.secondoblocco > div > span {
+  border: 1px solid #1d1b1f;
 }
-.fine{
-  background-color: #F0F0F0;
+.fine {
+  background-color: #f0f0f0;
   margin: 50px -110px;
   padding: 150px;
 }
 footer {
-  background-color: #1D1B1F;
-  color: #D3D0D6;
-  margin:  -110px ;
+  background-color: #1d1b1f;
+  color: #d3d0d6;
+  margin: -110px;
   padding: 50px;
 }
 footer > div {
   text-align: right;
 }
-ul{
+ul {
   list-style-type: none;
 }
