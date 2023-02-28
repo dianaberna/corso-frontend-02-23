@@ -18,9 +18,11 @@ h1{
     font-size: 4.25rem;
     font-weight: 700;
 }
+
 h2{
     font-size: 3rem;
 }
+
 h3{
     font-size: 1.5rem;
 }
@@ -53,6 +55,7 @@ nav div{
     justify-content: space-between;
     gap: 2rem;
 }
+
 .row{
     justify-content: center;
     display: flex;
@@ -60,16 +63,19 @@ nav div{
     
     
 }
+
 .column{
     justify-content: center;
     display: flex;
     row-gap: 2rem;
     column-gap: 3rem;
 }
+
 .why{
     margin-top: 5.5rem ;
     margin-bottom: 7.6875rem;
 }
+
 .partner{
     background-color: #F0F0F0 ;
     padding: 0.5rem 1rem 2.5rem 1rem;
@@ -84,9 +90,12 @@ nav div{
     width: 25%;
     margin-top: 4rem;
 }
-.how{margin-top:5rem;
+
+.how{
+    margin-top:5rem;
     
 }
+
 .how div{
     border:0.065rem solid #a2a2a2;
     border-radius: 10px;
@@ -95,6 +104,7 @@ nav div{
     text-align: left;
     padding:0rem 1rem 1rem 1rem;
 }
+
 .how span{
     border:0.065rem solid #a2a2a2;
     padding:0.5rem;
@@ -102,11 +112,13 @@ nav div{
     border-radius: 5px;
     background-color: white;
 }
+
 .create{
     background-color: #F0F0F0;
     padding: 2rem;
     text-align: left;
 }
+
 footer{
     background-color: #1D1B1F;
     color: #FBFAFC;
@@ -170,19 +182,23 @@ ul {
     padding: 0 1rem;
     margin-top: 0;
 }
+
 .contact{
     padding-left: 57%;
 }
+
 .footnav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly
 }
+
 .copy{
     display: flex;
     justify-content: space-between;
     padding: 1rem 5rem 1rem 5rem;
 }
+
 .copy div{    
     display: flex;
     gap: 1.5rem;
