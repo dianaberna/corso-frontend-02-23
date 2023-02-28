@@ -1,36 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 
+html,body {
+    margin: 0;
+}
 
 /************************************/
 /************** Navbar **************/
 /************************************/
 
-/* nav {
+nav {
     margin: 0;
     height: 4.5rem;
+    display:flex;
+    justify-content: space-between;
 }
 nav a {
-    text-align: left;
+    padding-left: 2rem;
+    color:#1D1B1F ;
     text-decoration: none;
-    display: inline-block;
-}
-nav > ul {
-    list-style-type: none;
-    text-align: right;
     display:flex;
+    align-items: center;
+    
 }
-nav > ul li  a {
-    text-decoration: none;
-    padding: 4px;
-
+nav > a {
+    padding-left: 6rem;
 }
- */
-
+nav > div {
+    padding-right: 6rem;
+    display:flex;
+    align-items: center;
+}
+    
+/************************************/
+/************** Body **************/
+/************************************/    
+   
 body {
     font-family: 'Lexend', sans-serif;
   /*   padding: 0 6.25rem; */
     width: 100%;
-    margin: .5rem 0;
+    margin:  0;
     background-color: #FBFAFC;;
 }
 
@@ -52,7 +61,7 @@ h3 {
 header {
     /* border:1px solid #1D1B1F;  */
     text-align: center;
-    margin: 0 8rem;
+    /* margin: 0 8rem; */
     padding-bottom: 6.25rem; ;
 }
 header .header {
@@ -77,24 +86,25 @@ button {
 /************************************/
 main{
     /* border:1px solid #1D1B1F; */
-    margin: 0 .1rem;
+    /* margin: 0 .1rem; */
     text-align: center;
 }
 
 /*********** Sectione main **********/
 /************************************/
 .why_use {
-    /* border: 1px solid greenyellow; */
+    border: 1px solid greenyellow;
     width: 60%;
     margin: 0 auto;
     background-color: #FBFAFC;
     padding-bottom: 6.25rem; 
 }
-.why_use > div {
+.flex-conteiner > div {
     border: 1px solid rebeccapurple;
-    width: 46%;
+    /* width: 46%;
     margin: 0 auto;
-    padding-left: 20px;
+    padding-left: 20px; */
+    display: flex;
   }
 .why_use .sinistra {
     float: left;
@@ -112,36 +122,19 @@ main{
 /********** Sectione partner ********/
 /************************************/
 .partner {
-    /* border:1px solid #1aa078; */
+    border:1px solid #1aa078;
     margin: 0 auto;
-    align-items: center;
     width: 100%;
+    height:  22.125rem;
     background-color: #F0F0F0;;
 
 }
 .partner .img-partner {
     border: 1px solid red;
-    text-align: left;
-    width: 90%;
-    margin: 2rem auto;
-    padding: 1.25rem 0;
-    /* float: left; */
-}
- .img-partner .primo {
-    padding-right: 6rem;
-    float: left;
-}
-.img-partner .secondo {
-    float: left;
-}
-
-.img-partner .terzo {
-    padding-left: 6rem;
-    float: left;
-}
-.img-partner .quarto {
-    padding: 0 6rem;
-    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7rem
+    
 }
 
 /****** Sectione our-customers ******/
@@ -262,4 +255,5 @@ footer {
 }
 .footer-conteiner > div > span + a {
     margin-left: 45%;
+    
 }
