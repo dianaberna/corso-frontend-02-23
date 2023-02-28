@@ -1,0 +1,21 @@
+body{
+    font-family: 'Lexend', sans-serif;
+    padding: 0 6.25rem;
+}
+header{
+    text-align: center;
+    margin: 0 10rem;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 10rem;
+}
+button {
+    font-family:inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    background: #F0F0F0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+}
