@@ -37,7 +37,6 @@ nav > div {
    
 body {
     font-family: 'Lexend', sans-serif;
-  /*   padding: 0 6.25rem; */
     width: 100%;
     margin:  0;
     background-color: #FBFAFC;;
@@ -61,11 +60,9 @@ h3 {
 header {
     /* border:1px solid #1D1B1F;  */
     text-align: center;
-    /* margin: 0 8rem; */
     padding-bottom: 6.25rem; ;
 }
 header .header {
-    /* border: 1px solid red; */
     width: 70%;
     margin: 0 auto;
 }
@@ -85,36 +82,38 @@ button {
 /*************** Main ***************/
 /************************************/
 main{
-    /* border:1px solid #1D1B1F; */
-    /* margin: 0 .1rem; */
+
     text-align: center;
 }
 
 /*********** Sectione main **********/
 /************************************/
 .why_use {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     width: 60%;
     margin: 0 auto;
     background-color: #FBFAFC;
     padding-bottom: 6.25rem; 
 }
-.flex-conteiner > div {
-    border: 1px solid rebeccapurple;
-    /* width: 46%;
-    margin: 0 auto;
-    padding-left: 20px; */
+
+  .flex {
     display: flex;
   }
+  .flex col {
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .why_use .sinistra {
-    float: left;
+   padding: 2rem 4rem;
 }
 .why_use .destra {
-    float: left;
+    padding: 2rem 4rem;
 }
-.liberaspazio {
-    clear: both;
-}
+
 .why_use  p {
     text-align: left;
     padding: 1.25rem 1.25rem;
@@ -122,7 +121,7 @@ main{
 /********** Sectione partner ********/
 /************************************/
 .partner {
-    border:1px solid #1aa078;
+    /* border:1px solid #1aa078; */
     margin: 0 auto;
     width: 100%;
     height:  22.125rem;
@@ -130,7 +129,7 @@ main{
 
 }
 .partner .img-partner {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 7rem
@@ -140,7 +139,7 @@ main{
 /****** Sectione our-customers ******/
 /************************************/
 .our-customers {
-    border:1px solid #a048f7;
+    /* border:1px solid #a048f7; */
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -148,7 +147,7 @@ main{
 /******** Sectione how-does *********/
 /************************************/
 .how-does {
-    border:1px solid #48f77c;
+    /* border:1px solid #48f77c; */
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -169,7 +168,7 @@ main{
     text-align: left;
 }
 .how-does h3 {
-    margin: 1.25rem;
+    margin: 0.25rem 1.25rem 1.5rem 1.25rem;
 }
 .how-does p {
     margin:0rem 0rem 1.5rem 1.25rem;
@@ -178,10 +177,12 @@ main{
 /******* Sectione top-footer ********/
 /************************************/
 .top-footer {
-    border:1px solid #a048f7;
+    /* border:1px solid #a048f7; */
     margin: 0 auto;
     text-align: left;
     width: 100%;
+    height:  24.5rem;
+    background-color: #F0F0F0;
 }
 .top-footer div {
     margin: 2rem auto;
@@ -194,66 +195,69 @@ main{
 /************** Footer **************/
 /************************************/
 footer {
-    border:1px solid #f75448;
+    /* border:1px solid #f75448; */
     background-color: #1D1B1F;
     margin: 0 auto;
     text-align: left;
     width: 100%;
     height: 17.6875rem;
 }
+footer hr {
+    margin-bottom: 1rem;
+}
 .footer-conteiner{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 80%;
     margin: 0 auto;
-    height: 17.6875rem;
+    height: 18em;
 }
 .footer-conteiner > a {
     text-decoration: none;
     color: #F0F0F0;
-    /* margin-left: 10%; */
-}
-.footer-conteiner > a > img{
-    margin-top: 3%;
-    
-}
+ }
 .footer-conteiner h5 {
     margin: 0;
 } 
-.footer-conteiner > h5 > span {
-    margin-left:60% ;
-    color: #F0F0F0;
-    display: block;
-}
 .footer-conteiner ul {
     list-style-type: none;
+    margin: 0;
 }  
-/* .footer-conteiner  h5  ul  li {
-    margin-bottom: 2rem;
-} */
 .footer-conteiner li  a {
     text-decoration: none;
-    margin-left: 90%;
-    color: #F0F0F0;
+       color: #F0F0F0;
  }
  .footer-conteiner li{
-    background-color: yellowgreen;
+    margin-bottom: 1.3rem;
  }
-/*  .footer-conteiner hr {
-    width: 80%;
- } */
-.footer-conteiner > div {
-    padding-bottom: 1.5rem;
+
+.footer-conteiner .my-page {
+        padding-top: 1.5rem;
 }
-.footer-conteiner > div > span {
+.flex-footer span {
     color: #F0F0F0;
     margin-top: 0;
-  
+    display: block;
+    margin-bottom: 1.3rem;
 }
 .footer-conteiner > div > a {
     padding-left: 1rem;
-  
+    color: #F0F0F0;
+    text-decoration: none;
 }
 .footer-conteiner > div > span + a {
-    margin-left: 45%;
+    margin-left: 60%;
     
+}
+footer h5 > .list {
+   
+    width: 40rem;
+
+}
+.flex-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+footer .social span{
+    color: #F0F0F0;
+    border: 1 solid orange;
 }
