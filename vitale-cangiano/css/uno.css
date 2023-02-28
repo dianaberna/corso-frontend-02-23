@@ -1,21 +1,47 @@
 body{
     font-family: 'Lexend', sans-serif;
-    padding: 0 6.25rem;
+    padding: 0 5.25rem;
 }
 header{
     text-align: center;
-    margin: 0 10rem;
+    margin: 1rem;
 }
 h1{
     text-align: center;
     font-size: 3rem;
-    margin: 10rem;
+    margin: 0rem;
 }
 button {
     font-family:inherit;
     border: 1px solid #1D1B1F;
-    border-radius: 4px;
+    border-radius: 1px;
     background: #F0F0F0;
     padding: 1rem 1.25rem;
     box-shadow: 4px 4px 0px #1D1B1F;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    padding: 0 16px;
+}
+.mypage{
+    color: red;
+}
+.centro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.uno{
+    text-align: center;
+}
+.due{
+    text-align: center;
+}
+.tre{
+    text-align: center;
+}
+.quattro{
+    text-align: center;
 }
