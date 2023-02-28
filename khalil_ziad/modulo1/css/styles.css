@@ -90,8 +90,14 @@ header h1{
 .floatingCards > div{
     border: black solid;
     border-radius: 1.25rem;
-    width: 500px;
+    width: 31.25rem;
 
+}
+.floatingCards span{
+    border: black solid;
+    background-color: black;
+    color: #F0F0F0;
+    border-radius: .3125rem;
 }
 .preFotter{
     display: flex;
