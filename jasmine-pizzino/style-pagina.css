@@ -31,12 +31,11 @@ body{
     }
     
     main{
-        text-align: center;
+    
         padding: 100px;
     }
 
    
-
 
     h2{
         width: 32.5625rem;
@@ -44,8 +43,26 @@ body{
         margin-left:140px;
     }
 
-   
 
-   
+   .titolo1{
+    text-align: center;
+   }
     
+
+    .numero2{
+        justify-content: space-between;
+        flex-direction: right;
     
+    }
+
+    .numero3{
+        justify-content: space-between;
+    }
+
+    .numero4{
+        justify-content: space-between;
+    }
+
+    .partner{
+        text-align: center;
+    }
