@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap'); /*importare il font*/
+
+
+/* {
+border: 1px dashed black;     applica i bordi a tutti gli elementi */
+
+
+
+
+html,body {
+    margin: 0rem;
+    }
+
+body{
+    font-family: 'Lexend', sans-serif;
+    /*padding: 0 6.25rem; padding: gestisce lo spazio tra il contenuto e il bordo del box*/
+    }
+
+    nav { display: flex;
+        justify-content: space-between;
+      /*  margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;*/
+        margin: 3rem 3rem 0 3rem;
+
+    }
+    nav a {
+        margin-left: 3rem;
+        
+    }
+
+h1{
+    font-weight: 700; /*spessore*/
+    font-size: 4.25rem;
+  }
+
+header{
+    text-align: center;
+    margin: 0 10rem; /*margin: spazio tra un box e un altro, spazio tra gli elementi*/
+    padding: 3rem;
+      }
+
+button{
+    font-family: inherit;   /*va messo perchè i browser usano il promio font con i button, quindi cosi prende,eredita il font usato dai precedenti*/
+    border:1px solid #1d1b1f;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px;
+      }
+      
+
+#Mypage {
+    text-align: center;    
+}
+
+.primo{
+   /* background-color: red;*/
+    width: 15rem;
+      }
+
+.secondo{
+   /* background-color: blue;*/
+    width: 15rem;
+        }
+
+.terzo{
+   /* background-color: yellow;*/
+    width: 15rem;
+      }
+
+.quarto{
+   /* background-color: green;*/
+    width: 15rem;
+       }
+ 
+.flex-verticale{
+            display: flex;
+           /* margin: 10rem;*/
+           gap: 16px;
+}
+.flex-orizzontale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /*spaziatura tra gli elementi di un flex*/
+
+}
+
+
+
+
+
+.Partner{
+    text-align: center;
+    margin: 0rem;
+    padding: 0rem;
+    
+}
+
+#apple {
+    
+    width: 5%;
+}
+#google {
+    width: 5%;
+}
+#amazon {
+width: 5%;
+}
+.logo {
+display:flex;
+gap: 1rem;
+justify-content:space-around;
+
+
+
+}
+.Customers h2{
+    text-align: center;
+}
+.Customers-verticale {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 4rem;
+}
+.Customers-verticale div{
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.instructions{
+    text-align: center;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+.instructions div{
+    
+    align-items: center; /*centrato lo span*/
+    padding: 24px 16px; /* distanza tra il testo e il bordo*/
+    border: 3px solid black; 
+    border-radius: 8px; /*bordi smussati*/
+    width: 15rem;
+    margin: 1rem;
+    
+}
+.instructions span {
+    
+    border: 2px solid black;
+    border-radius: 8px;
+    
+
+}
+
+.final{
+    display: flex;
+    justify-content:first baseline
+    
+}
+
+
+
+
+footer{
+    color: #f0f0f0;
+    background-color: #1d1b1f;
+    
+}
+footer  li {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    list-style-type:none;
+    margin-right: 2rem;
+
+}
