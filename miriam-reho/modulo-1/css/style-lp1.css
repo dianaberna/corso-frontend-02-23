@@ -59,25 +59,33 @@ box shadow: x y blur(indicato con px per x e px per y oppure colore ecc)
 
 body{
     font-family: 'Lexend', sans-serif;
-    padding:1rem;
 }
 
 /* NAV */
 
+nav{
+    padding:1.625rem 6.25rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul{
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* HEADER */
 header{
     text-align: center;
-    padding: 6.25rem;
-}
-
-#sottotitolo{
-    color: #706D73;
-    font-weight: 500;
-    font-size: 1.5rem;
+    padding: 6.25rem 0;
 }
 
 h1{
@@ -85,6 +93,13 @@ h1{
     font-size: 4.25rem;
     text-align: center;
     margin-bottom: 1rem;
+    padding: 0 21rem;
+}
+
+#sottotitolo{
+    color: #706D73;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 button{
@@ -100,8 +115,7 @@ button{
 
 /* MAIN */
 #whyuse{
-    height: 59.5rem;
-    padding: 7.5rem 6.25rem
+    padding: 7.5rem 6.25rem;
 }
 
 h2{
@@ -109,18 +123,36 @@ h2{
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
-    
 }
 
-#whyuse p, #howwork p{
+.loghibox{
+    text-align: center;
+}
+
+#whyuse p{
     color: #706D73;
     font-weight: 400;
     font-size: 1rem;
+    display: block;
 }
 
+#whyusebox{
+    width: 22.5rem;
+    padding: 2rem 1rem;
+}
+
+#partner{
+    padding: 10rem 0;
+    background-color: #F0F0F0;
+}
+
+
+/* organizza le img dei partner */
+
+/* RECENSIONI */
 #recensioni p{
     color: #302E32;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -131,6 +163,14 @@ h3{
     text-align: center;
 }
 
+/* HOW WORK */
+#howwork p{
+    color: #706D73;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+}
+
 #howwork h3{
     text-align: left;
 }
@@ -139,16 +179,4 @@ h4{
     font-weight: 400;
     font-size: 1rem;
     text-align: center;
-}
-
-#whyuse div{
-    width: 22.5rem;
-    height: 260px;
-    padding: 2rem 1rem;
-}
-
-#partner{
-    height: 354px;
-    padding: 5rem 6.25rem;
-    background-color: #F0F0F0;
 }
