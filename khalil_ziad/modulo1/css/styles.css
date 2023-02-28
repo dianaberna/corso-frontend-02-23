@@ -34,7 +34,7 @@ header h1{
     text-align: center;
 }
 .s1 {
-    padding: 9.375rem;
+    padding: 11.875rem;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -79,7 +79,7 @@ header h1{
 
 }
 .customers .cards > div{
-    border: black solid;
+    border: .0625rem black solid;
     border-radius: 1.25rem;
     width: 15.625rem;
     text-align: center;
