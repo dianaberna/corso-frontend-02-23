@@ -115,14 +115,25 @@ button{
 
 /* MAIN */
 #whyuse{
-    padding: 7.5rem 6.25rem;
+    padding: 7.5rem 22.5rem;
 }
 
 h2{
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+#whyusebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#whyusebox > div{
+    width: 22.5rem;
+    padding: 2rem 1rem;
 }
 
 .loghibox{
@@ -133,19 +144,13 @@ h2{
     color: #706D73;
     font-weight: 400;
     font-size: 1rem;
-    display: block;
 }
 
-#whyusebox{
-    width: 22.5rem;
-    padding: 2rem 1rem;
-}
-
+/* PARTNER */
 #partner{
     padding: 10rem 0;
     background-color: #F0F0F0;
 }
-
 
 /* organizza le img dei partner */
 
