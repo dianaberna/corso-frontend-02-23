@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
+*{
+    border: 1px dashed red;
+}
+
+html, body{
+    margin: 0;
+}
+
 body{
     font-family: 'Lexend', sans-serif;
-    padding: 0 6.25rem;
+    /* padding: 0 6.25rem; */
 }
 
 h1{
@@ -12,7 +20,7 @@ h1{
 
 header{
     text-align: center;
-    margin: 0 10rem;
+    /* margin: 0 10rem; */
 }
 
 h1 ~ p{
@@ -22,10 +30,15 @@ h1 ~ p{
 }
 
 button{
-    font-family: inherit;
+    /* font-family: inherit; */
     border: 1px solid #1D1B1F;
     border-radius: 4px;
     background: #F0F0F0;
     padding: 1rem 1.25rem;
     box-shadow: 4px 4px 0px #1D1B1F;
+}
+
+.grigio{
+    background-color: gray;
+
 }
