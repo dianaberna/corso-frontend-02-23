@@ -139,11 +139,50 @@ main{
 /****** Sectione our-customers ******/
 /************************************/
 .our-customers {
-    /* border:1px solid #a048f7; */
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    height: 46.125rem;
 }
+.our-customers h2 {
+    padding-bottom: 1rem;
+}
+.flex-cont {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.aticol {
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 8px;
+    background-color: #EBEBEB;
+    width: 20.5rem;
+    
+}
+
+.one {
+    background-image: url(/pejman-honarpajuh/modulo-1/img/foto-1.png);
+    background-repeat: no-repeat;
+    height: 80%;
+}
+.two {
+    background-image: url(/pejman-honarpajuh/modulo-1/img/foto-2.png);
+    background-repeat: no-repeat;
+}
+.tree {
+    background-image: url(/pejman-honarpajuh/modulo-1/img/foto-3.png);
+    background-repeat: no-repeat;
+    height: 80%;
+}
+.aticol p {
+    padding-top: 10rem;
+}
+
+    
+
+
 /******** Sectione how-does *********/
 /************************************/
 .how-does {
@@ -190,6 +229,13 @@ main{
 }
 .top-footer h2 {
     width: 80%;
+}
+.btn-footer {
+    background-image:url(/pejman-honarpajuh/modulo-1/img/freccia.png);
+    background-repeat: no-repeat;
+    background-position:112% 53% ;
+    background-position: 91% 56%;
+    padding-right: 2rem;
 }
 /************************************/
 /************** Footer **************/
@@ -244,20 +290,22 @@ footer hr {
     color: #F0F0F0;
     text-decoration: none;
 }
-.footer-conteiner > div > span + a {
-    margin-left: 60%;
-    
-}
-footer h5 > .list {
-   
-    width: 40rem;
 
-}
 .flex-footer {
     display: flex;
     justify-content: flex-end;
 }
 footer .social span{
     color: #F0F0F0;
-    border: 1 solid orange;
+    
+}
+footer .social {
+    display: flex;
+    justify-content: space-between;
+}
+footer .img-social {
+    padding-left: 16rem;
+}
+.img-social  a {
+    padding-left: 1rem;
 }
