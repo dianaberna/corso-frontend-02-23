@@ -2,7 +2,8 @@
 
 body{
         font-family: "lexend",sans-serif;
-        padding: 0 6.25rem;
+        padding: 0;
+        margin: 0;
 }
         /* nav */
 nav{
@@ -56,3 +57,52 @@ button{
         margin-bottom: 1rem;
 }
        /* div */
+ .verticale{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 4rem auto;
+ }
+ .orizzontale{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+ }
+ .lunghezza{
+        width: 20rem;
+        height: 14rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+ }
+.lunghezza > img {
+        width: 3rem;
+}
+.lunghezza > p {
+        color: #706D73;
+        font-weight: 400;
+}
+h3 {
+     font-size: 24px;
+     font-weight: 600;   
+} 
+/* partner */
+#sfondo{
+        background-color: #F0F0F0;
+        width: 100%;
+        padding: 5rem 0;
+       
+}
+.centratura{
+        display: flex;
+        align-items: center;
+        height: 10rem;
+        width: 100%;
+        justify-content: center;
+        padding: 0rem 0rem;
+        gap: 8rem;
+}
