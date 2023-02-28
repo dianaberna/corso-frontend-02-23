@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Lexend:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Lexend', sans-serif;
+
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 3rem 0 3rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1D1B1F;
+}
+
+
+
+
+/* Header */
+header{
+    padding-left:40%;
+    padding-bottom: 5rem;
+}
+
+header > div{
+    max-width: 20rem;
+    text-align: center;
+
+}
+
+header > div > button {
+    text-align: inherit;
+    border: 1px solid #1D1B1F;
+    box-shadow: 4px 4px 0px #1D1B1F;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+
+
+/* Main */
+main {
+    text-align: center;
+}
+
+
+/* primoDiv */
+main > section > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 0 25rem;
+    gap: 2rem 5rem; */
+    justify-items: center;
+}
+
+main > section > div > div{
+    /* width: 250px;
+    height: 250px; */
+    width:35%;
+
+}
+
+main > section p{
+    text-align: left;
+    color: #706D73;
+}
+
+
+
+/* Partner */
+.section_partner{
+    background-color: #F0F0F0;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.partner{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+
+
+
