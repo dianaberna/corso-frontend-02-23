@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+/**{
+    border: 1px dashed red;
+}*/
+
+body{ 
+    font-family: 'Lexend', sans-serif;
+    padding: 0 6.25rem;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    margin: 5.25rem 10rem;
+}
+
+h1{
+    font-size: 4.25rem;
+    font-weight: 700;
+}
+
+h1 ~ p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #706D73;
+}
+
+button{
+    font-family: inherit;
+    padding: 1rem 1.25rem;
+    margin:1rem 0;
+    background: #F0F0F0;
+    border-radius: 4px;
+    border: 1px solid #1D1B1F;
+box-shadow:4px 4px 0px #1D1B1F;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    }
+
+nav div{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.row{
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    
+    
+}
+.column{
+    justify-content: center;
+    display: flex;
+    row-gap: 2rem;
+    column-gap: 3rem;
+}
+.why{
+    margin-top: 5.5rem ;
+    margin-bottom: 7.6875rem;
+}
+.partner{
+    background-color: #F0F0F0 ;
+    padding-top:5rem;
+}
+
+.column div{
+    width: 25%;
+}
+
+.row div{
+    width: 25%;
+}
+.how{
+    
+}
+.how div{
+    border:0.065rem solid #a2a2a2;
+    border-radius: 10px;
+    width: 45%;
+    margin: 4rem auto;
+    text-align: left;
+    padding:0rem 1rem 1rem 1rem;
+}
+.how span{
+    border:0.065rem solid #a2a2a2;
+    padding:0.5rem;
+    margin-left: -2rem;
+    border-radius: 5px;
+    background-color: white;
+}
+.create{
+    background-color: #F0F0F0;
+    padding: 2rem;
+    text-align: left;
+}
+footer{
+    background-color: #1D1B1F;
+    color: #FBFAFC;
+    
+    
+}
+
+.footerow{
+    display:flex;
+    justify-content:flex-end;
+    padding-right: 1rem;
+}
+.mypage{
+    display: flex;
+    padding: 2rem;
+}
