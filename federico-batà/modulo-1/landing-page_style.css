@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+    margin: 0 10rem ;
+
+}
+h1 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+h1 ~ p {
+    color: gray;
+    font-weight:500;
+    
+
+
+}
