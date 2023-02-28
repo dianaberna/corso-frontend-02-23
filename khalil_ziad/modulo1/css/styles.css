@@ -34,7 +34,7 @@ header h1{
     text-align: center;
 }
 .s1 {
-    padding: 11.875rem;
+    padding: 9.375rem;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -76,6 +76,7 @@ header h1{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 .customers .cards > div{
