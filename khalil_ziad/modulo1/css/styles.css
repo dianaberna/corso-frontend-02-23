@@ -1,10 +1,16 @@
 body{
-    font-family:monospace
+    font-family:monospace;
+    border : 0;
+    padding: 0;
 }
 nav {
     display: flex;
     justify-content: space-between;
     
+}
+nav a{
+    text-decoration: none;
+    color: #1D1B1F;
 }
 nav ul{
     display: flex;
