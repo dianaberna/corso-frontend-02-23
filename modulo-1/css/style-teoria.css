@@ -6,6 +6,11 @@ selettore {
 }
 
 */
+
+*{
+    border: 1px dashed red;
+}
+
 html{
     font-size: 20px;
 }
