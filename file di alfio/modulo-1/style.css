@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
-body{
+body {
     font-family: 'Lexend', sans-serif;
-    padding: 0 6.25rem;
+    margin: 0;
+
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 4.25rem;
 }
 
-header{
+header {
     text-align: center;
-    margin: 0 10rem;
+    margin: 0 17rem;
+    padding: 0 4rem;
+
+
 }
 
-h1 ~ p{
+h1~p {
     color: #706D73;
     font-weight: 500;
     font-size: 1.25rem;
 }
 
-button{
+button {
     font-family: inherit;
     border: 1px solid #1D1B1F;
     border-radius: 4px;
@@ -29,4 +33,111 @@ button{
     padding: 1rem 1.25rem;
     box-shadow: 4px 4px 0px #1D1B1F;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1B1F;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    padding: 1rem 6.25rem;
+}
+
+nav ul {
+    display: inline;
+
+}
+
+nav li {
+    list-style-type: none;
+    float: right;
+    text-decoration: none;
+    margin-left: 2%;
+
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 12rem;
+}
+
+.primo {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+
+}
+
+
+
+.primoFlex>div {
+    padding: 1.5rem 0rem 1.5rem 20rem;
+
+}
+
+.secondoFlex>div {
+    padding: 1.5rem 20rem 1.5rem 0rem;
+}
+
+.Partner {
+  
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.primoFlex>div div {
+    text-align: center;
+}
+
+.secondoFlex>div div {
+    text-align: center;
+}
+
+.contenitore-card{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solid black;
+    background-color: #EBEBEB;
+    border-radius: 8px 8px 8px 8px;
+    width: 22rem;
+
+}
+
+
+
+.img1{
+    border-radius: 8px 8px 0px 0px;
+    width: 22rem;
+    height: 10rem;
+    background-image: url(img/Video.jpg);
+    object-fit: contain;
+}
+.img2{
+    border-radius: 8px 8px 0px 0px;
+
+    width: 22rem;
+    height: 10rem;
+    background-image: url(img/Video\ \(1\).jpg);
+    object-fit: contain;
+}
+.img3{
+    border-radius: 8px 8px 0px 0px;
+
+    width: 22rem;
+    height: 10rem;
+    background-image: url(img/Video\ \(2\).jpg);
+    object-fit: contain;
+}
+.card p ,.card h5 {
+    padding:0rem 1rem;
 }
