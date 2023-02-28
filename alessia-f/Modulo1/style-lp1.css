@@ -2,21 +2,21 @@
 
 body{
     font-family: "Lexend",sans-serif;
-    padding: 0 6.25rem;
-}
+   }
 
 a {
     color: black;
 }
 
-.mypage{
+.logomypage{
     font-size: 1.25rem;
 }
 
 nav{ 
-    padding-top: 1.10rem; ;
+    padding-top: 1.10rem;
+    padding: 0 6.25rem;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 nav div{
@@ -60,21 +60,32 @@ h2 {
     font-size: 2.25rem;
 }
 
-.titolowhy {
+.titlesection {
     text-align: center;
     padding-bottom: 3rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    gap: 10rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 10rem;
+    gap: 15rem;
+
 }
 
 .mini_title_whyuse {
     text-align: center;
+}
 
+.partner{
+    background-color: #F0F0F0;
+}
+
+.partnerlogo{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 5rem 5rem 5rem; 
 }
