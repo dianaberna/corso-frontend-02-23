@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav div {
-    display: flex;
-    justify-content: flex-end;
-
-}
-
+/*link al font google*/
 body {
     font-family: 'lexend', sans-serif;
     padding: 0 6.25rem;
 }
 
+/*
+proprietà css del body vengono date a tutti gli altri elementi.
+Verranno poi sovrascritte da altre proprietà per l'effetto cascata
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
     font-weight: 700;
     font-size: 4.25rem;
+    padding: 5rem 5rem 0 5rem;
 }
 
 header {
@@ -26,7 +27,7 @@ header {
     margin: 0 10rem;
 }
 
-h1 ~ p {
+h1~p {
     color: #706d73;
     font-weight: 500;
     font-size: 1.25rem;
@@ -39,4 +40,24 @@ button {
     background: #F0F0F0;
     padding: 1rem 1.25rem;
     box-shadow: 4px 4px 0px #1D1B1F;
+}
+
+/*fine css dell'header*/
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sinistra {
+    display: flex;
+}
+
+.sinistra > div {
+    padding: 3.5rem;
+   
+}
+
+.sinistra div > img, h3 {
+    text-align: center;
 }
