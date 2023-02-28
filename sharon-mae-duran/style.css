@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
-*{
+* {
     border: 1px dashed red;
 }
 
-html, body{
+html, body {
     margin: 0;
 }
 
-body{
+body {
     font-family: 'Lexend', sans-serif;
     /* padding: 0 6.25rem; */
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 4.25rem;
 }
 
-header{
+header {
     text-align: center;
     /* margin: 0 10rem; */
 }
 
-h1 ~ p{
+h1 ~ p {
     color: #706D73;
     font-weight: 500;
     font-size: 1.25rem;
 }
 
-button{
+button {
     /* font-family: inherit; */
     border: 1px solid #1D1B1F;
     border-radius: 4px;
@@ -38,7 +38,7 @@ button{
     box-shadow: 4px 4px 0px #1D1B1F;
 }
 
-.grigio{
+.grigio {
     background-color: gray;
 
 }
