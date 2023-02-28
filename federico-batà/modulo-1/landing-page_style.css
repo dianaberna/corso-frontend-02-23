@@ -1,16 +1,72 @@
-header {
-    text-align: center;
-    margin: 0 10rem ;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
+body{
+    font-family: 'Lexend', sans-serif;
+    padding: 0 6.25rem;
+    
 }
-h1 {
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div { 
+    display:flex;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+
+
+h1{
     font-weight: 700;
+    font-size: 4.25rem;
+}
+
+header{
+    text-align: center;
+    margin: 0 10rem;
+}
+
+h1 ~ p{
+    color: #706D73;
+    font-weight: 500;
     font-size: 1.25rem;
 }
-h1 ~ p {
-    color: gray;
-    font-weight:500;
-    
+
+button{
+    font-family: inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    background: #F0F0F0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+}
+section h2 {
+    text-align: center;
+    font-size: 3.25rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+.flex { 
+    display: flex;
+    gap: 4rem;
+    padding-left: 15rem;
+    padding-right: 4rem;
+}
 
 
+.flex > div {
+    width: 45%;
+   
+}
+
+#partner {
+    background-color: #f0f0f0;
+}
+
+.card1 {
+    border: 10px, solid, black;
 }
