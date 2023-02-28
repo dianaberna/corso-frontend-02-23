@@ -40,6 +40,7 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     gap: 5.625rem;
+    justify-content: space-around;
 }
 .carte>div{
     max-width: 15.625rem;
