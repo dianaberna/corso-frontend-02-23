@@ -4,7 +4,26 @@ body{
         font-family: "lexend",sans-serif;
         padding: 0 6.25rem;
 }
-
+        /* nav */
+nav{
+        padding:1.625rem 6.25rem;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 3rem;
+}
+    
+a{
+        text-decoration: none;
+        color: inherit;
+}
+        /* header */
 h1{
         font-weight: 700;
         font-size: 4.25rem;
@@ -28,3 +47,12 @@ button{
         padding: 1rem 1.25rem;
         box-shadow: 4px 4px 0px #1D1B1F;
 }
+        /* main */
+         /* section */
+ h2{
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+}
+       /* div */
