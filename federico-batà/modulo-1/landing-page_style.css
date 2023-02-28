@@ -43,7 +43,6 @@ button{
     box-shadow: 4px 4px 0px #1D1B1F;
 }
 section h2 {
-    text-align: center;
     font-size: 3.25rem;
 }
 
@@ -65,8 +64,30 @@ section h2 {
 
 #partner {
     background-color: #f0f0f0;
+    text-align: center;
 }
 
 .card1 {
     border: 10px, solid, black;
+}
+
+
+
+
+
+
+h4 {
+    text-align: center;
+}
+
+
+.website div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%
+}
+
+#landingpage {
+    background-color: #f0f0f0;
 }
