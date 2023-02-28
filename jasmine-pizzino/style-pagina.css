@@ -18,7 +18,7 @@ body{
     h1 ~ p{
         color:#706D73;
         font-weight: 500;
-        font-size: 1.25rem
+        font-size: 1.25rem;
     }
     
     button{
@@ -32,4 +32,16 @@ body{
     
     main{
         text-align: center;
-        padding
+        padding: 100px;
+    }
+
+
+    h2{
+        width: 32.5625rem;
+        height: 3.625rem;
+        margin-left:140px;
+    }
+
+    .numero1{
+        float: left;
+    }
