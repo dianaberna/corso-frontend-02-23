@@ -11,12 +11,12 @@ nav {
   flex-direction: row;
   margin: 3rem 3rem 0 3rem;
 }
-ul li {
+nav ul li {
   display: inline-flex;
   justify-content: space-between;
   flex-direction: row;
 }
-ul {
+nav ul {
   display: flex;
   gap: 7rem;
 }
@@ -91,9 +91,19 @@ section > h2 {
   width: 7rem;
 }
 
-.recensioni div {
+.recensioni > div > div > div {
   padding-bottom: 0.625rem;
   font-weight: 300;
+  background-color: #ebebeb;
+  border: 1px solid #1d1b1f;
+  border-radius: 0.25rem;
+}
+.freccie {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 1rem;
 }
 .recensioni h2 {
   text-align: center;
@@ -101,38 +111,23 @@ section > h2 {
 }
 .recensioni p {
   text-align: left;
+
   padding: 0.4375rem;
 }
 .recensioni div span {
   text-align: left;
   padding: 0.4375rem;
 }
-#nomi {
+.nomi {
   font-weight: 500;
 }
 .alineamento-immagini {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
   gap: 2rem;
-}
-.alineamento-immagini1 {
-  border: 1px solid #1d1b1f;
-  background-color: #ebebeb;
-  display: block;
-  margin-bottom: 16rem;
-}
-
-.alineamento-immagini2 {
-  border: 1px solid #1d1b1f;
-  background-color: #ebebeb;
-  display: block;
-  margin-bottom: 13rem;
-}
-.alineamento-immagini3 {
-  border: 1px solid #1d1b1f;
-  background-color: #ebebeb;
-  display: block;
-  margin-bottom: 15rem;
 }
 
 .secondoblocco {
@@ -144,16 +139,41 @@ section > h2 {
 
 .secondoblocco div {
   border: 1px solid #1d1b1f;
+  border-radius: 4px;
   text-align: left;
-  padding-left: 7px;
+  align-items: baseline;
+  width: 40.625rem;
+  height: 9rem;
+  margin-left: 15.625rem;
+  padding-left: 8px;
   padding-bottom: 20px;
 }
 .secondoblocco > div > span {
   border: 1px solid #1d1b1f;
 }
+.descrizione1 {
+  display: flex;
+  flex-direction: column;
+
+  isolation: isolate;
+  margin-bottom: 1.25rem;
+}
+.descrizione2 {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  margin-bottom: 1.25rem;
+}
+.descrizione3 {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  margin-bottom: 1.25rem;
+}
 .fine {
   background-color: #f0f0f0;
   margin: 50px -110px;
+
   padding: 150px;
 }
 footer {
@@ -164,7 +184,16 @@ footer {
 }
 footer > div {
   text-align: right;
+  line-height: 2rem;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2rem;
 }
-ul {
+footer ul {
   list-style-type: none;
+}
+footer h5 {
+  gap: 0.375rem;
 }
