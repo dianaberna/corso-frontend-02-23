@@ -1,79 +1,70 @@
-body{
-    font-family: 'lexend', sans-serif;
-    padding: 0 6.25rem;
-    }
-    
-    h1{
-        font-weight: 700;
-        font-size: 4.25rem;
-    }
-    
-    header{
-    text-align: center;
-    margin: 0 10rem;
-    }
-    
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 2rem 6.25rem;
-    
-    }
-    
+body {
+  font-family: "lexend", sans-serif;
+  padding: 0 6.25rem;
+}
 
-    nav ul{
-        list-style-type: none;
-        display: flex;
-        gap: 3rem;
-    
-    }
-    
-    nav a{
-        text-decoration: none;
-        color: #1D1B1F
-        
+h1 {
+  font-weight: 700;
+  font-size: 4.25rem;
+}
 
-    }
+header {
+  text-align: center;
+  margin: 0 10rem;
+}
 
-    h1 ~ p{
-        color:#706D73;
-        font-weight: 500;
-        font-size: 1.25rem;
-    }
-    
-    button{
-        font-family: inherit;
-        border: 1px solid #1D1B1F;
-        border-radius: 4px;
-        background-color: #F0F0F0;
-        padding: 16px 20px;
-        box-shadow: 4px 4px 0px #1D1B1F;
-    }
-    
-    main{
-    
-        padding: 100px;
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6.25rem;
+}
 
-   .immagine{
-    text-align: center;
-    padding-top: 2rem;
-   }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+}
 
-    h2{
-        /* width: 32.5625rem;
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 ~ p {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+button {
+  font-family: inherit;
+  border: 1px solid #1d1b1f;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  padding: 16px 20px;
+  box-shadow: 4px 4px 0px #1d1b1f;
+}
+
+main {
+  padding: 100px;
+}
+
+.immagine {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+h2 {
+  /* width: 32.5625rem;
         height: 3.625rem;
         margin-left:140px; */
-    }
+}
 
+.titolo1 {
+  text-align: center;
+}
 
-   .titolo1{
-    text-align: center;
-   }
-    
-
-    /* .numero2{
+/* .numero2{
         justify-content: space-between;
         flex-direction: right;
     
@@ -87,134 +78,123 @@ body{
         justify-content: space-between;
     }
     */
-    .partner{
-        text-align: center;
-        margin-top: 7rem;
-        background-color: #F0F0F0;
-        padding-top: 3rem;
-        padding-bottom: 4rem;
-    } 
+.partner {
+  text-align: center;
+  margin-top: 7rem;
+  background-color: #f0f0f0;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
 
-    .contenitore{
-        /* display: flex; */
-        /* flex-direction: column; */
-    }
+.contenitore {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
 
+.contenitore2 {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
 
-    .contenitore2{
-        display: flex;
-        gap: 3rem;
-        justify-content: center;
-    
+.contenitore3 {
+  text-align: center;
+  margin-top: 7rem;
+}
 
-    }
+.contenitore4 {
+  display: flex;
+  gap: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: flex-start;
+}
 
-    .contenitore3{
-        text-align: center;
-        margin-top: 7rem;
-    }
-
-    .contenitore4{
-        display: flex;
-        gap:2rem;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        align-items: flex-start;
-    }
-
-    /* .nome1{
+/* .nome1{
         font-style: ;
 
     } */
 
-    .contenitore5{
-        text-align: center;
-        margin-top: 15%;
-    }
-
-    .sottotitolo{
-        text-align: center;
-       
-    }
-
-    .arrotondato{
-        padding-top: 4%;
-       
-    }
-
-
-    .primasezione{
-        border-radius: 8px 8px 8px 8px;
-        border: 1px solid black;
-        background: #EBEBEB;
-        width: 22.5rem;
-    
-        
-    }
-.primasezione img{
-    width: 100%;
-}
-.primasezione>div{
-    padding:1rem;
-
+.contenitore5 {
+  text-align: center;
+  margin-top: 15%;
 }
 
-    .penultimo{
-        margin-top: 13%;
-        background-color: #F0F0F0;
-        text-align: left;
-        padding-bottom: 10%;
-        padding-left: 10%;
-    }
+.sottotitolo {
+  text-align: center;
+}
 
-    .explore{
-        font-family: inherit;
-        border: 1px solid #1D1B1F;
-        border-radius: 4px;
-        background-color: #F0F0F0;
-        padding: 16px 20px;
-        box-shadow: 4px 4px 0px #1D1B1F;
-    }
+.arrotondato {
+  padding-top: 4%;
+}
 
-    .scrittatitolo{
-        padding-top: 3%;
-    }
+.primasezione {
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid black;
+  background: #ebebeb;
+  width: 22.5rem;
+}
+.primasezione img {
+  width: 100%;
+}
+.primasezione > div {
+  padding: 1rem;
+}
 
-    .parte1{
-        border: 1px solid black;
-        border-radius: 8px;
-        padding: 15px;
-        
-    }
-
-    .parte2{
-        border: 1px solid black;
-        margin-top: 40px;
-        border-radius: 8px;
-        padding: 15px;
-    }
-
-    .parte3{
-        border: 1px solid black;
-        margin-top: 40px;
-        border-radius: 8px;
-        padding: 15px;
-    }
-  
-
-    .sfondologo{
-        padding-left: 2rem;
-    }
+.penultimo {
+  margin-top: 13%;
+  background-color: #f0f0f0;
+  text-align: left;
+  padding-bottom: 10%;
+  padding-left: 10%;
+}
 
 
-    .background{
-       background-color: #F0F0F0;
-       display: flex;
-       justify-content: space-between;
-       padding: 0 3rem 5rem 3rem;
-    }
-  
+.scrittatitolo {
+  padding-top: 3%;
+}
+
+.explore {
+  font-family: inherit;
+  border: 1px solid #1d1b1f;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  padding: 16px 20px;
+  box-shadow: 4px 4px 0px #1d1b1f;
+  display: flex;
+  gap: 0.5rem;
+}
 
 
-    
+
+.parte1 {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.parte2 {
+  border: 1px solid black;
+  margin-top: 40px;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.parte3 {
+  border: 1px solid black;
+  margin-top: 40px;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.sfondologo {
+  padding-left: 2rem;
+}
+
+.background {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+}
