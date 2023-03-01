@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+body{
+  font-family: 'Lexend', sans-serif;
+  
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -39,6 +45,7 @@ header{
    border-radius: 8px;
    padding: 1rem 1rem 1rem 1rem;
    font-weight: bold;
+   font-family: inherit;
 }
 .Testata > span{
     color: gray;
@@ -67,10 +74,40 @@ header{
 .flex-horizontal  h3{
   margin:0px;
 }
-
+.partner{
+  background-color: #F0F0F0;
+  margin-bottom: 8rem;
+}
 section > div >h2 {
   margin-top: 8rem;;
   text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+
+.flex-vertical-partner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
+
+}
+.flex-vertical-partner > img{
+  width: 7%;
+  height: auto;
+}
+div > h2{ 
+  text-align: center;
+    margin-top: 0;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
 }
 
 
