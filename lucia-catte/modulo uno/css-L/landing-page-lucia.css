@@ -55,15 +55,23 @@ button{
 
 .Partner{
     text-align: center;
-    padding: 80px 100px;
-    gap: 40px;
-    border: dottedred;
-    background-color: bisque;
+    padding: 30px 30px 50px 30px;
+    border: dotted red;
+    background-color: rgb(198, 193, 193);
+}
+
+span > h2{
+    font-size: 48px;
 }
 
 .elenco2{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+    padding: 24px 16px;
+
 
 }
 
@@ -73,18 +81,35 @@ button{
 
 .secondagrid{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
 }
 
 .secondagrid > div{
     border: solid black 1px;
-    align-content: center;
-    margin: 2px 2px 2px 2px;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(198, 193, 193);
+    
 }
+
+#card1{
+    padding: 0 0 1rem 1rem;
+}
+
+#card2{
+    padding: 0 0 1rem 1rem;
+}
+
+#card3{
+    padding: 0 0 1rem 1rem;
+}
+
+
+
+
 #Our{
     text-align: center;
 }
@@ -100,12 +125,19 @@ button{
 
 .terzoelenco > div {
     border: solid black 1px;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start;*/
     margin: 40px 40px 40px 40px;
     padding: 10px 10px 10px 10px;
     border-radius: 9px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
 }
 
 .terzoelenco > div > span{
@@ -140,18 +172,16 @@ footer{
     margin: 1rem 1rem 1rem 1rem;
     padding: 10px 10px 10px 10px;
     border: dotted red;
+    
 }
+
 
 .liste{
     display: flex;
     border: dotted red;
     list-style: none;
-   
-    
-
-    
-
 }
+
 /*.contatti {
     display: flex;
     justify-content: space-between;
@@ -166,10 +196,12 @@ footer{
 }
 .contatti{
     border: dotted red;
+    padding: 10px 10px 10px 10px;
     
 }
 .mypage{
     border: dotted red;
+    padding: 10px 10px 10px 10px;
 }
 /*.contatti{
     list-style-type: none;
@@ -190,12 +222,15 @@ footer{
 
 #contact{
     white-space: break-spaces;
+   
+
 }
 
 #menu{
     white-space: break-spaces;
 }
 .lastline{
+    border: dotted red;
     font-size: x-small;
     display: flex;  
     justify-content: space-between;
@@ -203,9 +238,21 @@ footer{
 }
 
 #loghisocial{
-    
-    
-    display: inline-flex;
-    justify-content: space-between;
-    
+    border: dotted red;
 }
+#fb{
+    padding-right: 24px;
+}
+
+#tt{
+    padding-right: 24px;
+}
+
+#in{
+    padding-right: 24px;
+}
+
+#ld{
+    padding-right: 24px;
+}
+
