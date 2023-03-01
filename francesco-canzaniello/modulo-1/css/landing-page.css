@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 6.25rem;
-    position: fixed;
+    position: sticky;
     top: 0px;
     width: 90%;
     background-color: white;
