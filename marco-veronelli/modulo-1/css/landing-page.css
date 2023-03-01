@@ -5,14 +5,12 @@
 
 body{ 
     font-family: 'Lexend', sans-serif;
-    /*padding: 0 6.25rem;*/
     text-align: center;
 }
 
 header{
     text-align: center;
     padding: 5.25rem 25.25rem;
-    /*margin: 5.25rem 10rem;*/
 }
 
 h1{
@@ -129,7 +127,7 @@ footer{
 
 .footerow{
     text-align: left;
-    padding-right: 5rem;
+
 }
 
 ul {
@@ -138,7 +136,6 @@ ul {
     
 .mypage{
     display: flex;
-    padding: 2rem;
 }
 
 .partner div{
@@ -190,11 +187,18 @@ ul {
     justify-content: space-evenly
 }
 
-.copy{
-    padding: 1rem 5rem 1rem 5rem;
-}
-
 .copy div{    
     display: flex;
     gap: 1.5rem;
+}
+footer > div{
+    padding: 3rem 7rem 2.8125rem 7rem;
+}
+
+footer a:visited {
+    color: white;
+}
+
+nav a:visited {
+    color: black;
 }
