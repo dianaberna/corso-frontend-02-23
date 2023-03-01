@@ -189,43 +189,41 @@ span > h2{
 }
 
 
-#Our{
+#how h2{
     text-align: center;
 }
 
-.quartasection{
-    border: dotted red;
-    text-align: center;
-}
-
-.quartasection h2{
-    font-size: 48px;
-}
-
-.quartasection > div{
+#how > div {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
     align-items: center;
-    justify-content: center;
-    gap: 48px;    
 }
 
-.quartasection > div div{
-    border: black 1px;
-    border-radius: 8px;
-    width: 640px;
+#how > div > div{
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 40rem;
     padding: 1rem;
     position: relative;
 }
 
-.quartasection span{
-    border: black;
-    border-radius: 8px;
-    padding: 10px;
+#how h3{
+    text-align: left;
+}
+
+#how > p{
+    text-align: center;
+}
+
+#how span{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 1rem;
     background-color: white;
     position: absolute;
     top: -1.5rem;
-    left: -1rem;
+    left: -1.5rem;
 }
 
 /*.terzoelenco {
