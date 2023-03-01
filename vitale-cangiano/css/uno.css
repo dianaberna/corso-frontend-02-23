@@ -6,11 +6,19 @@ header{
     text-align: center;
     margin: 1rem;
 }
+header h1{
+    padding: 0 3rem;
+}
+main h2{
+    text-align: center;
+    margin: 3rem;
+}
 h1{
     text-align: center;
     font-size: 3rem;
     margin: 0rem;
 }
+
 button {
     font-family:inherit;
     border: 1px solid #1D1B1F;
@@ -32,6 +40,8 @@ nav a{
 .centro{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 3rem;
+    gap: 8rem;
 }
 .uno{
     text-align: center;
@@ -44,4 +54,29 @@ nav a{
 }
 .quattro{
     text-align: center;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+   
+}
+
+#partner{
+    
+    padding-top: 2rem;
+    background-color: rgba(253, 249, 249, 0.689);
+}
+#partner h3{
+    font-size: 2rem;
+    text-align: center;
+}
+.love{
+    display: flex;
+}
+.love div{
+    width: 25%;
+    padding: 0 2rem;
+    justify-content: center;
 }
