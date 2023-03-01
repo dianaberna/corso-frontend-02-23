@@ -49,7 +49,7 @@ body{
    }
     
 
-    .numero2{
+    /* .numero2{
         justify-content: space-between;
         flex-direction: right;
     
@@ -62,7 +62,124 @@ body{
     .numero4{
         justify-content: space-between;
     }
-
+    */
     .partner{
         text-align: center;
+        margin-top: 20%;
+        background-color: #F0F0F0;
+        padding-top: 4%;
+        padding-bottom: 15%;
+    } 
+
+    .contenitore{
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+
+    .contenitore2{
+        display: flex;
+        gap: 3rem;
+        padding-left: 15%;
+    
+
+    }
+
+    .contenitore3{
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .contenitore4{
+        display: flex;
+        gap:2rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    /* .nome1{
+        font-style: ;
+
+    } */
+
+    .contenitore5{
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .sottotitolo{
+        text-align: center;
+        margin-top: -4%;
+        margin-left: 4%;
+    }
+
+    .arrotondato{
+        padding-left: 14%;
+        padding-top: 4%;
+       
+    }
+
+
+    .primasezione{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px;
+        gap: 16px;
+        width: 328px;
+        height: 212px;
+        background: #EBEBEB;
+        border-radius: 8px 8px 8px 8px;
+        border: 1px solid black;
+    }
+
+
+    .secondasezione{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px;
+        gap: 16px;
+        width: 328px;
+        height: 212px;
+        background: #EBEBEB;
+        border-radius: 8px 8px 8px 8px;
+        border: 1px solid black;
+    }
+
+
+    .terzasezione{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px;
+        gap: 16px;
+        width: 328px;
+        height: 212px;
+        background: #EBEBEB;
+        border-radius: 8px 8px 8px 8px;
+        border: 1px solid black;
+    }
+
+
+    .penultimo{
+        margin-top: 13%;
+        background-color: #F0F0F0;
+        text-align: left;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+
+    .explore{
+        font-family: inherit;
+        border: 1px solid #1D1B1F;
+        border-radius: 4px;
+        background-color: #F0F0F0;
+        padding: 16px 20px;
+        box-shadow: 4px 4px 0px #1D1B1F;
+    }
+
+    .scrittatitolo{
+        margin-right: 10%;
     }
