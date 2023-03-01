@@ -13,8 +13,29 @@ body{
     margin: 0 10rem;
     }
     
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 6.25rem;
     
+    }
     
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        gap: 3rem;
+    
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #1D1B1F
+        
+
+    }
+
     h1 ~ p{
         color:#706D73;
         font-weight: 500;
@@ -68,10 +89,10 @@ body{
     */
     .partner{
         text-align: center;
-        margin-top: 20%;
+        margin-top: 7rem;
         background-color: #F0F0F0;
-        padding-top: 4%;
-        padding-bottom: 15%;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
     } 
 
     .contenitore{
@@ -90,7 +111,7 @@ body{
 
     .contenitore3{
         text-align: center;
-        margin-top: 10%;
+        margin-top: 7rem;
     }
 
     .contenitore4{
@@ -189,9 +210,11 @@ body{
 
     .background{
        background-color: #F0F0F0;
-     
+       display: flex;
+       justify-content: space-between;
+       padding: 0 3rem 5rem 3rem;
     }
-
+  
 
 
     
