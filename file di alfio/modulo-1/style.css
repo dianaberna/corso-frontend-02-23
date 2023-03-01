@@ -11,7 +11,12 @@ h1 {
     font-weight: 700;
     font-size: 4.25rem;
 }
-
+header>svg{
+    position: absolute;
+    top: 0;
+    left: 37%;
+    z-index: -1;
+}
 header {
     text-align: center;
     margin: 0 17rem;
@@ -35,7 +40,7 @@ button {
     box-shadow: 4px 4px 0px #1D1B1F;
     cursor: pointer;
 }
-
+/* inizio nav */
 nav a {
     text-decoration: none;
     color: #1D1B1F;
@@ -65,9 +70,12 @@ h2 {
     text-align: center;
     font-weight: 700;
     font-size: 3rem;
-    margin-top: 12rem;
+   
 }
-
+main>h2{
+    padding-top: 15rem;
+}
+/*prima section*/
 .primo {
     display: flex;
     justify-content: center;
@@ -95,9 +103,19 @@ h2 {
 }
 
 .Partner {
-
+    background-color: #F0F0F0;
     margin-top: 5rem;
     text-align: center;
+    padding-top: 5rem;
+}
+
+.iconePartner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem 7rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .primoFlex>div div {
@@ -161,8 +179,8 @@ h2 {
     padding: 0rem 1rem;
 }
 
-/*------------------------------------- */
-.container2 h4 {
+/*----------------how section--------------------- */
+.container2>p {
     text-align: center;
     size: 1rem;
 }
@@ -200,12 +218,16 @@ h2 {
 .flex div>p {
     color: #706D73;
 }
-
+/*--------------------------------*/ 
 .container3 {
     background-color: #F0F0F0;
-    padding: 5rem 36rem 5rem 8rem;
-
-
+    padding: 5rem 6.25rem ;
+}
+.container3>button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
 }
 
 .container3>h2 {
