@@ -75,28 +75,32 @@ span > h2{
 
 }
 
-.terzasection{
+.cardsection{
     align-content: center;
 }
 
-.secondagrid{
+
+
+.genitorecards{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
     align-content: center;
     padding: 20px 20px 20px 20px;
     text-align: left;
 }
 
-.secondagrid > div{
+.cards{
     border: solid black 1px;
     border-radius: 10px;
-    background-color: rgb(198, 193, 193);
-    
+    background-color: #EBEBEB;
+    ;
+
 }
 
 #card1{
     padding: 0 0 1rem 1rem;
+    
 }
 
 #card2{
@@ -107,7 +111,19 @@ span > h2{
     padding: 0 0 1rem 1rem;
 }
 
+#descrizione{
+    color: #706D73;
 
+}
+
+
+.frecce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
 
 
 #Our{
@@ -124,10 +140,8 @@ span > h2{
 }
 
 .terzoelenco > div {
+    border: dotted red;
     border: solid black 1px;
-    /*display: flex;
-    flex-direction: column;
-    align-items: flex-start;*/
     margin: 40px 40px 40px 40px;
     padding: 10px 10px 10px 10px;
     border-radius: 9px;
@@ -141,13 +155,28 @@ span > h2{
 }
 
 .terzoelenco > div > span{
+    border: dotted red;
+    box-sizing: border-box;
     border: solid black 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
     border-radius: 9px;
+    padding: 10px;
+
+}
+
+.terzoelenco h3{
+    border: dotted red;
+    padding: 20px;
+}
+
+.terzoelenco div > div >{
+    border: dotted red;
+    display: grid;
+    text-align: left;
+    padding: 20px;
+}
+
+.terzoelenco p{
+    border: dotted red;
     
 }
 
