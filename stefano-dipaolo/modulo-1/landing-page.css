@@ -16,7 +16,7 @@ body{
     /*padding: 0 6.25rem; padding: gestisce lo spazio tra il contenuto e il bordo del box*/
     }
 
-    nav { display: flex;
+    nav { display: flex; /*proprietà che va data ai contenitori che poi modifica la posizione dei figli*/
         justify-content: space-between;
       /*  margin-left: 3rem;
         margin-right: 3rem;
@@ -77,13 +77,13 @@ button{
 .flex-verticale{
             display: flex;
            /* margin: 10rem;*/
-           gap: 16px;
+           gap: 3rem;
 }
 .flex-orizzontale {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px; /*spaziatura tra gli elementi di un flex*/
+    gap: 3rem; /*spaziatura tra gli elementi di un flex*/
 
 }
 
@@ -98,38 +98,49 @@ button{
     
 }
 
-#apple {
-    
-    width: 5%;
-}
-#google {
-    width: 5%;
-}
-#amazon {
-width: 5%;
-}
 .logo {
 display:flex;
-gap: 1rem;
-justify-content:space-around;
-
-
+flex-direction: row; /*predefinito*/
+justify-content:center; /*centra i loghi*/
+align-items: flex-start;
+padding: 3rem;
+gap: 5rem;
 
 }
-.Customers h2{
+/*FEEDBACK*/
+
+#feedback h2{
     text-align: center;
 }
-.Customers-verticale {
-    
+
+.cards {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 4rem;
+    flex-direction: row; /*default*/
+    justify-content: center;
+    align-items: flex-start; /*allineamento degli elementi e non del contenitore*/
+    gap: 32px;
+    }
+.cards > div {
+    border: #1d1b1f solid 0.1rem;
+    border-radius: 0.5rem;
+    width: 20.5rem; 
+    padding-bottom: 1rem;
+    background-color: lightgrey;
 }
-.Customers-verticale div{
-    border: 1px solid black;
-    border-radius: 8px;
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 5rem 5rem 5rem;
 }
+
+
+
+
+
+
 
 
 .instructions{
@@ -159,7 +170,8 @@ justify-content:space-around;
 
 .final{
     display: flex;
-    justify-content:first baseline
+    justify-content:first baseline;
+    margin:0 0 3rem 3rem;
     
 }
 
@@ -171,11 +183,22 @@ footer{
     background-color: #1d1b1f;
     
 }
-footer  li {
+
+
+.contacts {
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    list-style-type:none;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 20rem;}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
     margin-right: 2rem;
+    
+}
+.links li{
+    list-style-type: none;
 
 }
