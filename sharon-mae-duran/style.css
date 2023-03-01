@@ -93,14 +93,14 @@ justify-content: center;
 flex-wrap: row wrap;
 flex-direction: row;
 background: #FBFAFC; 
-padding: 200px;
+padding: 100px;
 gap: 10px;
 }
 
 .section2 .card {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 24px 16px; 
     gap: 16px;
     
