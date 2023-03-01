@@ -1,0 +1,170 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+
+body {
+    font-family: "Lexend", sans-serif;
+    color: #1d1b1f;
+
+    }
+
+
+h1{
+    font-weight: 700;
+  font-size: 4.25rem;
+  
+}
+
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* h3{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+} */
+
+
+
+h1 ~ p{
+    color: #706D73;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+button{
+    font-family: inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    background: #F0F0F0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+h2{
+    text-align: center;
+    color: #1D1B1F;
+    font-weight: 700;
+font-size: 3rem;
+    
+}
+
+nav{                /* nav */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6.25rem;
+    position: sticky;
+    top: 0px;
+    width: 90%;
+    background-color: white;
+    z-index: 1;
+
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{                 /* header */
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin-top: 8rem;
+}
+
+header h1 ~ p {
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#why{                     /* section why */
+    padding: 7.5rem 0;
+}
+
+#why > div{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+#why > div > div{
+    width: 22.5rem;
+    padding: 1.5rem;
+
+}
+
+#why > div > div > div{
+    text-align: center;
+}    
+
+#why2 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#why2 .container-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#why2 .container-card > div {
+    width: 22.5rem;
+    padding: 1.5rem;
+}
+
+#partner{            /* section partner */
+    background-color: #F0F0F0;
+    padding: 5rem 0;   
+}
+
+#partner > div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+section#testimonial > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section#testimonial > div > div{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+section#testimonial .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20.5rem;
+    color: #302e32;
+}
+
+section#testimonial .card .descrizione {
+    color: #706d73;
+}
+section#testimonial .card > div {
+    padding: 1rem;
+}
