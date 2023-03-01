@@ -24,7 +24,14 @@ a{
         text-decoration: none;
         color: inherit;
 }
+li{
+        font-size: .875rem;
+        font-weight: 600;
+        color: #1D1B1F;
+}
+
         /* header */
+
 h1{
         font-weight: 700;
         font-size: 4.25rem;
@@ -114,7 +121,7 @@ h3 {
 .tabelle{
         display: flex;
         flex-direction: row;
-        gap: 10rem;
+        gap: 5rem;
         padding: 10px;
  }
 
@@ -154,6 +161,12 @@ h3 {
         padding: 1rem;
 
  } 
+ .scorrimento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+ }
   
     /* come funziona */
 
