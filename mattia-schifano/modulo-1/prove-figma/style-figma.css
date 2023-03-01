@@ -107,24 +107,30 @@ h3 {
         padding: 0rem 0rem;
         gap: 8rem;
 }
+
         /* reception */
-.reception{
-        width: 20.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border-radius: 0 0 .5rem .5rem;
-        border:1px solid #1D1B1F;
-        margin-right: 3rem;
-        background-color: #EBEBEB;
-        
-}
+
+
 .tabelle{
         display: flex;
         flex-direction: row;
         gap: 10rem;
         padding: 10px;
  }
+
+.reception{
+        width: 20.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius:  .5rem .5rem;
+        border:1px solid #1D1B1F;
+        margin-right: 3rem;
+        background-color: #EBEBEB;
+        
+}
+
+
  .nome {
         margin: 1rem;
         font-size: .875rem;
@@ -148,3 +154,41 @@ h3 {
         padding: 1rem;
 
  } 
+  
+    /* come funziona */
+
+.info{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        padding: 7.5rem 6.25rem;
+        align-items: flex-start;
+}  
+.spiegazioni{
+        margin-right: 5rem;
+        border:1px solid #1D1B1F;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+        width: 40rem;
+        height: 8.3125rem;
+        
+}
+.spiegazioni h3{
+        width: 4.25rem;
+        height: 1.8125rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1D1B1F;
+        padding: 1rem;
+}
+.spiegazioni p {
+        width: 37.5rem;
+        height: 2.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #706D73;
+        padding: 1rem;
+}
