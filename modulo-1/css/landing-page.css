@@ -48,6 +48,11 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 6.25rem;
+    position: fixed;
+    top: 0px;
+    width: 90%;
+    background-color: white;
+    z-index: 1;
 }
 
 nav ul {
@@ -67,6 +72,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 8rem;
 }
 
 header h1 ~ p {
