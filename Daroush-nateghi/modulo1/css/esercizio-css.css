@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+
+/************************************/
+/************** Navbar **************/
+/************************************/
+
+nav {
+  margin: 0;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  padding-left: 2rem;
+  color: #1d1b1f;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav > a {
+  padding-left: 6rem;
+}
+nav > div {
+  padding-right: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+/************************************/
+/************** Body **************/
+/************************************/
+
+body {
+  font-family: "Lexend", sans-serif;
+  width: 100%;
+  margin: 0;
+  background-color: #fbfafc;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.25rem;
+}
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+/************************************/
+/************** Header **************/
+/************************************/
+header {
+  /* border:1px solid #1D1B1F;  */
+  text-align: center;
+  padding-bottom: 6.25rem;
+}
+header .header {
+  width: 70%;
+  margin: 0 auto;
+}
+h1 ~ p {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.25rem;
+  
+}
+.quadratini {
+  /* Vector 5 */
+
+  position: absolute;
+  width: 561px;
+  height: 561px;
+  left: calc(50% - 561px / 2 - 0.5px);
+  bottom: -83.81px;
+
+  opacity: 0.5;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 0;
+}
+button {
+  font-family: inherit;
+  border: 1px solid #1d1b1f;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0px #1d1b1f;
+  background-color: #fffefe;
+}
+/************************************/
+/*************** Main ***************/
+/************************************/
+main {
+  text-align: center;
+  
+}
+
+/*********** Sectione main **********/
+/************************************/
+.why_use {
+  /* border: 1px solid greenyellow; */
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fbfafc;
+  padding-bottom: 6.25rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex col {
+  flex-direction: column;
+}
+
+.flex_row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.why_use .sinistra {
+  padding: 2rem 4rem;
+}
+.why_use .destra {
+  padding: 2rem 4rem;
+}
+
+.why_use p {
+  text-align: left;
+  padding: 1.25rem 1.25rem;
+}
+/********** Sectione partner ********/
+/************************************/
+.partner {
+  /* border:1px solid #1aa078; */
+  margin: 0 auto;
+  width: 100%;
+  height: 22.125rem;
+  background-color: #f0f0f0;
+}
+.partner .img-partner {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+/****** Sectione our-customers ******/
+/************************************/
+.video1 {
+  width: 328px;
+  height: 180px;
+
+  background: url(.jpg), #d9d9d9;
+  border-radius: 8px 8px 0px 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.our-customers {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 46.125rem;
+}
+.our-customers h2 {
+  padding-bottom: 1rem;
+}
+.flex-cont {
+  width: 70%;
+  height: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.aticol {
+  border: 1px 1px solid rgb(44, 44, 44);
+  border-radius: 8px;
+  background-color: #ebebeb;
+  width: 20.5rem;
+}
+.aticol span {
+  display: block;
+  text-align: left;
+  padding-left: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+.aticol a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #1d1b1f;
+  padding-left: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+.one {
+  background-image: url();
+  background-repeat: no-repeat;
+  height: 85%;
+}
+.two {
+  background-image: url();
+  background-repeat: no-repeat;
+}
+.tree {
+  background-image: url();
+  background-repeat: no-repeat;
+  height: 85%;
+}
+.aticol p {
+  padding-top: 0rem;
+  text-align: left;
+  padding-left: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+/******** Sectione how-does *********/
+/************************************/
+.how-does {
+  /* border:1px solid #48f77c; */
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.how-does div span {
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  margin-left: -0.9375rem;
+}
+.how-does > div {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 40rem;
+  margin: 5rem auto;
+  height: 9.687rem;
+  text-align: left;
+}
+.how-does h3 {
+  margin: 0.25rem 1.25rem 1.5rem 1.25rem;
+}
+.how-does p {
+  margin: 0rem 0rem 1.5rem 1.25rem;
+}
+
+/******* Sectione top-footer ********/
+/************************************/
+.top-footer {
+  /* border:1px solid #a048f7; */
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  height: 24.5rem;
+  background-color: #f0f0f0;
+}
+.top-footer div {
+  margin: 2rem auto;
+  width: 80%;
+}
+.top-footer h2 {
+  width: 80%;
+}
+.btn-footer {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 112% 53%;
+  background-position: 91% 56%;
+  padding-right: 2rem;
+}
+/************************************/
+/************** Footer **************/
+/************************************/
+footer {
+  /* border:1px solid #f75448; */
+  background-color: #1d1b1f;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  height: 17.6875rem;
+}
+footer hr {
+  margin-bottom: 1rem;
+}
+.footer-conteiner {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  height: 18em;
+}
+.footer-conteiner > a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.footer-conteiner h5 {
+  margin: 0;
+}
+.footer-conteiner ul {
+  list-style-type: none;
+  margin: 0;
+}
+.footer-conteiner li a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.footer-conteiner li {
+  margin-bottom: 1.3rem;
+}
+
+.footer-conteiner .my-page {
+  padding-top: 1.5rem;
+}
+.flex-footer span {
+  color: #f0f0f0;
+  margin-top: 0;
+  display: block;
+  margin-bottom: 1.3rem;
+}
+.footer-conteiner > div > a {
+  padding-left: 1rem;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .social span {
+  color: #f0f0f0;
+}
+footer .social {
+  display: flex;
+  justify-content: space-between;
+}
+footer .img-social {
+  padding-left: 16rem;
+}
+.img-social a {
+  padding-left: 1rem;
+}
