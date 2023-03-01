@@ -4,12 +4,8 @@ body{
     font-family: "Lexend",sans-serif;
     padding: 0;
     margin-top: 5rem;
+    margin: 0;
    }
-
-a {
-    color: black;
-    text-decoration: none;
-}
 
 .logomypage{
     font-size: 1.25rem;
@@ -25,6 +21,16 @@ nav{
     top: 0px;
     width: 90%;
     background-color: white;    
+}
+
+nav>div>a {
+    color: black;
+    text-decoration: none;
+}
+
+nav>div>span>a {
+    color: black;
+    text-decoration: none;
 }
 
 nav div{
@@ -158,7 +164,7 @@ margin-bottom: 1.5rem;
     margin-top: -1rem;
     margin-left: -1rem;
     position: relative;
-    top: -3rem;
+    top: -0.5rem;
     font-size: 12px;
 }
 
@@ -169,4 +175,74 @@ margin-bottom: 1.5rem;
 
 #howdoes>p {
     text-align: center;
+}
+
+
+#cta{
+    background-color: #F0F0F0;
+    padding: 2rem 6.25rem;
+    padding-bottom: 6rem;
+}
+
+#cta h2, #cta h3{
+    text-align: left;
+}
+
+footer>span>a{
+    color:white;
+    text-decoration: none;
+    display: flex;
+    padding: 40px 100px;
+}
+
+footer{
+    background-color:#1D1B1F;
+    color: white;
+    text-decoration: none;
+}
+
+footer>div>span>a{
+    margin-bottom: -85px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 40px 100px;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer>div>div>span{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+footer #menu_footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 100px;
+    gap: 40px;
+}
+
+hr{
+    color: white;
+}
+
+footer>p{
+    text-align: left;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 0px;
+}
+
+footer #footer_icon>div{
+    display: flex;    
+    align-content: center;
+    justify-content: flex-end;
+    padding: 0 100px;
+    gap: 40px;
 }
