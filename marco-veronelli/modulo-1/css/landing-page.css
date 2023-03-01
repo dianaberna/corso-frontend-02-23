@@ -11,7 +11,8 @@ body{
 
 header{
     text-align: center;
-    margin: 5.25rem 10rem;
+    padding: 5.25rem 25.25rem;
+    /*margin: 5.25rem 10rem;*/
 }
 
 h1{
