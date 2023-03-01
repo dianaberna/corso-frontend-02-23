@@ -8,19 +8,324 @@ html, body{
     margin: 0;
 }
 
+ /* ---------------------start nav-style--------------------- */
+body nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 100px;
+    gap: 10px;
+    
+    width: 1440px;
+    height: 72px;
+    
+    /* Grey/Grey-100 */
+    
+    background: #FBFAFC;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+body nav .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+}
+/* ---------------------end nav-style--------------------- */
+
+/* ---------------------start body-style--------------------- */
 body{
     font-family: 'Lexend', sans-serif;
+   width: 1440px;
+
+    position: relative;
     /* padding: 0 6.25rem; */
 }
 
-h1{
-    font-weight: 700;
-    font-size: 4.25rem;
+body .features1{
+   /* Features 1 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 100px;
+    gap: 10px;
+
+    width: 1440px;
+    height: 952px;
+
+    /* Grey/Grey-100 */
+
+    background: #FBFAFC;
+
+    
+    
 }
 
-header{
+div.features1 .bodyframe{
+    /* Frame 9843 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+
+    width: 1240px;
+    height: 712px;
+
+
+    
+}
+
+div.features1 .featureList{
+    /* Feature List */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+
+    width: 1240px;
+    height: 606px;
+
+
+    
+}
+
+div.features1 .row1{
+    /* Row 1 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+
+    width: 360px;
+    height: 606px;
+
+
+}
+div.features1 .row2{
+    /* Row 1 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+
+    width: 360px;
+    height: 606px;
+
+
+  
+}
+
+.feats{
+    /* Feature row */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 16px;
+
+    width: 360px;
+    height: 263px;
+
+    /* Grey/Grey-100 */
+
+    background: #FBFAFC;
+    border-radius: 8px;
+
+   
+}
+
+.interFeats{
+    /* Frame 16 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 296px;
+    height: 215px;
+
+
+}
+
+/* ---------------------end body-style--------------------- */
+
+
+
+/* ---------------------start header-style--------------------- */
+header .hero1 {
+    /* Hero 1 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    gap: 10px;
+    isolation: isolate;
+
+    width: 1440px;
+    height: 494px;
+
+    /* Grey/Grey-100 */
+
+    background: #FBFAFC;
+
+   
+}
+
+header .content1{
+    /* Content */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
+
+    width: 767px;
+    height: 294px;
+
+
+   
+}
+header .title1{
+    /* Frame 9841 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    width: 767px;
+    height: 294px;
+
+
+}
+
+header .subtitle{
+    /* Frame 9843 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 767px;
+    height: 24px;
+
+
+    
+}
+
+/* ---------------------end header-style--------------------- */
+
+div .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 16px;
+
+    width: 360px;
+    height: 263px;
+
+    /* Grey/Grey-100 */
+
+    background: #FBFAFC;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* ---------------------start h1-style--------------------- */
+
+h1{
+    /* Basic landing page for big dream */
+
+
+    width: 767px;
+    height: 164px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 120%;
+    /* or 82px */
+
     text-align: center;
-    /* margin: 0 10rem; */
+
+    /* Grey/Grey-900 */
+
+    color: #1D1B1F;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 h1 ~ p{
@@ -28,6 +333,8 @@ h1 ~ p{
     font-weight: 500;
     font-size: 1.25rem;
 }
+
+/* ---------------------start h1-style--------------------- */
 
 button{
     /* font-family: inherit; */
@@ -39,6 +346,8 @@ button{
 }
 
 .grigio{
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
 
 }
