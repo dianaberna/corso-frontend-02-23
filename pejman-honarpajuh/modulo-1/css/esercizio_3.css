@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2? family= Anton & family= DM+Sans:wght@400;500;700 & family= Poppins:wght@400;500;600; 700 & display=scambia');
+
+html,body {
+    margin: 0% ;
+}
+/************************************/
+/************** Body **************/
+/************************************/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/************************************/
+/************** Navbar **************/
+/************************************/
+
+nav {
+    border: 1px solid red;
+}
