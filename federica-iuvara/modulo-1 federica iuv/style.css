@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
-body {
+body,
+html {
   font-family: "Lexend", sans-serif;
-  padding: 0 6.25rem;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -26,7 +29,12 @@ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.375rem;
+  padding: 2rem 6.25rem;
+  position: sticky;
+  top: 0px;
+  width: 90%;
+  background-color: white;
+  z-index: 1;
 }
 
 nav li {
@@ -37,20 +45,20 @@ nav li {
 /* SEZIONE HEADER  */
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  /* text-align: center; */
 }
 
 h1 {
   font-size: 4.25rem;
   font-weight: 700;
-  padding: 0 6.25rem;
-  margin: 0;
-  margin-top: 10.625rem;
 }
 
 header p {
   color: #706d73;
-  margin-top: 1.5625rem;
 }
 
 header p::first-letter {
@@ -69,6 +77,7 @@ header button {
   border-radius: 0.3125rem;
   border: 1.8px solid #1d1b1f;
   box-shadow: 6px 7px 3px 1px #1d1b1f;
+  gap: 0.5rem;
 }
 
 /* SEZIONE MAIN */
@@ -121,25 +130,27 @@ h2 {
 
 .partner {
   background-color: #f0f0f0;
-  height: 18.75rem;
+  padding: 5rem 0;
+  margin-top: 3.125rem;
 }
 
 .partner h2 {
-  padding-top: 3rem;
+  padding: 0;
+  margin: 0;
 }
 .container_partner img {
-  width: 5.625rem;
-  margin: 0 3.5rem;
 }
 .container_partner {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 /* SEZIONE RECENSIONI */
 
-.container_review {
+/* .container_review {
   display: flex;
 }
 
@@ -150,16 +161,57 @@ h2 {
   background-color: #ebebeb;
 }
 
-.box p {
-  padding: 0 1.25rem;
+.box-2 {
 }
 
+.box p {
+  padding: 0 1.25rem;
+} */
 
+.review_container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review_container > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.review_container .card {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 20.5rem;
+  color: #302e32;
+  background-color: #ebebeb;
+}
+
+section .card .descrizione {
+  color: #706d73;
+}
+
+section .card > div {
+  padding: 1rem;
+}
 
 /* SEZIONE HOW DOES THIS WORK? */
 
 .how_work h2 {
   margin-bottom: 0;
+}
+
+.how_work span {
+  border: 1px solid black;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
 }
 
 .how_work h4 {
@@ -168,20 +220,20 @@ h2 {
   margin-top: 1.25rem;
 }
 
-.how_work {
+.how_work > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-content: center;
+  gap: 3rem;
 }
 
+/* CORRISPONDE A #how > div > div */
 .box-work {
   border: 1px solid #1c2b33;
-  margin-bottom: 2.5rem;
-  padding: 0.625rem 0.9375rem;
+  padding: 1rem;
   width: 40rem;
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
+  position: relative;
 }
 
 /* SEZIONE PRE-FOOTER */
@@ -189,15 +241,17 @@ h2 {
 .pre_footer {
   background-color: #f0f0f0;
   height: 21.875rem;
+  padding-left: 2.5rem;
 }
 
 .pre_footer h2 {
-  padding-top: 3.125rem;
+  padding-top: 2.5rem;
   text-align: start;
   margin-bottom: 0;
 }
 
 .pre_footer h3 {
+  padding-top: 1.25rem;
   font-weight: 500;
   color: #302e32;
 }
