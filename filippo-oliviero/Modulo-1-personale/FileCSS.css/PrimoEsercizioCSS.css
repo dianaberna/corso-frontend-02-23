@@ -3,7 +3,8 @@
 /*link al font google*/
 body {
     font-family: 'lexend', sans-serif;
-    padding: 0 6.25rem;
+    padding: 0;
+    margin: 0;
 }
 
 /*
@@ -14,6 +15,12 @@ Verranno poi sovrascritte da altre proprietà per l'effetto cascata
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 2rem 6rem;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1 {
@@ -49,15 +56,91 @@ h2 {
     font-size: 2.5rem;
 }
 
-.sinistra {
+.contenitore{
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.sinistra > div {
-    padding: 3.5rem;
-   
+.contenitore2 {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
 }
 
-.sinistra div > img, h3 {
+.contenitore2 > div {
+    width: 22.5rem;
+}
+
+.logo {
     text-align: center;
+}
+
+/* comincia la parte dei partners */
+
+#partners {
+    padding: 6rem 5rem;
+    background-color: #F0F0F0;
+}
+
+#partners > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+    padding: 2rem 0;
+}
+
+/* comincia la parte delle recensioni */
+#customers {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 0 0 10rem 0;
+}
+.cards {
+    width: 25%;
+    border: 1px solid #1D1B1F;
+    border-radius: 8px;
+    background-color: #EBEBEB;
+}
+
+#spiegazione > h4 {
+    text-align: center;
+}
+
+.cards > img {
+    width: 368px;
+}
+
+.scritte {
+    padding: 0 1rem 1rem 1rem;
+}
+
+/* inizia la parte della spiegazione */
+
+#spiegazione > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#spiegazione > div > div {
+    width: 40rem;
+    border: 1px solid #1D1B1F;
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+}
+
+.numeretto {
+    border: 1px solid #1D1B1F;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+    left: -1.5rem;
+    position: absolute;
+    top: -1.5rem;
 }
