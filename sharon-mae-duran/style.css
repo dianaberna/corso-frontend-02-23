@@ -131,3 +131,10 @@ gap: 10px;
     font-size: 3.25rem;
 }
 
+.container-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 100px;
+}
