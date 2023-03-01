@@ -30,6 +30,9 @@ header{
     flex-direction: column;
     align-items: center;
 }
+header button{
+    box-shadow: -1.25rem 1rem 1.5625rem 1.6875rem rgba(0,0,0,0.1);
+}
 header h1{
     text-align: center;
 }
