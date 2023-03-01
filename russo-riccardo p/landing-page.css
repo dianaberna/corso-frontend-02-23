@@ -3,24 +3,20 @@
 /**{
     border: 1px dashed ;
 }*/
-
-html, body{
+/*Generale*/
+html, body {
     margin: 0s;
 }
 
-nav{
-    display:flex;
-}
-
-h1 ~ p{
+h1~p {
     color: #706D73;
     font-weight: 500;
     font-size: 1.25rem;
 }
 
 
-button{
-     font-family: inherit; 
+button {
+    font-family: inherit;
     border: 1px solid #1D1B1F;
     border-radius: 4px;
     background: #F0F0F0;
@@ -28,57 +24,104 @@ button{
     box-shadow: 4px 4px 0px #1D1B1F;
 }
 
-.collegamenti{
+
+/*navbar*/
+
+nav {
+    display: flex;
+}
+
+.collegamenti {
     align-items: flex-end;
 }
 
-body{
+
+/*corpo-pagina*/
+body {
     font-family: 'Lexend', sans-serif;
     padding: 0 6.25rem;
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 4.25rem;
 }
 
-header{
+/*header*/
+
+header {
     text-align: center;
-    margin: 10rem 10rem; 
+    margin: 10rem 10rem;
 }
 
 
-#title{
-    text-align:center;
-    font-size:35px;
+/*Apertura sezione-1*/
+#primasezione{
+    padding-bottom: 2%;
+}
+
+
+#title {
+    text-align: center;
+    font-size: 35px;
     padding-bottom: 100px;
 }
 
-.primo{
-    display:flex;
+.primo {
+    display: flex;
     gap: 6rem;
-    margin-bottom:2rem;
+    margin-bottom: 6rem;
     justify-content: center;
 
 }
 
-.cont_1{
-    width:22.5rem;
+.cont_1 {
+    width: 22.5rem;
 }
 
-.cont_1 > div{
-    text-align:center;
+.cont_1>div {
+    text-align: center;
 }
+
+
+/*chiusura sezione-1*/
+
+
+/*apertura sezione-2*/
 
 #partner {
     text-align: center;
-    font-size: large;
+    font-size: 3rem;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     padding-inline: 10rem;
     background-color: #b7b6b8;
 }
 
-.loghi{
-    justify-content: flex-start;
+
+#partner div {
+    justify-content: space-between;
+}
+
+
+
+/*chiusura sezione-2*/
+
+
+
+/*apertura sezione-3*/
+
+.title2 {
+    font-family: 'lexend';
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+.vector {
+    display: flex;
+    margin-left: 20rem;
+    gap: 10rem;
 }
