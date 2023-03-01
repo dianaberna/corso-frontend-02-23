@@ -1,0 +1,10 @@
+
+* {
+    /* border: 2px dashed brown; */
+}
+html,body {
+    margin: 0;
+}
+body {
+        font-family:'DM Sans', sans-serif; ;
+}
