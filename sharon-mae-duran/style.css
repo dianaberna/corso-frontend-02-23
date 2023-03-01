@@ -123,3 +123,11 @@ gap: 10px;
     margin: auto;
 }
 
+.section3 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+
