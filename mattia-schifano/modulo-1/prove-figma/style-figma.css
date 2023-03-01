@@ -168,27 +168,24 @@ h3 {
         gap: 2rem;
  }
   
-    /* come funziona */
+    /* how */
 
-.info{
+ #how >div{
         display: flex;
         flex-direction: column;
-        gap: 10rem;
-        padding: 7.5rem 6.25rem;
+        gap: 3rem;
         align-items: center;
+        padding: 7.5rem 6.25rem;
 }  
-.spiegazioni{
-        margin-right: 5rem;
-        border:1px solid #1D1B1F;
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding: 1.5rem 1rem;
-        gap: 1rem;
+#how >div > div{
+        border: 1px solid black;
+        border-radius: .5rem;
         width: 40rem;
+        padding: 1rem;
+        position: relative;
        
 }
-.spiegazioni h3{
+#how h3{
         
         font-size: 1.5rem;
         font-weight: 600;
@@ -196,14 +193,14 @@ h3 {
         line-height: 120%;
         
 }
-.spiegazioni p {
+#how p {
         
         font-size: 1rem;
         font-weight: 400;
         color: #706D73;
         
 }
-section h4 {
+#how h4 {
         text-align: center;
         font-weight: 400;
         font-size: 16px;
@@ -211,18 +208,14 @@ section h4 {
         color: #1D1B1F;
 }
 
-.spiegazioni > span{
-        margin-right: 36rem;
-        border:1px solid #1C2B33;
-        border-radius: 1rem;
-        display: flex;
-        width: 3rem;
-        height: 3rem;
-        padding: .625rem;
-        gap: 160px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+#how span{
+        border: 1px solid black;
+        border-radius: .5rem;
+        padding: 1rem;
+        background-color: white;
+        position: absolute;
+        top: -1.5rem;
+        left: -1.5rem;
         
 }
                 /*ultima sezzione   */
