@@ -75,6 +75,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     gap: 3rem;
+    padding: 0;
 }
 
 a{
@@ -92,7 +93,7 @@ h1{
     font-weight: 700;
     font-size: 4.25rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom:1rem;
     padding: 0 21rem;
 }
 
@@ -122,18 +123,26 @@ h2{
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 3rem;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #whyusebox{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 4rem 4rem;
 }
 
 #whyusebox > div{
     width: 22.5rem;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
 
 .loghibox{
@@ -148,24 +157,71 @@ h2{
 
 /* PARTNER */
 #partner{
-    padding: 10rem 0;
+    padding: 6.25rem  5rem;
     background-color: #F0F0F0;
 }
 
-/* organizza le img dei partner */
+.loghipartner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9.8125rem;
+    padding: 2rem 0;
+}
 
 /* RECENSIONI */
+#recensioni{
+    padding: 7.5rem 6.25rem;
+}
+
+#recensioni > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem
+
+    
+}
+
+.boxrecensioni{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3.125rem
+}
+
+.boxrecensioni > div{
+border-radius: 0.5rem;
+border: #1D1B1F solid 0.1rem;
+background-color:#EBEBEB;
+width: 20.5rem;
+}
+
+.boxrecensioni img{
+    width: 100%;
+    height: auto;
+}
+
+img + div{
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
 #recensioni p{
     color: #302E32;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
     font-size: 1rem;
     font-weight: 400;
 }
 
-h3{
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
+#recensioni span{
+    font-size: .875rem;
+    font-weight: 500;
+    color:#302E32;
+}
+
+#recensioni :last-child{
+    color: #706D73;
 }
 
 /* HOW WORK */
@@ -173,9 +229,8 @@ h3{
     color: #706D73;
     font-weight: 400;
     font-size: 1rem;
-    display: block;
 }
-
+/* resto di h3 impostato in whyuse */
 #howwork h3{
     text-align: left;
 }
