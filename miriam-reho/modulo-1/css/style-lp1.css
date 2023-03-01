@@ -164,8 +164,8 @@ h3{
 .loghipartner{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 9.8125rem;
+    justify-content: space-around;
+    gap: 3rem;
     padding: 2rem 0;
 }
 
@@ -179,8 +179,6 @@ h3{
     justify-content: center;
     align-items: center;
     gap: 3.125rem
-
-    
 }
 
 .boxrecensioni{
@@ -225,18 +223,55 @@ img + div{
 }
 
 /* HOW WORK */
-#howwork p{
-    color: #706D73;
-    font-weight: 400;
-    font-size: 1rem;
-}
-/* resto di h3 impostato in whyuse */
-#howwork h3{
-    text-align: left;
+
+#howwork{
+    padding: 7.5rem;
 }
 
 h4{
     font-weight: 400;
     font-size: 1rem;
     text-align: center;
+    margin-top: -2rem;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.steps div{
+    border: #1D1B1F solid .0625rem;
+    border-radius: .5rem;
+    width: 40rem;
+    padding: 0 1.25rem;
+    position: relative;
+}
+
+.steps span{
+    border: #1D1B1F solid .0625rem;
+    border-radius: .5rem;
+    padding: .625rem;
+    background-color: white;
+    position: absolute;
+    top: -1.3rem;
+    left: -1.3rem;
+}
+
+.steps p{
+    color: #706D73;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* resto di h3 impostato in whyuse */
+.steps h3{
+    text-align: left;
+}
+
+/* CREATE PERFECT */
+#createperfect{
+    padding: 6.25rem  5rem;
+    background-color:#F0F0F0;
 }
