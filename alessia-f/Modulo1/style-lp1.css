@@ -2,6 +2,8 @@
 
 body{
     font-family: "Lexend",sans-serif;
+    padding: 0;
+    margin: 0;
    }
 
 a {
@@ -32,7 +34,7 @@ h1{
 
 header{
     text-align: center;
-    margin: 0 25rem;
+    margin: 0 15rem;
     
 }
 
@@ -58,20 +60,17 @@ button{
 h2 {
     font-weight: 700;
     font-size: 2.25rem;
-}
-
-.titlesection {
     text-align: center;
-    padding-bottom: 3rem;
     padding-top: 3rem;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     padding-bottom: 10rem;
+    padding-top: 2rem;
     gap: 15rem;
 
 }
@@ -89,3 +88,52 @@ h2 {
     justify-content: space-between;
     padding: 0 5rem 5rem 5rem; 
 }
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center
+}
+
+.feedback .cards>div{
+border: 1px solid black;
+border-radius: 8px;
+width: 20.5rem;
+background-color: #EBEBEB;
+}
+
+.feedback img{
+    border-radius: 8px 8px 0 0;
+}
+
+.feedback .cards>div>p{
+margin-right: 1rem;
+margin-left: 1rem;
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.feedback .cards{
+    display: flex;
+    justify-content: center;
+    gap: 3.125rem;
+    align-items: flex-start;
+}
+
+.job{
+    color:#706D73;
+}
+
+
+
+.how_does>p {
+    text-align: center;
+}
+
+.how_does>div>div{
+    border: 2px black solid;
+    width: 20.5rem;
+    height: 0%;
+}
+
