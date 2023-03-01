@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position</title>
+        <link rel="stylesheet" href="/modulo-1/css/position.css">
+    </head>
+    <body>
+        <h1>The position property</h1>
+
+        <h2>position: static;</h2>
+        <p>
+            The Parent1 element has position: static, and will remain in the
+            natural flow of the page. It will NOT act as anchor point for the
+            absolutely positioned Child1 element:
+        </p>
+        <div id="parent1">
+            Parent1: position: static.
+            <div id="child1">
+                Child1: position: absolute, right: 15px, top: 70px
+            </div>
+        </div>
+
+        <h2>position: relative;</h2>
+        <p>
+            The Parent2 element has position: relative, and will remain in the
+            natural flow of the page. It will also act as anchor point for the
+            absolutely positioned Child2 element:
+        </p>
+        <div id="parent2">
+            Parent2: position: relative.
+            <div id="child2">
+                Child2: position: absolute, right: 15px, top: 70px
+            </div>
+        </div>
+        <h2>position: sticky;</h2>
+        <div id="parent5">
+            Parent5: position: relative.
+            <div id="child5">
+                Child5: position: absolute, right: 15px, top: 70px
+            </div>
+        </div>
+
+        <h2>position: absolute;</h2>
+        <p>
+            The Parent3 element has position: absolute, and will NOT remain in
+            the natural flow of the page. It will position itself according to
+            the closest positioned ancestor. It will also act as anchor point
+            for the absolutely positioned Child3 element:
+        </p>
+        <div id="parent3">
+            Parent3: position: absolute, top: 750px, right: 15px.
+            <div id="child3">
+                Child3: position: absolute, right: 15px, top: 70px
+            </div>
+        </div>
+
+        <h2>position: fixed;</h2>
+        <p>
+            The Parent4 element has position: fixed, and will NOT remain in the
+            natural flow of the page. It will position itself according to the
+            viewport. It will also act as anchor point for the absolutely
+            positioned Child4 element:
+        </p>
+        <div id="parent4">
+            Parent4: position: fixed, bottom: 0, left: 0, right: 0.
+            <div id="child4">
+                Child4: position: absolute, right: 15px, top: 70px
+            </div>
+        </div>
+    </body>
+</html>
