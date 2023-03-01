@@ -3,22 +3,28 @@
 body{
     font-family: "Lexend",sans-serif;
     padding: 0;
-    margin: 0;
+    margin-top: 5rem;
    }
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 .logomypage{
     font-size: 1.25rem;
+  
 }
 
 nav{ 
-    padding-top: 1.10rem;
-    padding: 0 6.25rem;
+    z-index: 2;
     display:flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    padding: 2rem 6.25rem;
+    position: fixed;
+    top: 0px;
+    width: 90%;
+    background-color: white;    
 }
 
 nav div{
@@ -34,7 +40,8 @@ h1{
 
 header{
     text-align: center;
-    margin: 0 15rem;
+    margin: 0 25rem;
+    margin-top: 10%;
     
 }
 
@@ -64,15 +71,18 @@ h2 {
     padding-top: 3rem;
 }
 
-.flex{
+.why_use{
     display: flex;
     flex-direction: row;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 10rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    padding-bottom: 5rem;
     padding-top: 2rem;
-    gap: 15rem;
+    gap: 10rem;
+}
 
+.p_why_use{
+    color: #706D73;
 }
 
 .mini_title_whyuse {
@@ -125,15 +135,38 @@ margin-bottom: 1.5rem;
     color:#706D73;
 }
 
+#howdoes>div{
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    }
 
 
-.how_does>p {
+#howdoes>div>div{
+    border: 1px black solid;
+    border-radius: 8px;
+    width: 40rem;
+}
+ 
+#howdoes>div>div>span{
+    border: 1px black solid;
+    border-radius: 8px;
+    padding: 0.7rem;
+    background-color: white;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    position: relative;
+    top: -3rem;
+    font-size: 12px;
+}
+
+.texthow{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+#howdoes>p {
     text-align: center;
 }
-
-.how_does>div>div{
-    border: 2px black solid;
-    width: 20.5rem;
-    height: 0%;
-}
-
