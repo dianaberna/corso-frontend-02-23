@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
+html body {
+  margin: 0;
+}
 body {
   font-family: "Lexend", sans-serif;
-  padding: 0px 6.25rem;
+  /* padding: 0px 6.25rem; */
 }
 
 nav {
@@ -11,14 +14,15 @@ nav {
   flex-direction: row;
   margin: 3rem 3rem 0 3rem;
 }
-nav ul li {
+/* nav ul li {
   display: inline-flex;
   justify-content: space-between;
   flex-direction: row;
-}
+} */
 nav ul {
   display: flex;
   gap: 7rem;
+  list-style-type: none;
 }
 
 h1 {
@@ -63,6 +67,8 @@ section > h2 {
 }
 .alineare {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2.5rem;
   margin: 4rem;
 }
@@ -84,7 +90,6 @@ section > h2 {
   text-align: center;
   background-color: #f0f0f0;
   padding: 3.125rem;
-  margin: 6.25rem -110px;
 }
 .loghi svg {
   padding: 4rem;
@@ -97,13 +102,13 @@ section > h2 {
   background-color: #ebebeb;
   border: 1px solid #1d1b1f;
   border-radius: 0.25rem;
+  width: 20.5rem;
 }
-.freccie {
+section .freccie {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: baseline;
-  gap: 1rem;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
 }
 .recensioni h2 {
   text-align: center;
@@ -111,7 +116,6 @@ section > h2 {
 }
 .recensioni p {
   text-align: left;
-
   padding: 0.4375rem;
 }
 .recensioni div span {
@@ -129,19 +133,23 @@ section > h2 {
   align-content: center;
   gap: 2rem;
 }
-
-.secondoblocco {
+#blocchi div{
+  border: .0625rem solid #1d1b1f;
+}
+/* .secondoblocco {
   text-align: center;
 }
 .secondoblocco > h4 {
   font-weight: 400;
 }
 
-.secondoblocco div {
+.secondoblocco > div {
   border: 1px solid #1d1b1f;
   border-radius: 4px;
   text-align: left;
   align-items: baseline;
+  display: flex;
+  flex-direction: column;
   width: 40.625rem;
   height: 9rem;
   margin-left: 15.625rem;
@@ -150,11 +158,10 @@ section > h2 {
 }
 .secondoblocco > div > span {
   border: 1px solid #1d1b1f;
-}
-.descrizione1 {
+} */
+/* .descrizione1 {
   display: flex;
   flex-direction: column;
-
   isolation: isolate;
   margin-bottom: 1.25rem;
 }
@@ -168,18 +175,16 @@ section > h2 {
   display: flex;
   flex-direction: column;
   isolation: isolate;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem; */
 }
 .fine {
   background-color: #f0f0f0;
-  margin: 50px -110px;
 
   padding: 150px;
 }
 footer {
   background-color: #1d1b1f;
   color: #d3d0d6;
-  margin: -110px;
   padding: 50px;
 }
 footer > div {
