@@ -218,10 +218,37 @@ h3 {
         left: -1.5rem;
         
 }
-                /*ultima sezzione   */
+                /* cta  */
 .sfondo{
         background-color: #F0F0F0;
-        width: 100%;
-        padding: 5rem 0;
+        padding: 2rem 6.25rem;
 
+}
+#cta h2, #cta h3{
+        text-align: left;
+    }
+
+                /* footer */
+
+footer{
+       
+       background-color: #1D1B1F;
+       padding: 5rem 0;
+       width: 100%;
+} 
+
+footer > a{
+        padding: 1.625rem 6.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+} 
+
+.contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row-reverse;
+        align-content: space-between;
+        flex-wrap: wrap;
 }
