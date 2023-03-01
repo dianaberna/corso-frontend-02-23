@@ -49,7 +49,8 @@ button{
         box-shadow: 4px 4px 0px #1D1B1F;
 }
         /* main */
-         /* section */
+                /* section */
+                         /* articoli */
  h2{
         font-weight: 700;
         font-size: 3rem;
@@ -97,7 +98,7 @@ h3 {
         padding: 5rem 0;
        
 }
-.centratura{
+.partner{
         display: flex;
         align-items: center;
         height: 10rem;
@@ -106,3 +107,44 @@ h3 {
         padding: 0rem 0rem;
         gap: 8rem;
 }
+        /* reception */
+.reception{
+        width: 20.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0 0 .5rem .5rem;
+        border:1px solid #1D1B1F;
+        margin-right: 3rem;
+        background-color: #EBEBEB;
+        
+}
+.tabelle{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        padding: 10px;
+ }
+ .nome {
+        margin: 1rem;
+        font-size: .875rem;
+        font-weight: 500;
+        color: #1D1B1F;
+        padding: 1rem;
+        align-items: baseline;
+        display: flex;
+ }
+ .reception > p{
+        margin: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #302E32;
+        padding: 1rem;
+ }
+ .professione {
+        font-weight: 500;
+        font-size: 14px;
+        color: #706D73;
+        padding: 1rem;
+
+ } 
