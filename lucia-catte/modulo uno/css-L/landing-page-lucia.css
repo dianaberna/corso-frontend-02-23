@@ -70,10 +70,35 @@ span > h2{
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 24px 16px;
-
-
+    padding: 24px 50px;
 }
+
+#apple{
+    width: 6rem;
+    height: 2rem;
+}
+
+#amazon{
+    width: 106.88px;
+    height: 32px;
+}
+
+#google{
+    width: 96.63px;
+    height: 32px;
+}
+
+#microsoft{
+    width: 150.4px;
+    height: 32px;
+}
+
+#apple{
+    width: 159.2px;
+    height: 32px;
+}
+
+
 
 .cardsection{
     align-content: center;
@@ -94,7 +119,8 @@ span > h2{
     border: solid black 1px;
     border-radius: 10px;
     background-color: #EBEBEB;
-    ;
+    margin: 20px;
+    
 
 }
 
@@ -116,13 +142,18 @@ span > h2{
 
 }
 
-
 .frecce{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
+}
+
+.genitorecardefrecce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -264,6 +295,7 @@ footer{
     display: flex;  
     justify-content: space-between;
     padding: 1rem 1rem 1rem 1rem;
+    align-items: center;
 }
 
 #loghisocial{
