@@ -225,3 +225,10 @@ section h4 {
         flex-direction: column;
         
 }
+                /*ultima sezzione   */
+.sfondo{
+        background-color: #F0F0F0;
+        width: 100%;
+        padding: 5rem 0;
+
+}
