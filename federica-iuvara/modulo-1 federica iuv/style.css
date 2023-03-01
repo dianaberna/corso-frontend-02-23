@@ -3,7 +3,7 @@
 
 body {
   font-family: "Lexend", sans-serif;
-  padding: 0 100px;
+  padding: 0 6.25rem;
 }
 
 a {
@@ -60,23 +60,216 @@ header p::first-letter {
 header button {
   background-color: #f0f0f0;
   color: #1d1b1f;
-  font-family: "Lexend", sans-serif;
+  font-family: inherit;
   font-weight: 600;
   margin-top: 20px;
+  margin-bottom: 5.625rem;
   padding: 14px 22px;
   cursor: pointer;
   border-radius: 0.3125rem;
   border: 1.8px solid #1d1b1f;
-  -webkit-box-shadow: 6px 7px 3px 1px #1d1b1f;
-  -moz-box-shadow: 6px 7px 3px 1px #1d1b1f;
   box-shadow: 6px 7px 3px 1px #1d1b1f;
 }
 
 /* SEZIONE MAIN */
 
-main h2 {
+/* REGOLA h2 APPLICATA A TUTTI GLI h2 DELLA PAGINA */
+h2 {
   text-align: center;
   font-family: "Inter", sans-serif;
-  margin-top: 10.625rem;
-  font-size: 3.125rem;
+  margin-top: 6.25rem;
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.container img {
+  width: 1.875rem;
+}
+
+.container h3 {
+  text-align: center;
+}
+
+.container p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #706d73;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.firstLine,
+.secondLine {
+  display: flex;
+  text-align: center;
+}
+
+.firstLine div,
+.secondLine div {
+  padding: 0 6.25rem;
+}
+
+/* SEZIONE PARTNER */
+
+.partner {
+  background-color: #f0f0f0;
+  height: 18.75rem;
+}
+
+.partner h2 {
+  padding-top: 3rem;
+}
+.container_partner img {
+  width: 5.625rem;
+  margin: 0 3.5rem;
+}
+.container_partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SEZIONE RECENSIONI */
+
+.container_review {
+  display: flex;
+}
+
+.box {
+  margin: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: #ebebeb;
+}
+
+.box p {
+  padding: 0 1.25rem;
+}
+
+
+
+/* SEZIONE HOW DOES THIS WORK? */
+
+.how_work h2 {
+  margin-bottom: 0;
+}
+
+.how_work h4 {
+  font-size: 1.5625rem;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.how_work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.box-work {
+  border: 1px solid #1c2b33;
+  margin-bottom: 2.5rem;
+  padding: 0.625rem 0.9375rem;
+  width: 40rem;
+  border-radius: 0.375rem;
+}
+
+/* SEZIONE PRE-FOOTER */
+
+.pre_footer {
+  background-color: #f0f0f0;
+  height: 21.875rem;
+}
+
+.pre_footer h2 {
+  padding-top: 3.125rem;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.pre_footer h3 {
+  font-weight: 500;
+  color: #302e32;
+}
+
+.pre_footer button {
+  background-color: #f0f0f0;
+  color: #1d1b1f;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 1.875rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  border: 1.8px solid #1d1b1f;
+  box-shadow: 6px 7px 3px 1px #1d1b1f;
+}
+
+.pre_footer button {
+  display: flex;
+}
+
+.pre_footer_button {
+  padding-bottom: 1.875rem;
+}
+
+.pre_footer svg {
+  margin-left: 0.1875rem;
+}
+
+/* SEZIONE FOOTER */
+footer {
+  background-color: #1d1b1f;
+  height: 12.5rem;
+  color: #ffffff;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 3.125rem;
+}
+
+.container_two {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_contact {
+  margin-right: 3.125rem;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+
+footer ul li {
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+.lista_loghi {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.875rem;
+}
+
+.lista_loghi a img {
+  padding-right: 0.625rem;
+  height: 1.25rem;
+}
+
+footer hr {
+  margin: 0 30px;
+  margin-bottom: 0.625rem;
 }
