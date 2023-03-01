@@ -1,11 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 html {
     font-size: 16px;
-
 }
+
 body {
     font-family: 'Lexend', sans-serif;
+
 }
+
+.mypage {
+font-weight: 600;
+font-size: 1.2rem;
+}
+
+.barra a {
+    color: black;
+    margin: 0 0 0 60px;
+   
+}
+.barra {
+    display: inline-block;
+    
+}
+    
 p {
-    font-size: 30px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+
+}
+.titolomy a {
+    color: black;
+    font-weight: 600;
+
+}
+.subtitle {
+    color: #706D73;
+
+}
+.contenitore {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+
+.contenitore2 {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.titolo1 {
+    font-size: 2rem;
+}
+.titolo2, .titolo3 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.hero {
+    text-align: center;
+    margin-bottom: 8rem;
+    background-image: url(./contents/herobackg.png);
+    background-position: center;
+    height: 15rem;
+}
+
+button {
+border: solid;
+background: #F0F0F0;
+padding: 12px 20px;
+margin-top:  1rem;
+border-radius: 4px;
+font-weight: 600;
+box-shadow: 4px 4px 0px #1D1B1F;
+}
+.icona {
+    width: 30px;
+    height: 30px;
+}
+.loghipartner{
+    display: flex;
+    flex-wrap: al wrap;
+    justify-content: center;
+    gap: 1 rem;
+    padding: 2rem 0;
 }
