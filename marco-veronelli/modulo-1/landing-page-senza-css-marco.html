@@ -12,9 +12,9 @@
     <title>MyPage</title>
 </head><!--END HEAD-->
 <body><!--START BODY-->
-    <nav><!--START NAVBAR flex navbar outside the header, just to meke it stiky-->
+    <nav class="flexbetween"><!--START NAVBAR--><!--FLEX-->
         <a href=""><img src="" alt="">MyPage</a>
-        <div>
+        <div class="flexbetween"><!--FLEX-->
             <a href="">home</a>
             <a href="">why</a>
             <a href="">how</a>
@@ -28,10 +28,10 @@
         </div>
     </header><!--END HEADER-->
     <main>
-        <section class="why"><!--section WHY USE OUR PAGE made with DISPLAY FLEX-->
+        <section class="why"><!--START SECTION WHY-->
             <h2>Why use our Mypage</h2>
             <div>
-                <div class="row"><!--first row flex-->
+                <div class="row  flexcenter"><!--FLEX-->
                     <div>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -53,7 +53,7 @@
                             the sections everything will remain accessible.</p>
                     </div>
                 </div>
-                <div class="column"><!--second row flex-->
+                <div class="secondrow flexcenter"><!--FLEX-->
                     <div>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -76,8 +76,8 @@
                     </div>
                 </div>
             </div>
-        </section><!--END Why Section-->
-        <section class="partner"><!--Section Partner START Here, lots of SVG-->
+        </section><!--END WHY SECTION-->
+        <section class="partner"><!--START PARTNER SECTION--><!--FLEX-->
             <h2>Partner</h2>
             <div>
                 <span>
@@ -190,10 +190,10 @@
                     </svg>
                 </span>
             </div>
-        </section><!--END Partner Section-->
-        <section class="testimonial"><!--START Testimonial Section-->
+        </section><!--END PARTNER SECTION-->
+        <section class="testimonial"><!--START TESTIMONIAL SECTION-->
             <h2>Our customers love us</h2>
-            <div class="quote">
+            <div class="quote flexcenter"><!--FLEX-->
                 <svg width="28" height="46" viewBox="0 0 28 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0.724178 21.2507L20.7518 1.22418C21.7173 0.258607 23.2837 0.258607 24.2493 1.22418L26.5854 3.5603C27.5499 4.52484 27.551 6.08707 26.5895 7.05367L10.7169 22.9995L26.5885 38.9463C27.551 39.9129 27.5489 41.4752 26.5844 42.4397L24.2482 44.7758C23.2827 45.7414 21.7163 45.7414 20.7507 44.7758L0.724178 24.7482C-0.241393 23.7827 -0.241393 22.2163 0.724178 21.2507Z"
@@ -252,15 +252,15 @@
             <button>explore repo</button>
         </section><!--END-->
     </main>
-    <footer><!--FOOTER START HERE-->
-        <div class="footerow">
+    <footer><!--FOOTER-->
+        <div class="footerow flexbetween"><!--FLEX-->
             <a href="" class="mypage">MyPage</a>
             <div class="contact">
                 <h3>Contact</h3>
                 <p>Via Roma, 1 - Roma (RM)</p>
                 <p>Cel. 123456789</p>
             </div>
-            <div class="footnav">
+            <div class="footnav"><!--FLEX-->
                 <a href="">Mypage</a>
                 <a href="">Explore</a>
                 <a href="">why</a>
@@ -268,7 +268,7 @@
             </div>
         </div>
         <hr>
-        <div class="copy">
+        <div class="copy flexbetween"><!--FLEX-->
             <span>© 2023 Bricks Design Kit. All rights reserved</span>
             <div>
                 <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,4 +301,3 @@
     </footer><!--END FOOTER-->
 </body><!--END BODY-->
 </html>
-<!--PROUDLY MADE BY DA_VERO-->

@@ -44,29 +44,29 @@ box-shadow:4px 4px 0px #1D1B1F;
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
     padding: 0 5rem 0 5rem;
     }
 
 nav div{
-    
+    gap: 2rem;
+}
+
+.flexbetween{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
 }
 
-.row{
-    justify-content: center;
-    display: flex;
+.row{    
     gap: 2rem;
-    
-    
+     
 }
 
-.column{
-    justify-content: center;
-    display: flex;
+.secondrow{
     row-gap: 2rem;
     column-gap: 3rem;
 }
@@ -81,7 +81,7 @@ nav div{
     padding: 0.5rem 1rem 2.5rem 1rem;
 }
 
-.column div{
+.secondrow div{
     width: 25%;
     margin-top: 3rem;
 }
@@ -128,8 +128,6 @@ footer{
 
 .footerow{
     text-align: left;
-    display:flex;
-    justify-content:space-between;
     padding-right: 5rem;
 }
 
@@ -160,8 +158,6 @@ ul {
     
 }
 .quote{
-    display:flex;
-    justify-content: center;
     gap:1.5rem;
     align-items: flex-start;
 }
@@ -194,8 +190,6 @@ ul {
 }
 
 .copy{
-    display: flex;
-    justify-content: space-between;
     padding: 1rem 5rem 1rem 5rem;
 }
 
