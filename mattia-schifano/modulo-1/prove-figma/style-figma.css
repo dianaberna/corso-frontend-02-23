@@ -162,7 +162,7 @@ h3 {
         flex-direction: column;
         gap: 10rem;
         padding: 7.5rem 6.25rem;
-        align-items: flex-start;
+        align-items: center;
 }  
 .spiegazioni{
         margin-right: 5rem;
@@ -173,22 +173,42 @@ h3 {
         padding: 1.5rem 1rem;
         gap: 1rem;
         width: 40rem;
-        height: 8.3125rem;
-        
+       
 }
 .spiegazioni h3{
-        width: 4.25rem;
-        height: 1.8125rem;
+        
         font-size: 1.5rem;
         font-weight: 600;
         color: #1D1B1F;
-        padding: 1rem;
+        line-height: 120%;
+        
 }
 .spiegazioni p {
-        width: 37.5rem;
-        height: 2.75rem;
+        
         font-size: 1rem;
         font-weight: 400;
         color: #706D73;
-        padding: 1rem;
+        
+}
+section h4 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #1D1B1F;
+}
+
+.spiegazioni > span{
+        margin-right: 36rem;
+        border:1px solid #1C2B33;
+        border-radius: 1rem;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        padding: .625rem;
+        gap: 160px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
 }
