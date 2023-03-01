@@ -1,0 +1,77 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav span {
+    margin-right: auto;
+  }
+header{
+  margin-bottom: 8rem;
+}
+
+.Testata{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+   
+}
+#TitoloPagina{
+    font-size: 68px;
+}
+
+.Testata > button{
+   box-shadow: 2px 2px ; 
+   border: solid black 1px;
+   border-radius: 8px;
+   padding: 1rem 1rem 1rem 1rem;
+   font-weight: bold;
+}
+.Testata > span{
+    color: gray;
+}
+.Whypage{
+  text-align: center;
+}
+.flex-container-vertical{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.flex-horizontal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.flex-horizontal > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:left;   
+}
+.flex-horizontal  h3{
+  margin:0px;
+}
+
+section > div >h2 {
+  margin-top: 8rem;;
+  text-align: center;
+}
+
+
+
