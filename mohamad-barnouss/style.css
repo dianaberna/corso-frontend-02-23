@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Lexend", sans-serif;
+  padding: 0 6.25rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.25rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  margin: 0 10rem;
+}
+
+h1 ~ p {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  border: 1px solid #1d1b1f;
+  border-radius: 4px;
+  background: #f0f0f0;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0px #1d1b1f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 4rem;
+}
+
+.grid > article {
+  width: 18.5rem;
+  height: 6.875rem;
+  margin-top: 1.875rem;
+}
+
+/*PARTNER SECTION*/
+
+.partner-section {
+  margin-top: 7.5rem;
+  padding: 5rem 6.25rem;
+  background-color: #f0f0f0;
+}
+
+.partner-section > h3 {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+  color: #1d1b1f;
+  text-align: center;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-section > div > img {
+  width: 6rem;
+  height: 6rem;
+}
+
+/*CUSTUMERS CARD*/
+.custumers-cards {
+  text-align: center;
+  padding-top: 7.5rem;
+}
+
+.custumers-cards > h3 {
+  width: 34rem;
+  height: 3.625rem;
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+  margin: 0 auto;
+}
+
+/*
+.card-section {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+*/
+
+.card-section {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  /*width: 20.5rem;
+  height: 11.25rem;*/
+  border: solid 1px black;
+  margin: 1.25rem;
+}
+
+.card > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  margin-bottom: 2.25rem;
+}
+/*
+.card:nth-child(2) {
+  /*perche funziona???*/
+/* height: 12.5rem;
+}*/
+
+.custumers-name {
+  width: 43px;
+  height: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.card span {
+  display: block;
+  text-align: left;
+}
+
+/*HOW DOES IT WORK SECTION*/
+.work-section {
+  text-align: center;
+}
+
+.work-section h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.work-section article {
+  border: solid 1px;
+  margin-top: 3rem;
+  position: relative;
+  width: 40rem;
+  height: 8.3125rem;
+}
+
+.number-ticket {
+  display: block;
+  border: 1px solid;
+  position: absolute;
+  top: -15%;
+  left: -3%;
+  background-color: #fff;
+  padding: 0.625rem;
+  border-radius: 8px;
+}
+
+.comments-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
