@@ -116,17 +116,24 @@ h2 {
 
     } */
 
-.contenitore5 {
+#contenitore5 {
   text-align: center;
   margin-top: 15%;
 }
 
+#contenitore5 h3{
+  text-align: left;
+}
+
+ 
+
+}
 .sottotitolo {
   text-align: center;
 }
 
-.arrotondato {
-  padding-top: 4%;
+.paragrafo{
+  text-align: left;
 }
 
 .primasezione {
@@ -166,26 +173,25 @@ h2 {
   gap: 0.5rem;
 }
 
-
-
-.parte1 {
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 15px;
+.arrotondato {
+  padding-top: 4%;
 }
 
-.parte2 {
+
+
+.parte1{
   border: 1px solid black;
   margin-top: 40px;
   border-radius: 8px;
   padding: 15px;
+  text-align: left;
 }
 
-.parte3 {
+.parte1{
   border: 1px solid black;
-  margin-top: 40px;
-  border-radius: 8px;
-  padding: 15px;
+  border-radius: 0.5rem;
+  padding:1rem;
+  background-color: white;
 }
 
 .sfondologo {
@@ -198,3 +204,29 @@ h2 {
   justify-content: space-around;
   padding: 5rem 0;
 }
+
+.parte1>span{
+  border:1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  margin-left: -3rem;
+  margin-top:-3rem;
+  position: absolute;
+}
+
+
+.titolo3{
+  text-align: center;
+  margin-top: 8rem;
+}
+
+
+.finale{
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  
+}
+
