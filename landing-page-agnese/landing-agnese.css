@@ -128,7 +128,7 @@ header h1 ~ p {
 /* section partner */
 #partner{
     background-color: #F0F0F0;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
    
 }
 
@@ -136,7 +136,7 @@ header h1 ~ p {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     flex-wrap: wrap;
     gap: 3rem;
 }
@@ -224,6 +224,12 @@ section#testimonial .card > div {
 
 #cta h2, #cta h3{
     text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bnewsletter {
+    margin-bottom: 2rem;
 }
 /*section footer*/
 #footer {
