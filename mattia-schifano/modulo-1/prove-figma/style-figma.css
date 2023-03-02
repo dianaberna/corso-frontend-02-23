@@ -14,8 +14,11 @@ nav{
         position: sticky;
         width: 90%;
         top: 0;
+        margin-top: 0;
+        background-color: white;
         z-index: 1;
-    }
+        border: 1px solid black;
+}
     
 nav ul{
         list-style: none;
@@ -237,22 +240,51 @@ h3 {
 footer{
        
        background-color: #1D1B1F;
-       padding: 5rem 0;
-       width: 100%;
-} 
-
-footer > a{
-        padding: 1.625rem 6.25rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-} 
-
-.contact{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        flex-direction: row-reverse;
-        align-content: space-between;
-        flex-wrap: wrap;
+       padding: 2rem 6.25rem;
+       color: #ffffff;
 }
+
+footer >div{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+
+}
+
+footer > div > #title{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+footer h5{
+        font-size: 1rem;
+        margin-top: 0;
+}
+
+
+
+footer > ul{
+        list-style-type: none;
+        padding-left: 0;
+        font-weight: 400;
+
+}
+
+footer ul >li{
+        padding-bottom: 1.5rem;
+        color: #d3d0d6;
+
+}
+
+footer > div > div{
+        display: flex;
+        gap: 2rem;
+    }
+
+footer > hr{
+        border: 1px solid #FBFAFC;
+}
+
+.fa-brands {
+        font-size: 1.5625rem;
+    }
