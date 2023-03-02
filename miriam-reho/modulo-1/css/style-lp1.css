@@ -99,6 +99,11 @@ header{
     padding: 6.25rem 0;
 }
 
+header svg{
+    position: absolute;
+    z-index: -1;
+}
+
 h1{
     font-weight: 700;
     font-size: 4.25rem;
