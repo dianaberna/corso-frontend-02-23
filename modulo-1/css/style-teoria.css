@@ -142,3 +142,12 @@ div + p{
     background-color: white;
 }
 
+/* specificità */
+
+#paragrafo-speciale{
+    background-color: red;
+}
+
+.prova{
+    background-color: yellow ; /* con !important prenderà il background yellow*/
+}
