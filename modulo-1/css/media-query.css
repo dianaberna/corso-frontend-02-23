@@ -1,0 +1,44 @@
+body{
+    background-color: beige;
+}
+
+/*
+     480px: Mobile devices --> mobile first
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px ...  —  Extra large screens, TV
+*/
+
+/*
+
+@media dispositivo/screen/print and (min-width: larghezza-minima-px) and (max-width: larghezza-massima-px) and ...{
+    l'elenco di tutti i selettori che dobbiamo personalizzare solo per quelle risoluzioni selezionate
+} 
+
+*/
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    body{
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-color: red;
+    }
+}
