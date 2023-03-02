@@ -1,6 +1,7 @@
 body {
   font-family: "lexend", sans-serif;
-  padding: 0 6.25rem;
+  /* padding: 0 6.25rem; */
+  margin: 0;
 }
 
 h1 {
@@ -127,7 +128,7 @@ h2 {
 
  
 
-}
+
 .sottotitolo {
   text-align: center;
 }
@@ -222,7 +223,7 @@ h2 {
 }
 
 
-.finale{
+/* .finale{
   background-color: black;
   color: white;
   padding-top: 2rem;
@@ -237,4 +238,47 @@ h2 {
 .finale2{
   color:white;
   background-color: black;
+} */
+
+
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 2rem 6.25rem;
+}
+
+footer > div{
+  display: flex;
+  justify-content: space-between};
+
+
+footer ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+footer > div > div{
+   display: flex;
+   gap: 2rem;
+   padding: 1rem;
+}
+
+footer ul > li{
+  padding-bottom: 1.5rem;
+  color: white;
+}
+
+footer h5{
+  font-size: 1rem;
+}
+
+footer h3{
+  border: 1px solid white;
+}
+
+
+.fa-brands{
+  font-size: 1.6rem;
 }
