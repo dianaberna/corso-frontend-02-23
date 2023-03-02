@@ -227,6 +227,14 @@ h2 {
   color: white;
   padding-top: 2rem;
   padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   
 }
 
+.finale2{
+  color:white;
+  background-color: black;
+}
