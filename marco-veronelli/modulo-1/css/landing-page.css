@@ -13,7 +13,7 @@ body {
     margin:0;
 }
 
-header div {
+header {
     text-align: center;
     /*padding: 7rem 25.25rem;
      /*margin: 6rem 0; */
@@ -32,12 +32,12 @@ header div {
 }*/
 
 h1 {
-    font-size: 4.25rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 1.75rem;
 }
 
 h3 {
@@ -68,8 +68,9 @@ button {
 } 
 
 nav {
+    
     z-index: 2;
-    padding: 2rem 5rem 2rem 5rem;
+    padding:50px;
     position: sticky;
     top:0px;
     /* width:100%; */
@@ -77,8 +78,11 @@ nav {
     /* border:1px solid grey; */
 }
 
-nav div {
-    gap: 40px;
+nav ul {
+    gap: 3rem;
+    display: flex;
+    margin-top: 0;
+    
 }
 
 nav a {
@@ -98,12 +102,14 @@ nav a {
 
 .row {
     gap: 2rem;
+    flex-wrap: wrap;
 
 }
 
 .secondrow {
     row-gap: 2rem;
     column-gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .why {
@@ -137,12 +143,12 @@ nav a {
 }
 
 .secondrow div {
-    width: 25%;
+    width: 20rem;
     margin-top: 4rem;
 }
 
 .row div {
-    width: 25%;
+    width: 20rem;
     margin-top: 4rem;
 }
 
@@ -161,7 +167,7 @@ nav a {
 .how div {
     border: 0.065rem solid #a2a2a2;
     border-radius: 10px;
-    width: 40rem;
+    width: 18rem;
     text-align: left;
     padding: 0rem 1rem 1rem 1rem;
     position: relative;
@@ -191,6 +197,7 @@ nav a {
 footer {
     background-color: #1D1B1F;
     color: #FBFAFC;
+    padding: 2rem 6.25rem;
 
 
 }
@@ -236,6 +243,7 @@ ul {
 .quote {
     gap: 1.5rem;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .quote p {
@@ -298,7 +306,7 @@ ul {
 }
 
 footer>div {
-    padding: 3rem 5rem 2.8125rem 7rem;
+    display: flex;
 }
 
 footer a {
@@ -318,4 +326,21 @@ nav a:visited {
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
+}
+
+
+@media screen and (min-width: 481px) {
+   /*  body{
+        font-size: 24px;
+    } */
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+   /*  body{
+        background-color: blue;
+    } */
+}
+.testimonial div:nth-child(3){
+    display: none;
 }
