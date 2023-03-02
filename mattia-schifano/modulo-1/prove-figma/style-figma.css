@@ -156,6 +156,7 @@ h3 {
         flex-direction: row;
         gap: 5rem;
         padding: 10px;
+        flex-wrap: wrap;
  }
 
 .reception{
