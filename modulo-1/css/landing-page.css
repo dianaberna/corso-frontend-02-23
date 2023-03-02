@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+@import "/modulo-1/css/header.css";
+
+:root{
+    --dark-gray: #1d1b1f;
+}
 
 /* general */
 
@@ -15,8 +20,10 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: 4.25rem;
+    font-size: 2.5rem;
 }
+
+/* non va qui il @media che cambierà l'h1 */
 
 h2 {
     font-weight: 700;
@@ -32,7 +39,7 @@ h3{
 
 button {
     font-family: inherit;
-    border: 1px solid #1d1b1f;
+    border: 1px solid var(--dark-gray);
     border-radius: 4px;
     background: #f0f0f0;
     padding: 1rem 1.25rem;
@@ -71,20 +78,11 @@ nav a {
     color: inherit;
 }
 
-/* header */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8rem;
+nav a:hover{
+    text-decoration: underline;
 }
 
-header h1 ~ p {
-    color: #706d73;
-    font-weight: 500;
-    font-size: 1.25rem;
-}
+
 
 /* section why */
 
@@ -97,6 +95,7 @@ header h1 ~ p {
     justify-content: center;
     gap: 5rem;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 #why > div > div {
@@ -112,6 +111,7 @@ header h1 ~ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #why2 .container-card {
@@ -212,4 +212,74 @@ section#testimonial .card > div {
 
 #cta h2, #cta h3{
     text-align: left;
+}
+
+/* footer */
+footer{
+    background-color: #1D1B1F;
+    color: #ffffff;
+    padding: 2rem 6.25rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+}
+
+footer hr{
+    border: 1px solid #FBFAFC;
+}
+
+.fa-brands {
+    font-size: 1.5625rem;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
 }
