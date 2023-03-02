@@ -59,6 +59,7 @@ box shadow: x y blur(indicato con px per x e px per y oppure colore ecc)
 
 body{
     font-family: 'Lexend', sans-serif;
+    color: #1d1b1f;
 }
 
 /* NAV */
@@ -71,14 +72,14 @@ nav{
     top: 0;
     position: sticky;
     background-color: white;
+    z-index: 1;
 }
 
-ul{
+nav > ul{
     list-style: none;
     display: flex;
-    justify-content: flex-end;
     gap: 3rem;
-    padding: 0;
+    padding-left: 0;
 }
 
 a{
@@ -88,7 +89,9 @@ a{
 
 /* HEADER */
 header{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 6.25rem 0;
 }
 
@@ -112,9 +115,11 @@ button{
     border: .0625rem solid #1D1B1F;
     border-radius: 0.25rem;
     background: #F0F0F0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     box-shadow: #1D1B1F .25rem .25rem 0;
-
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 /* MAIN */
@@ -277,4 +282,41 @@ h4{
 #createperfect{
     padding: 6.25rem  5rem;
     background-color:#F0F0F0;
+}
+
+#createperfect h2, #createperfect h3{
+    text-align: left;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #1D1B1F;
+    color: #F0F0F0;
+    padding: 1.625rem 6.25rem;
+}
+
+footer img{
+    margin-top: 1.875rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer hr{
+    border-color: red;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer li{
+    
 }
