@@ -67,7 +67,7 @@ h1 {
 
 header {
     text-align: center;
-    margin: 10rem 10rem;
+    margin: 1rem 1rem;
 }
 
 
@@ -114,6 +114,8 @@ header {
 #partner > h2{
     text-align: center;
     font-size: 60px;
+    
+    
 }
 
 #partner > div{
@@ -149,6 +151,7 @@ header {
 
 #testimonial > div > div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
     align-items: flex-start;
@@ -198,6 +201,7 @@ header {
     padding: 1rem;
 }
 
+
 /* section how */
 
 #how{
@@ -222,7 +226,8 @@ header {
 #how > div > div{
     border: 1px solid black;
     border-radius: .5rem;
-    width: 40rem;
+    /*width: 40rem;*/
+    width: 10rem;
     padding: 1rem;
     position: relative;
 }
@@ -303,3 +308,9 @@ footer hr{
 .fa-brands {
     font-size: 1.5625rem;
 }
+
+ @media screen and (max-width:480px){ 
+    .svg1, .svg1 svg{
+        display:none;
+    }
+ }
