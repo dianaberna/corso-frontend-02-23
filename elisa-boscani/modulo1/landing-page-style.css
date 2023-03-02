@@ -13,6 +13,11 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   margin: 3rem 3rem 0 3rem;
+  position: sticky;
+  top: 0;
+  width: 90%;
+  background-color: #ffff;
+  z-index: 1;
 }
 /* nav ul li {
   display: inline-flex;
