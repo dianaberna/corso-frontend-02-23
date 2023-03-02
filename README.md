@@ -1,5 +1,5 @@
 # Corso Frontend
-prova
+
 ## Organizzazione branch e cartelle
 
 ## Figma
