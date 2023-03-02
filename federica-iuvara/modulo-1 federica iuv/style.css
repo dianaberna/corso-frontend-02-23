@@ -4,7 +4,7 @@
 body,
 html {
   font-family: "Lexend", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
 }
@@ -29,10 +29,11 @@ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 6.25rem;
+  /* padding: 2rem 6.25rem; */
+  padding: 50px;
   position: sticky;
   top: 0px;
-  width: 90%;
+  /* width: 100%; */
   background-color: white;
   z-index: 1;
 }
