@@ -41,7 +41,7 @@ html, body{
 
 .orizzontale{
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .margin{
