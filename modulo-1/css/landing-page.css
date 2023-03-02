@@ -15,8 +15,10 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: 4.25rem;
+    font-size: 2.5rem;
 }
+
+/* non va qui il @media che cambierà l'h1 */
 
 h2 {
     font-weight: 700;
@@ -78,6 +80,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 8rem;
+    padding: 2rem 6.25rem;
 }
 
 header h1 ~ p {
@@ -97,6 +100,7 @@ header h1 ~ p {
     justify-content: center;
     gap: 5rem;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 #why > div > div {
@@ -112,6 +116,7 @@ header h1 ~ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #why2 .container-card {
@@ -259,4 +264,29 @@ footer hr{
 
 .fa-brands {
     font-size: 1.5625rem;
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+            font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
 }
