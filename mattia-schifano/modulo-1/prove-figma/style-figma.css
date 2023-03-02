@@ -11,9 +11,13 @@ nav{
         display:flex;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
+        width: 90%;
+        top: 0;
+        z-index: 1;
     }
     
-ul{
+nav ul{
         list-style: none;
         display: flex;
         justify-content: flex-end;
