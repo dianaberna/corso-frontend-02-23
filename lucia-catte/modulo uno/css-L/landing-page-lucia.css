@@ -10,13 +10,6 @@ html, body{
     margin: 0;
 }
 
-header {
-    text-align: center;
-    padding: 100px;
-    gap: .625rem;
-    background-image: image()
-}
-
 
 h1{
     font-weight: 700;
@@ -42,7 +35,11 @@ button{
     background-color: #F0F0F0;
     padding: 1rem 1.25rem;
     box-shadow: 4px 4px 0px #1D1B1F;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+
 
 /* barra di navigazione */
 
@@ -73,6 +70,19 @@ nav a{
     color: inherit;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+header h1 ~ p{
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+}
 /*prima sezione how*/
 
 #Why{
@@ -80,142 +90,75 @@ nav a{
     padding-bottom: 40px;
 
 }
-.primagrid{
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    align-content: space-around;
-    gap: 4rem;
-    margin: 50px;
-    
 
+/* prima sezione */
+
+.why{
+    padding: 7.5rem 0;
 }
 
-#P1, #P2, #P3, #P4 {
-    width: 360px;
-    height: 263px;
-}
-
-.primasection{
+.why > div{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.why > div > div{
+    width: 22.5rem;
+    padding: 1.5rem;
+}
+
+.why > div > div > div{
     text-align: center;
-    padding: 120px 100px;
-    gap: 10px;
-    
 }
  
 /* div contenente la sezione partners*/
 
 .Partner{
-    text-align: center;
-    padding: 30px 30px 50px 30px;
     background-color: #F0F0F0;
+    padding: 5rem 0;
 }
 
-/* size del titolo Partners */
-span > h2{
-    font-size: 48px;
-}
-
-/* l'elenco dei loghi partners*/
-.elenco2{
+.Partner > div{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 24px 50px;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
-
-/* size dei loghi */
-#apple{
-    width: 6rem;
-    height: 2rem;
-}
-
-#amazon{
-    width: 106.88px;
-    height: 32px;
-}
-
-#google{
-    width: 96.63px;
-    height: 32px;
-}
-
-#microsoft{
-    width: 150.4px;
-    height: 32px;
-}
-
-#apple{
-    width: 159.2px;
-    height: 32px;
-}
-
 
 /* sezione card recensioni */
 
-.cardsection{
-    align-content: center;
-}
+/* section testimonial */
 
-/* div contente le card*/
-.genitorecards{
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
-    align-content: center;
-    padding: 20px 20px 20px 20px;
-    text-align: left;
-}
-
-/* div contenente le tre cards*/
-.cards{
-    border: solid black 1px;
-    border-radius: 10px;
-    background-color: #EBEBEB;
-    margin: 20px;
-    
-
-}
-
-/* padding every card*/
-#card1{
-    padding: 0 0 1rem 1rem;
-    
-}
-
-#card2{
-    padding: 0 0 1rem 1rem;
-}
-
-#card3{
-    padding: 0 0 1rem 1rem;
-}
-
-/* descrizione lavori e aziende cards*/
-#descrizione{
-    color: #706D73;
-
-}
-
-/* attributi delle frecce*/
-.frecce{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-}
-
-/*div contentente le frecce e le cards*/
-.genitorecardefrecce{
+section#testimonial > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+
+section#testimonial > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+section#testimonial .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20.5rem;
+    color: #302e32;
+}
+
+section#testimonial .card .descrizione {
+    color: #706d73;
+}
+
+section#testimonial .card > div {
+    padding: 1rem;
 }
 
 /* sezione 3 cards con i numeretti*/
@@ -264,24 +207,14 @@ span > h2{
 }
 
 /* sezione finale con il bottone */
-.lastsection{
-    text-align: left;
-    padding: 60px;
-    gap: 20px;
+
+#lastsection{
     background-color: #F0F0F0;
+    padding: 2rem 6.25rem;
 }
 
-/* imposto colore titolo della sezione */
-.lastsection h3{
-    color: #302E32;
-}
-
-/* imposto l'ultimo bottone */
-#bottone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+#lastsection h2, #lastsection h3{
+    text-align: left;
 }
 
 /* imposto l'intera sezione del footer*/
@@ -290,29 +223,29 @@ footer{
     color: #D3D0D6;
     padding: 2rem 6.25rem;
 }
-
+/*imposto il contenitore della parte superiore del footer*/
 footer > div{
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
 }
-
+/*imposto gli h5*/
 footer h5{
     font-size: 1rem;
     margin-top: 0;
 }
-
+/*imposto l'elenco senza i dot, tolgo il padding e imposto il size del font*/
 footer ul{
     list-style-type: none;
     padding-left: 0;
     font-weight: 400;
 }
-
+/* imposto il flex ai div dentro il div genitore*/
 footer > div > div{
     display: flex;
     gap: 2rem;
 }
-
+/*imposto il colore e il padding di sotto alle scritte dentro l'elenco*/
 footer ul > li{
     padding-bottom: 1.5rem;
     color: #D3D0D6;
@@ -331,7 +264,6 @@ footer hr{
 }
 
 .fa-brands{
-    font-size: 25px;
+    font-size: 25px; 
 }
-
 
