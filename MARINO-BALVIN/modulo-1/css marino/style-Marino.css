@@ -55,16 +55,19 @@ font-size: 3rem;
     
 }
 
-nav{                /* nav */
+ /* nav */
+
+nav{               
     display: flex;
     justify-content: space-between;
     padding: 2rem 6.25rem;
     position: sticky;
     top: 0px;
+    margin-top: 2rem;
     width: 90%;
     background-color: white;
     z-index: 1;
-    border: 20rem;
+    border-bottom: 1px solid black;
 
 }
 
@@ -79,7 +82,9 @@ nav a{
     color: inherit;
 }
 
-header{                 /* header */
+ /* header */
+
+header{                
     display: flex;
     flex-direction: column;
    align-items: center;
@@ -92,7 +97,9 @@ header h1 ~ p {
     font-size: 1.25rem;
 }
 
-#why{                     /* section why */
+ /* section why */
+
+#why{                    
     padding: 7.5rem 0;
 }
 
@@ -113,7 +120,7 @@ header h1 ~ p {
     text-align: center;
 }    
 
-#why2 > div {
+/* #why2 > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -127,9 +134,11 @@ header h1 ~ p {
 #why2 .container-card > div {
     width: 22.5rem;
     padding: 1.5rem;
-}
+} */
 
-#partner{            /* section partner */
+ /* section partner */
+
+#partner{            
     background-color: #F0F0F0;
     padding: 5rem 0;   
 }
@@ -141,6 +150,8 @@ header h1 ~ p {
     flex-wrap: wrap;
     gap: 3rem;
 }
+
+/* section testimonial */
 
 section#testimonial > div {
     display: flex;
@@ -169,3 +180,30 @@ section#testimonial .card .descrizione {
 section#testimonial .card > div {
     padding: 1rem;
 }
+
+/* section how */
+
+#how > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+#how > div > div{
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 40rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#how > h3{
+    text-align: left;
+}
+
+#how span{
+    border: 1px solid black;
+    
+}
+
