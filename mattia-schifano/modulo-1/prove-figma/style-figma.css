@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2? family= Lexend:wght@300;400;500;600;700 & display=swap');
 
-body{
-        font-family: "lexend",sans-serif;
-        padding: 0;
+
+:root{
+        --dark-gray: #1d1b1f;
+    }
+
+
+
+  /* general */
+html, body{
         margin: 0;
 }
+
+body{
+        font-family: "lexend",sans-serif;
+        /* padding: 0; */
+        color: #1d1b1f;
+        
+}
+
+
         /* nav */
 nav{
-        padding:1.625rem 6.25rem;
+        padding: 50px;
         display:flex;
         justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
         position: sticky;
-        width: 90%;
+        /* width: 90%; */
         top: 0;
         margin-top: 0;
         background-color: white;
@@ -23,7 +38,7 @@ nav{
 nav ul{
         list-style: none;
         display: flex;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
         gap: 3rem;
 }
     
@@ -31,7 +46,12 @@ nav a{
         text-decoration: none;
         color: inherit;
 }
-li{
+
+nav a:hover{
+        text-decoration: underline;
+}
+
+nav li{
         font-size: .875rem;
         font-weight: 600;
         color: #1D1B1F;
@@ -41,7 +61,7 @@ li{
 
 h1{
         font-weight: 700;
-        font-size: 4.25rem;
+        font-size: 2.5rem;
 
 }
 
@@ -58,11 +78,15 @@ h1 ~ p {
 }
 button{
         font-family: inherit;
-        border: 1px solid #1D1B1F;
+        border: 1px solid var(--dark-gray);
         border-radius: 4px;
         background: #F0F0F0;
         padding: 1rem 1.25rem;
         box-shadow: 4px 4px 0px #1D1B1F;
+        box-shadow: 4px 4px 0px #1d1b1f;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
 }
         /* main */
                 /* section */
@@ -289,4 +313,28 @@ footer > hr{
 
 .fa-brands {
         font-size: 1.5625rem;
+    }
+
+    /* dimensione schermo */
+
+    @media screen and (min-width: 481px) and (max-width: 768px){
+    
+    }
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        h1{
+            font-size: 4.25rem;
+        }
+    }
+    
+    @media screen and (min-width: 1025px) and (max-width: 1200px){
+        h1{
+            font-size: 4.25rem;
+        }
+    }
+    
+    @media screen and (min-width: 1200px){
+        h1{
+            font-size: 4.25rem;
+        }
     }
