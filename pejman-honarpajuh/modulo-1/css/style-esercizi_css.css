@@ -28,6 +28,9 @@ nav a {
     align-items: center;
     
 }
+nav a:hover{
+    text-decoration: underline;
+}
 nav > a {
     padding-left: 6rem;
     display: flex;
@@ -45,14 +48,14 @@ nav > div {
    
 body {
     font-family: 'Lexend', sans-serif;
-    width: 100%;
-    margin:  0;
+    /* width: 100%;
+    margin:  0; */
     background-color: #FBFAFC;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 4.25rem;
+    font-size: 2.5rem;
 }
 h2 {
     font-weight: 700;
@@ -102,34 +105,30 @@ main{
 /*********** Sectione main **********/
 /************************************/
 .why_use {
-    /* border: 1px solid greenyellow; */
-    width: 60%;
-    margin: 0 auto;
     background-color: #FBFAFC;
-    padding-bottom: 6.25rem; 
+    padding-bottom: 7.5rem; 
 }
 
-  .flex {
+  .flex_col {
     display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
   }
-  .flex col {
-    flex-direction: column;
+  .flex_row > div {
+     text-align: center;
 }
 
 .flex_row {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.why_use .sinistra {
-   padding: 2rem 4rem;
-}
-.why_use .destra {
-    padding: 2rem 4rem;
+    width: 22.5rem;
+    padding: 1.5rem;
 }
 
 .why_use  p {
     text-align: left;
     padding: 1.25rem 1.25rem;
+    color: #706D73;
 }
 /********** Sectione partner ********/
 /************************************/
@@ -154,9 +153,6 @@ main{
 /****** Sectione our-customers ******/
 /************************************/
 .our-customers {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
     height: 46.125rem;
 }
 
@@ -164,11 +160,9 @@ main{
     padding-bottom: 1rem;
 }
 .flex-cont {
-    width: 85%;
-    height: 60%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
 }
 .aticol {
     border: 1px solid rgb(44, 44, 44);
@@ -194,7 +188,7 @@ main{
 .one {
     background-image: url(/pejman-honarpajuh/modulo-1/img/foto-1.png);
     background-repeat: no-repeat;
-    height: 85%;
+    height: 22rem;
 }
 .two {
     background-image: url(/pejman-honarpajuh/modulo-1/img/foto-2.png);
@@ -203,13 +197,16 @@ main{
 .tree {
     background-image: url(/pejman-honarpajuh/modulo-1/img/foto-3.png);
     background-repeat: no-repeat;
-    height: 85%;
+    height: 22rem;
 }
 .aticol p {
     padding-top: 12rem;
     text-align: left;
     padding-left: 1.2rem;
     padding-bottom: 1rem;
+}
+.one p {
+    padding-bottom: 2rem;
 }
 .flex-cont img {
     cursor: pointer;
@@ -219,9 +216,9 @@ main{
 /************************************/
 .how-does {
     /* border:1px solid #48f77c; */
-    margin: 0 auto;
+    /* margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 100%; */
 }
 .how-does span {
     border: 1px solid black;
@@ -255,14 +252,13 @@ main{
 .top-footer {
     /* border:1px solid #a048f7; */
     margin: 0 auto;
-    text-align: left;
     width: 100%;
+    text-align: left;
     height:  24.5rem;
     background-color: #F0F0F0;
 }
 .top-footer div {
-    margin: 2rem auto;
-    width:80% ;
+    padding: 2rem 6.25rem;
 }
 .top-footer h2 {
     width: 80%;
@@ -351,4 +347,34 @@ footer .social div > a > i {
    padding-left: 1.5rem;
    color: #F0F0F0;
    padding-top: 1rem;
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    div.flex-cont {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    div.two , img.col-1 {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+        font-size: 4.25rem;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
 }
