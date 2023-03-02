@@ -7,30 +7,8 @@ body{
     color: #1D1B1F;
 }
 
-.firstline{
-    border: dotted red;
-    font-weight: 300;
-    font-size: x-small;
-    line-height: 20px;
-    letter-spacing: 0.6px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem 1rem 1rem  ;
-    
-}
-
-#lista1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 8px;
-    border: dotted red;
-    list-style-type: none;
-    text-decoration: none;
-    color: inherit;
-
+html, body{
+    margin: 0;
 }
 
 header {
@@ -46,13 +24,52 @@ h1{
     font-size: 68px;  
 }
 
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 button{
     font-family: inherit;
     border: 1px solid #1D1B1F;
     border-radius: 4px;
+    background-color: #F0F0F0;
     padding: 1rem 1.25rem;
-    box-shadow: 4px 4px #1D1B1F;
+    box-shadow: 4px 4px 0px #1D1B1F;
 }
+
+/* barra di navigazione */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem 6.25rem;
+    top: 0px;
+    width: 90%;
+    background-color: white;
+    z-index: 1;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*prima sezione how*/
 
 #Why{
     font-size: 48px;
@@ -84,6 +101,8 @@ button{
     gap: 10px;
     
 }
+ 
+/* div contenente la sezione partners*/
 
 .Partner{
     text-align: center;
@@ -92,10 +111,12 @@ button{
     background-color: #F0F0F0;
 }
 
+/* size del titolo Partners */
 span > h2{
     font-size: 48px;
 }
 
+/* l'elenco dei loghi partners*/
 .elenco2{
     display: flex;
     flex-direction: row;
@@ -105,6 +126,7 @@ span > h2{
     padding: 24px 50px;
 }
 
+/* size dei loghi */
 #apple{
     width: 6rem;
     height: 2rem;
@@ -131,13 +153,13 @@ span > h2{
 }
 
 
+/* sezione card recensioni */
 
 .cardsection{
     align-content: center;
 }
 
-
-
+/* div contente le card*/
 .genitorecards{
     display: flex;
     justify-content: space-between;
@@ -147,6 +169,7 @@ span > h2{
     text-align: left;
 }
 
+/* div contenente le tre cards*/
 .cards{
     border: solid black 1px;
     border-radius: 10px;
@@ -156,6 +179,7 @@ span > h2{
 
 }
 
+/* padding every card*/
 #card1{
     padding: 0 0 1rem 1rem;
     
@@ -169,11 +193,13 @@ span > h2{
     padding: 0 0 1rem 1rem;
 }
 
+/* descrizione lavori e aziende cards*/
 #descrizione{
     color: #706D73;
 
 }
 
+/* attributi delle frecce*/
 .frecce{
     display: flex;
     flex-direction: column;
@@ -182,17 +208,21 @@ span > h2{
     gap: 32px;
 }
 
+/*div contentente le frecce e le cards*/
 .genitorecardefrecce{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* sezione 3 cards con i numeretti*/
 
+/* allineamento del titolo al centro */
 #how h2{
     text-align: center;
 }
 
+/* imposto il div contenitore della sezione senza il titolo*/
 #how > div {
     display: flex;
     flex-direction: column;
@@ -200,6 +230,7 @@ span > h2{
     align-items: center;
 }
 
+/* specifiche delle singole card */
 #how > div > div{
     border: 1px solid black;
     border-radius: .5rem;
@@ -208,80 +239,28 @@ span > h2{
     position: relative;
 }
 
+/* allineo i singolo titolini dentro le card a sinistra*/
 #how h3{
     text-align: left;
 }
 
+/* allineo al centro i paragrafi dentro le cards */
 #how > p{
     text-align: center;
 }
 
+/* imposto i numeretti con bordo, sfondo, scritta e posizione del quadrato*/
 #how span{
     border: 1px solid black;
     border-radius: .5rem;
     padding: 1rem;
     background-color: white;
-    position: absolute;
+    position: absolute; /* per ogni absolute ci va un relative nel contenitore che lo contiene*/
     top: -1.5rem;
     left: -1.5rem;
 }
 
-/*.terzoelenco {
-    border: dotted red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;    
-}
-
-.terzoelenco > div{
-    border: black 1px;
-    border: ;
-}
-
-/*
-.terzoelenco > div {
-    border: dotted red;
-    border: solid black 1px;
-    margin: 40px 40px 40px 40px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 9px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    padding: 20px 20px 20px 20px;
-    text-align: left;
-}
-
-.terzoelenco > div > span{
-    border: dotted red;
-    box-sizing: border-box;
-    border: solid black 1px;
-    border-radius: 9px;
-    padding: 10px;
-
-}
-
-.terzoelenco h3{
-    border: dotted red;
-    padding: 20px;
-}
-
-.terzoelenco div > div >{
-    border: dotted red;
-    display: grid;
-    text-align: left;
-    padding: 20px;
-}
-
-.terzoelenco p{
-    border: dotted red;
-    
-}*/
-
+/* sezione finale con il bottone */
 .lastsection{
     border: dotted red;
     text-align: left;
@@ -289,9 +268,13 @@ span > h2{
     gap: 20px;
     background-color: #F0F0F0;
 }
+
+/* imposto colore titolo della sezione */
 .lastsection h3{
     color: #302E32;
 }
+
+/* imposto l'ultimo bottone */
 #bottone{
     display: flex;
     justify-content: center;
@@ -299,12 +282,14 @@ span > h2{
     gap: 8px;
 }
 
+/* imposto l'intera sezione del footer*/
 footer{
     background-color: #1D1B1F;
     color: #D3D0D6;
     border: dotted red;
 }
 
+/* imposto il div contenente la parte di su del footer */
 .footer{
     font-size: small;
     line-height: 10px;
@@ -316,20 +301,14 @@ footer{
     
 }
 
-
+/* imposto entrambi i due elenchi 
 .liste{
     display: flex;
     border: dotted red;
     list-style: none;
 }
 
-/*.contatti {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-}*/
-
+/* tolgo i puntini e imposto dei margini ai due elenchi*/
 .liste ul {
         list-style: none;
         margin: 0;
