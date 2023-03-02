@@ -3,7 +3,6 @@
 body{
     background-color: white;
     font-family: 'Lexend', sans-serif;
-    border: dotted red;
     color: #1D1B1F;
 }
 
@@ -50,12 +49,17 @@ button{
 nav {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    padding: 2rem 6.25rem;
-    top: 0px;
-    width: 90%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    /* 
+        position: fixed;
+        width: calc(100% - 100px);
+    */
     background-color: white;
     z-index: 1;
+    border: 1px solid black;
 }
 
 nav ul{
@@ -107,7 +111,6 @@ nav a{
 .Partner{
     text-align: center;
     padding: 30px 30px 50px 30px;
-    border: dotted red;
     background-color: #F0F0F0;
 }
 
@@ -262,7 +265,6 @@ span > h2{
 
 /* sezione finale con il bottone */
 .lastsection{
-    border: dotted red;
     text-align: left;
     padding: 60px;
     gap: 20px;
@@ -286,96 +288,50 @@ span > h2{
 footer{
     background-color: #1D1B1F;
     color: #D3D0D6;
-    border: dotted red;
+    padding: 2rem 6.25rem;
 }
 
-/* imposto il div contenente la parte di su del footer */
-.footer{
-    font-size: small;
-    line-height: 10px;
+footer > div{
     display: flex;
     justify-content: space-between;
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 10px 10px 10px 10px;
-    border: dotted red;
-    
+    padding-top: 1rem;
 }
 
-/* imposto entrambi i due elenchi 
-.liste{
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer > div > div{
     display: flex;
-    border: dotted red;
-    list-style: none;
+    gap: 2rem;
 }
 
-/* tolgo i puntini e imposto dei margini ai due elenchi*/
-.liste ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-}
-.contatti{
-    border: dotted red;
-    padding: 10px 10px 10px 10px;
-    
-}
-.mypage{
-    border: dotted red;
-    padding: 10px 10px 10px 10px;
-}
-/*.contatti{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.mypage {
-    border: dotted red;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
 }
 
-.liste ul > li {
-    margin-bottom: 1rem;
-    margin-left: -2.5rem;
-}*/
-
-#contact{
-    white-space: break-spaces;
-   
-
-}
-
-#menu{
-    white-space: break-spaces;
+footer > div a{
     text-decoration: none;
     color: inherit;
 }
-.lastline{
-    border: dotted red;
-    font-size: x-small;
-    display: flex;  
-    justify-content: space-between;
-    padding: 1rem 1rem 1rem 1rem;
-    align-items: center;
+footer > div #title{
+    font-weight: 600;
 }
 
-#loghisocial{
-    border: dotted red;
-}
-#fb{
-    padding-right: 24px;
+footer hr{
+    border: solid 1px #FBFAFC;
 }
 
-#tt{
-    padding-right: 24px;
+.fa-brands{
+    font-size: 25px;
 }
 
-#in{
-    padding-right: 24px;
-}
-
-#ld{
-    padding-right: 24px;
-}
 
