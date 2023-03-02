@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+@import "/modulo-1/css/header.css";
+
+:root{
+    --dark-gray: #1d1b1f;
+}
 
 /* general */
 
@@ -14,13 +19,8 @@ body {
 }
 
 h1 {
-<<<<<<< HEAD
-  font-weight: 700;
-  font-size: 4.25rem;
-=======
     font-weight: 700;
     font-size: 2.5rem;
->>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
 
 /* non va qui il @media che cambierà l'h1 */
@@ -38,15 +38,15 @@ h3 {
 }
 
 button {
-  font-family: inherit;
-  border: 1px solid #1d1b1f;
-  border-radius: 4px;
-  background: #f0f0f0;
-  padding: 1rem 1.25rem;
-  box-shadow: 4px 4px 0px #1d1b1f;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+    font-family: inherit;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    background: #f0f0f0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1d1b1f;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* navbar */
@@ -86,21 +86,22 @@ nav a {
   color: inherit;
 }
 
+
 /* header */
 
 header {
-<<<<<<< HEAD
+
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 8rem;
-=======
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 8rem;
     padding: 2rem 6.25rem;
->>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
+
 }
 
 header h1 ~ p {
@@ -109,6 +110,12 @@ header h1 ~ p {
   font-size: 1.25rem;
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+
 /* section why */
 
 #why {
@@ -116,18 +123,11 @@ header h1 ~ p {
 }
 
 #why > div {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin-bottom: 5rem;
-=======
     display: flex;
     justify-content: center;
     gap: 5rem;
     margin-bottom: 5rem;
     flex-wrap: wrap;
->>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
 
 #why > div > div {
@@ -140,16 +140,10 @@ header h1 ~ p {
 }
 
 #why2 > div {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-=======
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
->>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
 
 #why2 .container-card {
@@ -301,15 +295,13 @@ footer hr{
 }
 
 
-
-
 @media screen and (min-width: 481px) and (max-width: 768px){
     
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     h1{
-            font-size: 4.25rem;
+        font-size: 4.25rem;
     }
 }
 
