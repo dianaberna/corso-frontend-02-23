@@ -97,6 +97,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   /* height: 100%; */
+  
 }
 
 .container img {
@@ -285,14 +286,16 @@ section .card > div {
 /* SEZIONE FOOTER */
 footer {
   background-color: #1d1b1f;
-  height: 12.5rem;
+  /* height: 12.5rem; */
   color: #ffffff;
 }
 
 .container_footer {
   display: flex;
   justify-content: space-between;
-  padding: 1.875rem 3.125rem;
+  /* padding: 1.875rem 3.125rem; */
+  gap: 2rem;
+  padding: 2rem 6.25rem;
 }
 
 .container_two {
@@ -327,4 +330,5 @@ footer ul li {
 footer hr {
   margin: 0 30px;
   margin-bottom: 0.625rem;
+  border: 1px solid #fbfafc;
 }

@@ -14,9 +14,16 @@ body {
 }
 
 h1 {
+<<<<<<< HEAD
   font-weight: 700;
   font-size: 4.25rem;
+=======
+    font-weight: 700;
+    font-size: 2.5rem;
+>>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
+
+/* non va qui il @media che cambierà l'h1 */
 
 h2 {
   font-weight: 700;
@@ -82,10 +89,18 @@ nav a {
 /* header */
 
 header {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 8rem;
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 2rem 6.25rem;
+>>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
 
 header h1 ~ p {
@@ -101,10 +116,18 @@ header h1 ~ p {
 }
 
 #why > div {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   gap: 5rem;
   margin-bottom: 5rem;
+=======
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+>>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
 
 #why > div > div {
@@ -117,9 +140,16 @@ header h1 ~ p {
 }
 
 #why2 > div {
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   justify-content: center;
+=======
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+>>>>>>> 7dd8a726e63ca78613e44ed0e870f0efa57f7165
 }
 
 #why2 .container-card {
@@ -221,4 +251,76 @@ section#testimonial .card > div {
 #cta h2,
 #cta h3 {
   text-align: left;
+}
+
+/* footer */
+footer{
+    background-color: #1D1B1F;
+    color: #ffffff;
+    padding: 2rem 6.25rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+}
+
+footer hr{
+    border: 1px solid #FBFAFC;
+}
+
+.fa-brands {
+    font-size: 1.5625rem;
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+            font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
 }
