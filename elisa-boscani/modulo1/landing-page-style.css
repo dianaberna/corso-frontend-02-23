@@ -52,8 +52,8 @@ button {
   background-color: #f0f0f0;
   padding: 1rem 1.25rem;
   box-shadow: 4px 4px 0px #1d1b1f;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   gap: 0.5rem;
 }
 .paginacentrale {
@@ -80,22 +80,17 @@ section > h2 {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  margin: 4rem;
+  margin: 10rem;
 }
-.alineare-sinistra {
+.alineare div {
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
   flex-direction: column;
+  align-items: center;
   margin: 1.25rem;
-  padding: 3.125rem;
+  padding: 2rem 1rem;
 }
-.alineare-destra {
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-  margin: 1.25rem;
-  padding: 3.125rem;
-}
+
 .loghi {
   text-align: center;
   background-color: #f0f0f0;
@@ -123,18 +118,21 @@ section .freccie {
 .recensioni h2 {
   text-align: center;
   padding-bottom: 1.25rem;
+  margin-top: 9.875rem;
 }
 .recensioni p {
   text-align: left;
   padding: 0.4375rem;
 }
+.nomi {
+  color: #706d73;
+}
 .recensioni div span {
   text-align: left;
   padding: 0.4375rem;
-}
-.nomi {
   font-weight: 500;
 }
+
 .alineamento-immagini {
   display: flex;
   flex-direction: row;
@@ -177,6 +175,9 @@ section .freccie {
   background-color: #f0f0f0;
   padding: 2rem 6.25rem;
   margin-top: 3.5rem;
+}
+.fine > button {
+  background-color: #fbfafc;
 }
 .fine h2,
 .fine h3 {
