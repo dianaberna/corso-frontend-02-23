@@ -29,6 +29,7 @@ h1 {
   font-weight: 700;
   font-size: 4.25rem;
 }
+
 header {
   text-align: center;
   margin: 0 10rem;
@@ -46,6 +47,9 @@ button {
   background-color: #f0f0f0;
   padding: 1rem 1.25rem;
   box-shadow: 4px 4px 0px #1d1b1f;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .paginacentrale {
   text-align: center;
@@ -54,6 +58,7 @@ button {
 section > h2 {
   font-weight: 600;
   font-size: 2.375rem;
+  text-align: center;
 }
 .paginacentrale > div > h3 {
   font-weight: 600;
@@ -133,59 +138,50 @@ section .freccie {
   align-content: center;
   gap: 2rem;
 }
-#blocchi div{
-  border: .0625rem solid #1d1b1f;
-}
-/* .secondoblocco {
+#blocchi h4 {
   text-align: center;
 }
-.secondoblocco > h4 {
-  font-weight: 400;
+#blocchi h3 {
+  text-align: left;
+}
+#blocchi > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+#blocchi > div > div {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 40rem;
+  padding: 1rem;
+  position: relative;
 }
 
-.secondoblocco > div {
-  border: 1px solid #1d1b1f;
-  border-radius: 4px;
-  text-align: left;
-  align-items: baseline;
-  display: flex;
-  flex-direction: column;
-  width: 40.625rem;
-  height: 9rem;
-  margin-left: 15.625rem;
-  padding-left: 8px;
-  padding-bottom: 20px;
+#blocchi span {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
 }
-.secondoblocco > div > span {
-  border: 1px solid #1d1b1f;
-} */
-/* .descrizione1 {
-  display: flex;
-  flex-direction: column;
-  isolation: isolate;
-  margin-bottom: 1.25rem;
-}
-.descrizione2 {
-  display: flex;
-  flex-direction: column;
-  isolation: isolate;
-  margin-bottom: 1.25rem;
-}
-.descrizione3 {
-  display: flex;
-  flex-direction: column;
-  isolation: isolate;
-  margin-bottom: 1.25rem; */
-}
+
 .fine {
   background-color: #f0f0f0;
-
-  padding: 150px;
+  padding: 2rem 6.25rem;
+  margin-top: 3.5rem;
 }
+.fine h2,
+.fine h3 {
+  text-align: left;
+}
+
 footer {
   background-color: #1d1b1f;
   color: #d3d0d6;
-  padding: 50px;
+  padding: 40px;
 }
 footer > div {
   text-align: right;
