@@ -5,7 +5,7 @@
 }*/
 /*Generale*/
 html, body {
-    margin: 0s;
+    margin: 0;
 }
 
 h1~p {
@@ -29,17 +29,33 @@ button {
 
 nav {
     display: flex;
+    justify-content: space-between;
+    padding: 2rem 3.25rem;
+    position: sticky;
+    top: 0rem;
+    /*width: 90%;*/
+    background-color: white;
+    z-index: 1;
+    border-bottom: solid #000000;
 }
 
-.collegamenti {
-    align-items: flex-end;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
 }
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 /*corpo-pagina*/
 body {
     font-family: 'Lexend', sans-serif;
-    padding: 0 6.25rem;
+    padding: 0rem;
 }
 
 h1 {
@@ -89,18 +105,23 @@ header {
 
 /*apertura sezione-2*/
 
-#partner {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    padding-inline: 10rem;
-    background-color: #b7b6b8;
+/* section partner */
+#partner{
+    background-color: #F0F0F0;
+    padding: 5rem 0;
 }
 
+#partner > h2{
+    text-align: center;
+    font-size: 60px;
+}
 
-#partner div {
-    justify-content: space-between;
+#partner > div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 
@@ -111,17 +132,174 @@ header {
 
 /*apertura sezione-3*/
 
-.title2 {
-    font-family: 'lexend';
-    font-weight: 400;
+#testimonial > h2{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 5rem;
+    font-size: 30px;
 }
 
 
-.vector {
+#testimonial > div {
     display: flex;
-    margin-left: 20rem;
-    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#testimonial > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+#testimonial .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20.5rem;
+    color: #302e32;
+}
+
+#testimonial .card .descrizione {
+    color: #706d73;
+}
+
+#testimonial .card > div {
+    padding: 1rem;
+}
+
+#testimonial > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#testimonial > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+#testimonial .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20.5rem;
+    color: #302e32;
+}
+
+#testimonial .card .descrizione {
+    color: #706d73;
+}
+
+#testimonial .card > div {
+    padding: 1rem;
+}
+
+/* section how */
+
+#how{
+    margin-bottom: 15rem;
+}
+
+#how > h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;    
+}
+
+
+#how > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+#how > div > div{
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 40rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#how h3{
+    text-align: left;
+}
+
+#how > p{
+    text-align: center;
+}
+
+#how span{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+}
+
+
+
+/* section cta */
+#cta{
+    background-color: #F0F0F0;
+    padding: 2rem 6.25rem;
+}
+
+#cta h2, #cta h3{
+    text-align: left;
+}
+
+/* footer */
+footer{
+    background-color: #1D1B1F;
+    color: #ffffff;
+    padding: 2rem 6.25rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+}
+
+footer hr{
+    border: 1px solid #8a2ce9;
+}
+
+.fa-brands {
+    font-size: 1.5625rem;
 }
