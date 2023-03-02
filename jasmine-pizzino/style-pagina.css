@@ -48,6 +48,7 @@ button {
 
 main {
   padding: 100px;
+  flex-wrap: wrap;
 }
 
 .immagine {
@@ -204,6 +205,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   padding: 5rem 0;
+  flex-wrap: wrap;
 }
 
 .parte1>span{
@@ -282,3 +284,11 @@ footer h3{
 .fa-brands{
   font-size: 1.6rem;
 }
+
+
+/* @media screen and(min-width:800px) {
+  body{
+    background-color: red;
+  }
+  
+} */
