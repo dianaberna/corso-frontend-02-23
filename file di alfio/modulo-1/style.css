@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Inter:wght@200&family=Phudu:wght@300&family=Roboto:wght@100&display=swap');
 
 body {
     font-family: 'Lexend', sans-serif;
@@ -7,39 +6,6 @@ body {
 
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 4.25rem;
-}
-header>svg{
-    position: absolute;
-    top: 0;
-    left: 37%;
-    z-index: -1;
-}
-header {
-    text-align: center;
-    margin: 0 17rem;
-    padding: 0 4rem;
-
-
-}
-
-h1~p {
-    color: #706D73;
-    font-weight: 500;
-    font-size: 1.25rem;
-}
-
-button {
-    font-family: inherit;
-    border: 1px solid #1D1B1F;
-    border-radius: 4px;
-    background: #F0F0F0;
-    padding: 1rem 1.25rem;
-    box-shadow: 4px 4px 0px #1D1B1F;
-    cursor: pointer;
-}
 /* inizio nav */
 nav a {
     text-decoration: none;
@@ -50,6 +16,8 @@ nav a {
 
 nav {
     padding: 1rem 6.25rem;
+    color: #1D1B1F;
+
 }
 
 nav ul {
@@ -66,56 +34,117 @@ nav li {
 
 }
 
-h2 {
-    text-align: center;
+header>h1 {
     font-weight: 700;
-    font-size: 3rem;
-   
+    font-size: 2.5rem;
+    color: #1D1B1F;
 }
-main>h2{
-    padding-top: 15rem;
+
+/*header */
+header>svg {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: calc(50% - 240px/2);
+    bottom: 8.6994rem;
+    z-index: -1;
+    opacity: 0.4;
 }
-/*prima section*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    Padding: 60px 16px 60px 16px;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+h1~p {
+    color: #706D73;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+button {
+    font-family: inherit;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    background: #f0f0f0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1d1b1f;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*why use my page section*/
 .primo {
     display: flex;
-    justify-content: center;
-    gap: 13rem;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem;
+    flex-wrap: wrap;
 
 }
 
-.primoFlex p {
-    color: #706D73;
+.primo h3 {
+    color: #1D1B1F;
 }
 
+.primo>h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1D1B1F;
+
+}
+
+.primoFlex p,
 .secondoFlex p {
     color: #706D73;
 }
 
-.primoFlex>div {
-    width: 15rem;
-    padding: 1.5rem 0rem 1.5rem 1.5rem;
+.primoFlex,
+.secondoFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
+.primoFlex>div,
 .secondoFlex>div {
     width: 15rem;
     padding: 1.5rem 1.5rem 1.5rem 0rem;
 }
 
+
 .Partner {
+    color: #1D1B1F;
     background-color: #F0F0F0;
     margin-top: 5rem;
     text-align: center;
-    padding-top: 5rem;
+
 }
 
 .iconePartner {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 4rem 7rem;
+    padding: 4rem 2rem;
     flex-wrap: wrap;
     gap: 3rem;
+}
+
+#h2-partner {
+    display: none;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1D1B1F;
+
 }
 
 .primoFlex>div div {
@@ -127,6 +156,14 @@ main>h2{
 }
 
 /*---------------------------------- */
+#h2-card {
+    margin-top: 6rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1D1B1F;
+}
+
 .contenitore-card>div {
     display: flex;
     gap: 4rem;
@@ -136,6 +173,7 @@ main>h2{
 }
 
 .contenitore-card {
+    padding-bottom: 5rem;
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -148,7 +186,10 @@ main>h2{
     background-color: #EBEBEB;
     border-radius: 8px 8px 8px 8px;
     width: 20rem;
+}
 
+#card3 {
+    display: none;
 }
 
 
@@ -183,9 +224,17 @@ main>h2{
 .container2>p {
     text-align: center;
     size: 1rem;
+    margin-top: 0px;
 }
 
-.flex {
+.container2>h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1D1B1F;
+}
+
+.how {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,46 +242,60 @@ main>h2{
     margin: 3rem;
 }
 
-.flex>div>h3 {
+.how>div>h3 {
     margin-top: 0.5rem;
-}
-
-.flex>div {
-    width: 40rem;
-    border: 1px solid #1C2B33;
-    border-Radius: 8px;
-    Padding: 0rem 1rem 0.7rem 1.3rem;
+    color: #1D1B1F;
 
 }
 
-.flex div>span {
+.how>div {
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 17.625rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.how div>span {
     border: 1px solid #1C2B33;
     border-Radius: 8px;
     Padding: 0.8rem;
-    position: relative;
-    left: -2.7rem;
-    top: -0.2rem;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
     background-color: white;
 }
 
-.flex div>p {
+.how div>p {
     color: #706D73;
 }
-/*--------------------------------*/ 
+
+/*-------------create-------------------*/
 .container3 {
     background-color: #F0F0F0;
-    padding: 5rem 6.25rem ;
+    padding: 2rem 1.25rem;
 }
-.container3>button{
+
+.container3>h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+
+.container3>h2 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    margin: 0px;
+    color: #1D1B1F;
+}
+
+.container3>button {
     display: flex;
     align-items: center;
     gap: 1rem;
-   
-}
 
-.container3>h2 {
-    text-align: left;
-    margin: 0px;
 }
 
 .container3 button {
@@ -240,41 +303,48 @@ main>h2{
 }
 
 /*---------------------*/
-
 footer {
     background-color: #1D1B1F;
-    color: white;
-    padding: 3rem 8rem;
+    color: #ffffff;
+    padding: 2rem 1rem;
 }
 
-footer a {
-    color: #D3D0D6;
-    font-weight: 400;
-    text-decoration: none;
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    flex-direction: column
+}
 
+footer>div>#title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5 {
+    font-size: 1rem;
 }
 
 footer ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-
-}
-
-footer li {
     list-style-type: none;
-
-
+    padding-left: 0;
+    font-weight: 400;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 5fr 2fr 1fr;
+footer ul>li {
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
 }
 
-.iconeFooter {
-    float: right;
-    display: flex;
+footer>div>div {
     gap: 2rem;
+}
+
+footer hr {
+    border: 1px solid #FBFAFC;
+}
+
+.fa-brands {
+    margin-top: 2rem;
+    font-size: 1.5625rem;
 }
