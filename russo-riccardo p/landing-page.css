@@ -58,16 +58,30 @@ body {
     padding: 0rem;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 4.25rem;
-}
 
 /*header*/
 
 header {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
     text-align: center;
-    margin: 1rem 1rem;
+    margin: 10rem 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.25rem;
+    z-index: 0;
+}
+
+header svg{
+    position:absolute;
+    z-index: -1;
+    top: 7rem;
+    /* bottom: -2rem; */
+
+
 }
 
 
@@ -85,6 +99,7 @@ header {
 
 .primo {
     display: flex;
+    flex-wrap:wrap;
     gap: 6rem;
     margin-bottom: 6rem;
     justify-content: center;
@@ -114,8 +129,6 @@ header {
 #partner > h2{
     text-align: center;
     font-size: 60px;
-    
-    
 }
 
 #partner > div{
@@ -215,6 +228,11 @@ header {
     margin-bottom: 4rem;    
 }
 
+.stile{
+    margin-bottom: 4em;
+}
+
+
 
 #how > div {
     display: flex;
@@ -266,7 +284,7 @@ header {
 footer{
     background-color: #1D1B1F;
     color: #ffffff;
-    padding: 2rem 6.25rem;
+    padding: 2rem 3.25rem;
 }
 
 footer > div{
@@ -309,8 +327,35 @@ footer hr{
     font-size: 1.5625rem;
 }
 
- @media screen and (max-width:480px){ 
+ @media screen and (max-width:800px){ 
     .svg1, .svg1 svg{
         display:none;
     }
  }
+
+ @media screen and (min-width:376px){
+    #how >div > div {
+        width: 40rem;
+    }
+}
+
+@media screen and (min-width:375px){
+    header > svg{
+        width: 100%;
+        top: 80vh;
+    }
+}
+
+@media screen and (min-width:375px){
+    footer > div > div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:375px){
+
+    .stile{
+        margin-bottom: 20%;
+    }
+}
