@@ -14,7 +14,7 @@ nav {
     height: 4.5rem;
     display:flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
     position: sticky;
     top: 0rem ;
     background-color: #F0F0F0;
@@ -32,14 +32,13 @@ nav a:hover{
     text-decoration: underline;
 }
 nav > a {
-    padding-left: 6rem;
     display: flex;
 
 }
 nav > div {
-    padding-right: 6rem;
     display:flex;
     align-items: center;
+    padding-right: 1rem;
 }
     
 /************************************/
@@ -51,6 +50,7 @@ body {
     /* width: 100%;
     margin:  0; */
     background-color: #FBFAFC;
+    
 }
 
 h1 {
@@ -59,7 +59,7 @@ h1 {
 }
 h2 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1.75rem;
 }
 h3 {
     font-weight: 600;
@@ -75,8 +75,7 @@ header {
     margin-top: 5rem;
 }
 header .header {
-    width: 70%;
-    margin: 0 auto;
+    padding: 0 1rem;
     background-image: url(/pejman-honarpajuh/modulo-1/img/griglie.png);
     background-repeat: no-repeat;
     background-position: 50% 12%;
@@ -134,9 +133,9 @@ main{
 /************************************/
 .partner {
     /* border:1px solid #1aa078; */
-    margin: 0 auto;
-    width: 100%;
-    height:  22.125rem;
+    /* margin: 0 auto;
+    width: 100%; */
+    height:  233;
     background-color: #F0F0F0;
 
 }
@@ -144,7 +143,7 @@ main{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 3rem;
     margin-top: 7rem
     
@@ -154,6 +153,7 @@ main{
 /************************************/
 .our-customers {
     height: 46.125rem;
+    margin-bottom: 11rem;
 }
 
 .our-customers h2 {
@@ -188,7 +188,7 @@ main{
 .one {
     background-image: url(/pejman-honarpajuh/modulo-1/img/foto-1.png);
     background-repeat: no-repeat;
-    height: 22rem;
+    height: 80%;
 }
 .two {
     background-image: url(/pejman-honarpajuh/modulo-1/img/foto-2.png);
@@ -197,7 +197,7 @@ main{
 .tree {
     background-image: url(/pejman-honarpajuh/modulo-1/img/foto-3.png);
     background-repeat: no-repeat;
-    height: 22rem;
+    height: 80%;
 }
 .aticol p {
     padding-top: 12rem;
@@ -206,7 +206,7 @@ main{
     padding-bottom: 1rem;
 }
 .one p {
-    padding-bottom: 2rem;
+    padding-bottom: 2.3rem;
 }
 .flex-cont img {
     cursor: pointer;
@@ -234,9 +234,9 @@ main{
 .how-does > div {
     border: 1px solid black;
     border-radius: .5rem;;
-    width: 40rem;
+    width: 19.625rem;
     margin: 5rem auto;
-    height: 9.687rem;
+    /* height: 9.687rem; */
     text-align: left;
     position: relative;
 }
@@ -251,14 +251,14 @@ main{
 /************************************/
 .top-footer {
     /* border:1px solid #a048f7; */
-    margin: 0 auto;
-    width: 100%;
+    /* margin: 0 auto;
+    width: 100%; */
     text-align: left;
     height:  24.5rem;
     background-color: #F0F0F0;
 }
 .top-footer div {
-    padding: 2rem 6.25rem;
+    padding: 1.75rem 2rem;
 }
 .top-footer h2 {
     width: 80%;
@@ -275,15 +275,18 @@ main{
 footer {
     background-color: #1D1B1F;
     color: #ffffff;
-    padding: 2rem 6.25rem;
+    padding: 2rem 1.75rem;
 }
 footer hr {
     border: 1px solid #FBFAFC;
 }
-.footer-conteiner{
+.footer-conteiner {
     display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
+    justify-content: flex-start;
+    padding-top: 0rem;
+    flex-wrap: wrap;
+    gap: 5rem;
+    text-align: left;
 }
 .footer-conteiner > a {
     text-decoration: none;
@@ -334,19 +337,34 @@ footer ul > li{
 .fa-brands {
     font-size: 1.5625rem;
 }
-footer > .footer-conteiner > div {
-    display: flex;
-    gap: 2rem;
-}
+
 footer .social {
    
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer .social div > a > i {
-   padding-left: 1.5rem;
+   padding-right: 1.5rem;
    color: #F0F0F0;
    padding-top: 1rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 481px){
+   /* body {
+    width:22.5rem ;
+    margin: 0 auto;
+    padding: 0 ;
+   } */
+    div.flex-cont {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    div.two , img.col-1 {
+        display: none;
+    }
+
+
+   
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
     div.flex-cont {
@@ -356,13 +374,87 @@ footer .social div > a > i {
     div.two , img.col-1 {
         display: none;
     }
-
+    nav > div{
+        padding-right: 6rem;
+    }
+    .top-footer>div {
+        padding: 2rem 6.25rem;
+    }
+    nav>a {
+        padding-left: 6rem;
+    }
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-customers {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 2rem 1.75rem;
+    }
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    footer > .footer-conteiner > div {
+        display: flex;
+        gap: 2rem;
+    }
+    footer .social {
+   
+        display: flex;
+        justify-content: space-between;
+    }
    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     h1{
         font-size: 4.25rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    section.img-partner {
+        flex-wrap: nowrap;
+    }
+    .how-does>div {
+        width: 40rem;
+    }
+    nav > div{
+        padding-right: 6rem;
+    }
+    .top-footer>div {
+        padding: 2rem 5.rem;
+    }
+    nav>a {
+        padding-left: 6rem;
+    }
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-customers {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 2rem 1.75rem;
+    }
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    footer > .footer-conteiner > div {
+        display: flex;
+        gap: 2rem;
+    }
+    footer .social {
+   
+        display: flex;
+        justify-content: space-between;
     }
 
 }
@@ -371,10 +463,94 @@ footer .social div > a > i {
     h1{
         font-size: 4.25rem;
     }
+    h2{
+        font-size: 3rem;
+    }
+    section.img-partner {
+        flex-wrap: nowrap;
+    }
+    .how-does>div {
+        width: 40rem;
+    }
+    nav > div{
+        padding-right: 6rem;
+    }
+    .top-footer>div {
+        padding: 2rem 6.25rem;
+    }
+    nav>a {
+        padding-left: 6rem;
+    }
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-customers {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 2rem 1.75rem;
+    }
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    footer > .footer-conteiner > div {
+        display: flex;
+        gap: 2rem;
+    }
+    footer .social {
+   
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 1200px){
     h1{
         font-size: 4.25rem;
     }
-}
+    h2{
+        font-size: 3rem;
+    }
+    section.img-partner {
+        flex-wrap: nowrap;
+    }
+    .how-does>div {
+        width: 40rem;
+    }
+    nav > div{
+        padding-right: 6rem;
+    }
+    .top-footer>div {
+        padding: 2rem 6.25rem;
+    }
+    nav>a {
+        padding-left: 6rem;
+    }
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-customers {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 2rem 1.75rem;
+    }
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    footer > .footer-conteiner > div {
+        display: flex;
+        gap: 2rem;
+    }
+    footer .social {
+   
+        display: flex;
+        justify-content: space-between;
+    }
+}   
