@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2? family= Lexend:wght@300;400;500;600;700 & display=swap');  
+  
+  
+  
+  /* dimensione schermo */
+
+                       /* Tablets */
+
+  @media screen and (min-width: 481px) and (max-width: 768px){
+    
+  }
+
+                        /* laptops */
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+      h1{
+          font-size: 4.25rem;
+      }
+  }
+
+                          /*Desktops*/
+
+  @media screen and (min-width: 1025px) and (max-width: 1200px){
+      h1{
+          font-size: 4.25rem;
+      }
+  }
+  
+                          /* TV */
+
+  @media screen and (min-width: 1200px){
+      h1{
+          font-size: 4.25rem;
+      }
+  }
