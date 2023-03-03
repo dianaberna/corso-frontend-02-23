@@ -60,6 +60,7 @@ box shadow: x y blur(indicato con px per x e px per y oppure colore ecc)
 body{
     font-family: 'Lexend', sans-serif;
     color: #1d1b1f;
+    margin: 0;
 }
 
 /* NAV */
@@ -68,14 +69,13 @@ nav{
     padding:1.625rem 6.25rem;
     display:flex;
     justify-content: space-between;
-    align-items: center;
     top: 0;
     position: sticky;
     background-color: white;
     z-index: 1;
 }
 
-nav > ul{
+nav ul{
     list-style: none;
     display: flex;
     gap: 3rem;
@@ -87,8 +87,8 @@ a{
     color: inherit;
 }
 
-nav > ul :hover{
-    color: red;
+nav ul:hover{
+    text-decoration: underline;
 }
 
 /* HEADER */
@@ -128,12 +128,12 @@ button{
     box-shadow: #1D1B1F .25rem .25rem 0;
     display: flex;
     align-items: center;
-    gap: 8px
+    gap: .5rem
 }
 
 /* MAIN */
 #whyuse{
-    padding: 7.5rem 22.5rem;
+    padding: 7.5rem 6.25rem;
 }
 
 h2{
@@ -154,7 +154,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem 4rem;
+    gap: 4rem;
 }
 
 #whyusebox > div{
@@ -200,7 +200,7 @@ h3{
 
 .boxrecensioni{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 3.125rem
 }
@@ -333,6 +333,7 @@ footer hr{
 
 footer h5{
     font-size: 1rem;
+    margin-top: 0;
 }
 
 footer ul{
@@ -366,6 +367,7 @@ footer li{
     
     nav{
         padding: 1.8125rem 1rem;
+        position: fixed;
     }
 
     nav > ul{
