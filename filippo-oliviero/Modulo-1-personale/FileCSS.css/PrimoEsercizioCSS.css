@@ -16,17 +16,30 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 6rem;
+    border-bottom: 1px solid black;
 }
 
 nav a {
     color: inherit;
     text-decoration: none;
+    padding: 0 0.5rem;
 }
 
+#griglia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#griglia svg {
+    position: absolute;
+    z-index: -1;
+    
+}
 h1 {
     font-weight: 700;
     font-size: 4.25rem;
-    padding: 5rem 5rem 0 5rem;
+    padding: 4rem 6rem 0 6rem;
 }
 
 header {
@@ -50,7 +63,9 @@ button {
 }
 
 /*fine css dell'header*/
-
+main {
+    margin-top: 8rem;
+}
 h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -133,6 +148,7 @@ h2 {
     border-radius: 8px;
     padding: 1rem;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .numeretto {
@@ -143,4 +159,70 @@ h2 {
     left: -1.5rem;
     position: absolute;
     top: -1.5rem;
+}
+
+/* inizia l ultima sezione */
+
+#ultima {
+    background-color: #F0F0F0;
+}
+
+#ultima h2 {
+    width: 55%;
+    text-align: left;
+    margin: 0 0 3rem 0;
+}
+
+#PreFooter {
+    padding: 3.75rem 6.25rem;
+    margin-top: 3rem;
+}
+
+#ultima button {
+    margin-top: 1rem;
+}
+
+/* Inizio footer */
+
+footer {
+    background: #1D1B1F;
+    color: white;
+}
+
+.NoLink {
+    text-decoration: none;
+    color: white;
+}
+
+footer > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scatolina {
+    display: flex;
+    gap: 3rem;
+}
+
+footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+
+}
+
+footer > div {
+    padding: 2rem 5rem;
+}
+
+footer h5 {
+    margin-top: 0;
+}
+
+footer ul {
+    padding: 0;
+    
+}
+
+footer svg {
+    padding: 0 0.5rem;
 }
