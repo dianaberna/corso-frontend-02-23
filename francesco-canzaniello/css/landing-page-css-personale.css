@@ -1,111 +1,240 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
 
+html,
 body {
-  font-family: "Lexend", sans-serif;
+    margin: 0;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    color: #1d1b1f;
+    /* padding: 0 6.25rem; */
+}
+h1 {
+    font-weight: 700;
+    font-size: 4.25rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+button {
+    font-family: inherit;
+    border: 1px solid #1d1b1f;
+    border-radius: 4px;
+    background: #f0f0f0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1d1b1f;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  padding-left: 100px;
-  padding-right: 100px;    
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-nav a {
-  color: inherit;
-  text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    position: sticky;
+    top: 0;
+    margin-top: 2rem;
+    /* 
+        position: fixed;
+        width: calc(100% - 100px);
+    */
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
 }
 
 nav ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
 }
 
-nav li {
-  margin-left: 20px;
-}
-
-nav span {
-  margin-right: auto;
+nav a {
+    text-decoration: none;
+    color: inherit;
 }
 header {
-  margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
 }
 
-.Testata {
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
+header h1 ~ p {
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
-#TitoloPagina {
-  font-size: 68px;
+.why {
+    padding: 7.5rem 0;
 }
-
-.Testata > button {
-  box-shadow: 2px 2px;
-  border: solid black 1px;
-  border-radius: 8px;
-  padding: 1rem 1rem 1rem 1rem;
-  font-weight: bold;
-  font-family: inherit;
+.why > div {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    justify-content: center;
 }
-.Testata > span {
-  color: gray;
+.why > div > div {
+    width: 22.5rem;
+    padding: 1.5rem;
 }
-.Whypage {
-  text-align: center;
-  margin-bottom: 3rem;
+.why > div > div > div {
+    text-align: center;
 }
-.flex-container-vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-}
-.flex-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 3rem;
-  width: 37%;
-  text-align: center;
-}
-.flex-horizontal > div > p {
-  text-align: left;
+.why > div > div > div > p {
+    text-align: left;
+    padding-bottom: 2rem;
 }
 
-.partner {
-  background-color: #f0f0f0;
-  margin-bottom: 8rem;
-}
-section > div > h2 {
-  margin-top: 8rem;
-  text-align: center;
-  font-weight: bold;
-  font-size: 200%;
+#partner {
+    background-color: #f0f0f0;
+    padding: 5rem 0;
 }
 
-.flex-vertical-partner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 10rem;
-  margin-right: 10rem;
+#partner > div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
-.flex-vertical-partner > img {
-  width: 7%;
-  height: auto;
+
+section#testimonial > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
-div > h2 {
-  text-align: center;
-  margin-top: 0;
+
+section#testimonial > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
 }
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+section#testimonial .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20.5rem;
+    color: #302e32;
+}
+
+section#testimonial .card .descrizione {
+    color: #706d73;
+}
+
+section#testimonial .card > div {
+    padding: 1rem;
+}
+
+#how > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+#how > div > div {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 40rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#how h3 {
+    text-align: left;
+}
+
+#how > p {
+    text-align: center;
+}
+
+#how span {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+}
+#cta {
+    background-color: #f0f0f0;
+    padding: 2rem 6.25rem;
+}
+
+#cta h2,
+#cta h3 {
+    text-align: left;
+}
+footer {
+    background-color: #1d1b1f;
+    color: #ffffff;
+    padding: 2rem 6.25rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer > div > #title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5 {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li {
+    padding-bottom: 1.5rem;
+    color: #d3d0d6;
+}
+
+footer > div > div {
+    display: flex;
+    gap: 2rem;
+}
+
+footer hr {
+    border: 1px solid #fbfafc;
+}
+
+.fa-brands {
+    font-size: 1.5625rem;
+}
+
+@media screen and (max-width: 1127px) {
+    .card3 {
+        display: none;
+    }
+    .freccia{
+        display: none;
+    }
+}
+@media screen and (max-width: 687px) {
+    section#testimonial > div > div {
+        flex-wrap: wrap;
+    }
 }
