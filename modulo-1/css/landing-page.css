@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+@import "/modulo-1/css/header.css";
+
+:root{
+    --dark-gray: #1d1b1f;
+}
 
 /* general */
 
@@ -34,7 +39,7 @@ h3{
 
 button {
     font-family: inherit;
-    border: 1px solid #1d1b1f;
+    border: 1px solid var(--dark-gray);
     border-radius: 4px;
     background: #f0f0f0;
     padding: 1rem 1.25rem;
@@ -73,21 +78,11 @@ nav a {
     color: inherit;
 }
 
-/* header */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8rem;
-    padding: 2rem 6.25rem;
+nav a:hover{
+    text-decoration: underline;
 }
 
-header h1 ~ p {
-    color: #706d73;
-    font-weight: 500;
-    font-size: 1.25rem;
-}
+
 
 /* section why */
 
@@ -267,15 +262,13 @@ footer hr{
 }
 
 
-
-
 @media screen and (min-width: 481px) and (max-width: 768px){
     
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     h1{
-            font-size: 4.25rem;
+        font-size: 4.25rem;
     }
 }
 
