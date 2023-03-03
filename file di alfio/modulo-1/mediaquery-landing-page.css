@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
-@media screen and (min-width: 767px) {
-    header{
+/* desktop */
+@media screen and (min-width: 1025px) {
+    header {
         padding-top: 0;
     }
+
     header>h1 {
         font-weight: 700;
         font-size: 4.25rem;
-        padding: 0rem 25rem;
         margin-bottom: 5rem;
-
+        padding: 0rem 25rem;
     }
+
+
     header>svg {
         width: 561px;
         height: 561px;
         left: calc(50% - 561px/2 - 0.5px);
-        bottom:3rem;
+        top: 2rem;
         opacity: 0.4;
     }
 
@@ -44,6 +47,10 @@
         padding-top: 5rem;
     }
 
+    .contenitore-card>svg {
+        display: block;
+    }
+
     #h2-card {
         font-size: 3rem;
     }
@@ -64,23 +71,93 @@
     .container3 {
         padding: 2rem 6.25rem;
     }
-    .container3>h2{
+
+    .container3>h2 {
         padding-right: 41rem;
     }
+
     /*footer */
-    footer{
+    footer {
         padding: 2rem 6.25rem;
     }
-    footer > div > div{
+
+    footer>div>div {
         display: flex;
         gap: 2rem;
     }
-    footer > div{
-        flex-direction:row;
+
+}
+
+
+/*tablet*/
+@media screen and (min-width: 481px) {
+    nav {
+        padding: 1rem 3.25rem;
     }
-    footer h5{
+
+    nav>ul {
+        display: inline;
+
+    }
+    .hamburger{
+        display: none;
+    }
+
+    header>h1 {
+        font-size: 4rem;
+    }
+
+    .primo>h2 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .iconePartner {
+        padding: 4rem 8rem;
+    }
+
+    #h2-card {
+        margin-top: 5rem;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+
+    .card {
+        width: 18rem;
+    }
+
+    .container2>h2 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .container2>p {
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+
+    .how>div {
+        width: 32.625rem;
+    }
+
+    footer {
+        padding: 2rem 1.25rem;
+    }
+
+    footer>div>div {
+        display: flex;
+        gap: 1rem;
+    }
+
+    footer>div {
+        flex-direction: row;
+    }
+
+    footer h5 {
         margin-top: 0;
     }
+
     .fa-brands {
         margin-top: 0rem;
     }

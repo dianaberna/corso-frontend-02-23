@@ -3,7 +3,6 @@
 body {
     font-family: 'Lexend', sans-serif;
     margin: 0;
-
 }
 
 /* inizio nav */
@@ -15,13 +14,25 @@ nav a {
 }
 
 nav {
-    padding: 1rem 6.25rem;
+    padding: 1rem 1.25rem;
     color: #1D1B1F;
 
 }
 
+.hamburger {
+    float: right;
+    width: 1.2rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.hamburger>span {
+    border: 1px solid #1D1B1F;
+}
+
 nav ul {
-    display: inline;
+    display: none;
 
 }
 
@@ -36,7 +47,7 @@ nav li {
 
 header>h1 {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #1D1B1F;
 }
 
@@ -97,6 +108,7 @@ button {
     font-weight: 600;
     font-size: 2rem;
     color: #1D1B1F;
+    text-align: center;
 
 }
 
@@ -116,7 +128,7 @@ button {
 .primoFlex>div,
 .secondoFlex>div {
     width: 15rem;
-    padding: 1.5rem 1.5rem 1.5rem 0rem;
+    padding: 1.5rem;
 }
 
 
@@ -179,6 +191,10 @@ button {
     justify-content: center;
     align-items: center;
 
+}
+
+.contenitore-card>svg {
+    display: none;
 }
 
 .card {
@@ -347,4 +363,8 @@ footer hr {
 .fa-brands {
     margin-top: 2rem;
     font-size: 1.5625rem;
+}
+
+#icone {
+    display: flex;
 }
