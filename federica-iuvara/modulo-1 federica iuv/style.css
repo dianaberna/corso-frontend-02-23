@@ -30,7 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
   /* padding: 2rem 6.25rem; */
-  padding: 50px;
+  padding: 3.125rem;
   position: sticky;
   top: 0px;
   /* width: 100%; */
@@ -86,7 +86,7 @@ header button {
 /* REGOLA h2 APPLICATA A TUTTI GLI h2 DELLA PAGINA */
 h2 {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Lexend", sans-serif;
   margin-top: 6.25rem;
   font-size: 2.5rem;
   margin-bottom: 6rem;
@@ -96,12 +96,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100%; */
-  
 }
 
 .container img {
-  width: 1.875rem;
+  /* width: 1.875rem; */
 }
 
 .container h3 {
@@ -151,24 +149,6 @@ h2 {
 }
 
 /* SEZIONE RECENSIONI */
-
-/* .container_review {
-  display: flex;
-}
-
-.box {
-  margin: 2rem;
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  background-color: #ebebeb;
-}
-
-.box-2 {
-}
-
-.box p {
-  padding: 0 1.25rem;
-} */
 
 .review_container > div {
   display: flex;
@@ -242,14 +222,14 @@ section .card > div {
 
 .pre_footer {
   background-color: #f0f0f0;
-  height: 21.875rem;
-  padding-left: 2.5rem;
+  padding: 2rem 6.25rem;
+  margin-top: 3.125rem;
 }
 
 .pre_footer h2 {
-  padding-top: 2.5rem;
   text-align: start;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .pre_footer h3 {
@@ -286,25 +266,21 @@ section .card > div {
 /* SEZIONE FOOTER */
 footer {
   background-color: #1d1b1f;
-  /* height: 12.5rem; */
   color: #ffffff;
+  padding: 2rem 6.25rem;
 }
 
 .container_footer {
   display: flex;
   justify-content: space-between;
-  /* padding: 1.875rem 3.125rem; */
   gap: 2rem;
-  padding: 2rem 6.25rem;
 }
 
 .container_two {
   display: flex;
   justify-content: space-around;
-}
-
-.footer_contact {
-  margin-right: 3.125rem;
+  padding-bottom: 1.5rem;
+  gap: 2rem;
 }
 
 footer h5 {
@@ -314,21 +290,119 @@ footer h5 {
 footer ul li {
   font-size: 0.625rem;
   font-weight: 400;
+  font-family: "Inter";
+  color: #d3d0d6;
 }
 
 .lista_loghi {
   display: flex;
   justify-content: flex-end;
-  margin-right: 1.875rem;
 }
 
 .lista_loghi a img {
   padding-right: 0.625rem;
-  height: 1.25rem;
 }
 
 footer hr {
-  margin: 0 30px;
-  margin-bottom: 0.625rem;
   border: 1px solid #fbfafc;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 2.125rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 0.625rem;
+    color: pink;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+
+  header {
+    margin-top: 2rem;
+  }
+
+  header button {
+    margin-bottom: 2.5rem;
+  }
+
+  /* SEZIONE WHY USE OUR MYPAGE */
+  .firstLine,
+  .secondLine {
+    flex-wrap: wrap;
+  }
+
+  /* SEZIONE PARTNER */
+  .partner {
+    padding: 1rem;
+  }
+
+  /* SEZIONE REVIEW */
+  .review_container .freccia {
+    display: none;
+  }
+
+  .review_container .card:nth-child(2) {
+    display: none;
+  }
+
+  .review_container > div > div {
+    flex-wrap: wrap;
+  }
+
+  /* SEZIONE HOW DOES THIS WORK? */
+
+  .how_work h4 {
+    font-size: 1.125rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .box-work {
+    width: 15rem;
+  }
+
+  /* SEZIONE PRE FOOTER */
+
+  .pre_footer {
+    padding: 2rem 4rem;
+  }
+
+  /* SEZIONE FOOTER */
+  .container_footer {
+    flex-direction: column;
+  }
+
+  .container_two {
+    flex-direction: column;
+  }
+
+  .lista_loghi {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4.25rem;
+  }
 }
