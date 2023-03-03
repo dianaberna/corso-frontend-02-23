@@ -43,7 +43,7 @@ nav a {
 
 
 
-/* SECTION1 */
+/* HERO */
 
 h1 {
     font-weight: 700;
@@ -87,20 +87,19 @@ button {
 }
 
 .section2 .cards {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: row wrap;
-flex-direction: row;
-background: #FBFAFC; 
-padding: 100px;
-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: row wrap;
+    flex-direction: row;
+    background: #FBFAFC; 
+    padding: 100px;
+    gap: 10px;
 }
 
 .section2 .card {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     padding: 24px 16px; 
     gap: 16px;
     
@@ -143,49 +142,33 @@ gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3.25rem;
 }
 
 .section4 .cards {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 100px;
-}
-
-/* .section4 .cards {
-    justify-content: space-between;
+    align-items: baseline;
+    gap: 50px;
     padding: 100px;
-} */
+}
 
 .section4 .card-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 100px;
+    justify-content: center;
+    gap: 10px;
+    width: 328px;
+    height: 212px;
 
-    padding: 24px 16px;
-gap: 16px;
-
-width: 328px;
-height: 212px;
-}
-
-.card-item p {
-    text-align: inherit;
-}
-
-.card-item img {
-    width: 100%;
+    margin-bottom: 40px;
 }
 
 .section5 h1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
     font-weight: 500;
     font-size: 3.25rem;
 }
+
