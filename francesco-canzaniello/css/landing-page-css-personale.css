@@ -246,4 +246,31 @@ footer hr {
     section#testimonial > div > div {
         flex-wrap: wrap;
     }
+    
+
+}
+@media screen and (max-width: 556px) {
+    #how > div > div {
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 20rem;
+        padding: 1rem;
+        position: relative;
+    }
+    .why > div {
+       
+        gap: 0rem;
+        
+    }
+    footer{
+        padding: 2rem 1.25rem;
+    }
+    footer > div > #title {
+        
+        margin-right: 1rem;
+    }
+    footer > div > div {
+        
+        padding-left: 4rem;
+    }
 }
