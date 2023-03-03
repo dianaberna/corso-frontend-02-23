@@ -9,6 +9,10 @@
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/94af7cc1ba.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -36,7 +40,9 @@
             <!--MINIMAL BUT COMPLETE-->
             <article>
               <!--ICON-->
-              <ion-icon name="thumbs-up-outline"></ion-icon>
+              <div class="icon-align">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </div>
               <h4>Minimal but complete</h4>
               <p>
                 It is minimal but complete It contains all the sections and
@@ -48,6 +54,9 @@
             <!--Accessible and inclusive-->
             <article>
               <!--ICON-->
+              <div class="icon-align">
+                <i class="fa-solid fa-universal-access"></i>
+              </div>
               <h4>Accessible and inclusive</h4>
               <p>
                 All the code and design has been overhauled, if you just change
@@ -58,6 +67,9 @@
             <!--Responsive Design-->
             <article>
               <!--ICON-->
+              <div class="icon-align">
+                <i class="fa-solid fa-universal-access"></i>
+              </div>
               <h4>Resonsive design</h4>
               <p>
                 Optimized to be responsive, ensuring that the landing pages
@@ -68,6 +80,9 @@
             <!--Open source-->
             <article>
               <!--ICON-->
+              <div class="icon-align">
+                <i class="fa-solid fa-universal-access"></i>
+              </div>
               <h4>Open source</h4>
               <p>
                 The product allows users to create different versions of their
@@ -81,13 +96,19 @@
         <!--PARTNER-->
         <section class="partner-section">
           <h3>Partner</h3>
-          /*CHANGE PHOTO WITH SVG*/
+          <!--CHANGE PHOTO WITH SVG*/-->
           <div class="img-flex">
-            <img src="" alt="apple logo" />
-            <img src="" alt="amazon logo" />
-            <img src="" alt="google logo" />
-            <img src="" alt="microsoft logo" />
-            <img src="" alt="meta logo" />
+            <img src="/mohamad-barnouss/img/google-svg.svg" alt="apple logo" />
+            <img
+              src="/mohamad-barnouss/img/facebook-svg.svg"
+              alt="amazon logo"
+            />
+            <img src="/mohamad-barnouss/img/google-svg.svg" alt="google logo" />
+            <img
+              src="/mohamad-barnouss/img/facebook-svg.svg"
+              alt="microsoft logo"
+            />
+            <img src="/mohamad-barnouss/img/google-svg.svg" alt="meta logo" />
           </div>
         </section>
 
@@ -97,7 +118,10 @@
           <div class="card-section">
             <!--Prima card-->
             <div class="card">
-              <img src="" alt="cliente sorridente sul divano" />
+              <img
+                src="/mohamad-barnouss/img/Video.png"
+                alt="cliente sorridente sul divano"
+              />
               <p>
                 The perfect repo for an inclusive and captivating landing page!
               </p>
@@ -108,7 +132,10 @@
 
             <!--Seconda card-->
             <div class="card">
-              <img src="" alt="due uomini che lavorano al pc" />
+              <img
+                src="/mohamad-barnouss/img/Video.png"
+                alt="due uomini che lavorano al pc"
+              />
               <p>
                 In the company we were looking for a tool that would help us
                 create minimal landing pages and at the same time with a
@@ -121,7 +148,10 @@
 
             <!--Terza card-->
             <div class="card">
-              <img src="" alt="uffico con persone al pc" />
+              <img
+                src="/mohamad-barnouss/img/Video.png"
+                alt="uffico con persone al pc"
+              />
               <p>
                 MyPage has revolutionized our workflow, we always use it as a
                 starting point for our clients
@@ -140,75 +170,100 @@
           <!--Commento 1-->
           <div class="comments-flex">
             <article>
-              <h6>Clone</h6>
               <span class="number-ticket">01</span>
-              <p>
-                Clone the repository from Github, the code is public and
-                constantly evolving thanks to the community that supports us.
-              </p>
+              <div>
+                <h6 class="comment-title">Clone</h6>
+                <p>
+                  Clone the repository from Github, the code is public and
+                  constantly evolving thanks to the community that supports us.
+                </p>
+              </div>
             </article>
 
             <!--Commento 2-->
             <article>
-              <h6>Customize</h6>
               <span class="number-ticket">02</span>
-              <p>
-                Add your own content and pay attention to the graphic changes
-                you make. Always check if the minimum contrast is sufficient, if
-                the font is accessible and if the focus is visible.
-              </p>
+              <div>
+                <h6 class="comment-title">Customize</h6>
+                <p>
+                  Add your own content and pay attention to the graphic changes
+                  you make. Always check if the minimum contrast is sufficient,
+                  if the font is accessible and if the focus is visible.
+                </p>
+              </div>
             </article>
 
             <!--Commento 3-->
             <article>
-              <h6>Go live</h6>
               <span class="number-ticket">03</span>
-              <p>
-                Once all the customizations have been made, all that remains is
-                to upload the site online. If you need help, don't hesitate to
-                contact us!
-              </p>
+              <div>
+                <h6 class="comment-title">Go live</h6>
+                <p>
+                  Once all the customizations have been made, all that remains
+                  is to upload the site online. If you need help, don't hesitate
+                  to contact us!
+                </p>
+              </div>
             </article>
           </div>
         </section>
 
         <!--Create perfect landing-->
-        <section>
+        <section class="create-landing">
           <h2>Create the perfect landing page in minutes!</h2>
           <h3>MyPage used around the world</h3>
           <button>Explore repo</button>
         </section>
       </main>
-      <footer>
-        <div>
-          <h5>Mypage</h5>
-        </div>
 
-        <div>
-          <ul>
-            <li>Contact</li>
-            <li>Via Roma, 1 - Roma (RM)</li>
-            <li>Cel. 123456789</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>MyPage</li>
-            <li>Explore</li>
-            <li>Why</li>
-            <li>How</li>
-          </ul>
+      <!--FOOTER SECTION-->
+
+      <footer>
+        <div class="footer-section">
+          <div>
+            <h5>Mypage</h5>
+          </div>
+
+          <div class="footer-contact">
+            <div>
+              <ul>
+                <li>Contact</li>
+                <li>Via Roma, 1 - Roma (RM)</li>
+                <li>Cel. 123456789</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mypage-list">
+                <li>MyPage</li>
+                <li>Explore</li>
+                <li>Why</li>
+                <li>How</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <hr />
-        <div>
+        <div class="footer-contact">
           <p>© 2023 Bricks Design Kit. All rights reserved</p>
-          <ul>
-            <li><a href="#">Icona facebook</a></li>
-            <li><a href="#">Icona tiktok</a></li>
-            <li><a href="#">Icona Instagram</a></li>
-            <li><a href="#">Icona linkedin</a></li>
-            <li><a href="#">Icona twitter</a></li>
-          </ul>
+          <div>
+            <ul class="icon-flex">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

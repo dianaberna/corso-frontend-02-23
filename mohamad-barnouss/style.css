@@ -2,7 +2,25 @@
 
 body {
   font-family: "Lexend", sans-serif;
-  padding: 0 6.25rem;
+  /* padding: 0 6.25rem;*/
+}
+
+/*NAVBAR*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*margin-left: 2rem;*/
+  /*margin-right: 2rem;*/
+  top: 0;
+  position: sticky;
+  padding: 1.25rem;
+  background-color: #fff;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  gap: 3rem;
 }
 
 h1 {
@@ -36,6 +54,15 @@ button {
   box-shadow: 4px 4px 0px #1d1b1f;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -47,6 +74,15 @@ button {
   width: 18.5rem;
   height: 6.875rem;
   margin-top: 1.875rem;
+}
+
+/*Why use ourMypage*/
+i {
+  font-size: 2rem;
+  text-align: center;
+}
+.icon-align {
+  text-align: center;
 }
 
 /*PARTNER SECTION*/
@@ -74,8 +110,8 @@ button {
 }
 
 .partner-section > div > img {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 /*CUSTUMERS CARD*/
@@ -105,8 +141,9 @@ button {
 
 .card-section {
   margin-top: 3.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: flex-start; /*alinea ance in modo che il border dia subito dopo il testo segna avere altri spazi */
+  justify-content: center;
 }
 
 .card {
@@ -114,6 +151,11 @@ button {
   height: 11.25rem;*/
   border: solid 1px black;
   margin: 1.25rem;
+  width: 20rem;
+  /* height: 60%;*/
+  overflow: hidden;
+
+  border-radius: 8px 8px 0 0;
 }
 
 .card > p {
@@ -122,6 +164,11 @@ button {
   line-height: 140%;
   letter-spacing: 0.15px;
   margin-bottom: 2.25rem;
+  border-radius: 8px 8px 0px 0px;
+  overflow: hidden;
+}
+.card > img {
+  width: 100%;
 }
 /*
 .card:nth-child(2) {
@@ -160,7 +207,8 @@ button {
   margin-top: 3rem;
   position: relative;
   width: 40rem;
-  height: 8.3125rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .number-ticket {
@@ -178,4 +226,81 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.comment-title {
+  font-size: 1.25rem;
+}
+
+.comments-flex article {
+  padding: 10px;
+  text-align: left;
+}
+
+/*Creat a landing page section*/
+
+.create-landing {
+  background-color: #f0f0f0;
+  padding: 3.75rem 6.25rem;
+  margin-top: 6.5rem;
+}
+
+.create-landing h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.create-landing h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+/*FOOTER SECTION*/
+
+footer {
+  padding: 3.75rem 6.25rem;
+  background-color: #1d1b1f;
+  color: #ffffff;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-items: ba;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+}
+
+footer hr {
+  border: 1px solid #fbfafc;
+}
+
+.mypage-list {
+  margin-right: 0;
+}
+
+.footer-contact div li {
+  margin-top: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: flex-end;
+}
+
+.icon-flex {
+  display: flex;
+  gap: 1.725rem;
 }
