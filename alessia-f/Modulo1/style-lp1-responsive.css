@@ -286,3 +286,25 @@ footer hr {
 .fa-brands {
     font-size: 1.5625rem;
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
