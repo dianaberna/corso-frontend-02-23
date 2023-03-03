@@ -68,6 +68,15 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 8rem;
+    position: relative;
+}
+header > img{
+    width: 30%;
+    position: absolute;
+    top: -1rem;
+    filter: blur(0.1rem);
+    z-index: -1;
+    height: 21rem;
 }
 
 header h1 ~ p {
