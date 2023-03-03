@@ -353,3 +353,23 @@ footer li{
     justify-content: end;
     gap: 1.25rem;
 }
+
+/* ---------- MEDIA QUERY ---------- */
+/*  480px: Mobile devices --> mobile first
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px ...  —  Extra large screens, TV 
+*/ 
+
+@media screen and (max-width:480px){
+    
+    nav{
+        padding: 1.8125rem 1rem;
+    }
+
+    nav > ul{
+        display: none;
+    }
+}
+
