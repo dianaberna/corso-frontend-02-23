@@ -1,3 +1,6 @@
+html{
+  flex-wrap: wrap;
+}
 body {
   font-family: "lexend", sans-serif;
   /* padding: 0 6.25rem; */
@@ -123,18 +126,15 @@ h2 {
   margin-top: 15%;
 }
 
-#contenitore5 h3{
+#contenitore5 h3 {
   text-align: left;
 }
-
- 
-
 
 .sottotitolo {
   text-align: center;
 }
 
-.paragrafo{
+.paragrafo {
   text-align: left;
 }
 
@@ -159,7 +159,6 @@ h2 {
   padding-left: 10%;
 }
 
-
 .scrittatitolo {
   padding-top: 3%;
 }
@@ -179,9 +178,7 @@ h2 {
   padding-top: 4%;
 }
 
-
-
-.parte1{
+.parte1 {
   border: 1px solid black;
   margin-top: 40px;
   border-radius: 8px;
@@ -189,10 +186,10 @@ h2 {
   text-align: left;
 }
 
-.parte1{
+.parte1 {
   border: 1px solid black;
   border-radius: 0.5rem;
-  padding:1rem;
+  padding: 1rem;
   background-color: white;
 }
 
@@ -208,22 +205,20 @@ h2 {
   flex-wrap: wrap;
 }
 
-.parte1>span{
-  border:1px solid black;
+.parte1 > span {
+  border: 1px solid black;
   border-radius: 0.5rem;
   padding: 1rem;
   background-color: white;
   margin-left: -3rem;
-  margin-top:-3rem;
+  margin-top: -3rem;
   position: absolute;
 }
 
-
-.titolo3{
+.titolo3 {
   text-align: center;
   margin-top: 8rem;
 }
-
 
 /* .finale{
   background-color: black;
@@ -242,53 +237,42 @@ h2 {
   background-color: black;
 } */
 
-
-
-footer{
+footer {
   background-color: black;
   color: white;
   padding: 2rem 6.25rem;
 }
 
-footer > div{
+footer > div {
   display: flex;
-  justify-content: space-between};
+  justify-content: space-between;
+}
 
-
-footer ul{
+footer ul {
   list-style-type: none;
   padding-left: 0;
   font-weight: 400;
 }
 
-footer > div > div{
-   display: flex;
-   gap: 2rem;
-   padding: 1rem;
+footer > div > div {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
 }
 
-footer ul > li{
+footer ul > li {
   padding-bottom: 1.5rem;
   color: white;
 }
 
-footer h5{
+footer h5 {
   font-size: 1rem;
 }
 
-footer h3{
+footer h3 {
   border: 1px solid white;
 }
 
-
-.fa-brands{
+.fa-brands {
   font-size: 1.6rem;
 }
-
-
-/* @media screen and(min-width:800px) {
-  body{
-    background-color: red;
-  }
-  
-} */
