@@ -76,6 +76,7 @@ nav a{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;/* fa in modo che i div vanno uno sotto l altro qnd si riduce lo schermo */
 }
 
 .freccia{
