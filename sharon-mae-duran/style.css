@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
 * {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 html, body {
@@ -161,13 +161,20 @@ button {
     gap: 10px;
     width: 328px;
     height: 212px;
-
     margin-bottom: 40px;
+}
+
+.section4 .card-item img {
+    border-radius: 10px;
+}
+
+.section4 .card-item section {
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .section5 h1 {
     display: flex;
-    
     font-weight: 500;
     font-size: 3.25rem;
 }
