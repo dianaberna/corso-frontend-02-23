@@ -1,111 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
 
+/*:root{
+    --font-black:var(--black) #1d1f1b;
+    --font-lgrey:var(--lightgrey) #706d73;
+    --font-dgrey:var(--darkgrey) #302e32;
+    --white:var(--white) #fbfafc;
+    --button-color:var(--lightwhite) #f0f0f0;
+}*/
+
 body{
-    background-color: white;
+    background-color: #fbfafc;
     font-family: 'Lexend', sans-serif;
-    color: #1D1B1F;
+    color: #1d1b1f;
 }
 
 html, body{
     margin: 0;
+    border: dotted red;
 }
-
-
-h1{
-    font-weight: 700;
-    font-size: 68px;  
-}
-
-h2{
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
-}
-
-h3{
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-button{
-    font-family: inherit;
-    border: 1px solid #1D1B1F;
-    border-radius: 4px;
-    background-color: #F0F0F0;
-    padding: 1rem 1.25rem;
-    box-shadow: 4px 4px 0px #1D1B1F;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 
 /* barra di navigazione */
-
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
     position: sticky;
+    padding: 1rem 2rem;
     top: 0;
-    margin-top: 0;
-    /* 
-        position: fixed;
-        width: calc(100% - 100px);
-    */
-    background-color: white;
+    
+
+    background-color: #fbfafc;
     z-index: 1;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* la griglia di background nell header*/
+nav svg{
+    align-content: space-between;
+    top: -2rem;
 }
 
+/* l'elenco in alto a destra della barra di navigazione*/
 nav ul{
     list-style-type: none;
-    display: flex;
+    display: none;
     gap: 48px;
+    
 }
 
+/* titolo mypage barra di navigazione*/
+nav span{
+    font-weight: 37.5rem;
+    font-size: .875rem;
+    color: #1D1B1F;
+}
+
+/* tolgo il colore blu e i sottolinei nell elenco*/
 nav a{
     text-decoration: none;
     color: inherit;
 }
 
+/*griglia background header*/
+header svg{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+/*sezione header*/
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
+    padding: 3.75rem 4rem;
+    gap: 2rem;
+    
 }
 
+/*Basic landing page for big dream*/
+header h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+/*Minimal, responsive and accessible*/
 header h1 ~ p{
     color: #706d73;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    text-align: center;
+    
+}
+
+/* bottone dell'header */
+button{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    padding: 1rem 1.25rem;
+
+    
+
+    font-family: inherit;
+    background-color: #F0F0F0;
+    border: 1px solid black;
+    border-radius: .25rem;
+    box-shadow: .25rem .25rem 0 black;
+}
+
+
+
+    
+
+/*ogni titolo della sezione why*/
+.why h3{
+    font-weight: 600;
+    font-size: 1.5rem;
     text-align: center;
 }
-/*prima sezione how*/
 
-#Why{
-    font-size: 48px;
-    padding-bottom: 40px;
 
+/* Why use our MyPage */
+
+.why h2{
+    font-size: 1.75rem;
+    text-align: center;
 }
 
 /* prima sezione */
 
 .why{
-    padding: 7.5rem 0;
+    padding: 4.5rem 0;
+    
 }
 
 .why > div{
     display: flex;
+    padding: 0 5rem 0 5rem;
     justify-content: center;
-    gap: 5rem;
-    margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 .why > div > div{
-    width: 22.5rem;
+    
     padding: 1.5rem;
 }
 
@@ -115,32 +154,47 @@ header h1 ~ p{
  
 /* div contenente la sezione partners*/
 
+.Partner h2{
+    display: none;
+}
 .Partner{
     background-color: #F0F0F0;
-    padding: 5rem 0;
+    padding: 2rem 0;
+    
 }
 
 .Partner > div{
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin-top: 4rem;
+    padding: 2rem 4rem 2rem 4rem;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.5rem;
+    
 }
 
-/* sezione card recensioni */
+/* sezione card recensioni/section testimonial */
 
-/* section testimonial */
+section#testimonial{
+    padding: 1rem;
+    
+}
 
+section#testimonial h2{
+    text-align: center;
+}
 section#testimonial > div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem 5rem;
     gap: 2rem;
 }
 
 section#testimonial > div > div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 3rem;
     align-items: flex-start;
@@ -149,7 +203,7 @@ section#testimonial > div > div {
 section#testimonial .card {
     border: 1px solid black;
     border-radius: 8px;
-    width: 20.5rem;
+    
     color: #302e32;
 }
 
@@ -161,9 +215,18 @@ section#testimonial .card > div {
     padding: 1rem;
 }
 
+section#testimonial svg{
+    contain: 100%;
+}
+
+#frecce, #card3{
+    display: none;
+}
+
 /* sezione 3 cards con i numeretti*/
 
 /* allineamento del titolo al centro */
+
 #how h2{
     text-align: center;
 }
@@ -172,7 +235,9 @@ section#testimonial .card > div {
 #how > div {
     display: flex;
     flex-direction: column;
+    padding: 2rem 5rem;
     gap: 3rem;
+    
     align-items: center;
 }
 
@@ -180,7 +245,6 @@ section#testimonial .card > div {
 #how > div > div{
     border: 1px solid black;
     border-radius: .5rem;
-    width: 40rem;
     padding: 1rem;
     position: relative;
 }
@@ -208,26 +272,50 @@ section#testimonial .card > div {
 
 /* sezione finale con il bottone */
 
-#lastsection{
+#lastsection {
     background-color: #F0F0F0;
-    padding: 2rem 6.25rem;
+    /* padding: 2rem 6.25rem; */
+    padding: 2rem 2rem;
+    display: flex;
+    gap: .625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-#lastsection h2, #lastsection h3{
+#lastsection h2{
     text-align: left;
+    font-size: 2.5rem;
+    color: #1D1B1F;
+}
+
+#lastsection h3{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #302e32;
 }
 
 /* imposto l'intera sezione del footer*/
 footer{
     background-color: #1D1B1F;
     color: #D3D0D6;
-    padding: 2rem 6.25rem;
+    padding: 1rem;
 }
-/*imposto il contenitore della parte superiore del footer*/
+/*imposto il contenitore del footer*/
 footer > div{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 1rem;
+    gap: 2rem;
+}
+/* imposto lo span*/
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 2rem;
 }
 /*imposto gli h5*/
 footer h5{
@@ -240,21 +328,28 @@ footer ul{
     padding-left: 0;
     font-weight: 400;
 }
-/* imposto il flex ai div dentro il div genitore*/
-footer > div > div{
-    display: flex;
-    gap: 2rem;
-}
 /*imposto il colore e il padding di sotto alle scritte dentro l'elenco*/
 footer ul > li{
     padding-bottom: 1.5rem;
     color: #D3D0D6;
 }
+/* imposto il flex ai div dentro il div genitore*/
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+
+}
+
+footer #elenchi{
+    flex-direction: column;
+}
+
 
 footer > div a{
     text-decoration: none;
     color: inherit;
 }
+
 footer > div #title{
     font-weight: 600;
 }
@@ -263,7 +358,53 @@ footer hr{
     border: solid 1px #FBFAFC;
 }
 
+footer > div > span{
+    font-size: .875rem;
+    color: #D3D0D6;
+
+}
 .fa-brands{
-    font-size: 25px; 
+    font-size: 1.25rem; 
 }
 
+/*
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+    body{
+        background-color: aquamarine;
+    }
+    #Home{
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    body{
+        background-color: blueviolet;
+    }
+    #Home{
+        font-size: 4.25rem;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1084px){
+    
+    body{
+        background-color: chocolate; 
+    }
+    #Home{
+        padding: 30px;
+        font-size: 4.25rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1200px){
+    
+   
+}*/
+
+/* da 1084px la nav bar si taglia*/
