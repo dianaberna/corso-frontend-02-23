@@ -92,7 +92,6 @@ button {
     justify-content: center;
     flex-wrap: row wrap;
     flex-direction: row;
-    background: #FBFAFC; 
     padding: 100px;
     gap: 10px;
 }
@@ -101,17 +100,16 @@ button {
     display: flex;
     flex-direction: column;
     padding: 24px 16px; 
-    gap: 16px;
     
     width: 360px;
     height: 263px;
     
-    background: #FBFAFC;
     border-radius: 8px;
     
     flex: none;
     border: 0;
     flex-grow: 0;
+    text-align: center;
 }
 
 .section2 .card .sub-title {
@@ -120,6 +118,11 @@ button {
 
 .section2 .card img {
     margin: auto;
+}
+
+.section3 {
+    padding: 80px 100px;
+    background: #F0F0F0;
 }
 
 .section3 h1 {
@@ -179,3 +182,101 @@ button {
     font-size: 3.25rem;
 }
 
+.section5 h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.section5 .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section5 .card-item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    isolation: isolate;
+    
+    width: 640px;
+    height: 133px;
+    
+    border: 1px solid #1C2B33;
+    border-radius: 8px;
+}
+
+.section5 .card-item p {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.section5 .card-item .frame {
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 36px;
+    height: 39px;
+    
+    background: #FFFFFF;
+    border: 1px solid #1C2B33;
+    border-radius: 8px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.section6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 60px 0px;
+    gap: 10px;
+    
+    background: #F0F0F0;
+}
+
+.section6 h1 {
+    margin-left: 20px;
+}
+
+.section6 h2 {
+    margin-left: 20px;
+
+    width: 532px;
+height: 38px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+
+
+/* Grey/Grey-800 */
+
+color: #302E32;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
