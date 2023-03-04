@@ -121,7 +121,7 @@ i {
 }
 
 .custumers-cards > h3 {
-  width: 34rem;
+  /*width: 34rem; da problemi per responsive schermo piccolo*/
   height: 3.625rem;
   font-family: "Lexend";
   font-style: normal;
@@ -303,4 +303,70 @@ footer hr {
 .icon-flex {
   display: flex;
   gap: 1.725rem;
+}
+
+@media (max-width: 765px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-section .card:nth-child(3) {
+    display: none;
+  }
+
+  .img-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .img-flex img:nth-child(5) {
+    align-self: center;
+    margin-left: 4.9375rem;
+  }
+
+  .custumers-cards > h3 {
+    font-size: 2.5rem;
+  }
+
+  .work-section article {
+    width: 20rem;
+  }
+
+  .create-landing {
+    padding: 7.75rem 0.25rem;
+  }
+
+  .create-landing h2 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    padding: 3.75rem 1.25rem;
+  }
+
+  .footer-section {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
