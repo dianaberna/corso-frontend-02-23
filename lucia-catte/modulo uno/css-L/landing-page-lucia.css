@@ -397,10 +397,9 @@ footer > div > span{
         font-size: 4.25rem;
     }
 
-    header svg{
-        width: 20rem;
-        height: 20rem;
-    }
+    
+
+}
 
 
 /*
@@ -430,5 +429,6 @@ footer > div > span{
 
 @media screen and (min-width: 1200px){
     
-   
+  
+    
 }*/
