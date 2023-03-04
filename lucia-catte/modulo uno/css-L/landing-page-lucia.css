@@ -367,17 +367,43 @@ footer > div > span{
     font-size: 1.25rem; 
 }
 
-/*
+
 @media screen and (min-width: 481px) and (max-width: 768px){
     
     body{
-        background-color: aquamarine;
+        background-color: beige;
     }
-    #Home{
-        padding: 30px;
+    
+    nav svg{
+        display: none;
     }
-}
 
+    nav span{
+        font-size: 1.25rem;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        font-size: .875rem;
+        gap: 48px;
+    }
+
+    header {
+        padding: 3.75rem 0rem;
+    }
+
+    header h1{
+        font-size: 4.25rem;
+    }
+
+    header svg{
+        width: 20rem;
+        height: 20rem;
+    }
+
+
+/*
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     
     body{
@@ -406,5 +432,3 @@ footer > div > span{
     
    
 }*/
-
-/* da 1084px la nav bar si taglia*/
