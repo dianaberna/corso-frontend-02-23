@@ -10,6 +10,11 @@ body{
 
 
 
+.onVisible {
+    visibility: visible;
+}
+
+
 
 /* COLOR */
 :root{
@@ -188,6 +193,11 @@ main .section_our > h2 {
 
 }
 
+main .onArrow{
+    visibility: hidden;
+}
+
+
 main .container_cards{
     display:flex;
     flex-direction: column;
@@ -223,6 +233,8 @@ main .container_cards .span_wcard{
     font-size: .875rem;
     color: var(--lgray);
 }
+
+
 
 
 
@@ -338,7 +350,7 @@ footer .container_footer > a{
     font-size: 1.25rem;
 }
 
-footer .container_nFooter > h5 {
+footer .container_nFooter ul > h5 {
     color: #FBFAFC;
     font-weight: 400;
     font-size: 1rem;
@@ -379,6 +391,10 @@ footer .image_footer{
     color:white;
 }
 
+footer hr{
+    margin: 0 1rem;
+}
+
 
 
 
@@ -405,9 +421,10 @@ footer .image_footer{
     /* ARTICLE */
     main .container_article{
         flex-direction: row;
-        width: 33rem;
-
+        width: 40rem;
+        gap: 5rem;
     }
+
 
 
     /* HOW */
@@ -415,19 +432,110 @@ footer .image_footer{
 
         width: 25rem;
     }
+
+    /* FOOTER */
+    footer .container_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container_nFooter {
+        display: flex;
+        gap: 2rem
+
+    }
+
+    footer .container_nFooter ul{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    footer .container_nFooter ul > h5{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    footer .container_copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .image_footer{
+        padding-top: 0;
+    }
+
+    
     
 }
 
 
 /* IPAD/TABLET (ONLY TABLET) */
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 482px) and (max-width: 768px){
 
 
+    /* PARTNER */
+    main .section_partner .container_partner{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* CARD */
+    main .container_cards{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .onVisible{
+        visibility: hidden;
+    }
+        
 }
 
 
 
 /* More Screen */
 @media screen and (min-width: 769px) {
+
+    /* PARTNER */
+    main .section_partner{
+        text-align: center;
+    }
+    main .section_partner .container_partner{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    main .section_partner > h2 {
+        visibility: visible;
+        padding-bottom: 1rem;
+    }
+
+     /* HOW */
+     main .container_how > .div_how{
+        width: 40rem;
+    }
+
+    /* CARD */
+    main .container_cards{
+        flex-direction: row;
+        align-items: flex-start;
+
+        /* width: 20.5rem */
+    }
+
+    .onVisible{
+        visibility: visible;
+    }
+
+    main .onArrow{
+        visibility: visible;
+    }
+    main .arrow{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    
+    
     
 }
