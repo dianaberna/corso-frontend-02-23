@@ -270,9 +270,8 @@ button {
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 100px;
     gap: 10px;
 
@@ -280,10 +279,14 @@ button {
 }
 
 .footer .myPage {
+    font-weight: 400;
+    font-size: 32px;
     color: white;
 }
 
 .footer span {
+    font-weight: 400;
+    font-size: 32px;
     color: white;
 }
 
@@ -296,12 +299,12 @@ button {
     color: white;
 }
 
-.footer .line__separate {
+/* .footer .line__separate {
     color: #D3D0D6;
     width: 100%;
     height: 2px;
     z-index: 999;
-}
+} */
 
 .footer .by_flex {
     color: #D3D0D6;
