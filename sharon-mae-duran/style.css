@@ -195,6 +195,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* padding: 120px 100px; */
 }
 
 .section5 .card-item {
@@ -245,38 +246,25 @@ button {
     justify-content: center;
     align-items: flex-start;
 
-    padding: 60px 0px;
-    gap: 10px;
+    padding: 60px 0px 80px;
+    /* gap: 10px; */
     
     background: #F0F0F0;
 }
 
 .section6 h1 {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
-.section6 h2 {
-    margin-left: 20px;
+.section6 span {
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 32px;
+    color: #302E32;
+}
 
-    width: 532px;
-height: 38px;
-
-font-family: 'Lexend';
-font-style: normal;
-font-weight: 500;
-font-size: 32px;
-line-height: 120%;
-/* or 38px */
-
-
-/* Grey/Grey-800 */
-
-color: #302E32;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+.section6 button {
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 16px 20px;
 }
