@@ -518,7 +518,6 @@ footer hr{
     main .container_cards{
         flex-direction: row;
         align-items: flex-start;
-
         /* width: 20.5rem */
     }
 
@@ -532,6 +531,7 @@ footer hr{
     main .arrow{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 2rem;
     }
     
