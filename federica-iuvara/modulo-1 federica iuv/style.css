@@ -1,48 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
-/* html,
-body {
-  width: 100% !important;
-  overflow-x: hidden !important;
-} */
-
-* {
-  /* font-size: 1rem !important; */
-}
-
-/* nav {
-  display: none !important;
-} */
-
-/* .container {
-  display: none !important;
-} */
-
-/* .card {
-  display: none;
-} */
-
-/* .partner {
-  display: none;
-} */
-
-/* .box-work {
-  display: none;
-} */
-
-/* header {
-  display: none;
-} */
-
-/* main {
-  display: none;
-} */
-
-/* footer {
-  display: none;
-} */
-
 body,
 html {
   font-family: "Lexend", sans-serif;
