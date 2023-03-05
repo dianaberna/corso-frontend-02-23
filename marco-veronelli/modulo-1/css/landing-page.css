@@ -302,9 +302,12 @@ ul {
 .contact {
 
     font-weight: 300;
+    
 }
 
-
+.contact>ul{
+    padding: 0px;
+}
 
 .copy div {
     padding: 40px 0;
@@ -338,9 +341,8 @@ footer a:visited {
         flex-direction: column;
         padding:0;
 }
-
-footer>ul{
-    padding: 0;
+.copy span{
+    font-size: 0.85rem;
 }
 
 
@@ -392,9 +394,11 @@ footer hr{
 
     .row{
         flex-wrap: nowrap;
+
     }
     .secondrow{
         flex-wrap: nowrap;
+        column-gap: 2rem;
     }
 
     /* SECTION PARTNER */
@@ -451,11 +455,14 @@ footer>div>div{
     /*  body{
          font-size: 24px;
      } */
+     h1{
+        font-size: 3.45rem;
+     }
 nav{
     padding: 1.625rem 6.25rem 1.625rem 6.25rem;
 }
 header {
-    width: 30%;
+    width: 39rem;
 
 }
 .quote{
