@@ -25,12 +25,6 @@ h3 {
     font-size: 1.5rem;
 }
 
-h1~p {
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: #706D73;
-}
-
 button {
     font-family: inherit;
     padding: 1rem 1.25rem;
@@ -62,6 +56,11 @@ header {
     width: 90%;
     margin: 6rem auto;
 
+}
+header p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #706D73;
 }
 
 
@@ -166,6 +165,9 @@ nav a {
     margin: 1rem;
 }
 .testimonial svg:nth-child(-n+3){
+    display: none;
+}
+.testimonial div:nth-child(3){
     display: none;
 }
 
@@ -278,25 +280,25 @@ footer {
     text-align: left;
 }
 
-.footerow {
+/* .footerow {
     
     gap: 4rem;
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 ul {
     list-style-type: none;
 }
 
-.mypage {
+/* .mypage {
     display: flex;
-}
-.mypage > div {
+} */
+/* .mypage > div {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-}
+} */
 .contact {
 
     font-weight: 300;
@@ -320,6 +322,7 @@ ul {
 footer>div {
     display: flex;
     flex-direction: column;
+    
 }
 
 footer a {
@@ -330,10 +333,14 @@ footer a:visited {
     color: white;
 }
 .footnav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.25rem;
+
+        display: flex;
+        flex-direction: column;
+        padding:0;
+}
+
+footer>ul{
+    padding: 0;
 }
 
 
@@ -347,18 +354,157 @@ footer hr{
 }
 /* END FOOTER */
 
-@media screen and (min-width: 481px) {
-   /*  body{
-        font-size: 24px;
-    } */
-}
 
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+
+@media screen and (min-width: 481px) and (max-width: 833px){
    /*  body{
         background-color: blue;
     } */
+
+    h1{
+        font-size: 3.45rem
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+    
+    /* NAVBAR */
+    nav {
+        padding: 1.625rem 2rem;
+    }
+
+    header{ 
+        margin: 3.75rem 2rem;
+
+    }
+
+    header p{
+        font-size:1.25rem
+    }
+
+    /* SECTION WHY */
+
+    .why{
+        margin: 5rem 2rem;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+    }
+    .secondrow{
+        flex-wrap: nowrap;
+    }
+
+    /* SECTION PARTNER */
+
+    .partner{
+        padding: 3rem 4rem;
+    }
+
+    .partner div{
+            gap:2.5rem;
+    }
+    .testimonial h2{
+        font-size: 2.5em;
+    }
+    .quote{
+        flex-wrap:nowrap;
+    }
+
+    /* SECTION HOW */
+
+    .how div{
+        width: 80%;
+    }
+
+    /* SECTION FOOTER */
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer>div{
+        
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    /* footer a+div{
+        display: flex;
+        justify-content: space-around;
+    
+    } */
+footer>div>div{
+    display: flex;
+    gap: 3rem;
 }
-.testimonial div:nth-child(3){
-    display: none;
+
+.copy span{
+    
+    margin-top: 30px;
 }
+}
+
+@media screen and (min-width: 834px){
+    /*  body{
+         font-size: 24px;
+     } */
+nav{
+    padding: 1.625rem 6.25rem 1.625rem 6.25rem;
+}
+header {
+    width: 30%;
+
+}
+.quote{
+    flex-wrap: nowrap;
+}
+
+.partner h2{display: block;}
+
+.testimonial div:nth-child(3) {
+    display:block;
+}
+
+.testimonial svg:nth-child(-n+3) {
+     display:inline;
+}
+
+.testimonial>div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.how div{
+    width:40rem;
+}
+footer p {
+    font-size: 1rem;
+}
+
+footer>div{
+    
+flex-direction: row;
+justify-content: space-between;
+}
+
+/* footer a+div{
+    display: flex;
+    justify-content: space-around;
+
+} */
+footer>div>div{
+display: flex;
+gap: 3rem;
+}
+
+.copy span{
+
+margin-top: 30px;
+}
+
+ }
