@@ -1,204 +1,360 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap'); /*importare il font*/
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"); /*importare il font*/
 /* {
 border: 1px dashed black;     applica i bordi a tutti gli elementi */
 
-
-
-
+:root{
+  --dark-gray: #1d1b1f;
+}
 html,body {
-    margin: 0rem;
-    }
+  margin: 0rem;
+}
 
-body{
-    font-family: 'Lexend', sans-serif;
-    /*padding: 0 6.25rem; padding: gestisce lo spazio tra il contenuto e il bordo del box*/
-    }
+body {
+  background-color: beige;
+  font-family: "Lexend", sans-serif;
+  color: var(--dark-gray);
+  /*padding: 0 6.25rem; padding: gestisce lo spazio tra il contenuto e il bordo del box*/
+}
 
-    nav { display: flex; /*proprietà che va data ai contenitori che poi modifica la posizione dei figli*/
-        justify-content: space-between;
-      /*  margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 3rem;*/
-        margin: 3rem 3rem 0 3rem;
+h1 {
+  font-weight: 700; /*spessore*/
+  font-size: 2.5rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.75;
+  text-align: center;
+}
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/*NAV BAR*/
+nav  {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  position: sticky;
+  top: 0;
+  margin-top: 2rem;
+  /* 
+      position: fixed;
+      width: calc(100% - 100px);
+  */
+  background-color: beige;
+  z-index: 1;
+  border: 1px solid var(--dark-gray);
+}
 
-    }
-    nav a {
-        margin-left: 3rem;
-        
-    }
+nav  ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+}
 
-h1{
-    font-weight: 700; /*spessore*/
-    font-size: 4.25rem;
-  }
+nav  a {
+  text-decoration: none;
+  color: inherit;
+}
 
-header{
-    text-align: center;
-    margin: 0 10rem; /*margin: spazio tra un box e un altro, spazio tra gli elementi*/
-    padding: 3rem;
-      }
+nav a:hover{
+  text-decoration: underline;
+}
 
-button{
-    font-family: inherit;   /*va messo perchè i browser usano il promio font con i button, quindi cosi prende,eredita il font usato dai precedenti*/
-    border:1px solid #1d1b1f;
-    border-radius: 4px;
-    background-color: #f0f0f0;
-    padding: 1rem 1.25rem;
-    box-shadow: 4px 4px 0px;
-      }
-      
+
+button {
+  font-family: inherit; /*va messo perchè i browser usano il promio font con i button, quindi cosi prende,eredita il font usato dai precedenti*/
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0px var(--dark-gray);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+button:hover{
+  text-decoration: underline;
+}
+
+
+/*...............................*/
+
+
+/*margin: spazio tra un box e un altro, spazio tra gli elementi*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 2rem 6.25rem;
+  background-image: url(/stefano-dipaolo/immagini/Vector\ \(6\).svg);
+  
+}
+header h1 ~ p {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+
+
+/*WHY USE OUR MYPAGE*/
 
 #Mypage {
-    text-align: center;    
+  text-align: center;
 }
 
-.primo{
-   /* background-color: red;*/
-    width: 15rem;
-      }
-
-.secondo{
-   /* background-color: blue;*/
-    width: 15rem;
-        }
-
-.terzo{
-   /* background-color: yellow;*/
-    width: 15rem;
-      }
-
-.quarto{
-   /* background-color: green;*/
-    width: 15rem;
-       }
- 
-.flex-verticale{
-            display: flex;
-           /* margin: 10rem;*/
-           gap: 3rem;
+.box {
+  width: 22.5rem;
+  padding: 1.5rem;
 }
-.flex-orizzontale {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem; /*spaziatura tra gli elementi di un flex*/
 
+.big-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; /*spaziatura tra gli elementi di un flex*/
+}
+
+.small-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 10rem;*/
+  gap: 3rem;
 }
 
 
+#Mypage p {
+  text-align: left;
+  color: #706d73;
+}
 
+/*---------------------------------------------------------*/
+/*PARTNERS*/
 
-
-.Partner{
-    text-align: center;
-    margin: 0rem;
-    padding: 0rem;
-    
+.Partner {
+  text-align: center;
+  margin: 2rem;
+  padding: 5rem;
 }
 
 .logo {
-display:flex;
-flex-direction: row; /*predefinito*/
-justify-content:center; /*centra i loghi*/
-align-items: flex-start;
-padding: 3rem;
-gap: 5rem;
-
-}
-/*FEEDBACK*/
-
-#feedback h2{
-    text-align: center;
+  display: flex;
+  flex-direction: row; /*predefinito*/
+  justify-content: space-around; /*centra i loghi*/
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 4rem;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row; /*default*/
-    justify-content: center;
-    align-items: flex-start; /*allineamento degli elementi e non del contenitore*/
-    gap: 32px;
-    }
-.cards > div {
-    border: #1d1b1f solid 0.1rem;
-    border-radius: 0.5rem;
-    width: 20.5rem; 
-    padding-bottom: 1rem;
-    background-color: lightgrey;
+/* section testimonial */
+
+#testimonial h2 {
+  text-align: center;
 }
 
-.arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 5rem 5rem 5rem;
+section#testimonial > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section#testimonial > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+  
+}
+
+section#testimonial .card {
+  border: 1px solid var(--dark-gray);
+  border-radius: 8px;
+  width: 20.5rem;
+  color: #302e32;
+}
+
+section#testimonial .card .descrizione {
+  color: #706d73;
+}
+
+section#testimonial .card > div {
+  padding: 1rem;
 }
 
 
 
+/*HOW/INSTRUCTIONS*/
 
-
-
-
-
-.instructions{
-    text-align: center;
-    display:flex ;
-    flex-direction: column;
-    align-items: center;
-    gap: 0rem;
+#how h2 {
+  text-align: center;
 }
-.instructions div{
-    
-    align-items: center; /*centrato lo span*/
-    padding: 24px 16px; /* distanza tra il testo e il bordo*/
-    border: 3px solid black; 
-    border-radius: 8px; /*bordi smussati*/
+#how h4 {
+  text-align: center;
+}
+
+#how > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+#how > div > div {
+  border: 1px solid var(--dark-gray);
+  border-radius: 0.5rem;
+  /*width:10rem da mobile*/
+  width: 40rem; /*larghezza*/
+  padding: 1rem; /*margine dal bordo del box*/
+  position: relative;
+}
+
+#how h3 {
+  text-align: left;
+}
+
+#how > p {
+  text-align: center;
+}
+
+#how span {
+  border: 1px solid var(--dark-gray);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  background-color: #f0f0f0; /*cosi non si vedono i lati della box più grande*/
+}
+/*PARTE FINALE*/
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  margin: 0 0 3rem 3rem;
+}
+.final h2,h3{
+  text-align: left;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+/*FOOTER*/
+footer {
+  color: #f0f0f0;
+  background-color: #1d1b1f;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+}
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem;
+}
+
+footer > div > div {
+  display: flex;
+  gap: 2rem;
+}
+footer hr {
+  border: #fbfafc 1px solid;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+  color: #fbfafc;
+}
+
+
+
+/*le frecce scompaiono da tablet in giù*/
+@media screen and (max-width:1280px) { 
+  .arrow{display: none;}
+}
+/*ABBASSIAMO LA DIMENSIONE DELLE BOX DELLA SEZIONE HOW PER SCHERMI PIU' PICCOLI*/
+@media screen and (max-width:1200px){
+  #how > div > div{
     width: 15rem;
-    margin: 1rem;
     
+  }
+  }
+/*ABBASSIAMO LA DIMENSIONE DELLE CARDS*/
+  
+  @media screen and (min-width: 0px) and (max-width: 1200px){
+    .section#testimonial .card{
+        width: 100rem;
+    }
+  }
+
+/*FERMIAMO LA NAVBAR SU SCHERMI PIU' PICCOLI*/
+
+
+/*ABBASSIAMO IL FONT SU SCHERMI PIU' PICCOLI*/
+@media screen and (min-width: 0px) and (max-width: 480px){
+  h1{
+    font-size: 4.25rem;
 }
-.instructions span {
-    
-    border: 2px solid black;
-    border-radius: 8px;
-    
-
-}
-
-.final{
-    display: flex;
-    justify-content:first baseline;
-    margin:0 0 3rem 3rem;
-    
-}
-
-
-
-
-footer{
-    color: #f0f0f0;
-    background-color: #1d1b1f;
-    
 }
 
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right: 20rem;}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right: 2rem;
-    
+@media screen and (min-width: 481px) and (max-width: 768px){
+  h1{
+    font-size: 4.25rem;
 }
-.links li{
-    list-style-type: none;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1{
+      font-size: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  h1{
+      font-size: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  h1{
+      font-size: 4.25rem;
+  }
+}
+
+
+
+/*
+@media screen and (min-width:769px) and (max-width:1024px) {
+  
+}
+@media screen and (min-width:1025px) and (max-width:1200) {
 
 }
+@media screen and (min-width:1201px) {
+
+
+}
+
+
+● 0px — 480px: Mobile devices
+● 481px — 768px: iPads, Tablets
+● 769px — 1024px: Small screens, laptops
+● 1025px — 1200px: Desktops, large screens
+● 1201px and more — Extra large screens, TV
+*/
