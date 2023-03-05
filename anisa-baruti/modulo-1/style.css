@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+/* *{
+    border: 1px dashed red;
+} */
+
+html, body {
+    margin: 0rem;
+}
+
+body {
+    font-family: "lexend", sans-serif;
+}
+
+/* Nav */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    padding: 3rem;
+    background-color: white;
+   
+}
+
+.home{
+    display: flex;
+    gap: 4rem;
+} 
+
+
+/* Header */
+
+h1 {
+    font-weight: 700;
+    font-size: 4.25rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.button {
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+}
+
+/* Main */
+
+main {
+    text-align: center;
+}
+
+/* Features */
+
+h2 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h3 {
+text-align: center;
+font-family: "lexend", sans-serif;
+font-weight: 600;
+font-size: 1.5rem;
+}
+
+.contenutoFeatures > p {
+    font-family: "lexend", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#features{
+    padding: 7rem 7rem 0 7rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contenutoFeatures{
+    width: 22.5rem;
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+/* Partner */
+
+#partner{
+    background-color: #F0F0F0;
+    padding: 3rem 0 3rem;
+}
+
+#contenitorePartner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10rem;
+} 
+
+/* Testimonials */
+
+#testimonials{
+    padding: 8rem 0 8rem;
+
+}
+
+#contenitoreTestimonial{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.contenutoTestimonial{
+   width: 20.5rem;
+   border: solid 1px black;
+   border-radius: 8px;
+   background-color: #EBEBEB;
+   text-align: left;
+
+  
+}
+
+#foto1{
+    background-image: url(/anisa-baruti/modulo-1/assets/Video1.png);
+    width: 20.5rem;
+    height: 11.25rem;
+}
+
+#foto2{
+    background-image: url(/anisa-baruti/modulo-1/assets/Video2.png);
+    width: 20.5rem;
+    height: 11.25rem;
+}
+
+#foto3{
+    background-image: url(/anisa-baruti/modulo-1/assets/Video3.png);
+    width: 20.5rem;
+    height: 11.25rem;
+}
+
+/* How */
+
+#how{
+    padding-bottom: 8rem;
+}
+
+
+#contenitoreHow{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+.contenutoHow{
+     width: 40rem;
+     border: solid 1px black;
+     border-radius: 8px;
+     margin-bottom: 3rem;
+     position: relative;
+     padding-left: 1rem;
+ }
+
+ .contenutoHow h3, .contenutoHow p{
+    text-align: left;
+ }
+
+ span{
+    border: solid 1px black;
+    position: absolute;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    background-color: white;
+ }
+
+/* Cta */
+
+#cta{
+    background-color: #F0F0F0;
+}
+
+
+#contenitoreCta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 4rem;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #1D1B1F;
+    color: #FBFAFC;
+    padding: 3rem;
+}
+
+
+#info{
+    display: flex;
+    justify-content: end;
+
+}
+
+#contatti{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#contenitoreSocial{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    gap: 1rem;
+}
+
+/* mobile */
+
+@media  screen and (max-width: 480px){
+
+
+    /* Header */
+   
+    h1{
+       font-size: 2.5rem;
+   }
+   
+    header{
+       text-align: center;
+    }
+   
+    /* Main */
+   
+    main{
+       text-align: center;
+    }
+   
+    /* Features */
+   
+    h2{
+       font-size: 1.75rem;
+    }
+   
+    h3{
+       font-size: 1.5rem;
+    }
+   
+    .flex{
+       flex-wrap: wrap;
+    }
+   
+    /* Partner */
+   
+    #partner > h2{
+       display: none;
+    }
+   
+    #contenitorePartner{
+       flex-wrap: wrap;
+       gap: 3rem;
+    }
+   
+    /* Testimonials */
+   
+    #contenitoreTestimonial{
+       flex-wrap: wrap;
+       gap: 3rem;
+       align-items: normal;
+      
+    }
+   
+    .contenuto, .terzo{
+      display: none;
+    }
+   
+   /* How */
+   
+   .contenutoHow{
+       width: 18.75rem;
+   }
+   
+   }
+
+
+/* tablet */
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+    /* Header */
+   
+    h1{
+       font-size: 4.25rem;
+   }
+   
+    header{
+       text-align: center;
+    }
+   
+    /* Main */
+   
+    main{
+       text-align: center;
+    }
+   
+     /* Features */
+   
+     h2{
+       font-size: 3rem;
+    }
+   
+    h3{
+       font-size: 1.5rem;
+    }
+   
+    .flex{
+       gap: 1rem;
+       padding: 0 7rem 0 7rem;
+    }
+   
+    /* Partner */
+   
+    #partner > h2{
+       display: none;
+    }
+   
+    #contenitorePartner{
+       flex-wrap: wrap;
+       gap: 5rem;
+    }
+   
+    /* Testimonials */
+   
+    #contenitoreTestimonial{
+       gap: 3rem;
+       align-items: normal;
+    }
+   
+    .contenuto, .terzo{
+      display: none;
+    }
+   
+   }
+
+   /* laptop */
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    #contenitorePartner{
+        gap: 4rem;
+    }
+
+    #contenitoreTestimonial{
+        align-items: normal;
+        gap: 3rem;
+    }
+
+    .contenuto, .terzo{
+        display: none;
+    }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+
+    #contenitorePartner{
+        gap: 4rem;  
+    }
+
+    #contenitoreTestimonial{
+        align-items: normal;
+    }
+
+    .contenuto, .terzo{
+        display: none;
+    }
+
+}
+
+
+   
+
+  
