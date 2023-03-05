@@ -1,6 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
+/* html,
+body {
+  width: 100% !important;
+  overflow-x: hidden !important;
+} */
+
+* {
+  /* font-size: 1rem !important; */
+}
+
+/* nav {
+  display: none !important;
+} */
+
+/* .container {
+  display: none !important;
+} */
+
+/* .card {
+  display: none;
+} */
+
+/* .partner {
+  display: none;
+} */
+
+/* .box-work {
+  display: none;
+} */
+
+/* header {
+  display: none;
+} */
+
+/* main {
+  display: none;
+} */
+
+/* footer {
+  display: none;
+} */
+
 body,
 html {
   font-family: "Lexend", sans-serif;
@@ -26,16 +68,20 @@ ul {
 
 /* SEZIONE NAV FISSO */
 
+#menu_burger {
+  visibility: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   /* padding: 2rem 6.25rem; */
   padding: 3.125rem;
   position: sticky;
-  top: 0px;
-  /* width: 100%; */
+  top: 0;
   background-color: white;
   z-index: 1;
+  font-weight: 600;
 }
 
 nav li {
@@ -49,8 +95,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
-  /* text-align: center; */
+  margin-top: 6rem;
 }
 
 h1 {
@@ -89,41 +134,37 @@ h2 {
   font-family: "Lexend", sans-serif;
   margin-top: 6.25rem;
   font-size: 2.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
-.container {
+/* <!-- SEZIONE WHY USE OUR MYPAGE -- > */
+.container_why > div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
-.container img {
-  /* width: 1.875rem; */
+.container_why > div > div {
+  width: 22rem;
+  padding: 1.5rem;
 }
 
-.container h3 {
-  text-align: center;
+.container_why img {
+  max-width: 100%;
 }
 
-.container p {
+.container_why p {
   font-size: 1rem;
   line-height: 1.4rem;
   color: #706d73;
   font-weight: 400;
-  margin-bottom: 4rem;
-  text-align: left;
 }
 
-.firstLine,
-.secondLine {
-  display: flex;
+.firstLine div > div,
+.secondLine div > div {
   text-align: center;
-}
-
-.firstLine div,
-.secondLine div {
-  padding: 0 6.25rem;
 }
 
 /* SEZIONE PARTNER */
@@ -139,6 +180,7 @@ h2 {
   margin: 0;
 }
 .container_partner img {
+  max-width: 100%;
 }
 .container_partner {
   display: flex;
@@ -150,6 +192,11 @@ h2 {
 
 /* SEZIONE RECENSIONI */
 
+.review_container img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .review_container > div {
   display: flex;
   justify-content: center;
@@ -159,24 +206,26 @@ h2 {
 
 .review_container > div > div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
   align-items: flex-start;
+  max-width: 100%;
 }
 
 .review_container .card {
-  border: 1px solid black;
-  border-radius: 8px;
+  border: 0.0625rem solid black;
+  border-radius: 0.5rem;
   width: 20.5rem;
   color: #302e32;
   background-color: #ebebeb;
 }
 
-section .card .descrizione {
+.card .descrizione {
   color: #706d73;
 }
 
-section .card > div {
+.card > div {
   padding: 1rem;
 }
 
@@ -253,6 +302,8 @@ section .card > div {
 
 .pre_footer button {
   display: flex;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .pre_footer_button {
@@ -294,13 +345,14 @@ footer ul li {
   color: #d3d0d6;
 }
 
-.lista_loghi {
+.lista_loghi div {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 }
 
 .lista_loghi a img {
-  padding-right: 0.625rem;
+  max-width: 100%;
 }
 
 footer hr {
@@ -314,11 +366,18 @@ footer hr {
     padding: 2.125rem;
   }
 
+  nav ul li {
+    display: none;
+  }
+
+  #menu_burger {
+    visibility: visible;
+  }
+
   h1 {
     font-size: 2.5rem;
     text-align: center;
     padding: 0 0.625rem;
-    color: pink;
   }
 
   h2 {
@@ -335,9 +394,8 @@ footer hr {
   }
 
   /* SEZIONE WHY USE OUR MYPAGE */
-  .firstLine,
-  .secondLine {
-    flex-wrap: wrap;
+  .container_why > div {
+    gap: 1rem;
   }
 
   /* SEZIONE PARTNER */
@@ -346,16 +404,16 @@ footer hr {
   }
 
   /* SEZIONE REVIEW */
+  .review_container {
+    max-width: 48.75rem;
+  }
+
   .review_container .freccia {
     display: none;
   }
 
   .review_container .card:nth-child(2) {
     display: none;
-  }
-
-  .review_container > div > div {
-    flex-wrap: wrap;
   }
 
   /* SEZIONE HOW DOES THIS WORK? */
@@ -366,7 +424,7 @@ footer hr {
   }
 
   .box-work {
-    width: 15rem;
+    width: 12rem;
   }
 
   /* SEZIONE PRE FOOTER */
@@ -376,15 +434,21 @@ footer hr {
   }
 
   /* SEZIONE FOOTER */
+  footer {
+    padding: 2rem 4rem;
+  }
+
   .container_footer {
     flex-direction: column;
+    gap: 0;
   }
 
   .container_two {
     flex-direction: column;
+    gap: 1rem;
   }
 
-  .lista_loghi {
+  .lista_loghi div {
     justify-content: flex-start;
   }
 }
@@ -392,6 +456,36 @@ footer hr {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   h1 {
     font-size: 4.25rem;
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+
+  /* SEZIONE WHY USE OUR PAGE? */
+  .container_why > div {
+    padding: 0 1.25rem;
+    flex-wrap: nowrap;
+  }
+
+  /* SEZIONE PARTNER  */
+  .partner {
+  }
+
+  .container_partner {
+    padding: 0 6.25rem;
+  }
+
+  /* SEZIONE RECENSIONI */
+  .review_container .freccia {
+    display: none;
+  }
+
+  .review_container .card:nth-child(2) {
+    display: none;
+  }
+
+  /* SEZIONE HOW DOES THIS WORK */
+  .box-work {
+    width: 35rem;
   }
 }
 
