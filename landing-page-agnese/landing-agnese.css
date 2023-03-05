@@ -47,7 +47,7 @@ button {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 6.25rem;
     position: sticky;
     top: 0px;
     width: 90%;
@@ -239,4 +239,8 @@ section#testimonial .card > div {
     color: #ffffff;
     font-weight: 600;
     font-size: 1.25rem
+}
+.fa-brands {
+    color: white;
+    font-size: 25px;
 }
