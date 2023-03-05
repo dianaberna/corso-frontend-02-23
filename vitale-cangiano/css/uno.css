@@ -1,21 +1,26 @@
 body{
     font-family: 'Lexend', sans-serif;
     padding: 0 5.25rem;
+    background-image: url(/vitale-cangiano/images/sfondo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0rem
 }
 header{
     text-align: center;
     margin: 1rem;
 }
-header h1{
-    padding: 0 3rem;
+footer{
+    background-color: #1D1B1F;
+    color: white;
 }
+
 main h2{
     text-align: center;
     margin: 3rem;
 }
 h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0rem;
 }
 
@@ -38,10 +43,14 @@ nav a{
     color: red;
 }
 .centro{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 3rem;
-    gap: 8rem;
+    gap: 2rem;
+}
+.centro div{
+    width: 160px;
 }
 .uno{
     text-align: center;
@@ -99,4 +108,41 @@ section .card img{
 }
 .foto{
     width: 100%;
+}
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+}
+
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer hr{
+    border: 1px solid #FBFAFC;
 }
