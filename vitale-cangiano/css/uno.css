@@ -146,3 +146,23 @@ footer > div > div{
 footer hr{
     border: 1px solid #FBFAFC;
 }
+.container{
+    position: relative;
+}
+
+#primo{
+    text-align: center;
+    border: 1px solid black;
+    width: 30rem;
+    border-radius: .625rem;
+    margin: 0 auto;
+    
+}
+#secondo{
+    text-align: center;
+    border: 1px solid black;
+    width: 30rem;
+    border-radius: .625rem;
+    margin: 0 auto;
+    
+}
