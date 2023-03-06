@@ -27,7 +27,6 @@ console.log("variabile = " + variabile);
 
 d = 8; // assegnazione
 
-
 // scope = contesto
 var variabileNuovaConVarFuori = 6; // esiste globalmente --> scope globale
 let variabileNuovaConVarFuori = 10; // esiste all'interno di un blocco --> scope locale
@@ -50,20 +49,18 @@ console.log(variabileNuovaConVarFuori, variabileNuovaConLetFuori);
 console.log(variabileNuovaConVar);
 // console.log(variabileNuovaConLet) --> essendo una variabile in let dentro ad un blocco allora fuori dal blocco non eisste
 
-
-
 // operazioni base
 let somma = 1 + 2;
 let sommaConVariabili = a + b;
-console.log("a= "+a)
-console.log("b= "+b)
-console.log("sommaConVariabili= "+sommaConVariabili)
+console.log("a= " + a);
+console.log("b= " + b);
+console.log("sommaConVariabili= " + sommaConVariabili);
 
-let differenza = 1 -2;
+let differenza = 1 - 2;
 let differenzaConVariabili = a - b;
-console.log("a= "+a)
-console.log("b= "+b)
-console.log("differenzaConVariabili= "+differenzaConVariabili)
+console.log("a= " + a);
+console.log("b= " + b);
+console.log("differenzaConVariabili= " + differenzaConVariabili);
 
 a = a + 1;
 // prendo il valore di a ci aggiungo 1 e il valore risultante lo assegno alla variabile
@@ -71,19 +68,27 @@ a = a + 1;
 // a sinistra dell'uguale abbiamo la variabile dove verrà salvato il valore
 //a destra dell'uguale c'è il calcolo (i valori letti delle variabili che verrà utilizzato per essere asssegnato alla variabile a sinistra dell'uguale
 
-
-
-let parola2 = "parola2"
+let parola2 = "parola2";
 let stampa = a + parola2; // a = 5 , b = parola2
-console.log(stampa)
+console.log(stampa);
 let numero = "3"; // qualsiasi cosa è tra " " allora è una stringa/parola
 let stampa2 = a + numero; // a = 5 , numero = "3"
-console.log(stampa2)
+console.log(stampa2);
 
 //javascript è debolmente e dinimicamente tipizzato
 // stampa 2 = a -> stampa2 sarà un numero
 // stampa 2 a + numero -> in questo momento il + non è una somma aritmetica ma è una concatenazione perchè numero è una stringa
 
+// tipo di date --> typeof
+console.log(typeof stampa2); // voglio sapere il tipo di dato di stampa2
 
-
-
+// operazioni matematiche varie
+let moltiplicazione = a * b;
+let divisione = a / b;
+console.log(moltiplicazione, divisione);
+console.log(a / 0);
+let modulo = a % b; // a/b -> il modulo non è il risultato ma il resto della divisione
+let dispari = 5 % 2; // a/2 = 5/2 -> resto = 1
+let pari = 6 % 2; // 6/2 -> resto =
+console.log(a);
+console.log(pari);
