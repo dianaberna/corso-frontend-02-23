@@ -88,6 +88,8 @@ if (a > 0) {
   console.log("a è minore di 0 e maggiore di -40");
 }
 
+console.log("//////////////////////////////////////////////////////");
+
 let cont = 0;
 let sommaNuova = 0;
 let n = 4;
@@ -100,6 +102,7 @@ while (cont <= n) {
   console.log("sommaNuova = " + sommaNuova, "cont = " + cont);
 }
 console.log(sommaNuova);
+console.log("//////////////////////////////////////////////////////");
 sommaNuova = 0;
 for (cont = 0; cont <= n; cont = cont + 1) {
   console.log("condizione dentro = " + (cont <= n));
@@ -128,3 +131,5 @@ for (let i = 0; i < vettore.length; i++) {
   sommaVettoreConFor = sommaVettoreConFor + vettore[i];
 }
 console.log("sommaVettoreConFor= " + sommaVettoreConFor);
+
+console.log("iao mammina");
