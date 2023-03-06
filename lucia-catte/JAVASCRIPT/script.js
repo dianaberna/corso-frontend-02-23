@@ -111,4 +111,41 @@ console.log(pari);
 // ==, === -> operatore di comparazione
 // ==  mi controlla se i valori dele due var sono uguali
 // === mi controlla se i valori delle due var sono uguali ma anche se son dello stesso tipo
-// 
+
+
+// funzioni di conversione
+console.log("-- funzioni di conversione --");
+
+console.log("conversione da Number a String");
+let numeroNuovo = 2;
+console.log(numeroNuovo + 1); // 3 number
+let numeroNuovoStringa = String(numeroNuovo); // conversione in String
+console.log(typeof numeroNuovo, typeof numeroNuovoStringa);
+console.log(numeroNuovo, numeroNuovoStringa);
+console.log(numeroNuovoStringa + 1); // 21 string
+
+console.log("conversione da String a Number");
+let stringaNumero = "5";
+console.log(stringaNumero + 3); // 53 string
+let numeroNuovo2 = Number(stringaNumero); // conversione in Number
+console.log(typeof stringaNumero, typeof numeroNuovo2);
+console.log(stringaNumero, numeroNuovo2);
+console.log(numeroNuovo2 + 3); // 8 number
+
+console.log("Operatori di assegnamento");
+a = 1;
+a = a + 4; // a = 1 + 4
+console.log(a);
+a += 4; // a = a + 4 = 1 + 4
+console.log(a);
+
+a++; // a = a + 1
+console.log(a);
+// gruppo di numeri, questo gruppo lo andremo a scorrere
+
+//console.log(b+4++) // (b+5) oppure (b+4)++
+console.log("---")
+console.log(a)
+console.log(a++) // a = a + 1 
+console.log(a)
+console.log(++a) // a + 1 = a
