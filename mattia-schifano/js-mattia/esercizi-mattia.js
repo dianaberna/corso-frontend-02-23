@@ -18,7 +18,7 @@ while(i<= array.length -1){
     i++
 }
 console.log("arraySum="+arraySum)
-//2.5 Stampare la somma dei soli elementi positivi
+//3 Stampare la somma dei soli elementi positivi
 
 let sommaPositivi = 0;
 for (let i = 0; i < array.length; i++) {
@@ -29,7 +29,7 @@ for (let i = 0; i < array.length; i++) {
 console.log("sommaPositivi = " + sommaPositivi);
 
 
-//3 Stampare la somma dei soli elementi dispari
+//4 Stampare la somma dei soli elementi dispari
 let sommaDispari = 0;
 for (let i = 0; i < array.length; i++) {
     if (array[i]%2 != 0){
@@ -39,7 +39,7 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log("sommaDispari= " + sommaDispari)
 
-//4 Stampare la somma dei soli elementi in indice/posizione pari 
+//5 Stampare la somma dei soli elementi in indice/posizione pari 
 
 let sommaPari = 0;
 for (let i = 0; i < array.length; i++ ){
@@ -48,3 +48,14 @@ for (let i = 0; i < array.length; i++ ){
     }
 }
 console.log("sommaPari= " + sommaPari)
+
+//6 Stampare quante volte compare il numero 2
+let compare = 0;
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] === 2) {
+        compare++;
+    }
+}
+
+console.log("compare= " + compare);
