@@ -15,7 +15,7 @@ Elenco partecipanti:
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
-- Elisa Boscanigit 
+- Elisa Boscanigit
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
