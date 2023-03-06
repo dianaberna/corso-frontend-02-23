@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Readex+Pro:wght@400;500&display=swap");
+@import url(c);
+
+/* MEDIA RULES.
+  320px—480px: Mobile devices
+  481px—768px: iPads, Tablets
+  769px—1024px: Small screens, laptops
+  1025px—1200px: Desktops, large screens
+  1201px and more— Extra large screens, TV */
+
+:root {
+  --main-branding-color: #000000;
+  --secondary-brainding-color: #2f2105;
+  --tertiary-branding-color: #7e7d7a;
+  --text-light: rgba(29, 29, 29, 0.7);
+  --dark-orange: #ff912b;
+  --light-orange: #ffd28f;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* FONT FAMILIES AVAILABLES.
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Readex Pro', sans-serif; */
+
+.delivery-service {
+  height: 159px;
+  width: 159px;
+  left: 103px;
+  top: 18px;
+  border-radius: 0px;
+}
+/* Hero */
+.hero {
+  position: absolute;
+  width: 1521px;
+  height: 1004px;
+  left: 0px;
+  top: -34px;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  width: 1161px;
+  height: 40px;
+  left: 135px;
+  top: 36px;
+}
+
+/* popular_product */
+.popular-product {
+  position: absolute;
+  width: 1268px;
+  height: 558px;
+  left: 86px;
+  top: 659px;
+}

@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Lexend:wght@100;400;500;600;700&display=swap");
+@import "modulo-1/CSS/header.css";
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* NAV */
+
+nav {
+  padding: 1.625rem 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 6.25rem 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0 21rem;
+}
+
+#undertitle {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+button {
+  font-family: inherit;
+  padding: 1rem 1.25rem;
+  border: 0.0625rem solid #1d1b1f;
+  border-radius: 0.25rem;
+  background: #f0f0f0;
+  margin-top: 2rem;
+  box-shadow: #1d1b1f 0.25rem 0.25rem 0;
+  cursor: default;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#whyuse {
+  padding: 7.5rem 22.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#whyusebox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+#whyusebox > div {
+  width: 22.5rem;
+  padding: 2rem 1rem;
+}
+
+.iconbox {
+  text-align: center;
+}
+
+.flex-container-partner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.partner {
+  width: 100px;
+  height: 32px;
+}
+
+.flex-container-customers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+
+.flex-items-customer {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 320px;
+  height: 180px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.photo-customer {
+  width: 100%;
+  height: 100%;
+}
+
+#whyuse p {
+  color: #706d73;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* PARTNER */
+#partner {
+  padding: 10rem 0;
+  background-color: #f0f0f0;
+}
+
+/* RECENSIONI */
+section > h2 {
+  text-align: center;
+}
+
+section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+section .card {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 20.5rem;
+  color: #302e32;
+}
+
+section .card .description {
+  color: #706d73;
+}
+
+section .card > div {
+  padding: 1rem;
+}
+
+/* section how */
+
+#how > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+#how > div > div {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 40rem;
+  padding: 1rem;
+  position: relative;
+}
+
+#how h3 {
+  text-align: left;
+}
+
+#how > p {
+  text-align: center;
+}
+
+#how span {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+}
+
+/* section cta */
+#cta {
+  background-color: #f0f0f0;
+  padding: 2rem 6.25rem;
+}
+
+#cta h2,
+#cta h3 {
+  text-align: left;
+}
+
+/* footer */
+
+footer {
+  background: #1d1b1f;
+  color: white;
+  padding: 2rem 6.25rem;
+}
+
+.footer-flex {
+  flex-direction: row;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+footer > div > span {
+  font-weight: 600;
+}
+
+footer h5 {
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+footer ul > li {
+  padding-bottom: 1.5rem;
+  color: #d3d0d6;
+}
+
+footer > div > div {
+  display: flex;
+  gap: 2rem;
+}
+
+footer hr {
+  border: 1px solid #fbfafc;
+}
+
+.flex-footer {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: normal;
+}
+
+.flex-footer-info {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.explore-repo {
+  display: flex;
+  font-family: inherit;
+  border: 1px solid #1d1b1f;
+  border-radius: 4px;
+  background: #f0f0f0;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0px #1d1b1f;
+  align-items: center;
+  gap: 0.5rem;
+  width: 150px;
+  cursor: default;
+}
+
+.explore-repo:hover {
+  cursor: pointer;
+}
+
+.contact {
+  display: block;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.contact-data {
+  display: block;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.external-pages {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+}
+
+.external-page {
+  display: block;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.fa-brands {
+  font-size: 1.5625rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 100px) {
+}

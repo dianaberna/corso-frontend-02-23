@@ -1,0 +1,77 @@
+* {
+  border: 1px dashed red;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.ordine {
+  float: left;
+  width: 45%;
+}
+
+.clear {
+  clear: both;
+}
+
+.rosso {
+  background-color: red;
+}
+
+.blu {
+  background-color: blue;
+}
+
+.giallo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
+}
+
+.flex {
+  display: flex;
+}
+
+.verticale {
+  flex-direction: column;
+}
+
+.orizzontale {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.margin {
+  margin: 3rem;
+}
+
+.larghezza {
+  width: 45%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*
+CSS
+.flex > .rosso{
+    
+}
+SASS -> PRE-PROCESSORE
+.flex {
+    & .rosso{
+    }
+}
+CSS
+POSTCSS -> POST-PRECESSORE
+*/
