@@ -1,8 +1,10 @@
 //commento su una riga
 /* commento su più righe */
 //var e let sono variabili
+
 var a = 1;
 let b = 2;
+
 //let let = 1; --> Non è consentito usare 'let' come nome in dichiarazione'let' o 'const'
 // const è una costante
 const c = 3;
