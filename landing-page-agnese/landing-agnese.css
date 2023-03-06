@@ -50,9 +50,9 @@ nav {
     padding: 2rem 6.25rem;
     position: sticky;
     top: 0px;
-    width: 90%;
     background-color: white;
     z-index: 1;
+    border: 1px solid rgb(177, 177, 177);
 }
 
 nav ul {
@@ -231,16 +231,84 @@ section#testimonial .card > div {
 .bnewsletter {
     margin-bottom: 2rem;
 }
-/*section footer*/
-#footer {
+
+
+/*footer*/
+footer{
     background-color: #1D1B1F;
-}
-.mypagewhite {
     color: #ffffff;
-    font-weight: 600;
-    font-size: 1.25rem
+    padding: 2rem 6.25rem;
 }
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+}
+
+footer hr{
+    border: 1px solid #FBFAFC;
+}
+
 .fa-brands {
-    color: white;
-    font-size: 25px;
+    font-size: 1.5625rem;
+}
+
+/*media query*/
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+    h1 {
+       font-size: 4.25rem;
+       
+    }
+   #testimonial {
+
+    width: 50%;
+        
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size: 4.25rem;
+    }
 }
