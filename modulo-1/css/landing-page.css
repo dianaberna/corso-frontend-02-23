@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+nav {
+  padding: 1.625rem 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  text-align: center;
+  padding: 6.25rem 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0 21rem;
+}
+
+#undertitle {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+button {
+  font-family: inherit;
+  padding: 1rem 1.25rem;
+  border: 0.0625rem solid #1d1b1f;
+  border-radius: 0.25rem;
+  background: #f0f0f0;
+  margin-top: 2rem;
+  box-shadow: #1d1b1f 0.25rem 0.25rem 0;
+}
+
+#whyusemypage-flex {
+  padding: 7.5rem 6.25rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+#whyusemypage-flex p {
+  color: #706d73;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+}
+
+#whyusemypage-flex {
+  width: 22.5rem;
+  padding: 2rem 1rem;
+}
+
+#partner {
+  padding: 10rem 0;
+  background-color: #f0f0f0;
+}
+
+#reviews p {
+  color: #302e32;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#explanation p {
+  color: #706d73;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+}
+
+#explanation h3 {
+  text-align: left;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
