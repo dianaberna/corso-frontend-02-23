@@ -1,0 +1,42 @@
+body {
+    margin: 0rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbfafc;
+}
+
+nav a {
+    color: #1d1b1f;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+}
+
+nav>a,
+nav ul {
+    padding: 1rem 6.25rem;
+    letter-spacing: 0.15rem;
+}
+
+nav > a {
+    font-size: 1.25rem;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+}
