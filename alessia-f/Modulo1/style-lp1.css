@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+
+
+
+/* NAVBAR*/
 .logomypage {
     font-size: 1.25rem;
 
@@ -41,12 +45,35 @@ h1 {
     line-height: 1.875rem font-weight 700 font-size 4.25rem;
 }
     
+
+
+/* HEADER*/
+    
 header {
     text-align: center;
     margin: 0 25rem;
-    margin-top: 10%;
+    /* margin-top: 5rem;*/
+    
+}
+
+header>div{
+   display: flex;
+   align-items: center;
+  justify-content: center;
+}
+
+header>div>svg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
 
 }
+
+header>div>div {
+    margin-top: 3rem;
+}
+
+
 h1 {
     font-weight: 700;
     font-size: 4.25rem;
@@ -73,6 +100,10 @@ h2 {
     text-align: center;
     padding-top: 3rem;
 }
+
+
+
+/* WHYUSE*/
 .why_use {
     display: flex;
     flex-direction: row;
@@ -91,6 +122,10 @@ h2 {
     text-align: center;
 }
 
+
+
+
+/* PARTNER*/
 .partner {
     background-color: #F0F0F0;
 }
@@ -100,6 +135,9 @@ h2 {
     justify-content: space-between;
     padding: 0 5rem 5rem 5rem;
 }
+
+
+/* OUR_COSTUMER*/
 .arrows {
     display: flex;
     justify-content: center;
@@ -135,6 +173,9 @@ h2 {
 .job {
     color: #706D73;
 }
+
+
+/* HOW_DOES*/
 #howdoes>div {
     z-index: 1;
     display: flex;
@@ -172,6 +213,8 @@ h2 {
 }
 
 
+/* CREATE*/
+
 #cta {
     background-color: #F0F0F0;
     padding: 2rem 6.25rem;
@@ -183,6 +226,9 @@ h2 {
     text-align: left;
 }
 
+
+
+/* FOOTER*/
 footer>span>a {
     color: white;
     text-decoration: none;
