@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+@import "/modulo-1/css/header.css";
+
+:root{
+    --dark-gray: #1d1b1f;
+}
 
 /* general */
 
@@ -33,6 +38,7 @@ h3 {
 }
 
 button {
+<<<<<<< HEAD:modulo-1/css/landing-page.css
   font-family: inherit;
   border: 1px solid #1d1b1f;
   border-radius: 4px;
@@ -42,6 +48,17 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+=======
+    font-family: inherit;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    background: #f0f0f0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1d1b1f;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+>>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 }
 
 /* navbar */
@@ -73,6 +90,7 @@ nav a {
   color: inherit;
 }
 
+<<<<<<< HEAD:modulo-1/css/landing-page.css
 /* header */
 
 header {
@@ -88,6 +106,13 @@ header h1 ~ p {
   font-weight: 500;
   font-size: 1.25rem;
 }
+=======
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+>>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 
 /* section why */
 
@@ -267,6 +292,7 @@ footer hr {
   font-size: 1.5625rem;
 }
 
+<<<<<<< HEAD:modulo-1/css/landing-page.css
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
 
@@ -274,6 +300,17 @@ footer hr {
   h1 {
     font-size: 4.25rem;
   }
+=======
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1{
+        font-size: 4.25rem;
+    }
+>>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
