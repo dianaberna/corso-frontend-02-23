@@ -135,7 +135,7 @@ console.log(typeof stringaNumero, typeof numeroNuovo2);
 console.log(stringaNumero, numeroNuovo2);
 console.log(numeroNuovo2 + 3); // 8 number
 
-console.log("operatori di assegnamento");
+console.log("-- operatori di assegnamento --");
 a = a + 1;
 a = a + 4; // a = 1 + 4
 console.log(a);
@@ -152,15 +152,153 @@ console.log(a);
 // console.log(b+4++) // (b+5) oppure (b+4)++
 console.log("---");
 console.log(a);
-console.log(a++); // a = a + 1
+a++; // a = a + 1
+// legge a
+// aggiunge 1 ad a
+// assegna il nuovo valore ad a
+
 console.log(a);
-console.log(++a); // a + 1 = a
+++a; // a + 1 = a
+// aggiunge il nuovo valore ad a
+// e lo assegna
+console.log(a);
+console.log("---");
+console.log(a);
+console.log(a++);
+console.log(++a);
 
-/*
-poi ci torniamo
-
+console.log("--- esempio ---");
+a = "5";
 b = 5;
 console.log(a, b);
-console.log(typeof a == b);
+console.log(a == b);
+console.log(typeof a == b); // typeof (a==b) oppure typeof(a) == b
+console.log(typeof (a == b));
+console.log(typeof a == b); // string == 5 ? false
 
+let valore = true;
+let valore2 = false;
+console.log(valore, valore2);
+console.log(typeof valore, typeof valore2);
+
+console.log("-- if/else --");
+a = 10;
+console.log(a < 0);
+if (a > 0) {
+  // corpo/blocco dell'if
+  // ramo della condizione verificata
+  console.log("a è maggiore di zero");
+}
+
+a = -10;
+if (a < 0) {
+  // ramo della condizione verificata
+  console.log("a è minore di zero");
+} else {
+  // ramo della condizione NON verificata
+  console.log("a NON è maggiore di zero");
+}
+
+// if annidati
+if (a > 0) {
+  if (a < 0) {
+    console.log("a è maggiore di 0 e minore di 0");
+  }
+}
+
+if (a > 0 && a < 10) {
+  // true && true -> true
+  console.log("a è maggiore di 0 e minore di 10");
+}
+
+// if else if
+if (a > 0) {
+  console.log("a è maggiore di zero");
+} else if (a > -10) {
+  console.log("a è minore di 0 e maggiore di -10");
+}
+
+// cicli/loop/iterazioni
+console.log("-- loop --");
+
+/*
+while (condition) {
+
+}
+
+// Stampare la somma dei primi 4 numeri
+let cont = 0;
+let sommaNuova = 0;
+let n = 4; // i primi 4 numeri
+console.log("condizione fuori = " + (cont <= n));
+while (cont <= n) {
+  // step 2
+  // corpo/blocco del while
+  console.log("condizione dentro = " + (cont <= n));
+  sommaNuova = sommaNuova + cont;
+  cont = cont + 1; // cont++; step 3
+  console.log("sommaNuova = " + sommaNuova, "cont = " + cont);
+} // fine finchè
+
+console.log(sommaNuova);
+
+/*
+ 1) inizializzare la variabile che utilizzeremo per la condizione
+ 2) condizione da verificare -> cont <=n
+ 3) aggiornare la variabile della condizione -> cont = cont + 1
+ */
+
+//   for(inizializzazione; condizione; aggironamento/incremento)
+/* for ...
+  // incremento è comunque fatto alla fine del corpo del ...
+  // corpo/blocco del for
+  console.log("condizione dentro = " + (cont <= n));
+  sommaNuova = sommaNuova + cont;
+  cont = cont + 1;
+  console.log("sommaNuova = " + sommaNuova, "cont = " + cont);
+console.log(sommaNuova);
+...*/
+
+// array/vettore -> gruppo di numeri
+// inizieremo a contare da zero e non da uno
+console.log("-- array/vettori --");
+let vettore = [4, 2, 6, 0]; // array con 4 numeri
+console.log("vettore =" + vettore);
+console.log(vettore.length);
+console.log(vettore[0]);
+console.log(vettore[1]);
+console.log(vettore[2]);
+console.log(vettore[3]);
+// console.log(vettore[100]) --> undefined
+
+// calcolare la somma di tutti i valori dell'array
+let sommaVettore = vettore[0] + vettore[1] + vettore[2] + vettore[3];
+console.log("sommaVettore= " + sommaVettore);
+
+// con il white
+let = i = 0;
+let sommaVettoreConWhile = 0;
+while (i < vettore.length) {
+  sommaVettoreConWhile = sommaVettoreConWhile + vettore[i];
+  i++;
+}
+
+console.log(sommaVettoreConWhile);
+
+// ...
+
+/*
+i=0 sommaVettoreConWhile=0
+i < vettore.lenght ? 0 < 4? sì
+    sommaVettoreConWhile = 0 + vettore[0] = 0 + 3 = 3
+    i++ -> i=i
+i < vettore.lenght ? 1 < 4 ? sì
+    sommaVettoreConWhile = 3 + vettore[i] = 3 + 2 = 5
+    i++ -> i=2
+i < vettore.lenght ? 2 < 4 ? sì
+    sommaVettoreConWhile = 5 + vettore[2] = 5 + 6 = 11
+    i++ -> i=3 
+    sommaVettoreConWhile = 11 + vettore [3] = 11 + 0 = 11
+i++ -> i=4
+i < vettore.lenght ? 4 < 4 ? no
 */
