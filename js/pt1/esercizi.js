@@ -3,7 +3,7 @@ let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 
 console.log("esercizi.js");
 
-// 1) Stampare tutti gli elementi dell’array →  2, 6, 9, 10, -2, -3, 0, 2, 5, 1 
+// 1) Stampare tutti gli elementi dell’array →  2, 6, 9, 10, -2, -3, 0, 2, 5, 1
 
 /*
 variabile per la condizione
@@ -16,7 +16,7 @@ while(condizione){
 console.log("esercizio 1 - con while");
 
 // condizione falsa è quando "usciamo" dall'array
-// while/for -> strumenti che mi aiutano a scorrere da 0 a 4 
+// while/for -> strumenti che mi aiutano a scorrere da 0 a 4
 // array[i] -> elemento dell'array chiamato array nella posizione i
 
 let i = 0;
@@ -68,7 +68,24 @@ while (i < array.length) {
 console.log("esercizio 3.1 = " + variabileContatore);
 
 // 4) Stampare la somma dei soli elementi dispari → 12
+i = 0;
+somma = 0;
+while (i < array.length) {
+    // elemento dell'array in posizione i dispari
+    if (array[i] % 2 !== 0) {   // if( array[i] % 2 == -1 || array[i] % 2 == 1 ) 
+        somma = somma + array[i];
+    }
+    i++;
+}
 // 5) Stampare la somma dei soli elementi in indice/posizione pari  → 14
+i = 0;
+somma = 0;
+while (i < array.length) {
+    if (i % 2 == 0) {       // posizione i pari
+        somma = somma + array[i];
+    }
+    i++;
+}
 // 6) Stampare quante volte compare il numero 2 → 2
 // 7) Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array → 8
 // 8) Stampare il numero massimo (senza usare funzioni matematiche) → 10
