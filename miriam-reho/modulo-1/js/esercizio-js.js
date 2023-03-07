@@ -100,19 +100,26 @@ console.log("-- Esercizio 8 : chi è il più grande --")
 
 let i8 = 0
 let max = array[0]
-while (i8 < array.lenght) {
+while (i8 < array.length) {
     if (max < array[i8]) {
-        max = array[i8];
+        max = array[i8]
     }
     i8++
 } console.log(max)
 
 
-/* esercizio 9
-min = array[0] */
+console.log("-- Esercizio 9 : chi è il più piccolo --")
+let i9=0
+let min = array[0]
+while (i9 < array.length) {
+    if (min > array[i9]) {
+        min = array[i9]
+    }
+    i9++
+} console.log(min)
 
 
-console.log("Esercizio 10: un nuovo array con i negativi di array")
+console.log("--  Esercizio 10: un nuovo array con i negativi di array --")
 let i10 = 0
 let arrayNuovo = []
 while (i10 < array.length) {
@@ -122,3 +129,51 @@ while (i10 < array.length) {
     i10++
 } console.log(arrayNuovo)
 
+
+console.log("-- Esercizio 11: stampare un nuovo array con i doppi --")
+i11 = 0
+doubleArray = []
+while (i11 < array.length) {
+    doubleArray.push(array[i11]*2)
+    i11++
+} console.log(doubleArray)
+
+console.log("-- Esercizio 12: stampare un nuovo array con arrey 2 volte --")
+i12 = 0
+dueArray = []
+while (i12 < array.length) {
+    dueArray.push(array[i12])
+    i12++
+} 
+i12 = 0
+while (i12 < array.length) {
+    dueArray.push(array[i12]) //non sovrascrive ma aggiunge
+    i12++
+} console.log(dueArray) 
+
+
+console.log("-- Esercizio 13: stampare al contrario l'array --")
+i13 = array.length - 1
+while (i13 >= 0) {
+    console.log("Array n[" + i + "]= " + array[i13])
+    i13--
+} 
+
+
+/* ARRAY1 & ARRAY2 */
+
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+
+
+console.log("-- Esercizio 14: Crea array3 sommando gli elementi array1 e array2 --")
+i=0
+array3 = []
+while (i < array1.lenght) {
+    if (array2[i]) {
+        array3[i] = array1[i] + array2[i];        
+    } else {
+        array3[i] = array1[1] // se arrey2[i] esiste, allora somma
+    }
+    i++
+} console.log(array3)
