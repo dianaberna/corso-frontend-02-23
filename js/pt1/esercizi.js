@@ -154,7 +154,7 @@ console.log("esercizio 8, massimo = "+max)
 // 9) Stampare il numero minimo → -3
 let min = array[0];
 i=0;
-//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+
 while(i<array.length){
     // i=0 2 >= 2 ? si -> max = 2
     // i=1 6 >= 2 ? si -> max = 6
@@ -164,7 +164,18 @@ while(i<array.length){
     i++;
 }
 console.log("esercizio 9, minimo = "+min)
-// 10) Inserire in un nuovo array solo gli elementi negativi 🤯 → [-2, -3]
+// 10) Inserire in un nuovo array solo gli elementi negativi dell'array che abbiamo 🤯 → 2
+// Inserire in un nuovo array -> ?
+// solo gli elementi negativi -> while su tutto il mio array -> if array[i]<0 
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+console.log(array)
+// quando siamo nell'if andiamo a fare arrayNuovo.push(array[i])
+
+let arrayNuovo = []
+console.log(arrayNuovo)
+
+// arrayNuovo = [-2, -3]
+
 // 11) Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 → [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
 // 12) Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 → [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 // 13) Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
