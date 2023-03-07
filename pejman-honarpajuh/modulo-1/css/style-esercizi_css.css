@@ -350,11 +350,6 @@ footer .social div > a > i {
 }
 
 @media screen and (min-width: 0) and (max-width: 481px){
-   /* body {
-    width:22.5rem ;
-    margin: 0 auto;
-    padding: 0 ;
-   } */
     div.flex-cont {
         flex-wrap: wrap;
         height: 100%;
@@ -362,9 +357,6 @@ footer .social div > a > i {
     div.two , img.col-1 {
         display: none;
     }
-
-
-   
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
     div.flex-cont {
@@ -403,63 +395,15 @@ footer .social div > a > i {
         gap: 2rem;
     }
     footer .social {
-   
+        align-items: baseline;
         display: flex;
         justify-content: space-between;
     }
    
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    h1{
-        font-size: 4.25rem;
-    }
-    h2{
-        font-size: 3rem;
-    }
-    section.img-partner {
-        flex-wrap: nowrap;
-    }
-    .how-does>div {
-        width: 40rem;
-    }
-    nav > div{
-        padding-right: 6rem;
-    }
-    .top-footer>div {
-        padding: 2rem 5.rem;
-    }
-    nav>a {
-        padding-left: 6rem;
-    }
-    .header {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .our-customers {
-        margin-bottom: 0;
-    }
-    footer {
-        padding: 2rem 1.75rem;
-    }
-    .footer-conteiner{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1rem;
-    }
-    footer > .footer-conteiner > div {
-        display: flex;
-        gap: 2rem;
-    }
-    footer .social {
-   
-        display: flex;
-        justify-content: space-between;
-    }
 
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px){
+@media screen and (min-width: 769px){
     h1{
         font-size: 4.25rem;
     }
@@ -501,55 +445,7 @@ footer .social div > a > i {
         gap: 2rem;
     }
     footer .social {
-   
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    h1{
-        font-size: 4.25rem;
-    }
-    h2{
-        font-size: 3rem;
-    }
-    section.img-partner {
-        flex-wrap: nowrap;
-    }
-    .how-does>div {
-        width: 40rem;
-    }
-    nav > div{
-        padding-right: 6rem;
-    }
-    .top-footer>div {
-        padding: 2rem 6.25rem;
-    }
-    nav>a {
-        padding-left: 6rem;
-    }
-    .header {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .our-customers {
-        margin-bottom: 0;
-    }
-    footer {
-        padding: 2rem 1.75rem;
-    }
-    .footer-conteiner{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1rem;
-    }
-    footer > .footer-conteiner > div {
-        display: flex;
-        gap: 2rem;
-    }
-    footer .social {
-   
+        align-items: baseline;
         display: flex;
         justify-content: space-between;
     }
