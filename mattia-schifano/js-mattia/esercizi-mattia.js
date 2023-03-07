@@ -39,15 +39,26 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log("sommaDispari= " + sommaDispari)
 
-//5 Stampare la somma dei soli elementi in indice/posizione pari 
+//5 Stampare la somma dei soli elementi i pari 
 
-let sommaPari = 0;
-for (let i = 0; i < array.length; i++ ){
-    if(array[i]%2 == 0){
-        sommaPari= sommaPari += array[i];
+ let sommaPari = 0;
+ for (let i = 0; i < array.length; i++ ){
+     if(array[i]%2 == 0){
+          sommaPari= sommaPari + array[i];      //  <--        serve per sommare tutti i numeri
+     }                                                   
+ }
+ console.log("sommaPari= " + sommaPari)
+// 5.1 indice pari
+i = 0;
+somma = 0;
+while (i < array.length) {
+    if (i % 2 == 0) {     
+        somma = somma + array[i];
     }
+    i++;
 }
-console.log("sommaPari= " + sommaPari)
+console.log("somma="+somma)
+
 
 //6 Stampare quante volte compare il numero 2
 let compare = 0;
