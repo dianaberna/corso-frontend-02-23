@@ -3,7 +3,7 @@ let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 
 console.log("esercizi.js");
 
-// 1) Stampare tutti gli elementi dell’array -> scorrere tutto l'array -> while/for
+// 1) Stampare tutti gli elementi dell’array →  2, 6, 9, 10, -2, -3, 0, 2, 5, 1 
 
 /*
 variabile per la condizione
@@ -30,7 +30,7 @@ for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
 }
 
-// 2) Stampare la somma di tutti gli elementi dell’ array
+// 2) Stampare la somma di tutti gli elementi dell’ array → 30
 // let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 //              0  1  2   3   4
 
@@ -66,3 +66,14 @@ while (i < array.length) {
     i++;
 }
 console.log("esercizio 3.1 = " + variabileContatore);
+
+// 4) Stampare la somma dei soli elementi dispari → 12
+// 5) Stampare la somma dei soli elementi in indice/posizione pari  → 14
+// 6) Stampare quante volte compare il numero 2 → 2
+// 7) Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array → 8
+// 8) Stampare il numero massimo (senza usare funzioni matematiche) → 10
+// 9) Stampare il numero minimo → -3
+// 10) Inserire in un nuovo array solo gli elementi negativi 🤯 → [-2, -3]
+// 11) Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 → [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
+// 12) Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 → [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+// 13) Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
