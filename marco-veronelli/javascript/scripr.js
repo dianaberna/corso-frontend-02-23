@@ -232,13 +232,16 @@ array = [];
 
     for (let i = 0; i < array1.length; i++) {
         
-        for (let i = 0; i <= array2.length+1; i++) {
+        for (let i = 0; i <= array2.length; i++) {
         
-            
-        }
-        array3[i]=array1[i]+array2[i]
+            if (array2[i]) {
+                
+                array3[i]=array1[i]+array2[i]
+
+        }else array3[i]=array1[i]        
             /* console.log(array2[i]) */
         }
+    }
         
     
    
