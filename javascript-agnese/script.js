@@ -1,3 +1,4 @@
+//javascript-agnese
 var a = 1;
 let b = 2;
 const c = 3;
@@ -76,17 +77,33 @@ let cont = 0;
 let sommaNuova = 0;
 let n = 4; // i primi 4 numeri
 while (cont <= n) {
-
+cont = cont + 1;
 }
 
  // esercizi
  console.log("-- esercizi --")
 
-//1) Stampare tutti gli elementi dell’array → 2, 6, 9, 10, -2, -3, 0, 2, 5, 1 
-let elenco = [  2, 6, 9, 10, -2, -3, 0, 2, 5, 1 ]
-console.log(elenco)
-console.log
+ let array = [  2, 6, 9, 10, -2, -3, 0, 2, 5, 1 ]
+ 
 
+//1) Stampare tutti gli elementi dell’array → 2, 6, 9, 10, -2, -3, 0, 2, 5, 1 
+
+console.log(array)
+
+let i=0
+while (i<array.length){
+console. log (array[i])
+i=i+1;
+}
 //2)Stampare la somma di tutti gli elementi dell’ array → 30
-var sum = add(elenco);
-console.log(sum)
+
+i=0;
+let arraySum = 0
+while(i <= array. length - 1) {
+arraySum = arraySum + array[i]
+i++;
+}
+console.log("arraySum = "+arraySum)
+
+
+//3) Stampare la somma dei soli elementi dispari → 12
