@@ -103,13 +103,20 @@ i=0;
 let Somma = 0
 while(i <= array. length - 1) {
 Somma = Somma + array[i]
+// (potresi mettere) console.log("array[" + i + "] = " + array[i], "somma = " + somma);
 i++;
 }
 console.log("Somma = "+Somma)
 
 
 //3) Stampare la somma dei soli elementi positivi → 35
-
+let sommaPositivi = 0;
+for (let i = 0; i < array.length; i++) {
+    if (array[i] >= 0) {
+        sommaPositivi = sommaPositivi + array[i];
+    }
+}
+console.log("sommaPositivi = " + sommaPositivi);
 
 // 3.1) contare quanti elementi positivi ci sono nell'array
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
@@ -126,3 +133,5 @@ console.log("esercizio 3.1 = "+variabileContatore)
 
 
 //4) Stampare la somma dei soli elementi dispari -+ 12
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+// 1- controllare ogni numero, 2- selezionare e mantenere i numeri dispari, 3- sommare questi numeri, 4- stampare il risultato della somma.
