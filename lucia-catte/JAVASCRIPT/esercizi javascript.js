@@ -255,7 +255,7 @@ while(i < newArray.length){
     arrayDop.push(newArray[i] * 2);
     i++;
 }
-console.log("IL NUOVO ARRAY CON GLI ELEMENTI IL DOPPIO DEL PRINCIPALE: " );
+console.log("IL NUOVO ARRAY CON GLI ELEMENTI IL DOPPIO DEL PRINCIPALE: " + arrayDop);
 
 // ES.12: CREA E STAMPA UN NUOVO ARRAY IN CUI INSERISCO DUE VOLTE L'ARRAY ORIGINALE -> 🤯 🤯 [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 
@@ -294,3 +294,23 @@ while(i >= 0) {
     i--;
 }
 
+
+//ES.14: CREA UN ARRAY3 CON LA SOMMA DEGLI ELEMENTI DELL'ARREY1 E ARREY2 -> [5, 4, 4, 7, 4]
+
+console.log("-- CREO UN ARRAY 3 CON LA SOMMA DI ARRAY1 E ARRAY2 --")
+
+let array1 = [1, 2, 2, 3, 4]
+let array2 = [4, 2, 2, 4]
+
+let array3 = [];
+let indice = 0;
+while(indice < array1.length){
+    array3[indice] = array1[indice] + array2[indice];
+    if(array2[indice]){ //se l' indice dell'array2 esiste array3 vale arra1+array2
+        array3[indice] = array1[indice] + array2[indice];
+    } else { //se l'indice dell'array2 non esiste array3 vale array1
+        array3[indice] = array1[indice];
+    }
+    indice++;
+}
+console.log(array3);
