@@ -105,3 +105,46 @@ for (let i = 0; i < array.length; i++) {
     
 }
 console.log(+numeroMin)
+
+// 10 Inserire in un nuovo array solo gli elementi negativi dell'array che abbiamo
+i=0;
+let arrayNuovo =[]
+while (i < array.length) {
+    if (array[i] < 0) {
+        arrayNuovo.push(array[i]);
+    }  
+i++  
+}
+console.log("arrayNuovo=" + arrayNuovo)
+
+//11 Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 → [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
+
+
+arrayNuovo= []
+for (let i= 0; i < array.length; i++) {
+   arrayNuovo[i] = array[i]*2;
+    
+}
+console.log (arrayNuovo)
+
+//12
+arrayNuovo=[];
+for (let i = 0; i < array.length; i++) {
+    arrayNuovo.push(array[i])
+    
+}
+for (let i = 0; i < array.length; i++) {
+    arrayNuovo.push(array[i])
+    
+}
+console.log(arrayNuovo)
+
+
+
+//13 Stampare al contrario gli elementi dell’array 
+let pippo= array.length
+
+for (let i = pippo-1; i >= 0; i--){
+    console.log (+array[i])
+  
+}
