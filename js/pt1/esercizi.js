@@ -89,7 +89,32 @@ while (i < array.length) {
 // 6) Stampare quante volte compare il numero 2 → 2
 // 7) Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array → 8
 // 8) Stampare il numero massimo (senza usare funzioni matematiche) → 10
+let max = array[0];
+i=0;
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+
+while(i < array.length){
+    // i=0 2 >= 2 ? si -> max = 2
+    // i=1 6 >= 2 ? si -> max = 6
+    if(array[i] >= max){ // if(max <= array[i])
+        max = array[i]
+    } 
+    i++;
+}
+console.log("esercizio 8, massimo = "+max)
 // 9) Stampare il numero minimo → -3
+let min = array[0];
+i=0;
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+while(i<array.length){
+    // i=0 2 >= 2 ? si -> max = 2
+    // i=1 6 >= 2 ? si -> max = 6
+    if(array[i] <= min){ // if(max <= array[i])
+        min = array[i]
+    } 
+    i++;
+}
+console.log("esercizio 9, minimo = "+min)
 // 10) Inserire in un nuovo array solo gli elementi negativi 🤯 → [-2, -3]
 // 11) Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 → [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
 // 12) Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 → [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
