@@ -84,18 +84,18 @@ console.log("Positivi=" + Positivi)
 
 //8 Stampare il numero massimo (senza usare funzioni matematiche) 
 
-let numeroMax =0;
+let numeroMax = array [0];
 for (let i = 0; i < array.length; i++) {
     if (array[i] > numeroMax){
         numeroMax=array[i];
     }
     
 }
-console.log(numeroMax)
+console.log(+numeroMax)
 
 //9 Stampare il numero minimo 
 
-let numeroMin = 0;
+let numeroMin = array [0];
 
 for (let i = 0; i < array.length; i++) {
     if (array[i] < numeroMin) {
@@ -104,4 +104,4 @@ for (let i = 0; i < array.length; i++) {
     }
     
 }
-console.log(numeroMin)
+console.log(+numeroMin)
