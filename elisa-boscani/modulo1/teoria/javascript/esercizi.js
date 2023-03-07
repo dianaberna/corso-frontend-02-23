@@ -53,3 +53,10 @@ for (let indice = 0; indice < array.length; indice++) {
   }
 }
 console.log("sommaIndicePari=", sommaIndicePari);
+
+/////////////////////////////////////////
+// es.6
+let stampareNumero = 0;
+for (cont = 2; cont <= array.length + 1; cont + 1) {
+  console.log("condizione dentro = " + (cont <= array.length));
+}
