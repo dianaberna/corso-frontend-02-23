@@ -27,18 +27,17 @@ for (let e = 0; e < array.length; e++) {
 
 // ----- es. 4 ----- //
 console.log("array", array);
-e = 0;
+
 let sommaDispari = 0;
 
 for (let i = 0; i < array.length; i++) {
   array[i];
-
   if (array[i] % 2 !== 0) {
     //console.log("num. dispari", array[i]);
     sommaDispari = sommaDispari + array[i];
   }
 }
-//console.log("sommaDispari =", sommaDispari);
+console.log("sommaDispari =", sommaDispari);
 
 ////////////////////////////////////////////////////
 
@@ -48,7 +47,7 @@ let sommaIndicePari = 0;
 for (let indice = 0; indice < array.length; indice++) {
   if (indice % 2 === 0) {
     array[indice];
-    console.log(array[indice]);
+    /* console.log(array[indice]); */
     sommaIndicePari = sommaIndicePari + array[indice];
   }
 }
@@ -56,7 +55,39 @@ console.log("sommaIndicePari=", sommaIndicePari);
 
 /////////////////////////////////////////
 // es.6
-let stampareNumero = 0;
-for (cont = 2; cont <= array.length + 1; cont + 1) {
-  console.log("condizione dentro = " + (cont <= array.length));
+
+let trovareNuomeriDue = 0;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] == 2) {
+    trovareNuomeriDue++;
+  }
 }
+console.log("trovareNumeroDue=" + trovareNuomeriDue);
+///////////////////////////////////
+// es.7
+let totaleNumeriPositivi = 0;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] >= 0) {
+    totaleNumeriPositivi += 1;
+  }
+}
+/* console.log(totaleNumeriPari); */
+
+///////////
+//es8
+let numeroGrande = array[0];
+for (let i = 0; i < array.length; i++) {
+  if (numeroGrande <= array[i]) {
+    numeroGrande = array[i];
+  }
+}
+console.log(numeroGrande);
+
+//es9
+let numeroMinimo = array[0];
+for (let i = 0; i < array.length; i++) {
+  if (numeroMinimo > array[i]) {
+    numeroMinimo = array[i];
+  }
+}
+console.log(numeroMinimo);
