@@ -3,7 +3,7 @@ let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 
 console.log("esercizi");
 
-// 1 - Stampare tutti gli elementi dell’array -> scorrere tutto l'array -> while/for
+// 1) Stampare tutti gli elementi dell’array -> scorrere tutto l'array -> while/for
 console.log("1");
 
 /*
@@ -38,7 +38,7 @@ let somma = 0;
 let lunghezza = array.length;
 while (i <= lunghezza - 1) {
     somma = somma + array[i];
-    console.log("array[" + i + "] = " + array[i], "somma = " + somma);
+    //console.log("array[" + i + "] = " + array[i], "somma = " + somma);
     i++;
 }
 console.log("somma = " + somma);
@@ -56,7 +56,6 @@ console.log("somma = " + somma);
 
 */
 
-// let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 // 3) Stampare la somma dei soli elementi positivi → 35
 // array[i] -> elemento dell'array chiamato array nella posizione i
 let sommaPositivi = 0;
@@ -66,3 +65,16 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 console.log("sommaPositivi = " + sommaPositivi);
+
+// let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+// 3.1) contare quanti elementi positivi ci sono nell'array
+
+i = 0;
+let variabileContatore = 0;
+while (i < array.length) {
+    if (array[i] >= 0) {
+        variabileContatore = variabileContatore + 1;
+    }
+    i++;
+}
+console.log("esercizio 3.1 = " + variabileContatore);
