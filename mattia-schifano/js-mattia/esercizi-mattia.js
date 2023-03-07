@@ -59,3 +59,14 @@ for (let i = 0; i < array.length; i++) {
 }
 
 console.log("compare= " + compare);
+
+//7 Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array
+
+
+let Positivi = 0;
+for (let i = 0; i < array.length; i++) {
+    if (array[i] >= 0) {
+        Positivi++;
+    }
+}
+console.log("Positivi=" + Positivi)
