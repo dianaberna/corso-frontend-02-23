@@ -165,6 +165,31 @@ while( i < newArray.length){
 } 
 console.log(" IL NUMERO DUE COMPARE " + numerodue + " VOLTE ");
 
+/* CONTO QUANTI 2 E -2 INSIEME CI SONO DENTRO L'ARRAY
+i = 0;
+let numerodue = 0;
+while( i < newArray.length){
+    if(newArray[i] == 2 || newArray[i] == -2 ){
+        numerodue++;
+    }
+    i+
+} 
+
+//CONTO QUANTI -2 E 2 SEPARATI CI SONO DENTRO L'ARRAY
+i = 0;
+let numerodue = 0;
+let numeromenodue = 0;
+while( i < newArray.length){
+    if(newArray[i] == 2){
+        numerodue++;
+    }
+    if(newArray[i] == -2 ){
+        numeromenodue++;
+    }
+    i++;
+} 
+*/ 
+
 //ES.7: STAMPARE QUANTI NUMERI POSITIVI, COMPRESO LO 0, CI SONO NELL'ARRAY -> 8
 console.log("-- STAMPO QUANTI NUMERI POSITIVI CI SONO NELL'ARRAY --");
 
@@ -212,13 +237,60 @@ console.log("IL NUMERO MINIMO DENTRO L'ARRAY E': " + numeroMinimo);
 console.log("-- STAMPO IL NUOVO ARRAY CON GLI ELEMENTI NEGATIVI --");
 
 i = 0;
-let arrayNegativo = [0];
-
-while(i <newArray.length){
+let arrayNegativo = [];
+while(i < newArray.length){
     if(newArray[i] < 0){
-        arrayNegativo = newArray[i];
-        arrayNegativo++;
+        arrayNegativo.push(newArray[i]);  
     }
     i++;
 }
 console.log("IL NUOVO ARRAY CON GLI ELEMENTI NEGATIVI: " + arrayNegativo);
+
+// ES.11: CREA E STAMPA UN NUOVO ARRAY DOVE OGNI ELEMENTO è UGUALE AL DOPPIO DI QUELLO DATO -> 🤯 [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
+console.log("-- STAMPO IL NUOVO ARRAY CON GLI ELEMENTI UGUALI AL DOPPIO DI QUELLO PRINCIPALE --");
+
+i = 0;
+let arrayDop = [];
+while(i < newArray.length){
+    arrayDop.push(newArray[i] * 2);
+    i++;
+}
+console.log("IL NUOVO ARRAY CON GLI ELEMENTI IL DOPPIO DEL PRINCIPALE: " );
+
+// ES.12: CREA E STAMPA UN NUOVO ARRAY IN CUI INSERISCO DUE VOLTE L'ARRAY ORIGINALE -> 🤯 🤯 [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+
+i = 0;
+let dueArray = [];
+while(i < newArray.length){
+    dueArray.push(newArray[i]);
+    i++;
+}
+i = 0;
+while(i < newArray.length){
+    dueArray.push(dueArray[i]);
+    i++;
+}
+console.log("IL NUOVO ARRAY CON GLI ELEMENTI SCRITTI DUE VOLTE CON PUSH: " + dueArray);
+
+// SENZA PUSH
+i = 0;
+let dueArray2 = [];
+let conta = 0;
+while(i < newArray.length){
+    dueArray2[i] = newArray[i];
+    dueArray2[newArray.length + i] = newArray[i];
+
+    i++;
+}
+console.log("IL NUOVO ARRAY CON GLI ELEMENTI SCRITTI DUE VOLTE SENZA PUSH: " + dueArray2);
+
+// ES.13: STAMPA AL CONTRARIO GLI ELEMENTI DELL'ARRAY -> 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
+
+console.log("-- STAMPO IL MIO ARRAY AL CONTRARIO --");
+
+i = newArray.length -1;
+while(i >= 0) {
+    console.log(newArray[i]);
+    i--;
+}
+
