@@ -187,15 +187,45 @@ console.log("esercizio 9 --> minimo = " + min);
 // Inserire in un nuovo array -> ?
 // solo gli elementi negativi -> while su tutto il mio array -> if array[i]<0
 
-console.log("esercizio 11 --> ");
+console.log("esercizio 10 --> ");
 let arrayNuovo = [];
 for (let i = 0; i < array.length; i++) {
+    console.log("posizione i = " + i + " elemento = " + array[i]);
     if (array[i] < 0) {
         arrayNuovo.push(array[i]);
+        console.log("arrayNuovo = " + arrayNuovo);
+    }
+}
+console.log(arrayNuovo); // arrayNuovo = [-2, -3]
+// senza il push
+console.log("senza push");
+arrayNuovo = [];
+indiceNuovo = 0;
+for (let i = 0; i < array.length; i++) {
+    console.log("posizione i = " + i + " elemento = " + array[i]);
+    if (array[i] < 0) {
+        arrayNuovo[indiceNuovo] = array[i];
+        indiceNuovo++;
+        console.log("arrayNuovo = " + arrayNuovo);
     }
 }
 console.log(arrayNuovo);
-// arrayNuovo = [-2, -3]
+
+// senza push e con il while
+console.log("senza push e con while");
+arrayNuovo = [];
+indiceNuovo = 0;
+i = 0;
+while (i < array.length) {
+    console.log("posizione i = " + i + " elemento = " + array[i]);
+    if (array[i] < 0) {
+        arrayNuovo[indiceNuovo] = array[i];
+        indiceNuovo++;
+        console.log("arrayNuovo = " + arrayNuovo);
+    }
+    i++;
+}
+console.log(arrayNuovo);
 
 // 11) Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 → [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
 
@@ -203,7 +233,9 @@ console.log("esercizio 11 --> ");
 let arrayDoppio = [];
 for (let i = 0; i < array.length; i++) {
     arrayDoppio.push(array[i] * 2);
+    // array[i] = array[i] * 2 --> errore! stiamo "sporcando" l'array di partenza
 }
+console.log(array);
 console.log(arrayDoppio);
 
 // 12) Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 →
@@ -218,28 +250,70 @@ for (let i = 0; i < array.length; i++) {
 for (let i = 0; i < array.length; i++) {
     risultato.push(array[i]);
 }
+console.log("metodo con il push");
+console.log(risultato);
+
+risultato = [];
+for (let volte = 0; volte <= 1; volte++) {
+    // volte < 2 --> volte voglio che sia 0 e 1 perché ho bisogno di due copie
+    for (let i = 0; i < array.length; i++) {
+        risultato.push(array[i]);
+    }
+}
+console.log("metodo con il push e due for");
 console.log(risultato);
 
 // Metodo senza il push
+// let array     = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+// let risultato = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+//                  |                                |
+
 risultato = [];
 for (let i = 0; i < array.length; i++) {
     risultato[i] = array[i]; //primo array - posizione 0
     risultato[array.length + i] = array[i]; //aggiunta secondo array - posizione
 }
+console.log("metodo senza il push e un for");
 console.log(risultato);
 
 // 13) Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
 console.log("esercizio 13 --> ");
+// è come il primo esercizio ma scorro l'array al contrario 
 
 i = array.length - 1;
 while (i >= 0) {
     console.log(array[i]);
     i = i - 1;
 }
+// dalla posizione 9 alla posizione 0
+// i-- --> i=i-1        i++ -> i=i+1
+for(let i=array.length - 1; i>=0; i--){
+    console.log(array[i]);
+}
 
-// array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4]  
-// 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 → [5, 4, 4, 7, 4]     
+// array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4]
+// 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 → [5, 4, 4, 7, 4]
 // 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
 // 16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
 // 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+
+console.log("prove elementi fuori dall'array")
+// array va da 0 a 9
+if(array[12]) {
+    console.log("l'elemento esiste")
+}else{
+    console.log("l'elemento non esiste")
+}
+
+// array[2] che tipo di dato è ? number
+// number che tipo di dato è ? string
+let tipoDiDato = typeof array[12]
+let tipoDelTipoDiDato = typeof tipoDiDato
+console.log(tipoDiDato, tipoDelTipoDiDato)
+
+if(tipoDiDato !== "undefined"){
+    console.log("l'elemento esiste")    
+}else{
+    console.log("l'elemento non esiste")
+}
