@@ -128,20 +128,35 @@ console.log(new_arrey3);
 
 
 
+
+
+// // 16
+// console.log("------- 16) --------------");
+// for(let i = 0; i < es_array2.length; i++){
+//     es_array2[i] = es_array2[i] / es_array1[es_array1.length -1 -i];
+// }
+// console.log(es_array2);
+
+
 // 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 console.log("-------- 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224” -------------");
 
-for(let i = 0; i < es_array1.length; i++){
-    if(es_array1[i] !== es_array1[es_array1.length -1 - i]){
-        console.log("Array1 non è palindromo");
+let flag = true;
+
+for(let i = 0; i < es_array1.length / 2; i++){
+    if(es_array1[i] !== es_array1[es_array1.length -1 - i]) {
+        flag = false;
     }
 }
 
-for(let i = 0; i < es_array2.length; i++){
-    if(es_array2[i] !== es_array2[es_array2.length -1 - i]){
-        console.log("Array2 non è palindromo");
-    }
+if(flag == true){
+    console.log("Array1 è palindromo");
 }
+else{
+    console.log("Array1 non è palindromo");
+}
+
+
 
 
 
@@ -167,7 +182,3 @@ for(let i = 0; i < es_array1.length || i < es_array2.length; i++){
         console.log(new_array);
     }
 }
-
-
-
-
