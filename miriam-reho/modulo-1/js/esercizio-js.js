@@ -182,17 +182,19 @@ while (i < array1.length) {
     i++
 } console.log(array3) // non c'è bisogno di pushare perchè già li sto inserendo con if e else
 
-console.log("-- Esercizio 14.2: Crea array3 se array2 > array1--")
+console.log("-- Esercizio 14.2: Crea array3 che array1 sia più grande o no torna lo stesso--")
 let array1b = [4, 2, 2, 4]
 let array2b = [1, 2, 2, 3, 4]
 i = 0
-array3b = []
-while (i < array2b.length){
+let array3b = []
+while (i < array2b.length || i < array2.length){
+    array3b[i] = 0
     if (array1b[i]) {
-        array3b[i] = array1b[i] + array2b[i]
-    } else {
-        array3b[i] = array2b[i]
-    }
+        array3b[i] = array3b[i] + array1b[i]
+    } 
+    if (array2b[i]) {
+        array3b[i] = array3b[i] + array2b[i]
+    } 
     i++
 } console.log(array3b)
 
