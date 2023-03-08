@@ -1,0 +1,108 @@
+/*
+   selector{
+    property: value;
+    property: value;
+   } 
+*/
+/* selettori semplici tag*/
+p {
+    background-color: aquamarine;
+}
+h1, h3{
+    color: brown;
+    font-family: cursive;
+    font-size: 30px;
+}
+h2{
+    color: blue;
+}
+main{
+    background-color: darkcyan;
+}
+footer{
+    background-color: pink;
+   
+    /* margin e patting
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    /* questo è l'equivalente di quello sopra
+    margin: 20px;
+
+    /* top - right - bottom - left -> in senso orario */
+    margin: 20px 20px 20px 20px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+
+    /* o si può scrivere cosi
+    border: solid black 5px;
+    */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+
+    /*padding: 20px 30px 40px 100px;*/
+}
+
+body{
+    background-color: chartreuse;
+    
+
+}
+
+/* selettori semplici id */
+/*#speciale {
+    background-color: blueviolet;
+}
+*/
+/* selettori semplici class */
+/*.rosso{
+    background-color: red;
+}
+*/
+/*discendente -> ex. div p {proprietà: valore;}*/
+
+main p{
+    background-color: rgb(76, 14, 14);
+}
+
+/* figlio -> ex. div > p {proprietà: valore;}
+
+main > p{
+    background-color: rgb(222, 92, 161);
+}*/
+
+/*fratello adiacente -> ex. div + {proprietà: valore;}
+il primo fratello che viene dopo*/
+
+div + p {
+
+    background-color: rgb(97, 199, 97);
+}
+
+/*fratello generico -> ex. div "tilde" {proprietà: valore;}
+tutti i paragrafi che si trovano sullo stesso 
+livello del div ma mai precedenti*/
+
+div ~ p {
+
+    background-color: green;
+}
+
+
+/* ho preso il p, figlio del div, discendente del main*/
+main > div > p{
+    background-color: rgb(95, 75, 135);
+}
+
+/* ho preso il p figlio del div, figlio del div, discendente del main*/
+main > div > div > p{
+    background-color: rgb(70, 70, 215);
+}
+
+/* margin e patting*/
