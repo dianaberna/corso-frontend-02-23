@@ -40,6 +40,9 @@ nav > div {
     align-items: center;
     padding-right: 1rem;
 }
+nav .menu {
+    text-align: right;
+}
     
 /************************************/
 /************** Body **************/
@@ -347,6 +350,9 @@ footer .social div > a > i {
    padding-right: 1.5rem;
    color: #F0F0F0;
    padding-top: 1rem;
+}
+.social > span {
+    text-align: left;
 }
 
 @media screen and (min-width: 0) and (max-width: 481px){
