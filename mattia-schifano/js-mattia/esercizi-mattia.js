@@ -1,8 +1,7 @@
 let array = [ 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 console.log("ciao mondo")
 // 1
-console.log("1")
-console.log("con while")
+
 let i = 0;
 while(i <= array.length){
     console.log(array [+i]);
@@ -149,3 +148,51 @@ for (let i = pippo-1; i >= 0; i--){
     console.log (+array[i])
   
 }
+
+//14Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
+
+ let array1 = [ 1, 2, 2, 3, 4] ;
+ let array2 = [4, 2, 2, 4];
+ let array3=[];
+ i=0;
+for(i=0; i< array1.length || i < array2.length;i++){
+    if (array2[i] && array1[i]) {
+        array3.push(array1[i] + array2[i])
+        
+    } else if (!array2[i]){
+        array3.push(array1[i])
+
+    }else{
+        array3.push(array2[i])
+    }
+}
+console.log(array3 + "array3");
+
+
+
+
+//  while (i< array1.length) {
+//      if (array2[i]  array1) {
+//          array3[i]=array2[i] + array1[i];
+//      } else{
+//         array3= array1[i];
+        
+//      } 
+
+    
+//      i++
+//  }
+//  console.log(array3)
+
+//15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+array3=[];
+
+for (let i = 0; i < array1.length; i++) {
+    if(array1[i] % 2 ==1){
+        array3.push(array1[i]);
+    }
+    if(array2[i] % 2 ==0){
+        array3.push(array2[i]);
+    }
+}
+console.log(array3)
