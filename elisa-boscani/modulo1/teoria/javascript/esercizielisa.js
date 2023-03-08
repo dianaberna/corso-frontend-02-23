@@ -171,6 +171,7 @@ for (i = 0; i < array5.length || i < array4.length; i++){
 array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4];
 arraySomme = [];
+
 for (i = 0; i < array1.length || i < array2.length; i++) {
   if (array1[i] % 2 !== 0) {
     arraySomme.push(array1[i]);
@@ -179,7 +180,7 @@ for (i = 0; i < array1.length || i < array2.length; i++) {
     arraySomme.push(array2[i]);
   }
 }
-console.log(arraySomme);
+/* console.log(arraySomme); */
 //////////////////////////////////
 //es16
 arrayA = [1, 2, 2, 3, 4];
@@ -189,15 +190,18 @@ for (i = 0; i < arrayA.length || i < arrayB.length; i++) {
     arrayB[i] = arrayB[i] / arrayA[arrayA.length - 1 - i];
   }
 }
-console.log(arrayB);
+/* console.log(arrayB); */
 
 /////////////////////////////////////////////////
 ///////es17
 arrayNonP = [1, 2, 2, 3, 4];
 arrayP = [4, 2, 2, 4];
-let palindromo = true;
+let palindromo;
 for (i = 0; i < arrayNonP.length; i++) {
-  if (arrayP[i] == arrayP[arrayP.length - i - 1]) {
-    console.log(arrayP[i]);
+  if (arrayP[i] !== arrayP[arrayP.length - i - 1]) {
+    palindromo = false;
+  } else {
+    palindromo = true;
   }
 }
+console.log(palindromo);
