@@ -219,33 +219,221 @@ array = [];
      */
     
   console.log("esercizio 14")
+  console.log("versione con if else")
     //Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
     array3=[]
-    array1 = [ 1, 2, 2, 3, 4] 
-    array2 = [4, 2, 2, 4]  
+    array2 = [ 1, 2, 2, 3, 4] 
+    array1 = [ 4, 2, 2, 4]  
 
-    /* if (array1.length != array2.length) { 
-        array2.push(0)} */
-   
 
-    console.log(array2)
+if (array1.length>= array2.length) {
+    
 
     for (let i = 0; i < array1.length; i++) {
         
-        for (let i = 0; i <= array2.length; i++) {
-        
             if (array2[i]) {
-                
-                array3[i]=array1[i]+array2[i]
 
-        }else array3[i]=array1[i]        
-            /* console.log(array2[i]) */
-        }
+                array3[i]=array1[i]+array2[i]
+                
+            } else  {
+                array3[i]=array1[i]
+            }
+                    
     }
+} else{
+    for (let i = 0; i < array2.length; i++) {
         
-    
-   
+        if (array1[i]) {
+
+            array3[i]=array1[i]+array2[i]
+            
+        } else  {
+            array3[i]=array2[i]
+        }               
+}
+}
 console.log(array3)
 
-/* 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → 4
-versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4] */
+console.log("esercizio 14")
+console.log("versione con if else Diana")
+  //Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
+  array3=[]
+  array2 = [ 1, 2, 2, 3, 4] 
+  array1 = [ 4, 2, 2, 4]  
+
+for (let i = 0; i < array1.length || i< array2.length; i++) {
+
+    if (array2[i] && array1[i]) {
+
+        array3[i]=array1[i]+array2[i]
+
+    }else if (!array2[i]) {
+
+        array3=array1[i]
+
+    }else array3[i]=array2[i]
+              
+}
+
+console.log(array3)
+
+console.log("esercizio 14")
+console.log("versione con if else Diana 2")
+  //Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
+  array3=[]
+  array2 = [ 1, 2, 2, 3, 4] 
+  array1 = [ 4, 2, 2, 4]  
+
+for (let i = 0; i < array1.length || i< array2.length; i++) {
+
+    array3[i]=0
+
+    if (array1[i]) { 
+        array3[i]=array1[i]}
+
+    if (array2[i]) {
+        array3[i]=array3[i]+array2[i]
+        
+   
+    }
+              
+}
+
+console.log(array3)
+console.log("esercizio 15")
+/* 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 
+ */
+array3=[] // versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+array1 = [ 1, 2, 2, 3, 4] 
+array2 = [ 4, 2, 2, 4]  
+for (let i = 0; i < array1.length; i++) {
+    if (array1[i]%2 !=0) {
+        array3.push(array1[i])
+        
+    }
+    
+}
+
+for (let i = 0; i < array2.length; i++) {
+    if (array2[i] % 2 !=1) {
+        array3.push(array2[i]) 
+    }
+    
+}
+console.log (array3)
+
+console.log("esercizio 15/2")
+/* 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 
+ */
+array3=[] // versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+array1 = [ 1, 2, 2, 3, 4] 
+array2 = [ 4, 2, 2, 4]  
+for (let i = 0; i < array1.length; i++) {
+   
+   if (array1[i]%2 !=0) {
+        array3.push(array1[i])
+    }
+
+if(array2[i]){
+    if (array2[i] % 2 !=1) {
+       array3.push(array[i])
+    }
+}  
+    
+}
+/* for (let i = 0; i < array2.length; i++) {
+    
+if (array2[i] % 2 !=1) {
+    array3.push(array2[i] )
+}
+}
+ */
+console.log (array3)
+
+
+//16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
+//array2[i] = array2[i] / array1[lunghezza-1-i]
+
+/* array1 = [ 1, 2, 2, 3, 4] 
+array2 = [ 4, 2, 2, 4] 
+array3=[] 
+for (let i = 0; i < array2.length; i++) {
+    array2[i].push(array2[i] / array1[array1.length-1-i])
+    
+}
+console.log(array2) */
+console.log("esercizio17")
+//17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+array1 = [ 1, 2, 2, 3, 1] 
+array2 = [ 4, 2, 2, 4] 
+let meta=0
+
+/* for (let i = 0; i < array1.length; i++) {
+    if (array1.length %2 !=1) {
+        
+    }else console.log("Array1 non è palindromo")
+} */
+
+for (let i = 0; i < array2.length; i++) {
+    if(array2.lenght %2 !=1){
+        /* array2[0]==array2[array2.length-1]
+        array2[1]==array2[array2.length-2] */
+        meta=array2.length/2
+        /* console.log("Array2 è palindromo") */
+
+    }else console.log("Array2 non è palindromo")
+    
+    
+}
+lung=array2.length-1
+for (let i = 0; i < meta; i++) {
+      
+    if( array2[i]==array2[lung]) {
+        
+        lung--
+        
+
+    }else console.log("non è palindromo")
+    
+    console.log("ok")
+    console.log(lung--)
+}
+console.log(" è palindromo")
+
+console.log("esercizio17")
+//17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+array1 = [ 1, 2, 2, 3, 1] 
+array2 = [ 4, 4, 2, 2,2,2, 4,4 ] 
+array3=[]
+array4=[]
+
+if (array2.length %2 !=0) {console.log("non è palindromo")
+    
+}
+    
+    for (let i = 0; i < array2.length/2; i++) {
+        array3[i]=array2[i]
+        
+         } console.log("array3"+array3)
+
+          for (i = array2.length-1 ; i >=(array2.length)/2; i--) {
+            
+            array4.push(array2[i])
+       
+    }console.log("array4"+array4)
+    
+        
+        for (let i = 0; i < array3.length; i++) {
+            
+            if (array3[i]==array4[i]){
+                console.log("è palindromo")
+            }else console.log("non è palindromo")
+        }
+    
+        
+   
+    
+        
+        
+
+
