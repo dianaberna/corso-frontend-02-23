@@ -104,3 +104,13 @@ const num = [1, 5, 2, 0, -3, -2, 10, 9, 6, 2];
 for (let i = num.length - 1; i >= 0; i--) {
   console.log(num[i]);
 }
+
+// 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
+let array1_a = [ 1, 2, 2, 3, 4] 
+let array2_a = [4, 2, 2, 4]   
+let array3_a = []
+
+for (let i = 0; i < array1_a.length; i++) {
+    array3_a.push(array1_a[i] + array2_a[i]);
+}
+console.log(array3_a);
