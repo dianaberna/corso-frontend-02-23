@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+
+/*
+selettore { proprietà: valore;
+             proprietà: valore;
+            } */
+ html {font-size: 10px;}
+            body{background-color: aquamarine;
+}
+/*selettore tag*/
+h3{color:blueviolet} 
+p{
+  background-color: yellow;
+}
+h1, h2,h3,h4{
+  color: red;
+}
+h1,h3{
+  font-size: 50px;
+}
+
+footer{
+background-color:green ;
+}
+main{
+background-color: khaki;
+}   
+button {
+  border: .3125rem dashed red  ;
+  background-color: bisque;
+}
+ 
+
+
+/*selettore semplice id e classe*/
+/* #speciale{
+  background-color: green;
+} */
+#pippo{
+  font-size: 25px;
+}
+/* .rosso{
+  background-color: red;
+} */
+/*selettori combinatori*/
+/*discendente*/
+main p{
+  background-color: orange;
+}
+/*figlio >*/
+main >p{
+  background-color: deeppink;
+}
+ main > div > p{
+  background-color: greenyellow;
+}
+main >div > div > p{
+  background-color: green;
+}
+
+/*fratello addiacente
+il primo tra quelli selezionati con l operatore generico */
+/* ~ = alt 126 */
+div ~ p{
+  background-color: blue;
+}
+div + p {
+  background-color: white;
+}   
+
+/*fratello geberico
+tutti i paragrafi che si trovano 
+sullo stesso livello del div */
+
+
+main > p{
+  background-color: deeppink;
+   margin: 20px 20px 20px 20px;
+  border: 5px solid black ;
+padding: 20px 30px 40px 100px;
+}
+   /* si puo scrivere:
+   margin-top: 20px;
+   margin-bottom:20px;
+   margin-left:20px;
+   margin-right:20px; */
+    
+
+
+
+

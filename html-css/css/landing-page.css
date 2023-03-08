@@ -9,35 +9,46 @@
 
 html,
 body {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: "Lexend", sans-serif;
-    color: #1d1b1f;
-    /* padding: 0 6.25rem; */
+  font-family: "Lexend", sans-serif;
+  color: #1d1b1f;
+  /* padding: 0 6.25rem; */
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 /* non va qui il @media che cambierà l'h1 */
 
 h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
 }
 
-h3{
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 button {
+<<<<<<< HEAD:modulo-1/css/landing-page.css
+  font-family: inherit;
+  border: 1px solid #1d1b1f;
+  border-radius: 4px;
+  background: #f0f0f0;
+  padding: 1rem 1.25rem;
+  box-shadow: 4px 4px 0px #1d1b1f;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+=======
     font-family: inherit;
     border: 1px solid var(--dark-gray);
     border-radius: 4px;
@@ -47,220 +58,249 @@ button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+>>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 }
 
 /* navbar */
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    position: sticky;
-    top: 0;
-    margin-top: 2rem;
-    /* 
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  position: sticky;
+  top: 0;
+  margin-top: 2rem;
+  /* 
         position: fixed;
         width: calc(100% - 100px);
     */
-    background-color: white;
-    z-index: 1;
-    border: 1px solid black;
+  background-color: white;
+  z-index: 1;
+  border: 1px solid black;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 3rem;
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
 }
 
 nav a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
+<<<<<<< HEAD:modulo-1/css/landing-page.css
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 2rem 6.25rem;
+}
+
+header h1 ~ p {
+  color: #706d73;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+=======
 nav a:hover{
     text-decoration: underline;
 }
 
 
+>>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 
 /* section why */
 
-#why{
-    padding: 7.5rem 0;
+#why {
+  padding: 7.5rem 0;
 }
 
 #why > div {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin-bottom: 5rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
 }
 
 #why > div > div {
-    width: 22.5rem;
-    padding: 1.5rem;
+  width: 22.5rem;
+  padding: 1.5rem;
 }
 
-#why > div > div > div{
-    text-align: center;
+#why > div > div > div {
+  text-align: center;
 }
 
 #why2 > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #why2 .container-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #why2 .container-card > div {
-    width: 22.5rem;
-    padding: 1.5rem;
+  width: 22.5rem;
+  padding: 1.5rem;
 }
 
 /* section partner */
-#partner{
-    background-color: #F0F0F0;
-    padding: 5rem 0;
+#partner {
+  background-color: #f0f0f0;
+  padding: 5rem 0;
 }
 
-#partner > div{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4rem;
-    flex-wrap: wrap;
-    gap: 3rem;
+#partner > div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 /* section testimonial */
 
 section#testimonial > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 section#testimonial > div > div {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
 section#testimonial .card {
-    border: 1px solid black;
-    border-radius: 8px;
-    width: 20.5rem;
-    color: #302e32;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 20.5rem;
+  color: #302e32;
 }
 
 section#testimonial .card .descrizione {
-    color: #706d73;
+  color: #706d73;
 }
 
 section#testimonial .card > div {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* section how */
 
 #how > div {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
 }
 
-#how > div > div{
-    border: 1px solid black;
-    border-radius: .5rem;
-    width: 40rem;
-    padding: 1rem;
-    position: relative;
+#how > div > div {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 40rem;
+  padding: 1rem;
+  position: relative;
 }
 
-#how h3{
-    text-align: left;
+#how h3 {
+  text-align: left;
 }
 
-#how > p{
-    text-align: center;
+#how > p {
+  text-align: center;
 }
 
-#how span{
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: 1rem;
-    background-color: white;
-    position: absolute;
-    top: -1.5rem;
-    left: -1.5rem;
+#how span {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
 }
 
 /* section cta */
-#cta{
-    background-color: #F0F0F0;
-    padding: 2rem 6.25rem;
+#cta {
+  background-color: #f0f0f0;
+  padding: 2rem 6.25rem;
 }
 
-#cta h2, #cta h3{
-    text-align: left;
+#cta h2,
+#cta h3 {
+  text-align: left;
 }
 
 /* footer */
-footer{
-    background-color: #1D1B1F;
-    color: #ffffff;
-    padding: 2rem 6.25rem;
+footer {
+  background-color: #1d1b1f;
+  color: #ffffff;
+  padding: 2rem 6.25rem;
 }
 
-footer > div{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
 }
 
-footer > div > #title{
-    font-weight: 600;
-    font-size: 20px;
+footer > div > #title {
+  font-weight: 600;
+  font-size: 20px;
 }
 
-footer h5{
-    font-size: 1rem;
-    margin-top: 0;
+footer h5 {
+  font-size: 1rem;
+  margin-top: 0;
 }
 
-footer ul{
-    list-style-type: none;
-    padding-left: 0;
-    font-weight: 400;
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 400;
 }
 
-footer ul > li{
-    padding-bottom: 1.5rem;
-    color: #D3D0D6;
+footer ul > li {
+  padding-bottom: 1.5rem;
+  color: #d3d0d6;
 }
 
-footer > div > div{
-    display: flex;
-    gap: 2rem;
+footer > div > div {
+  display: flex;
+  gap: 2rem;
 }
 
-footer hr{
-    border: 1px solid #FBFAFC;
+footer hr {
+  border: 1px solid #fbfafc;
 }
 
 .fa-brands {
-    font-size: 1.5625rem;
+  font-size: 1.5625rem;
 }
 
+<<<<<<< HEAD:modulo-1/css/landing-page.css
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+=======
 
 @media screen and (min-width: 481px) and (max-width: 768px){
     
@@ -270,16 +310,17 @@ footer hr{
     h1{
         font-size: 4.25rem;
     }
+>>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px){
-    h1{
-        font-size: 4.25rem;
-    }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4.25rem;
+  }
 }
 
-@media screen and (min-width: 1200px){
-    h1{
-        font-size: 4.25rem;
-    }
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4.25rem;
+  }
 }
