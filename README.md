@@ -16,9 +16,9 @@ Elenco partecipanti:
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
-- Valeria Panzetta
 - Stefano Di Paolo
-- Francesco Canzaniello
+- Francesco Canzaniello!
+- Valeria Panzetta
 - Agnese Soini
 - Khalil Ziad
 - Daryoush Nateghi

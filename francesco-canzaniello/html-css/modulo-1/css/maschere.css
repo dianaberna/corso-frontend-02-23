@@ -1,0 +1,29 @@
+img{
+    width: 15rem;
+}
+
+#maschera1{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#maschera2{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%); /* https://bennettfeely.com/clippy/ */
+    display: flex;
+    justify-content: center;
+}
+
+#maschera3 img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
