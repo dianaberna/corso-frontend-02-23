@@ -1,4 +1,4 @@
-console.log("--INIZIO ESERCIZI");
+console.log("--INIZIO ESERCIZI ARRAY NUMERI");
 
 /*
 
@@ -46,7 +46,7 @@ console.log(9);
 
 //STAMPO TUTTO IL MIO ARREY CON I CICLI.
 
-console.log("-- STAMPO IL MIO ARRAY CON IL CICLO WHILE --");
+console.log("-- ES.1: STAMPO IL MIO ARRAY CON IL CICLO WHILE --");
 
 console.log(newArray);
 
@@ -68,7 +68,7 @@ let sommanewArray = newArray[0] + newArray[1] + newArray[2] + newArray[3] + newA
 console.log(sommanewArray);
 
 // STAMPO LA SOMMA DEI NUMERI CON IL CICLO WHILE -> 30
-console.log("-- SOMMO I NUMERI DEL MIO ARRAY CON IL CICLO WHILE --");
+console.log("-- ES.2: SOMMO I NUMERI DEL MIO ARRAY CON IL CICLO WHILE --");
 
 while(i < newArray.length){
     sommanewArray = sommanewArray + newArray[i];
@@ -78,7 +78,7 @@ while(i < newArray.length){
 console.log(sommanewArray);
 
 // ES.3: STAMPO LA SOMMA DEI POSITIVI DELL'ARRAY -> 35
-console.log("-- SOMMO I NUMERI POSITIVI DEL MIO ARRAY --");
+console.log("-- ES.3: SOMMO I NUMERI POSITIVI DEL MIO ARRAY --");
 
 let sommaPositiva = 0;
 for(i=0; i < newArray.length; i++){
@@ -102,7 +102,7 @@ while(i < newArray.length){
 console.log(" NEL MIO ARRAY CI SONO " + variabileContatore + " NUMERI POSITIVI ");
 
 //ES.4: STAMPO LA SOMMA DEI NUMERI DISPARI DEL MIO ARRAY -> 12
-console.log("-- SOMMO I NUMERI DISPARI DEL MIO ARRAY --");
+console.log("-- ES.4: SOMMO I NUMERI DISPARI DEL MIO ARRAY --");
 
 i = 0;
 let numDispari = 0;
@@ -115,7 +115,7 @@ while(i < newArray.length){
 console.log(" LA SOMMA DEI NUMERI DISPARI DEL MIO ARRAY E': " + numDispari);
 
 // ES.4.1: STAMPO LA SOMMA DEI NUMERI NEGATIVI DELL'ARRAY
-console.log("-- SOMMO I NUMERI NEGATIVI DEL MIO ARRAY --");
+console.log("-- ES.4.1: SOMMO I NUMERI NEGATIVI DEL MIO ARRAY --");
 
 let sommaNegativa = 0;
 for(i=0; i < newArray.length; i++){
@@ -126,7 +126,7 @@ console.log("LA SOMMA DEGLI ELEMENTI NEGATIVI E' = " + sommaNegativa);
 
 
 // ES.5: STAMPO LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI -> 14
-console.log("-- STAMPO LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI --");
+console.log("-- ES.5: STAMPO LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI --");
 
 i = 0;
 let sommaPari = 0;
@@ -139,7 +139,7 @@ while(i < newArray.length){
 console.log(" LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI: " + sommaPari);
 
 
-console.log("-- 2. STAMPO LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI --");
+console.log("-- ES.5.1: STAMPO LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI --");
 
 i = 0;
 let sommaPari1 = 0;
@@ -153,7 +153,7 @@ console.log(" 2. LA SOMMA DEI NUMERI PRESENTI NEGLI INDICI PARI: " + sommaPari1)
 
 
 //ES.6: STAMPO LE VOLTE CHE COMPARE IL NUMERO 2
-console.log("-- STAMPO LE VOLTE CHE COMPARE IL NUMERO 2 --");
+console.log("-- ES.6: STAMPO LE VOLTE CHE COMPARE IL NUMERO 2 --");
 
 i = 0;
 let numerodue = 0;
@@ -191,7 +191,7 @@ while( i < newArray.length){
 */ 
 
 //ES.7: STAMPARE QUANTI NUMERI POSITIVI, COMPRESO LO 0, CI SONO NELL'ARRAY -> 8
-console.log("-- STAMPO QUANTI NUMERI POSITIVI CI SONO NELL'ARRAY --");
+console.log("-- ES.7: STAMPO QUANTI NUMERI POSITIVI CI SONO NELL'ARRAY --");
 
 i = 0;
 let contoPari = 0;
@@ -205,7 +205,7 @@ while(i < newArray.length){
 console.log("I NUMERI POSITIVI SONO " + contoPari);
 
 //ES.8: STAMPARE IL NUMERO MASSIMO (SENZA USARE FUNZIONI MATEMATICHE) -> 10
-console.log("-- STAMPO IL NUMERO MAX (SENZA USARE FUNZIONI MATEMATICHE) --");
+console.log("-- ES.8: STAMPO IL NUMERO MAX (SENZA USARE FUNZIONI MATEMATICHE) --");
 
 i = 0;
 let numeroMassimo = 0;
@@ -220,7 +220,7 @@ console.log("IL NUMERO MASSIMO DENTRO L'ARRAY E': " + numeroMassimo);
 
 
 //ES.9: STAMPA IL NUMERO MINIMO -> -3 
-console.log("-- STAMPO IL NUMERO MINIMO --");
+console.log("-- ES.9: STAMPO IL NUMERO MINIMO --");
 
 i = 0;
 let numeroMinimo = 0;
@@ -234,7 +234,7 @@ while(i < newArray.length){
 console.log("IL NUMERO MINIMO DENTRO L'ARRAY E': " + numeroMinimo);
 
 // ES.10: INSERISCI IN UN NUOVO ARRAY SOLO GLI ELEMENTI NEGATIVI -> [-2, -3]
-console.log("-- STAMPO IL NUOVO ARRAY CON GLI ELEMENTI NEGATIVI --");
+console.log("-- ES.10: STAMPO IL NUOVO ARRAY CON GLI ELEMENTI NEGATIVI --");
 
 i = 0;
 let arrayNegativo = [];
@@ -247,7 +247,7 @@ while(i < newArray.length){
 console.log("IL NUOVO ARRAY CON GLI ELEMENTI NEGATIVI: " + arrayNegativo);
 
 // ES.11: CREA E STAMPA UN NUOVO ARRAY DOVE OGNI ELEMENTO è UGUALE AL DOPPIO DI QUELLO DATO -> 🤯 [4, 12, 18, 20, -4, -6, 0, 4, 10, 2]
-console.log("-- STAMPO IL NUOVO ARRAY CON GLI ELEMENTI UGUALI AL DOPPIO DI QUELLO PRINCIPALE --");
+console.log("-- ES.11: STAMPO IL NUOVO ARRAY CON GLI ELEMENTI UGUALI AL DOPPIO DI QUELLO PRINCIPALE --");
 
 i = 0;
 let arrayDop = [];
@@ -258,7 +258,7 @@ while(i < newArray.length){
 console.log("IL NUOVO ARRAY CON GLI ELEMENTI IL DOPPIO DEL PRINCIPALE: " + arrayDop);
 
 // ES.12: CREA E STAMPA UN NUOVO ARRAY IN CUI INSERISCO DUE VOLTE L'ARRAY ORIGINALE -> 🤯 🤯 [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
-
+console.log("-- ES.12: CREO E STAMPO UN ARRAY IN CUI INSERISCO DUE VOLTE L'ARRAY ORIGINALE --");
 i = 0;
 let dueArray = [];
 while(i < newArray.length){
@@ -286,7 +286,7 @@ console.log("IL NUOVO ARRAY CON GLI ELEMENTI SCRITTI DUE VOLTE SENZA PUSH: " + d
 
 // ES.13: STAMPA AL CONTRARIO GLI ELEMENTI DELL'ARRAY -> 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
 
-console.log("-- STAMPO IL MIO ARRAY AL CONTRARIO --");
+console.log("-- ES.13: STAMPO IL MIO ARRAY AL CONTRARIO --");
 
 i = newArray.length -1;
 while(i >= 0) {
@@ -297,20 +297,133 @@ while(i >= 0) {
 
 //ES.14: CREA UN ARRAY3 CON LA SOMMA DEGLI ELEMENTI DELL'ARREY1 E ARREY2 -> [5, 4, 4, 7, 4]
 
-console.log("-- CREO UN ARRAY 3 CON LA SOMMA DI ARRAY1 E ARRAY2 --")
+console.log("-- ES.14: CREO UN ARRAY 3 CON LA SOMMA DI ARRAY1 E ARRAY2 --")
 
-let array1 = [1, 2, 2, 3, 4]
-let array2 = [4, 2, 2, 4]
-
+let array1 = [1, 2, 2, 3]
+let array2 = [4, 2, 2, 4, 5]
 let array3 = [];
-let indice = 0;
-while(indice < array1.length){
-    array3[indice] = array1[indice] + array2[indice];
-    if(array2[indice]){ //se l' indice dell'array2 esiste array3 vale arra1+array2
-        array3[indice] = array1[indice] + array2[indice];
-    } else { //se l'indice dell'array2 non esiste array3 vale array1
-        array3[indice] = array1[indice];
+
+i = 0; //DINAMICA
+while(i < array1.length || i < array2.length){
+    array3[i] = 0;
+    if(array2[i]){ 
+        array3[i] = array3[i] + array2[i];
     }
-    indice++;
+
+    if(array1[i]){
+        array3[i] = array3[i] + array1[i];
+    }
+i++;
 }
 console.log(array3);
+
+i = 0; //DINAMICA
+while(i < array1.length || i < array2.length){
+
+    if(array1[i] && array2[i]){ 
+        array3[i] = array1[i] + array2[i];
+    } else {
+        if(!array1[i]){
+            array3[i] = array2[i];
+        }else{ 
+            array3[i] = array1[i];
+        }
+      } 
+i++;
+}
+console.log(array3)
+
+
+
+
+//SECONDA VERSIONE DELL'ESERCIZIO 14 (STATICA)
+console.log("ES.14.1 - SECONDA VERSIONE")
+while(i < array1.length){
+    array3[i] = array1[i] + array2[i];
+    if (array2[i] == "undefined"){ //se qualsiasi indice dell'array2 non è definito 
+        array3[i] = array1[i]; //prendi l'indice dell'array1
+
+    }
+    i++;
+}
+console.log(array3);
+
+//TERZA VERSIONE DELL'ESERCIZIO 14 (STATICA)
+console.log("ES.14.2 - TERZA VERSIONE")
+while(i < array1.length){
+    array3[i] = array1[i] + array2[i];
+    if(typeof array2[i] == "undefined"){
+        array3[i] = array1[i];
+
+    }
+    i++;
+}
+console.log(array3);
+
+//ES.15: CREARE UN ARRAY3 CON GLI ELEMENTI DISPARI DI ARRAY1 E GLI ELEMENTI PARI DI ARRAY2 -> 
+//[1, 3, 4, 2, 2, 4] & [1, 4, 2, 2, 3, 4]
+
+/*console.log("ES.15 -- CREO UN ARRAY3 CON GLI ELEMENTI DISPARI DI ARRAY1 E GLI ELEMENTI PARI DI ARRAY2 --")
+
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+array3 = [];
+i = 0;
+
+while(i < array1.length){
+
+    if(array1[i] % 2 !== 0){
+        array3.push(array1[i])
+    }
+i++;    
+}
+console.log(array3);
+
+i = 0;
+while(i < array2.length){
+
+    if(array2[i] % 2 == 0){
+        array3.push(array2[i])
+    }
+i++;
+}
+
+console.log(array3);
+
+
+//ES.16: AGGIORNARE L'ARRAY2 CON GLI ELEMENTI CHE SARANNO UGUALI AL SUO VALORE / LA POSIZIONE DELL'ARRAY1 -> ARRAY2[I] = ARRAY2[I]/ARRAY1.LENGTH
+console.log("-- ES.16: ARRAY2 UGUALE AL VALORE DEI SUOI ELEMNTI / LE POSIZIONI ARRAY1 --")
+
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+
+i = 0;
+while(i < array2.length){
+    array2[i] = array2[i] / array1[array1.length-1-i];
+
+i++;
+}
+console.log(array2);
+
+
+//ES.17: VERIFICARE SE L'ARRAY1 E L'ARRAY2 DATI SONO PALINDROMI COME AD ESEMPIO "ANNA", "RADAR," "EMME", "1221", "4224"
+
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+i = 0;
+while(i < array1.length){
+
+    if(array1[i] == array1.length[i]){
+        
+        console.log("sono palindromo" + array1);
+
+    } else if (array2[i] == array2.length[i]){
+        
+        console.log("sono palindromo: " + array2)
+        
+    } else{
+        
+        console.log("non sono palindromo")
+    } 
+i++;
+}*/
