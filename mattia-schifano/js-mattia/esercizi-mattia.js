@@ -122,9 +122,10 @@ console.log("arrayNuovo=" + arrayNuovo)
 
 arrayNuovo= []
 for (let i= 0; i < array.length; i++) {
-   arrayNuovo[i] = array[i]*2;
-    
+//    arrayNuovo[i] = array[i]*2;       sporchiamo array principale 
+      arrayNuovo.push(array[i]*2)
 }
+console.log(array)
 console.log (arrayNuovo)
 
 //12
