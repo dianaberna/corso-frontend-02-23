@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2? family= Lexend:wght@300;400;500;600;700 & display=swap');
+
+
+:root{
+        --dark-gray: #1d1b1f;
+    }
+
+
+
+  /* general */
+html, body{
+        margin: 0;
+}
+
+body{
+        font-family: "lexend",sans-serif;
+        /* padding: 0; */
+        color: #1d1b1f;
+        
+}
+
+
+        /* nav */
+nav{
+        padding: 50px;
+        display:flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        position: sticky;
+        /* width: 90%; */
+        top: 0;
+        margin-top: 0;
+        background-color: white;
+        z-index: 1;
+        border: 1px solid black;
+}
+    
+nav ul{
+        list-style: none;
+        display: flex;
+        /* justify-content: flex-end; */
+        gap: 3rem;
+}
+    
+nav a{
+        text-decoration: none;
+        color: inherit;
+}
+
+nav a:hover{
+        text-decoration: underline;
+}
+
+nav li{
+        font-size: .875rem;
+        font-weight: 600;
+        color: #1D1B1F;
+}
+
+        /* header */
+
+h1{
+        font-weight: 700;
+        font-size: 2.5rem;
+
+}
+
+         /* header */
+header{
+        text-align: center;
+        margin: 0 10rem;
+}
+
+h1 ~ p {
+        color: #706D73;
+        font-weight: 500;
+        font-size: 1.25rem;
+}
+button{
+        font-family: inherit;
+        border: 1px solid var(--dark-gray);
+        border-radius: 4px;
+        background: #F0F0F0;
+        padding: 1rem 1.25rem;
+        box-shadow: 4px 4px 0px #1D1B1F;
+        /* display: flex;
+        align-items: center;
+        gap: 0.5rem; */
+}
+        /* main */
+                /* section */
+                         /* articoli */
+ h2{
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+}
+       /* div */
+ .verticale{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 4rem auto;
+ }
+ .orizzontale{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+ }
+ .lunghezza{
+        width: 20rem;
+        height: 14rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+ }
+.lunghezza > img {
+        width: 3rem;
+}
+.lunghezza > p {
+        color: #706D73;
+        font-weight: 400;
+}
+h3 {
+     font-size: 24px;
+     font-weight: 600;   
+} 
+/* partner */
+#sfondo{
+        background-color: #F0F0F0;
+        width: 100%;
+        padding: 5rem 0;
+       
+}
+.partner{
+        display: flex;
+        align-items: center;
+        height: 10rem;
+        width: 100%;
+        justify-content: center;
+        padding: 0rem 0rem;
+        gap: 8rem;
+        flex-wrap: wrap;
+}
+
+        /* reception */
+
+
+.tabelle{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        padding: 10px;
+        flex-wrap: wrap;
+ }
+
+.reception{
+        width: 20.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius:  .5rem .5rem;
+        border:1px solid #1D1B1F;
+        margin-right: -2rem;
+        background-color: #EBEBEB;
+        
+}
+
+
+ .nome {
+        margin: 1rem;
+        font-size: .875rem;
+        font-weight: 500;
+        color: #1D1B1F;
+        padding: 1rem;
+        align-items: baseline;
+        display: flex;
+ }
+ .reception > p{
+        margin: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #302E32;
+        padding: 1rem;
+ }
+ .professione {
+        font-weight: 500;
+        font-size: 14px;
+        color: #706D73;
+        padding: 1rem;
+
+ } 
+ .scorrimento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+ }
+  
+    /* how */
+
+ #how >div{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        padding: 7.5rem 6.25rem;
+}  
+#how >div > div{
+        border: 1px solid black;
+        border-radius: .5rem;
+        width: 40rem;
+        padding: 1rem;
+        position: relative;
+       
+}
+#how h3{
+        
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1D1B1F;
+        line-height: 120%;
+        
+}
+#how p {
+        
+        font-size: 1rem;
+        font-weight: 400;
+        color: #706D73;
+        
+}
+#how h4 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #1D1B1F;
+}
+
+#how span{
+        border: 1px solid black;
+        border-radius: .5rem;
+        padding: 1rem;
+        background-color: white;
+        position: absolute;
+        top: -1.5rem;
+        left: -1.5rem;
+        
+}
+                /* cta  */
+.sfondo{
+        background-color: #F0F0F0;
+        padding: 2rem 6.25rem;
+
+}
+#cta h2, #cta h3{
+        text-align: left;
+    }
+
+                /* footer */
+
+footer{
+       
+       background-color: #1D1B1F;
+       padding: 2rem 6.25rem;
+       color: #ffffff;
+}
+
+footer >div{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        flex-direction: row;
+
+}
+
+footer > div > #title{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+footer h5{
+        font-size: 1rem;
+        margin-top: 0;
+}
+
+
+
+footer > ul{
+        list-style-type: none;
+        padding-left: 0;
+        font-weight: 400;
+
+}
+
+footer ul >li{
+        padding-bottom: 1.5rem;
+        color: #d3d0d6;
+
+}
+
+footer > div > div{
+        display: flex;
+        gap: 2rem;
+    }
+
+footer > hr{
+        border: 1px solid #FBFAFC;
+}
+
+.fa-brands {
+        font-size: 1.5625rem;
+    }
+
+  
