@@ -36,3 +36,4 @@ array2[i] = array2[i] / array1[lunghezza-1-i]
 → array2[0] = array2[0] / array1[5-1-0] = 4 / 4 = 1
 
 17. Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+
