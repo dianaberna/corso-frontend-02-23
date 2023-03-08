@@ -6,7 +6,13 @@ while (e <= array.length) {
   //console.log(array[e]);
   e = e + 1;
 }
-e = 0;
+/* console.log(array[e]); */
+///////////////////////////////////////
+let decrescente = array.length;
+for (let i = decrescente - 1; i >= 0; i--) {
+  console.log(array[i]);
+}
+
 sommaVettoreNumeri = 0;
 while (e < array.length) {
   sommaVettoreNumeri = sommaVettoreNumeri + array[e];
@@ -68,10 +74,10 @@ console.log("trovareNumeroDue=" + trovareNuomeriDue);
 let totaleNumeriPositivi = 0;
 for (let i = 0; i < array.length; i++) {
   if (array[i] >= 0) {
-    totaleNumeriPositivi += 1;
+    totaleNumeriPositivi++;
   }
 }
-/* console.log(totaleNumeriPari); */
+console.log(totaleNumeriPositivi);
 
 ///////////
 //es8
@@ -91,3 +97,50 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 console.log(numeroMinimo);
+//////////////////////////////////////
+//es10
+let arrayNuovo = [];
+for (let i = 0; i < array.length; i++) {
+  if (array[i] < 0) {
+    arrayNuovo.push(array[i]);
+  }
+}
+console.log(arrayNuovo);
+//////////////////////////////////
+//es11
+let arrayNuovo2 = [];
+for (let i = 0; i < array.length; i++) {
+  arrayNuovo2.push(array[i] * 2);
+}
+console.log("nuovoarray = " + arrayNuovo2);
+///////////////////////////////////
+//es12
+let arrayPiu = [];
+for (let i = 0; i < array.length; i++) {
+  arrayPiu.push(array[i]);
+}
+for (let i = 0; i < array.length; i++) {
+  arrayPiu.push(array[i]);
+}
+console.log("risultato=" + arrayPiu);
+let cont1 = 0;
+let arrayTre = [];
+for (let i = 0; i < array.length; i++) {
+  arrayTre[i] = array[i];
+  arrayTre[array.length + i] = array[i];
+}
+console.log(arrayTre);
+///////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+//es.13
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+array3 = [];
+for (i = 0; i < array1.length; i++) {
+  if (array2[i]) {
+    array3[i] = array1[i] + array2[i];
+  } else {
+    array3[i] = array1[i];
+  }
+}
+console.log(array3);
