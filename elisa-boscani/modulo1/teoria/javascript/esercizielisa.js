@@ -133,7 +133,7 @@ console.log(arrayTre);
 ///////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
 //es.13
-array1 = [1, 2, 2, 3, 4];
+/* array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4];
 array3 = [];
 for (i = 0; i < array1.length; i++) {
@@ -142,5 +142,62 @@ for (i = 0; i < array1.length; i++) {
   } else {
     array3[i] = array1[i];
   }
+} */
+
+/* array4 = [1, 2, 2, 3];
+array5 = [4, 2, 2, 4, 4];
+array6 = [];
+for (i = 0; i < array5.length || i < array4.length; i++) {
+  if (array4[i] && array5[i]) {
+    array6[i] = array4[i] + array5[i];
+  } else if (!array5[i]) {
+    array6[i] = array4[i];
+  } else {
+    /*  {
+    array6[i] = array4[i] + array5[i]; */
+/*  array6[i] = array5[i];
+  }
 }
-console.log(array3);
+/* console.log(array6); */
+/* array4 = [1, 2, 2, 3];
+array5 = [4, 2, 2, 4, 4];
+array6 = [];
+for (i = 0; i < array5.length || i < array4.length; i++){
+  if(array6[i]=0)
+} */
+
+//////////////////////////////////////////////
+////es 15
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+arraySomme = [];
+for (i = 0; i < array1.length || i < array2.length; i++) {
+  if (array1[i] % 2 !== 0) {
+    arraySomme.push(array1[i]);
+  }
+  if (array2[i] % 2 === 0) {
+    arraySomme.push(array2[i]);
+  }
+}
+console.log(arraySomme);
+//////////////////////////////////
+//es16
+arrayA = [1, 2, 2, 3, 4];
+arrayB = [4, 2, 2, 4];
+for (i = 0; i < arrayA.length || i < arrayB.length; i++) {
+  if (arrayA[i] && arrayB[i]) {
+    arrayB[i] = arrayB[i] / arrayA[arrayA.length - 1 - i];
+  }
+}
+console.log(arrayB);
+
+/////////////////////////////////////////////////
+///////es17
+arrayNonP = [1, 2, 2, 3, 4];
+arrayP = [4, 2, 2, 4];
+let palindromo = true;
+for (i = 0; i < arrayNonP.length; i++) {
+  if (arrayP[i] == arrayP[arrayP.length - i - 1]) {
+    console.log(arrayP[i]);
+  }
+}
