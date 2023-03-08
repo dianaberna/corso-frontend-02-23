@@ -1,12 +1,16 @@
 let array = [2,6,9,10,-2,-3,0,2,5,1]
 
 
-console.log("-- Esercizio 1 : stampa tutti gli elementi --")
+console.log("-- Esercizio 1 : stampa tutti gli elementi con while --")
 let i = 0
 while (i < array.length){
     console.log("Array n[" + i + "]= " + array[i]);
     i= i+1;
 } 
+console.log("-- Esercizio 1 : stampa tutti gli elementi con for --")
+for (let i= 0; i < array.length; i++) {
+    console.log("Array n[" + i + "]= " + array[i]);
+}
 
 console.log("-- Esercizio 2 : stampa la somma --")
 /* 
@@ -162,18 +166,86 @@ while (i13 >= 0) {
 
 /* ARRAY1 & ARRAY2 */
 
-array1 = [1, 2, 2, 3, 4]
-array2 = [4, 2, 2, 4]
+let array1 = [1, 2, 2, 3, 4]
+let array2 = [4, 2, 2, 4]
 
 
 console.log("-- Esercizio 14: Crea array3 sommando gli elementi array1 e array2 --")
-i=0
-array3 = []
-while (i < array1.lenght) {
+i = 0
+let array3 = []
+while (i < array1.length) {
     if (array2[i]) {
         array3[i] = array1[i] + array2[i];        
     } else {
-        array3[i] = array1[1] // se arrey2[i] esiste, allora somma
+        array3[i] = array1[i] // se arrey2[i] esiste, allora somma, altrimenti prendi solo array1
     }
     i++
+} console.log(array3) // non c'è bisogno di pushare perchè già li sto inserendo con if e else
+
+console.log("-- Esercizio 14.2: Crea array3 se array2 > array1--")
+let array1b = [4, 2, 2, 4]
+let array2b = [1, 2, 2, 3, 4]
+i = 0
+array3b = []
+while (i < array2b.length){
+    if (array1b[i]) {
+        array3b[i] = array1b[i] + array2b[i]
+    } else {
+        array3b[i] = array2b[i]
+    }
+    i++
+} console.log(array3b)
+
+
+console.log("-- Esercizio 15: Crea array3 con gli elementi dispari di array1 e pari di array2 --")
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4] // risultato array3 = [1, 3, 4, 2, 2, 4]
+
+i=0
+array3 = []
+while (i < array1.length) {
+   if (array1[i] % 2 !== 0) {
+       array3.push(array1[i])
+   } 
+   i++
+} 
+i = 0 //bisogna resettare la i, altrimenti risulta "sporca" dal precedente while
+while (i < array2.length) {
+    if (array2[i] %2 ==0) {
+        array3.push(array2[i])
+    } 
+    i++
 } console.log(array3)
+
+
+console.log("-- Esercizio 17: array1 e array2 sono palindromi?--")
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+
+let revArray1 = []
+for (let i = array1.length - 1; i >= 0; i--) {
+    revArray1.push(array1[i])
+} 
+
+for (let i = 0; i < array1.length; i++) {
+   if (array1[i] === revArray1[i]) {
+        console.log("Array1 è palindromo")
+        break
+    } else {
+        console.log("Array1 NON è palindromo")
+    } break
+}
+
+let revArray2 = []
+for (let i = array2.length - 1; i >= 0; i--) {
+    revArray2.push(array2[i])
+} 
+
+for (let i = 0; i < array1.length; i++) {
+   if (array2[i] === revArray2[i]) {
+        console.log("Array2 è palindromo")
+        break
+    } else {
+        console.log("Array2 NON è palindromo")
+    } break
+}
