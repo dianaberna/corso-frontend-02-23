@@ -403,37 +403,61 @@ console.log(" è palindromo")
 console.log("esercizio17")
 //17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 array1 = [ 1, 2, 2, 3, 1] 
-array2 = [ 4, 4, 2, 2,2,2, 4,4 ] 
+array2 = [ 4, 4, 2, 2, 1, 2, 4, 4 ] 
 array3=[]
 array4=[]
+console.log("array1")
 
-if (array2.length %2 !=0) {console.log("non è palindromo")
+
+if (array1.length % 2 !=0) {console.log("array1 non è palindromo")
     
-}
+}else{ for (let i = 0; i < array2.length/2; i++) {
+    array3[i]=array2[i]
     
-    for (let i = 0; i < array2.length/2; i++) {
+     }  console.log("array3"+array3)
+
+      for (i = array2.length-1 ; i >=(array2.length)/2; i--) {
+        
+        array4.push(array2[i])
+   
+} console.log("array4"+array4) 
+       
+    for (let i = 0; i < array3.length; i++) {
+        
+        if (array3[i]==array4[i]){
+            
+            console.log("array2 è palindromo")
+            
+        }else console.log("array2 non è palindromo")
+    }
+} 
+
+console.log("array2")
+
+if (array2.length %2 !=0) {console.log("array2 non è palindromo")
+    
+}else{ for (let i = 0; i < array2.length/2; i++) {
         array3[i]=array2[i]
         
-         } console.log("array3"+array3)
+         }  console.log("array3"+array3)
 
           for (i = array2.length-1 ; i >=(array2.length)/2; i--) {
             
             array4.push(array2[i])
        
-    }console.log("array4"+array4)
-    
-        
+    } console.log("array4"+array4) 
+           
         for (let i = 0; i < array3.length; i++) {
             
             if (array3[i]==array4[i]){
-                console.log("è palindromo")
-            }else console.log("non è palindromo")
+                
+                console.log("array2 è palindromo")
+                
+            }else console.log("array2 non è palindromo")
         }
-    
-        
-   
-    
-        
+    } 
+
+
         
 
 
