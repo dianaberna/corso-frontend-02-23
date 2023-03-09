@@ -22,6 +22,15 @@ console.log(nuovaParola[1]) // pippo
 
 console.log(arrayParole[1][0])  // stampa la prima p della parola pippo
 
+console.log("prova = "+nuovaParola)
+
+let stringa = "ciao"
+let nuovaStringa = "ciao" + "ciao"
+
+nuovaStringa = nuovaStringa + "ciao"
+nuovaStringa += "ciao"
+
+console.log(nuovaStringa)
 
 // ci torniamo  
 
