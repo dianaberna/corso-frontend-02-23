@@ -292,29 +292,100 @@ for(let i=array.length - 1; i>=0; i--){
 }
 
 // array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4]
+let array1 = [ 1, 2, 2, 3, 4] 
+let array2 = [4, 2, 2, 4]
+let array3 = []
+
 // 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 → [5, 4, 4, 7, 4]
+console.log("esercizio 14 -->")
+
+// primo metodo 
+for(let i=0; i<array1.length || i<array2.length; i++){
+    if(array1[i] && array2[i]){
+        array3.push(array1[i]+array2[i])
+    }else{
+        if(!array2[i]){
+            array3.push(array1[i])
+        }else{
+            array3.push(array2[i])
+        }
+    }
+}
+console.log(array3)
+
+// secondo metodo 
+for(let i=0; i<array1.length || i<array2.length; i++){
+    array3[i] = 0 
+    if(array1[i]){
+        array3[i] = array3[i] + array1[i]
+    }
+    if(array2[i]){
+        array3[i] = array3[i] + array2[i]
+    }
+}
+console.log(array3)
+
+// secondo metodo con funzione isNaN
+// isNaN = isNotaNumber è una funzione che restituisce true se non è un numero altrimenti false se lo è
+for(let i=0; i<array1.length || i<array2.length; i++){
+    array3[i] = 0 
+    if(!isNaN(array1[i])){
+        array3[i] = array3[i] + array1[i]
+    }
+    if(array2[i]){
+        array3[i] = array3[i] + array2[i]
+    }
+}
+console.log(array3)
+
 // 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+// versione 1 con while
+console.log("versione 1 con while");
+while (i < array1.length) {
+    if (array1[i] % 2 == 1) {
+        array3.push(array1[i]);
+    }
+    i++;
+}
+i = 0;
+while (i < array2.length) {
+    if (array2[i] % 2 == 0) {
+        array3.push(array2[i]);
+    }
+    i++;
+}
+console.log(array3);
+
+
 // 16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
+
+i = 0;
+while (i < array2.length) {
+    array2[i] = array2[i] / array1[array2.length - i - 1];
+    
+    i++;
+}
+
+i = 0;
+cont = 0;
+array2 = [ 1, 2, 2, 2, 1] 
 // 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
-
-console.log("prove elementi fuori dall'array")
-// array va da 0 a 9
-if(array[12]) {
-    console.log("l'elemento esiste")
-}else{
-    console.log("l'elemento non esiste")
+while (i < array2.length / 2) {
+    // se lunghezza è pari
+    if (array2[i] === array2[array2.length - 1 - i]) {
+        cont++
+    }
+    i++;
 }
 
-// array[2] che tipo di dato è ? number
-// number che tipo di dato è ? string
-let tipoDiDato = typeof array[12]
-let tipoDelTipoDiDato = typeof tipoDiDato
-console.log(tipoDiDato, tipoDelTipoDiDato)
+console.log("cont="+cont)
+console.log(array2.length / 2)
+console.log("ceil: "+Math.ceil(array2.length / 2))
+console.log("floor: "+Math.floor(array2.length / 2))
 
-if(tipoDiDato !== "undefined"){
-    console.log("l'elemento esiste")    
-}else{
-    console.log("l'elemento non esiste")
+if (cont == array2.length / 2 || cont == Math.ceil(array2.length / 2)) {
+    console.log("è palindromo");
+} else{
+    console.log("non è palindromo");
 }
-

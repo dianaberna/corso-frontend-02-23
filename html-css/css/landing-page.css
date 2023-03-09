@@ -64,6 +64,7 @@ button {
 /* navbar */
 
 nav {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   padding: 50px;
@@ -71,6 +72,14 @@ nav {
   top: 0;
   margin-top: 2rem;
   /* 
+=======
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    position: sticky;
+    top: 0;
+    /* 
+>>>>>>> bccd97d4168c0315f97e5e1fa7e8fdf8739a9eba
         position: fixed;
         width: calc(100% - 100px);
     */
@@ -171,6 +180,7 @@ nav a:hover{
 /* section testimonial */
 
 section#testimonial > div {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +192,21 @@ section#testimonial > div > div {
   justify-content: center;
   gap: 3rem;
   align-items: flex-start;
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+section#testimonial > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+>>>>>>> bccd97d4168c0315f97e5e1fa7e8fdf8739a9eba
 }
 
 section#testimonial .card {
@@ -208,12 +233,21 @@ section#testimonial .card > div {
   align-items: center;
 }
 
+<<<<<<< HEAD
 #how > div > div {
   border: 1px solid black;
   border-radius: 0.5rem;
   width: 40rem;
   padding: 1rem;
   position: relative;
+=======
+#how > div > div{
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 18rem;
+    padding: 1rem;
+    position: relative;
+>>>>>>> bccd97d4168c0315f97e5e1fa7e8fdf8739a9eba
 }
 
 #how h3 {
@@ -302,14 +336,11 @@ footer hr {
   }
 =======
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-    
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 481px){
     h1{
         font-size: 4.25rem;
     }
+<<<<<<< HEAD
 >>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
 }
 
@@ -324,3 +355,12 @@ footer hr {
     font-size: 4.25rem;
   }
 }
+=======
+    #how > div > div{
+        width: 40rem;
+    }
+    footer{
+        padding: 2rem 6.25rem;
+    }
+}
+>>>>>>> bccd97d4168c0315f97e5e1fa7e8fdf8739a9eba
