@@ -318,15 +318,44 @@ console.log(inverso)
 
 // 5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è la concatenazione delle due stringhe, separate da uno spazio. 
 p1 = "coraggio";
-p2 = " raggio";
+p2 = "raggio";
 let p4=[];
 for (let i = 0; i < p1.length; i++) {
     p4.push(p1[i])
     
-}
+}p4.push("")
 for (let i = 0; i < p2.length; i++) {
     p4.push(p2[i])
     
-}
+}p4.push("")
+p4=String(p4)
 console.log(p4)
 
+
+// 6 crivere un programma che sviluppi il cifrario di Cesare 🤯 🤯
+// match https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+let stringaCifrata = "";
+let stringa = "mare";
+let spostamento = 3;
+let lettera = 0;
+let nuovaLettera = 0;
+let codiceAscii = 0;
+let nuovoCodiceAscii = 0;
+
+function cifrarioDiCesare(stringa, spostamento) {
+    
+    for (let i = 0; i < stringa.length; i++) {
+      lettera = stringa[i];
+      if (lettera.match(/[a-z]/i)) {
+         codiceAscii = lettera.charCodeAt(0);
+         nuovoCodiceAscii = (codiceAscii - 97 + spostamento) % 26 + 97;
+         nuovaLettera = String.fromCharCode(nuovoCodiceAscii);
+         stringaCifrata += nuovaLettera;
+      } else {
+        stringaCifrata += lettera;
+      }
+    }
+    return stringaCifrata;
+  }
+  stringaCifrata = cifrarioDiCesare(stringa, spostamento);
+ console.log(stringaCifrata); 
