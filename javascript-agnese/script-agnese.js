@@ -441,23 +441,24 @@ console.log(array2)
 
 
 
-//17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
-console.log("-- esercizio 17) --> ")
+// 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+console.log("-- esercizio 17)--> ")
 
-    let countZero = 0;
-    array1 = [1, 2, 2, 1];
-    array2 = [4, 2, 2, 4];
+i = 0;
+cont = 0;
+array2 = [ 1, 2, 2, 2, 1] 
 
-for (let i = 0; i < array2.length / 2; i++) {
-    if (array2[i] == array2[array2.length - 1 - i]) {
-        countZero++
+while (i < array2.length / 2) {
+    // se lunghezza è pari
+    if (array2[i] === array2[array2.length - 1 - i]) {
+        cont++
     }
+    i++;
 }
-if (
-    countZero == array2.lenght / 2 ||
-    countZero == Math.ceil(array2.lenght / 2)
-) {
-    console.log("Palindromo") // funziona solo se la lunghezza è pari
-} else {
-    console.log("Non è palindromo")
+
+if (cont == array2.length / 2 || cont == Math.ceil(array2.length / 2)) {
+    console.log("è palindromo");
+} else{
+    console.log("non è palindromo");
 }
+

@@ -27,42 +27,31 @@ console.log(cont2)
 
 
 //2) Scrivere un programma che verifica  se due stringhe sono palindrome 
-/*    let countZero = 0;
-    array1 = [1, 2, 2, 1];
-    array2 = [4, 2, 2, 4];
+/*   // 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+console.log("-- esercizio 17)--> ")
 
-for (let i = 0; i < array2.length / 2; i++) {
-    if (array2[i] == array2[array2.length - 1 - i]) {
-        countZero++
+i = 0;
+cont = 0;
+array2 = [ 1, 2, 2, 2, 1] 
+
+while (i < array2.length / 2) {
+    // se lunghezza è pari
+    if (array2[i] === array2[array2.length - 1 - i]) {
+        cont++
     }
+    i++;
 }
-if (
-    countZero == array2.lenght / 2 ||
-    countZero == Math.ceil(array2.lenght / 2)
-) {
-    console.log("Palindromo") // funziona solo se la lunghezza è pari
-} else {
-    console.log("Non è palindromo")
+
+if (cont == array2.length / 2 || cont == Math.ceil(array2.length / 2)) {
+    console.log("è palindromo");
+} else{
+    console.log("non è palindromo");
 }
+
 */
-console.log("-- 2) esercizio STRINGHE --> ")
-let contatore = 0;
-    array1 = "otto"
-    array2 = "anna"
 
-for (let i = 0; i < array2.length / 2; i++) {
-        if (array2[i] == array2[array2.length - 1 - i]) {
-            contatore++
-        }
-    }
-if (
-        contatore == array2.lenght / 2 ||
-        contatore == Math.ceil(array2.lenght / 2)
-    ) {
-        console.log("Palindromo") 
-    } else {
-        console.log("Non è palindromo")
-    }
+
+console.log("-- 2) esercizio STRINGHE --> ")
 
 //3) Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
 //es. mare in categoria → la parola mare non esiste in categoria
