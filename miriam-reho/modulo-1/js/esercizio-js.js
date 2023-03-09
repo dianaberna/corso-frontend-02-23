@@ -12,6 +12,8 @@ for (let i= 0; i < array.length; i++) {
     console.log("Array n[" + i + "]= " + array[i]);
 }
 
+/* ------------------------------------------- */
+
 console.log("-- Esercizio 2 : stampa la somma --")
 /* 
     0 < 10? si -> somma = 0 + 2 = 2
@@ -26,6 +28,7 @@ while (i2 < array.length){
     i2++;
 } console.log("La somma degli array è "+ sommaArray)
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 3 : somma degli elementi positivi --")
 
@@ -45,6 +48,7 @@ while (i3 < array.length){
     i3++;
 } console.log(sommaPositivi)
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 4 : somma degli elementi dispari --")
 
@@ -61,6 +65,7 @@ while (i4 < array.length) {
     i4++;
 } console.log("La somma degli elementi dispari è = " + dispari)
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 5 : somma degli elementi in posizione pari --")
 
@@ -77,6 +82,7 @@ while (i5 < array.length) {
     i5 = i5 + 2;
 } console.log("La somma degli elementi in posizione pari è = "+ posEven)
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 6 : quante volte compare il n2 --")
 let i6 = 0
@@ -88,6 +94,7 @@ while (i6 < array.length) {
     i6++;
 } console.log("2 compare " + [volte] + " volte");
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 7 : quanti Plus (0 compreso) --")
 let i7 = 0
@@ -99,6 +106,7 @@ while (i7 < array.length) {
     i7++;
 } console.log("ci sono " + voltePlus + " positivi")
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 8 : chi è il più grande --")
 
@@ -111,6 +119,7 @@ while (i8 < array.length) {
     i8++
 } console.log(max)
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 9 : chi è il più piccolo --")
 let i9=0
@@ -122,6 +131,7 @@ while (i9 < array.length) {
     i9++
 } console.log(min)
 
+/* ------------------------------------------- */
 
 console.log("--  Esercizio 10: un nuovo array con i negativi di array --")
 let i10 = 0
@@ -133,6 +143,7 @@ while (i10 < array.length) {
     i10++
 } console.log(arrayNuovo)
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 11: stampare un nuovo array con i doppi --")
 i11 = 0
@@ -141,6 +152,8 @@ while (i11 < array.length) {
     doubleArray.push(array[i11]*2)
     i11++
 } console.log(doubleArray)
+
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 12: stampare un nuovo array con arrey 2 volte --")
 i12 = 0
@@ -155,6 +168,7 @@ while (i12 < array.length) {
     i12++
 } console.log(dueArray) 
 
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 13: stampare al contrario l'array --")
 i13 = array.length - 1
@@ -163,8 +177,7 @@ while (i13 >= 0) {
     i13--
 } 
 
-
-/* ARRAY1 & ARRAY2 */
+/* --------------------- ARRAY1 & ARRAY2 ---------------------- */
 
 let array1 = [1, 2, 2, 3, 4]
 let array2 = [4, 2, 2, 4]
@@ -199,6 +212,9 @@ while (i < array2b.length || i < array2.length){
 } console.log(array3b)
 
 
+/* ------------------------------------------- */
+
+
 console.log("-- Esercizio 15: Crea array3 con gli elementi dispari di array1 e pari di array2 --")
 array1 = [1, 2, 2, 3, 4]
 array2 = [4, 2, 2, 4] // risultato array3 = [1, 3, 4, 2, 2, 4]
@@ -219,6 +235,31 @@ while (i < array2.length) {
     i++
 } console.log(array3)
 
+console.log("-- Esercizio 15.2: Crea array3 con gli elementi dispari di array1 e pari di array2 --")
+console.log("Il risultato dovrà essere array3 [1,4,2,2,3,4]")
+
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+array3 = []
+for (i = 0; i < array1.length && i < array2.length; i++){
+    if (array1[i] %2 !== 0) {
+       array3.push(array1[i])
+    } 
+    if (array2[i] %2 ==0) {
+        array3.push(array2[i])
+    }
+} console.log(array3)
+
+
+/* ------------------------------------------- */
+
+console.log("-- Esercizio 16: aggiornare l'array2 con array2[i]=array2[i]/array1[length-1-i) --")
+
+for (let i = 0; i < array2.length; i++) {
+    array2[i] = array2[i] / array1[array1.length - 1 - i]
+} console.log(array2)
+
+/* ------------------------------------------- */
 
 console.log("-- Esercizio 17: array1 e array2 sono palindromi?--")
 array1 = [1, 2, 2, 3, 4]
@@ -243,11 +284,33 @@ for (let i = array2.length - 1; i >= 0; i--) {
     revArray2.push(array2[i])
 } 
 
-for (let i = 0; i < array1.length; i++) {
+for (let i = 0; i < array2.length; i++) {
    if (array2[i] === revArray2[i]) {
         console.log("Array2 è palindromo")
         break
     } else {
         console.log("Array2 NON è palindromo")
     } break
+}
+
+console.log("-- Esercizio 17.2: array1 e array2 sono palindromi?--")
+
+for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array1[array1.length - 1 - i]) {
+       console.log("Array1 NON è palindromo")
+       break
+    } else {
+        console.log("Array1 è palindromo")
+        break
+    }
+}
+
+for (let i = 0; i < array2.length; i++) {
+    if (array2[i] !== array2[array2.length - 1 - i]) {
+        console.log("Array2 NON è palindromo")
+        break
+    } else {
+        console.log("Array2 è palindromo")
+        break
+    }
 }
