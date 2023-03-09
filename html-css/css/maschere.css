@@ -14,7 +14,6 @@ img{
 #maschera2{
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
     clip-path: circle(50% at 50% 50%); /* https://bennettfeely.com/clippy/ */
     display: flex;
     justify-content: center;
