@@ -85,20 +85,41 @@ cont = cont + 1;
 
  let array = [  2, 6, 9, 10, -2, -3, 0, 2, 5, 1 ]
  
+console.log(array)
+
+//stampiamo primo elemento dell'array con posizione 0
+console.log(array[0]) 
+
 
 //1) Stampare tutti gli elementi dell’array → 2, 6, 9, 10, -2, -3, 0, 2, 5, 1 
 
-console.log(array)
 
 let i=0
 while (i<array.length){
-console. log (array[i])
+console.log (array[i])
 i=i+1;
 }
 
+console.log("-- ripasso del 1) esercizio con while --")
+// partiamo da 0 poi andiamo a 1 e 2 etc fino alla fine della lunghezza in un ciclo while
+let posizione=0
+while (posizione<array.length){
+console.log (array[posizione])
+posizione=posizione+1;
+}
+
+
+console.log("-- esercizio 1) ripasso con for --")
+let posizione2=0
+for (posizione2=0;posizione2<array.length;posizione2=posizione2+1) {
+    console.log (array[posizione2])
+}
+
+
+
 
 //2)Stampare la somma di tutti gli elementi dell’ array → 30 (si può fare anche con for)
-
+console.log("-- esercizo 2) ripasso con while--")
 i=0;
 let Somma = 0
 while(i <= array. length - 1) {
@@ -110,28 +131,204 @@ console.log("Somma = "+Somma)
 
 
 //3) Stampare la somma dei soli elementi positivi → 35
-let sommaPositivi = 0;
-for (let i = 0; i < array.length; i++) {
-    if (array[i] >= 0) {
-        sommaPositivi = sommaPositivi + array[i];
+console.log("-- esercizo 3) ripasso con for--")
+let sommaPositivi = 0
+for(let posizione=0; posizione<array.length; posizione++){
+    if (array[posizione] >= 0) {
+        sommaPositivi = sommaPositivi + array[posizione]
     }
 }
-console.log("sommaPositivi = " + sommaPositivi);
+console.log(sommaPositivi)
+
 
 // 3.1) contare quanti elementi positivi ci sono nell'array
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
-
-i=0;
-let variabileContatore = 0;
-while( i < array.length ) {
-if ( array[i] >= 0 ) {
-variabileContatore = variabileContatore +1;
+console.log("-- esercizo 3.1/7) ripasso con for--")
+let contoPositivi = 0
+for(let posizione=0; posizione<array.length; posizione++){
+    if (array[posizione] >= 0) {
+        contoPositivi = contoPositivi + 1 
+    }
 }
-i++;
-}
-console.log("esercizio 3.1 = "+variabileContatore)
+console.log(contoPositivi)
 
 
-//4) Stampare la somma dei soli elementi dispari -+ 12
+
+
+// 4) ripasso, stampare la somma dei soli elementi dispari -+ 12
+// Stampare la somma dei soli elementi dispari -+ 12
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
-// 1- controllare ogni numero, 2- selezionare e mantenere i numeri dispari, 3- sommare questi numeri, 4- stampare il risultato della somma.
+
+console.log("-- esercizio 4) ripasso con for--")
+i = 0;
+sommaDispari = 0;
+for(i=0;i<array.length;i++){
+    if (array[i]% 2 !==0){
+        sommaDispari= sommaDispari + array[i]
+    }
+}
+console.log(sommaDispari)
+
+//5 ripasso:  Stampare la somma dei soli elementi in indice/posizione pari  → 14
+console.log("-- esercizio 5) ripasso con for--")
+let posizionePari = 0;
+for(i=0;i<array.length; i++){
+    if(i %2 == 0){
+    posizionePari = posizionePari + array[i];
+    }
+}
+console.log(posizionePari)
+
+
+// 6 ripasso: Stampare quante volte compare il numero 2 → 2
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+console.log("-- esercizio 6) ripasso con for--")
+
+let cont2 = 0;
+for(i=0;i<array.length;i++){
+    if(array[i] == 2){
+        cont2 = cont2 + 1
+    }
+}
+console.log(cont2)
+
+
+// 7) Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array → 8
+console.log("-- esercizio 7) ripasso con for--")
+
+let cont3 = 0;
+
+for(i = 0; i < array.length; i++){
+    if(array[i] >= 0){
+
+        cont3 = cont3 + 1;
+    }
+}
+console.log(cont3)
+
+// 8) Stampare il numero massimo (senza usare funzioni matematiche) → 10
+console.log("-- esercizio 8) ripasso con for--")
+
+let max = array[0]; 
+
+for(let i=0; i < array.length; i++){
+   if (array[i] > max){
+    max = array[i]
+   }
+}
+   console.log(max)
+
+
+
+// 9) Stampare il numero minimo con for  → -3
+console.log("-- esercizio 9) ripasso con for--")
+
+let min = 0;
+
+for(let i=0; i < array.length; i++){
+    if (array[i] < min){
+     min = array[i]
+    }
+ }
+    console.log(min)
+
+// 10) Inserire in un nuovo array con solo gli elementi negativi dell'array che abbiamo 🤯 → 2
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+console.log("-- esercizio 10) ripasso--")
+i = 0;
+
+let arraynew= []
+for(i=0; i<array.length; i++){
+    if(array[i]<0){
+        arraynew.push(array[i]);
+    }
+}
+console.log(arraynew)
+
+// 10.2) Inserire in un nuovo array con solo gli elementi negativi dell'array che abbiamo 🤯 → 2 SENZA PUSH
+//let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+console.log("-- esercizio 10.2) ripasso SENZA push --")
+
+arraynew= [] //variabile a parte per partire da 0 per non avere elementi vuoti nel nuovo array
+inew= 0
+
+for(i=0; i<array.length; i++){
+    if(array[i]<0){
+        arraynew[inew]=array[i];
+        inew++;
+    }
+}
+console.log(arraynew)
+
+
+// 11) Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 
+//array di partenza: [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+//arrayNuovo=[4, 12, 18, 20, -4, -6, 0, 4, 10, 2] 
+console.log("-- esercizio 11) ripasso --")
+
+i = 0
+arraynew= []
+
+for (let i=0; i<array.length; i++){
+    
+        arraynew.push(array[i] * 2)
+
+}
+
+console.log(arraynew)
+
+
+// 12) Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 → 
+// array: [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+
+console.log("-- esercizio 12) ripasso --")
+
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+
+i = 0
+let arraynuovo = []
+while(i<array.length){
+    arraynuovo.push(array[i])
+    i++
+   
+}
+
+i= 0
+while(i<array.length){
+    arraynuovo.push(array[i])
+    i++
+   
+}
+console.log(arraynuovo)
+
+// 12.2) SENZA push
+
+
+console.log("-- esercizio 12.1) ripasso SENZA push --")
+
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+
+i = 0
+arraynuovo = []
+while(i<array.length){
+    arraynuovo[i] = array[i]
+    arraynuovo[array.length +i] = array[i]
+    i++
+   
+}
+console.log(arraynuovo)
+
+
+
+// 13) Stampare al contrario gli elementi dell’array → 
+//array di partenza:  [2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+//array: [1, 5, 2, 0, -3, -2, 10, 9, 6, 2] 🙂
+console.log("-- esercizio 13) ripasso --")
+
+i = array.length - 1
+while(i>=0){
+    
+    console.log(array[i])
+    i--
+    
+}
