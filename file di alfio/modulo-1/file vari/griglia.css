@@ -1,0 +1,42 @@
+.griglia {
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+}
+
+.griglia>div>div {
+    opacity: 0.2;
+    width: 4rem;
+    height: 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.548);
+    border-left: 1px solid black;
+}
+
+.griglia>div {
+    display: flex;
+    flex-direction: row;
+}
+
+#g1 {
+    border-left: 0rem solid;
+}
+
+#ultimogrid>div {
+    border-bottom: 0px solid;
+
+}
+
+.gradient {
+    margin: 1rem;
+    width: 32rem;
+    height: 33rem;
+    top: 0;
+
+    position: absolute;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    /* background: rgb(0, 255, 255);
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.03265056022408963) 0%, rgba(255, 144, 144, 1) 100%); */
+}
