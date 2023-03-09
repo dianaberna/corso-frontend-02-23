@@ -169,6 +169,7 @@ for (let i = 0; i < arrayone.length || i < arraytwo.length; i++) {
 
 //esercizio 15 Creare un array3 con gli elementi (non la posizione) dispari di array1 e 
 //gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4] 
+console.log("prova 1 esercizio 15")
 let arraymix = [];
 for (let i = 0; i < arrayone.length; i++) {
     if (arrayone[i] % 2 == 1) {
@@ -181,31 +182,41 @@ for (let i = 0; i < arraytwo.length; i++) {
     }
 } console.log(arraymix)
 //prova2
-// console.log("prova 2")
-// for(let i=0 ; i<arraytwo.length ; i++){
-//     if(arraytwo[i] %2 ==1 ){
-//         arraymix.push(arraytwo[i]);
-//     }
-// }
-//   for(let i=0 ; i<arrayone.length ; i++ ){
-//     if(arrayone[i] %2 ==0 ){
-//         arraymix.push(arrayone[i]);
-//     }
-// }console.log(arraymix)
+console.log("prova 2 esercizio 15")
+let arraymisto = [];
+for(let i=0 ; i<arraytwo.length && i < arrayone.length; i++){
+    if(arrayone[i] %2 == 1 ){
+        arraymisto.push(arrayone[i]);
+    }
+    if(arraytwo[i] %2 == 0 ){
+        arraymisto.push(arraytwo[i]);
+    }
+}console.log(arraymisto)
 
 //esercizio 16 Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
+console.log("esercizio 16");
+for(i=0 ; i<arraytwo.length ; i++){
+    arraytwo[i] = arraytwo[i]/arrayone[arrayone.length-1-i]
+}console.log(arraytwo)
 
-
-
+/*
+[]= 4 / A[5-1-0] --> 4/A[4]--> 4/4 --> 1
+[]= 2 / A[5-1-1] --> 4/A[3]--> 2/3 --> 0,6666
+[]= 2 / A[5-1-2] --> 4/A[2]--> 2/2 --> 1
+[]= 4 / A[5-1-3] --> 4/A[1]--> 4/2 --> 2
+*/
 
 
 //esercizio 17 Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 // // arrayone = [ 1, 2, 2, 3, 4] arraytwo = [4, 2, 2, 4]
-let flag = 0;
+let arr1 = [1, 2, 2, 3, 4];
+let arr2 = [4, 2, 2, 4];
+
 console.log("Array2")
-for (let i = 0; i < arraytwo.length / 2; i++) {
-    if (arraytwo[i] !== arraytwo[arraytwo.length - i - 1]) {
+let flag = 0;
+for (let i = 0; i < arr2.length/2 ; i++) {
+    if (arr2[i] !== arr2[arr2.length - i - 1]) {
         flag = 1;
         break
     }
@@ -217,8 +228,8 @@ else {
     console.log(" palindrome");
 }
 console.log("Array1")
-for (let i = 0; i < arrayone.length / 2; i++) {
-    if (arrayone[i] !== arrayone[arrayone.length - i - 1]) {
+for (let i = 0; i < arr1.length/2 ; i++) {
+    if (arr1[i] !== arr1[arr1.length - i - 1]) {
         flag = 1;
         break
     }
@@ -230,9 +241,10 @@ else {
     console.log(" palindrome");
 }
 
-//         ********/ Esercizi Nuovi********/
+//        /* ********/ Esercizi Nuovi********/ */
 
 // esercizio 1 Scrivere un programma che conta quante lettere “e” ci sono nella parola precipitevolissimevolmente 
+console.log("Esercizio 1 stringhe")
 let parola = "precipitevolissimevolmente";
 let conta = 0;
 for (i = 0; i < parola.length; i++) {
@@ -242,28 +254,109 @@ for (i = 0; i < parola.length; i++) {
 } console.log(conta)
 
 
-
+console.log("metodo1 esercizio 2")
 // esercizio 2 Scrivere un programma che verifica  se due stringhe sono palindrome 
-let parola1 = "dado";
-let parola2 = "odad";
+let parola1 = "anna";
+let parola2 = "radar";
+
+let bool = 0;
+for(i=0 ; i<parola1.length/2 ; i++){
+    if(parola1[i] !== parola1[parola1.length-i-1]){
+        bool = 1;
+        break;
+    }
+}
+if(bool == 1){
+
+    console.log("non è palindrome");
+}
+else {
+    console.log(" palindrome");
+}
+
+
+console.log("metodo2 Esercizio 2")
+let carattere;
+let parolaInversa = '';
+for (let i = parola2.length - 1; i >= 0 ;  i-- ){
+    carattere = parola2[i];
+    parolaInversa += carattere;
+    // console.log(carattere);
+    // console.log(parolaInversa);
+}
+
+// console.log(parolaInversa);
+// console.log(typeof parolaInversa);
+
+if(parola2 == parolaInversa){
+    console.log('la parola è palindroma');
+  } else {
+    console.log('la parola non è palindroma');
+  }
+
+
+
+//
+console.log("esercizio 3")
+
 
 
 
 // esercizio 3 Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
 //es. mare in categoria → la parola mare non esiste in categoria
-let p1 = "palesemente";
-let p2 = "mente";
-let conparole = " ";
-for (i = 0; i < p1.length || i < p2.length; i++) {
-    // conparole[i] = " ";
-    if (p1.indexOf([i])) {
-         
+let p1 = "piroscafo";
+let p2 = "scafo";
+control = false;
+for(let i=0 ; i<p1.length ; i++){
+    if(p1[i]==p2[0]){
+        for(let j=0 ; j<p2.length ;j++){
+            if(p1[i+j]==p2[j]){
+                control = true;
+            }else{
+                control = false;
+            }
+        }
     }
+}if(control){
+    console.log("é compreso");
+}else{
+    console.log("non é compreso");
+}
     
-} console.log(conparole)
+// } console.log(conparole)
 
+
+console.log("metodo1 esercizio 4")
 // esercizio 4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
+let parola3 = "ciao";
+let parolainverso = [];
+let n = 0;
+for(i = parola3.length-1 ; i>=0 ; i--){
+    parolainverso[n]=parola3[i];
+    n++;
+
+}console.log(String(parolainverso))
+//metodo 2
+console.log("metodo2 esercizio 4")
+let p3 = "ciao";
+let p3reverse = "";
+for(i=p3.length-1 ; i>=0 ; i--){
+    p3reverse = p3reverse + p3[i];
+}console.log(p3reverse)
 
 // esercizio 5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è
 // la concatenazione delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
+// //risultato = [];
+// for (let i = 0; i < array.length; i++) {
+//     risultato[i] = array[i]; //primo array - posizione 0
+//     risultato[array.length + i] = array[i]; //aggiunta secondo array - posizione
+// }
+// console.log("metodo senza il push e un for");
+// console.log(risultato);
 
+    str1 = "sono";
+    str2 = "io";
+let input = "";
+for (let i=0 ; i<str1.length && i<str2.length ; i++){
+    input = str1 +" "+ str2;
+}console.log(input)
