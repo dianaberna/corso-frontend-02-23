@@ -69,6 +69,26 @@ console.log("sommaPositivi = " + sommaPositivi);
 
 
 
+//esercizio 14
+
+let array1 = [1, 2, 2, 3]
+console.log(array1)
+
+
+
+
+
+
+
+let stringa = "casa";
+let stringaVuota = [];
+count = 0;
+
+fot (let i= stringa.length - 1; i>= 0; i--){
+    stringaVuota[count] = stringa [i];
+    count ++;
+}
+ console.log(stringaVuota);
 
 
 
@@ -79,6 +99,19 @@ console.log("sommaPositivi = " + sommaPositivi);
 let sommaDispari = 0;
 for 
 
+
+
+array3 = [1];
+i=0
+while (1< arrai1.length && i < array2.length){
+    if(array1[i] % 2 ! == 0)
+    array3.push (arrayi[i])
+}
+
+if(array2[i] % == 0){
+    array3.push (array2[i])
+}
+console.log(array3)
 
 
 
