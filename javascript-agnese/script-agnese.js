@@ -100,7 +100,7 @@ console.log (array[i])
 i=i+1;
 }
 
-console.log("-- ripasso del 1) esercizio con while --")
+console.log("-- ripasso del 1) esercizio con while -->")
 // partiamo da 0 poi andiamo a 1 e 2 etc fino alla fine della lunghezza in un ciclo while
 let posizione=0
 while (posizione<array.length){
@@ -109,7 +109,7 @@ posizione=posizione+1;
 }
 
 
-console.log("-- esercizio 1) ripasso con for --")
+console.log("-- esercizio 1) ripasso con for -->")
 let posizione2=0
 for (posizione2=0;posizione2<array.length;posizione2=posizione2+1) {
     console.log (array[posizione2])
@@ -119,7 +119,7 @@ for (posizione2=0;posizione2<array.length;posizione2=posizione2+1) {
 
 
 //2)Stampare la somma di tutti gli elementi dell’ array → 30 (si può fare anche con for)
-console.log("-- esercizo 2) ripasso con while--")
+console.log("-- esercizo 2) ripasso con while-->")
 i=0;
 let Somma = 0
 while(i <= array. length - 1) {
@@ -131,7 +131,7 @@ console.log("Somma = "+Somma)
 
 
 //3) Stampare la somma dei soli elementi positivi → 35
-console.log("-- esercizo 3) ripasso con for--")
+console.log("-- esercizo 3) ripasso con for-->")
 let sommaPositivi = 0
 for(let posizione=0; posizione<array.length; posizione++){
     if (array[posizione] >= 0) {
@@ -143,7 +143,7 @@ console.log(sommaPositivi)
 
 // 3.1) contare quanti elementi positivi ci sono nell'array
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
-console.log("-- esercizo 3.1/7) ripasso con for--")
+console.log("-- esercizo 3.1/7) ripasso con for-->")
 let contoPositivi = 0
 for(let posizione=0; posizione<array.length; posizione++){
     if (array[posizione] >= 0) {
@@ -159,7 +159,7 @@ console.log(contoPositivi)
 // Stampare la somma dei soli elementi dispari -+ 12
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 
-console.log("-- esercizio 4) ripasso con for--")
+console.log("-- esercizio 4) ripasso con for-->")
 i = 0;
 sommaDispari = 0;
 for(i=0;i<array.length;i++){
@@ -170,7 +170,7 @@ for(i=0;i<array.length;i++){
 console.log(sommaDispari)
 
 //5 ripasso:  Stampare la somma dei soli elementi in indice/posizione pari  → 14
-console.log("-- esercizio 5) ripasso con for--")
+console.log("-- esercizio 5) ripasso con for-->")
 let posizionePari = 0;
 for(i=0;i<array.length; i++){
     if(i %2 == 0){
@@ -182,7 +182,7 @@ console.log(posizionePari)
 
 // 6 ripasso: Stampare quante volte compare il numero 2 → 2
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
-console.log("-- esercizio 6) ripasso con for--")
+console.log("-- esercizio 6) ripasso con for-->")
 
 let cont2 = 0;
 for(i=0;i<array.length;i++){
@@ -194,7 +194,7 @@ console.log(cont2)
 
 
 // 7) Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array → 8
-console.log("-- esercizio 7) ripasso con for--")
+console.log("-- esercizio 7) ripasso con for-->")
 
 let cont3 = 0;
 
@@ -207,7 +207,7 @@ for(i = 0; i < array.length; i++){
 console.log(cont3)
 
 // 8) Stampare il numero massimo (senza usare funzioni matematiche) → 10
-console.log("-- esercizio 8) ripasso con for--")
+console.log("-- esercizio 8) ripasso con for-->")
 
 let max = array[0]; 
 
@@ -221,7 +221,7 @@ for(let i=0; i < array.length; i++){
 
 
 // 9) Stampare il numero minimo con for  → -3
-console.log("-- esercizio 9) ripasso con for--")
+console.log("-- esercizio 9) ripasso con for-->")
 
 let min = 0;
 
@@ -234,7 +234,7 @@ for(let i=0; i < array.length; i++){
 
 // 10) Inserire in un nuovo array con solo gli elementi negativi dell'array che abbiamo 🤯 → 2
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
-console.log("-- esercizio 10) ripasso--")
+console.log("-- esercizio 10) ripasso-->")
 i = 0;
 
 let arraynew= []
@@ -247,7 +247,7 @@ console.log(arraynew)
 
 // 10.2) Inserire in un nuovo array con solo gli elementi negativi dell'array che abbiamo 🤯 → 2 SENZA PUSH
 //let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
-console.log("-- esercizio 10.2) ripasso SENZA push --")
+console.log("-- esercizio 10.2) ripasso SENZA push -->")
 
 arraynew= [] //variabile a parte per partire da 0 per non avere elementi vuoti nel nuovo array
 inew= 0
@@ -264,7 +264,7 @@ console.log(arraynew)
 // 11) Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato 🤯 
 //array di partenza: [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 //arrayNuovo=[4, 12, 18, 20, -4, -6, 0, 4, 10, 2] 
-console.log("-- esercizio 11) ripasso --")
+console.log("-- esercizio 11) ripasso -->")
 
 i = 0
 arraynew= []
@@ -281,7 +281,7 @@ console.log(arraynew)
 // 12) Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 → 
 // array: [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 
-console.log("-- esercizio 12) ripasso --")
+console.log("-- esercizio 12) ripasso -->")
 
 array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 
@@ -304,7 +304,7 @@ console.log(arraynuovo)
 // 12.2) SENZA push
 
 
-console.log("-- esercizio 12.1) ripasso SENZA push --")
+console.log("-- esercizio 12.1) ripasso SENZA push -->")
 
 array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 
@@ -323,7 +323,7 @@ console.log(arraynuovo)
 // 13) Stampare al contrario gli elementi dell’array → 
 //array di partenza:  [2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
 //array: [1, 5, 2, 0, -3, -2, 10, 9, 6, 2] 🙂
-console.log("-- esercizio 13) ripasso --")
+console.log("-- esercizio 13) ripasso -->")
 
 i = array.length - 1
 while(i>=0){
@@ -331,4 +331,133 @@ while(i>=0){
     console.log(array[i])
     i--
     
+}
+
+// 13) (copiato dal main) Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
+console.log("esercizio 13 --> ")
+// è come il primo esercizio ma scorro l'array al contrario 
+
+i = array.length - 1;
+while (i >= 0) {
+    console.log(array[i]);
+    i = i - 1;
+}
+// dalla posizione 9 alla posizione 0
+// i-- --> i=i-1        i++ -> i=i+1
+for(let i=array.length - 1; i>=0; i--){
+    console.log(array[i]);
+}
+
+//14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
+console.log("-- esercizio 14 con PUSH --> ")
+
+i=0
+let array1 = [ 1, 2, 2, 3, 4] 
+let array2 = [4, 2, 2, 4]   
+let array3=[]
+
+for(i=0; i<array1.length || i<array2.length; i++){
+    if(array1[i] && array2[i]){ //&& verifica l'uno e l'altro
+        array3.push(array1[i]+array2[i]);
+    }
+    else{
+        if(!array2[i]){
+        array3.push(array1[i]);
+         }
+         else{
+            array3.push(array2[i]);
+         }
+    }   
+
+}
+
+console.log(array3)
+
+//14.2) Creare un array3 con la somma degli elementi dell’array1 e dell’array2, senza push
+console.log("-- esercizio 14.2 SENZA push --> ")
+
+i=0
+array1 = [ 1, 2, 2, 3, 4] 
+array2 = [4, 2, 2, 4]   
+array3=[]
+
+for(i=0; i<array1.length || i<array2.length; i++){
+    array3[i]=0;
+    if(array1[i]){
+        array3[i]= array3[i]+array1[i]
+    }
+
+    if(array2[i]){
+        array3[i]= array3[i]+ array2[i];
+    }
+}
+
+console.log(array3)
+
+
+// 15) Creare un array3 con gli elementi (non la posizione)
+// dispari di array1 
+//e gli elementi pari di array2 → 
+//versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+console.log("-- esercizio 15 versione1 [1,3,4,2,2,4] --> ")
+
+
+array1 = [ 1, 2, 2, 3, 4] 
+ array2 = [5, 4, 4, 7, 4]   
+ array3=[]
+
+ for (let i = 0; i < array1.length; i++) {
+    if (array1[i] % 2 !== 0) {
+      array3.push(array1[i]);
+    }
+  }
+  
+  for (let i = 0; i < array2.length; i++) {
+    if (array2[i] % 2 === 0) {
+      array3.push(array2[i]);
+    }
+  }
+  
+  console.log(array3)
+
+
+
+
+//15.2) versione 2
+console.log("-- esercizio 15.2) versione2 [1,4,2,2,3,4] --> ")
+  
+//16
+console.log("-- esercizio 16 --> ")
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+
+i=0;
+while(i<array2.length){
+    array2[i] = array2[i] / array1[array1.length-1-i];
+    i++
+}
+
+console.log(array2)
+
+
+
+//17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+console.log("-- esercizio 17) --> ")
+
+    let countZero = 0;
+    array1 = [1, 2, 2, 1];
+    array2 = [4, 2, 2, 4];
+
+for (let i = 0; i < array2.length / 2; i++) {
+    if (array2[i] == array2[array2.length - 1 - i]) {
+        countZero++
+    }
+}
+if (
+    countZero == array2.lenght / 2 ||
+    countZero == Math.ceil(array2.lenght / 2)
+) {
+    console.log("Palindromo") // funziona solo se la lunghezza è pari
+} else {
+    console.log("Non è palindromo")
 }
