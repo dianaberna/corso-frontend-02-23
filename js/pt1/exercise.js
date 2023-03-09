@@ -106,28 +106,28 @@ for (let i = num.length - 1; i >= 0; i--) {
 }
 
 // 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 
-// let array1_a = [ 1, 2, 2, 3, 4] 
-// let array2_a = [4, 2, 2, 4]   
-// let array3_a = []
-
-// for (let i = 0; i < array1_a.length; i++) {
-//     array3_a.push(array1_a[i] + array2_a[i]);
-// }
-// console.log(array3_a);
-
 let array1_a = [ 1, 2, 2, 3, 4] 
 let array2_a = [4, 2, 2, 4]   
 let array3_a = []
 
-for (i = 0; i < array1_a.length || i < array2_a.length; i++) {
-    if (array1_a[i] && array2_a[i]) {
-        array3_a.push(array1_a[i] + array2_a[i])
-    } else if (!array2_a[i]) {
-        array3_a.push(array1_a[i])
-    } else {
-        array3_a.push(array2_a[i])
-    }
+for (let i = 0; i < array1_a.length; i++) {
+    array3_a.push(array1_a[i] + array2_a[i]);
 }
+console.log(array3_a);
+
+// let array1_a = [ 1, 2, 2, 3, 4] 
+// let array2_a = [4, 2, 2, 4]   
+// let array3_a = []
+
+// for (i = 0; i < array1_a.length || i < array2_a.length; i++) {
+//     if (array1_a[i] && array2_a[i]) {
+//         array3_a.push(array1_a[i] + array2_a[i])
+//     } else if (!array2_a[i]) {
+//         array3_a.push(array1_a[i])
+//     } else {
+//         array3_a.push(array2_a[i])
+//     }
+// }
 console.log(array3_a);
 
 // 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
@@ -144,3 +144,5 @@ for (let i = 0; i < versione1.length; i++) {
     }
 }
 console.log(versione3);
+
+// 16
