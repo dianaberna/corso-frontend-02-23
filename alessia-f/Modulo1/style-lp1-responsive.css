@@ -513,4 +513,65 @@
 /*  T   A   B   L   E   T */
 
 @media screen and (max-width:1023px){ 
+
+    /* Navbar */
+    nav{
+        padding: 2rem 2rem;
+    }
+
+    /* HEADER */
+    header {
+         margin: 2rem;
+        
+    }
+
+    /* WHY_USE */
+    .why_use {
+       padding-left: 5rem;
+       padding-right: 5rem;
+       gap: 6rem;
+    }
+
+    /* Feedback */
+   .luigi{
+    display:none;
+   }
+
+   /* PARTNER */
+
+   .partner_title{
+    display:none;
+   }
+
+   .partnerlogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+    gap: 2.8125rem;
+}
+
+   .feedback>.arrows>svg {
+       display: none;
+    }
+
+   /*CREATE*/
+
+   .titlecreate{
+        font-size: 3rem;
+    }
+
+    #cta{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+    
 }
