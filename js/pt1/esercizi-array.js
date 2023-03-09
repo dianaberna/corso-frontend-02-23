@@ -292,29 +292,40 @@ for(let i=array.length - 1; i>=0; i--){
 }
 
 // array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4]
+let array1 = [ 1, 2, 2, 3, 4] 
+let array2 = [4, 2, 2, 4]
+let array3 = []
+
 // 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 → [5, 4, 4, 7, 4]
+console.log("esercizio 14 -->")
+
+// primo metodo 
+for(let i=0; i<array1.length || i<array2.length; i++){
+    if(array1[i] && array2[i]){
+        array3.push(array1[i]+array2[i])
+    }else{
+        if(!array2[i]){
+            array3.push(array1[i])
+        }else{
+            array3.push(array2[i])
+        }
+    }
+}
+console.log(array3)
+
+// secondo metodo 
+for(let i=0; i<array1.length || i<array2.length; i++){
+    array3[i] = 0 
+    if(array1[i]){
+        array3[i] = array3[i] + array1[i]
+    }
+    if(array2[i]){
+        array3[i] = array3[i] + array2[i]
+    }
+}
+console.log(array3)
+
 // 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
 // 16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
 // 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
-
-console.log("prove elementi fuori dall'array")
-// array va da 0 a 9
-if(array[12]) {
-    console.log("l'elemento esiste")
-}else{
-    console.log("l'elemento non esiste")
-}
-
-// array[2] che tipo di dato è ? number
-// number che tipo di dato è ? string
-let tipoDiDato = typeof array[12]
-let tipoDelTipoDiDato = typeof tipoDiDato
-console.log(tipoDiDato, tipoDelTipoDiDato)
-
-if(tipoDiDato !== "undefined"){
-    console.log("l'elemento esiste")    
-}else{
-    console.log("l'elemento non esiste")
-}
-
