@@ -144,7 +144,7 @@ for (i = 0; i < array1.length; i++) {
   }
 } */
 
-/* array4 = [1, 2, 2, 3];
+array4 = [1, 2, 2, 3];
 array5 = [4, 2, 2, 4, 4];
 array6 = [];
 for (i = 0; i < array5.length || i < array4.length; i++) {
@@ -153,18 +153,24 @@ for (i = 0; i < array5.length || i < array4.length; i++) {
   } else if (!array5[i]) {
     array6[i] = array4[i];
   } else {
-    /*  {
-    array6[i] = array4[i] + array5[i]; */
-/*  array6[i] = array5[i];
+    array6[i] = array5[i];
   }
 }
-/* console.log(array6); */
+console.log("esercizio 14 " + array6);
+///////asercizio 14.1
 /* array4 = [1, 2, 2, 3];
 array5 = [4, 2, 2, 4, 4];
 array6 = [];
 for (i = 0; i < array5.length || i < array4.length; i++){
-  if(array6[i]=0)
-} */
+  array6[i]=0
+  if(array4[i]){
+    array6[i]= array6[i] + array1[i];
+  }
+  if(array5[i]){
+    array6[i]=array6[i]+array5[i]
+  }
+} 
+console.log("secondo metodo "+ array6)*/
 
 //////////////////////////////////////////////
 ////es 15
@@ -180,7 +186,8 @@ for (i = 0; i < array1.length || i < array2.length; i++) {
     arraySomme.push(array2[i]);
   }
 }
-/* console.log(arraySomme); */
+
+console.log(arraySomme);
 //////////////////////////////////
 //es16
 arrayA = [1, 2, 2, 3, 4];
@@ -194,7 +201,7 @@ for (i = 0; i < arrayA.length || i < arrayB.length; i++) {
 
 /////////////////////////////////////////////////
 ///////es17
-arrayNonP = [1, 2, 2, 3, 4];
+/* arrayNonP = [1, 2, 2, 3, 4];
 arrayP = [4, 2, 2, 4];
 let palindromo;
 for (i = 0; i < arrayNonP.length; i++) {
@@ -204,4 +211,46 @@ for (i = 0; i < arrayNonP.length; i++) {
     palindromo = true;
   }
 }
+console.log(palindromo + arrayP); */
+
+arrayNonP = [1, 2, 2, 3, 4];
+arrayP = [4, 2, 2, 4];
+let palindromo;
+for (i = 0; i < arrayNonP.length; i++) {
+  if (arrayP[i] !== arrayP[arrayP.length - i - 1]) {
+    palindromo = false;
+  } else {
+    palindromo = true;
+  }
+  console.log(palindromo);
+  if (arrayNonP[i] !== arrayNonP[arrayNonP.length - i - 1]) {
+    palindromo = false;
+  } else {
+    palindromo = true;
+  }
+}
 console.log(palindromo);
+//17.2
+let contatore = 0;
+arrayNonP = [1, 2, 2, 3, 4];
+arrayP = [4, 2, 2, 4];
+for (let i = 0; i < arrayP.length / 2; i++) {
+  if (arrayP[i] == arrayP[arrayP.length - 1 - i]) {
+    contatore++;
+  }
+}
+if (
+  contatore == arrayP.length / 2 ||
+  contatore == Math.ceil(arrayP.length / 2)
+) {
+  console.log("palindromo");
+} else {
+  console.log("non è palindromo");
+}
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////es18
+let stringa = "precipitevolissimevolmente";
+let parola = "";
+for (i = 0; i < stringa.length; i++) {}
+console.log(parola);
