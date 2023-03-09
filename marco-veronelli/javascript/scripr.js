@@ -306,6 +306,7 @@ console.log("esercizio 15")
 array3=[] // versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
 array1 = [ 1, 2, 2, 3, 4] 
 array2 = [ 4, 2, 2, 4]  
+
 for (let i = 0; i < array1.length; i++) {
     if (array1[i]%2 !=0) {
         array3.push(array1[i])
@@ -328,124 +329,88 @@ console.log("esercizio 15/2")
 array3=[] // versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
 array1 = [ 1, 2, 2, 3, 4] 
 array2 = [ 4, 2, 2, 4]  
-for (let i = 0; i < array1.length; i++) {
-   
-   if (array1[i]%2 !=0) {
+
+for (let i = 0; i < array1.length ||i < array2.length ; i++) {
+
+    
+
+    if(array1[i]){
+
+    if (array1[i]%2 !=0) {
         array3.push(array1[i])
+        
     }
+    
+}
+    if(array2[i]){
 
-if(array2[i]){
-    if (array2[i] % 2 !=1) {
-       array3.push(array[i])
+        if (array2[i] % 2 !=1) {
+            array3.push(array2[i])
+         }
     }
-}  
     
+
 }
-/* for (let i = 0; i < array2.length; i++) {
-    
-if (array2[i] % 2 !=1) {
-    array3.push(array2[i] )
-}
-}
- */
+
+
+
 console.log (array3)
-
+console.log("--------------------------")
+console.log("esercizio 16")
 
 //16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 //array2[i] = array2[i] / array1[lunghezza-1-i]
 
-/* array1 = [ 1, 2, 2, 3, 4] 
-array2 = [ 4, 2, 2, 4] 
-array3=[] 
+array1 = [ 1, 2, 2, 3, 4] 
+array2 = [ 4, 2, 2, 4] // 4/4 2/3 2/2 4/1
+let b=0
+
 for (let i = 0; i < array2.length; i++) {
-    array2[i].push(array2[i] / array1[array1.length-1-i])
+    b=array1.length-1-i
+    
+    array2[i]=array2[i] / array1[b]
     
 }
-console.log(array2) */
-console.log("esercizio17")
+console.log(array2)
+
+
+console.log("--------------------------")
+console.log("esercizio17 prima versione")
 //17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 array1 = [ 1, 2, 2, 3, 1] 
 array2 = [ 4, 2, 2, 4] 
-let meta=0
 
-/* for (let i = 0; i < array1.length; i++) {
-    if (array1.length %2 !=1) {
+if (array1.length % 2 !=0) {
+    console.log("non è palindromo")
+    
+}else {  
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[0]==array1[array1.length-1] && array1[1]==array1[array1.length-2]) {
+            console.log("è palindromo")
+        }else console.log("non è palindromo")
         
-    }else console.log("Array1 non è palindromo")
-} */
+    }
 
-for (let i = 0; i < array2.length; i++) {
-    if(array2.lenght %2 !=1){
-        /* array2[0]==array2[array2.length-1]
-        array2[1]==array2[array2.length-2] */
-        meta=array2.length/2
-        /* console.log("Array2 è palindromo") */
-
-    }else console.log("Array2 non è palindromo")
-    
-    
 }
-lung=array2.length-1
-for (let i = 0; i < meta; i++) {
-      
-    if( array2[i]==array2[lung]) {
-        
-        lung--
-        
-
-    }else console.log("non è palindromo")
-    
-    console.log("ok")
-    console.log(lung--)
-}
-console.log(" è palindromo")
-
-console.log("esercizio17")
+console.log("--------------------------")
+console.log("esercizio 17 seconda versione")
 //17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 array1 = [ 1, 2, 2, 3, 1] 
-array2 = [ 4, 4, 2, 2, 1, 2, 4, 4 ] 
+array2 = [ 4, 4, 2, 2, 2, 2, 4, 4 ] 
 array3=[]
 array4=[]
-console.log("array1")
-
-
-if (array1.length % 2 !=0) {console.log("array1 non è palindromo")
-    
-}else{ for (let i = 0; i < array2.length/2; i++) {
-    array3[i]=array2[i]
-    
-     }  console.log("array3"+array3)
-
-      for (i = array2.length-1 ; i >=(array2.length)/2; i--) {
-        
-        array4.push(array2[i])
-   
-} console.log("array4"+array4) 
-       
-    for (let i = 0; i < array3.length; i++) {
-        
-        if (array3[i]==array4[i]){
-            
-            console.log("array2 è palindromo")
-            
-        }else console.log("array2 non è palindromo")
-    }
-} 
-
 console.log("array2")
 
-if (array2.length %2 !=0) {console.log("array2 non è palindromo")
-    
-}else{ for (let i = 0; i < array2.length/2; i++) {
+ for (let i = 0; i < array2.length/2; i++) {
         array3[i]=array2[i]
         
-         }  console.log("array3"+array3)
+         }  /* console.log("array3"+array3) */
 
           for (i = array2.length-1 ; i >=(array2.length)/2; i--) {
             
             array4.push(array2[i])
        
-    } console.log("array4"+array4) 
+    } /* console.log("array4"+array4)  */
            
         for (let i = 0; i < array3.length; i++) {
             
@@ -455,9 +420,174 @@ if (array2.length %2 !=0) {console.log("array2 non è palindromo")
                 
             }else console.log("array2 non è palindromo")
         }
-    } 
+   
+
+    console.log("esercizio17 terza versione")
+//17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+array2= [ 1, 2, 2, 3, 1] 
+array1 = [4, 2, 2, 2, 4 ] 
+somma=0
 
 
+for (let i = 0; i < array1.length/2; i++) {
+
+    if (array1[i]==array1[array1.length-1-i]) {
+        somma++  
+        console.log("array1[i] "+array1[i]) 
+         
+        console.log("somma "+somma)
+    }
         
+}
+console.log(somma, array1.length/2)
+if (somma==array1.length/2 || somma==Math.ceil (array1.length/2)) { console.log("è palindromo")
+    
+}else console.log("non è palindromo")
 
+
+
+console.log("esercizio17 quarta versione")
+//17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+array2= [ 1, 2, 2, 3, 1] 
+array1 = [4, 2,2, 2, 4, ] 
+somma=0
+/* cont=array1.length-1 */
+
+
+for (let i = 0; i < array1.length; i++) {
+
+    if (array1[i]==array1[array1.length-1-i]) {
+        somma++  
+        /* console.log("array1[i] "+array1[i]) 
+        console.log("array1[cont] "+array1[cont]) 
+        console.log("somma "+somma) */
+    }
+    /* console.log("cont "+cont) */
+    /* cont-- */
+    
+}
+console.log(somma, array1.length/2)
+if (somma/2==array1.length/2 ) { console.log("è palindromo")
+    
+}else console.log("non è palindromo")
+
+//Scrivere un programma che conta quante lettere “e” ci sono nella parola precipitevolissimevolmente 
+
+    console.log("--------------------------")
+console.log("esercizio 1 stringhe")
+let parola= "precipitevolissimevolmente"
+sommae=0
+for (let i = 0; i < parola.length; i++) {
+    if (parola[i] == "e") {
+        sommae++
+    }
+    
+}console.log(sommae)
+
+
+//Scrivere un programma che verifica  se due stringhe sono palindrome 
+
+console.log("--------------------------")
+console.log("esercizio 2 stringhe")
+
+p="aasna" 
+somma=0
+
+for (let i = 0; i < p.length/2; i++) {
+
+    if (p[i]==p[p.length-1-i]) {
+        somma++  
+        
+    }
+    
+}
+if (somma==p.length/2 || somma==Math.ceil (p.length/2)) { console.log("è palindromo")
+    
+}else console.log("non è palindromo")
+
+
+console.log("--------------------------")
+console.log("esercizio 3 stringhe")
+/* Scrivere un programma che verifica se esiste una stringa 
+all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, 
+mente in palesemente → esempi corretti
+es. mare in categoria → la parola mare non esiste in categoria
+ */
+p="cat"
+p1="cegoriacat"
+c=false
+for (let i = 0; i < p1.length; i++) {
+
+   if(p1[i]==p[0]){
+
+    for (let b = 1; b < p.length; b++) {
+
+         if(p1[i+b]==p[b]){
+         c=true
+        }else c= false
+     }
+  
+    }
+}
+if (c) {console.log("ce")
+    
+}else console.log("non ce")
+
+
+console.log("--------------------------")
+console.log("esercizio 4 stringhe")
+/* Scrivere un programma che prenda una stringa come input e 
+restituisca la stessa stringa con i caratteri in ordine inverso.
+
+ */
+p="frontend"
+let inv=""
+
+for (let i = p.length-1; i >=0; i--) {
+    
+   inv+=p[i]
+    /* console.log(inv[i]) */
+    
+
+}console.log(inv)
+
+console.log("--------------------------")
+console.log("esercizio 5 stringhe")
+
+
+/* Scrivere un programma che prenda due stringhe come input e 
+restituisca una nuova stringa che è la concatenazione delle due stringhe, 
+separate da uno spazio. (simile all’esercizio 12)
+
+ */
+p="cat"
+p1="egoria"
+let p3=""
+    
+    p3+=p+p1
+    
+console.log(p3)
+
+console.log("--------------------------")
+console.log("esercizio 6 stringhe")
+
+/*Scrivere un programma che sviluppi il cifrario di Cesare 🤯 🤯 
+Il cifrario di cesare è un algoritmo di cifratura semplice ma efficace, 
+in pratica abbiamo bisogno di una stringa (quella che vogliamo criptare) 
+e di un numero. Il numero rappresenta quante posizioni nell’alfabeto (non tradizionale
+ma codificato ASCII) dover spostare ogni lettera.*/
+
+p="amortecesare"
+p1=[]
+p3=""
+b=0
+for (let i = 0; i < p.length; i++) {
+    p1[i]=p[i].charCodeAt(0)
+    /* p3+=p1.fromCharCode(index) */
+    /* p3+=p1[i].fromCharCode(index) */
+}console.log(p1)
+/* console.log(p3.fromCharCode(p1[i])) */
+
+    
+    
 
