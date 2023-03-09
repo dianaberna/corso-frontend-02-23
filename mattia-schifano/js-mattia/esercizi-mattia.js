@@ -128,6 +128,8 @@ console.log(array)
 console.log (arrayNuovo)
 
 //12
+
+
 arrayNuovo=[];
 for (let i = 0; i < array.length; i++) {
     arrayNuovo.push(array[i])
@@ -312,3 +314,19 @@ for (let i = p1.length - 1; i >=0; i--) {
     count++
 }
 console.log(inverso)
+
+
+// 5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è la concatenazione delle due stringhe, separate da uno spazio. 
+p1 = "coraggio";
+p2 = " raggio";
+let p4=[];
+for (let i = 0; i < p1.length; i++) {
+    p4.push(p1[i])
+    
+}
+for (let i = 0; i < p2.length; i++) {
+    p4.push(p2[i])
+    
+}
+console.log(p4)
+
