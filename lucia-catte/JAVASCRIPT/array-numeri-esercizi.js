@@ -333,11 +333,8 @@ i++;
 }
 console.log(array3)
 
-
-
-
 //SECONDA VERSIONE DELL'ESERCIZIO 14 (STATICA)
-console.log("ES.14.1 - SECONDA VERSIONE")
+/*console.log("ES.14.1 - SECONDA VERSIONE")
 while(i < array1.length){
     array3[i] = array1[i] + array2[i];
     if (array2[i] == "undefined"){ //se qualsiasi indice dell'array2 non è definito 
@@ -358,12 +355,12 @@ while(i < array1.length){
     }
     i++;
 }
-console.log(array3);
+console.log(array3);*/
 
 //ES.15: CREARE UN ARRAY3 CON GLI ELEMENTI DISPARI DI ARRAY1 E GLI ELEMENTI PARI DI ARRAY2 -> 
 //[1, 3, 4, 2, 2, 4] & [1, 4, 2, 2, 3, 4]
 
-/*console.log("ES.15 -- CREO UN ARRAY3 CON GLI ELEMENTI DISPARI DI ARRAY1 E GLI ELEMENTI PARI DI ARRAY2 --")
+console.log("ES.15 -- CREO UN ARRAY3 CON GLI ELEMENTI DISPARI DI ARRAY1 E GLI ELEMENTI PARI DI ARRAY2 --")
 
 array1 = [1, 2, 2, 3, 4]
 array2 = [4, 2, 2, 4]
@@ -377,8 +374,6 @@ while(i < array1.length){
     }
 i++;    
 }
-console.log(array3);
-
 i = 0;
 while(i < array2.length){
 
@@ -387,8 +382,21 @@ while(i < array2.length){
     }
 i++;
 }
-
 console.log(array3);
+
+array3 = [];
+i=0;
+while(i < array1.length && i < array2.length){
+    if(array1[i] % 2 !== 0){
+        array3.push (array1[i]);
+    }
+    if (array2[i] % 2 == 0){
+        array3.push (array2[i]);
+    }
+i++;
+}
+console.log(array3);
+
 
 
 //ES.16: AGGIORNARE L'ARRAY2 CON GLI ELEMENTI CHE SARANNO UGUALI AL SUO VALORE / LA POSIZIONE DELL'ARRAY1 -> ARRAY2[I] = ARRAY2[I]/ARRAY1.LENGTH
@@ -400,7 +408,8 @@ array2 = [4, 2, 2, 4];
 i = 0;
 while(i < array2.length){
     array2[i] = array2[i] / array1[array1.length-1-i];
-
+    //elemento 0 dell'array2 / la lunghezza dell'array1 - 1 - i (l'elemento presente nella prima posizione della lunghezza al contrario)
+    /* quindi array2 = 4 / 4 = 1*/
 i++;
 }
 console.log(array2);
@@ -411,7 +420,7 @@ console.log(array2);
 array1 = [1, 2, 2, 3, 4]
 array2 = [4, 2, 2, 4]
 i = 0;
-while(i < array1.length){
+/*while(i < array1.length){
 
     if(array1[i] == array1.length[i]){
         
@@ -427,3 +436,86 @@ while(i < array1.length){
     } 
 i++;
 }*/
+
+
+// ES.16 prima versione per vedere palindromo con variabile booleana
+let arrayPalindromo = true;
+while (i < array1.length / 2){
+    if(array1[i] !== array1[array1.length - 1 - i]){
+        arrayPalindromo = false;
+        break;
+    } else {
+        arrayPalindromo = true;
+    }
+i++;
+}
+console.log(arrayPalindromo);
+
+while (i < array2.length / 2){
+    if(array2[i] !== array2[array2.length - 1 - i]){
+        arrayPalindromo = false;
+        break;
+    } else {
+        arrayPalindromo = true;
+    }
+i++;
+}
+console.log(arrayPalindromo);
+
+// seconda versione per vedere palindromo con una variabile contatore
+let countZero = 0;
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+
+for(i = 0; i < array1.length / 2; i++){
+    if(array1[i] !== array1[array1.length - 1 - i]){
+        countZero ++;
+    }
+}
+
+console.log(countZero);
+
+// seconda versione per vedere palindromo con una variabile contatore con un array palindromo con lunghezza pari (4 2 2 4)
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+
+for(i = 0; i < array2.length / 2; i++){
+    if(array2[i] !== array2[array2.length - 1 - i]){
+        countZero ++;
+    }
+}
+if(countZero == array1.lenght / 2){
+    console.log("Palindromo");
+} else {
+    console.log(" Non è Palindromo");
+}
+
+//  seconda versione per vedere palindromo con una variabile contatore con un array palindromo con lunghezza dispari (4 2 2 2 4)
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 2, 4]
+
+for(i = 0; i < array2.length / 2; i++){
+    if(array2[i] !== array2[array2.length - 1 - i]){
+        countZero ++;
+    }
+}
+if(countZero == array2.length / 2 || countZero == Math.ceil(array2.length/2)){
+    console.log("Palindromo");
+} else {
+    console.log(" Non è Palindromo");
+}
+
+array1 = [1, 2, 2, 3, 4]
+array2 = [4, 2, 2, 4]
+
+for(i = 0; i < array2.length / 2; i++){
+    if(array2[i] !== array2[array2.length - 1 - i]){
+        countZero ++;
+    }
+}
+if(countZero == array2.length / 2 || countZero == Math.floor(array2.length/2)){
+    console.log("Palindromo");
+} else {
+    console.log(" Non è Palindromo");
+}
+
