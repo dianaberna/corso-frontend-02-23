@@ -97,15 +97,6 @@ while (i<array.length){
 console.log ("Somma elementi Array:", sommaArray)
 
 
-/*let pippo= array[5]%2
-console.log(array[5])
-console.log(pippo)
-if (pippo == 0 ) {
-    console.log ("numero pari")
-    
-} else console.log("numero dispari")*/
-
-
 //Esercizio 3
 //Stampare la somma dei soli elementi dispari → 12
 console.log ("ESERCIZIO 3")
@@ -190,24 +181,16 @@ console.log ("Il numero più piccolo è", min)
 
 //Esercizio 9
 //Inserire in un nuovo array solo gli elementi negativi
-console.log ("ESERCIZIO 9 PICCOLA POSTILLA")
+console.log ("ESERCIZIO 9")
 i=0
 let array2 = []
-while (i<array.length) {
-    if (array[i]<0) {
-        array2[i]=array[i]
-
-        
-    } 
+while(i<array.length){
+    if (array[i]<0){
+        array2.push(array[i])
+    }
     i++
 }
-i=0
-while (i<array2.length){
-    console.log (array2[i])
-    i++
-}
-console.log (array2)
-
+console.log("Gli elementi negativi sono " + array2)
 //Esercizio 10
 //Creare (e stampare) un nuovo array dove ogni elemento del nuovo è uguale al
 //doppio di quello dato
@@ -223,35 +206,145 @@ console.log (nuovoarray)
 //Esercizio 11 
 //Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito
 //l’altra) l’array dato
-console.log ("ESERCIZIO 11 DA RISOLVERE")
-i=0
+console.log ("ESERCIZIO 11")
 let arraylungo = []
-let contatore = 11
-let w=0
-while (i<array.length){
+
+for (let i=0; i< array.length; i++){
     arraylungo[i]=array[i]
-    i++
-                if (contatore=array.lengt*2)
-                {
-            console.log(arraylungo)
-            } else  (w<array.lenght)
-            {
-        arraylungo[contatore]=array[w]
-        w++
-        contatore++
-            }
+    arraylungo[array.length + i] = array[i]
 }
+console.log("Ecco il nuovo array",arraylungo)
+
+console.log ("ESERCIZIO 11 con il push")
+arraylungo = [];
+for (let i = 0; i < array.length; i++) {
+    arraylungo.push(array[i]);
+}
+for (let i = 0; i < array.length; i++) {
+    arraylungo.push(array[i]);
+}
+console.log("Ecco il nuovo array",arraylungo);
+
+console.log ("ESERCIZIO 11 con spread operator")
+arraylungo = [...array,...array]
 console.log(arraylungo)
 
 //Esercizio 12
 //Stampare al contrario gli elementi dell’array
-console.log ("ESERCIZIO 12 PICCOLA POSTILLA")
-i=9
-contatore=0
+console.log ("ESERCIZIO 12")
+i= array.length - 1
+contatore = 0
 let arraycontrario = []
-while (contatore < array.length){
+while (i >= 0) {
     arraycontrario[contatore]=array[i]
     i--
-    contatore++
+    contatore ++
 }
 console.log(arraycontrario)
+
+console.log ("ESERCIZIO 12")
+console.log(array)
+array.reverse()
+console.log(array)
+// array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4]  
+let arrayA = [1, 2, 2, 3, 4]
+let arrayB = [4, 2, 2, 4]
+//Esercizio 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 → [5, 4, 4, 7, 4]
+
+console.log("Primo array",arrayA)
+console.log("Secondo array",arrayB)
+console.log ("ESERCIZIO 14")
+//USIAMO IL WHILE
+let arrayC = []
+i = 0
+while (i<arrayA.length || i<arrayB.length){
+    arrayC[i] = 0
+  if (arrayB[i]) { //Se vero che esiste
+    arrayC[i] = arrayC[i] + arrayB[i]
+}
+if( arrayA[i]){
+    arrayC[i]= arrayC[i] + arrayA[i]
+}
+i++
+}
+console.log("Somma dei due array",arrayC)
+
+
+// array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4] 
+// 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+console.log("Esercizio 15 con il push")
+arrayC=[]
+for (i=0; i<arrayA.length;i++){
+    if(arrayA[i]%2 == 1){
+        arrayC.push(arrayA[i])
+    }
+    if(arrayB[i]%2 ==0){
+        arrayC.push(arrayB[i])
+    }
+}
+console.log(arrayC)
+console.log("Esercizio 15 senza il push")
+arrayC= []
+cont=0
+for (i=0; i<arrayA.length;i++){
+
+    if(arrayA[i]%2 == 1){
+        arrayC[cont] = arrayA[i]
+        cont++;
+    }
+}
+for (i=0; i<arrayB.length;i++){
+        if(arrayB[i]%2 == 0){
+            arrayC[cont] = arrayB[i]
+        cont++;
+    }
+}
+
+console.log(arrayC)
+
+
+
+// 16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
+// arrayB[i] = arrayB[i] / arrayA[lunghezza-1-i]
+console.log("Esercizio 16")
+i=0
+arrayA = [1, 2, 2, 3, 4]
+arrayB = [4, 2, 2, 4]  
+while (i < arrayB.length){
+    arrayB[i] = arrayB[i] / arrayA[arrayA.length-1-i]
+    i++}
+/*
+[]= 4 / A[5-1-0] -> 4/A[4] ->4/4->1
+[]= 2 / A[5-1-1] -> 2/A[3] ->2/3->0,6666
+[]= 2 / A[5-1-2] -> 2/A[2] ->2/2->1
+[]= 4 / A[5-1-3] -> 4/A[1] ->4/2->2
+*/
+console.log(arrayB)
+
+
+
+
+// 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+console.log("Esercizio 17")
+i=0
+arrayB = [4, 2,2, 4]
+let palindromo = true
+for (let i=0; i<arrayB.length/2;i++) {
+    if (arrayB[i] !== arrayB[arrayB.length-i-1]){
+        palindromo = false
+    }
+    
+}
+console.log(palindromo)
+
+// arrayA = [ 1, 2, 2, 3, 4]
+palindromo = "l'array è palindromo"
+for (let i=0; i<arrayA.length/2;i++) {
+    if (arrayA[i] !== arrayA[arrayA.length-i-1]){
+        palindromo = "l'array non è palindromo"
+    }
+    
+}
+console.log(palindromo)
+
+/*if (cont == array2.length / 2 || cont == Math.ceil(array2.length / 2)) */
