@@ -275,7 +275,7 @@ console.log("IL NUOVO ARRAY CON GLI ELEMENTI SCRITTI DUE VOLTE CON PUSH: " + due
 // SENZA PUSH
 i = 0;
 let dueArray2 = [];
-let conta = 0;
+//let conta = 0;
 while(i < newArray.length){
     dueArray2[i] = newArray[i];
     dueArray2[newArray.length + i] = newArray[i];
