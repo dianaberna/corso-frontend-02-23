@@ -108,7 +108,7 @@ for (let i = 0; i < newArray.length; i++) {
 console.log(arreydoppio)
 
 //esercizio 12 Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato 🤯 🤯 → [2, 6, 9, 10, -2, -3, 0, 2, 5, 1, 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
-
+console.log('----esercizio 12 metodo mio')
 let array1 = [];
 let array2 = [];
 for (let i = 0; i < newArray.length; i++) {
@@ -118,7 +118,17 @@ for (let i = 0; i < newArray.length; i++) {
 
 }
 console.log(array2)
+console.log('----esercizio 12 metodo 1')
+let arraycont = [];
+for(let j=0 ; j <= 1 ; j++){
+    for(let i=0 ; i < newArray.length ; i++){
+        arraycont.push(newArray[i])
+        
+    }
+}console.log(arraycont)
 
+
+console.log('----esercizio 13 ')
 //esercizio 13 Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2
 
 for (let i = newArray.length - 1; i >= 0; i--) {
@@ -256,8 +266,8 @@ for (i = 0; i < parola.length; i++) {
 
 console.log("metodo1 esercizio 2")
 // esercizio 2 Scrivere un programma che verifica  se due stringhe sono palindrome 
-let parola1 = "anna";
-let parola2 = "radar";
+let parola1 = "anlna";
+let parola2 = "anlna";
 
 let bool = 0;
 for(i=0 ; i<parola1.length/2 ; i++){
@@ -280,9 +290,10 @@ let carattere;
 let parolaInversa = '';
 for (let i = parola2.length - 1; i >= 0 ;  i-- ){
     carattere = parola2[i];
+    console.log(carattere);
     parolaInversa += carattere;
     // console.log(carattere);
-    // console.log(parolaInversa);
+    console.log(parolaInversa);
 }
 
 // console.log(parolaInversa);
@@ -293,8 +304,22 @@ if(parola2 == parolaInversa){
   } else {
     console.log('la parola non è palindroma');
   }
+  console.log("Esercizio 2 ---- paragone tra due stringhe")
+for(let i=0 ; i<parola1.length ; i++ ){
+    if(parola1.length != parola2.length){
+        bool = 1;
+        break;
+    }
+    if(parola1[i] !=parola2[parola2.length-i-1]){
+        bool = 1;
+        break
+    }
 
-
+}if(bool == 1){
+    console.log('Le due stringhe non sono palindrome');
+}else{
+    console.log('Le due stringhe sono palindrome');
+}
 
 //
 console.log("esercizio 3")
@@ -343,7 +368,14 @@ let p3reverse = "";
 for(i=p3.length-1 ; i>=0 ; i--){
     p3reverse = p3reverse + p3[i];
 }console.log(p3reverse)
+//metodo 3
+console.log("metodo3 esercizio 4")
+p3.reverse();
+console.log(p3)
 
+
+
+console.log("------------ esercizio 5")
 // esercizio 5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è
 // la concatenazione delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
 // //risultato = [];
@@ -360,3 +392,24 @@ let input = "";
 for (let i=0 ; i<str1.length && i<str2.length ; i++){
     input = str1 +" "+ str2;
 }console.log(input)
+console.log("------------ esercizio 5---metodo 2")
+input = str1.concat(str2);
+console.log(input);
+console.log("------------ esercizio 5---metodo 3")
+input= [...str1, ...str2];
+console.log(input);
+
+
+console.log("------------ esercizio 5-----cifrario di Cesare ")
+//esercizio 6 Scrivere un programma che sviluppi il cifrario di Cesare 🤯 🤯 
+let cifrato = '';
+
+//7) Scrivere una funzione che accetti una stringa come input e restituisca una nuova 
+//stringa che contiene solo le vocali presenti nella stringa originale
+
+
+//8) Scrivere una funzione che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri comuni alle due stringhe.
+//9) Scrivere una funzione che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'array
+//10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
+//11) Scrivi una funzione che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+//12) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine crescente secondo il loro codice ASCII
