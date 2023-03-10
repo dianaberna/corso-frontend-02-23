@@ -16,7 +16,12 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 6rem;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    position: sticky;
+    z-index: 1;
+    margin-top: 1rem;
+    background-color: white;
+
 }
 
 nav a {
@@ -69,17 +74,19 @@ main {
 h2 {
     text-align: center;
     font-size: 2.5rem;
+    margin: 3rem 0;
 }
 
 .contenitore{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
+    margin-bottom: 9rem;
 }
 
 .contenitore2 {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
     justify-content: center;
 }
 
@@ -89,6 +96,10 @@ h2 {
 
 .logo {
     text-align: center;
+}
+
+#pregi {
+    margin-bottom: 5rem;
 }
 
 /* comincia la parte dei partners */
@@ -226,3 +237,7 @@ footer ul {
 footer svg {
     padding: 0 0.5rem;
 }
+
+/* Quasi finitoh */
+
+/* Ora vanno adattati a tutte le risoluzioni */
