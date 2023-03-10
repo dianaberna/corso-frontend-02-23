@@ -249,8 +249,75 @@ if (
 }
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-//////es18
+//////es1
 let stringa = "precipitevolissimevolmente";
 let parola = "";
-for (i = 0; i < stringa.length; i++) {}
+for (let i = 0; i < stringa.length; i++) {
+  if (stringa[i] == "e") {
+    parola++;
+  }
+}
 console.log(parola);
+
+///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+///es2
+let stringa1 = "anna";
+let palind = "";
+for (let i = 0; i < stringa1.length / 2; i++) {
+  if (stringa1[i] !== stringa1[stringa1.length - i - 1]) {
+    palind = false;
+  } else {
+    palind = true;
+  }
+}
+console.log(palind);
+
+/////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///es3
+let stringa2 = "piroscafo";
+let parola1 = "scafo";
+controllo = false;
+let p = 0;
+for (let i = 0; i < stringa2.length; i++) {
+  if (stringa2[i] == parola1[0]) {
+    for (p = 1; p < parola1.length; p++) {
+      if (stringa2[i + p] == parola1[p]) {
+        controllo = true;
+      } else {
+        controllo = false;
+      }
+    }
+  }
+}
+if (controllo) {
+  console.log("contenuto");
+} else {
+  console.log("non contenuto");
+}
+//////////////////////////////////////////////////////////////
+///es.4
+let stringa3 = "barca";
+let stringaVuota = [0];
+let cont = 0;
+for (let i = stringa3.length - 1; i >= 0; i--) {
+  stringaVuota[cont] = stringa3[i];
+  {
+    cont++;
+  }
+}
+console.log(stringaVuota);
+
+/////////////////////////////////////
+///es.5
+let stringaPrimaParola = "ciao";
+let stringaSecondaParola = "mondo";
+const unite = "";
+for (let i = 0; i < stringaPrimaParola.length; i++) {
+  stringaPrimaParola[i].concat(stringaSecondaParola[i]);
+}
+
+console.log(stringaSecondaParola);
