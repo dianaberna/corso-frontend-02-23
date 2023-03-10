@@ -184,3 +184,47 @@ while (i < arr2.length) {
 console.log(arr2);
 
 // 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+// let arr_1 = [1, 2, 2, 3, 4];
+// let arr_2 = [4, 2, 2, 4];
+// i = 0;
+
+// while (i < arr1.length) {
+//     if (arr_1[i] === arr_1.length[i]) {
+//         console.log("Palindromo: " + arr_1);
+//     } else if (arr_2[i] === arr_2.length[i]) {
+//         console.log("Palindromo: " + arr_2)
+//     } else {
+//         console.log("Non palindromo")
+//     }
+//     i++;
+// }
+
+// 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+// let arr__1 = [1, 2, 2, 3, 4];
+// let arr__2 = [4, 2, 2, 4];
+// let arrPalindromo = true;
+// for (let i = 0; i < arr__1.length / 2; i++) {
+//     if (arr__1[i] !== arr__1[arr__1.length - 1 - i]) {
+//         arrPalindromo = false;
+//         break;
+//     } else {
+//         arrPalindromo = true;
+//     }
+// }
+// console.log(arrPalindromo);
+
+let arr__1 = [1, 2, 2, 3, 4];
+let arr__2 = [4, 2, 2, 1, 4];
+count = 0;
+
+for (i = 0; i < arr__2.length / 2; i++) {
+    if (arr__2[i] == arr__2[arr__2.length-1-i]) {
+        count++ // true
+    }
+}
+
+if (count == arr__2.length / 2 || count == Math.ceil(arr__2.length / 2)) {
+    console.log("Palindromo"); 
+} else {
+    console.log("Non palindromo");
+}
