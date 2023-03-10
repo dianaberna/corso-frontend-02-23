@@ -263,20 +263,21 @@ console.log("Il numero di lettere= " + conteggio ,"e")
 
 let p1 = "coraggio";
 let p2 = "raggio";
-let p3 = "raggio";
-let conparole = 0;
+let conparole = false;
+i=0;
+let j=1;
 
-console.log("non esiste in questa stringa ")
 for  ( let  i  =  0 ;  i  <  p2.length ;  i ++ )  {
-
-    if  ( p2 [ i ]  ==  p1[ conparole ] )  {
-        if  ( p1[ conparole ] ) {
-            conparole ++ ;
+    if  ( p1 [ i ]  ===  p2[ 0] )  {
+        for (let j = 1; j < p2.length; j++) {
+            if  ( p1[ i+j ] === p2[j] ) {
+            conparole = true ;
+            }
         }
     }
 
 }
-if  ( conparole  ==  p1.length )  {
+if  ( conparole )  {
     console.log ( "esiste" )
 
 }  else  {
@@ -284,23 +285,7 @@ if  ( conparole  ==  p1.length )  {
 
 }
 
-console.log("esiste in questa stringa ")
-for  ( let  i  =  0 ;  i  <  p3.length ;  i ++ )  {
 
-    if  ( p3 [ i ]  ==  p2[ conparole ] )  {
-        if  ( p2[ conparole ] ) {
-            conparole ++ ;
-        }
-    }
-
-}
-if  ( conparole  ==  p2.length )  {
-    console.log ( "esiste" )
-
-}  else  {
-    console.log ( "non esiste" )
-
-}
 
 
 // 4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
