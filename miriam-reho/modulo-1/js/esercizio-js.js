@@ -12,7 +12,7 @@ for (let i= 0; i < array.length; i++) {
     console.log("Array n[" + i + "]= " + array[i]);
 }
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 2 : stampa la somma --")
 /* 
@@ -28,7 +28,7 @@ while (i2 < array.length){
     i2++;
 } console.log("La somma degli array è "+ sommaArray)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 3 : somma degli elementi positivi --")
 
@@ -48,13 +48,11 @@ while (i3 < array.length){
     i3++;
 } console.log(sommaPositivi)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 4 : somma degli elementi dispari --")
 
-/* 
-    se i è dispari, prendilo e sommalo
-*/
+// se i è dispari, prendilo e sommalo
 
 let i4 = 0
 let dispari = 0
@@ -65,7 +63,7 @@ while (i4 < array.length) {
     i4++;
 } console.log("La somma degli elementi dispari è = " + dispari)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 5 : somma degli elementi in posizione pari --")
 
@@ -82,7 +80,7 @@ while (i5 < array.length) {
     i5 = i5 + 2;
 } console.log("La somma degli elementi in posizione pari è = "+ posEven)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 6 : quante volte compare il n2 --")
 let i6 = 0
@@ -94,7 +92,7 @@ while (i6 < array.length) {
     i6++;
 } console.log("2 compare " + [volte] + " volte");
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 7 : quanti Plus (0 compreso) --")
 let i7 = 0
@@ -106,7 +104,7 @@ while (i7 < array.length) {
     i7++;
 } console.log("ci sono " + voltePlus + " positivi")
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 8 : chi è il più grande --")
 
@@ -119,7 +117,7 @@ while (i8 < array.length) {
     i8++
 } console.log(max)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 9 : chi è il più piccolo --")
 let i9=0
@@ -131,7 +129,7 @@ while (i9 < array.length) {
     i9++
 } console.log(min)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("--  Esercizio 10: un nuovo array con i negativi di array --")
 let i10 = 0
@@ -143,7 +141,7 @@ while (i10 < array.length) {
     i10++
 } console.log(arrayNuovo)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 11: stampare un nuovo array con i doppi --")
 i11 = 0
@@ -153,7 +151,7 @@ while (i11 < array.length) {
     i11++
 } console.log(doubleArray)
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 12: stampare un nuovo array con arrey 2 volte --")
 i12 = 0
@@ -168,7 +166,7 @@ while (i12 < array.length) {
     i12++
 } console.log(dueArray) 
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 13: stampare al contrario l'array --")
 i13 = array.length - 1
@@ -177,7 +175,7 @@ while (i13 >= 0) {
     i13--
 } 
 
-/* --------------------- ARRAY1 & ARRAY2 ---------------------- */
+// --------------------- ARRAY1 & ARRAY2 ----------------------
 
 let array1 = [1, 2, 2, 3, 4]
 let array2 = [4, 2, 2, 4]
@@ -212,7 +210,7 @@ while (i < array2b.length || i < array2.length){
 } console.log(array3b)
 
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 
 console.log("-- Esercizio 15: Crea array3 con gli elementi dispari di array1 e pari di array2 --")
@@ -251,7 +249,7 @@ for (i = 0; i < array1.length && i < array2.length; i++){
 } console.log(array3)
 
 
-/* ------------------------------------------- */
+// ------------------------------------------- 
 
 console.log("-- Esercizio 16: aggiornare l'array2 con array2[i]=array2[i]/array1[length-1-i) --")
 
@@ -259,8 +257,8 @@ for (let i = 0; i < array2.length; i++) {
     array2[i] = array2[i] / array1[array1.length - 1 - i]
 } console.log(array2)
 
-/* ------------------------------------------- */
-
+// ------------------------------------------- 
+// soluzione prima della lezione
 console.log("-- Esercizio 17: array1 e array2 sono palindromi?--")
 array1 = [1, 2, 2, 3, 4]
 array2 = [4, 2, 2, 4]
@@ -295,22 +293,78 @@ for (let i = 0; i < array2.length; i++) {
 
 console.log("-- Esercizio 17.2: array1 e array2 sono palindromi?--")
 
-for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array1[array1.length - 1 - i]) {
-       console.log("Array1 NON è palindromo")
-       break
+/* let pal = 0
+for (let i = 0; i < array1.length / 2; i++) {
+    if (array1[i] === array1.length / 2 || array2[i] == Math.ceil(array1.length /2)) {
+        pal++
     } else {
-        console.log("Array1 è palindromo")
+        console.log("array1 NON è palindromo")
         break
     }
 }
 
-for (let i = 0; i < array2.length; i++) {
-    if (array2[i] !== array2[array2.length - 1 - i]) {
-        console.log("Array2 NON è palindromo")
-        break
+for (let i = 0; i < array2.length / 2; i++) {
+    if (array2[i] === array2.length / 2 || array2[i] == Math.ceil(array2.length /2)) {
+        pal++
     } else {
-        console.log("Array2 è palindromo")
+        console.log("array2 non è palindromo")
         break
     }
+} */
+
+
+// --------------------- STRINGHE ---------------------- 
+
+console.log("Stringhe 1 - conta quante lettere e in stringa")
+
+let parola = "precivitevolissimevolmente"
+volte = 0
+i = 0
+for (i = 0; i < parola.length; i++) {
+    if (parola[i] == "e") {
+        volte++
+    }
+} console.log("La lettera si ripete " + volte + " volte")
+
+// ------------------------------------------- 
+
+console.log("Stringhe 2 - Verifica se due stringhe sono palindrome")
+
+let parola1 = "ciao"
+let parola2 = "radar"
+
+
+
+console.log("Stringhe 2.1 - Verifica se due stringhe sono palindrome tra di loro")
+
+
+// ------------------------------------------- 
+
+console.log("Stringhe 3 - Scrivere un programma che verifica se esiste una stringa all'interno di un altra")
+
+s1 = "categoria"
+s2 = "cat"
+controllo = false
+
+for (let i = 0; i < s1.length; i++) {
+    if (s1[i] == s2[0]) {
+        for (let l = 1; l < s2.length ; l++){
+            if (s1[i+l] == s2[l]) {
+                controllo = true
+            } else {
+                controllo = false
+            }
+        }
+    }
+} 
+if (controllo) {
+    console.log("È contenuto")
+} else {
+        console.log("Non è contenuto")
 }
+
+console.log("Stringhe 3.2 - Scrivere un programma che verifica se esiste una stringa all'interno di un altra")
+
+s1 = "categoria"
+s2 = "cat"
+
