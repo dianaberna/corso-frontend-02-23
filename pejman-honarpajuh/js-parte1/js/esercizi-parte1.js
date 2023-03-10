@@ -120,12 +120,12 @@ for (let i = 0; i < newArray.length; i++) {
 console.log(array2)
 console.log('----esercizio 12 metodo 1')
 let arraycont = [];
-for(let j=0 ; j <= 1 ; j++){
-    for(let i=0 ; i < newArray.length ; i++){
+for (let j = 0; j <= 1; j++) {
+    for (let i = 0; i < newArray.length; i++) {
         arraycont.push(newArray[i])
-        
+
     }
-}console.log(arraycont)
+} console.log(arraycont)
 
 
 console.log('----esercizio 13 ')
@@ -194,21 +194,21 @@ for (let i = 0; i < arraytwo.length; i++) {
 //prova2
 console.log("prova 2 esercizio 15")
 let arraymisto = [];
-for(let i=0 ; i<arraytwo.length && i < arrayone.length; i++){
-    if(arrayone[i] %2 == 1 ){
+for (let i = 0; i < arraytwo.length && i < arrayone.length; i++) {
+    if (arrayone[i] % 2 == 1) {
         arraymisto.push(arrayone[i]);
     }
-    if(arraytwo[i] %2 == 0 ){
+    if (arraytwo[i] % 2 == 0) {
         arraymisto.push(arraytwo[i]);
     }
-}console.log(arraymisto)
+} console.log(arraymisto)
 
 //esercizio 16 Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
 console.log("esercizio 16");
-for(i=0 ; i<arraytwo.length ; i++){
-    arraytwo[i] = arraytwo[i]/arrayone[arrayone.length-1-i]
-}console.log(arraytwo)
+for (i = 0; i < arraytwo.length; i++) {
+    arraytwo[i] = arraytwo[i] / arrayone[arrayone.length - 1 - i]
+} console.log(arraytwo)
 
 /*
 []= 4 / A[5-1-0] --> 4/A[4]--> 4/4 --> 1
@@ -225,7 +225,7 @@ let arr2 = [4, 2, 2, 4];
 
 console.log("Array2")
 let flag = 0;
-for (let i = 0; i < arr2.length/2 ; i++) {
+for (let i = 0; i < arr2.length / 2; i++) {
     if (arr2[i] !== arr2[arr2.length - i - 1]) {
         flag = 1;
         break
@@ -238,7 +238,7 @@ else {
     console.log(" palindrome");
 }
 console.log("Array1")
-for (let i = 0; i < arr1.length/2 ; i++) {
+for (let i = 0; i < arr1.length / 2; i++) {
     if (arr1[i] !== arr1[arr1.length - i - 1]) {
         flag = 1;
         break
@@ -270,13 +270,13 @@ let parola1 = "anlna";
 let parola2 = "anlna";
 
 let bool = 0;
-for(i=0 ; i<parola1.length/2 ; i++){
-    if(parola1[i] !== parola1[parola1.length-i-1]){
+for (i = 0; i < parola1.length / 2; i++) {
+    if (parola1[i] !== parola1[parola1.length - i - 1]) {
         bool = 1;
         break;
     }
 }
-if(bool == 1){
+if (bool == 1) {
 
     console.log("non è palindrome");
 }
@@ -288,7 +288,7 @@ else {
 console.log("metodo2 Esercizio 2")
 let carattere;
 let parolaInversa = '';
-for (let i = parola2.length - 1; i >= 0 ;  i-- ){
+for (let i = parola2.length - 1; i >= 0; i--) {
     carattere = parola2[i];
     console.log(carattere);
     parolaInversa += carattere;
@@ -299,55 +299,61 @@ for (let i = parola2.length - 1; i >= 0 ;  i-- ){
 // console.log(parolaInversa);
 // console.log(typeof parolaInversa);
 
-if(parola2 == parolaInversa){
+if (parola2 == parolaInversa) {
     console.log('la parola è palindroma');
-  } else {
+} else {
     console.log('la parola non è palindroma');
-  }
-  console.log("Esercizio 2 ---- paragone tra due stringhe")
-for(let i=0 ; i<parola1.length ; i++ ){
-    if(parola1.length != parola2.length){
+}
+console.log("Esercizio 2 ---- paragone tra due stringhe")
+for (let i = 0; i < parola1.length; i++) {
+    if (parola1.length != parola2.length) {
         bool = 1;
         break;
     }
-    if(parola1[i] !=parola2[parola2.length-i-1]){
+    if (parola1[i] != parola2[parola2.length - i - 1]) {
         bool = 1;
         break
     }
 
-}if(bool == 1){
+} if (bool == 1) {
     console.log('Le due stringhe non sono palindrome');
-}else{
+} else {
     console.log('Le due stringhe sono palindrome');
 }
 
 //
+
+
+
+
 console.log("esercizio 3")
-
-
-
-
 // esercizio 3 Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
 //es. mare in categoria → la parola mare non esiste in categoria
 let p1 = "piroscafo";
 let p2 = "scafo";
 control = false;
-for(let i=0 ; i<p1.length ; i++){
-    if(p1[i]==p2[0]){
-        for(let j=0 ; j<p2.length ;j++){
-            if(p1[i+j]==p2[j]){
+for (let i = 0; i < p1.length; i++) {
+    if (p1[i] == p2[0]) {
+        for (let j = 0; j < p2.length; j++) {
+            if (p1[i + j] == p2[j]) {
                 control = true;
-            }else{
+            } else {
                 control = false;
             }
         }
     }
-}if(control){
+} if (control) {
     console.log("é compreso");
-}else{
+} else {
     console.log("non é compreso");
 }
-    
+
+console.log("esercizio 3----metodo 2")
+
+console.log(p1.includes(p2));
+
+
+
 // } console.log(conparole)
 
 
@@ -356,22 +362,24 @@ console.log("metodo1 esercizio 4")
 let parola3 = "ciao";
 let parolainverso = [];
 let n = 0;
-for(i = parola3.length-1 ; i>=0 ; i--){
-    parolainverso[n]=parola3[i];
+for (i = parola3.length - 1; i >= 0; i--) {
+    parolainverso[n] = parola3[i];
     n++;
 
-}console.log(String(parolainverso))
+} console.log(String(parolainverso))
 //metodo 2
 console.log("metodo2 esercizio 4")
 let p3 = "ciao";
 let p3reverse = "";
-for(i=p3.length-1 ; i>=0 ; i--){
+for (i = p3.length - 1; i >= 0; i--) {
     p3reverse = p3reverse + p3[i];
-}console.log(p3reverse)
+} console.log(p3reverse)
 //metodo 3
 console.log("metodo3 esercizio 4")
-p3.reverse();
-console.log(p3)
+p3reverse = [...p3];
+console.log(p3reverse)
+p3reverse.reverse()
+console.log(String(p3reverse))
 
 
 
@@ -386,30 +394,98 @@ console.log("------------ esercizio 5")
 // console.log("metodo senza il push e un for");
 // console.log(risultato);
 
-    str1 = "sono";
-    str2 = "io";
+str1 = "sono";
+str2 = "io";
 let input = "";
-for (let i=0 ; i<str1.length && i<str2.length ; i++){
-    input = str1 +" "+ str2;
-}console.log(input)
+for (let i = 0; i < str1.length && i < str2.length; i++) {
+    input = str1 + " " + str2;
+} console.log(input)
 console.log("------------ esercizio 5---metodo 2")
 input = str1.concat(str2);
 console.log(input);
 console.log("------------ esercizio 5---metodo 3")
-input= [...str1, ...str2];
-console.log(input);
+let input2 = "";
+input2 = [...str1, ...str2];
+// let input1 = input2.joine("");
+console.log(input2);
 
 
 console.log("------------ esercizio 5-----cifrario di Cesare ")
 //esercizio 6 Scrivere un programma che sviluppi il cifrario di Cesare 🤯 🤯 
-let cifrato = '';
-
+// let cifrato = '';
+console.log("------------ esercizio 7---metodo 1")
 //7) Scrivere una funzione che accetti una stringa come input e restituisca una nuova 
 //stringa che contiene solo le vocali presenti nella stringa originale
+//  const a = "a";
+//  const e = "e";
+//  const letterai = "i";
+//  const o = "o";
+//  const u = "u";
+let word = "miracolosamente";
+let wordvocal = " ";
+// let vocali = ["a","e","i","o","u"]
+// for(let i=0 ; i<word.length ; i++){
+//    if(word[i] == vocali[i] ){
+//     wordvocal += (word[i]);
+//    }
+// }console.log(wordvocal)
+console.log("------------ esercizio 7---metodo 2")
+for (i = 0; i < word.length; i++) {
+    if (word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u") {
+        wordvocal += (word[i]);
+    }
 
+} console.log(wordvocal)
+console.log("------------ esercizio 7---metodo 3")
+let wordvocal1 = " ";
+for (i = 0; i < word.length; i++) {
+    if (word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u") {
+        wordvocal1 += (word[i]);
+        // wordvocal1.includes("a")
+        wordvocal1.includes("a","e","i","o","u")
+        console.log(wordvocal1)
+    }
 
-//8) Scrivere una funzione che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri comuni alle due stringhe.
+} console.log(wordvocal1)
+
+//  for(i=0 ; i<word.length ; i++){
+//         if(word[i]== "a"){
+//            wordvocal =  "a";
+//            console.log(wordvocal)
+//         }
+//         if(word[i]== "e"){
+//             wordvocal =  "e"
+//             console.log(wordvocal)
+//          }
+//         if(word[i]== "i"){
+//             wordvocal =  "i"
+//             console.log(wordvocal)
+//          }
+//         if(word[i]== "o"){
+//             wordvocal =  "o"
+//             console.log(wordvocal)
+//          }
+//         if(word[i]== "u"){
+//             wordvocal =  "u"
+//             console.log(wordvocal)
+//          }
+//  }
+
+//8) Scrivere una funzione che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri
+//comuni alle due stringhe.
+//  function Caratteriuguali(){
+//     let st1 = "palese";
+//     let st2 = "ese";
+//     for(let i=0 ; i<st1.length ;i++){
+//         if(st1[i])
+//     }
+//  }
+
 //9) Scrivere una funzione che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'array
-//10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
-//11) Scrivi una funzione che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
-//12) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine crescente secondo il loro codice ASCII
+//10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite
+//da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
+
+//11) Scrivi una funzione che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario,
+// mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+//12) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine
+//crescente secondo il loro codice ASCII

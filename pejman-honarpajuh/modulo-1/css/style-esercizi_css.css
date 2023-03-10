@@ -33,17 +33,16 @@ nav a:hover{
 }
 nav > a {
     display: flex;
-
+    
 }
 nav > div {
     display:flex;
     align-items: center;
-    padding-right: 1rem;
-}
+   }
 nav .menu {
-    text-align: right;
+    padding-left: 12rem;
 }
-    
+
 /************************************/
 /************** Body **************/
 /************************************/    
@@ -363,6 +362,9 @@ footer .social div > a > i {
     div.two , img.col-1 {
         display: none;
     }
+     nav .menu + div > a {
+    display: none;
+    } 
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
     div.flex-cont {
@@ -404,6 +406,9 @@ footer .social div > a > i {
         align-items: baseline;
         display: flex;
         justify-content: space-between;
+    }
+    nav .menu{
+        display: none;
     }
    
 }
@@ -454,5 +459,8 @@ footer .social div > a > i {
         align-items: baseline;
         display: flex;
         justify-content: space-between;
+    }
+    nav .menu{
+        display: none;
     }
 }   
