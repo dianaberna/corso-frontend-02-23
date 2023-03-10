@@ -276,6 +276,16 @@ for (let i = 0; i < array.length; i++) {
 console.log("metodo senza il push e un for");
 console.log(risultato);
 
+//metodo con spread operator 
+console.log("metodo con lo spread operator");
+risultato = [...array, ...array]
+/* risultato = [array, array]   --> in questo caso otteniamo un array di due elementi, ogni elemento è un array*/
+console.log(risultato)
+
+console.log("spread operator")
+console.log(array)
+console.log(...array)
+
 // 13) Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
 console.log("esercizio 13 --> ");
 // è come il primo esercizio ma scorro l'array al contrario
@@ -405,3 +415,5 @@ console.log("cont=" + cont);
 console.log(array2.length / 2);
 console.log("ceil: " + Math.ceil(array2.length / 2));
 console.log("floor: " + Math.floor(array2.length / 2));
+
+
