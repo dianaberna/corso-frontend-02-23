@@ -588,6 +588,111 @@ for (let i = 0; i < p.length; i++) {
 }console.log(p1)
 /* console.log(p3.fromCharCode(p1[i])) */
 
-    
-    
 
+/* Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa
+ che contiene solo le vocali presenti nella stringa originale
+ */    
+    
+ console.log("--------------------------")
+ console.log("esercizio 7 stringhe")
+
+ p="miasorella"
+ p1="aeiou"
+p2=""
+b=0
+for (let i = 0; i< p.length; i++) {
+ for (let i = 0; i< p.length; i++) {
+    
+    if (p[i]==p1[b]) {
+
+        p2+=p[i]
+ 
+    }
+} b++
+    
+ }console.log(p2)
+
+/*  Scrivere una funzione che accetti due stringhe come input e restituisca 
+una nuova stringa che contiene solo i caratteri comuni alle due stringhe. 
+(versione 1: senza escludere i duplicati, versione 2: escludendo i duplicati) */
+console.log("--------------------------")
+ console.log("esercizio 8 stringhe")
+
+ p="stringoaaaaa"
+ p1="ssstruinga"
+ p2=""
+ p3=""
+ b=0
+ for (let i = 0; i< p.length; i++) {
+    for (let i = 0; i< p.length; i++) {
+       
+       if (p[i]==p1[b]) {
+   
+           p2+=p[i]
+    
+       }
+   }break;  
+     
+}console.log(p2)
+   
+
+
+    console.log("--------------------------")
+ console.log("esercizio 8 stringhe v2")
+ p="stringoaaaaa"
+ p1="ssstruinga"
+ p2=""
+ b=0
+ 
+
+
+/*     9) Scrivere programma che accetti un array di stringhe come input e 
+restituisca la stringa più lunga presente nell'array
+ */
+console.log("--------------------------")
+ console.log("esercizio 9 stringhe ")
+
+ array=["annalisa","marco", "laura", "giacomo", "filipp","ciceronez"]
+ b=0
+ let l=0
+for (let i = 0; i < array.length; i++) {
+     
+    if (b<array[i].length) {
+
+        b=array[i].length
+        l=i
+
+        console.log(array[i].length)     
+    }
+    
+    
+}console.log(array[l])
+
+
+/* 10) Scrivere programma che accetti una stringa come input e restituisca 
+una nuova stringa in cui le vocali sono 
+sostituite da un carattere speciale, ad esempio "*", 
+e le consonanti sono convertite in lettere maiuscole
+ */
+console.log("--------------------------")
+ console.log("esercizio 10 stringhe ")
+
+ p="cavolo"
+ p1="aeiou"
+p2=""
+b=0
+c="*"
+
+    for (let i = 0; i< p.length; i++) {
+       if(p[i]!=p1[b]){
+        p2+=p[i]
+       }
+
+       if (p[i]==p1[b]) {
+   
+           p2+=c
+    
+       }
+   } b++
+       
+    console.log(p2)
