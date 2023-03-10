@@ -255,7 +255,23 @@ console.log("Il numero di lettere= " + conteggio ,"e")
 
 //2 nuovo Scrivere un programma che verifica  se due stringhe sono palindrome
 
+let par1 = "anna";
+let par2 = "radar";
 
+let boh = 0;
+for(i=0 ; i<par1.length/2 ; i++){
+    if(par1[i] !== par1[par1.length-i-1]){
+        bool = 1;
+        break;
+    }
+}
+if(boh == 1){
+
+    console.log("non è palindrome");
+}
+else {
+    console.log("palindrome");
+}
 
 
 
@@ -344,3 +360,5 @@ function cifrarioDiCesare(stringa, spostamento) {
   }
   stringaCifrata = cifrarioDiCesare(stringa, spostamento);
  console.log(stringaCifrata); 
+
+ //7 Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
