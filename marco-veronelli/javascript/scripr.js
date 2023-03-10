@@ -596,7 +596,7 @@ for (let i = 0; i < p.length; i++) {
  console.log("--------------------------")
  console.log("esercizio 7 stringhe")
 
- p="miasorella"
+ p="miasorelula"
  p1="aeiou"
 p2=""
 b=0
@@ -616,25 +616,26 @@ for (let i = 0; i< p.length; i++) {
 una nuova stringa che contiene solo i caratteri comuni alle due stringhe. 
 (versione 1: senza escludere i duplicati, versione 2: escludendo i duplicati) */
 console.log("--------------------------")
- console.log("esercizio 8 stringhe")
+ console.log("esercizio 8 stringhe c")
 
  p="stringoaaaaa"
  p1="ssstruinga"
  p2=""
  p3=""
  b=0
- for (let i = 0; i< p.length; i++) {
-    for (let i = 0; i< p.length; i++) {
-       
-       if (p[i]==p1[b]) {
-   
-           p2+=p[i]
-    
-       }
-   }break;  
-     
-}console.log(p2)
-   
+for (let i = 0; i < p.length; i++) {
+    p2 = p[i]
+
+    for (let j = 0; j < p1.length; j++) {
+
+        if (p2 === p1[j]) {
+
+            p3 += p2
+
+        }
+    }
+
+} console.log(p3)
 
 
     console.log("--------------------------")
@@ -677,22 +678,42 @@ e le consonanti sono convertite in lettere maiuscole
 console.log("--------------------------")
  console.log("esercizio 10 stringhe ")
 
- p="cavolo"
+ p="casae"
  p1="aeiou"
-p2=""
-b=0
-c="*"
+ p2=""
+ p3=""
+ p4=""
+ p5=""
 
-    for (let i = 0; i< p.length; i++) {
-       if(p[i]!=p1[b]){
-        p2+=p[i]
-       }
-
-       if (p[i]==p1[b]) {
+ for (let i = 0; i < p.length; i++) {
    
-           p2+=c
-    
-       }
-   } b++
+    p2=p[i]
+
+
+    for (let q = 0; q < p1.length; q++) {
+        
+        if (p2==p1[q]) {
+
+            p3+=p2
+         
+        }
        
-    console.log(p2)
+    }
+         
+ }console.log(p3)
+
+ for (let i = 0; i < p.length; i++) {
+    p4 = p[i]
+
+    for (let j = 0; j < p1.length; j++) {
+
+        if (p4 != p1[j]) {
+
+            p5 += p4
+
+        }
+    }
+
+} console.log(p5)
+
+
