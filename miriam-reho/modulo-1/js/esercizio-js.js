@@ -325,7 +325,7 @@ console.log("Stringhe 1 - conta quante lettere e in stringa")
 
 let parola = "precivitevolissimevolmente"
 volte = 0
-i = 0
+
 for (i = 0; i < parola.length; i++) {
     if (parola[i] == "e") {
         volte++
@@ -369,6 +369,7 @@ parola1 = "ciao"
 parola2 = "pallavolo"
 pal = 0
 
+// prima di questo avrei potuto controllare se p1 e p2 sono della stessa lunghezza, se non lo sono inutile fare il resto
 for (let i = 0; i < parola2.length / 2 ; i++) {
     if (parola1[i] == parola2[parola2.length -1 -i]){
         pal++
@@ -395,7 +396,6 @@ if (pal == parola2.length /2 || pal == Math.ceil(parola2.length /2)){
     console.log(parola1 + " e " + parola2 + " NON sono palindrome tra loro")
 }
 
-
 // ------------------------------------------- 
 
 console.log("Stringhe 3 - Scrivere un programma che verifica se esiste una stringa all'interno di un altra")
@@ -413,6 +413,7 @@ for (let i = 0; i < s1.length; i++) {
                 controllo = false
             }
         }
+        break;
     }
 } 
 if (controllo) {
@@ -425,3 +426,51 @@ console.log("Stringhe 3.2 - Scrivere un programma che verifica se esiste una str
 
 s1 = "categoria"
 s2 = "cat"
+
+if(s1.includes(s2)){ // Come risutati dà true o false
+    console.log(s2 + " è contenuto in " + s1)
+} else {
+    console.log(s2 + " NON è contenuto in " + s1)
+}
+console.log("Stringhe 3.2 - versione con indexOf")
+if(s1.indexOf(s2) !== -1){ // Come risutati -1 se NON c'è mai, altrimenti darà l'indice di posizione della prima lettera (0 ad esempio per c)
+    console.log(s2 + " è contenuto in " + s1)
+} else {
+    console.log(s2 + " NON è contenuto in " + s1)
+}
+
+// ------------------------------------------- 
+
+console.log("Stringhe 4 - Restituire una stringa al contrario")
+
+s1 = "ciao"
+let rev1 = ""
+console.log(s1)
+
+for(let i = s1.length -1; i >= 0 ; i--){
+    rev1 += s1[i] // significa rev1=rev1+s1[i]
+} 
+console.log(rev1)
+
+// ------------------------------------------- 
+
+console.log("Stringhe 5 - Concatenazione di due stringhe separate da uno spazio")
+
+s1 = "ciao"
+s2 = "mondo"
+let s3 = "ciaomondo"
+
+console.log(s1 + " " + s2)
+
+// ------------------------------------------- 
+
+console.log("Stringhe 6 - Cifrario")
+
+// ------------------------------------------- 
+
+console.log("Stringhe 7 - Scrivi una stringa che contiene solo le vocali di una originale")
+
+s1 = "provavocali"
+vocali = ""
+
+
