@@ -447,7 +447,6 @@ console.log("-- esercizio 17)--> ")
 i = 0;
 cont = 0;
 array2 = [ 1, 2, 2, 2, 1] 
-
 while (i < array2.length / 2) {
     // se lunghezza è pari
     if (array2[i] === array2[array2.length - 1 - i]) {
