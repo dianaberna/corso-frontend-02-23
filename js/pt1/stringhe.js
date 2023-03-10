@@ -48,6 +48,7 @@ console.log("--- funzioni stringhe ---")
 let animali = ["gatto", "cane", "coniglio"]
 console.log(animali)
 
+console.log("--- indexof ---")
 console.log(animali.indexOf("cane"))
 
 animali.sort()
@@ -62,17 +63,25 @@ console.log(animali)
 animali.reverse()
 console.log(animali)
 
-console.log(animali.slice(0 , 2))  
+console.log("--- slice ---")
+console.log(animali)
+console.log(animali.slice(1 , 2))  
 // (0, 2) --> 0 =  è la posizione nell'array, 2 = quanti elementi selezionare
 console.log(animali)
 
 animali[1] = "pappagallo"
 console.log(animali)
-
+console.log("--- splice --- ")
 animali.splice(1, 0, "criceto") // criceto viene aggiunto in posizione 1 spostando in posizione 2 pappagallo
 // (1, 0, "criceto") --> 1 = posizione nell'array dove inserire il nuovo elemento, 0 = quanti elementi eliminare, "criceto" = il nuovo elemento
 console.log(animali)
 
+console.log("--- splice 2 --- ")
+console.log(animali)
+animali.splice(1, 1) // posizionati in 1 e elimina 1 elemento
+console.log(animali)
+
+console.log("---")
 let animaliInStringa = animali.toString()
 console.log(animaliInStringa)
 console.log(animali)
@@ -80,9 +89,8 @@ let animaliInStringa2 = String(animali)
 console.log(animaliInStringa2)
 console.log(animali)
 
-let salvo = animali.join(" ")
+let salvo = animali.join("*")
 console.log(salvo)
-
 
 let array1 = ['a', 'b', 'c'];
 let array2 = ['d', 'e', 'f'];
