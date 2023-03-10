@@ -42,3 +42,7 @@ ciao a tutti
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
+<<<<<<< HEAD
+=======
+- Michele Sabatino
+>>>>>>> 06fdde134320e3ca0e2b962a9d55371861123623

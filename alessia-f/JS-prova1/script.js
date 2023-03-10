@@ -358,11 +358,11 @@ for(i=0; i<parola2/2; i++);{
         contatore++;
     }
     if (contatore== parola2.length / 2 || contatore==Math.ceil(parola2.length/2)){ 
-        console.log("es_1=palindromo");
+        console.log("es_1.2=palindromo");
     }
     
     else{
-        console.log("es_1=non_palindromo");
+        console.log("es_1.2=non_palindromo");
     }
 }
 
@@ -376,10 +376,10 @@ parola1= "ALESSIA"
 controllo= false;
 
 
-for(i=0; i< parola1.length; i++){
-    if(parola1[i]==parola[0]){
-        for(j=1;j>parola.length;j++){//gli sto dicendo non partire da 0, dato che hai trovato la a, ma parti dalla posizione 1(L)
-            if(parola1[i+j]==parola[j]){
+for(i=0; i < parola1.length; i++){
+    if(parola1[i] == parola[0]){
+        for(j=1; j<parola.length; j++){//gli sto dicendo non partire da 0, dato che hai trovato la a, ma parti dalla posizione 1(L)
+            if(parola1[i+j] == parola[j]){
                 controllo=true;
             }
             else{
@@ -391,9 +391,84 @@ for(i=0; i< parola1.length; i++){
 }
 
 if(controllo){
-    console.log("è contenuto")
+    console.log("es.3= è contenuto")
 }
 
 else{
-    console.log ("non è contenuto");
+    console.log ("es.3=non è contenuto");
 }
+
+//4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
+i=0
+parola="supercalifragilistichespiralitoso"
+parolacontrario=""
+
+for (i=0; i<parola.length; i++){
+    parolacontrario= parolacontrario + parola [parola.length - 1 - i];
+}
+console.log("es_4="+parolacontrario);
+
+//4.1
+for (i=parola.length-1; i=0; i--){
+    parolacontrario = parolacontrario + parola [i];
+}
+console.log("es_4.1=" + parolacontrario);
+
+//4.2 Con Reverse
+parolacontrario = [...parola].reverse().join("");
+console.log("es_4.2=" + parola, parolacontrario);
+
+//4.3
+parolacontrario = String(Array(...parola).reverse()).replaceAll(",", "");
+console.log("es_4.3=" + parola, parolacontrario);
+
+
+
+//5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa 
+//che è la concatenazione delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
+
+i=0
+var parola1="cana"
+var parola2="randa"
+
+console.log("es_5=" + parola1 + " " + parola2);
+
+
+//7Scrivere una funzione che accetti una stringa come input e 
+//restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
+
+
+let vocali = "";
+stringa = "palesemente";
+
+for (let i = 0; i < stringa.length; i++) {
+    let carattere = stringa[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        vocali += stringa[i];
+    }
+}
+console.log("con duplicati: " + vocali);
+
+vocali = "";
+
+for (let i = 0; i < stringa.length; i++) {
+    let carattere = stringa[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        if (!vocali.includes(stringa[i])) vocali += stringa[i];
+    }
+}
+
+console.log("es.7= " + vocali);
+
