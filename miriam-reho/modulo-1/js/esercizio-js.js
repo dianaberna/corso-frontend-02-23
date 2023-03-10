@@ -293,24 +293,30 @@ for (let i = 0; i < array2.length; i++) {
 
 console.log("-- Esercizio 17.2: array1 e array2 sono palindromi?--")
 
-/* let pal = 0
+let pal = 0
 for (let i = 0; i < array1.length / 2; i++) {
-    if (array1[i] === array1.length / 2 || array2[i] == Math.ceil(array1.length /2)) {
+    if (array1[i] == array1[array1.length - 1 - i]) {
         pal++
-    } else {
-        console.log("array1 NON è palindromo")
-        break
-    }
+    } 
+}
+if (pal == array1.length /2 || pal == Math.ceil(array1.length /2)) { // math ceil = prendi solo l'unità e non i decimali se dividi
+    console.log("Array1 è palindromo")
+} else {
+    console.log("Array1 NON è palindromo")
 }
 
+pal = 0
 for (let i = 0; i < array2.length / 2; i++) {
-    if (array2[i] === array2.length / 2 || array2[i] == Math.ceil(array2.length /2)) {
+    if (array2[i] == array2[array2.length - 1 - i]) {
         pal++
-    } else {
-        console.log("array2 non è palindromo")
-        break
-    }
-} */
+    } 
+}
+if (pal == array2.length /2 || pal == Math.ceil(array2.length /2)) { // math ceil = prendi solo l'unità e non i decimali se dividi
+    console.log("Array2 è palindromo")
+} else {
+    console.log("Array2 NON è palindromo")
+}
+
 
 
 // --------------------- STRINGHE ---------------------- 
@@ -332,18 +338,70 @@ console.log("Stringhe 2 - Verifica se due stringhe sono palindrome")
 
 let parola1 = "ciao"
 let parola2 = "radar"
+let palin = 0
 
+for (let i = 0; i < parola1.length / 2; i++) {
+    if (parola1[i] == parola1[parola1.length - 1 - i]) {
+        palin++
+    } 
+}
+if (palin == parola1.length /2 || palin == Math.ceil(parola1.length /2)) { // math ceil = prendi solo l'unità e non i decimali se dividi
+    console.log("ciao è palindromo")
+} else {
+    console.log("ciao NON è palindromo")
+}
+palin = 0
+for (let i = 0; i < parola2.length / 2; i++) {
+    if (parola2[i] == parola2[parola2.length - 1 - i]) {
+        palin++
+    } 
+}
+if (palin == parola2.length /2 || palin == Math.ceil(parola2.length /2)) { // math ceil = prendi solo l'unità e non i decimali se dividi
+    console.log("radar è palindromo")
+} else {
+    console.log("radar NON è palindromo")
+}
 
 
 console.log("Stringhe 2.1 - Verifica se due stringhe sono palindrome tra di loro")
+
+parola1 = "ciao"
+parola2 = "pallavolo"
+pal = 0
+
+for (let i = 0; i < parola2.length / 2 ; i++) {
+    if (parola1[i] == parola2[parola2.length -1 -i]){
+        pal++
+    }
+}
+if (pal == parola2.length /2 || pal == Math.ceil(parola2.length /2)){
+    console.log(parola1 + " e " + parola2 + " sono palindrome tra loro")
+} else {
+    console.log(parola1 + " e " + parola2 + " NON sono palindrome tra loro")
+}
+
+parola1 = "ciao"
+parola2 = "oaic"
+pal = 0
+
+for (let i = 0; i < parola2.length / 2 ; i++) {
+    if (parola1[i] == parola2[parola2.length -1 -i]){
+        pal++
+    }
+}
+if (pal == parola2.length /2 || pal == Math.ceil(parola2.length /2)){
+    console.log(parola1 + " e " + parola2 + " sono palindrome tra loro")
+} else {
+    console.log(parola1 + " e " + parola2 + " NON sono palindrome tra loro")
+}
 
 
 // ------------------------------------------- 
 
 console.log("Stringhe 3 - Scrivere un programma che verifica se esiste una stringa all'interno di un altra")
 
-s1 = "categoria"
-s2 = "cat"
+let s1 = "categoria"
+let s2 = "cat"
 controllo = false
 
 for (let i = 0; i < s1.length; i++) {
@@ -367,4 +425,3 @@ console.log("Stringhe 3.2 - Scrivere un programma che verifica se esiste una str
 
 s1 = "categoria"
 s2 = "cat"
-
