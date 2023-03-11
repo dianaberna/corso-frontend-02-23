@@ -171,12 +171,6 @@ for (i = 0; i < Array1.length || i < Array2.length; i++) {
 
 
 
-
-
-
-
-
-
 // //metodo 1(troppo lungo)
 // if (Array1.length > Array2.length) {
 //     for (i = 0; i < Array1.length; i++) {
@@ -202,7 +196,8 @@ for (i = 0; i < Array1.length || i < Array2.length; i++) {
 // }
 
 
-//15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4]let dispari = 0;
+//15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e 
+//gli elementi pari di array2 → versione1 [1,3,4,2,2,4]let dispari = 0;
 Array3 = [];
 let cont = 0;
 for (let i = 0; i < Array1.length; i++) {
@@ -222,7 +217,9 @@ for (let i = 0; i < Array2.length; i++) {
 
 }
 
-console.log(Array3)
+console.log(Array3);
+//16
+
 
 //17) Verificare se array1 e array2 dati sono palindromi
 Array1 = [1, 2, 2, 3, 4];
@@ -259,58 +256,272 @@ console.log("in questa parola ci sono " + conta + " e")
 
 //2 Scrivere un programma che verifica  se due stringhe sono palindrome 
 
-a = "ciao";
-b = "ciao";
+a = "anna";
+b = "";
 
-//3 Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
+for (let i = a.length - 1; i >= 0; i--) {
+    b += a[i];
+}
+if (a == b) {
+    console.log("esercizio 2 " + "sono palindromo")
+} else {
+    console.log("esercizio 2 " + "non sono palindromo")
+}
+
+
+
+
+
+//3 Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, 
+//scafo in piroscafo, mente in palesemente → esempi corretti
 a = "sono";
-b = "ciao sono alfio";
-cont = 0;
+b = "ciao sono alfio ";
+controllo = false;
 
 for (let i = 0; i < b.length; i++) {
 
-    if (b[i] == a[cont]) {
-        if (a[cont]) {
-            cont++;
+    if (b[i] == a[0]) {
+        for (j = 1; j < a.length; j++) {
+            if (b[i + j] == a[j]) {
+                controllo = true;
+            } else { controllo = false }
         }
-    }
 
+    }
 }
-if (cont == a.length) {
+if (controllo == true) {
     console.log("esiste")
 
 } else {
     console.log("non esiste")
 
 }
- //4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
 
- a = "sono";
- b=[];
- cont=a.length-1;
- for (let i = 0; i < a.length; i++) {
-      b[i]=a[cont];
-      cont--
 
- }
- a=b;
- a=String(a)
+//4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
 
- console.log(a)
+a = "sono";
+b = "";
+cont = a.length - 1;
+for (let i = 0; i < a.length; i++) {
+    b += a[cont];
+    cont--
 
-//15 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è la concatenazione delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
+}
+a = b;
+console.log(a)
+
+//5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è la concatenazione
+// delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
 a = "ciao";
 b = "sono alfio";
-c=[];
+c = "";
 
 for (let i = 0; i < a.length; i++) {
-    c.push(a[i])
-}c.push(" ")
-for (let i = 0; i < b.length; i++) {
-    c.push(b[i])
-}c.push("")
+    c += (a[i])
 
-c=String(c)
+} c += (" ")
+for (let i = 0; i < b.length; i++) {
+    c += (b[i])
+}
+
 console.log(c)
+
+// ----------------------ave cesare
+
+
+let stringa = "ciao";
+console.log(stringa.charCodeAt(0))
+
+b = "";
+let codifica = "";
+
+for (let i = 0; i < stringa.length; i++) {
+    codifica += (String.fromCharCode(stringa.charCodeAt(i) + 4))
+
+}
+console.log(codifica)
+//---------------------------------------
+//7.strighe) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali 
+//presenti nella stringa originale
+
+stringa = "ciao sono il genio della lampada";
+b = "";
+for (let i = 0; i < stringa.length; i++) {
+    switch (stringa[i]) {
+        case "a":
+            b += "a"
+            break;
+        case "e":
+            b += "e"
+            break;
+        case "i":
+            b += "i"
+            break;
+        case "o":
+            b += "o"
+            break;
+        case "u":
+            b += "u"
+            break;
+    }
+
+}
+console.log("esercizio 7  " + b)
+
+//8.3) Scrivere una funzione che accetti due stringhe come input e restituisca una nuova stringa che contiene solo 
+ //    i caratteri comuni alle due stringhe.
+stringa = "ciao come stai";
+b = "ciao,bene grazie, e tu come va";
+c = ""
+
+for (i = 0; i < b.length; i++) {
+    if (stringa.includes(b[i])) {
+        //controllo se esiste gia quel carattere
+        if (!c.includes(b[i])) {
+            c += (b[i])
+
+        }
+    }
+}
+console.log(c)
+
+//9) Scrivere una funzione che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'
+
+array = ["che", "bellissima", "giornata", "oggi", "spettacolare", "davvero"];
+c = array[0];
+
+for (i = 1; i < array.length; i++) {
+    if (array[i].length > c.length) {
+        c = array[i];
+    }
+}
+console.log(c)
+
+//10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa 
+//    in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
+
+stringa = "eppure";
+
+
+function prova(a) {
+    let vocali = ["A", "E", "I", "O", "U"]
+    a = a.toUpperCase();
+    for (i = 0; i < vocali.length; i++) {
+        a = a.replaceAll(vocali[i], "*");
+
+    }
+    console.log(a)
+    return a;
+}
+
+b = prova(stringa)
+console.log(b)
+
+
+
+//11) Scrivi programma che accetti una stringa come input e restituisca una nuova stringa in cui
+//    ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+stringa = "ciao mondo"
+b = [...stringa]
+
+
+console.log(b.reverse().join(""))//unisce 
+
+//12) Scrivere programma che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono 
+//    ordinati in ordine crescente secondo il loro codice ASCII
+
+stringa = "ciao mondo"
+b=[];
+
+
+
+for (i = 0; i < stringa.length; i++) {
+    b.push(stringa.charCodeAt(i));
+    b.sort()
+   
+}
+
+console.log(b);
+
+//////////////////////////////      funzioni ///////////////////////////
+console.log("///////////////esercizi funzioni///////////////");
+
+
+
+//Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
+
+ 
+function moltiplicazione(a,b){
+     moltiplicazione=a*b;
+     return moltiplicazione;
+
+}
+
+console.log(moltiplicazione(5,2))
+
+//Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
+
+function eta(a){
+    a=a*365
+    return a;
+}
+console.log(eta(20))
+
+//Crea una funzione che accetta un numero come unico argomento e restituisce true se è minore o uguale a zero, altrimenti restituisce false.
+
+function confronta(a){
+    if(a>0)
+    console.log("false")
+    else{
+        console.log("true")
+    }
+    
+}
+confronta(-2)
+
+// In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali.
+//  L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
+// L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che
+//  restituisca il numero totale di zampe di tutti gli animali. 
+// Esempi:
+// numeroZampe(2, 3, 5) ➞ 36
+// numeroZampe(1, 2, 3) ➞ 22
+// numeroZampe(5, 2, 8) ➞ 50
+
+function zampe(a,b,c){
+    a=a*2
+    b=b*4
+    c=c*4
+    console.log( a+b+c)
+}
+
+zampe(5,2,8)
+
+//fiammiferi
+
+
+//Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
+// Esempi:
+// sommaDaUnUnicoNumero(4) ➞ 10
+// sommaDaUnUnicoNumero(13) ➞ 91
+// sommaDaUnUnicoNumero(600) ➞ 180300
+
+function sommaDaUnUnicoNumero(a){
+    for(let i=a-1;i>0;i--){
+        a=a+i;
+    }
+    console.log(a)
+    return a;
+}
+
+sommaDaUnUnicoNumero(600)
+
+
+
+
+
+
+
 
 
