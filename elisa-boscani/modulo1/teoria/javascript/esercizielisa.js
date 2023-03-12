@@ -298,26 +298,48 @@ if (controllo) {
 } else {
   console.log("non contenuto");
 }
+
+////////////////////////////////////////////////
+//es3.1
+parola2 = "ale";
+parola3 = "alessia";
+console.log(parola2);
+console.log(parola3);
+console.log(parola3.includes(parola2));
+if (parola3.includes(parola2)) {
+  console.log("inclusa");
+} else {
+  console.log("non inclusa");
+}
+//////////////////////////////////////////////////
+///es.3.2
+parola2 = "alec";
+parola3 = "alessia";
+
+if (parola3.indexOf(parola2) !== -1) {
+  console.log("inclusa");
+} else {
+  console.log("non inclusa");
+}
 //////////////////////////////////////////////////////////////
 ///es.4
 let stringa3 = "barca";
-let stringaVuota = [0];
+let stringaVuota = "";
 let cont = 0;
 for (let i = stringa3.length - 1; i >= 0; i--) {
-  stringaVuota[cont] = stringa3[i];
-  {
-    cont++;
-  }
+  stringaVuota = stringaVuota + stringa3[i];
 }
 console.log(stringaVuota);
 
 /////////////////////////////////////
 ///es.5
-let stringaPrimaParola = "ciao";
-let stringaSecondaParola = "mondo";
-const unite = "";
-for (let i = 0; i < stringaPrimaParola.length; i++) {
-  stringaPrimaParola[i].concat(stringaSecondaParola[i]);
-}
+let stringaP = [];
+stringaP.slice(0, 0, "ciao");
+stringaP.slice(1, 0, "mondo");
 
-console.log(stringaSecondaParola);
+console.log("ciao " + "" + "mondo");
+
+/////////////////////////////////////////////
+/// es 7
+let stringa4 = "giorno"
+let stringaVocali =""
