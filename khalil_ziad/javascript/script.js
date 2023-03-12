@@ -457,4 +457,51 @@ function maxNum(arraybi){
 console.log(maxNum(arraybi));*/
 
 
+// ES.Moltiplicazione di due numeri
+
+function multiplication(number1,number2) {
+    return number1*number2;
+}
+
+// ES.Convertire anni in giorni
+
+function toGiorni(anni)
+{
+    return anni*365;
+}
+
+// ES.Minore o uguale a zero
+
+function minoreUgualeAZero(numero) {
+    return (numero<=0);
+}
+
+// ES.Il problema della fattoria
+
+function numeroZampe(n1,n2,n3) {
+    return((n1*2)+((n2+n3)*4));
+}
+
+// ES.Case di fiammiferi
+
+function numeroDiFiammiferi(number) {
+    if(number>=0){
+    number=(number*6)-(number-1);
+    return number;}
+    else console.log("you should insert a positive integer");
+}
+
+// ES.Somma i numeri da un unico numero
+
+function sommaDaUnUnicoNumero(number) {
+    let somma=0;
+    for(let i=0;i<=number;i++){
+        somma=somma+i;
+    }    
+    return somma;
+}
+
+
+
+
 
