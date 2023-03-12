@@ -410,9 +410,18 @@ input2 = [...str1, ...str2];
 console.log(input2);
 
 
-console.log("------------ esercizio 5-----cifrario di Cesare ")
+console.log("------------ esercizio 6-----cifrario di Cesare ")
 //esercizio 6 Scrivere un programma che sviluppi il cifrario di Cesare 🤯 🤯 
-// let cifrato = '';
+function codicAsci(a){
+    let cont = ""
+    for(let i=0; i<a.length ; i++){
+        cont += (String.fromCharCode(a.charCodeAt(i)+5))
+}
+return cont
+}
+console.log(codicAsci('ciao'))
+
+
 console.log("------------ esercizio 7---metodo 1")
 //7) Scrivere una funzione che accetti una stringa come input e restituisca una nuova 
 //stringa che contiene solo le vocali presenti nella stringa originale
@@ -430,23 +439,50 @@ let wordvocal = " ";
 //    }
 // }console.log(wordvocal)
 console.log("------------ esercizio 7---metodo 2")
+flga = true
+flge = true
+flgi = true
+flgo = true
+flgu = true
 for (i = 0; i < word.length; i++) {
-    if (word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u") {
+    /* if (word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u") {
         wordvocal += (word[i]);
+    } */
+
+
+    if (word[i] == "a" && flga) {
+        wordvocal += (word[i]);
+        flga = false
+    }
+    if (word[i] == "e" && flge) {
+        wordvocal += (word[i]);
+        flge = false
+    }
+    if (word[i] == "i" && flgi) {
+        wordvocal += (word[i]);
+        flgi = false
+    }
+    if (word[i] == "o" && flgo) {
+        wordvocal += (word[i]);
+        flgo = false
+    }
+    if (word[i] == "u" && flgu) {
+        wordvocal += (word[i]);
+        flgu = false
     }
 
 } console.log(wordvocal)
 console.log("------------ esercizio 7---metodo 3")
-let wordvocal1 = " ";
-for (i = 0; i < word.length; i++) {
-    if (word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u") {
-        wordvocal1 += (word[i]);
-        // wordvocal1.includes("a")
-        wordvocal1.includes("a","e","i","o","u")
-        console.log(wordvocal1)
-    }
+// let wordvocal1 = " ";
+// for (i = 0; i < word.length; i++) {
+//     if (word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u") {
+//         wordvocal1 += (word[i]);
+//         // wordvocal1.includes("a")
+//         wordvocal1.includes("a","e","i","o","u")
+//         console.log(wordvocal1)
+//     }
 
-} console.log(wordvocal1)
+// } console.log(wordvocal1)
 
 //  for(i=0 ; i<word.length ; i++){
 //         if(word[i]== "a"){
@@ -473,19 +509,188 @@ for (i = 0; i < word.length; i++) {
 
 //8) Scrivere una funzione che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri
 //comuni alle due stringhe.
+console.log("------------ esercizio 8---metodo 1")
 //  function Caratteriuguali(){
-//     let st1 = "palese";
-//     let st2 = "ese";
-//     for(let i=0 ; i<st1.length ;i++){
-//         if(st1[i])
-//     }
+let st1 = "palese";
+let st2 = "ese";
+let st3 = "";
+for (let i = 0; i < st1.length; i++) {
+    if (st2.includes(st1[i])) {
+        st3 += st1[i]
+    }
+} console.log(st3);
+
+
 //  }
 
 //9) Scrivere una funzione che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'array
+console.log("------------ esercizio 9---metodo 1")
+let arrstring = ['ciao', 'bello', 'graziella']
+let maymax = 0;
+let res = "";
+for (let i = 0; i < arrstring.length; i++) {
+
+    if (arrstring[i].length > maymax) {
+        maymax = arrstring[i].length;
+        res = arrstring[i];
+    }
+} console.log(res)
+
 //10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite
 //da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
+console.log("------------ esercizio 10---metodo 1")
+let mystring = "organizzazione"
+let parolaspeciale = "";
+
+for (i = 0; i < mystring.length; i++) {
+    if (mystring[i] == "a") {
+        parolaspeciale = (mystring.replaceAll("a", "*"));
+        mystring = parolaspeciale;
+        //  console.log(parolaspeciale)
+    }
+    if (mystring[i] == "e") {
+        parolaspeciale = (mystring.replaceAll("e", "*"));
+        mystring = parolaspeciale;
+    }
+    if (mystring[i] == "i") {
+        parolaspeciale = (mystring.replaceAll("i", "*"));
+        mystring = parolaspeciale;
+    }
+    if (mystring[i] == "o") {
+        parolaspeciale = (mystring.replaceAll("o", "*"));
+        mystring = parolaspeciale;
+    }
+    if (mystring[i] == "u") {
+        parolaspeciale = (mystring.replaceAll("u", "*"));
+        mystring = parolaspeciale;
+    }
+} console.log(parolaspeciale.toUpperCase())
+console.log("------------ esercizio 10---metodo 2")
+
+function caratterispeciali(mystring1) {
+    let parolaspeciale = "";
+    mystring1 = mystring1.toUpperCase();
+    for (i = 0; i < mystring1.length; i++) {
+        if (mystring1[i] == "A") {
+            parolaspeciale = (mystring1.replaceAll("A", "*"));
+            mystring1 = parolaspeciale;
+
+        }
+        if (mystring1[i] == "E") {
+            parolaspeciale = (mystring1.replaceAll("E", "*"));
+            mystring1 = parolaspeciale;
+        }
+        if (mystring1[i] == "I") {
+            parolaspeciale = (mystring1.replaceAll("I", "*"));
+            mystring1 = parolaspeciale;
+        }
+        if (mystring1[i] == "O") {
+            parolaspeciale = (mystring1.replaceAll("O", "*"));
+            mystring1 = parolaspeciale;
+        }
+        if (mystring1[i] == "U") {
+            parolaspeciale = (mystring1.replaceAll("U", "*"));
+            mystring1 = parolaspeciale;
+        }
+    }
+    return mystring1;
+} console.log(caratterispeciali("oddiomio"))
+console.log("------------ esercizio 10---metodo 3")
+
+function cartspeciali(x) {
+    let vocali = ["a", "e", "i", "o", "u"]
+    for (let i = 0; i < vocali.length; i++) {
+        x = x.replaceAll(vocali[i], "*")
+    }
+    x = x.toUpperCase();
+
+    return x;
+
+} console.log(cartspeciali("miodio"))
+
 
 //11) Scrivi una funzione che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario,
 // mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+console.log("------------ esercizio 11---metodo 1")
+let frase = "ciao mondo bello";
+let box = "";
+let contrario = frase.split(" ");
+console.log(contrario)
+
+for (let i = 0; i < contrario.length; i++) {
+    let temp = contrario[i]
+    
+    for (let j = temp.length - 1; j >= 0; j--) {
+        box += temp[j]
+
+    };
+    //  let z = [...temp]
+    //  box += z.reverse().join("")
+
+    box += " "
+
+
+} console.log(box)
+
+
 //12) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine
 //crescente secondo il loro codice ASCII
+console.log("------------ esercizio 12---")
+let parolax = "BORGO"
+let contlist = [];
+asciList = [
+    { text: "A", value: 97 },
+    { text: "B", value: 98 },
+    { text: "C", value: 99 },
+    { text: "D", value: 100 },
+    { text: "E", value: 101 },
+    { text: "F", value: 102 },
+    { text: "G", value: 103 },
+    { text: "H", value: 104 },
+    { text: "I", value: 105 },
+    { text: "J", value: 106 },
+    { text: "K", value: 107 },
+    { text: "L", value: 108 },
+    { text: "M", value: 109 },
+    { text: "N", value: 110 },
+    { text: "O", value: 111 },
+    { text: "P", value: 112 },
+    { text: "Q", value: 113 },
+    { text: "R", value: 114 },
+    { text: "S", value: 115 },
+    { text: "T", value: 116 },
+    { text: "U", value: 117 },
+    { text: "V", value: 118 },
+    { text: "W", value: 119 },
+    { text: "X", value: 120 },
+    { text: "Y", value: 121 },
+    { text: "Z", value: 122 },
+]
+
+for (let i = 0; i < parolax.length; i++) {
+
+    let x = asciList.find(x => x.text == parolax[i])
+    let y = x.text
+   
+    contlist.push(y)
+    
+   
+} 
+
+console.log(contlist.sort())
+
+
+console.log("------------ esercizio 12---metodo2")
+
+// function ordinAsci(a){
+//     let cont = '';
+//     for(let i=0; i<a.length ; i++){
+//            cont += (a.charCodeAt([i]));
+        
+        
+// }
+
+// return cont
+// }
+// console.log(ordinAsci('ciao'))
+
