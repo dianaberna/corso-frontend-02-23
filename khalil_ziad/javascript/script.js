@@ -643,7 +643,7 @@ function rbs(mano1,mano2) {
     } else return "p2 win";
 }
 
-//ES.Rimuovere i duplicati fa un array
+//ES.Rimuovere i duplicati da un array
 
 function removeDups(array){
     let unduped=[];
@@ -672,6 +672,7 @@ function getBudgets(persone) {
         budget=budget+persone[i].budget;
     } return budget;
 }
+//ES.Calcola il prezzo totale dei generi alimentari
 
 function getTotalPrice(lista) {
     let somma=0;
@@ -679,6 +680,17 @@ function getTotalPrice(lista) {
         somma=somma+(lista[i].quantity*lista[i].price);
     }return somma;
 }
+
+//ES.19 Generatore di password
+
+function generaPasswordCasuale(lungezza) 
+{
+    for(let i=0;i<lungezza;i++){
+        console.log(String.fromCharCode(Math.floor(Math.random()*100)+32));
+    }
+}
+generaPasswordCasuale(8);
+
 
 
 
