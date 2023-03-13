@@ -701,3 +701,38 @@ console.log("--------------------------")
     }
          
  }console.log(p3)
+
+
+ console.log("--------------------------")
+ console.log("esercizio 11 stringhe ")
+/*  Scrivi programma che accetti una stringa come input e restituisca
+ una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. 
+ Ad esempio, "ciao mondo" diventa "oaic odnom"
+ */
+p="ciao mondo"
+p1=""
+
+for (let i = p.length-1; i >= 0; i--) {
+    if (p[i]=== " ") {
+        break;
+        
+} else p1+=p[i]
+
+for (let j = (p.length-1)-p1.length; j >=0; j--) {
+    if (p[i]===" "){
+        break;
+    }else p1+=p[i]
+    
+    
+}
+    
+}console.log(p1)
+
+ console.log("esercizi array")
+ console.log("esercizio 1")
+/*  Scrivere un programma che prenda in input un array bidimensionale di numeri e restituisca 
+la somma di tutti i numeri presenti nell'array
+ */
+ array=[[1,2],
+        [2,4]]
+
