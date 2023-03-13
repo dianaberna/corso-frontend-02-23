@@ -299,6 +299,7 @@ for (cont = 0; cont <= n; cont = cont + 1) {
 console.log(sommaNuova);
 
 // Spread operator
+let array = [1, 2, 3]
 console.log("metodo con lo spread operator");
 risultato = [...array, ...array];
 /* risultato = [array, array]   --> in questo caso otteniamo un array di due elementi, ogni elemento è un array*/
