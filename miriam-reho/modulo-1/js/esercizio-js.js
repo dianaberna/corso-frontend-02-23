@@ -26,7 +26,8 @@ let sommaArray = 0
 while (i2 < array.length){
     sommaArray = sommaArray + array[i2];
     i2++;
-} console.log("La somma degli array è "+ sommaArray)
+} 
+console.log("La somma degli array è "+ sommaArray)
 
 // ------------------------------------------- 
 
@@ -46,7 +47,8 @@ while (i3 < array.length){
         sommaPositivi = sommaPositivi + array[i3];
     }
     i3++;
-} console.log(sommaPositivi)
+} 
+console.log(sommaPositivi)
 
 // ------------------------------------------- 
 
@@ -61,7 +63,8 @@ while (i4 < array.length) {
         dispari = dispari + array[i4];
     }
     i4++;
-} console.log("La somma degli elementi dispari è = " + dispari)
+} 
+console.log("La somma degli elementi dispari è = " + dispari)
 
 // ------------------------------------------- 
 
@@ -78,7 +81,8 @@ while (i5 < array.length) {
         posEven = posEven + array[i5];
     }
     i5 = i5 + 2;
-} console.log("La somma degli elementi in posizione pari è = "+ posEven)
+} 
+console.log("La somma degli elementi in posizione pari è = "+ posEven)
 
 // ------------------------------------------- 
 
@@ -90,7 +94,8 @@ while (i6 < array.length) {
         volte = volte + 1;
     }
     i6++;
-} console.log("2 compare " + [volte] + " volte");
+} 
+console.log("2 compare " + [volte] + " volte");
 
 // ------------------------------------------- 
 
@@ -102,7 +107,8 @@ while (i7 < array.length) {
         voltePlus = voltePlus + 1;
     }
     i7++;
-} console.log("ci sono " + voltePlus + " positivi")
+} 
+console.log("ci sono " + voltePlus + " positivi")
 
 // ------------------------------------------- 
 
@@ -115,7 +121,8 @@ while (i8 < array.length) {
         max = array[i8]
     }
     i8++
-} console.log(max)
+} 
+console.log(max)
 
 // ------------------------------------------- 
 
@@ -127,7 +134,8 @@ while (i9 < array.length) {
         min = array[i9]
     }
     i9++
-} console.log(min)
+} 
+console.log(min)
 
 // ------------------------------------------- 
 
@@ -139,7 +147,8 @@ while (i10 < array.length) {
         arrayNuovo.push(array[i10]);
     }
     i10++
-} console.log(arrayNuovo)
+} 
+console.log(arrayNuovo)
 
 // ------------------------------------------- 
 
@@ -149,7 +158,8 @@ doubleArray = []
 while (i11 < array.length) {
     doubleArray.push(array[i11]*2)
     i11++
-} console.log(doubleArray)
+} 
+console.log(doubleArray)
 
 // ------------------------------------------- 
 
@@ -164,7 +174,8 @@ i12 = 0
 while (i12 < array.length) {
     dueArray.push(array[i12]) //non sovrascrive ma aggiunge
     i12++
-} console.log(dueArray) 
+} 
+console.log(dueArray) 
 
 // ------------------------------------------- 
 
@@ -191,7 +202,8 @@ while (i < array1.length) {
         array3[i] = array1[i] // se arrey2[i] esiste, allora somma, altrimenti prendi solo array1
     }
     i++
-} console.log(array3) // non c'è bisogno di pushare perchè già li sto inserendo con if e else
+} 
+console.log(array3) // non c'è bisogno di pushare perchè già li sto inserendo con if e else
 
 console.log("-- Esercizio 14.2: Crea array3 che array1 sia più grande o no torna lo stesso--")
 let array1b = [4, 2, 2, 4]
@@ -207,7 +219,8 @@ while (i < array2b.length || i < array2.length){
         array3b[i] = array3b[i] + array2b[i]
     } 
     i++
-} console.log(array3b)
+} 
+console.log(array3b)
 
 
 // ------------------------------------------- 
@@ -231,7 +244,8 @@ while (i < array2.length) {
         array3.push(array2[i])
     } 
     i++
-} console.log(array3)
+} 
+console.log(array3)
 
 console.log("-- Esercizio 15.2: Crea array3 con gli elementi dispari di array1 e pari di array2 --")
 console.log("Il risultato dovrà essere array3 [1,4,2,2,3,4]")
@@ -246,7 +260,8 @@ for (i = 0; i < array1.length && i < array2.length; i++){
     if (array2[i] %2 ==0) {
         array3.push(array2[i])
     }
-} console.log(array3)
+} 
+console.log(array3)
 
 
 // ------------------------------------------- 
@@ -255,7 +270,8 @@ console.log("-- Esercizio 16: aggiornare l'array2 con array2[i]=array2[i]/array1
 
 for (let i = 0; i < array2.length; i++) {
     array2[i] = array2[i] / array1[array1.length - 1 - i]
-} console.log(array2)
+} 
+console.log(array2)
 
 // ------------------------------------------- 
 // soluzione prima della lezione
@@ -330,7 +346,8 @@ for (i = 0; i < parola.length; i++) {
     if (parola[i] == "e") {
         volte++
     }
-} console.log("La lettera si ripete " + volte + " volte")
+} 
+console.log("La lettera si ripete " + volte + " volte")
 
 // ------------------------------------------- 
 
@@ -470,7 +487,177 @@ console.log("Stringhe 6 - Cifrario")
 
 console.log("Stringhe 7 - Scrivi una stringa che contiene solo le vocali di una originale")
 
+let vocali = ""
 s1 = "provavocali"
-vocali = ""
+
+for (let i = 0; i < s1.length; i++) {
+    let carattere = s1[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        vocali += s1[i];
+    }
+}
+console.log("con duplicati: " + vocali);
+
+vocali = "";
+
+for (let i = 0; i < s1.length; i++) {
+    let carattere = s1[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        if (!vocali.includes(s1[i])) vocali += s1[i];
+    }
+}
+
+console.log("senza duplicati: " + vocali);
+
+// ------------------ FUNZIONI ------------------------- 
+
+console.log("------- ESEMPIO FUNZIONI ------")
+
+//tutto ciò che è nella funzione è isolato, generico
+function calcoloSomma(a, b) {
+    console.log(a, b);
+    // let somma = 1+4 = 5
+    const somma = a + b;
+    console.log(somma);
+    return somma; // 5
+} 
+const stampa = calcoloSomma(1, 5);
+console.log(stampa);
+// console.log(somma) --> qui la variabile somma non esiste
+// console.log(a, b) --> qui le variabili a e b non esistono
+
+console.log("------- FUNZIONI Es1: Moltiplicazione di due numeri")
+
+function moltiplicazione(a, b) {
+    console.log(a,b);
+    let mult = a*b;
+    return mult;
+} 
+
+let mult = moltiplicazione(3,2)
+console.log(mult)
+mult = moltiplicazione(-3,-6)
+console.log(mult)
+mult = moltiplicazione(7,3)
+console.log(mult)
+
+console.log("------- FUNZIONI Es2: Anni in giorni")
+
+function anniInGiorni(giorni) {
+    console.log(giorni);
+    let anniGiorni= giorni*365;
+    return anniGiorni;    
+}
+let anniGiorni = anniInGiorni(65)
+console.log(anniInGiorni(65))
+console.log(typeof anniGiorni)
+console.log(typeof anniInGiorni(65)) // essendo la variabile = funzione, senza usare più memoria, richiama nel log direttamente la funzione
+
+anniGiorni = anniInGiorni(0)
+console.log(anniInGiorni(0))
+anniGiorni = anniInGiorni(20)
+console.log(anniInGiorni(20))
+
+console.log("------- FUNZIONI Es2: Anni in giorni con return vuoto")
+function anniInGiorni2(giorni) {
+    console.log(giorni);
+    let anniGiorni= giorni*365;
+    console.log(anniGiorni)
+    return;    
+} 
+anniInGiorni2(65)
 
 
+console.log("------- FUNZIONI Es3: <= 0")
+
+function minoreUgualeAZero(numero) {
+    console.log(numero);
+    let minoreUguale = true;
+    if (numero <= 0) {
+        minoreUguale = true;
+    } else {
+        minoreUguale = false;
+    }
+    return minoreUguale;
+    
+} 
+console.log(minoreUgualeAZero(5))
+console.log(minoreUgualeAZero(0))
+console.log(minoreUgualeAZero(-2))
+
+
+console.log("------- FUNZIONI Es4: la fattoria")
+
+function numeroZampe(polli, mucche, maiali) {
+    let zampe = polli*2 + mucche*4 + maiali*4;
+    return zampe;
+}
+console.log(numeroZampe(2,3,5))
+console.log(numeroZampe(1,2,3))
+console.log(numeroZampe(5,2,8))
+
+
+console.log("------- FUNZIONI Es5: case di fiammiferi")
+
+function numeroFiammiferi(casette) {
+    let fiammiferi = 0
+    if (casette < 0) {
+        return "errore";
+    } else if (casette > 0) {
+        fiammiferi = casette * 6 - (casette - 1);
+    } else {
+        return 0
+    }
+    return fiammiferi;
+}
+console.log(numeroFiammiferi(-3))
+console.log(numeroFiammiferi(0))
+console.log(numeroFiammiferi(1))
+console.log(numeroFiammiferi(4))
+console.log(numeroFiammiferi(87))
+
+
+console.log("------- FUNZIONI Es6: somma i numeri da un unico numero")
+
+function sommaUnicoNumero(volte) {
+    let risultato = 0
+    for (let i= 0; i <= volte; i++ ) {
+        risultato = risultato + i;
+    }
+    return risultato
+}
+console.log(sommaUnicoNumero(4))
+console.log(sommaUnicoNumero(13))
+console.log(sommaUnicoNumero(600))
+
+
+console.log("------- FUNZIONI Es7: trova lo sconto")
+
+function trovaSconto(prezzo,percentuale) {
+    let sconto = (prezzo * percentuale) /100;
+    let prezzoFinale = prezzo - sconto;
+    return prezzoFinale;
+}
+console.log(trovaSconto(1500,50))
+console.log(trovaSconto(89,20))
+console.log(trovaSconto(100,75))
+
+
+console.log("------- FUNZIONI Es8: Posizione nell'alfabeto")
+
+/* function letteraInPosizione(lettera) {
+    for ()
+    
+} */
