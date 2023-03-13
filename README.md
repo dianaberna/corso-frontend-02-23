@@ -6,13 +6,14 @@ Per vedere il Figma delle pagine web [clicca qui](https://www.figma.com/file/DyY
 
 ## Persone
 
-Docente: Diana Bernabei 
+Docente: Diana Bernabei
 
 Elenco partecipanti:
 
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
+- Elisa Boscanigit
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -20,7 +21,7 @@ Elenco partecipanti:
 - Stefano Di Paolo
 - Francesco Canzaniello
 - Agnese Soini
-- Khalil Ziad
+- Khalil Ziad 1444
 - Daryoush Nateghi
 - Sharon Mae Duran
 - Sharon Mae Duran
@@ -38,4 +39,3 @@ Elenco partecipanti:
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
-- Michele Sabatino
