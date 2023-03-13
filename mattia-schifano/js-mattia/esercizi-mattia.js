@@ -361,4 +361,105 @@ function cifrarioDiCesare(stringa, spostamento) {
   stringaCifrata = cifrarioDiCesare(stringa, spostamento);
  console.log(stringaCifrata); 
 
- //7 Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
+ //7 Scrivere programma che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
+
+
+ let vocali = "";
+stringa = "palesemente";
+for (let i = 0; i < stringa.length; i++) {
+    let carattere = stringa[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        vocali += stringa[i];
+    }
+}
+console.log("con duplicati: " + vocali);
+
+vocali = "";
+
+for (let i = 0; i < stringa.length; i++) {
+    let carattere = stringa[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        if (!vocali.includes(stringa[i])) vocali += stringa[i];
+    }
+}
+
+console.log("senza duplicati: " + vocali);
+
+
+// 8) Scrivere programma che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri comuni alle due stringhe.
+
+p1 = "coraggio";
+p2 = "raggio";
+i=0;
+let caratteriComuniStringhe = caratteriComuni(p1, p2);
+
+console.log("senza duplicati")
+
+function caratteriComuni(p1, p2) {
+    let risultato = "";
+    for (let i = 0; i < p1.length; i++) {
+      if (p2.includes(p1[i]) && !risultato.includes(p1[i])) {
+        risultato += p1[i];
+      }
+    }
+    return risultato;
+  }
+  console.log(caratteriComuniStringhe)
+
+  console.log("con i duplicati")
+let caratteriduplicatiStringhe = caratteriduplicati(p1, p2)
+function caratteriduplicati(p1, p2) {
+    let risultato = "";
+    for (let i = 0; i < p1.length; i++) {
+        if (p2.includes(p1[i])) {
+            risultato += p1[i];
+          }
+        }
+        return risultato;
+      }
+      console.log(caratteriduplicatiStringhe);
+
+
+// 9   Scrivere programma che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'array
+let array5= ["ciao", "mondo", "coraggio", "javascript"];
+let lunga= stringalunga(array5);
+
+function stringalunga(array5) {
+    let lunga = "";
+    for (let i = 0; i < array5.length; i++) {
+      if (array5[i].length > lunga.length) {
+        lunga = array5[i];
+      }
+    }
+    return lunga;
+  }
+  console.log(lunga);
+
+//10 Scrivere programma che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
+
+p1 = "coraggio";
+
+
+function restituisca(a) {
+   
+    a = a.toUpperCase()
+    a = a.replaceAll("A", "*")
+    a = a.replaceAll("E", "*")
+    a = a.replaceAll("I", "*")
+    a = a.replaceAll("O", "*")
+    a = a.replaceAll("U", "*")
+console.log(a)
+}
+b=restituisca(p1)
