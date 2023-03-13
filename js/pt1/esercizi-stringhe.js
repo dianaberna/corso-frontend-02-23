@@ -250,3 +250,99 @@ for (let i = 0; i < arrayStringhe.length; i++) {
 }
 
 console.log(stringaLunga);
+
+// 10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti
+
+console.log("esercizio 10 -->");
+
+vocali = ["a", "e", "i", "o", "u"];
+nuovaStringa = ""; //inizializziamo la nuova stringa vuota
+
+//cicliamo su ogni carattere della stringa in input
+for (let i = 0; i < stringa.length; i++) {
+    //verifichiamo se il carattere corrente è una vocale
+    if (
+        stringa[i] == "a" ||
+        stringa[i] == "e" ||
+        stringa[i] == "i" ||
+        stringa[i] == "o" ||
+        stringa[i] == "u"
+    ) {
+        nuovaStringa += "*"; //se è una vocale, aggiungiamo il carattere speciale
+    } else {
+        nuovaStringa += stringa[i]; //altrimenti, aggiungiamo il carattere consonante originale
+    }
+}
+
+console.log(nuovaStringa);
+
+vocali = ["a", "e", "i", "o", "u"];
+nuovaStringa = "";
+
+for (let i = 0; i < stringa.length; i++) {
+    const carattereCorrente = stringa[i];
+    if (vocali.includes(carattereCorrente)) {
+        nuovaStringa += "*";
+    } else {
+        nuovaStringa += carattereCorrente;
+    }
+}
+
+console.log(nuovaStringa);
+
+// 11) Scrivi una funzione che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+console.log("esercizio 11 -->");
+
+stringa = "ciao mondo";
+let stringaInvertita = "";
+indiceNuovaStringa = 0; // indice di inizio della parola corrente
+
+for (let i = 0; i <= stringa.length; i++) {
+    // se troviamo uno spazio o siamo alla fine della stringa, invertiamo la parola corrente
+    if (stringa[i] === " " || i === stringa.length) {
+        let fineNuovaStringa = i - 1; // indice di fine della parola corrente
+
+        // invertiamo la parola corrente
+        for (let j = fineNuovaStringa; j >= indiceNuovaStringa; j--) {
+            stringaInvertita += stringa[j];
+        }
+        stringaInvertita += " "; // aggiungiamo lo spazio dopo la parola invertita
+        indiceNuovaStringa = i + 1; // impostiamo l'indice di inizio della prossima parola
+    }
+}
+
+console.log(stringaInvertita);
+
+// 12) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine crescente secondo il loro codice ASCII
+
+console.log("esercizio 12 -->");
+console.log("con l'uso di funzioni js ");
+
+stringa = "ciao";
+let sortedStr = ""; // stringa ordinata
+let asciiArr = []; // array dei codici ASCII dei caratteri
+
+// riempi l'array asciiArr con i codici ASCII dei caratteri nella stringa
+for (let i = 0; i < stringa.length; i++) {
+    asciiArr[i] = stringa.charCodeAt(i);
+}
+
+// riordina l'array
+// documentazione sort https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+asciiArr.sort(function (a, b) {
+    return a - b;
+});
+
+// converte l'array ordinato di codici ASCII in una nuova stringa
+for (let i = 0; i < asciiArr.length; i++) {
+    sortedStr += String.fromCharCode(asciiArr[i]);
+}
+
+console.log(sortedStr);
+console.log("con l'uso di funzioni js ");
+const arr = stringa.split(""); // converti la stringa in un array di caratteri
+arr.sort(function (a, b) {
+    return a.charCodeAt(0) - b.charCodeAt(0); // ordina i caratteri in base al loro codice ASCII
+});
+const sortedString = arr.join(""); // converte l'array di caratteri in una stringa
+console.log(sortedString);
