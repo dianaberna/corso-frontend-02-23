@@ -1,4 +1,3 @@
-
 // array/vettore -> gruppo di numeri
 // inizieremo a contare da zero e non da uno
 console.log("-- array/vettori -- ");
@@ -83,24 +82,22 @@ for (let indice = 0; indice < vettoreStrano.length; indice++) {
 console.log("sommaVettoreConFor= " + sommaVettoreStrano);
 console.log(typeof sommaVettoreStrano);
 
-
-console.log("prove elementi fuori dall'array")
+console.log("prove elementi fuori dall'array");
 // array va da 0 a 9
-if(array[12]) {
-    console.log("l'elemento esiste")
-}else{
-    console.log("l'elemento non esiste")
+if (vettore[12]) {
+    console.log("l'elemento esiste");
+} else {
+    console.log("l'elemento non esiste");
 }
 
 // array[2] che tipo di dato è ? number
 // number che tipo di dato è ? string
-let tipoDiDato = typeof array[12]
-let tipoDelTipoDiDato = typeof tipoDiDato
-console.log(tipoDiDato, tipoDelTipoDiDato)
+let tipoDiDato = typeof vettore[12];
+let tipoDelTipoDiDato = typeof tipoDiDato;
+console.log(tipoDiDato, tipoDelTipoDiDato);
 
-if(tipoDiDato !== "undefined"){
-    console.log("l'elemento esiste")    
-}else{
-    console.log("l'elemento non esiste")
+if (tipoDiDato !== "undefined") {
+    console.log("l'elemento esiste");
+} else {
+    console.log("l'elemento non esiste");
 }
-
