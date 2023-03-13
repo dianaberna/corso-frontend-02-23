@@ -1,0 +1,18 @@
+body{
+    background-color: beige;
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    body{
+        background-color: blue;
+    }
+    
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1024){
+    body{
+        background-color: green;
+    }
+}
