@@ -685,10 +685,13 @@ function getTotalPrice(lista) {
 
 function generaPasswordCasuale(lungezza) 
 {
+    let password="";
     for(let i=0;i<lungezza;i++){
-        console.log(String.fromCharCode(Math.floor(Math.random()*100)+32));// ho aggiunto 32 perchè quelli prima sono non visibili
-        
+       // ho aggiunto 32 perchè quelli prima sono non visibili
+        password=password+(String.fromCharCode(Math.floor(Math.random()*100)+32))
+        console.log(password);
     }
+    return password;
 }
 generaPasswordCasuale(8);
 
