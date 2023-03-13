@@ -77,6 +77,14 @@ if (indice !== -1) {
     console.log("la sottostringa NON è contenuta nella stringa");
 }
 
+// versione con includes
+
+if (stringa.includes(sottostringa)) {
+    console.log("la sottostringa è contenuta nella stringa");
+} else {
+    console.log("la sottostringa NON è contenuta nella stringa");
+}
+
 // 4) Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
 
 console.log("esercizio 4 -->");
@@ -89,12 +97,23 @@ for (let i = stringa.length - 1; i >= 0; i--) {
 console.log(stringa, nuovaStringa);
 
 // versione con funzioni js
+
+console.log("--");
+console.log(stringa);
+console.log(...stringa);
+console.log([...stringa]);
+console.log(Array(...stringa));
+console.log([...stringa].reverse());
+console.log(Array(...stringa).reverse());
 nuovaStringa = [...stringa].reverse().join("");
 console.log(stringa, nuovaStringa);
-
+console.log("--");
 // altra versione
+
+console.log(String(Array(...stringa).reverse()));
 nuovaStringa = String(Array(...stringa).reverse()).replaceAll(",", "");
 console.log(stringa, nuovaStringa);
+
 // 5) Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è la concatenazione delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
 
 console.log("esercizio 5 -->");
@@ -159,3 +178,4 @@ for (let i = 0; i < stringa.length; i++) {
 }
 
 console.log("senza duplicati: " + vocali);
+

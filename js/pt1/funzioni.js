@@ -17,12 +17,12 @@ nomeFunzione(parametro1, parametro2, etc)
 
 // funzione che calcola la somma di due numeri
 
-function calcoloSomma(a, b) {
+function calcoloSomma (a, b) {
     console.log(a, b);
-    // let somma = 1+4 = 5
+    // let somma = 1+5 = 6
     const somma = a + b;
     console.log(somma);
-    return somma; // 5
+    return somma; // 6
 }
 
 // console.log(somma) --> qui la variabile somma non esiste
@@ -45,16 +45,18 @@ function calcoloDifferenza(a, b) {
     console.log("ciao");
 }
 
-calcoloDifferenza(2, 6);
+let stampa2 = calcoloDifferenza(2, 6);
+console.log("stampa2 -> "+stampa2)
 
 function ciao() {
     console.log("ciao");
+    return;
 }
 
 function sommaElementiArray(array) {
     let somma = 0;
     for (let i = 0; i < array.length; i++) {
-        somma = somma + array[i];
+        somma = calcoloSomma(somma,array[i]);
     }
     ciao();
     return somma;
