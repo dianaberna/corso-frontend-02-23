@@ -688,12 +688,11 @@ function generaPasswordCasuale(lungezza)
     let password="";
     for(let i=0;i<lungezza;i++){
        // ho aggiunto 32 perchè quelli prima sono non visibili
-        password=password+(String.fromCharCode(Math.floor(Math.random()*100)+32))
-        console.log(password);
+        password=password+(String.fromCharCode(Math.floor(Math.random()*100)+32));
     }
     return password;
 }
-generaPasswordCasuale(8);
+console.log(generaPasswordCasuale(8));
 
 
 
