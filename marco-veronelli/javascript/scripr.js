@@ -702,18 +702,6 @@ console.log("--------------------------")
          
  }console.log(p3)
 
- for (let i = 0; i < p.length; i++) {
-    p4 = p[i]
-
-    for (let j = 0; j < p1.length; j++) {
-
-        if (p4 != p1[j]) {
-
-            p5 += p4
-
-        }
-    }
-
-} console.log(p5)
+ 
 
 
