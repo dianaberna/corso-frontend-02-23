@@ -23,7 +23,6 @@ Elenco partecipanti:
 - Khalil Ziad
 - Daryoush Nateghi
 - Sharon Mae Duran
-- Sharon Mae Duran
 - Pietro Maria Pisapia
 - Russo Angelo Riccardo
 - Federico Batà
