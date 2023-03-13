@@ -501,7 +501,169 @@ function sommaDaUnUnicoNumero(number) {
     return somma;
 }
 
+// ES.Trova lo sconto
 
+function trovaSconto(prezzo,sconto){
+    let prezzoPost=0;
+    prezzoPost=prezzo-((sconto/100)*prezzo);
+    return Number.parseFloat(prezzoPost).toFixed(2);
+}
+
+// ES.Posizione nell'alfabeto
+
+function letteraInPosizione(n) {
+    if(n>26||n<1||n%1!=0){
+        return "non valido";
+    }
+    return String.fromCharCode(n+96);
+}
+
+//ES.Calcolatrice di base
+
+function calcolatrice(n1,op,n2) {
+    switch (op) {
+        case "+":
+            return n1+n2;
+            break;
+        case "*":
+            return n1*n2;
+            break;
+        case "-":
+            return n1-n2;
+            break;
+        case "/":
+            if(n2==0)
+            return "impossibile dividere per 0"
+            else return n1/n2; break;
+        default:
+            return "please use an adequate operation simbol between \"+,-,*,/\"";
+            break;
+    }
+}
+
+//ES.Fare la somma di tutte gli elementi di un array
+
+function sommaElementiArray(array) {
+    somma=0;
+    for(let i=0;i<array.length;i++){
+        somma=somma+array[i];
+    }
+    return somma;
+}
+
+//ES.Quanto volte è vero
+
+function quantiTrue(arrayBoll) {
+    somma=0;
+    for(let i=0;i<arrayBoll.length;i++){
+        somma=somma-arrayBoll[i];
+    }
+    return somma*-1;
+}
+
+//ES.Piegare un pezzo di carta
+
+function spessore(n) {
+    somma=0.0005;
+    for(let i=0;i<n;i++){
+        somma=somma*2;
+    }
+    return somma+"m";
+}
+
+//ES.Validare un'e-mail
+
+function validateEmail(mail) {
+    let tempArr=mail.slice(mail.indexOf("@"));
+    if(mail.indexOf("@")==-1||
+    mail.indexOf("@")==0||
+    mail.indexOf(".")==0||
+    mail.indexOf(".")==-1||
+    tempArr.indexOf(".")==-1
+    ){
+        return false;
+    } else return true}
+
+//ES.Sasso,carta,forbici
+
+function rbs(mano1,mano2){
+    if(mano1==mano2){
+        return "draw";
+    } else 
+    if(mano1=="Rock"){
+        switch (mano2) {
+            case "Paper":
+                return "p2 won";
+                break;
+            case "Scissores":
+                return "p1 won";
+            default:
+                return "mano non valida"
+                break;
+        }
+    } else
+    if(mano1=="paper"){
+        switch (mano2) {
+            case "Scissores":
+                return "p2 won";
+                break;
+            case "Rock":
+                return "p1 won";
+            default:
+                return "mano non valida"
+                break;
+        } 
+    } else 
+    if(mano1=="Scissores"){
+        switch (mano2) {
+            case "Rock":
+                return "p2 won";
+                break;
+            case "Paper":
+                return "p1 won";
+            default:
+                return "mano non valida"
+                break;
+        }
+} else return "mano non valida"
+}
+
+//ES.Rimuovere i duplicati fa un array
+
+function removeDups(array){
+    let unduped=[];
+    for(let i=0;i<array.length;i++){
+        if(unduped.indexOf(array[i])==-1){
+            unduped.push(array[i]);
+        }
+    }
+    return unduped;
+}
+
+//ES.Quanti giorni tra due date
+
+function getDays(date1,date2)
+{
+  time=date2-date1;
+  time=time/1000/60/60/24;
+  return time+" days";
+}
+
+//ES.Ottieni la somma del budget della persona
+
+function getBudgets(persone) {
+    let budget=0;
+    for(let i=0;i<persone.length;i++){
+        budget=budget+persone[i].budget;
+    } return budget;
+}
+
+function getTotalPrice(lista) {
+    let somma=0;
+    for(let i=0;i<lista.length;i++){
+        somma=somma+(lista[i].quantity*lista[i].price);
+    }return somma;
+}
 
 
 
