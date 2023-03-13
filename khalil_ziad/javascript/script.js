@@ -586,6 +586,8 @@ function validateEmail(mail) {
 
 //ES.Sasso,carta,forbici
 
+/* a)
+
 function rbs(mano1,mano2){
     if(mano1==mano2){
         return "draw";
@@ -626,6 +628,15 @@ function rbs(mano1,mano2){
                 break;
         }
 } else return "mano non valida"
+}*/
+
+// b)
+const Rock={vince: "Scissores"}    
+const Scissores= {vince: "Paper"}
+const Paper={vince: "Rock"};
+
+function rbs(mano1,mano2) {
+    mano1=
 }
 
 //ES.Rimuovere i duplicati fa un array
