@@ -175,3 +175,84 @@ header > p + svg + svg {
 
 
 
+
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 7.5rem 6.25rem;
+}
+
+#testimonials h2 {
+    color: #1d1b1f;
+    margin: 0rem;
+    font-weight: 700;
+    font-family: 'Lexend', sans-serif;
+    font-size: 3rem;
+
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.cards-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.cards-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0.06rem solid #000000;
+    border-radius: 0.5rem;
+}
+
+.cards-container .text {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    padding: 1.5rem 1rem;
+}
+
+.cards-container p {
+    color:#302e32;
+    margin-bottom: 0em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.02rem; 
+    width: 18.5rem;
+}
+
+.cards-container .names {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.names :first-child {
+    color: #1d1b1f;
+    font-weight: 800;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.02rem;
+}
+.names :last-child {
+    color: #706D73;
+    font-weight: 500;
+}
+
+
+
+
+
