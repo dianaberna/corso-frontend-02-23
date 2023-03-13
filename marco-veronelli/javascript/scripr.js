@@ -687,40 +687,6 @@ console.log("--------------------------")
 
  for (let i = 0; i < p.length; i++) {
    
-
-           p2+=c
-    
-       } b++
-  
-       
-    console.log(p2);
-
-    console.log("--------------------------");
-    console.log("esercizio 8 stringhe");
-
-    p="cat"
-    p1="cegoriacat"
-    c=false
-    p3=""
-    for (let i = 0; i < p1.length; i++) {
-    
-       if(p1[i]==p[0]){
-        p3+=p[0]
-    
-        for (let b = 1; b < p.length; b++) {
-    
-             if(p1[i+b]==p[b]){
-
-             p3+=p[b]
-            }
-         }
-      
-        }
-    }
-     console.log(p3)
-        
-    
-
     p2=p[i]
 
 
@@ -734,9 +700,4 @@ console.log("--------------------------")
        
     }
          
- console.log(p3)
-
- 
-
-
-
+ }console.log(p3)
