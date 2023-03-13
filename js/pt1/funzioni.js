@@ -20,8 +20,7 @@ nomeFunzione(parametro1, parametro2, etc)
 function calcoloSomma (a, b) {
     console.log(a, b);
     // let somma = 1+5 = 6
-    const somma = a + b;
-    console.log(somma);
+    let somma = a + b;
     return somma; // 6
 }
 
@@ -64,3 +63,4 @@ function sommaElementiArray(array) {
 
 console.log(sommaElementiArray([1, 2, 3]));
 console.log(sommaElementiArray([1, 2, 3, 5, 6, 7, 8]));
+
