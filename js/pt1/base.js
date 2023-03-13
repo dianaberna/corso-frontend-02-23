@@ -297,3 +297,48 @@ for (cont = 0; cont <= n; cont = cont + 1) {
     console.log("sommaNuova = " + sommaNuova, "cont = " + cont);
 }
 console.log(sommaNuova);
+
+// notazione ad oggetti
+
+let esempio = {
+    browsers: {
+        firefox: {
+            name: "Firefox",
+            pref_url: "about:config",
+            releases: {
+                1: {
+                    release_date: "2004-11-09",
+                    status: "retired",
+                    engine: "Gecko",
+                    engine_version: "1.7",
+                },
+            },
+        },
+    },
+};
+
+
+console.log(esempio)
+console.log(esempio["browsers"])
+console.log(esempio.browsers)
+console.log(esempio["browsers"]["firefox"]["name"])
+console.log(esempio.browsers.firefox.name)
+
+let esempio2 = {
+    nome: "Pippo",
+    animali: ["cane", "gatto", 2, 4]
+}
+
+console.log(esempio2.nome)
+console.log(esempio2.animali[0])
+console.log("--" + esempio2[0])
+console.log(typeof esempio2)
+console.log(typeof esempio2.nome)
+console.log(typeof esempio2.animali)
+
+esempio = {0: "nome", 1: "cognome", 2: "età"}
+console.log(esempio[0])
+
+
+// programmazione ad oggetti 
+// oggetto -> variabile che può avere sia altre variabili (proprietà) ma anche delle funzioni (metodi)
