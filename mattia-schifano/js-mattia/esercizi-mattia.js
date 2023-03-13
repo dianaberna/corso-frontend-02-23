@@ -242,6 +242,9 @@ console.log("array2="+palindromo)
 
 
 //1 nuovo Scrivere un programma che conta quante lettere “e” ci sono nella parola precipitevolissimevolmente 
+
+console.log("esercizio 1")
+
 let parola= "precipitevolissimevolmente";
 let conteggio = 0;
 i= 0;
@@ -254,6 +257,8 @@ for (let i = 0; i < parola.length; i++) {
 console.log("Il numero di lettere= " + conteggio ,"e")
 
 //2 nuovo Scrivere un programma che verifica  se due stringhe sono palindrome
+
+console.log("esercizio 2")
 
 let par1 = "anna";
 let par2 = "radar";
@@ -276,6 +281,8 @@ else {
 
 
 //3  Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa 
+
+console.log("esercizio 3")
 
 let p1 = "coraggio";
 let p2 = "raggio";
@@ -306,6 +313,8 @@ if  ( conparole )  {
 
 // 4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
 
+console.log("esercizio 4")
+
 p1 = "coraggio";
 let inverso= [];
 let count = 0;
@@ -318,6 +327,9 @@ console.log(inverso)
 
 
 // 5 Scrivere un programma che prenda due stringhe come input e restituisca una nuova stringa che è la concatenazione delle due stringhe, separate da uno spazio. 
+
+console.log("esercizio 5")
+
 p1 = "coraggio";
 p2 = "raggio";
 let p4=[];
@@ -335,6 +347,9 @@ console.log(p4)
 
 // 6 crivere un programma che sviluppi il cifrario di Cesare 🤯 🤯
 // match https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+
+console.log("esercizio 6")
+
 let stringaCifrata = "";
 let stringa = "mare";
 let spostamento = 3;
@@ -363,6 +378,7 @@ function cifrarioDiCesare(stringa, spostamento) {
 
  //7 Scrivere programma che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
 
+ console.log("esercizio 7")
 
  let vocali = "";
 stringa = "palesemente";
@@ -400,6 +416,8 @@ console.log("senza duplicati: " + vocali);
 
 // 8) Scrivere programma che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri comuni alle due stringhe.
 
+console.log("esercizio 8")
+
 p1 = "coraggio";
 p2 = "raggio";
 i=0;
@@ -433,6 +451,9 @@ function caratteriduplicati(p1, p2) {
 
 
 // 9   Scrivere programma che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'array
+
+console.log("esercizio 9")
+
 let array5= ["ciao", "mondo", "coraggio", "javascript"];
 let lunga= stringalunga(array5);
 
@@ -448,6 +469,8 @@ function stringalunga(array5) {
   console.log(lunga);
 
 //10 Scrivere programma che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti sono convertite in lettere maiuscole
+
+console.log("esercizio 10")
 
 p1 = "coraggio";
 
@@ -466,11 +489,15 @@ b=restituisca(p1)
 
 //11 Scrivi programma che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
 
+console.log("esercizio 11")
 
 //12 Scrivere programma che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine crescente secondo il loro codice ASCII
 
+console.log("esercizio 12")
 
 //1.2 Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
+
+console.log("esercizio 1.2")
 
 let numeri=3;
 let numeri2=2;
@@ -482,6 +509,9 @@ function moltiplicaNumeri(numeri, numeri2) {
   }
  
 //2.2 Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
+
+console.log("esercizio 2.2")
+
 let anno=365.25;
 let anni= 18;
 let giorni= calcoloanni(anni, anno)
@@ -494,6 +524,9 @@ function calcoloanni(anni, anno) {
 }
 
 //3.2 Crea una funzione che accetta un numero come unico argomento e restituisce true se è minore o uguale a zero, altrimenti restituisce false.
+
+console.log("esercizio 3.2")
+
 let minore1=5;
 let minore2=0;
 let minore3=-2;
@@ -514,7 +547,7 @@ console.log(veroofalso3)
 
 //4.2 In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
  
-
+console.log("esercizio 4.2")
 
 
 function animali (polli, mucche, maiali) {
@@ -527,6 +560,8 @@ function animali (polli, mucche, maiali) {
 console.log("il totale delle zampe=" + animali (2,3,5))//36
 
 //5.2 Crea una funzione che prenda un numero (step) come argomento e restituisca il numero di fiammiferi in quello step. Vedere i passaggi 1, 2 e 3 nell'immagine.
+
+console.log("esercizio 5.2")
 
 let somma3=0;
  function numeroDiFiammiferi(step) {
@@ -549,6 +584,7 @@ let somma3=0;
 
 //6.2 Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
 
+console.log("esercizio 6.2")
 
 function fino(numero) {
     let somma2 = 0;
@@ -557,6 +593,69 @@ function fino(numero) {
     }
     return somma2;
   }
-  console.log(fino(4)) //10
-  console.log(fino(13)) //91
-  console.log(fino(600)) //180300
+console.log(fino(4)) //10
+console.log(fino(13)) //91
+console.log(fino(600)) //180300
+
+//7 Trova lo sconto
+
+console.log("esercizio 7.2")
+
+function applicasconto(prezzo, percentualeSconto) {
+    const sconto = prezzo * percentualeSconto / 100;
+    const prezzoFinale = prezzo - sconto;
+    return parseFloat(prezzoFinale.toFixed(2));
+  }
+
+console.log(applicasconto(1500, 50)); //  750
+console.log(applicasconto(89, 20)); //  71.20
+console.log(applicasconto(100, 75)); //  25.00
+
+//8 Posizione nell’alfabeto
+
+console.log("esercizio 8.2")
+
+function letteraInPosizione(numero) {
+    if (Number.isInteger(numero) && numero >= 1 && numero <= 26) {
+      return String.fromCharCode(numero + 96); 
+    } else {
+      return "invalid";
+    }
+  }
+console.log(letteraInPosizione(1)); //  "a"
+console.log(letteraInPosizione(12)); //  "l"
+console.log(letteraInPosizione(26.0)); //  "z"
+console.log(letteraInPosizione(0)); //  "invalid"
+console.log(letteraInPosizione(4.5)); //  "invalid"
+console.log(letteraInPosizione(-1));  //  "invalid"
+
+
+//9 Calcolatrice di base
+
+console.log("esercizio 9.2")
+
+function calcolatrice(num1, operatore, num2) {
+    switch (operatore) {
+      case "+":
+        return num1 + num2;
+      case "-":
+        return num1 - num2;
+      case "*":
+        return num1 * num2;
+      case "/":
+        if (num2 === 0) {
+          return "Impossibile dividere per 0!";
+        } else {
+          return num1 / num2;
+        }
+      default:
+        return "Operatore non valido";
+    }
+  }
+  console.log(calcolatrice=2+2) //4
+  console.log(calcolatrice=2*2) //4
+  console.log(calcolatrice=4/2) //2
+  console.log(calcolatrice=0/0) // nan
+
+
+//10.2  Fare la somma di tutti gli elementi di un array
