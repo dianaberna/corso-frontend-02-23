@@ -179,3 +179,29 @@ for (let i = 0; i < stringa.length; i++) {
 
 console.log("senza duplicati: " + vocali);
 
+
+vocali = "";
+trovato = false;
+
+for (let i = 0; i < stringa.length; i++) {
+    let carattere = stringa[i];
+    if (
+        carattere === "a" ||
+        carattere === "e" ||
+        carattere === "i" ||
+        carattere === "o" ||
+        carattere === "u"
+    ) {
+        trovato = false
+        for(let j = 0; j<vocali.length; j++){
+            if(vocali[j] == stringa[i]){
+                trovato = true
+            }
+        }
+        if(!trovato){
+            vocali += stringa[i]
+        }
+    }
+}
+
+console.log("senza duplicati e senza funzioni: " + vocali);
