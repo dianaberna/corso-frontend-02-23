@@ -463,3 +463,51 @@ function restituisca(a) {
 console.log(a)
 }
 b=restituisca(p1)
+
+//11 Scrivi programma che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+
+
+//12 Scrivere programma che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine crescente secondo il loro codice ASCII
+
+
+//1.2 Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
+
+let numeri=3;
+let numeri2=2;
+let somma1= moltiplicaNumeri(numeri,numeri2)
+function moltiplicaNumeri(numeri, numeri2) {
+    const somma1= numeri*numeri2;
+    console.log(somma1)
+    return somma1;
+  }
+ 
+//2.2 Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
+let anno=365.25;
+let anni= 18;
+let giorni= calcoloanni(anni, anno)
+
+function calcoloanni(anni, anno) {
+    const giorni=anno*anni;
+    console.log(giorni)
+    return giorni;
+    
+}
+
+//3.2 Crea una funzione che accetta un numero come unico argomento e restituisce true se è minore o uguale a zero, altrimenti restituisce false.
+let minore1=5;
+let minore2=0;
+let minore3=-2;
+let veroofalso1= zero(minore1,);
+let veroofalso2= zero(minore2);
+let veroofalso3= zero(minore3);
+function zero (minore){
+    
+    if (minore <= 0){
+     return true;
+    } else{
+        return false;
+    }
+} 
+console.log(veroofalso1)
+console.log(veroofalso2)
+console.log(veroofalso3)
