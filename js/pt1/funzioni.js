@@ -17,6 +17,7 @@ nomeFunzione(parametro1, parametro2, etc)
 
 // funzione che calcola la somma di due numeri
 
+console.log("calcolo somma")
 function calcoloSomma (a, b) {
     console.log(a, b);
     // let somma = 1+5 = 6
