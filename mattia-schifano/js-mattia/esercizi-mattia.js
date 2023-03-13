@@ -511,3 +511,52 @@ function zero (minore){
 console.log(veroofalso1)
 console.log(veroofalso2)
 console.log(veroofalso3)
+
+//4.2 In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
+ 
+
+
+
+function animali (polli, mucche, maiali) {
+    if (polli >=0 && mucche>=0 && maiali>=0) {
+        zampe = polli *2 + mucche *4 + maiali *4;
+    } 
+    return zampe;
+  } 
+
+console.log("il totale delle zampe=" + animali (2,3,5))//36
+
+//5.2 Crea una funzione che prenda un numero (step) come argomento e restituisca il numero di fiammiferi in quello step. Vedere i passaggi 1, 2 e 3 nell'immagine.
+
+let somma3=0;
+ function numeroDiFiammiferi(step) {
+ if (step === 0) {
+    
+    return somma3;
+   }
+   if(step < 0){
+        console.log('inserire numero intero positivo');
+    } 
+    if (step > 0) {
+        somma3 = (step * 6) - (step - 1);
+        return somma3;
+    }
+
+ } 
+ console.log('i fiammiferi sono: ' + numeroDiFiammiferi(1)); //6
+ console.log('i fiammiferi sono: ' + numeroDiFiammiferi(4));//21
+ console.log('i fiammiferi sono: ' + numeroDiFiammiferi(87));//436
+
+//6.2 Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
+
+
+function fino(numero) {
+    let somma2 = 0;
+    for (let i = 1; i <= numero; i++) {
+      somma2 += i;
+    }
+    return somma2;
+  }
+  console.log(fino(4)) //10
+  console.log(fino(13)) //91
+  console.log(fino(600)) //180300
