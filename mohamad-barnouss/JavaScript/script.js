@@ -162,6 +162,7 @@ console.log(v);
 
 SECONDA VERSIONE SOLUZIONE ESERCIZIO 13
 */
+/*
 let array1 = [1, 2, 2, 3, 4];
 let array2 = [4, 2, 2, 4];
 let v = [];
@@ -171,7 +172,7 @@ for (j = 0; j < array1.length; j++) {
   } else v.push(array1[j]);
 }
 console.log(v);
-
+*/
 //14) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di
 /*
 let versione1 = [];
@@ -293,14 +294,282 @@ console.log(cerca[0][0]);
 
 //4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
 /*
-let parola = [prompt("inserisci una parola")];
+let parola = prompt("inserisci una parola");
+let inversa = ""; //se lascio vuota e non dichiaro che sarà una stringa il l'ultimo risultato mi dara undefined
 
+for (i = parola.length - 1; i >= 0; i--) {
+  inversa += parola[i]; //stampa tutto ma poi undefined alla fine
+}
+console.log("HAI INSERITO " + parola + " ALL' INCONTRARIO RISULTA " + inversa);
+*/
+/*
 console.log(parola);
-console.log(parola.length);
+console.log(parola[0].length);
 let inverso = [];
-for (i = parola[0].length; i >= 0; i--) {
-  inverso.push(parola[i]);
+let prova;
+for (i = parola[0].length - 1; i >= 0; i--) {
+  // console.log(i);
+  //console.log(parola[0][i]);
+  inverso.push(parola[0][i]);
 }
 
 console.log(inverso);
 */
+
+//MANCA ESERCIZIO 5
+
+//Cifratio di cesare
+/*
+let v = prompt("Inserici parola");
+//let n = prompt("inserisci numero di cifratura");
+let nuova = [];
+//console.log("Valore in ASCI " + v.charCodeAt());
+// charCodeAt() restituisce il valore Numerico in Asci
+//String.fromCharCode() restituisce dal numero tabella ASCII alcarattere
+for (let i = 0; i < v.length; i++) {
+  nuova.push(v[i].charCodeAt());
+  //nuova += v[i].charCodeAt();
+}
+
+console.log(nuova);
+let cifrata = "";
+for (let i = 0; i < nuova.length; i++) {
+  cifrata += String.fromCharCode(nuova[i] + 3);
+}
+
+console.log(cifrata);
+*/
+//FUNZIONI!!
+
+//7) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa
+//che contiene solo le vocali presenti nella stringa originale
+/*
+let v = prompt("Inserisci parola");
+let soloVocali = ""; //se cia vessi messo un array ogni vocale trovata sarebbe stata un elemento dell'array
+for (let i = 0; i < v.length; i++) {
+  if (v[i] == "a" || v[i] == "e" || v[i] == "i" || v[i] == "o" || v[i] == "o") {
+    soloVocali += v[i];
+  }
+}
+console.log(soloVocali);
+//console.log(soloVocali.join());
+*/
+
+//esercizio 8
+/* 8) Scrivere una funzione che accetti due stringhe come input 
+e restituisca una nuova stringa che contiene solo i caratteri 
+comuni alle due stringhe. (versione 1: senza escludere i duplicati,
+versione 2: escludendo i duplicati) */
+
+// 01 FUNZIONI Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
+/*
+function moltiplicazione(a, b) {
+  return a * b;
+}
+
+let a = prompt("inserisci primo numero");
+let b = prompt("inserisci secondo numero");
+console.log(`il risultato di ${a}*${b}= ` + moltiplicazione(a, b));
+*/
+
+// 02 FUNZIONI
+//Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
+/*
+function giorni(anni) {
+  return anni * 365;
+}
+
+var x = prompt("quanti hanni hai");
+var y = Math.floor(x / 4); //calsolo dei bisestili
+console.log(`la tua età in giorni è ${giorni(x) + y}`);
+*/
+
+//Crea una funzione che accetta un numero come unico argomento e restituisce
+//true se è minore o uguale a zero, altrimenti restituisce false.
+
+//function minoreMaggioreZero(x) {
+/*if (typeof x != "number") {
+   var y;
+    return (x = "Errore! inserisci un numero");
+  }
+  */
+
+/*
+  if (x <= 0) {
+    return true;
+  }
+
+  if (x > 0) {
+    return false;
+  }
+}
+
+var numero = prompt("Inserisci un Numero");
+console.log(minoreMaggioreZero(numero));
+*/
+
+//TROVARE LO SCONTO
+
+//Crea una funzione che accetta due numeri e un
+//operatore matematico + - / * ed eseguirà un calcolo con i numeri indicati.
+/*
+function calcolatrice(numero1, numero2, operazione) {
+  let risultato;
+  switch (operazione) {
+    case "+":
+      console.log(
+        `${numero1} + ${numero2} risulta essere uguale a ${numero1 + numero2}`
+      );
+      break;
+    case "-":
+      console.log(
+        `${numero1} - ${numero2} risulta essere uguale a ${numero1 - numero2}`
+      );
+      break;
+    case "*":
+      console.log(
+        `${numero1} * ${numero2} risulta essere uguale a ${numero1 * numero2}`
+      );
+      break;
+    case "/":
+      console.log(
+        `${numero1} / ${numero2} risulta essere uguale a ${numero1 / numero2}`
+      );
+      break;
+  }
+}
+
+let val1 = prompt("Inserisci primo numero");
+let val2 = prompt("Inserisci secondo numero");
+let op = prompt("Inserisci tipo di operazione");
+
+console.log(calcolatrice(val1, val2, op));
+*/
+
+//Crea una funzione che restituisce la somma di tutti i valori di un array.
+/*
+function vettoriale(v) {
+  let somma = 0;
+  for (i = 0; i < v.length; i++) {
+    somma += v[i];
+  }
+  return console.log(`la somma del vettore risulta ${somma}`);
+}
+
+v = [1, 2, 4];
+
+console.log(vettoriale(v));
+*/
+
+//VALIDATORE DI EMAIL
+/*
+function validatore(email) {
+  // contiene "@" e "."
+  if (!(email.includes("@") && email.includes("."))) {
+    return console.log("deve includere @ e .");
+  }
+
+  //contiene "@" e lettera priama sia un carattere
+  for (let i = 0; i < email.length; i++) {
+    if (email[i] == "@") {
+      if (typeof email[i - 1] != "string")
+        return console.log("Manca un carattere prima di @");
+    }
+  }
+
+  //Se dopo "." ci sono le "@"
+  let corretta = true;
+  if (email.lastIndexOf("@") > email.lastIndexOf(".")) {
+    corretta = false;
+  }
+
+  if (corretta === false) {
+    return console.log("EMAIL NON VALIDA manca . dopo la @");
+  }
+
+  if (corretta === true) {
+    return console.log("VERIFICATA");
+  }
+}
+
+let email = prompt("Inserisci email");
+
+console.log(validatore(email));
+*/
+
+//SASSO CARTA FORBICI
+
+function vincitore(primoGiocatore, secondoGiocatore) {
+  if (
+    primoGiocatore != "sasso" &&
+    primoGiocatore != "carta" &&
+    primoGiocatore != "forbice"
+  ) {
+    return "inserisci valori validi per il primo giocatore";
+  }
+
+  if (
+    secondoGiocatore != "sasso" &&
+    secondoGiocatore != "carta" &&
+    secondoGiocatore != "forbice"
+  ) {
+    return console.log("inserisci valori validi per il secondo giocatore");
+  }
+
+  switch (primoGiocatore) {
+    case "sasso": //player uno mette sasso
+      switch (secondoGiocatore) {
+        case "sasso":
+          return console.log("pareggio");
+
+        case "forbice":
+          return console.log(
+            "Ha vinto il PlayerUno ${primoGiocatore} batte ${secondoGiocatore}"
+          );
+
+        case "carta":
+          return console.log(
+            `Ha vinto il PlayerDue ${secondoGiocatore} batte ${primoGiocatore}`
+          );
+      }
+    // sha scelto CARTA
+    case "carta":
+      switch (secondoGiocatore) {
+        case "sasso":
+          return console.log(
+            `Ha vinto il PlayerUno ${primoGiocatore} batte ${secondoGiocatore}`
+          );
+
+        case "forbice":
+          return console.log(
+            `Ha vinto il PlayerDue ${secondoGiocatore} batte ${primoGiocatore}`
+          );
+
+        case "carta":
+          return console.log("Pareggio");
+      }
+
+    //SCELTA FORBICCE
+    case "forbice":
+      switch (secondoGiocatore) {
+        case "sasso":
+          return console.log(
+            `Ha vinto il PlayerDue ${secondoGiocatore} batte ${primoGiocatore}`
+          );
+
+        case "forbice":
+          return console.log(`Pareggio`);
+
+        case "carta":
+          return console.log(
+            `Ha vinto il PlayerUno ${primoGiocatore} batte ${secondoGiocatore}`
+          );
+      }
+  }
+}
+
+let x = prompt("PlayerUno");
+let y = prompt("PlayerDue");
+
+console.log(x, y);
+console.log(vincitore(x, y));
