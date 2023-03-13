@@ -630,13 +630,17 @@ function rbs(mano1,mano2){
 } else return "mano non valida"
 }*/
 
-// b)
+// b) carta forbice sasso <=================================
 const Rock={vince: "Scissores"}    
 const Scissores= {vince: "Paper"}
 const Paper={vince: "Rock"};
 
 function rbs(mano1,mano2) {
-    mano1=
+    if(mano1==mano2){
+        return "tie";
+    } else if(mano1.vince==mano2){
+        return "p1 win";
+    } else return "p2 win";
 }
 
 //ES.Rimuovere i duplicati fa un array
