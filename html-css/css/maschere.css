@@ -11,6 +11,7 @@ img{
     justify-content: center;
 }
 
+
 #maschera2{
     width: 10rem;
     height: 10rem;
@@ -20,9 +21,14 @@ img{
 }
 
 #maschera3 img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%; 
+    width: 50vw;
+    height: auto;
     object-fit: cover;
+}
+
+@media screen and (min-width: 1000px) {
+    #maschera3 img{
+        width: 35rem;
+    }
 }
 
