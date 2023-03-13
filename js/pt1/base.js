@@ -262,7 +262,7 @@ do {
 
 */
 
-// 5 - Stampare la somma dei primi 4 numeri interi (slide problem solving)
+// Stampare la somma dei primi 4 numeri interi (slide problem solving)
 let cont = 0; // step 1
 let sommaNuova = 0;
 let n = 4; // i primi 4 numeri
@@ -298,7 +298,18 @@ for (cont = 0; cont <= n; cont = cont + 1) {
 }
 console.log(sommaNuova);
 
-// notazione ad oggetti
+// Spread operator
+let array = [1, 2, 3]
+console.log("metodo con lo spread operator");
+risultato = [...array, ...array];
+/* risultato = [array, array]   --> in questo caso otteniamo un array di due elementi, ogni elemento è un array*/
+console.log(risultato);
+
+console.log("spread operator");
+console.log(array);
+console.log(...array);
+
+// Notazione ad oggetti
 
 let esempio = {
     browsers: {
@@ -342,3 +353,6 @@ console.log(esempio[0])
 
 // programmazione ad oggetti 
 // oggetto -> variabile che può avere sia altre variabili (proprietà) ma anche delle funzioni (metodi)
+
+
+// 
