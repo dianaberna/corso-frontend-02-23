@@ -142,6 +142,22 @@ console.log(stringa1, stringa2, nuovaStringa);
 // 6) cifrario di cesare
 
 console.log("esercizio 6 -->");
+let testo = "ciao";
+let testoCifrato = "";
+let chiave = 8;
+// trasforma la chiave in un numero compreso tra 0 e 25
+chiave = chiave % 26;
+
+for (let i = 0; i < testo.length; i++) {
+    let charCode = testo.charCodeAt(i);
+    if (charCode >= 65 && charCode <= 90) {
+        charCode = ((charCode - 65 + chiave) % 26) + 65;
+    } else if (charCode >= 97 && charCode <= 122) {
+        charCode = ((charCode - 97 + chiave) % 26) + 97;
+    }
+    testoCifrato += String.fromCharCode(charCode);
+}
+console.log(testoCifrato);
 
 // 7) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
 
