@@ -49,7 +49,7 @@ console.log(sommaNumeri(600));
 // 7) Crea una funzione che accetta due argomenti: il prezzo originale e la percentuale di sconto come numeri interi e restituisce il prezzo finale dopo lo sconto.
 function trovaSconto(prezzoOriginale, percentualeSconto) {
     if (prezzoOriginale <= 0 || percentualeSconto < 0 || percentualeSconto > 100) {
-      return null; // restituisce null se uno dei parametri non è valido
+      return null; 
     }
     const prezzoFinale = prezzoOriginale * (100 - percentualeSconto) / 100;
     return prezzoFinale;
