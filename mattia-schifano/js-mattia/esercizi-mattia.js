@@ -700,7 +700,8 @@ console.log("esercizio 12.2")
 
 function spessore(n) {
     const spessoreIniziale = 0.5; 
-    const spessoreFinale = spessoreIniziale * Math.pow(2, n); 
+    // const spessoreFinale = spessoreIniziale * Math.pow(2, n);
+    const spessoreFinale = spessoreIniziale * (2**n); 
     const spessoreInMetri = spessoreFinale / 1000; 
     return spessoreInMetri.toFixed(3) + "m"; 
 }
@@ -710,3 +711,119 @@ console.log(spessore(21))// 1048.576m
 
 //13.2 Validare un’e-mail
 
+console.log("esercizio 13.2")
+
+function validateEmail(email) {
+    const i1 = email.indexOf("@");
+    if (i1 <= 0) {
+      return false;
+    }
+    
+    const i2 = email.lastIndexOf(".");
+    if (i2 <= i1) {
+      return false;
+    }
+    
+    if (i2 === email.length - 1) {
+      return false;
+    }
+    
+    return true;
+  }
+  
+  console.log(validateEmail("@gmail.com")); // false
+  console.log(validateEmail("hello.gmail.com")); // false
+  console.log(validateEmail("gmail")); // false
+  console.log(validateEmail("hello@gmail")); // false
+  console.log(validateEmail("hello@edabit.com")); // true
+
+//14.2
+function giocoSassoCartaForbici(p1, p2) {
+    if (p1 === p2) {
+      return "È un pareggio";
+    } else if (
+      (p1 === "Sasso" && p2 === "Forbici") ||
+      (p1 === "Forbici" && p2 === "Carta") ||
+      (p1 === "Carta" && p2 === "Sasso")
+    ) {
+      return "Il vincitore è p1";
+    } else {
+      return "Il vincitore è p2";
+    }
+  }
+  console.log(giocoSassoCartaForbici("Sasso", "Forbici")); //Il vincitore è p1
+  console.log(giocoSassoCartaForbici("Forbici", "Carta")); // Il vincitore è p1
+  console.log(giocoSassoCartaForbici( "Carta", "Carta")); //È un pareggio
+
+
+
+
+//17.2 Ottieni la somma del budget delle persone 
+
+console.log("esercizio 17.2")
+
+function budgetTotale(array6) {
+    let somma5=0;
+    for (let i = 0; i < array6.length; i++) {
+        somma5 += array6[i].budget;
+        
+    }
+    return somma5;
+}
+ console.log(
+    budgetTotale([
+        { name: "John", age: 21, budget: 23000 },
+        { name: "Steve", age: 32, budget: 40000 },
+        { name: "Martin", age: 16, budget: 2700 },
+    ])
+);
+
+console.log(
+    budgetTotale([
+        { name: "John", age: 21, budget: 29000 },
+        { name: "Steve", age: 32, budget: 32000 },
+        { name: "Martin", age: 16, budget: 1600 },
+    ])
+);
+
+
+//18 Calcola il prezzo totale dei generi alimentari
+
+console.log("esercizio 18.2")
+
+function prezzoTotaleAlimenti(array7) {
+    let somma6=0;
+    for (let i = 0; i < array7.length; i++) {
+        somma6 +=array7[i].quantity * array7[i].price;
+        
+    }
+    return somma6;
+    
+}
+
+console.log(
+    prezzoTotaleAlimenti([{ product: "milk", quantity: 1, price: 1.5 }])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "cereals", quantity: 1, price: 2.5 },
+    ])
+);
+console.log(
+    prezzoTotaleAlimenti([{ product: "milk", quantity: 3, price: 1.5 }])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "eggs", quantity: 12, price: 0.10 },
+        { product: "bread", quantity: 2, price: 1.60 },
+        { product: "cheese", quantity: 1, price: 4.5 },
+    ])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "chocolate", quantity: 1, price: 0.10 },
+        { product: "lollipop", quantity: 1, price: 0.20 },
+    ])
+);
