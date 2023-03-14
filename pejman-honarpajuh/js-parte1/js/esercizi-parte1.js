@@ -620,12 +620,12 @@ console.log(contrario)
 for (let i = 0; i < contrario.length; i++) {
     let temp = contrario[i]
     
-    for (let j = temp.length - 1; j >= 0; j--) {
-        box += temp[j]
+    // for (let j = temp.length - 1; j >= 0; j--) {
+    //     box += temp[j]
 
-    };
-    //  let z = [...temp]
-    //  box += z.reverse().join("")
+    // };
+     let z = [...temp]
+     box += z.reverse().join("")
 
     box += " "
 
@@ -670,27 +670,44 @@ asciList = [
 for (let i = 0; i < parolax.length; i++) {
 
     let x = asciList.find(x => x.text == parolax[i])
-    let y = x.text
-   
+    let y = x.value
+    let v = x.text
     contlist.push(y)
+    // contlist.push(v)
     
    
 } 
 
-console.log(contlist.sort())
+console.log(contlist.sort(function compareNumbers(a, b) {
+    return a - b;
+  }
+  ))
 
 
 console.log("------------ esercizio 12---metodo2")
 
-// function ordinAsci(a){
-//     let cont = '';
-//     for(let i=0; i<a.length ; i++){
-//            cont += (a.charCodeAt([i]));
-        
-        
-// }
+function ordinAsci(a){
+    let cont = [];
+    for(let i=0; i<a.length ; i++){
+           cont.push(a.charCodeAt([i]));
+              
+}
+cont.sort(function compareNumbers(a, b) {
+    return a - b;
+  })
+  
+return cont
+}
 
-// return cont
-// }
-// console.log(ordinAsci('ciao'))
-
+console.log(ordinAsci('borgo'))
+console.log("------------ esercizio 12---metodo3")
+function ordinAsci1(a){
+    let cont = [];
+    for(let i=0; i<a.length ; i++){
+           cont.push(a[i]);
+              
+}
+cont.sort()
+return cont
+}
+console.log(ordinAsci1('borgo'))
