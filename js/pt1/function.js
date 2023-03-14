@@ -93,4 +93,30 @@ function calcola(numero1, numero2, operatore) {
     return risultato;
   }
 console.log(calcola())
-  
+
+// 10) Crea una funzione che restituisce la somma di tutti i valori di un array.
+function sommaArray(array) {
+    let somma = 0;
+    for (let i = 0; i < array.length; i++) {
+        somma += array[i];
+    }
+    return somma;
+}
+console.log(sommaArray([1, 2, 4]));
+console.log(sommaArray([4, 2, 10, 2]));
+console.log(sommaArray([1]));
+
+// 11) Crea una funzione che restituisce il numero di valori uguali a true presenti in un array.
+function contaTrue(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === true) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(contaTrue([true, false, false, true, false]));
+console.log(contaTrue([false, false, false, false]));
+console.log(contaTrue([]));
+
