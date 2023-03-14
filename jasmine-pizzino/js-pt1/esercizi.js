@@ -162,48 +162,10 @@ console.log(sum); // stampa la somma dei soli elementi dispari (12)
 
 esericizi funzioni ultimi che non capisco
 
-  // 8) Posizione nell'alfabeto
-  function letteraInPosizione(n) {
-    if (!Number.isInteger(n) || n < 1 || n > 26) {
-      return "invalid";
-    }
-    return String.fromCharCode(n + 96);
-  }
-  letteraInPosizione(1) // "a"
-  letteraInPosizione(26.0) // "z"
-  letteraInPosizione(0) // "invalid"
-  letteraInPosizione(4.5) // "invalid"
+ 
 
   
-  // 9) Calcolatrice di base
-  function calcolatrice(num1, operatore, num2) {
-    let risultato;
-    switch (operatore) {
-      case "+":
-        risultato = num1 + num2;
-        break;
-      case "-":
-        risultato = num1 - num2;
-        break;
-      case "*":
-        risultato = num1 * num2;
-        break;
-      case "/":
-        if (num2 === 0) {
-          return "Impossibile dividere per 0!";
-        }
-        risultato = num1 / num2;
-        break;
-      default:
-        return "Operatore non valido!";
-    }
-    return risultato;
-  }
-  console.log(calcolatrice(2, "+", 2)); // 4
-  console.log(calcolatrice(2, "*", 2)); // 4
-  console.log(calcolatrice(4, "/", 2)); // 2
-  console.log(calcolatrice(4, "/", 0)); // "Impossibile dividere per 0!"
-  console.log(calcolatrice(5, "%", 3)); // "Operatore non valido!"
+  
 
 
   // 10) Fare la somma di tutti gli elementi di un array 
