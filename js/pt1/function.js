@@ -47,15 +47,50 @@ console.log(sommaNumeri(13));
 console.log(sommaNumeri(600));
 
 // 7) Crea una funzione che accetta due argomenti: il prezzo originale e la percentuale di sconto come numeri interi e restituisce il prezzo finale dopo lo sconto.
+// function trovaSconto(prezzoOriginale, percentualeSconto) {
+//     if (prezzoOriginale <= 0 || percentualeSconto < 0 || percentualeSconto > 100) {
+//       return null; 
+//     }
+//     const prezzoFinale = prezzoOriginale * (100 - percentualeSconto) / 100;
+//     return prezzoFinale;
+//   }
+// console.log(trovaSconto(1500, 50));  
+// console.log(trovaSconto(89, 20));
+// console.log(trovaSconto(100, 75));    
+
 function trovaSconto(prezzoOriginale, percentualeSconto) {
     if (prezzoOriginale <= 0 || percentualeSconto < 0 || percentualeSconto > 100) {
       return null; 
     }
     const prezzoFinale = prezzoOriginale * (100 - percentualeSconto) / 100;
-    return prezzoFinale;
+    return prezzoFinale.toFixed(2);
   }
-console.log(trovaSconto(1500, 50));  
-console.log(trovaSconto(89, 20));
-console.log(trovaSconto(100, 75));    
+  console.log(trovaSconto(1500, 50));  
+  console.log(trovaSconto(89, 20));
+  console.log(trovaSconto(100, 75));    
 
+// 8)
+
+// 9) Crea una funzione che accetta due numeri e un operatore matematico + - / * ed eseguirà un calcolo con i numeri indicati.
+function calcola(numero1, numero2, operatore) {
+    let risultato;
+    switch (operatore) {
+      case "+":
+        risultato = numero1 + numero2;
+        break;
+      case "-":
+        risultato = numero1 - numero2;
+        break;
+      case "*":
+        risultato = numero1 * numero2;
+        break;
+      case "/":
+        risultato = numero1 / numero2;
+        break;
+      default:
+        return null; 
+    }
+    return risultato;
+  }
+console.log(calcola())
   
