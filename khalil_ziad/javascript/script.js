@@ -745,3 +745,94 @@ function convertitoreDate(date,tipo=completa){// se tipo non viene specificato v
     
 }
 console.log(convertitoreDate("12/19/2000","abreviata"));
+
+//ES.23 Operazioni con orari
+
+function trasformaInMinuti (ora) {
+    let ore=0;
+    let minuti=0;
+    if(ora.indexOf(":")==2){
+        minuti=parseInt(ora[3]+ora[4]);
+        if(ora.indexOf("pm")==-1){
+        ore=parseInt(ora[0]+ora[1]);}
+        else {
+            ore=parseInt(ora[0]+ora[1]);
+            ore=ore+12;
+        }
+        
+    } else if(ora.indexOf(":")==1){
+        minuti=parseInt(ora[2]+ora[3]);
+        if(ora.indexOf("pm")==-1){
+        ore=parseInt("0"+ora[0]);}
+        else {
+            ore=parseInt("0"+ora[0]);;
+            ore=ore+12;
+        }
+        
+    } else if(ora.indexOf("min")!=-1){
+                let tempMin="";
+                for(let i=0;i<ora.indexOf("min");i++){
+                    tempMin=tempMin+ora[i];
+                }
+                minuti=parseInt(tempMin);
+            } else if(ora.indexOf("hour")!=-1){
+                let tempHour="";
+                for(let i=0;i<ora.indexOf("hour");i++){
+                    tempHour=tempHour+ora[i];
+                }
+                ore=parseInt(tempHour);
+            }
+    return minuti+(ore*60);
+}
+
+function operazioneOrari(ora,operazione,cambio) {
+    let minutiOra=trasformaInMinuti(ora);
+    let minutiCambio=trasformaInMinuti(cambio);
+    let minuti;
+    let ore;
+    let c="";
+    switch (operazione) {
+        case "+":
+            minuti=minutiOra+minutiCambio;
+            break;
+    
+        case "-":
+            minuti=minutiOra+minutiCambio;
+            break;
+    }
+    if(ora.indexOf("am")==-1&&ora.indexOf("pm")==-1){
+        ore=Math.floor(minuti/60);
+        while(ore>=24)
+        {
+            ore=ore-24;
+        }
+        if(minuti%60<10){
+            minuti="0"+(minuti%60); 
+        } else {
+            minuti=minuti%60;
+        }
+        
+    } else if(ora.indexOf("am")!=-1||ora.indexOf("pm")!=-1){
+        ore=Math.floor(minuti/60);
+        c=2;
+        while(ore>=12){
+            ore=ore-12;
+            c++;
+        }
+        if(minuti%60<10){
+            if(c%2==0){
+                minuti="0"+(minuti%60)+"am";} else {
+                    minuti="0"+(minuti%60)+"pm";
+                }
+            
+        } else {
+            minuti=minuti%60;
+            if(c%2==0){
+            minuti=minuti+"am";} else {
+                minuti=minuti+"pm";
+            }
+        }
+    }
+    return ore+":"+minuti;
+}
+console.log(operazioneOrari("10:00pm","+","5hour"));
