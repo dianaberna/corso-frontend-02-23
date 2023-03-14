@@ -29,3 +29,33 @@ console.log(controllaNumero(5));
 console.log(controllaNumero(0));
 console.log(controllaNumero(-2));
 
+// 4) In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
+// L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che restituisca il numero totale di zampe di tutti gli animali. 
+
+// 5) Crea una funzione che prenda un numero (step) come argomento e restituisca il numero di fiammiferi in quello step.
+
+// 6) Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
+function sommaNumeri(n) {
+    let somma = 0;
+    for (let i = 1; i <= n; i++) {
+        somma += i;
+    }
+    return somma;
+}
+console.log(sommaNumeri(4));
+console.log(sommaNumeri(13));
+console.log(sommaNumeri(600));
+
+// 7) Crea una funzione che accetta due argomenti: il prezzo originale e la percentuale di sconto come numeri interi e restituisce il prezzo finale dopo lo sconto.
+function trovaSconto(prezzoOriginale, percentualeSconto) {
+    if (prezzoOriginale <= 0 || percentualeSconto < 0 || percentualeSconto > 100) {
+      return null; // restituisce null se uno dei parametri non è valido
+    }
+    const prezzoFinale = prezzoOriginale * (100 - percentualeSconto) / 100;
+    return prezzoFinale;
+  }
+console.log(trovaSconto(1500, 50));  
+console.log(trovaSconto(89, 20));
+console.log(trovaSconto(100, 75));    
+
+  
