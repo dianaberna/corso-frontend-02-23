@@ -367,25 +367,32 @@ for(i=0; i<parola2/2; i++);{
 }
 
 
+//2.1 Controlla se le due stringhe sono palindrome 
 
-//3 Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
+
+//3 Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa 
+//es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
+//controllo lettera per lettera
 
 i=0
+j=1
 parola= "ALE"
 parola1= "ALESSIA"
 controllo= false;
 
 
 for(i=0; i < parola1.length; i++){
-    if(parola1[i] == parola[0]){
-        for(j=1; j<parola.length; j++){//gli sto dicendo non partire da 0, dato che hai trovato la a, ma parti dalla posizione 1(L)
-            if(parola1[i+j] == parola[j]){
+    if(parola1[i] == parola[0]){      //se trovi la prima lettera nella parola1, continua con...
+        for(j=1; j < parola.length; j++){     //gli sto dicendo non partire da 0, dato che hai trovato la a, ma parti dalla posizione 1(L)
+            if(parola1[ i +j ] == parola [j]){
                 controllo=true;
+                
             }
             else{
                 controllo=false;
             }
         }
+        break;
 
     }
 }
@@ -397,6 +404,21 @@ if(controllo){
 else{
     console.log ("es.3=non è contenuto");
 }
+
+//3.1 Controlla se la stringa è presente nell'altra stringa
+// controllo intera parola 
+
+i=0
+parola= "ALE"
+parola1= "ALESSIA"
+
+
+if(parola1.includes(parola) !== -1){ //verifica se parola è inclusa in parola1, diverso da -1(-1 lo restituisce se non incluso)
+    console.log("inclusa"); //se si stampa "incluso"
+}
+
+
+
 
 //4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
 i=0
@@ -428,8 +450,8 @@ console.log("es_4.3=" + parola, parolacontrario);
 //che è la concatenazione delle due stringhe, separate da uno spazio. (simile all’esercizio 12)
 
 i=0
-var parola1="cana"
-var parola2="randa"
+var parola1="panna"
+var parola2="e fragole"
 
 console.log("es_5=" + parola1 + " " + parola2);
 
@@ -439,7 +461,7 @@ console.log("es_5=" + parola1 + " " + parola2);
 
 
 let vocali = "";
-stringa = "palesemente";
+stringa = "aiuole";
 
 for (let i = 0; i < stringa.length; i++) {
     let carattere = stringa[i];
@@ -471,4 +493,42 @@ for (let i = 0; i < stringa.length; i++) {
 }
 
 console.log("es.7= " + vocali);
+
+//8) Scrivere programma che accetti due stringhe come input e restituisca una nuova stringa 
+//che contiene solo i caratteri comuni alle due stringhe. 
+//(versione 1: senza escludere i duplicati, versione 2: escludendo i duplicati)
+
+parola1 = "Fiamma"
+parola2 ="Farfalla"
+array1= []
+
+for(i=0; i<parola1.length; i++){ //questa è un'iterazione
+    if(parola2.includes(parola1[i])){ //== true non è necessario perchè per entrare nel if la condizione dev'essere vera.
+        array1.push(parola1[i]);
+    }
+}
+console.log("es_8=" + array1);
+
+//8.1
+parola1 = "Fiamma"
+parola2 ="Farfalla"
+array1= []
+
+for(i=0; i<parola1.length; i++){ //questa è un'iterazione
+    if(parola2.includes(parola1[i])){ //== true non è necessario perchè per entrare nel if la condizione dev'essere vera.
+        if(array1.indexOf(parola1[i])==-1){ // se parola1[i] non è inclusa. ==-1 significa che il risultato della finzione dev'essere non presente( restituito con il valore -1, se presente restituisce l'indice)
+            array1.push(parola1[i]);
+        }
+    }
+}
+console.log("es_8.1=" + array1);
+
+
+
+//9 scrivere programma che accetti un array di stringhe come input e 
+//restituisca la stringa più lunga presente nell'array
+
+array = ["fiamma", "fiammottina", "randafragolina"]
+contatore=0
+
 
