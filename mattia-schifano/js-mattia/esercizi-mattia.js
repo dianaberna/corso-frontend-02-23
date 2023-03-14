@@ -787,7 +787,7 @@ console.log(
 );
 
 
-//18 Calcola il prezzo totale dei generi alimentari
+//18.2 Calcola il prezzo totale dei generi alimentari
 
 console.log("esercizio 18.2")
 
