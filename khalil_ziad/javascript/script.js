@@ -694,6 +694,42 @@ function generaPasswordCasuale(lungezza)
 }
 console.log(generaPasswordCasuale(8));
 
+//ES.20 Array multidimensionale e stringhe
+
+function multidimensionaleConcat(arrayMulti) {
+    let stringa="";
+    for(let i=0;i<arrayMulti.length;i++){
+        for(let j=0;j<arrayMulti[i].length;j++){
+            stringa=stringa+" "+arrayMulti[i][j];
+            //console.log(arrayMulti[i][j]);      controllo dato
+
+        }
+    } console.log(stringa);
+    return;
+}
+multidimensionaleConcat([["mamma","just","killed","a","man"],
+                         ["put","a","gun","against", "his","head"],
+                         ["pulled","my","trigger","now","he","is","dead"]])
 
 
+//ES.21 Array multidimensionale e oggetti
+
+function personaM30 (persona){
+    let stringa="";
+    for(let i=0;i<persona.length;i++){
+        if(persona[i].eta>30){
+            stringa=stringa+" "+persona[i].nome+" "+persona[i].cognome;
+            if(i<persona.length-1)
+            stringa=stringa+",";
+        }
+    }
+    console.log(stringa);
+}
+
+let persona=[
+    { nome:"Mario",cognome:"Rossi",eta:40},
+    { nome:"Luigi",cognome:"Veridi",eta:25},
+    { nome:"Anna",cognome:"Bianchi",eta:35}
+]
+personaM30(persona);
 
