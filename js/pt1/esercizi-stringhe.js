@@ -142,6 +142,22 @@ console.log(stringa1, stringa2, nuovaStringa);
 // 6) cifrario di cesare
 
 console.log("esercizio 6 -->");
+let testo = "ciao";
+let testoCifrato = "";
+let chiave = 8;
+// trasforma la chiave in un numero compreso tra 0 e 25
+chiave = chiave % 26;
+
+for (let i = 0; i < testo.length; i++) {
+    let charCode = testo.charCodeAt(i);
+    if (charCode >= 65 && charCode <= 90) {
+        charCode = ((charCode - 65 + chiave) % 26) + 65;
+    } else if (charCode >= 97 && charCode <= 122) {
+        charCode = ((charCode - 97 + chiave) % 26) + 97;
+    }
+    testoCifrato += String.fromCharCode(charCode);
+}
+console.log(testoCifrato);
 
 // 7) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa che contiene solo le vocali presenti nella stringa originale
 
@@ -179,7 +195,6 @@ for (let i = 0; i < stringa.length; i++) {
 
 console.log("senza duplicati: " + vocali);
 
-
 vocali = "";
 trovato = false;
 
@@ -192,16 +207,158 @@ for (let i = 0; i < stringa.length; i++) {
         carattere === "o" ||
         carattere === "u"
     ) {
-        trovato = false
-        for(let j = 0; j<vocali.length; j++){
-            if(vocali[j] == stringa[i]){
-                trovato = true
+        trovato = false;
+        for (let j = 0; j < vocali.length; j++) {
+            if (vocali[j] == stringa[i]) {
+                trovato = true;
             }
         }
-        if(!trovato){
-            vocali += stringa[i]
+        if (!trovato) {
+            vocali += stringa[i];
         }
     }
 }
 
 console.log("senza duplicati e senza funzioni: " + vocali);
+
+// 8) Scrivere una funzione che accetti due stringhe come input e restituisca una nuova stringa che contiene solo i caratteri comuni alle due stringhe.
+
+console.log("esercizio 8 -->");
+
+str1 = "ciaossooaa";
+str2 = "provaaoo";
+comuni = "";
+
+for (let i = 0; i < str1.length; i++) {
+    let carattere = str1[i];
+    trovato = false;
+    for (let j = 0; j < str2.length; j++) {
+        if (str2[j] == str1[i]) {
+            trovato = true;
+        }
+    }
+
+    if (trovato) {
+        comuni += carattere;
+    }
+}
+
+console.log("soluzione senza funzioni: " + comuni);
+
+for (let i = 0; i < str1.length; i++) {
+    let carattere = str1[i];
+    if (str2.indexOf(carattere) !== -1 && comuni.indexOf(carattere) === -1) {
+        comuni += carattere;
+    }
+}
+
+console.log("soluzione con funzioni: " + comuni);
+
+// 9) Scrivere una funzione che accetti un array di stringhe come input e restituisca la stringa più lunga presente nell'array
+
+console.log("esercizio 9 -->");
+let arrayStringhe = ["ciao", "prova", "palesemente", "ape"];
+let stringaLunga = "";
+for (let i = 0; i < arrayStringhe.length; i++) {
+    if (arrayStringhe[i].length > stringaLunga.length) {
+        stringaLunga = arrayStringhe[i];
+    }
+}
+
+console.log(stringaLunga);
+
+// 10) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui le vocali sono sostituite da un carattere speciale, ad esempio "*", e le consonanti
+
+console.log("esercizio 10 -->");
+
+vocali = ["a", "e", "i", "o", "u"];
+nuovaStringa = ""; //inizializziamo la nuova stringa vuota
+
+//cicliamo su ogni carattere della stringa in input
+for (let i = 0; i < stringa.length; i++) {
+    //verifichiamo se il carattere corrente è una vocale
+    if (
+        stringa[i] == "a" ||
+        stringa[i] == "e" ||
+        stringa[i] == "i" ||
+        stringa[i] == "o" ||
+        stringa[i] == "u"
+    ) {
+        nuovaStringa += "*"; //se è una vocale, aggiungiamo il carattere speciale
+    } else {
+        nuovaStringa += stringa[i]; //altrimenti, aggiungiamo il carattere consonante originale
+    }
+}
+
+console.log(nuovaStringa);
+
+vocali = ["a", "e", "i", "o", "u"];
+nuovaStringa = "";
+
+for (let i = 0; i < stringa.length; i++) {
+    const carattereCorrente = stringa[i];
+    if (vocali.includes(carattereCorrente)) {
+        nuovaStringa += "*";
+    } else {
+        nuovaStringa += carattereCorrente;
+    }
+}
+
+console.log(nuovaStringa);
+
+// 11) Scrivi una funzione che accetti una stringa come input e restituisca una nuova stringa in cui ogni parola è invertita al contrario, mantenendo l'ordine delle parole. Ad esempio, "ciao mondo" diventa "oaic odnom"
+console.log("esercizio 11 -->");
+
+stringa = "ciao mondo";
+let stringaInvertita = "";
+indiceNuovaStringa = 0; // indice di inizio della parola corrente
+
+for (let i = 0; i <= stringa.length; i++) {
+    // se troviamo uno spazio o siamo alla fine della stringa, invertiamo la parola corrente
+    if (stringa[i] === " " || i === stringa.length) {
+        let fineNuovaStringa = i - 1; // indice di fine della parola corrente
+
+        // invertiamo la parola corrente
+        for (let j = fineNuovaStringa; j >= indiceNuovaStringa; j--) {
+            stringaInvertita += stringa[j];
+        }
+        stringaInvertita += " "; // aggiungiamo lo spazio dopo la parola invertita
+        indiceNuovaStringa = i + 1; // impostiamo l'indice di inizio della prossima parola
+    }
+}
+
+console.log(stringaInvertita);
+
+// 12) Scrivere una funzione che accetti una stringa come input e restituisca una nuova stringa in cui i caratteri sono ordinati in ordine crescente secondo il loro codice ASCII
+
+console.log("esercizio 12 -->");
+console.log("con l'uso di funzioni js ");
+
+stringa = "ciao";
+let sortedStr = ""; // stringa ordinata
+let asciiArr = []; // array dei codici ASCII dei caratteri
+
+// riempi l'array asciiArr con i codici ASCII dei caratteri nella stringa
+for (let i = 0; i < stringa.length; i++) {
+    asciiArr[i] = stringa.charCodeAt(i);
+}
+
+// riordina l'array
+// documentazione sort https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+asciiArr.sort(function (a, b) {
+    return a - b;
+});
+
+// converte l'array ordinato di codici ASCII in una nuova stringa
+for (let i = 0; i < asciiArr.length; i++) {
+    sortedStr += String.fromCharCode(asciiArr[i]);
+}
+
+console.log(sortedStr);
+console.log("con l'uso di funzioni js ");
+const arr = stringa.split(""); // converti la stringa in un array di caratteri
+arr.sort(function (a, b) {
+    return a.charCodeAt(0) - b.charCodeAt(0); // ordina i caratteri in base al loro codice ASCII
+});
+const sortedString = arr.join(""); // converte l'array di caratteri in una stringa
+console.log(sortedString);
