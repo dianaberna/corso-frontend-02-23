@@ -121,44 +121,68 @@ function trovaposizione(a){
 // function calcolatrice( somma , detra , mult , divi){
     console.log('Esercizio 9--------------- ');
 
-// function somma(){
-    
-//     return a + b;
-// }
-// function calocat(a,b){
+
+function calocat(a,b,expr){
   
-// }
-// console.log(calocat(2,5))
+    let risultato = 0;
+    
+   
+     switch (expr){
+        case 'somma' :
+             risultato = a + b;
+            break;
+        case 'detra':
+            risultato = a - b;
+            break;
+        case 'multi':
+            risultato = a * b;
+            break;
+        case 'divis':
+            if( a >0 && b > 0){
+                risultato = a / b;
+            break;
+            }else{
+                console.log('Impossibile dividere per 0!')
+            }
+        default:
+                console.log(`Sorry, we are out of ${expr}.`)
+      }
+    
+return risultato
+
+}console.log(calocat(2,0,'somma'))
+ console.log(calocat(2,0,'detra'))
+ console.log(calocat(2,0,'multi'))
+ console.log(calocat(2,0,'divis'))
+
 
  
-
-
-
-
-
-
-
-
-// let expr = divis;
+// let expr ='divis';
+// //  let expr = somma;
 // let a= 4
-// let b= 3
+// let b= 2
 //  switch (expr){
-//     case somma :
+//     case 'somma' :
 //          console.log(a + b) ;
 //         break;
-//         case detra:
-//             console.log(a - b) ;
+//     case 'detra':
+//              detra = a - b;    
+//             console.log(detra) ;
 //         //  return a - b;
 //         break;
-//         case multi:
+//     case 'multi':
 //             console.log(a * b) ;
 //         //  return a * b;
 //         break;
-//         case divis:
+//     case 'divis':
+//         if( a >0 && b > 0){
 //             console.log(a / b) ;
 //         //  return a / b;
 //         break;
-//         default:
+//         }else{
+//             console.log('Impossibile dividere per 0!')
+//         }
+//     default:
 //             console.log(`Sorry, we are out of ${expr}.`)
 //   }
 
@@ -177,6 +201,15 @@ function somArry(a){
     }
     return somma;
 }console.log(somArry([2,3,4]))
+console.log('Esercizio 10--------------metodo 1 ');
+function somArry1(a){
+    const cont = 0;
+const somma = a.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  cont
+);
+return somma
+}console.log(somArry1([2,3,4]))
 
 //Esercizio 11) Crea una funzione che restituisce il numero di valori uguali a true presenti in un array.
 console.log('Esercizio 11 ');
@@ -188,7 +221,9 @@ function flag(a){
         }
     } 
     return cont;
-}console.log(flag(['true','true','false','false']))
+}console.log(flag(['true','true','false','false']));
+ console.log(flag(['false', 'false', 'false', 'false']));
+ console.log(flag([]))
 
 
 //Esercizio 12) Creare una funzione che restituisca lo spessore (in metri) di un foglio di
@@ -210,20 +245,43 @@ function carta(a){
 //Esercizio 13)Crea una funzione che accetta una stringa, controlla se è un indirizzo
 // email valido e restituisce true o false, a seconda della valutazione.
 console.log('Esercizio 13 ');
-function contemail(a){
-    let flag = true
-    for(let i=0 ; i<a.length ; i++){
-        if(a.includes('@')&& a.includes('.')){
-           flag = true;
-        }else{
-            flag = false;
-        }
-    }
-    return flag
+// function contremail(a){
+//     let flag = true
+//     for(let i=0 ; i<a.length ; i++){
+//         if(a.includes('@')&& a.includes('.')){
+//            flag = true;
+//         }else{
+//             flag = false;
+//         }
+//     }
+//     return flag
     
 
-}console.log(contemail('pejman@libero.it'))
+// }console.log(contremail('pejman@libero.it'))
+function contremail(email){
+ 
+    //controlla che sia un string
+    if (typeof email === "string"){
 
+        // se contine @ e '.' 
+        if (!(email.includes('@') && email.includes('.'))){
+           return 'non sono incluse @ o .'
+        }  
+        // prima @ ci deve essere un carattere
+        for(let i=0 ; i<email.length ; i++){
+           if(email[i].includes('@')){
+                if((typeof email[i-1] !== "string")){
+                     return 'prima @ ci vuole un carattere'
+                }
+            }
+            else('ok')
+        }
+    }
+   else {
+    return 'Formato non è corretto'
+   }
+   return email
+}console.log(contremail('1@libero.it'))
 //Esercizio 14)Crea una funzione che accetta due stringhe (p1 e p2 ⁠— che rappresentano i giocatori 1 e 2) 
 //come argomenti e restituisce una stringa che indica il vincitore in una partita a Sasso, Carta, Forbici.
 console.log('Esercizio 14 ');
@@ -242,36 +300,135 @@ function gicosasso(p1,p2){
 //Esercizio 15)Crea una funzione che accetta un array di elementi, rimuove tutti gli elementi duplicati e restituisce 
 //un nuovo array nello stesso ordine sequenziale del vecchio array (meno i duplicati).
 // console.log('Esercizio 15 ');
+// function arrduplica(a){
+   
+//  let arrnew = [];
+  
+//   for (let i=0 ; i<a.length - 1 ; i++){
+//     if(a[i] == a[i+1]){
+//         arrnew += arrnew[i];
+//     }
+//   }
+// return arrnew
+
+//}
+//console.log(arrduplica(["John", "Taylor","Mario", "John","Taylor"]))
+ //console.log(arrduplica([1,2,4,1,2]))
+
+
+
+
+console.log('Esercizio 15------------Metodo 2 ');
 function arrydupilcato(a){
     let arrnuovo = [];
-    for(let i=0 ; i<a.length ; i++){
-        
-            if(a[i] === a[i+2]){
-            arrnuovo.push(a[i])
-        }//else{
-        //     arrnuovo += a[i]
-        // }
-    }return arrnuovo;
-}console.log(arrydupilcato([1,2,1,2,3]))
+    const set = new Set(a);
+    Array.from(set);
+    return set;
+
+}console.log(arrydupilcato(["John", "Taylor","Mario", "John","Taylor"]))
+ console.log(arrydupilcato([1,2,4,1,2]))
 
 //Esercizio 16) Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e 
 //la seconda data.
-// console.log('Esercizio 16 ');
-// function calcgiorni(a,b){
+ console.log('Esercizio 16----------- ');
+function quantiGiorni(a,b){
+    let giorni = b.getUTCDate()-a.getUTCDate()
+    return giorni
+}
+console.log(quantiGiorni(new Date("June 14, 2019"), new Date("June 20, 2019")));
 
-// }
+console.log(
+    quantiGiorni(new Date("December 29, 2018"), new Date("January 1, 2019"))
+);
+
+console.log(quantiGiorni(new Date("July 20, 2019"), new Date("July 30, 2019")));
+
 
 //Esercizio 17)Crea la funzione che accetta un array con oggetti e restituisce la somma dei budget delle persone.
-//  console.log('Esercizio 17 ');
+ console.log('Esercizio 17 ');
 
-// function budget(a){
+ function budgetTotale(x){
+    let totale = 0;
+    for(let i=0 ; i<x.length ; i++){
+        totale += x[i].budget;
+    }
+    return totale
+ }console.log(budgetTotale([
+    { name: "John",   age: 21, budget: 23000 },
+    { name: "Steve",  age: 32, budget: 40000 },
+    { name: "Martin", age: 16, budget: 2700  },
+]))
+console.log(budgetTotale([
+    { name: "John", age: 21, budget: 29000 },
+    { name: "Steve", age: 32, budget: 32000 },
+    { name: "Martin", age: 16, budget: 1600 },
+]))
 
-   
+
+
+//Esercizio 18) Crea una funzione che prenda un array
+// di oggetti (alimentari) che calcoli il prezzo totale e lo restituisca come un numero.
+// Un oggetto alimentare ha un prodotto, una quantità e un prezzo, ad esempio:
+console.log('Esercizio 18 ');
+
+function prezzoTotaleAlimenti(x){
+    let prezzo = 0;
+    for(let i=0 ; i<x.length ; i++){
+        prezzo =  x[i].price * x[i].quantity
+        prezzo = x[i].product + ' : ' + prezzo
+    }
     
+    return prezzo
+}
+console.log(
+    prezzoTotaleAlimenti([{ product: "milk", quantity: 1, price: 1.5 }])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "cereals", quantity: 1, price: 2.5 },
+    ])
+);
+console.log(
+    prezzoTotaleAlimenti([{ product: "milk", quantity: 3, price: 1.5 }])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "eggs", quantity: 12, price: 0.10 },
+        { product: "bread", quantity: 2, price: 1.6 },
+        { product: "cheese", quantity: 1, price: 4.5 },
+    ])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "chocolate", quantity: 1, price: 0.10 },
+        { product: "lollipop", quantity: 1, price: 0.20 },
+    ])
+);
 
-// }
-// budgetTotale=[
-//     { name: "John",   age: 21, budget: 23000 },
-//     { name: "Steve",  age: 32, budget: 40000 },
-//     { name: "Martin", age: 16, budget: 2700  },
-// ]
+
+
+
+
+
+
+
+console.log('------------------prova find ');
+
+  budgetTotale=[
+     { name: "John",   age: 21, budget: 23000 },
+     { name: "Steve",  age: 32, budget: 40000 },
+     { name: "Martin", age: 16, budget: 2700  },
+ ]
+
+let x = budgetTotale.find(x => x.name == "John").budget
+console.log(x)
+
+
+
+
+
+
+
+
