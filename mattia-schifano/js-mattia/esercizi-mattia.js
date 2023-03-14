@@ -611,7 +611,7 @@ console.log(applicasconto(1500, 50)); //  750
 console.log(applicasconto(89, 20)); //  71.20
 console.log(applicasconto(100, 75)); //  25.00
 
-//8 Posizione nell’alfabeto
+//8.2 Posizione nell’alfabeto
 
 console.log("esercizio 8.2")
 
@@ -659,3 +659,54 @@ function calcolatrice(num1, operatore, num2) {
 
 
 //10.2  Fare la somma di tutti gli elementi di un array
+
+console.log("esercizio 10.2")
+
+
+function sommaElementiArray(arr) {
+    let somma4 = 0;
+    for (let i = 0; i < arr.length; i++) {
+      somma4 += arr[i];
+    }
+    return somma4;
+  }
+  
+  console.log(sommaElementiArray([1,2,4])) //7
+  console.log(sommaElementiArray([4,2,10,2])) //18
+  console.log(sommaElementiArray([1])) //1
+
+
+//11.2 Quante volte è vero?
+
+console.log("esercizio 11.2")
+
+function quantiTrue(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === true) {
+        count++;
+      }
+    }
+    return count;
+  }
+  console.log(quantiTrue([true, false, false, true, false]))//2
+  console.log(quantiTrue([false, false, false, false]))//0
+  console.log(quantiTrue([]))//0
+
+//12.2 Piegare un pezzo di carta
+
+console.log("esercizio 12.2")
+
+
+function spessore(n) {
+    const spessoreIniziale = 0.5; 
+    const spessoreFinale = spessoreIniziale * Math.pow(2, n); 
+    const spessoreInMetri = spessoreFinale / 1000; 
+    return spessoreInMetri.toFixed(3) + "m"; 
+}
+console.log(spessore(1))// 0.001m 
+console.log(spessore(4))// 0.008m
+console.log(spessore(21))// 1048.576m
+
+//13.2 Validare un’e-mail
+
