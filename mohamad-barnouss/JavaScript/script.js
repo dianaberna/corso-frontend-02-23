@@ -498,7 +498,7 @@ console.log(validatore(email));
 */
 
 //SASSO CARTA FORBICI
-
+/*
 function vincitore(primoGiocatore, secondoGiocatore) {
   if (
     primoGiocatore != "sasso" &&
@@ -573,3 +573,89 @@ let y = prompt("PlayerDue");
 
 console.log(x, y);
 console.log(vincitore(x, y));
+*/
+
+//Elimina duplicati
+/* Crea una funzione che accetta un array di elementi,
+rimuove tutti gli elementi duplicati e restituisce un nuovo array nello 
+stesso ordine sequenziale del vecchio array (meno i duplicati).*/
+/*
+function eliminaDoppi(v = []) {
+  for (let i = 0; i < v.length; i++) {
+    for (let j = i + 1; j < v.length; j++) {
+      if (v[i] === v[j]) v.splice(j, 1);
+    }
+  }
+  return console.log(v);
+}
+
+let v = [1, 0, 1, 0];
+console.log(`Vettore originale ${v}`);
+console.log(eliminaDoppi(v));
+*/
+
+//Quanti giorni fra due date
+/*
+function days(x, y) {
+  //let dayFirst = new Date(x);
+  //let daySecond = new Date(y);
+
+  return console.log(Math.ceil((y - x) / (1000 * 60 * 60 * 24)));
+}
+
+let x = new Date(prompt("Inserisci prima data"));
+let y = new Date(prompt("Inserisci seconda data"));
+
+console.log(days(x, y));
+*/
+
+//17 SOMMA BUDGET PERSONE
+/*
+function sommaBudget(lista) {
+  let somma = 0;
+  for (let i = 0; i < lista.length; i++) {
+    somma += lista[i].budget;
+  }
+  return somma;
+}
+
+let budgetTotale = [
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve", age: 32, budget: 40000 },
+  { name: "Martin", age: 16, budget: 2700 },
+];
+
+for (let i = 0; i < budgetTotale.length; i++) {
+  console.log(budgetTotale[i].budget);
+}
+
+console.log(sommaBudget(budgetTotale));
+*/
+
+//18 PREZZO TOTALE GENERI ALIMENTARI
+
+function totaleAlimentari(valore, prodottoFind) {
+  let trovato = false;
+  for (let i = 0; i < valore.length; i++) {
+    if (valore[i].product == prodottoFind) {
+      trovato = true;
+      return console.log(
+        `${valore[i].product} totale costo = ${
+          valore[i].quantity * valore[i].price
+        }`
+      );
+    }
+  }
+  if (torvato == false)
+    return console.log(`${prodottoFind} non c'è nel negozio`);
+}
+
+let negozio = [
+  { product: "Milk", quantity: 3, price: 1.5 },
+  { product: "Tea", quantity: 10, price: 7 },
+  { product: "Bread", quantity: 5, price: 2 },
+];
+
+let x = prompt("Cerca il prodotto");
+
+console.log(totaleAlimentari(negozio, x));
