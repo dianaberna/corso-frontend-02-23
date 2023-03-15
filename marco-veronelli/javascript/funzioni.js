@@ -287,12 +287,12 @@ console.log("Validare e-mail")
   } else console.log("email non valida");
 }
  */
-function validate(mail){
+/* function validate(mail){
     let cont=""
     if (mail.includes("@") && mail.includes(".")) {
         cont=mail.indexof("@");
         for (let i = 0; i < mail.length; i++) {
-            /* for (let i = 0; i < domini.length; i++) { */
+           for (let i = 0; i < domini.length; i++) { 
                 if (typeof cont[--i]=="string"&& typeof cont[i++]=="string") {
                     
                 }
@@ -307,11 +307,11 @@ function validate(mail){
         
     }
     
-}
-validateEmail("@gmail.com") 
+} */
+/* validateEmail("@gmail.com") 
 validateEmail("hello@gmailcom")
 validateEmail("gmail") 
-validateEmail("marco@gmail.com")
+validateEmail("marco@gmail.com") */
 
 
 console.log("esercizio 14")
@@ -360,6 +360,32 @@ rps(p,s);
 
 console.log("esercizio 15")
 console.log("rimuovere i duplicati")
+function removeDups(a) {
+  aa = [];
+
+  for (let i = 0; i < a.length; i++) {
+    t = false;
+    if (aa.length == 0) {
+      7;
+
+      aa.push(a[i]);
+    } else {
+      for (let j = 0; j < aa.length; j++) {
+        if (aa[j] == a[i]) {
+          t = true;
+        }
+      }
+      if (!t) {
+        aa.push(a[i])
+        
+      }
+    }
+  }
+  console.log(aa)
+}
+removeDups([1, 0, 1, 0]) 
+removeDups(["The", "big", "cat"])
+removeDups(["John", "Taylor", "John"])
 
 
 console.log("esercizio 18")
