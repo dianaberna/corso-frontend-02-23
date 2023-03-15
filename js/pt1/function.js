@@ -32,7 +32,17 @@ console.log(controllaNumero(-2));
 // 4) In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
 // L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che restituisca il numero totale di zampe di tutti gli animali. 
 
-// 5) Crea una funzione che prenda un numero (step) come argomento e restituisca il numero di fiammiferi in quello step.
+// ??? 5) Crea una funzione che prenda un numero (step) come argomento e restituisca il numero di fiammiferi in quello step.
+function numeroFiammiferi(step) {
+    if (step === 0) {
+        return 0;
+    } else {
+        return (step * 6) + (step - 1);
+    }
+}
+console.log(numeroFiammiferi(1)); // 6
+console.log(numeroFiammiferi(4)); // 21
+console.log(numeroFiammiferi(87)); // 436
 
 // 6) Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
 function sommaNumeri(n) {
@@ -52,24 +62,20 @@ console.log(sommaNumeri(600));
 //       return null; 
 //     }
 //     const prezzoFinale = prezzoOriginale * (100 - percentualeSconto) / 100;
-//     return prezzoFinale;
+//     return prezzoFinale.toFixed(2);
 //   }
-// console.log(trovaSconto(1500, 50));  
-// console.log(trovaSconto(89, 20));
-// console.log(trovaSconto(100, 75));    
+//   console.log(trovaSconto(1500, 50));  
+//   console.log(trovaSconto(89, 20));
+//   console.log(trovaSconto(100, 75));    
+function trovaSconto(a, b) {
+    let prezzoFinale = a - ((a * b) / 100);
+    return prezzoFinale;
+}
+console.log(trovaSconto(1500, 50));  
+console.log(trovaSconto(89, 20));
+console.log(trovaSconto(100, 75));    
 
-function trovaSconto(prezzoOriginale, percentualeSconto) {
-    if (prezzoOriginale <= 0 || percentualeSconto < 0 || percentualeSconto > 100) {
-      return null; 
-    }
-    const prezzoFinale = prezzoOriginale * (100 - percentualeSconto) / 100;
-    return prezzoFinale.toFixed(2);
-  }
-  console.log(trovaSconto(1500, 50));  
-  console.log(trovaSconto(89, 20));
-  console.log(trovaSconto(100, 75));    
-
-// 8)
+// 8) Dato un numero compreso tra 1 e 26 (vedere codice ASCII), restituisci quale lettera si trova in quella posizione dell'alfabeto. Restituisce "non valido" se il numero fornito non rientra in tale intervallo o non è un numero intero.
 
 // 9) Crea una funzione che accetta due numeri e un operatore matematico + - / * ed eseguirà un calcolo con i numeri indicati.
 function calcola(numero1, numero2, operatore) {
@@ -120,3 +126,6 @@ console.log(contaTrue([true, false, false, true, false]));
 console.log(contaTrue([false, false, false, false]));
 console.log(contaTrue([]));
 
+// 12) Creare una funzione che restituisca lo spessore (in metri) di un foglio di carta dopo averlo piegato n numero di volte. La carta inizia con uno spessore di 0,5 mm.
+
+// 13) 
