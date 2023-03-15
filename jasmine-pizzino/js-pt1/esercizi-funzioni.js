@@ -82,9 +82,9 @@ function moltiplicazione(num1, num2) {
         }
         return somma;
       }
-      console.log(sommaDaUnUnicoNumero(4))
-      console.log(sommaDaUnUnicoNumero(13))
-      console.log(sommaDaUnUnicoNumero(600))
+      console.log(sommaDaUnUnicoNumero(4));
+      console.log(sommaDaUnUnicoNumero(13));
+      console.log(sommaDaUnUnicoNumero(600));
 
 
 
@@ -156,3 +156,77 @@ console.log(calcolatrice(2, "*", 2)); // 4
 console.log(calcolatrice(4, "/", 2)); // 2
 console.log(calcolatrice(4, "/", 0)); // "Impossibile dividere per 0!"
 console.log(calcolatrice(5, "%", 3)); // "Operatore non valido!"
+
+
+
+
+
+  // 10) Fare la somma di tutti gli elementi di un array 
+  function sommaElementiArray(array) {
+    return array.reduce((acc, curr) => acc + curr, 0);
+  }
+  console.log(sommaElementiArray([1, 2, 4])); // 7
+  console.log(sommaElementiArray([4, 2, 10, 2])); // 18
+  console.log(sommaElementiArray([1])); // 1
+
+
+
+
+
+
+
+   // 11) Quante volte è vero?
+   function quantiTrue(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === true) {
+        count++;
+      }
+      }
+    return count;
+      }
+  console.log(count);
+
+
+
+
+
+
+
+  // // 12) Piegare un pezzo di carta
+  // function spessore(n) {
+  //   const 
+   
+  // }
+
+
+
+
+
+  // 13) Validare un'e-mail
+function isEmailValid(email) {
+  // Controlla se la stringa contiene un solo carattere @
+  const atSignIndex = email.indexOf("@");
+  if (atSignIndex === -1 || email.indexOf("@", atSignIndex + 1) !== -1) {
+    return false;
+  }
+
+  // Controlla se la stringa contiene almeno un carattere prima della @
+  if (atSignIndex === 0) {
+    return false;
+  }
+
+  // Controlla se la stringa contiene almeno un . dopo la @
+  const dotIndex = email.lastIndexOf(".");
+  if (dotIndex === -1 || dotIndex < atSignIndex + 2) {
+    return false;
+  }
+
+  // Controlla se l'ultimo carattere della stringa non è un .
+  if (dotIndex === email.length - 1) {
+    return false;
+  }
+
+  // La stringa supera tutti i test ed è considerata un indirizzo email valido
+  return true;
+}
