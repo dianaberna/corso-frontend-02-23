@@ -579,20 +579,28 @@ console.log(vincitore(x, y));
 /* Crea una funzione che accetta un array di elementi,
 rimuove tutti gli elementi duplicati e restituisce un nuovo array nello 
 stesso ordine sequenziale del vecchio array (meno i duplicati).*/
-/*
-function eliminaDoppi(v = []) {
-  for (let i = 0; i < v.length; i++) {
-    for (let j = i + 1; j < v.length; j++) {
-      if (v[i] === v[j]) v.splice(j, 1);
-    }
-  }
-  return console.log(v);
-}
 
-let v = [1, 0, 1, 0];
-console.log(`Vettore originale ${v}`);
+function eliminaDoppi(v = []) {
+  let nuovo = [];
+  for (let i = 0; i < v.length; i++) {
+    let trovato = false;
+    for (let j = 0; j < nuovo.length; j++) {
+      if (v[i] == nuovo[j]) {
+        trovato = true;
+      }
+    }
+    if (trovato == false) {
+      nuovo.push(v[i]);
+    }
+    // console.log("nuovo " + nuovo);
+  }
+  //console.log("nuovo fuori ==> " + nuovo);
+  return console.log(nuovo);
+}
+let v = [1, 2, 3, 2, 4, 1, 1, 1, 2, 3, 3, 4, 5, 6, 7, 8];
+console.log("Vettore originale ===>" + v);
+console.log("sotto c'è il vettore senza doppi");
 console.log(eliminaDoppi(v));
-*/
 
 //Quanti giorni fra due date
 /*
@@ -633,7 +641,7 @@ console.log(sommaBudget(budgetTotale));
 */
 
 //18 PREZZO TOTALE GENERI ALIMENTARI
-
+/*
 function totaleAlimentari(valore, prodottoFind) {
   let trovato = false;
   for (let i = 0; i < valore.length; i++) {
@@ -646,7 +654,7 @@ function totaleAlimentari(valore, prodottoFind) {
       );
     }
   }
-  if (torvato == false)
+  if (trovato == false)
     return console.log(`${prodottoFind} non c'è nel negozio`);
 }
 
@@ -659,3 +667,10 @@ let negozio = [
 let x = prompt("Cerca il prodotto");
 
 console.log(totaleAlimentari(negozio, x));
+*/
+
+//GENRETATORE PASSWORD
+
+function generatorePassword(n) {
+  fo;
+}
