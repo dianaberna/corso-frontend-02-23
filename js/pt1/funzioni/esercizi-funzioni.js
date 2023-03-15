@@ -192,6 +192,27 @@ function sassoCartaForbici(p1, p2) {
         : `The winner is p2`;
 }
 
+function sassoCartaForbici(p1, p2){
+
+    if(p1 == p2){
+        return "It's a draw"
+    }else if(p1 == `Rock` && p2 == "Scissors"){
+        return `The winner is p1`
+    }else if(p1 == `Rock`){
+        return `The winner is p2`
+    }else if(p1 == `Paper` && p2 == `Scissors`){
+        return `The winner is p2`
+    }else if(p1 == `Paper` && p2 == `Rock`){
+        return `The winner is p1`
+    }else if(p1 == `Scissors` && p2 == `Paper`){
+        return `The winner is p1`
+    }else {
+        return `The winner is p2`
+    }
+
+}
+
+
 console.log(sassoCartaForbici("Rock", "Paper"));
 console.log(sassoCartaForbici("Scissors", "Paper"));
 console.log(sassoCartaForbici("Paper", "Paper"));
