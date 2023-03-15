@@ -755,7 +755,14 @@ function giocoSassoCartaForbici(p1, p2) {
   console.log(giocoSassoCartaForbici("Forbici", "Carta")); // Il vincitore è p1
   console.log(giocoSassoCartaForbici( "Carta", "Carta")); //È un pareggio
 
+//15.2
 
+console.log("esercizio 15.2")
+
+
+//16.2
+
+console.log("esercizio 16.2")
 
 
 //17.2 Ottieni la somma del budget delle persone 
