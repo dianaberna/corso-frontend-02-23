@@ -222,6 +222,14 @@ for (let i = 0; i < array2.length; i++) {
 console.log(array3);
 
 //16 esercizio
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+array3 = [];
+for (let i = 0; i < array2.length; i++) {
+  array2[i] = array2[i] / [array1.length - 1 - i];
+}
+
+console.log(array2);
 
 //17 esercizio
 //Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
@@ -231,9 +239,29 @@ let arrayPalindromo = true;
 for (let i = 0; i < array1.length / 2; i++) {
   if (array1[i] !== array1[array1.length - 1 - i]) {
     arrayPalindromo = false;
-    break;
+    break; // ignora che l'iterazione non è completata, però per il nostro controllo non serve continuare e usciamo
   } else {
     arrayPalindromo = true;
   }
 }
+
 console.log(arrayPalindromo);
+
+//17.2
+let countZero = 0;
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 2, 4];
+
+for (let i = 0; i < array2.length / 2; i++) {
+  if (array2[i] == array2[array2.length - 1 - i]) {
+    countZero++;
+  }
+}
+if (
+  countZero == array2.length / 2 ||
+  countZero == Math.ceil(array2.length / 2) // Math.ceil = parte intera superiore es. 2.7 = 3 / invece con Math.floor 2.7 = 2
+) {
+  console.log("Palindromo");
+} else {
+  console.log("Non è palindromo");
+}

@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+body,
+html {
+  font-family: "Lexend", sans-serif;
+  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1d1b1f;
+}
+
+a:hover {
+  color: rgb(6, 245, 145);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* SEZIONE NAV FISSO */
+
+#menu_burger {
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 2rem 6.25rem; */
+  padding: 3.125rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  font-weight: 600;
+}
+
+nav li {
+  display: inline;
+  margin: 0.875rem;
+}
+
+/* SEZIONE HEADER  */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+h1 {
+  font-size: 4.25rem;
+  font-weight: 700;
+}
+
+header p {
+  color: #706d73;
+}
+
+header p::first-letter {
+  background-color: yellow;
+}
+
+header button {
+  background-color: #f0f0f0;
+  color: #1d1b1f;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 5.625rem;
+  padding: 14px 22px;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  border: 1.8px solid #1d1b1f;
+  box-shadow: 6px 7px 3px 1px #1d1b1f;
+  gap: 0.5rem;
+}
+
+/* SEZIONE MAIN */
+
+/* REGOLA h2 APPLICATA A TUTTI GLI h2 DELLA PAGINA */
+h2 {
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  margin-top: 6.25rem;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+/* <!-- SEZIONE WHY USE OUR MYPAGE -- > */
+.container_why > div {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.container_why > div > div {
+  width: 22rem;
+  padding: 1.5rem;
+}
+
+.container_why img {
+  max-width: 100%;
+}
+
+.container_why p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #706d73;
+  font-weight: 400;
+}
+
+.firstLine div > div,
+.secondLine div > div {
+  text-align: center;
+}
+
+/* SEZIONE PARTNER */
+
+.partner {
+  background-color: #f0f0f0;
+  padding: 5rem 0;
+  margin-top: 3.125rem;
+}
+
+.partner h2 {
+  padding: 0;
+  margin: 0;
+}
+.container_partner img {
+  max-width: 100%;
+}
+.container_partner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+/* SEZIONE RECENSIONI */
+
+.review_container img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.review_container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review_container > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.review_container .card {
+  border: 0.0625rem solid black;
+  border-radius: 0.5rem;
+  width: 20.5rem;
+  color: #302e32;
+  background-color: #ebebeb;
+}
+
+.card .descrizione {
+  color: #706d73;
+}
+
+.card > div {
+  padding: 1rem;
+}
+
+/* SEZIONE HOW DOES THIS WORK? */
+
+.how_work h2 {
+  margin-bottom: 0;
+}
+
+.how_work span {
+  border: 1px solid black;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+}
+
+.how_work h4 {
+  font-size: 1.5625rem;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.how_work > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* CORRISPONDE A #how > div > div */
+.box-work {
+  border: 1px solid #1c2b33;
+  padding: 1rem;
+  width: 40rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+/* SEZIONE PRE-FOOTER */
+
+.pre_footer {
+  background-color: #f0f0f0;
+  padding: 2rem 6.25rem;
+  margin-top: 3.125rem;
+}
+
+.pre_footer h2 {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+.pre_footer h3 {
+  padding-top: 1.25rem;
+  font-weight: 500;
+  color: #302e32;
+}
+
+.pre_footer button {
+  background-color: #f0f0f0;
+  color: #1d1b1f;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 1.875rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  border: 1.8px solid #1d1b1f;
+  box-shadow: 6px 7px 3px 1px #1d1b1f;
+}
+
+.pre_footer button {
+  display: flex;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.pre_footer_button {
+  padding-bottom: 1.875rem;
+}
+
+.pre_footer svg {
+  margin-left: 0.1875rem;
+}
+
+/* SEZIONE FOOTER */
+footer {
+  background-color: #1d1b1f;
+  color: #ffffff;
+  padding: 2rem 6.25rem;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.container_two {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+
+footer ul li {
+  font-size: 0.625rem;
+  font-weight: 400;
+  font-family: "Inter";
+  color: #d3d0d6;
+}
+
+.lista_loghi div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.lista_loghi a img {
+  max-width: 100%;
+}
+
+footer hr {
+  border: 1px solid #fbfafc;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 2.125rem;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  #menu_burger {
+    visibility: visible;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 0.625rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+
+  header {
+    margin-top: 2rem;
+  }
+
+  header button {
+    margin-bottom: 2.5rem;
+  }
+
+  /* SEZIONE WHY USE OUR MYPAGE */
+  .container_why > div {
+    gap: 1rem;
+  }
+
+  /* SEZIONE PARTNER */
+  .partner {
+    padding: 1rem;
+  }
+
+  /* SEZIONE REVIEW */
+  .review_container {
+    max-width: 48.75rem;
+  }
+
+  .review_container .freccia {
+    display: none;
+  }
+
+  .review_container .card:nth-child(2) {
+    display: none;
+  }
+
+  /* SEZIONE HOW DOES THIS WORK? */
+
+  .how_work h4 {
+    font-size: 1.125rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .box-work {
+    width: 12rem;
+  }
+
+  /* SEZIONE PRE FOOTER */
+
+  .pre_footer {
+    padding: 2rem 4rem;
+  }
+
+  /* SEZIONE FOOTER */
+  footer {
+    padding: 2rem 4rem;
+  }
+
+  .container_footer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .container_two {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .lista_loghi div {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4.25rem;
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+
+  /* SEZIONE WHY USE OUR PAGE? */
+  .container_why > div {
+    padding: 0 1.25rem;
+    flex-wrap: nowrap;
+  }
+
+  /* SEZIONE PARTNER  */
+  .partner {
+  }
+
+  .container_partner {
+    padding: 0 6.25rem;
+  }
+
+  /* SEZIONE RECENSIONI */
+  .review_container .freccia {
+    display: none;
+  }
+
+  .review_container .card:nth-child(2) {
+    display: none;
+  }
+
+  /* SEZIONE HOW DOES THIS WORK */
+  .box-work {
+    width: 35rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4.25rem;
+  }
+}
