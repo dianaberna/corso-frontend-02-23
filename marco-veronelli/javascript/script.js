@@ -617,6 +617,84 @@ una nuova stringa che contiene solo i caratteri comuni alle due stringhe.
 (versione 1: senza escludere i duplicati, versione 2: escludendo i duplicati) */
 console.log("--------------------------")
  console.log("esercizio 8 stringhe c")
+ 
+ let vocali = "";
+ stringa = "palesemente";
+ for (let i = 0; i < stringa.length; i++) {
+     let carattere = stringa[i];
+     if (
+         carattere === "a" ||
+         carattere === "e" ||
+         carattere === "i" ||
+         carattere === "o" ||
+         carattere === "u"
+     ) {
+         vocali += stringa[i];
+     }
+ }
+ console.log("con duplicati: " + vocali);
+ 
+ vocali = "";
+ 
+ for (let i = 0; i < stringa.length; i++) {
+     let carattere = stringa[i];
+     if (
+         carattere === "a" ||
+         carattere === "e" ||
+         carattere === "i" ||
+         carattere === "o" ||
+         carattere === "u"
+     ) {
+         if (!vocali.includes(stringa[i])) vocali += stringa[i];
+     }
+ }
+ 
+ console.log("senza duplicati: " + vocali);
+ 
+ stringa="ciiaaoo"
+ arrayvocali = ["a","e","i","o","u"];
+ trovato = false;
+ let stringanuova=""
+ for (let i = 0; i < stringa.length; i++) {
+     
+         trovato = false
+         trovato2=false
+         for(let j = 0; j<arrayvocali.length; j++){
+             if(arrayvocali[j] == stringa[i]){
+                 trovato = true
+                 /* console.log(stringa[i]) */
+             }
+         
+         }
+         if(trovato){ /* console.log(stringa[i]) */
+        /*  console.log(stringanuova) */
+ 
+         if(stringanuova.length==0){stringanuova+=stringa[i]}else{
+ 
+             for (let z = 0; z < stringanuova.length; z++) {
+                 if (stringanuova[z]== stringa[i]) {
+                     trovato2=true;
+                     console.log(stringanuova[z])
+     
+                 }              
+                 
+             }
+             if (!trovato2) {stringanuova += stringa[i]
+                 
+                 
+             }
+         }
+             
+      }
+ 
+     
+ }
+ 
+ console.log("senza duplicati e senza funzioni: " + stringanuova);
+ 
+ 
+ 
+ 
 
  p="stringoaaaaa"
  p1="ssstruinga"

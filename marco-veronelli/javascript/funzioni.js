@@ -134,14 +134,14 @@ trovaSconto(100,75)
 
 console.log("esercizio 8")
 console.log("posizione nell'alfabeto")
-let letter=""
-function letteraInPosizione(a) {
 
+function letteraInPosizione(a) {
+/* console.log(a%1) */
 if (a%1!=0 || a==0) { console.log("invalid")
     
 }else if( a > 0 && a < 27) {
         
-        letter = String.fromCharCode(a+96);
+       let letter = String.fromCharCode(a+96);
         console.log(letter)
     }
 }
@@ -153,6 +153,40 @@ letteraInPosizione(4.5)
 console.log("esercizio 9")
 console.log("calcolatrice")
 
+function calcolatrice(a,c,b) {
+    tot=0
+    switch(c) {
+
+        case "+":  tot=a+b
+        console.log(tot)
+          break;
+      
+        case "-":  tot=a-b
+        console.log(tot)
+          break;
+
+          case "/": if(b===0) {
+            console.log("Error")
+            break;
+          } else tot=a/b
+          console.log(tot)
+          break;
+
+          case "*":  tot=a*b
+          console.log(tot)
+          break;
+
+          default:
+            console.log("Error")
+            break;
+          
+      }
+      
+}
+calcolatrice(2, "+", 2);
+calcolatrice(2, "*", 2);
+calcolatrice(4, "/", 2);
+calcolatrice(4, "/", 0);
 
 
 
@@ -176,9 +210,10 @@ sommaElementiArray([1])
     
 console.log("esercizio 11")
 console.log("Fare la somma di tutti gli elementi di un array")
-a=[]
+
 function quantiTrue(a) {
-    somma=0
+    
+    let somma=0
     for (let i = 0; i < a.length; i++) {
 
         if (a[i] === true){
@@ -200,20 +235,11 @@ console.log("esercizio 12")
 console.log("Piegare un pezzo di carta")
 
 function spessore(n) {
-s=0.0005
+let s=0.5/1000
 
- if (n==1) { 
-    s= s*2
-    
-} if (n==2) {
-    s= s*2*2
-
-} if (n>2) {
-    
+if (n>=1) { 
     s= (s)*(2**n)
 }
-    
-
     console.log(s)
     return;
 }
@@ -222,4 +248,195 @@ spessore(1)
 spessore(4)
 spessore(21)
 
+console.log("esercizio 13")
+console.log("Validare e-mail")
 
+/* function validateEmail(mail) {
+  let v = false;
+  let c = false;
+  let sn = 0;
+  let sn2 = "";
+
+  for (let i = 0; i < mail.length; i++) {
+    if (mail[i] == "@") {
+      sn++;
+      if (sn > 1 || sn < 1) {
+        v = false;
+      } else if (mail[i] == "@" && i > 0) v = true;
+    }
+  }
+  c = true;
+  for (let j = 0; j < mail.length; j++) {
+    if (mail[j] == "." && j == mail.length - 1) {
+      c = false;
+    }
+  }
+  for (let p = 0; p < mail.length; p++) {
+    if (mail[p] === "@" || mail[p] === ".") {
+      sn2 += mail[p];
+    }
+  }
+  if (sn2 === ".@" || sn2 === "@") {
+    c = false;
+  }
+  if (sn2 == ".@.") {
+    c = true;
+  }
+  if (v && c == true) {
+    console.log("email valida");
+  } else console.log("email non valida");
+}
+ */
+function validate(mail){
+    let cont=""
+    if (mail.includes("@") && mail.includes(".")) {
+        cont=mail.indexof("@");
+        for (let i = 0; i < mail.length; i++) {
+            /* for (let i = 0; i < domini.length; i++) { */
+                if (typeof cont[--i]=="string"&& typeof cont[i++]=="string") {
+                    
+                }
+                
+                
+            }
+            
+                
+            }
+            
+        }
+        
+    }
+    
+}
+validateEmail("@gmail.com") 
+validateEmail("hello@gmailcom")
+validateEmail("gmail") 
+validateEmail("marco@gmail.com")
+
+
+console.log("esercizio 14")
+console.log("sasso, carta, forbice")
+let r="rock"
+let p="paper"
+let s="scissors"
+
+function rps(p1,p2) {
+
+    if (p1===p2) {console.log("pareggio")
+        
+    }
+    if (p1==r && p2==p ) {
+        console.log("winner is p2 ")
+        
+    }
+    if (p1==r && p2==s ) {
+        console.log("winner is p1")
+        
+    }
+    if (p1==p && p2==r ) {
+        console.log("winner is p1")
+        
+    }
+    if (p1==p && p2==s ) {
+        console.log("winner is p2")
+        
+    }
+    if (p1==s && p2==p ) {
+        console.log("winner is p1")
+        
+    }
+    if (p1==s && p2==r ) {
+        console.log("winner is p2")
+        
+    }
+    
+    
+    
+}
+rps(r,p);
+rps(s,p);
+rps(p,p);
+rps(p,s);
+
+console.log("esercizio 15")
+console.log("rimuovere i duplicati")
+
+
+console.log("esercizio 18")
+console.log("Quanti giorni tra due date")
+
+/* console.log(quantiGiorni(new Date("June 14, 2019"), new Date("June 20, 2019")));
+
+console.log(quantiGiorni(new Date("December 29, 2018"), new Date("January 1, 2019")));
+
+console.log(quantiGiorni(new Date("July 20, 2019"), new Date("July 30, 2019")));
+ */
+
+
+
+
+
+console.log("esercizio 17")
+console.log("budget")
+
+
+    budgetTotale([
+        { name: "John", age: 21, budget: 23000 },
+        { name: "Steve", age: 32, budget: 40000 },
+        { name: "Martin", age: 16, budget: 2700 },
+    ])
+
+
+
+    budgetTotale([
+        { name: "John", age: 21, budget: 29000 },
+        { name: "Steve", age: 32, budget: 32000 },
+        { name: "Martin", age: 16, budget: 1600 },
+    ])
+
+
+function budgetTotale(array) {
+    somma=0
+    for (let i = 0; i < array.length; i++) {4
+        somma+=array[i].budget
+
+    }
+    console.log(somma)
+}
+
+
+console.log("esercizio 18")
+console.log("prezzo")
+console.log(
+prezzoTotaleAlimenti([{ product: "milk", quantity: 1, price: 1.5 }])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "cereals", quantity: 1, price: 2.5 },
+    ])
+);
+console.log(
+    prezzoTotaleAlimenti([{ product: "milk", quantity: 3, price: 1.5 }])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "eggs", quantity: 12, price: 0.10 },
+        { product: "bread", quantity: 2, price: 1.6 },
+        { product: "cheese", quantity: 1, price: 4.5 },
+    ])
+);
+console.log(
+    prezzoTotaleAlimenti([
+        { product: "chocolate", quantity: 1, price: 0.10 },
+        { product: "lollipop", quantity: 1, price: 0.20 },
+    ])
+);
+function prezzoTotaleAlimenti(array) {
+    for (let i = 0; i < array.length; i++) {
+        somma+= array[i].price*array[i].quantity
+        
+    }
+    console.log(somma)
+}
