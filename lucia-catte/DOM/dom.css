@@ -1,0 +1,90 @@
+body{
+    background-color: #fbfafc;
+    font-family: 'Lexend', sans-serif;
+    color: #1d1b1f;
+}
+
+html, body{
+    margin: 0;
+    
+}
+
+/* barra di navigazione */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    position: sticky;
+    top: 0;
+    /* 
+        position: fixed;
+        width: calc(100% - 100px);
+    */
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*griglia background header*/
+header svg{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+/*sezione header*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem 4rem;
+    gap: 2rem;
+    
+}
+
+/*Basic landing page for big dream*/
+header h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+/*Minimal, responsive and accessible*/
+header h1 ~ p{
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    
+}
+
+/* bottone dell'header */
+button{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    padding: 1rem 1.25rem;
+
+    
+
+    font-family: inherit;
+    background-color: #F0F0F0;
+    border: 1px solid black;
+    border-radius: .25rem;
+    box-shadow: .25rem .25rem 0 black;
+}
