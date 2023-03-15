@@ -1,0 +1,88 @@
+<!-- prima versione: eliminazione immediata -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <input type="text" id="input" placeholder="Aggiungi una nuova attività" />
+    <button onclick="aggiungiAttivita()">Aggiungi</button>
+    <ul id="lista"></ul>
+
+    <script>
+      function aggiungiAttivita() {
+        var input = document.getElementById("input");
+        var lista = document.getElementById("lista");
+
+        if (input.value !== "") {
+          var nuovoElemento = document.createElement("li");
+          nuovoElemento.textContent = input.value;
+          var pulsanteElimina = document.createElement("button");
+          pulsanteElimina.textContent = "X";
+          pulsanteElimina.onclick = function () {
+            lista.removeChild(nuovoElemento);
+          };
+          nuovoElemento.appendChild(pulsanteElimina);
+          lista.appendChild(nuovoElemento);
+          input.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+<!-- Seconda versione: eliminazione dopo spostamento in lista separata -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <input type="text" id="input" placeholder="Aggiungi una nuova attività" />
+    <button onclick="aggiungiAttivita()">Aggiungi</button>
+    <ul id="lista"></ul>
+    <button onclick="svuotaLista()">Svuota lista</button>
+    <ul id="completate"></ul>
+
+    <script>
+      var completate = [];
+
+      function aggiungiAttivita() {
+        var input = document.getElementById("input");
+        var lista = document.getElementById("lista");
+
+        if (input.value !== "") {
+          var nuovoElemento = document.createElement("li");
+          nuovoElemento.textContent = input.value;
+          var pulsanteElimina = document.createElement("button");
+          pulsanteElimina.textContent = "X";
+          pulsanteElimina.onclick = function () {
+            completate.push(nuovoElemento.textContent);
+            lista.removeChild(nuovoElemento);
+          };
+          nuovoElemento.appendChild(pulsanteElimina);
+          lista.appendChild(nuovoElemento);
+          input.value = "";
+        }
+      }
+
+      function svuotaLista() {
+        var completateList = document.getElementById("completate");
+        completate.forEach(function (elemento) {
+          var nuovoElemento = document.createElement("li");
+          nuovoElemento.textContent = elemento;
+          completateList.appendChild(nuovoElemento);
+        });
+        completate = [];
+      }
+    </script>
+  </body>
+</html>

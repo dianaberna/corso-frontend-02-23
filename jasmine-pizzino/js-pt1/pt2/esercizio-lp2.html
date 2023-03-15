@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio 2</title>
+    <style>
+      #mydiv {
+        margin: 2rem;
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        /* border: 2px solid black; */
+      }
+      #cssinput {
+        margin-top: 1rem;
+        width: 400px;
+      }
+    </style>
+    <script>
+      function applicaCSS() {
+        var css = document.getElementById("cssinput").value;
+        document.getElementById("mydiv").style.cssText = css;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <input type="text" id="cssinput" placeholder="margin: 2rem; width: 400px; height: 400px; background-color: yellow" />
+    <button onclick="applicaCSS()">Aggiorna stile</button>
+  </body>
+</html>
