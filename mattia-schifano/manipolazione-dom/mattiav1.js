@@ -30,3 +30,22 @@ let link3 = document.createElement("a")
 link3.appendChild(testoLink3)
 li3.appendChild(link3)
 ul.appendChild(li3)
+
+let header = document.createElement("header")
+document.body.appendChild(header)
+
+let testoTitolo = document.createTextNode("Basic landing page for big dream")
+let titolo = document.createElement("h1")
+titolo.appendChild(testoTitolo)
+header.appendChild(titolo)
+
+let testoParagrafo = document.createTextNode("Minimal, responsive and accessible")
+let paragrafo = document.createElement("p")
+paragrafo.setAttribute("class", "subtitle")
+paragrafo.appendChild(testoParagrafo)
+header.appendChild(paragrafo)
+
+let testoBtn = document.createTextNode("Explore repo")
+let btn = document.createElement("button")
+btn.appendChild(testoBtn)
+header.appendChild(btn)
