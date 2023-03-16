@@ -64,3 +64,23 @@ function sommaElementiArray(array) {
 console.log(sommaElementiArray([1, 2, 3]));
 console.log(sommaElementiArray([1, 2, 3, 5, 6, 7, 8]));
 
+// arrow function 
+// comparazione
+console.log("---")
+function somma(a, b){
+    return a+b;
+}
+
+console.log(somma(1,2))
+console.log("---")
+
+// nomefunzione = (parametri) => corpo della funzione
+let sommaArrowFunction = (a, b) => a+b
+
+console.log(sommaArrowFunction(1,2))
+console.log("---")
+
+let array = [1, 2, 3]
+array.forEach(elemento => console.log(elemento))
+
+console.log("---")
