@@ -553,6 +553,8 @@ console.log(mult)
 mult = moltiplicazione(7,3)
 console.log(mult)
 
+// -------------------------------------------------
+
 console.log("------- FUNZIONI Es2: Anni in giorni")
 
 function anniInGiorni(giorni) {
@@ -579,6 +581,7 @@ function anniInGiorni2(giorni) {
 } 
 anniInGiorni2(65)
 
+// -------------------------------------------------
 
 console.log("------- FUNZIONI Es3: <= 0")
 
@@ -597,6 +600,7 @@ console.log(minoreUgualeAZero(5))
 console.log(minoreUgualeAZero(0))
 console.log(minoreUgualeAZero(-2))
 
+// -------------------------------------------------
 
 console.log("------- FUNZIONI Es4: la fattoria")
 
@@ -608,6 +612,7 @@ console.log(numeroZampe(2,3,5))
 console.log(numeroZampe(1,2,3))
 console.log(numeroZampe(5,2,8))
 
+// -------------------------------------------------
 
 console.log("------- FUNZIONI Es5: case di fiammiferi")
 
@@ -628,6 +633,7 @@ console.log(numeroFiammiferi(1))
 console.log(numeroFiammiferi(4))
 console.log(numeroFiammiferi(87))
 
+// -------------------------------------------------
 
 console.log("------- FUNZIONI Es6: somma i numeri da un unico numero")
 
@@ -642,22 +648,178 @@ console.log(sommaUnicoNumero(4))
 console.log(sommaUnicoNumero(13))
 console.log(sommaUnicoNumero(600))
 
+// -------------------------------------------------
 
 console.log("------- FUNZIONI Es7: trova lo sconto")
 
 function trovaSconto(prezzo,percentuale) {
     let sconto = (prezzo * percentuale) /100;
-    let prezzoFinale = prezzo - sconto;
-    return prezzoFinale;
+    return (prezzo - sconto).toFixed(2);
 }
 console.log(trovaSconto(1500,50))
 console.log(trovaSconto(89,20))
 console.log(trovaSconto(100,75))
 
+// -------------------------------------------------
 
 console.log("------- FUNZIONI Es8: Posizione nell'alfabeto")
 
-/* function letteraInPosizione(lettera) {
-    for ()
-    
-} */
+function letteraInPosizione(numero) {
+    if (numero % 1 !=0 || numero == 0) { // se il numero ha la virgola o è uguale a 0
+        return "Invalid"
+    } else if (numero > 0 && numero < 27) { // se la lettera è compresa nell'alfabeto
+       let lettera = String.fromCharCode(numero+96); // aggiungi 96 perchè nella chart "a" inizia da 96
+        return lettera
+    }
+}
+console.log(letteraInPosizione(1))
+console.log(letteraInPosizione(26.0))
+console.log(letteraInPosizione(0))
+console.log(letteraInPosizione(4.5))
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es9: Calcolatrice di Base")
+
+function calcolatrice(a, operatore , b){
+    if (operatore == "/" && b <= 0){
+        return "Impossibile dividere per 0!"
+    } else {
+        return eval(a + operatore + b)
+    }
+}
+console.log(calcolatrice(2,"/",0))
+console.log(calcolatrice(2,"+",2))
+console.log(calcolatrice(2,"*",2))
+console.log(calcolatrice(4,"/",2))
+
+console.log("------- FUNZIONI Es9.2: Calcolatrice di Base con Switch")
+
+function calc(n, operator , x){
+    let risultato = 0
+    switch (operator) { 
+        case "/":
+            if(x <= 0){
+                risultato = "Impossibile dividere per 0!"
+                break;
+            }
+        default:
+            risultato = eval(n + operator + x);           
+            break;
+    }
+    return risultato
+}
+console.log(calc(2,"/",-3))
+console.log(calc(2,"/",0))
+console.log(calc(2,"+",2))
+console.log(calc(2,"*",2))
+console.log(calc(4,"/",2))
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es10: Somma tutti gli elementi di un array")
+
+function sommaElementiArray(array){ 
+    let somma = 0;
+    for (let i = 0; i < array.length; i++){
+        somma += array[i];
+    } 
+    return somma
+}
+console.log(sommaElementiArray([1,2,4]))
+console.log(sommaElementiArray([4,2,10,2]))
+console.log(sommaElementiArray([1]))
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es11: Quante volte è vero")
+function quantiTrue(array) {
+    let volte = 0
+    if (array.length == 0){
+        return 0 + " l'array è vuoto"
+    }
+    for (let i = 0; i < array.length; i++){
+        if (array[i] === true) {
+            volte++
+        }
+    }
+    return volte
+}
+console.log(quantiTrue([true, false, false, true, false]))
+console.log(quantiTrue([false, false, false, false]))
+console.log(quantiTrue([]))
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es12: Piegare un pezzo di carta")
+function spessore(volte) {
+    let carta = 0.5 / 1000 //per trasformarlo in metri
+    carta = carta * (2**volte) // 0.5 è lo spessore iniziale della carta, 2** = esponente volte alla seconda
+    return carta 
+}
+console.log(spessore(1))
+console.log(spessore(4))
+console.log(spessore(21))
+
+console.log("------- FUNZIONI Es12 con for: Piegare un pezzo di carta")
+function spessoreCarta(volte){
+    let carta = 0.0005
+    for (let i=0; i<volte; i++) {
+        carta = carta*2
+    } 
+    return carta
+}
+console.log(spessoreCarta(1))
+console.log(spessoreCarta(4))
+console.log(spessoreCarta(21))
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es13: Validare un'email")
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es14: Sasso Carta Forbici")
+
+// -------------------------------------------------
+
+console.log("------- FUNZIONI Es15: Rimuovi i duplicati di un array")
+// tengo un array di appoggio vuoto e controllo se dall'array esiste nell'appoggio
+// se aa.length == 0 altrimenti verifico se esiste già
+// vado al secondo elemento, con un for e un if lo aggiungiamo con una push o portando la [i]
+// vado al terzo, verificando se sia = a uno di quelli già inseriti con un boolean impostato prima del for
+
+// -------------- OGGETTI -----------------------------------
+
+console.log("------- OGGETTI Es16: Quanti giorni tra due date")
+
+// -------------------------------------------------
+
+console.log("------- OGGETTI Es17: restituisci la somma dei budget delle persone")
+function budgetTotale(array) {
+    let somma = 0
+    for (let i = 0; i < array.length; i++) {
+        somma += array[i].budget;
+    }
+    return somma
+}
+
+console.log(
+    budgetTotale([
+    { name: "John", age: 21, budget: 23000},
+    { name: "Steve", age: 32, budget: 40000},
+    { name: "Martin", age: 16, budget: 2700}
+    ])
+)
+
+console.log(
+    budgetTotale([
+        { name: "John", age: 21, budget: 29000},
+        { name: "Steve", age: 32, budget: 32000},
+        { name: "Martin", age: 16, budget: 1600}
+    ])
+)
+
+// -------------------------------------------------
+
+console.log("------- OGGETTI Es18: Calcola il prezzo totale dei generi alimentari")
