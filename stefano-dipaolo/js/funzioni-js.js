@@ -309,22 +309,17 @@ function rps(p1, p2) {
       if (p1 == p2) {
         console.log("pareggio");
       }
-      /*if (p1 == "forbici" && p2 == "forbici") {
-        console.log("pareggio")
-        
-    }
-    if (p1 == "carta" && p2 == "carta") {
-        console.log("pareggio")
-        
-    }*/
-      if (p1 == "sasso" && p2 == "carta") {
-        console.log("vince il giocatore 2");
-      }
       if (p1 == "sasso" && p2 == "forbici") {
         console.log("vince il giocatore 1");
       }
       if (p1 == "carta" && p2 == "sasso") {
         console.log("vince il giocatore 1");
+      }
+      if (p1 == "forbici" && p2 == "carta") {
+        console.log("vince il giocatore 1");
+      }
+      if (p1 == "sasso" && p2 == "carta") {
+        console.log("vince il giocatore 2");
       }
       if (p1 == "carta" && p2 == "forbici") {
         console.log("vince il giocatore 2");
@@ -352,20 +347,28 @@ animali.splice(1, 1)
 console.log(animali)
 
 console.log("Esercizio 15");
-function removeDups(a) {
-    let array = []
-    for (let i = 0; i < a.length; i++) {
-          if (a[i] != a[i+1]) {
-            array += a[i]
-            
+function removeDups(array) {
+    let array2 = []
+    for (let i = 0; i < array.length; i++) {  //scorro l'array
+      let controllo = false;
+
+      for (let j = 0; j < i; j++) {            //scorro l'array e lo confronto
+          if (array[i] === array[j]) {
+              controllo = true;               // se l'uguaglianza è true --> c'è il duplicato e non faccio l'inserimento
+              break;
           }
-        }  
-      console.log(array);
-      return
+      }
+
+      if (!controllo) {                    // altrimenti  push nel secondo array
+          array2.push(array[i]);
+      }
+  }
+      console.log(array2)
+  return ;
 }
 
-removeDups(["ciao", "ciao"]);
-removeDups([1, 0, 1, 0, 0,1,0,1,0,0,0,1,1]);
+removeDups(["ciao", "ciao","ciao","1"]);
+removeDups([1, 0, 1, 0, 0,1,0,1,0,0,0,1,1,3,2]);
 removeDups(["The", "big", "cat"]);
 removeDups(["John", "Taylor", "John"]);
 
@@ -382,24 +385,20 @@ for (let i = 0; i < a.length; i++) {
   }
   console.log(a);*/
 //Esercizio 16
-//rea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data
+//Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data
 console.log("Esercizio 16")
-let data = new Date("08/08/2020")
-console.log(data)
-console.log(data.toDateString())
 
-function quantiGiorni (a,b) {
-    let c = a.getMonth() - b.getMonth()
-    let d = a.getDay() - b.getDay()
-    let e = a.getFullYear() - b.getFullYear()
-
-    console.log (c,d,e)
-    return
+function quantiGiorni (data1,data2) {
+    const giorno = 24 * 60 * 60 * 1000  //un giorno in millesecondi
+   console.log( (diffDays = Math.round(Math.abs((data1-data2) / giorno ))))
+   return
 
 }
 
 
 quantiGiorni(new Date("June 14, 2019"), new Date("June 20, 2019"))
+quantiGiorni(new Date("December 29, 2017"), new Date("January 1, 2019"))
+quantiGiorni(new Date("July 20, 2019"), new Date("July 30, 2019"))
 
 
 
