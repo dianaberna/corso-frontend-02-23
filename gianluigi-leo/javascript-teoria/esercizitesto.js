@@ -20,8 +20,6 @@ for(let i = 0; i < p1.length / 2; i++){
     if(p1[i] !== p2[p2.length -1 -i]){
         pFlag = false;
     }
-    
-    
 }
 
 if(pFlag == true){
@@ -34,8 +32,8 @@ else{
 
 // Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti
 console.log("------- 3) Scrivere un programma che verifica se esiste una stringa all'interno di un altra stringa es. cat in categoria, scafo in piroscafo, mente in palesemente → esempi corretti --------");
-let str1 = "piroscafo";
-let str2 = "scafo";
+let str1 = "ciao mondo mondo";
+let str2 = "mondo";
 let isFlag = true;
 
 for(let i = 0; i < str1.length; i++){
@@ -46,7 +44,6 @@ for(let i = 0; i < str1.length; i++){
             }
         }
     }
-
 }
 
 if(isFlag == true){
