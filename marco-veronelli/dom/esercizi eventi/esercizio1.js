@@ -1,16 +1,19 @@
 window.addEventListener("load", function () {
     console.log("il body è stato caricato");
-    document.getElementsByTagName("body")[0].style.backgroundColor="rgb("+colori+")"
-}) 
+    document.getElementsByTagName("body")[0].style.backgroundColor="rgb("+colori+")";
+}) ;
 
 
-document.getElementsByTagName("body")[0].style.display="flex"
-document.getElementsByTagName("body")[0].style.margin="50%"
+document.getElementsByTagName("body")[0].style.display="flex";
+document.getElementsByTagName("body")[0].style.justifyContent="center";
+/* document.getElementsByTagName("body")[0].style.alignContent ="center" */
+
 let div=document.createElement("div")
 document.body.appendChild(div)
 div.setAttribute("id", div)
-document.getElementById(div).style.backgroundColor="white"; 
+document.getElementById(div).style.backgroundColor="rgb(220,220,220"; 
 document.getElementById(div).style.padding="5px 10px";
+document.getElementById(div).style.margin="200px";
 
 
 function cambia(max){
