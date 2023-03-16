@@ -1,6 +1,6 @@
 let nav = document.createElement("nav")
-
 document.body.appendChild(nav)
+
 let a= document.createElement("a")
 let img= document.createElement("img")
 img.setAttribute("src","imgdom/MyPage.png")
