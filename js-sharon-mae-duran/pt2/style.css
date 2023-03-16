@@ -263,14 +263,4 @@ footer hr{
 }
 
 
-@media screen and (min-width: 481px){
-    h1{
-        font-size: 4.25rem;
-    }
-    #how > div > div{
-        width: 40rem;
-    }
-    footer{
-        padding: 2rem 6.25rem;
-    }
-}
+
