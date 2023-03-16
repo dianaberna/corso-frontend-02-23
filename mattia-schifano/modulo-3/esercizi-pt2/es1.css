@@ -1,0 +1,10 @@
+/* centro la scritta */
+.color-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+  }
+  .color-div p {
+    margin: 0;
+  }
