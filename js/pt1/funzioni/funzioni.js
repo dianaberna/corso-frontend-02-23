@@ -17,12 +17,11 @@ nomeFunzione(parametro1, parametro2, etc)
 
 // funzione che calcola la somma di due numeri
 
-function calcoloSomma(a, b) {
+function calcoloSomma (a, b) {
     console.log(a, b);
-    // let somma = 1+4 = 5
-    const somma = a + b;
-    console.log(somma);
-    return somma; // 5
+    // let somma = 1+5 = 6
+    let somma = a + b;
+    return somma; // 6
 }
 
 // console.log(somma) --> qui la variabile somma non esiste
@@ -45,16 +44,18 @@ function calcoloDifferenza(a, b) {
     console.log("ciao");
 }
 
-calcoloDifferenza(2, 6);
+let stampa2 = calcoloDifferenza(2, 6);
+console.log("stampa2 -> "+stampa2)
 
 function ciao() {
     console.log("ciao");
+    return;
 }
 
 function sommaElementiArray(array) {
     let somma = 0;
     for (let i = 0; i < array.length; i++) {
-        somma = somma + array[i];
+        somma = calcoloSomma(somma,array[i]);
     }
     ciao();
     return somma;
@@ -62,3 +63,24 @@ function sommaElementiArray(array) {
 
 console.log(sommaElementiArray([1, 2, 3]));
 console.log(sommaElementiArray([1, 2, 3, 5, 6, 7, 8]));
+
+// arrow function 
+// comparazione
+console.log("---")
+function somma(a, b){
+    return a+b;
+}
+
+console.log(somma(1,2))
+console.log("---")
+
+// nomefunzione = (parametri) => corpo della funzione
+let sommaArrowFunction = (a, b) => a+b
+
+console.log(sommaArrowFunction(1,2))
+console.log("---")
+
+let array = [1, 2, 3]
+array.forEach(elemento => console.log(elemento))
+
+console.log("---")

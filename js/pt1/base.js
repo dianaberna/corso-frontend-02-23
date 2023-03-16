@@ -262,7 +262,7 @@ do {
 
 */
 
-// 5 - Stampare la somma dei primi 4 numeri interi (slide problem solving)
+// Stampare la somma dei primi 4 numeri interi (slide problem solving)
 let cont = 0; // step 1
 let sommaNuova = 0;
 let n = 4; // i primi 4 numeri
@@ -298,47 +298,36 @@ for (cont = 0; cont <= n; cont = cont + 1) {
 }
 console.log(sommaNuova);
 
-// notazione ad oggetti
+// Spread operator
+let array = [1, 2, 3];
+console.log("metodo con lo spread operator");
+risultato = [...array, ...array];
+/* risultato = [array, array]   --> in questo caso otteniamo un array di due elementi, ogni elemento è un array*/
+console.log(risultato);
 
-let esempio = {
-    browsers: {
-        firefox: {
-            name: "Firefox",
-            pref_url: "about:config",
-            releases: {
-                1: {
-                    release_date: "2004-11-09",
-                    status: "retired",
-                    engine: "Gecko",
-                    engine_version: "1.7",
-                },
-            },
-        },
-    },
-};
+console.log("spread operator");
+console.log(array);
+console.log(...array);
 
+// operatore ternario
+a = 5;
 
-console.log(esempio)
-console.log(esempio["browsers"])
-console.log(esempio.browsers)
-console.log(esempio["browsers"]["firefox"]["name"])
-console.log(esempio.browsers.firefox.name)
-
-let esempio2 = {
-    nome: "Pippo",
-    animali: ["cane", "gatto", 2, 4]
+if (a > 0) {
+    console.log("a è maggiore di 0");
+} else {
+    console.log("a è minore di 0");
 }
 
-console.log(esempio2.nome)
-console.log(esempio2.animali[0])
-console.log("--" + esempio2[0])
-console.log(typeof esempio2)
-console.log(typeof esempio2.nome)
-console.log(typeof esempio2.animali)
+a > 0 ? console.log("a è maggiore di 0") : console.log("a è minore di 0");
 
-esempio = {0: "nome", 1: "cognome", 2: "età"}
-console.log(esempio[0])
+function controlloSeMaggiore(a) {
+    if (a > 0) {
+        return "si";
+    } else {
+        return "no";
+    }
+}
 
-
-// programmazione ad oggetti 
-// oggetto -> variabile che può avere sia altre variabili (proprietà) ma anche delle funzioni (metodi)
+function controlloSeMaggiore2(a) {
+    return a > 0 ? "si" : "no";
+}
