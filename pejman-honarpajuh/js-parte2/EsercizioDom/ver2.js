@@ -4,7 +4,7 @@ console.log('versione function versione  oggetti  -----')
 
 function creaNodo(position, nameTag, text = "",listAttribute = {}){
     let elemento = document.createElement(nameTag);
-    if(listAttribute.length != 0){
+    
         if(listAttribute.id){
             elemento.setAttribute("id",listAttribute.id)
         }
@@ -14,7 +14,7 @@ function creaNodo(position, nameTag, text = "",listAttribute = {}){
         if(listAttribute.href){
             elemento.setAttribute("href",listAttribute.href)
         }
-    }
+   
     position.appendChild(elemento);
     if(text.length != 0){
         let textelement = document.createTextNode(text);
