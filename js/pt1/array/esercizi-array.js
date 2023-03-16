@@ -19,7 +19,7 @@ console.log("esercizio 1 - con while");
 // while/for -> strumenti che mi aiutano a scorrere da 0 a 4
 // array[i] -> elemento dell'array chiamato array nella posizione i
 
-let i = 0;
+i = 0;
 while (i < array.length) {
     console.log(array[i]); // --> [] in questo caso ci permette di accedere all'elemento in posizione i dell'array numeriBari
     i = i + 1;
@@ -35,7 +35,7 @@ for (let i = 0; i < array.length; i++) {
 //              0  1  2   3   4
 
 i = 0;
-let somma = 0;
+somma = 0;
 let lunghezza = array.length;
 while (i <= lunghezza - 1) {
     somma = somma + array[i];
@@ -81,7 +81,7 @@ console.log("esercizio 5 -> somma = " + somma);
 
 // 6) Stampare quante volte compare il numero 2 → 2
 i = 0;
-let cont = 0;
+cont = 0;
 while (i < array.length) {
     if (array[i] == 2) {
         cont++;
@@ -217,11 +217,11 @@ arrayNuovo = [];
 indiceNuovo = 0;
 i = 0;
 while (i < array.length) {
-    console.log("posizione i = " + i + " elemento = " + array[i]);
+    /* console.log("posizione i = " + i + " elemento = " + array[i]); */
     if (array[i] < 0) {
         arrayNuovo[indiceNuovo] = array[i];
         indiceNuovo++;
-        console.log("arrayNuovo = " + arrayNuovo);
+        /*         console.log("arrayNuovo = " + arrayNuovo); */
     }
     i++;
 }
@@ -243,7 +243,7 @@ console.log(arrayDoppio);
 
 console.log("esercizio 12 --> ");
 // Metodo con il push
-let risultato = [];
+risultato = [];
 for (let i = 0; i < array.length; i++) {
     risultato.push(array[i]);
 }
@@ -278,7 +278,7 @@ console.log(risultato);
 
 // 13) Stampare al contrario gli elementi dell’array → 1, 5, 2, 0, -3, -2, 10, 9, 6, 2 🙂
 console.log("esercizio 13 --> ");
-// è come il primo esercizio ma scorro l'array al contrario 
+// è come il primo esercizio ma scorro l'array al contrario
 
 i = array.length - 1;
 while (i >= 0) {
@@ -287,33 +287,141 @@ while (i >= 0) {
 }
 // dalla posizione 9 alla posizione 0
 // i-- --> i=i-1        i++ -> i=i+1
-for(let i=array.length - 1; i>=0; i--){
+for (let i = array.length - 1; i >= 0; i--) {
     console.log(array[i]);
 }
 
 // array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4]
+let array1 = [1, 2, 2, 3, 4];
+let array2 = [4, 2, 2, 4];
+let array3 = [];
+
 // 14) Creare un array3 con la somma degli elementi dell’array1 e dell’array2 → [5, 4, 4, 7, 4]
+console.log("esercizio 14 -->");
+
+// primo metodo
+for (let i = 0; i < array1.length || i < array2.length; i++) {
+    if (array1[i] && array2[i]) {
+        array3.push(array1[i] + array2[i]);
+    } else {
+        if (!array2[i]) {
+            array3.push(array1[i]);
+        } else {
+            array3.push(array2[i]);
+        }
+    }
+}
+console.log(array3);
+
+// secondo metodo
+for (let i = 0; i < array1.length || i < array2.length; i++) {
+    array3[i] = 0;
+    if (array1[i]) {
+        array3[i] = array3[i] + array1[i];
+    }
+    if (array2[i]) {
+        array3[i] = array3[i] + array2[i];
+    }
+}
+console.log(array3);
+
+// secondo metodo con funzione isNaN
+// isNaN = isNotaNumber è una funzione che restituisce true se non è un numero altrimenti false se lo è
+for (let i = 0; i < array1.length || i < array2.length; i++) {
+    array3[i] = 0;
+    if (!isNaN(array1[i])) {
+        array3[i] = array3[i] + array1[i];
+    }
+    if (array2[i]) {
+        array3[i] = array3[i] + array2[i];
+    }
+}
+console.log(array3);
+
 // 15) Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+// versione 1 con while
+console.log("esercizio 15 --> ");
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+array3 = [];
+i = 0;
+while (i < array1.length) {
+    if (array1[i] % 2 !== 0) {
+        array3.push(array1[i]);
+    }
+    i++;
+}
+i = 0;
+while (i < array2.length) {
+    if (array2[i] % 2 == 0) {
+        array3.push(array2[i]);
+    }
+    i++;
+}
+console.log("versione 1 : " + array3);
+
+array3 = [];
+for (let i = 0; i < array1.length || i < array2.length; i++) {
+    if (array1[i] && array1[i] % 2 != 0) {
+        array3.push(array1[i]);
+    }
+    if (array2[i] && array2[i] % 2 == 0) {
+        array3.push(array2[i]);
+    }
+}
+console.log("versione 2 : " + array3);
 // 16) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
-// 17) Verificare se array1 e array2 dati sono palindromi come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 
-console.log("prove elementi fuori dall'array")
-// array va da 0 a 9
-if(array[12]) {
-    console.log("l'elemento esiste")
-}else{
-    console.log("l'elemento non esiste")
+i = 0;
+while (i < array2.length) {
+    array2[i] = array2[i] / array1[array2.length - i - 1];
+
+    i++;
+}
+console.log("esercizio 16 --> " + array2);
+
+// 17) Verificare se array2 è palindromo come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
+
+console.log("esercizio 17 --> ");
+
+//versione con while e contatore
+array2 = [4, 2, 2, 4, 2];
+i = 0;
+cont = 0;
+while (i < array2.length / 2) {
+    // se lunghezza è pari
+    if (array2[i] === array2[array2.length - 1 - i]) {
+        cont++;
+    }
+    i++;
 }
 
-// array[2] che tipo di dato è ? number
-// number che tipo di dato è ? string
-let tipoDiDato = typeof array[12]
-let tipoDelTipoDiDato = typeof tipoDiDato
-console.log(tipoDiDato, tipoDelTipoDiDato)
-
-if(tipoDiDato !== "undefined"){
-    console.log("l'elemento esiste")    
-}else{
-    console.log("l'elemento non esiste")
+if (cont == array2.length / 2 || cont == Math.ceil(array2.length / 2)) {
+    console.log("è palindromo");
+} else {
+    console.log("non è palindromo");
 }
+
+// versione con for e booleano
+let controllo = false;
+for (i = 0; i < array2.length / 2; i++) {
+    if (array2[i] === array2[array2.length - 1 - i]) {
+        controllo = true;
+    } else {
+        controllo = false;
+        break;
+    }
+}
+
+if (controllo) {
+    console.log("è palindromo");
+} else {
+    console.log("non è palindromo");
+}
+
+// ceil e floor
+console.log("cont=" + cont);
+console.log(array2.length / 2);
+console.log("ceil: " + Math.ceil(array2.length / 2));
+console.log("floor: " + Math.floor(array2.length / 2));

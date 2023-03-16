@@ -262,7 +262,7 @@ do {
 
 */
 
-// 5 - Stampare la somma dei primi 4 numeri interi (slide problem solving)
+// Stampare la somma dei primi 4 numeri interi (slide problem solving)
 let cont = 0; // step 1
 let sommaNuova = 0;
 let n = 4; // i primi 4 numeri
@@ -298,86 +298,36 @@ for (cont = 0; cont <= n; cont = cont + 1) {
 }
 console.log(sommaNuova);
 
-// array/vettore -> gruppo di numeri
-// inizieremo a contare da zero e non da uno
-console.log("-- array/vettori -- ");
-let vettore = [3, 2, 6, 0]; // array con 4 numeri
-console.log(typeof vettore);
-// posizione =  0, 1, 2, 3 --> l'ultimo valore si trova nella posizione lunghezza-1
-console.log(vettore);
-console.log(vettore.length); // lunghezza array = quanti valori ci sono all'interno dell'array
-console.log(vettore[0]); // elemento dell'array chiamato vettore nella posizione 0
-console.log(vettore[1]);
-console.log(vettore[2]);
-console.log(vettore[3]);
-// console.log(vettore[100]) --> undefined
+// Spread operator
+let array = [1, 2, 3];
+console.log("metodo con lo spread operator");
+risultato = [...array, ...array];
+/* risultato = [array, array]   --> in questo caso otteniamo un array di due elementi, ogni elemento è un array*/
+console.log(risultato);
 
-// calcolare la somma di tutti i valori dell'array
-let sommaVettore = vettore[0] + vettore[1] + vettore[2] + vettore[3];
-console.log("sommaVettore= " + sommaVettore);
+console.log("spread operator");
+console.log(array);
+console.log(...array);
 
-// con il while
-let i = 0;
-let sommaVettoreConWhile = 0;
-while (i < vettore.length) {
-    // la condizione può essere o i<vettore.length oppure i<=vettore.length-1
-    sommaVettoreConWhile = sommaVettoreConWhile + vettore[i];
-    i++;
+// operatore ternario
+a = 5;
+
+if (a > 0) {
+    console.log("a è maggiore di 0");
+} else {
+    console.log("a è minore di 0");
 }
-console.log("sommaVettoreConWhile= " + sommaVettoreConWhile);
 
-/*
+a > 0 ? console.log("a è maggiore di 0") : console.log("a è minore di 0");
 
-i=0 sommaVettoreConWhile=0
-i < vettore.length ? 0 < 4 ? si
-    sommaVettoreConWhile = 0 + vettore[0] = 0 + 3 = 3
-    i++ -> i=1
-i < vettore.length ? 1 < 4 ? si
-    sommaVettoreConWhile = 3 + vettore[1] = 3 + 2 = 5
-    i++ -> i=2
-i < vettore.length ? 2 < 4 ? si
-    sommaVettoreConWhile = 5 + vettore[2] = 5 + 6 = 11
-    i++ -> i=3
-i < vettore.length ? 3 < 4 ? si
-    sommaVettoreConWhile = 11 + vettore[3] = 11 + 0 = 11
-    i++ -> i=4
-i < vettore.length ? 4 < 4? no
-
-i=0 sommaVettoreConWhile=0
-i <= vettore.length ? 0 <= 3 ? si
-    sommaVettoreConWhile = 0 + vettore[0] = 0 + 3 = 3
-    i++ -> i=1
-i <= vettore.length ? 1 <= 3 ? si
-    sommaVettoreConWhile = 3 + vettore[1] = 3 + 2 = 5
-    i++ -> i=2
-i <= vettore.length ? 2 <= 3 ? si
-    sommaVettoreConWhile = 5 + vettore[2] = 5 + 6 = 11
-    i++ -> i=3
-i <= vettore.length ? 3 <= 3 ? si
-    sommaVettoreConWhile = 11 + vettore[3] = 11 + 0 = 11
-    i++ -> i=4
-i <= vettore.length ? 4 <= 3? no
-
-*/
-
-let sommaVettoreConFor = 0;
-for (let indice = 0; indice < vettore.length; indice++) {
-    sommaVettoreConFor = sommaVettoreConFor + vettore[indice];
-}
-// console.log(indice) --> indice qui fuori non esiste
-console.log("sommaVettoreConFor= " + sommaVettoreConFor);
-
-let vettoreStrano = [1, "ciao", true, 4];
-console.log(vettoreStrano);
-console.log(typeof vettoreStrano);
-
-let sommaVettoreStrano = 0;
-for (let indice = 0; indice < vettoreStrano.length; indice++) {
-    if (typeof vettoreStrano[indice] == "number") {
-        console.log(vettoreStrano[indice]);
-        sommaVettoreStrano = sommaVettoreStrano + vettoreStrano[indice];
+function controlloSeMaggiore(a) {
+    if (a > 0) {
+        return "si";
+    } else {
+        return "no";
     }
 }
-// console.log(indice) --> indice qui fuori non esiste
-console.log("sommaVettoreConFor= " + sommaVettoreStrano);
-console.log(typeof sommaVettoreStrano);
+
+function controlloSeMaggiore2(a) {
+    return a > 0 ? "si" : "no";
+}

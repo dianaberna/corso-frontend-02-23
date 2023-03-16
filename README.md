@@ -42,3 +42,7 @@ Elenco partecipanti:
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
+<<<<<<< HEAD
+=======
+- Michele Sabatino
+>>>>>>> 235e0176317c8962d3a28b50c6dc565d13aa2c4b
