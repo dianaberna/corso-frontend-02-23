@@ -236,6 +236,10 @@ console.log("es_12_2="+spessorefinale);
 
 
 
+//15
+
+
+
 
 
 
@@ -252,5 +256,33 @@ Il . e la @ deve trovarsi nei posti appropriati. (ad esempio "hello.email@com" n
 
 
 //17 Ottieni la somma del budget delle persone
+
+function budgetTotale(array){
+    let somma = 0;
+    for (i=0; i<array.length;i++){
+        somma += array[i].budget;
+    }
+    return somma;
+}
+
+
+
+
+console.log(
+    budgetTotale([
+        {name: "John", age:21, budget: 29000},
+        {name: "Steve", age: 32, budget: 32000},
+        {name: "Martin", age: 16, budget: 1600},
+    ])
+)
+
+console.log(
+    budgetTotale([
+        {name: "John", age:21, budget: 23000},
+        {name: "Steve", age: 32, budget: 40000},
+        {name: "Martin", age: 16, budget: 2700},
+    ])
+)
+
 
 

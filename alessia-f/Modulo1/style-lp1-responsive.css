@@ -26,11 +26,21 @@
         background-color: white;
     }
 
-    nav>div>a {
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 3rem;
+        margin-top: 0;
+        
+    }
+    
+    .menu_nav> ul> li> a{
         visibility: visible;
         color: black;
         text-decoration: none;
+        
     }
+  
 
     nav>div>span>a {
         color: black;
@@ -38,7 +48,7 @@
     }
 
     nav div {
-        word-spacing: 3rem;
+        word-spacing: 2rem;
     }
 
     .hamburger{
@@ -363,6 +373,8 @@
     .menu_nav{
         display: none;
     }
+
+  
     
     .hamburger>span{
         border: black 1px solid;
@@ -518,6 +530,8 @@
     nav{
         padding: 2rem 2rem;
     }
+
+
 
     /* HEADER */
     header {
