@@ -205,6 +205,8 @@ for (let i = 0; i < arraytwo.length && i < arrayone.length; i++) {
 
 //esercizio 16 Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
 // array2[i] = array2[i] / array1[lunghezza-i]
+// array1 = [ 1, 2, 2, 3, 4] array2 = [4, 2, 2, 4] 
+
 console.log("esercizio 16");
 for (i = 0; i < arraytwo.length; i++) {
     arraytwo[i] = arraytwo[i] / arrayone[arrayone.length - 1 - i]
@@ -358,7 +360,8 @@ console.log(p1.includes(p2));
 
 
 console.log("metodo1 esercizio 4")
-// esercizio 4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa con i caratteri in ordine inverso.
+// esercizio 4 Scrivere un programma che prenda una stringa come input e restituisca la stessa stringa 
+//con i caratteri in ordine inverso.
 let parola3 = "ciao";
 let parolainverso = [];
 let n = 0;
