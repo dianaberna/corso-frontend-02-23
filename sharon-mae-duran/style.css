@@ -176,6 +176,10 @@ button {
     border-radius: 10px;
 }
 
+.section5 {
+    padding: 100px;
+}
+
 .section5 h1 {
     display: flex;
     font-weight: 500;
@@ -190,54 +194,38 @@ button {
     font-size: 1rem;
 }
 
-.section5 .cards {
+
+#how > div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
     align-items: center;
-    flex-direction: column;
-    /* padding: 120px 100px; */
 }
 
-.section5 .card-item {
-    display: flex;
-    flex-direction: column;
-    padding: 24px 16px;
-    isolation: isolate;
-    
-    width: 640px;
-    height: 133px;
-    
-    border: 1px solid #1C2B33;
-    border-radius: 8px;
+#how > div > div{
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 40rem; 
+    padding: 1rem;
+    position: relative;
 }
 
-.section5 .card-item p {
-    font-weight: 600;
-    font-size: 24px;
+#how h3{
+    text-align: left;
 }
 
-.section5 .card-item .frame {
-    box-sizing: border-box;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    
+#how > p{
+    text-align: center;
+}
+
+#how span{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: white;
     position: absolute;
-    width: 36px;
-    height: 39px;
-    
-    background: #FFFFFF;
-    border: 1px solid #1C2B33;
-    border-radius: 8px;
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    z-index: 1;
+    top: -1.5rem;
+    left: -1.5rem;
 }
 
 .section6 {
