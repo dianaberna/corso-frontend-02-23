@@ -15,8 +15,6 @@ let spanText = document.createTextNode("MyPage");
 //appendo il testo span allo span
 span.appendChild(spanText);
 
-
-
 //creo il contenitore dell'elenco
 let ul = document.createElement("ul");
 //appendo l'ul al nav
@@ -104,43 +102,52 @@ let main = document.createElement("main");
 //appendo il main al body
 document.body.appendChild(main);
 
-//creo la prima section
+//section why
 let sectionWhy = document.createElement("section");
-//appendo la section al main
 main.appendChild(sectionWhy);
 
-//creo il primo h2
 let primoH2 = document.createElement("h2");
-//appendo h2 alla section
 sectionWhy.appendChild(primoH2);
-//creo il contenuto
 let h2Text = document.createTextNode("Why use our MyPage?");
-//appendo il testo all h2
 primoH2.appendChild(h2Text);
 
-//creo il primo div figlio della why section
-let whyDiv1 = document.createElement("div")
-//appendo il div alla why section
+let whyDiv1 = document.createElement("div");
 sectionWhy.appendChild(whyDiv1);
 
-//creo il secondo div figlio del primo div
-let whyDiv2 = document.createElement("div")
-//appendo il div al primo div
+let whyDiv2 = document.createElement("div");
 whyDiv1.appendChild(whyDiv2);
 
-//creo il secondo div figlio del secondo div
-let whyDiv3 = document.createElement("div")
-//appendo il div al secondo div
-whyDiv2.appendChild(whyDiv3);
+// Minimal but complete
+let minimalDiv = document.createElement("div");
+whyDiv2.appendChild(minimalDiv);
+let svgMinimal = document.createElement("svg");
+minimalDiv.appendChild(svgMinimal);
+let h3Minimal = document.createElement("h3");
+minimalDiv.appendChild(h3Minimal);
+let h3Text = document.createTextNode("Minimal but complete");
+h3Minimal.appendChild(h3Text);
+let parMinimal = document.createElement("p");
+whyDiv2.appendChild(parMinimal)
+let parTextMinimal = document.createTextNode("It is minimal but complete. It contains all the sections and components a landing page needs with a minimal and essential design. We go straight to people's hearts");
+parMinimal.appendChild(parTextMinimal);
 
-//creo il primo titolo del terzo div
-let h3Minimal = document.createElement("h3")
-//appendo il div al secondo div
-whyDiv2.appendChild(whyDiv3);
-//creo il contenuto del h3
+//Accessible and inclusive
+let whyDiv3 = document.createElement("div");
+whyDiv1.appendChild(whyDiv3);
+let accessibleDiv = document.createElement("div");
+whyDiv3.appendChild(accessibleDiv);
+let svgAccessible = document.createElement("svg");
+accessibleDiv.appendChild(svgAccessible);
+let h3Accessible = document.createElement("h3");
+whyDiv3.appendChild(h3Accessible);
+let accessibleText = document.createTextNode("Accessible and inclusive");
+h3Accessible.appendChild(accessibleText);
+let parAccessible = document.createElement("p");
+whyDiv3.appendChild(parAccessible)
+let parTextAccesible = document.createTextNode("All the code and design has been overhauled, if you just change the contents and the order of the sections everything will remain accessible.");
+parAccessible.appendChild(parTextAccesible);
 
-//creo il primo paragrafo dentro il div - section why
-
+//Responsive design
 
 
 
