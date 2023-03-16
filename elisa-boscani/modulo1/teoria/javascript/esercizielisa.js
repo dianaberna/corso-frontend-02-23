@@ -341,5 +341,35 @@ console.log("ciao " + "" + "mondo");
 
 /////////////////////////////////////////////
 /// es 7
-let stringa4 = "giorno"
-let stringaVocali =""
+let stringa4 = "giorno";
+let stringaVocali = "";
+for (i = 0; i < stringa4.length; i++) {
+  let lettera = stringa4[i];
+  if (
+    lettera === "a" ||
+    lettera === "e" ||
+    lettera === "i" ||
+    lettera === "o" ||
+    lettera === "u"
+  ) {
+    stringaVocali += stringa4[i];
+  }
+}
+console.log(stringaVocali);
+
+///////////////////////////////////////////////
+/// es8
+let primaStringa = "rocambolesco";
+let secondaStringa = "pazzesco";
+let terzaStringa = "";
+for (i = 0; i < primaStringa.length || i < secondaStringa.length; i++) {
+  if (terzaStringa.indexOf(primaStringa[i]) === -1) {
+    if (secondaStringa.indexOf(primaStringa[i]) !== -1) {
+      terzaStringa += primaStringa[i];
+    }
+  }
+}
+console.log(terzaStringa);
+//////////////////////////////////////////////////////////////////////////
+///es9
+let lettereStringhe = ["a", "ab", "abc"];
