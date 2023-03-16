@@ -76,8 +76,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    position: sticky;
     top: 0;
+<<<<<<< HEAD
     /* 
 >>>>>>> bccd97d4168c0315f97e5e1fa7e8fdf8739a9eba
         position: fixed;
@@ -92,6 +92,22 @@ nav ul {
   list-style-type: none;
   display: flex;
   gap: 3rem;
+=======
+    
+    position: fixed;
+    width: calc(100% - 100px);
+   
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+    gap: 3rem;
+
+>>>>>>> 1ef0e15a1bae43a7d4218bb2325d1c767f5fa8e9
 }
 
 nav a {
@@ -120,8 +136,21 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav > div.hamburger {
 
+<<<<<<< HEAD
 >>>>>>> c4912beafb1ea39507710f150b9d5ea7db39f600:html-css/css/landing-page.css
+=======
+}
+
+nav > div.hamburger > span{
+    height: .25rem;
+    width: 2rem;
+    background-color: black;
+    display: block;
+    margin-bottom: .25rem;
+}
+>>>>>>> 1ef0e15a1bae43a7d4218bb2325d1c767f5fa8e9
 
 /* section why */
 
@@ -361,6 +390,12 @@ footer hr {
     }
     footer{
         padding: 2rem 6.25rem;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav > div.hamburger{
+        display: none;
     }
 }
 >>>>>>> bccd97d4168c0315f97e5e1fa7e8fdf8739a9eba
