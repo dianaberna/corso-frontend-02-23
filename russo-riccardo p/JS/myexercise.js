@@ -427,7 +427,12 @@ let parola1 = "Precisamente"
 let vocale = "";
 
 for(i = 0; i < parola1.length; i++){
-        if(parola1[i] == "a" ||parola1[i]== "e" ||parola1[i]== "i" ||parola1[i]== "o" ||parola1[i]== "u" ){
+        if(     parola1[i]== "a" ||
+                parola1[i]== "e" ||
+                parola1[i]== "i" ||
+                parola1[i]== "o" ||
+                parola1[i]== "u" 
+                ) {
                 vocale += (parola1[i])//vocale = vocale + parola1[i]
                 
         }
