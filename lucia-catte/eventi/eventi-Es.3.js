@@ -9,24 +9,24 @@ window.addEventListener("load", function () {
 	console.log(" 3 esercizio "); 
     
     let labelBar = document.createElement("input");//creo label input
+    labelBar.setAttribute("id", "inserisciTesto")
     document.body.appendChild(labelBar);// appendo al body
-
+    
     let button = document.createElement("button");// creo button elimina
     button.setAttribute("id", "invio")//imposto l'id "invio" al primo button
     document.body.appendChild(button);// appendo al body
-
+    
     let invioTxt = document.createTextNode("invio");//imposto il primo button con il testo invio
     button.appendChild(invioTxt);//appendo il testo al button
-
+   
     let elencoGenitore = document.createElement("ul");//creo l'elenco ul
     document.body.appendChild(elencoGenitore);//appendo l'elenco al body
-
+    
     //evento click "invio testo"
-    invioTxt.addEventListener("click", function (){
-        console.log("evento click di invio");
+    button.addEventListener("click", function (){
+        console.log("evento click di invio");//controllo che cliccando l'evento funzioni
         
-        
-        let inseriscoText = document.createTextNode(document.getElementsByTagName("input").value);//creo una variabile che conterrà i valori del label input
+        let inseriscoText = document.createTextNode(document.getElementById("inserisciTesto").value);//creo una variabile che conterrà i valori del label input
         let primoElenco = document.createElement("li");//creo il primo elenco dove andranno ad inserirsi il valori raccolti dal label input
         
         primoElenco.setAttribute("id", "listaInvio")//imposto un id al primo elenco
@@ -43,6 +43,7 @@ window.addEventListener("load", function () {
         
         
     })
+    
 
 
 }) 
