@@ -1,13 +1,11 @@
 window.addEventListener("load", function () {
     console.log("il body è stato caricato");
-    document.getElementsByTagName("body")[0].style.backgroundColor="rgb("+colori+")";
-}) ;
-
-
+    
+    //style Body
 document.getElementsByTagName("body")[0].style.display="flex";
 document.getElementsByTagName("body")[0].style.justifyContent="center";
-/* document.getElementsByTagName("body")[0].style.alignContent ="center" */
 
+//style div rgb
 let div=document.createElement("div")
 document.body.appendChild(div)
 div.setAttribute("id", div)
@@ -17,17 +15,24 @@ document.getElementById(div).style.margin="200px";
 
 
 function cambia(max){
-let a= Math.floor(Math.random() * max);
-let b= Math.floor(Math.random() * max);
-let c= Math.floor(Math.random() * max);
-let colori=[a,b,c]
-return colori
+    let a1= Math.floor(Math.random() * max);
+    let a2= Math.floor(Math.random() * max);
+    let a3= Math.floor(Math.random() * max);
+    let colori=[a1,a2,a3]
+    return colori
+    
+    }
+    let colori=cambia(255)
+    let text= document.createTextNode("rgb("+colori+")")
+    div.appendChild(text)
+    document.getElementsByTagName("body")[0].style.backgroundColor="rgb("+colori+")";
+}) ;
 
-}
 
-let colori=cambia(255)
-console.log(colori)
-let text= document.createTextNode("rgb("+colori+")")
-div.appendChild(text)
+
+
+
+
+
 
 
