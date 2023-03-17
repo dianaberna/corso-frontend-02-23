@@ -1,0 +1,39 @@
+
+<!-- Esercizio 1 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagina con sfondo casuale</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+      }
+      #color {
+        margin: 20px;
+        font-size: 24px;
+      }
+    </style>
+    <script>
+      function generaColore() {
+        // genera un colore casuale in formato esadecimale
+        var colore = "#" + Math.floor(Math.random(1) * 16777215).toString(16);
+
+        // applica il colore al body
+        document.body.style.backgroundColor = colore;
+
+        // stampa il colore in un div con id "color"
+        document.getElementById("color").textContent = "Esercizio landing page: " + colore;
+      }
+    </script>
+  </head>
+  <body onload="generaColore()">
+    <div id="color">
+        <p>Esercizio landing page</p> 
+    </div>
+  </body>
+</html>
