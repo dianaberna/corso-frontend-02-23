@@ -1,0 +1,9 @@
+/*  il div parte con un css base per renderlo visibile */
+div{
+    margin: 2rem;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    
+    
+}
