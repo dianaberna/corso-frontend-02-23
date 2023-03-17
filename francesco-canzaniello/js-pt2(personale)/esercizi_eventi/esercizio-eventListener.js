@@ -100,14 +100,14 @@ window.addEventListener("load", function () {
     let ulCestino = document.createElement("ul");
     divCestino.appendChild(ulCestino);
     ulCestino.style.margin = "0px"
-    ulCestino.setAttribute("class", "delete")
+    
     divCestino.style.width = "fit-content"
     divCestino.style.margin = "0px"
 
 
     pulsante.addEventListener("click", function () {
         let li = document.createElement("li");
-        div.appendChild(li);
+        ul.appendChild(li);
         let testo_li = document.createTextNode(input.value);
         li.appendChild(testo_li);
         let pulsanteX = document.createElement("button");
@@ -116,22 +116,22 @@ window.addEventListener("load", function () {
         pulsanteX.appendChild(testo_X);
         pulsanteX.style.marginLeft = "5px";
 
-        pulsanteX.addEventListener("click", function () {
+        pulsanteX.addEventListener("click", function () {      
+            let liCestino = li
+            ulCestino.appendChild(liCestino)
+            console.log(ulCestino+" cestino")
+            liCestino.setAttribute("class", "delete")
+        });       
+    });
+    cestino.addEventListener("click", function(){
+        let cestinoDaSvuotare = document.getElementsByClassName("delete")
+        console.log(cestinoDaSvuotare.length+" lunghezza lista")
+        for (let i = cestinoDaSvuotare.length -1; i >=0 ; i--) {
             
-            let elementiRimossi = li
-            ulCestino.appendChild(elementiRimossi)
+            cestinoDaSvuotare[i].remove()
             
-        });
+        }
 
-        cestino.addEventListener("click", function(){
-            let cestinoDaSvuotare = document.getElementsByClassName("delete")
-            for (let i = cestinoDaSvuotare.length -1; i >=0 ; i--) {
-
-                cestinoDaSvuotare[i].remove()
-                
-            }
-
-        });
     });
     
 });
