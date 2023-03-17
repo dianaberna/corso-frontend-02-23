@@ -78,32 +78,31 @@ window.addEventListener("load", function () {
     let testo_btn = document.createTextNode("Aggiungi");
     pulsante.appendChild(testo_btn);
 
-    let cestino = document.createElement("button")
-    document.body.appendChild(cestino)
+    let cestino = document.createElement("button");
+    document.body.appendChild(cestino);
     let testo_cest = document.createTextNode("Cestino");
     cestino.appendChild(testo_cest);
 
     // div dei task
     let div = document.createElement("div");
     document.body.appendChild(div);
-    div.style.width = "fit-content"
-    div.style.margin = "0px"
+    div.style.width = "fit-content";
+    div.style.margin = "0px";
 
     // lista task
     let ul = document.createElement("ul");
     div.appendChild(ul);
-    ul.style.margin = "0px"
+    ul.style.margin = "0px";
 
     // cestino
     let divCestino = document.createElement("div");
     document.body.appendChild(divCestino);
     let ulCestino = document.createElement("ul");
     divCestino.appendChild(ulCestino);
-    ulCestino.style.margin = "0px"
-    
-    divCestino.style.width = "fit-content"
-    divCestino.style.margin = "0px"
+    ulCestino.style.margin = "0px";
 
+    divCestino.style.width = "fit-content";
+    divCestino.style.margin = "0px";
 
     pulsante.addEventListener("click", function () {
         let li = document.createElement("li");
@@ -116,22 +115,18 @@ window.addEventListener("load", function () {
         pulsanteX.appendChild(testo_X);
         pulsanteX.style.marginLeft = "5px";
 
-        pulsanteX.addEventListener("click", function () {      
-            let liCestino = li
-            ulCestino.appendChild(liCestino)
-            console.log(ulCestino+" cestino")
-            liCestino.setAttribute("class", "delete")
-        });       
+        pulsanteX.addEventListener("click", function () {
+            let liCestino = li;
+            ulCestino.appendChild(liCestino);
+            console.log(ulCestino + " cestino");
+            liCestino.setAttribute("class", "delete");
+        });
     });
-    cestino.addEventListener("click", function(){
-        let cestinoDaSvuotare = document.getElementsByClassName("delete")
-        console.log(cestinoDaSvuotare.length+" lunghezza lista")
-        for (let i = cestinoDaSvuotare.length -1; i >=0 ; i--) {
-            
-            cestinoDaSvuotare[i].remove()
-            
+    cestino.addEventListener("click", function () {
+        let cestinoDaSvuotare = document.getElementsByClassName("delete");
+        console.log(cestinoDaSvuotare.length + " lunghezza lista");
+        for (let i = cestinoDaSvuotare.length - 1; i >= 0; i--) {
+            cestinoDaSvuotare[i].remove();
         }
-
     });
-    
 });
