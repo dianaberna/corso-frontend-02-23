@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+/*link al font google*/
+body {
+    font-family: 'lexend', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+proprietà css del body vengono date a tutti gli altri elementi.
+Verranno poi sovrascritte da altre proprietà per l'effetto cascata
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    border: 1px solid black;
+    position: sticky;
+    z-index: 1;
+    margin-top: 1rem;
+    background-color: white;
+
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+#griglia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#griglia svg {
+    position: absolute;
+    z-index: -1;
+    
+}
+h1 {
+    font-weight: 700;
+    font-size: 4.25rem;
+    padding: 4rem 6rem 0 6rem;
+}
+
+header {
+    text-align: center;
+    margin: 0 10rem;
+}
+
+h1~p {
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+button {
+    font-family: inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    background: #F0F0F0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+}
+
+/*fine css dell'header*/
+main {
+    margin-top: 8rem;
+}
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+
+.contenitore{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 9rem;
+}
+
+.contenitore2 {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.contenitore2 > div {
+    width: 22.5rem;
+}
+
+.logo {
+    text-align: center;
+}
+
+#pregi {
+    margin-bottom: 5rem;
+}
+
+/* comincia la parte dei partners */
+
+#partners {
+    padding: 6rem 5rem;
+    background-color: #F0F0F0;
+}
+
+#partners > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+    padding: 2rem 0;
+}
+
+/* comincia la parte delle recensioni */
+#customers {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 0 0 10rem 0;
+}
+.cards {
+    width: 25%;
+    border: 1px solid #1D1B1F;
+    border-radius: 8px;
+    background-color: #EBEBEB;
+}
+
+#spiegazione > h4 {
+    text-align: center;
+}
+
+.cards > img {
+    width: 368px;
+}
+
+.scritte {
+    padding: 0 1rem 1rem 1rem;
+}
+
+/* inizia la parte della spiegazione */
+
+#spiegazione > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#spiegazione > div > div {
+    width: 40rem;
+    border: 1px solid #1D1B1F;
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.numeretto {
+    border: 1px solid #1D1B1F;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+    left: -1.5rem;
+    position: absolute;
+    top: -1.5rem;
+}
+
+/* inizia l ultima sezione */
+
+#ultima {
+    background-color: #F0F0F0;
+}
+
+#ultima h2 {
+    width: 55%;
+    text-align: left;
+    margin: 0 0 3rem 0;
+}
+
+#PreFooter {
+    padding: 3.75rem 6.25rem;
+    margin-top: 3rem;
+}
+
+#ultima button {
+    margin-top: 1rem;
+}
+
+/* Inizio footer */
+
+footer {
+    background: #1D1B1F;
+    color: white;
+}
+
+.NoLink {
+    text-decoration: none;
+    color: white;
+}
+
+footer > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scatolina {
+    display: flex;
+    gap: 3rem;
+}
+
+footer li {
+    list-style-type: none;
+    margin-top: 1rem;
+
+}
+
+footer > div {
+    padding: 2rem 5rem;
+}
+
+footer h5 {
+    margin-top: 0;
+}
+
+footer ul {
+    padding: 0;
+    
+}
+
+footer svg {
+    padding: 0 0.5rem;
+}
+
+/* Quasi finitoh */
+
+/* Ora vanno adattati a tutte le risoluzioni */
