@@ -22,9 +22,12 @@ window.addEventListener('load', function() {
      let coloredelparagrafo = document.createElement("p");
      coloredelparagrafo.textContent = colore;
   
-    // appendo il paragrafo al div
+     //sfondo praragrafo
+     coloredelparagrafo.style.backgroundColor = "white";
+     
+     // appendo il paragrafo al div
     coloreDiv.appendChild(coloredelparagrafo);
   
-    // Aggiungi il nuovo elemento div come figlio del body
+    // Aggiunge il nuovo elemento div come figlio del body
     document.body.appendChild(coloreDiv);
   });
