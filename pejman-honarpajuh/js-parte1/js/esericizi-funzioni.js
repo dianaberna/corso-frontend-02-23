@@ -446,3 +446,21 @@ console.log(x)
 
 //Esercizio 20)ES.20 Array multidimensionale e stringhe
 //Crea un array multidimensionale di stringhe e visualizza la concatenazione di tutte le stringhe.
+
+
+console.log('------------------prova style ');
+
+/* function stylediv(){
+    let divstyle = ["width","height","margin","textAlign"];
+    for(let i=0 ; i<divstyle.length ; i++){
+     let x = document.getElementById("number").style.
+     x =  x.push(divstyle[i])
+}
+    return x
+}console.log(stylediv()) */
+
+/* let divstyle = ["width","height","margin","textAlign"];
+for(let i=0 ; i<divstyle.length ; i++){
+ let x = document.getElementById("number").style.
+     //x =  x.push(divstyle[i])
+}console.log(x) */
