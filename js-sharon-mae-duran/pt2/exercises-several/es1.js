@@ -18,4 +18,7 @@ function generateColore() {
   // Selezioniamo il div con id "color" e stampiamo il colore generato all'interno
   var divColor = document.querySelector("#color");
   divColor.textContent = background;
+
+
+  
   
