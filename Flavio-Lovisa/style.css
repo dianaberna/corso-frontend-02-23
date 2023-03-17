@@ -30,7 +30,7 @@ nav ul {
     letter-spacing: 0.15rem;
 }
 
-nav > a {
+nav>a {
     font-size: 1.25rem;
 }
 
@@ -71,7 +71,7 @@ header p {
     font-size: 1.25rem;
 }
 
-header > p + svg + svg {
+header>p+svg+svg {
     position: absolute;
     top: 4rem;
     z-index: -1;
@@ -93,7 +93,7 @@ header > p + svg + svg {
 }
 
 #features h2 {
-    color:#1d1b1f;
+    color: #1d1b1f;
     margin: 0rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -123,7 +123,8 @@ header > p + svg + svg {
     gap: 8rem;
 }
 
-.cards.first-column, .cards.second-column {
+.cards.first-column,
+.cards.second-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,6 +134,7 @@ header > p + svg + svg {
 .cards.first-column {
     padding-left: 14.25rem;
 }
+
 .cards.second-column {
     padding-right: 14.25rem;
 }
@@ -160,7 +162,7 @@ header > p + svg + svg {
 
 #logos h2 {
     margin: 0rem;
-    color:#1d1b1f;
+    color: #1d1b1f;
     font-weight: 700;
     font-family: 'Lexend', sans-serif;
     font-size: 3rem;
@@ -200,13 +202,13 @@ header > p + svg + svg {
     gap: 5rem;
 }
 
-.cards-container {
+#testimonials .cards-container {
     display: flex;
     align-items: flex-start;
     gap: 4rem;
 }
 
-.cards-container > div {
+#testimonials .cards-container>div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -224,18 +226,18 @@ header > p + svg + svg {
     padding: 1.5rem 1rem;
 }
 
-.cards-container p {
-    color:#302e32;
+#testimonials .cards-container p {
+    color: #302e32;
     margin-bottom: 0em;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    letter-spacing: 0.02rem; 
+    letter-spacing: 0.02rem;
     width: 18.5rem;
 }
 
 .cards-container .names {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
@@ -247,6 +249,7 @@ header > p + svg + svg {
     font-size: 0.8rem;
     letter-spacing: 0.02rem;
 }
+
 .names :last-child {
     color: #706D73;
     font-weight: 500;
@@ -256,3 +259,84 @@ header > p + svg + svg {
 
 
 
+
+
+#how {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.5rem 6.25rem;
+}
+
+#how h2 {
+    color: #1d1b1f;
+    margin: 0rem;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    font-size: 3rem;
+}
+
+#how h4 {
+    color: #1d1b1f;
+    margin: 1.25rem 0rem 2.5rem;
+    font-weight: 500;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.25rem;
+}
+
+#how .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#how .cards-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    border: 0.1rem solid #1c2b33;
+    border-radius: 0.5rem;
+    width: 40rem;
+    height: 7.2rem;
+}
+
+#how .cards-container div:nth-child(2) {
+    height: 8.5rem;
+}
+
+#how span {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #1c2b33;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.02rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#how h3 {
+    margin: 0rem;
+    padding: 1rem 1rem 0rem;
+}
+
+#how p {
+    color: #706D73;
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    width: 40rem;
+    height: 7.2rem;
+}
