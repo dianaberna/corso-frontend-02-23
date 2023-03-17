@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
-@import "/modulo-1/css/header.css";
+@import "/html-css/css/header.css";
 
 :root{
     --dark-gray: #1d1b1f;
@@ -55,13 +55,11 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    position: sticky;
     top: 0;
-    margin-top: 2rem;
-    /* 
-        position: fixed;
-        width: calc(100% - 100px);
-    */
+    
+    position: fixed;
+    width: calc(100% - 100px);
+   
     background-color: white;
     z-index: 1;
     border: 1px solid black;
@@ -69,8 +67,9 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: none;
     gap: 3rem;
+
 }
 
 nav a {
@@ -82,7 +81,17 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav > div.hamburger {
 
+}
+
+nav > div.hamburger > span{
+    height: .25rem;
+    width: 2rem;
+    background-color: black;
+    display: block;
+    margin-bottom: .25rem;
+}
 
 /* section why */
 
@@ -144,6 +153,7 @@ section#testimonial > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -152,6 +162,7 @@ section#testimonial > div > div {
     justify-content: center;
     gap: 3rem;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 section#testimonial .card {
@@ -181,7 +192,7 @@ section#testimonial .card > div {
 #how > div > div{
     border: 1px solid black;
     border-radius: .5rem;
-    width: 40rem;
+    width: 18rem;
     padding: 1rem;
     position: relative;
 }
@@ -262,24 +273,20 @@ footer hr{
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-    
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 481px){
     h1{
         font-size: 4.25rem;
     }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px){
-    h1{
-        font-size: 4.25rem;
+    #how > div > div{
+        width: 40rem;
     }
-}
-
-@media screen and (min-width: 1200px){
-    h1{
-        font-size: 4.25rem;
+    footer{
+        padding: 2rem 6.25rem;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav > div.hamburger{
+        display: none;
     }
 }
