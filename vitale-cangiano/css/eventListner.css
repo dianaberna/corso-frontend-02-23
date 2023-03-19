@@ -1,0 +1,27 @@
+section{
+    display: flex;
+    border: 1px solid #1D1B1F;
+    justify-content: center;
+    width: 20.5rem;
+    
+}
+
+body{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+main{
+    padding-top: 3rem;
+}
+
+#quadrato{
+    margin: 2rem; width: 400px; height: 400px; background-color: yellow
+}
