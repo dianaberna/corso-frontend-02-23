@@ -1,0 +1,168 @@
+body{
+    font-family: 'Lexend', sans-serif;
+    padding: 0 5.25rem;
+    background-image: url(/vitale-cangiano/images/sfondo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0rem
+}
+header{
+    text-align: center;
+    margin: 1rem;
+}
+footer{
+    background-color: #1D1B1F;
+    color: white;
+}
+
+main h2{
+    text-align: center;
+    margin: 3rem;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0rem;
+}
+
+button {
+    font-family:inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 1px;
+    background: #F0F0F0;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    padding: 0 16px;
+}
+.mypage{
+    color: red;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+.centro div{
+    width: 160px;
+}
+.uno{
+    text-align: center;
+}
+.due{
+    text-align: center;
+}
+.tre{
+    text-align: center;
+}
+.quattro{
+    text-align: center;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+   
+}
+
+#partner{
+    
+    padding-top: 2rem;
+    background-color: rgba(253, 249, 249, 0.689);
+}
+#partner h3{
+    font-size: 2rem;
+    text-align: center;
+}
+.love{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;/* fa in modo che i div vanno uno sotto l altro qnd si riduce lo schermo */
+}
+
+.freccia{
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    padding-top: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+section .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 20.5rem;
+    color: #302E32;
+}
+section .card img{
+    width: 100%;
+    object-fit: cover;
+}
+.foto{
+    width: 100%;
+}
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+}
+
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer hr{
+    border: 1px solid #FBFAFC;
+}
+.container{
+    position: relative;
+}
+
+#primo{
+    text-align: center;
+    border: 1px solid black;
+    width: 30rem;
+    border-radius: .625rem;
+    margin: 0 auto;
+    
+}
+#secondo{
+    text-align: center;
+    border: 1px solid black;
+    width: 30rem;
+    border-radius: .625rem;
+    margin: 0 auto;
+    
+}
