@@ -20,15 +20,33 @@ window.addEventListener("load", function () {
     divconteiner.setAttribute('class','conteiner');
     divfondo.appendChild(divconteiner);
 
+    //Creare due span sotto div conteiner colleando al div fondo
+    let span1 = document.createElement('span');
+    span1.setAttribute('id','span1');
+    divfondo.appendChild(span1);
+   
+    let span2 = document.createElement('span');
+    span2.setAttribute('id','span2');
+    divfondo.appendChild(span2);
+    
     // Input nel form
     let input = document.createElement('input');
     input.setAttribute('type','text');
     input.setAttribute('id','display');
     input.setAttribute('value',' ');
-    input.setAttribute('placeholder','0');
+    input.setAttribute('placeholder'," 0 ");
     //input.setAttribute('readonly');
     form.appendChild(input); 
-
+    // Creare Span con button dentro per cancellare
+    let spancancel = document.createElement('span');
+    spancancel.setAttribute('class','cancel')
+    form.appendChild(spancancel);
+    // Creare button delet dentro span
+    let button1 = document.createElement('button');
+    button1.setAttribute('id','button1');
+    button1.setAttribute('class','delet');
+    button1.textContent = 'C';
+    spancancel.appendChild(button1);
     // Div parent sta dentro div conteiner
 
     let divparent = document.createElement('div');
@@ -36,9 +54,7 @@ window.addEventListener("load", function () {
     divconteiner.appendChild(divparent);
 
     // Divi che base dei bottoni sta dentro divparent
-  /*   let div1 = document.createElement('div');
-    div1.setAttribute('calss','div1');
-    divparent.appendChild(div1); */
+
     // Creare tutti bottoni collegati a div parent
     let btn7 = document.createElement('button');
     btn7.setAttribute('id','button2');
@@ -151,31 +167,31 @@ window.addEventListener("load", function () {
     btnpiu.setAttribute('value','+');
     btnpiu.textContent = '+';
     divparent.appendChild(btnpiu);
-
+//-------------Fine corpo -----------------//
 
         // I numeri
         let button = document.getElementsByClassName("number");
 
         for (let i = 0; i < button.length; i++) {
             button[i].addEventListener("click", function (e) {
-    
+
                 document.getElementById('display').value += (e.target.value);
-    
+                document.getElementById('span1').textContent = document.getElementById('display').value;
             });
         }
        // Operatore uguale
        btnuguale.addEventListener("click", function () {
             x = eval(document.getElementById("display").value);
             document.getElementById('display').value = x;
+            document.getElementById('span2').textContent =  ' = ' + x;
             console.log(x)
     
     
         });
-
-
-
-
-
+        // Pulire Display
+        button1.addEventListener("click",function(){
+            document.getElementById('display').value = ' ';
+        })
 
 
 })

@@ -7,7 +7,7 @@
     <style>
         #fondo {
             width: 13.75rem;
-            height: 11.875rem;
+            height: 12.875rem;
             background-color: rgb(246, 237, 237);
         }
 
@@ -21,7 +21,8 @@
             
         }
         #display {
-            width: 12.2rem;
+            height: 1.2rem;
+            width: 10.2rem;
             margin-top: 1rem;
             margin-left: .625rem;
             border-style: none;
@@ -36,6 +37,15 @@
             grid-row-gap: 2px;
             text-align: center;
             margin-top: 1rem;
+        }
+        .delet {
+            background-color: rgb(131, 178, 207);
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+        .delet:hover {
+            background-color: rgb(84, 145, 184);
         }
         .number {
             background-color: rgb(187, 184, 184);
@@ -132,10 +142,12 @@
     <div id="fondo">
         <form id="form">
             <input type="text" id = "display" value=""  placeholder="0" readonly>
+            <span> <button id = 'button1' class="delet" >C</button> </span>
         </form>
+        
         <div class = 'conteiner'>
-            <div class="parent">
-                <div class="div1"> </div>
+           
+            <div class="parent">         
                 <button id="button2"  class="number " value="7">7 </button>
                 <button id="button3"  class="number " value="8">8 </button>
                 <button id="button4"  class="number " value="9">9 </button>
@@ -154,6 +166,8 @@
                 <button id="button17"  class=" number" value="+">+</button>
             </div>
         </div>
+        <span id="span1"> </span>
+        <span id="span2"> </span>
      </div>
 </body>
 </html>
