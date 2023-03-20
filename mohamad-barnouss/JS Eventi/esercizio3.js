@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
 
   //CREO "ul" e "li"
   let ulList = document.createElement("ul"); //creo la "ul"
+  ulList.setAttribute("id", "UlPrincipale");
   // let listLi = document.createElement("li"); // creo "li"
   //ulList.appendChild(listLi);// provo a farlo dentro eventListener
   // creo il "div"
@@ -43,9 +44,19 @@ window.addEventListener("load", function () {
 
     //cancella
     xbtn.addEventListener("click", function () {
-      listLi.setAttribute("class", "delate");
-      ulCestino.appendChild(listLi);
+      //listLi.setAttribute("class", "delate");
       console.log(listLi);
+      console.log(xbtn.parentNode.parentNode.id);
+      if (xbtn.parentNode.parentNode.id == "ulCestino") {
+        ulList.appendChild(listLi);
+        xbtn.textContent = "Elimina";
+        listLi.setAttribute("class", "");
+      } else {
+        //siamo in ulprincipale
+        ulCestino.appendChild(listLi);
+        xbtn.textContent = "ripristina";
+        listLi.setAttribute("class", "delate");
+      }
       //cestinoLi.appendChild(listLi);
       //ulCestino.appendChild(cestinoLi);
       //listLi.remove(); //si usa cosi prendendo l'elemento list che avevo creato RIVEDERE!!!!!
@@ -55,6 +66,7 @@ window.addEventListener("load", function () {
   //cestino
   let cestinoElement = document.createElement("div");
   let ulCestino = document.createElement("ul");
+  ulCestino.setAttribute("id", "ulCestino");
   cestinoElement.appendChild(ulCestino);
   document.body.appendChild(cestinoElement);
   let cestinoTesto = document.createTextNode("cestino");
