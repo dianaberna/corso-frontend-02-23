@@ -2,7 +2,7 @@ console.log("Es3.1")
 
 
 
-/* window.addEventListener("load", function () {
+ window.addEventListener("load", function () {
    // Div di input e button e ul
     let div = document.createElement('div');
     div.setAttribute('id','div')
@@ -50,8 +50,8 @@ console.log("Es3.1")
           x.addEventListener("click", function () {
             
             for (let i = 0; i < document.getElementsByTagName("li").length; i++) {
-                //let rimuovTask = document.getElementsByTagName("li")[i];
-                let rimuovTask = document.getElementsByTagName('li')[i].innerHTML;
+                let rimuovTask = document.getElementsByTagName("li")[i];
+                //let rimuovTask = document.getElementsByTagName('li')[i].innerHTML;
                 //document.getElementsByTagName('li')[i].innerHTML = 
                 z = ul1.appendChild(rimuovTask);
                 //console.log(rimuovTask)
@@ -64,9 +64,9 @@ console.log("Es3.1")
      });
     
      
-}) */
+}) 
 
-window.addEventListener("load", function () {
+/* window.addEventListener("load", function () {
 
     // Creare div contenitore Titolo e Input e btn Add
     let divheader = document.createElement('div');
@@ -170,7 +170,7 @@ window.addEventListener("load", function () {
 
     })
 
-});
+}); */
 
 
 
