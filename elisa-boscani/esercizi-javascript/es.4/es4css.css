@@ -1,0 +1,31 @@
+.gitbody {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  width: 22rem;
+  height: 28rem;
+  border: 0.0625rem solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  width: 18.5rem;
+  height: 2.2rem;
+}
+
+.tastiera {
+  width: 18.5rem;
+  height: 23rem;
+  border: 0.0625rem solid black;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}

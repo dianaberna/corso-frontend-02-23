@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.divCentrale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13rem;
+  height: 2.5rem;
+  background-color: white;
+  font-size: 1.2rem;
+}
