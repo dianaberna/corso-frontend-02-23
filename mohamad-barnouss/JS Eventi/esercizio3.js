@@ -62,12 +62,32 @@ window.addEventListener("load", function () {
   bottoneCestino.appendChild(cestinoTesto);
   cestinoElement.appendChild(bottoneCestino);
 
+  //bottone cestino per eliminare
   bottoneCestino.addEventListener("click", function () {
     console.log(ulCestino);
     let elementiDaCancellare = document.getElementsByClassName("delate");
     for (let i = elementiDaCancellare.length - 1; i >= 0; i--) {
       //PARTO DALLA FINE E CANCELLO TUTTI GLI ELEMENTI
       elementiDaCancellare[i].remove();
+    }
+  });
+
+  //bottone ripristino
+  let ripristinaText = document.createTextNode("RIPRISTINA TUTTO");
+  let ripristinaButton = document.createElement("button");
+  ripristinaButton.appendChild(ripristinaText);
+  cestinoElement.appendChild(ripristinaButton);
+
+  // ripristina tutto con il bottone RIPRISTINA
+  ripristinaButton.addEventListener("click", function () {
+    //console.log("elementi dai cancelllare==> " + elementiDaCancellare.length);
+    let elementiRipristino = document.getElementsByClassName("delate");
+    console.log(elementiRipristino.length);
+
+    for (let i = elementiRipristino.length - 1; i >= 0; i--) {
+      ulList.appendChild(elementiRipristino[i]);
+      // elementiRipristino[i].classList.remove("delate"); //per togliere la classe
+      elementiRipristino[i].className = "";
     }
   });
 });
