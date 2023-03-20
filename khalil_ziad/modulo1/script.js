@@ -10,3 +10,17 @@ function crea (tag,genitore,testo,listaAttributi){
 }
 let genitore=document.getElementsByTagName("body")[0];
 crea ("a",genitore,"hello World!",{href:"google.com"});
+ 
+function nestedElement(tag,genitore,contenuto,posizione){
+    let element=document.createElement(tag);
+    let testo=document.createTextNode(contenuto)
+    element.appendChild(testo);
+    if(posizione>=0){
+        nestedElement(tag,element,contenuto,posizione-1);
+    }
+        console.log(posizione);
+        genitore.appendChild(element);
+    
+}
+let bodyElement=document.body
+nestedElement("a",bodyElement,"5",5);
