@@ -40,7 +40,17 @@ button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer; /*cambio cursore hover*/
+    transition: all 0.2s ease; /*cambio colore fluido hover*/
+    
 }
+
+.button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 4px 4px 0px #969597;
+
+  }
 
 /* navbar */
 

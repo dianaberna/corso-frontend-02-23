@@ -126,3 +126,10 @@ form.appendChild(input);
 
 let arrayClassPippo = document.getElementsByClassName("pippo")
 arrayClassPippo[1].removeAttribute("id")
+
+
+let divSeleziono = document.getElementById("seleziono")
+document.body.appendChild(divSeleziono)
+
+divSeleziono.setAttribute("class", "red")
+
