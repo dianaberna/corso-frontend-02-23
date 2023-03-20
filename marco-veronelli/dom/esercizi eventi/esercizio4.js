@@ -61,42 +61,46 @@ window.addEventListener("load", function () {
       let ta = [];
       let b = [];
       let bi = [];
-      tb = [];
-      tbb = [];
-      taa = [];
+      let tb = [];
+      let tbb = [];
+      let taa = [];
       if (e.target.firstChild.nodeValue === "cancella") {
         input.value = "";
       } else {
         car = e.target.firstChild.nodeValue;
-        ;
         input.value += car;
-        console.log(input.value)
+        console.log(input.value);
         if (car === "=") {
-          for (let i = 0; i < input.value.length - 1; i++) {
+          for (let i = 0; i < input.value.length; i++) {
             a.push(input.value[i]);
           }
-          for (let i = 0; i < a.length; i++) {
-            if (a[i] !== "*" || a[i] !== "/" || a[i] !== "-" || a[i] !== "+") {
+          for (let i = 0; i < a.length-1; i++) {
+            if (a[i] !=="*" || a[i] !=="/" || a[i] !=="-" || a[i] !=="+") {
               ta.push(a[i]);
+              console.log("ta"+ta)
+              
+              
             }
 
             if (a[i] === "*" || a[i] === "/" || a[i] === "-" || a[i] === "+") {
               b = a[i];
               bi = i;
+              console.log(b);
+              console.log(bi);
+              break
             }
-            
           }
-          for (let j = bi + 1; j < a.length; j++) {
+          for (let j = bi +1; j < a.length; j++) {
             if (a[j] !== "*" || a[j] !== "/" || a[j] !== "-" || a[j] !== "+") {
               tb.push(a[j]);
             }
           }
 
+          console.log("ta" + ta);
+          console.log("tb" + tb);
 
-
-
-          //RISULTATI
           ta.pop();
+          tb.pop()
           console.log("tb" + tb);
           tbb = Number(tb.join(""));
           taa = Number(ta.join(""));
