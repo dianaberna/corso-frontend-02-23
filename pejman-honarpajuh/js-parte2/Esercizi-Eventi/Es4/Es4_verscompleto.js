@@ -1,41 +1,32 @@
 console.log('versione completo calcolatrice----------')
-
-
 window.addEventListener("load", function () {
-
-   
     // corpo 
-
     // Div fondo
     let divfondo = document.createElement('div');
      divfondo.setAttribute("id","fondo");
      document.body.appendChild(divfondo);
-
     // Form e Div conteiner
     let form = document.createElement('form');
     form.setAttribute('id','form');
     divfondo.appendChild(form);
-
     let divconteiner = document.createElement('div');
     divconteiner.setAttribute('class','conteiner');
     divfondo.appendChild(divconteiner);
-
     //Creare due span sotto div conteiner colleando al div fondo
     let span1 = document.createElement('span');
     span1.setAttribute('id','span1');
     divfondo.appendChild(span1);
-   
+  
     let span2 = document.createElement('span');
     span2.setAttribute('id','span2');
     divfondo.appendChild(span2);
-    
     // Input nel form
     let input = document.createElement('input');
     input.setAttribute('type','text');
     input.setAttribute('id','display');
     input.setAttribute('value',' ');
-    input.setAttribute('placeholder'," 0 ");
-    //input.setAttribute('readonly');
+    input.setAttribute('placeholder', '0' );
+    input.setAttribute('readonly','readonly');
     form.appendChild(input); 
     // Creare Span con button dentro per cancellare
     let spancancel = document.createElement('span');
@@ -48,13 +39,9 @@ window.addEventListener("load", function () {
     button1.textContent = 'C';
     spancancel.appendChild(button1);
     // Div parent sta dentro div conteiner
-
     let divparent = document.createElement('div');
     divparent.setAttribute('class','parent');
     divconteiner.appendChild(divparent);
-
-    // Divi che base dei bottoni sta dentro divparent
-
     // Creare tutti bottoni collegati a div parent
     let btn7 = document.createElement('button');
     btn7.setAttribute('id','button2');
