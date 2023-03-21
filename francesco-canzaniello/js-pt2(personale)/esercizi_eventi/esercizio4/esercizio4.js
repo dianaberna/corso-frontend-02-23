@@ -157,7 +157,7 @@ window.addEventListener("load", function(){
             arrayOperazioni.push(testo)
             input.value = arrayOperazioni.join("")
             
-            if(pulsanti[i].textContent == "="){  
+            if(pulsanti[i].textContent == "="){ // quando premo uguale stampa il risultato 
                 arrayScontrino.push(input.value + eval(input.value.replace("=", "").replace("Canc", "").replace("Abilita", "")))            
                 input.value = eval(input.value.replace("=", "").replace("Canc", "").replace("Abilita", ""))
                 
