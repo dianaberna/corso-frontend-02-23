@@ -1,7 +1,24 @@
 
 //  es 4
 
+
+
 window.addEventListener("load", function(){
+
+    function creaParagrafi(){
+        for (let i = 0; i < arrayScontrino.length; i++) {
+            console.log("sono qui")
+            let paragrafo = document.createElement("p")
+            let testoParagrafo = document.createTextNode(`${arrayScontrino[i]}`)
+            paragrafo.appendChild(testoParagrafo)
+            divScontrino.appendChild(paragrafo)
+            
+            
+        }
+    }
+
+
+
     // creazione dvi che conterrà l'intera calcolatrice
     let divCalcolatrice = document.createElement("div")
     divCalcolatrice.setAttribute("class", "divCalcolatrice")
@@ -20,11 +37,13 @@ window.addEventListener("load", function(){
     divCalcolatrice.appendChild(numero7)
     let testo7 = document.createTextNode("7")
     numero7.appendChild(testo7)
+    // creaButton("7")
 
     let numero8 = document.createElement("button")
     divCalcolatrice.appendChild(numero8)
     let testo8 = document.createTextNode("8")
     numero8.appendChild(testo8)
+    // creaButton("8")
 
     let numero9 = document.createElement("button")
     divCalcolatrice.appendChild(numero9)
@@ -101,10 +120,36 @@ window.addEventListener("load", function(){
     simboloAdd.appendChild(testoAdd)
     simboloAdd.setAttribute("class","operazioni")
 
+    let canc = document.createElement("button")
+    divCalcolatrice.appendChild(canc)
+    let testoCanc = document.createTextNode("Canc")
+    canc.appendChild(testoCanc)
+    canc.setAttribute("id", "cancella")
+
+    let dis = document.createElement("button")
+    divCalcolatrice.appendChild(dis)
+    let testoDis = document.createTextNode("Abilita")
+    dis.appendChild(testoDis)
+    dis.setAttribute("id", "abilita")
+
+    let divScontrino = document.createElement("div")
+    divCalcolatrice.appendChild(divScontrino)        
+    let h2Scontrino = document.createElement("h2")
+    divScontrino.appendChild(h2Scontrino)
+    let testoScontrino = document.createTextNode("Scontrino")
+    h2Scontrino.appendChild(testoScontrino)
+    divScontrino.setAttribute("id", "scontrino")
+    let arrayScontrino = []
+
+
+
+
     let pulsanti = document.getElementsByTagName("button")
     let arrayOperazioni = []
+    let eventoInput = document.getElementById("input")
     
-
+    
+    // evento per i tasti della calcolatrice
     for(let i=0; i<pulsanti.length; i++){
         pulsanti[i].addEventListener("click", function(){
             
@@ -112,17 +157,53 @@ window.addEventListener("load", function(){
             arrayOperazioni.push(testo)
             input.value = arrayOperazioni.join("")
             
-            if(pulsanti[i].textContent == "="){              
+            if(pulsanti[i].textContent == "="){  
+                arrayScontrino.push(input.value + eval(input.value.replace("=", "").replace("Canc", "").replace("Abilita", "")))            
+                input.value = eval(input.value.replace("=", "").replace("Canc", "").replace("Abilita", ""))
                 
-                input.value = eval(input.value.replace("=", ""))
+                arrayOperazioni =[]
+                console.log(arrayScontrino)
+                creaParagrafi()
+                arrayScontrino = []
+            }else if(pulsanti[i].textContent == "Canc"){// cancella l'input
+                input.value = ""
+                arrayOperazioni = []
+                
+            }else if(pulsanti[i].textContent == "Abilita"){//abilita l'inserimento da input
+                document.getElementById("input").removeAttribute("disabled");
+                dis.textContent = "Disab."
+                input.value = ""
+                arrayOperazioni = []
+            } else if(pulsanti[i].textContent == "Disab."){//disabilita l'inserimento da input
+                input.setAttribute("disabled", "true")
+                dis.textContent = "Abilita"
+                input.value = ""
+                arrayOperazioni = []
             }
             
+        });
+}//fine evento pulsanti
+    
+
+
+        eventoInput.addEventListener("change", function(){
+
+            let testo = input.value
+            arrayOperazioni.push(testo)            
+            arrayScontrino.push(input.value + eval(input.value.replace("Canc", "").replace("Abilita", "")))            
+            input.value = eval(input.value.replace("=", "").replace("Canc", "").replace("Abilita", ""))           
+            arrayOperazioni =[]
+            console.log(arrayScontrino)
+            creaParagrafi()
+            arrayScontrino = []
 
         });
-}
 
-
-
+        
+        
+        
+        
+        
 
 
 
