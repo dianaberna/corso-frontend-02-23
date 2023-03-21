@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
-@import "/modulo-1/css/header.css";
+@import "/html-css/css/header.css";
 
 :root{
     --dark-gray: #1d1b1f;
@@ -55,12 +55,11 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    position: sticky;
     top: 0;
-    /* 
-        position: fixed;
-        width: calc(100% - 100px);
-    */
+    
+    position: fixed;
+    width: calc(100% - 100px);
+   
     background-color: white;
     z-index: 1;
     border: 1px solid black;
@@ -68,8 +67,9 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: none;
     gap: 3rem;
+
 }
 
 nav a {
@@ -81,7 +81,17 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav > div.hamburger {
 
+}
+
+nav > div.hamburger > span{
+    height: .25rem;
+    width: 2rem;
+    background-color: black;
+    display: block;
+    margin-bottom: .25rem;
+}
 
 /* section why */
 
@@ -272,5 +282,11 @@ footer hr{
     }
     footer{
         padding: 2rem 6.25rem;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav > div.hamburger{
+        display: none;
     }
 }

@@ -9,6 +9,9 @@ paragrafo.style.backgroundColor = "red";
 console.log(document.getElementsByClassName("verde"));
 console.log(document.getElementsByClassName("verde").length);
 
+// array = [1, 2, 3]
+// array = 3 --> non sto modificando un singolo elemento all'interno dell'array
+
 // questo non posso farlo
 // document.getElementsByClassName("verde").style.backgroundColor = "green"
 
@@ -57,9 +60,6 @@ titoloh1.appendChild(testoh1);
 
 let genitore = document.getElementById("genitore");
 genitore.appendChild(titoloh1);
-
-let array = [1, 2, 3];
-array[0];
 
 // creo il contenuto
 let testoParagrafo = document.createTextNode("Sono il testo del paragrafo");
@@ -126,3 +126,10 @@ form.appendChild(input);
 
 let arrayClassPippo = document.getElementsByClassName("pippo")
 arrayClassPippo[1].removeAttribute("id")
+
+
+let divSeleziono = document.getElementById("seleziono")
+document.body.appendChild(divSeleziono)
+
+divSeleziono.setAttribute("class", "red")
+
