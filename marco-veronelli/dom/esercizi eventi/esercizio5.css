@@ -1,0 +1,40 @@
+#contenitore{
+    width: 500px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+body input{
+    border-radius:5px
+}
+
+:disabled::placeholder{
+    color: grey;
+}
+.ifocused:focus{
+ 
+    background-color: lightblue;
+    border-color: blue;
+   
+    
+} 
+.ihover:hover {
+    box-shadow: 3px 3px 3px grey;
+}
+.ierror2{
+        border-color:red
+    }
+.iconfirmed2{
+        border-color:green
+    }
+    .ientered2{
+        border-color: antiquewhite;
+    }
+    #tasto{
+        background-color: cornflowerblue;
+        border-radius: 5px;
+        border: 1px solid blue;
+        width:50px;
+        text-align:center;
+    }

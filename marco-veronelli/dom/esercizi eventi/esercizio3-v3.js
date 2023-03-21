@@ -45,23 +45,29 @@ window.addEventListener("load", function () {
           document.getElementById("input").value = "";
   
   //ELIMINA BUTTON
+  let n="[]"
   
           x.addEventListener("click", function () {
             let get= li.getAttribute("class")
+            
             if(get=="ul"){
+             /*  n=+1
+              let con=document.createTextNode(n.length)
+              bc.appendChild(con)
+               */
             cestino.appendChild(li);
             li.setAttribute("class", "cestinato");
-            x.textContent="x";
-            x.appendChild(ript)
-           
-         
-           
-            
-        }if (get=="cestinato"){
-            ul.appendChild(li)
-            li.setAttribute("class","ul")
             x.textContent="Ripristina";
             
+            
+                
+        }if (get=="cestinato"){
+          
+            ul.appendChild(li)
+            li.setAttribute("class","ul")
+            x.textContent="x";
+            
+              
         }
         
           });
@@ -78,6 +84,7 @@ window.addEventListener("load", function () {
             let ecanc = document.getElementsByClassName("cestinato");
             for (let i = ecanc.length - 1; i >= 0; i--) {
               ecanc[i].remove();
+              
             }
           });
         }
