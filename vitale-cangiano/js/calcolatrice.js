@@ -41,7 +41,6 @@ ugualeButton.addEventListener('click', () => {
 
 function addNumber(value){
     count = count+value;
-    console.log("il num"+count);
     input.setAttribute("value", count);
 }
 
