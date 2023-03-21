@@ -15,12 +15,14 @@ lebal.textContent = 'Default';
 
 let br = document.createElement('br');
 lebal.appendChild(br);
+form.appendChild(lebal);
 
 let input = document.createElement('input');
-form.appendChild(lebal);
 input.setAttribute('type','text');
 input.setAttribute('id','myInput');
-input.setAttribute('value',' ');
+input.setAttribute('class','error conferm')
+input.setAttribute('value','');
+//input.setAttribute('disabled','disabled')
 form.appendChild(input);
 
 

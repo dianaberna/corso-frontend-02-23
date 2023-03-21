@@ -24,7 +24,7 @@ window.addEventListener("load", function () {
     let input = document.createElement('input');
     input.setAttribute('type','text');
     input.setAttribute('id','display');
-    input.setAttribute('value',' ');
+    input.setAttribute('value','');
     input.setAttribute('placeholder', '0' );
     input.setAttribute('readonly','readonly');
     form.appendChild(input); 
