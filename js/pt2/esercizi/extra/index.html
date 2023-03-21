@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            
+        }
+        .body-stop{
+            overflow: hidden;
+        }
+        .body-play{
+            overflow: auto;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        nav > div{
+            /* position: relative; */
+            
+        }
+        .hamburger{
+            cursor: pointer;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .hamburger span{
+            height: 5px;
+            width: 40px;
+            background-color: black;
+            display: block;
+            margin-bottom: 5px;
+            right: 0px;
+            position: absolute;
+        }
+
+        .hamburger span:nth-child(1){
+            top: 0px;
+        }
+        .hamburger span:nth-child(2){
+            top: 10px;
+        }
+        .hamburger span:nth-child(3){
+            top: 20px;
+        }
+
+        .hamburger span:nth-child(1), .hamburger span:nth-child(3){
+            transition-property: all;
+            transition-duration: 300ms;
+            transition-timing-function: linear;
+        }
+        
+        .hamburger span:nth-child(1).close{
+            rotate: 45deg;
+          
+        }
+        .hamburger span:nth-child(2).close{
+            display: none;
+            
+            
+        }
+        .hamburger span:nth-child(3).close{
+            rotate: -45deg;            
+            top: 0px;
+        }
+        .menu{
+            list-style-type: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            white-space: nowrap;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .menu li{
+ 
+        }
+        .show{
+            display: flex;
+            position: fixed;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body class="body-play">
+    <nav>
+        <h1>Titolo prova</h1>
+        <div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu hide">
+                <li>
+                    <a href="#">voce 1</a>
+                </li>
+                <li>
+                    <a href="#">voce 2</a>
+                </li>
+                <li>
+                    <a href="#">voce 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+    <script src="/js/pt2/esercizi/es6/script.js"></script>
+</body>
+</html>
