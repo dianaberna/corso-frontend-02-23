@@ -19,6 +19,7 @@ let arrayLink = [
 
 for (let i = 0; i < arrayLink.length; i++) {
     let li = document.createElement("li");
+    // let testoLink = document.createTextNode(arrayLink[i]["titolo"]);
     let testoLink = document.createTextNode(arrayLink[i].titolo);
     let link = document.createElement("a");
     link.setAttribute("href", arrayLink[i].href);
