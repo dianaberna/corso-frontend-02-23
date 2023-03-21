@@ -52,14 +52,13 @@ header>h1 {
 }
 
 /*header */
-header>svg {
+header>img {
     position: absolute;
     width: 240px;
     height: 240px;
     left: calc(50% - 240px/2);
     bottom: 8.6994rem;
     z-index: -1;
-    opacity: 0.4;
 }
 
 header {
@@ -370,7 +369,7 @@ footer hr {
     display: flex;
 }
 
-/*------------media query---------------- */
+/*---------------------------------------------media query---------------- */
 
 /*tablet*/
 @media screen and (min-width: 481px) {
@@ -384,6 +383,13 @@ footer hr {
     }
     .hamburger{
         display: none;
+    }
+ 
+    header>img {
+        width: 561px;
+        height: 561px;
+        left: calc(50% - 561px/2 - 0.5px);
+        top: 6rem; 
     }
 
     header>h1 {
@@ -458,13 +464,8 @@ footer hr {
         padding: 0rem 25rem;
     }
 
-
-    header>svg {
-        width: 561px;
-        height: 561px;
-        left: calc(50% - 561px/2 - 0.5px);
-        top: 2rem;
-        opacity: 0.4;
+    header>img {
+        top: 8rem; 
     }
 
     .primo>h2 {

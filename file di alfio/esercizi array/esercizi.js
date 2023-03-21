@@ -736,6 +736,7 @@ carta(21)
 function email(a) {
     cont = 0;
     cont2 = 0;
+    array["@gmail","@hotmail"]
     for (let i = 1; i < a.length; i++) {
 
         switch (a[i]) {
