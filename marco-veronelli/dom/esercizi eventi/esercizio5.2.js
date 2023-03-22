@@ -1,4 +1,4 @@
-window.addEventListener("load",function(){
+/* window.addEventListener("load",function(){
 
 
 let body=document.getElementsByTagName("body")[0]
@@ -43,17 +43,23 @@ icpassword.setAttribute("id","")
 icpassword.setAttribute("placeholder","cpassword")
 console.log("ciao")
 
-let submit=document.createElement("submit")
+let submit=document.createElement("input")
 
 form.appendChild(submit)
-let st=document.createTextNode("submit")
+let st=document.createTextNode("Submit")
 submit.appendChild(st)
 submit.setAttribute("id","tasto")
+submit.setAttribute("type","submit")
 submit.addEventListener("click",function(){
 let nome=""
 //leggo il NOME
-inome.value+=nome
-
+nome=inome.value
+console.log(nome)
+for (let i = 0; i < nome.length; i++) {
+    if
+    
+    
+}
 
 })
 
@@ -63,4 +69,20 @@ inome.value+=nome
 
 
 
-});
+}); */
+
+str1 = "ciaossooaau";
+str2 = "provaaoou";
+comuni = "";
+
+
+for (let i = 0; i < str1.length; i++) {
+    let carattere = str1[i];
+    if (str2.indexOf(carattere) !== -1 && comuni.indexOf(carattere) === -1) {
+        
+        comuni += carattere;
+    }
+}
+
+console.log("soluzione con funzioni: " + comuni);
+console.log(2+"2")

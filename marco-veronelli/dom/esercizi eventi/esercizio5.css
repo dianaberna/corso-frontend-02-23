@@ -31,10 +31,4 @@ body input{
     .ientered2{
         border-color: antiquewhite;
     }
-    #tasto{
-        background-color: cornflowerblue;
-        border-radius: 5px;
-        border: 1px solid blue;
-        width:50px;
-        text-align:center;
-    }
+  
