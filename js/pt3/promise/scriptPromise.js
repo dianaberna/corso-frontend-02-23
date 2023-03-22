@@ -20,11 +20,11 @@ let nuovaPromessa = (numero) => {
             //setTimeout(() => resolve("Il numero è pari"), 1000)
             resolve("Il numero è pari")
         }else{
+            // timer che esegue quello che c'è all'interno dopo 1000ms
             setTimeout(() => reject("Il numero è dispari"), 1000)
             //reject("Il numero è dispari")
         }
     })
-    // fetch --> non scrivere una promise ma sarà sottintesa
 }
 
 // con arrow function

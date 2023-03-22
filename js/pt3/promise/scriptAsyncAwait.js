@@ -4,6 +4,8 @@ window.addEventListener("load", () => {
         .then((resolve)=> console.log(resolve))
         .catch((error) => console.log(error))
         .finally(() => console.log("la gestione della promessa è conclusa"))
+
+    console.log(controlloPari(numero)) 
 })
 
 async function controlloPari(numero){
