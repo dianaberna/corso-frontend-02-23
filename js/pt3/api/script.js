@@ -1,5 +1,5 @@
 window.addEventListener("load", async () => {
-    let username = "dianabernabei";
+    let username = "dianaberna";
     let imgAvatar = document.getElementById("avatar")
     let risultato = await infoGithub(username);
     console.log(risultato)
@@ -18,5 +18,6 @@ async function infoGithub(username) {
             }
             return Promise.reject(response); 
         })
+        .then((response) => console.log(response))
         .catch((error) => (document.body.textContent = error.status));
 }
