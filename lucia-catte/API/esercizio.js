@@ -47,7 +47,7 @@
         let colonna2 = document.createElement("td")
         colonna2.textContent = arrayTemperature[i];
         riga.appendChild(colonna2);
-        tabella.appendChild(riga2)
+        tabella.appendChild(riga)
 
     }
  })
