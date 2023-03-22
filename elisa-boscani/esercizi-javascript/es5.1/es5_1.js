@@ -19,11 +19,6 @@ let arrayInput = [
   "Submit",
 ];
 
-let datiCorretti = {
-  nome: "Elisa",
-  cognome: "Boscani",
-};
-
 for (let index = 0; index < arrayInput.length; index++) {
   // CREO TITOLINO //
   let titolo = document.createElement("label");
@@ -34,6 +29,7 @@ for (let index = 0; index < arrayInput.length; index++) {
   switch (arrayInput[index]) {
     case "Submit":
       tipo = "submit";
+
       break;
     case "Email":
       tipo = "email";
@@ -46,18 +42,51 @@ for (let index = 0; index < arrayInput.length; index++) {
       tipo = "text";
       break;
   }
+
   let input = document.createElement("input");
   input.type = tipo;
+
   form.appendChild(input);
 
-  form.addEventListener("submit", function () {
-    let nome = input.type === "Nome" ? input.type : null;
-    let cognome = input.type === "Cognome" ? input.type : null;
+  /* input.addEventListener("change", function () {
+    controlloNome(input.value);
+  }); */
 
-    if (nome === datiCorretti.nome && cognome === datiCorretti.cognome) {
-      document.forms["myForm"].submit();
+  /* function controlloNome(valore) {
+  let arrayValore = valore.split("");
+  console.log("arrayValore:", arrayValore);
+  let condizione = arrayValore.find((carattere) => {
+    console.log("carattere", carattere);
+
+    if (carattere === "!" /* || carattere === "*" || carattere === "?" */ /* ) {
+      return true;
     } else {
-      alert("Per favore inserisci i dati corretti!");
+      return false;
     }
   });
+
+  console.log("condizione", condizione);
+  if (condizione !== true) {
+    console.log("corretto");
+  } else {
+    console.log("sbagliato");
+  }  */
+  function checkForm(frm) {
+    form.addEventListener("submit", function (event) {
+      /* event.preventDefault();
+      var nameValue = "text"; */
+      /* var nameField = form.elements["text"]; */
+      /* var nameValue = nameField.value; */
+      var regex =
+        /^([a-zA-Z\xE0\xE8\xE9\xF9\xF2\xEC\x27]\s?)+$/; /* new RegExp */ /* \/^[a-zA-Z\\s]*$\/ */
+      if (!checkPatternChars("text", frm.text.value, regex)) {
+        console.log("il nome è sbagliato");
+      } else {
+        console.log("il nome è giusto");
+        console.log("il nome è giusto");
+        frm.name.focus();
+        return false;
+      }
+    });
+  }
 }
