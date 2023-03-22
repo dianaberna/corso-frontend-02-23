@@ -9,7 +9,7 @@ window.addEventListener("load", function(){
         // "e" contiene le informazioni dell'evento
         console.log("ciao")
     })
-    input.addEventListener("keydown", function(e){
+    input.addEventListener("keyup", function(e){
         console.log(e)
         if(e.key == "Enter"){
             console.log("ciao")
@@ -17,13 +17,13 @@ window.addEventListener("load", function(){
     })
 
     // ho due o più eventi da gestire esattamente nello stesso modo
-    let arrayEventi = ["change", "keydown"]
+    /* let arrayEventi = ["change", "keydown"] */
     // genero un eventlistener per ogni elemento dell'arrayEventi
-    for (let i = 0; i < arrayEventi.length; i++) {
+    /* for (let i = 0; i < arrayEventi.length; i++) {
         arrayEventi[i].addEventListener(arrayEventi[i], function(){
             console.log("ciao")
         })
     }
-
+ */
     document.body.appendChild(input);
 })
