@@ -13,6 +13,8 @@ window.addEventListener("load", function(){
     let testoDefault = document.createTextNode("Default")
     labelDefault.appendChild(testoDefault)
     labelDefault.setAttribute("for", "default")
+
+
     let inputDefault = document.createElement("input")
     divInputs.appendChild(inputDefault)
     inputDefault.setAttribute("id","default")

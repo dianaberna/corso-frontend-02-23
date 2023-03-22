@@ -198,16 +198,4 @@ window.addEventListener("load", function(){
             arrayScontrino = []
 
         });
-
-        
-        
-        
-        
-        
-
-
-
-
-
-
 });
