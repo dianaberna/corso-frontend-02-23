@@ -37,32 +37,25 @@ function appendLi(txt) {
             this.parentNode.remove();
         }
     }
-
+    let cestino = document.getElementById("cestino");
     //lista cestinoButton 
-    let currentCestino= document.querySelectorAll("#cestinoButton");
-    for(let i=0;i<currentCestino.length;i++){
-        currentCestino[i].onclick = function (){
-            if(this.parentNode.parentNode.id=="lista"){
+    let currentCestino = document.querySelectorAll("#cestinoButton");
+    for (let i = 0; i < currentCestino.length; i++) {
+        currentCestino[i].onclick = function () {
+            if (this.parentNode.parentNode.id == "lista") {
                 //appendere elemento in lista cestino
                 console.log("cestino " + this.parentNode.id);
-                let cestinoLista=document.getElementById("cestino");
-                cestinoLista.appendChild(this.parentNode);
-            }else{
-                let current_tasksONE = document.querySelectorAll("#bot");
-                console.log("current taskone " + current_tasks);
-                for (var i = 0; i < current_tasks.length; i++) {
-                    current_tasks[i].appendChild(this.parentNode);
-                }
+                currentCestino[i].textContent = "Lista";
+                let cestinoLista = document.getElementById("cestino");
+                cestino.appendChild(this.parentNode);
+            } else {
+                currentCestino[i].textContent = "Cestino";
+                lista.appendChild(this.parentNode);
             }
         }
     }
 
     count++;
-
-
-    function elimina(id) {
-        document.getElementById(id).remove();
-    }
 
 }
 
