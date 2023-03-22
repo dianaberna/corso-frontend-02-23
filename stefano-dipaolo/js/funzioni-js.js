@@ -466,5 +466,5 @@ function prezzoTotaleAlimenti(array){
             { product: "chocolate", quantity: 1, price: 0.10 },
             { product: "lollipop", quantity: 1, price: 0.20 },
         ])
- 
-    
+       
+        
