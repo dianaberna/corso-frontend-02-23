@@ -1,5 +1,6 @@
 // captare il caricamento di tutto il body
-window.addEventListener("load", function () {
+window.addEventListener("load", function (event) {
+    console.log(event)
 	let pulsante = document.getElementById("pulsante");
     // captare l'evento click del pulsante con id "pulsante"
     pulsante.addEventListener("click", function (e) {
