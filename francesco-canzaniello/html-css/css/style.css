@@ -1,0 +1,16 @@
+/* 
+selettore {proprietà: valore; proprietà: valore; ecc}
+*/
+
+body{
+    background-color: aquamarine;
+}
+main p{
+    background-color: orange;
+}
+main > p{
+    background-color: deeppink;
+}
+main > div > p{
+    background-color: blueviolet;
+}
