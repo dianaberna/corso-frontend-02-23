@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
     document.body.appendChild(div)
 
 
-    let stile = "margin: 0px 130rem 0 0 ; border-style: solid; background-color: lightblue"
+    let stile = "margin: 0px 10rem 0 0 ; border-style: solid; background-color: lightblue"
     div.style = stile
 
     let cestino = document.createElement("ul")
@@ -67,9 +67,32 @@ window.addEventListener("load", function () {
                 //se siamo nel ul lista vogliamo spostare "li" nel cestino e il pulsante avrà lo scopo di ripristinare "li" nella lista
                 cestino.appendChild(li)
                 cancella.textContent = "Ripristina"
+                // let liRemove = document.querySelectorAll("#cestino > li") 
+                // if (liRemove.length !== 0){
+                // div.appendChild(cancellaCestino)
+                // }
+            
+                // cancellaCestino.addEventListener("click", function () {
+            
+                //     for (i = liRemove.length - 1; i >= 0; i--) {
+                //         liRemove[i].remove()
+                //     }
+                //     cancellaCestino.remove()
+                // })
+                } else {
+                // se siamo nel "ul" cestino vogliamo spostare "li" nella lista e il pulsante avra lo scopo di cancellare "li" dalla lista e spostarla nel cestino 
+                lista.appendChild(li)
+                cancella.textContent = "Elimina"
+                let liRemove = document.querySelectorAll("#cestino > li")
+                if(liRemove.length == 0){
+                    cancellaCestino.remove()
+                }
+            }
+                let liRemove = document.querySelectorAll("#cestino > li") 
+                if (liRemove.length !== 0){
                 div.appendChild(cancellaCestino)
-
-            let liRemove = document.querySelectorAll("#cestino > li")
+                }
+            
                 cancellaCestino.addEventListener("click", function () {
             
                     for (i = liRemove.length - 1; i >= 0; i--) {
@@ -79,22 +102,13 @@ window.addEventListener("load", function () {
                 })
 
 
-            } else {
-                // se siamo nel "ul" cestino vogliamo spostare "li" nella lista e il pulsante avra lo scopo di cancellare "li" dalla lista e spostarla nel cestino 
-                lista.appendChild(li)
-                cancella.textContent = "Elimina"
-            }
-
-
-
-
         })
 
     })
 
-    if (liRemove.length !== 0) {
-        div.appendChild(liRemove)
-    }
+    // if (liRemove.length !== 0) {
+    //     div.appendChild(liRemove)
+    // }
 
 
 })

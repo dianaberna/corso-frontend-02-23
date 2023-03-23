@@ -17,4 +17,5 @@ window.addEventListener("load", function () {
     
     console.log(colore)
     console.log("il body è stato caricato");
+    
 })

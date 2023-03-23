@@ -1,0 +1,16 @@
+
+
+#div{
+    display: block;    
+    margin: 0px 50rem 0 0 ;    
+    border-style: solid;
+    border-radius: 10px;
+    border-color: blue; 
+    background-color: rgb(221, 213, 213)
+}
+
+
+
+#input:hover{
+    border-color: rgb(0, 148, 247);
+}
