@@ -64,10 +64,8 @@
 
  window.addEventListener("load", async function () {
     let risultato = await recuperoDatiOpenMeteo(11.00, 14.51);//I VALORI DEI DUE PARAMETRI LI INSERISCO QUI
-    //console.log(risultato)
-    // risultato.hourly.time -> array degli orari
+    
     console.log(risultato.hourly.time);
-    // risultato.hourly.temperature_2m -> array delle temperature
     console.log(risultato.hourly.temperature_2m);
 
     let arrayOrari = risultato.hourly.time;
@@ -85,9 +83,15 @@
         console.log(input.value)
     })
 
-    /*input2.addEventListener("change", () => {
+     /*input2.addEventListener("change", () => {
         console.log(input2.value)
     })*/
+
+    let pulsante = document.createElement("button")
+    pulsante.textContent = "Invio"
+    document.body.appendChild(pulsante)
+
+   
 
     let tabella = document.createElement("table");
     let rigaIntestazione = document.createElement("tr");
@@ -100,13 +104,10 @@
     tabella.appendChild(rigaIntestazione);
     document.body.appendChild(tabella);
 
-    let pulsante = document.createElement("button")
-    pulsante.textContent = "Invio"
-    document.body.appendChild(pulsante)
-
     pulsante.addEventListener("click", async () => {
         
-        let risultato = await meteoNuoro (input.value, input2.value);
+        risultato = await meteoNuoro (input.value, input2.value);
+        
         
     })
 
