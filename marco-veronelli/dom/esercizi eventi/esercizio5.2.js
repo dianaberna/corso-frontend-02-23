@@ -1,88 +1,178 @@
-/* window.addEventListener("load",function(){
+window.addEventListener("load", function () {
+  let body = document.getElementsByTagName("body")[0];
+  let form = document.createElement("div");
+  form.setAttribute("id", "contenitore");
+  body.appendChild(form);
 
+  ////////----CREO l'INPUT NOME-------//////////
+  let inome = document.createElement("input");
+  form.appendChild(inome);
+  inome.setAttribute("class", "text");
+  inome.setAttribute("id", "nome");
+  inome.setAttribute("placeholder", "Nome");
 
-let body=document.getElementsByTagName("body")[0]
-let form=document.createElement("div")
-body.appendChild(form)
-form.style.display="flex"
-form.style.flexWrap= "wrap";
-form.style.flexDirection= "column";
-form.style.width="500px";
-form.style.gap="20px";
+  ////////---CREO L'INPUT COGNOME-------/////////////
+  let icognome = document.createElement("input");
+  form.appendChild(icognome);
+  icognome.setAttribute("class", "text");
+  icognome.setAttribute("id", "");
+  icognome.setAttribute("placeholder", "Cognome");
 
+  ////////////------CREO L'INPUT EMAIL-----///////////
+  let iemail = document.createElement("input");
+  form.appendChild(iemail);
+  iemail.setAttribute("class", "text");
+  iemail.setAttribute("id", "");
+  iemail.setAttribute("placeholder", "Email");
 
-//INPUT NOME
-let inome =document.createElement("input")
-form.appendChild(inome)
-inome.setAttribute("class","")
-inome.setAttribute("id","")
-inome.setAttribute("placeholder","nome")
-//INPUT cognome
-let icognome =document.createElement("input")
-form.appendChild(icognome)
-icognome.setAttribute("class","")
-icognome.setAttribute("id","")
-icognome.setAttribute("placeholder","cognome")
-//INPUT email
-let iemail =document.createElement("input")
-form.appendChild(iemail)
-iemail.setAttribute("class","")
-iemail.setAttribute("id","")
-iemail.setAttribute("placeholder","email")
-//INPUT password
-let ipassword =document.createElement("input")
-form.appendChild(ipassword)
-ipassword.setAttribute("class","")
-ipassword.setAttribute("id","")
-ipassword.setAttribute("placeholder","password")
-//INPUT cpassword
-let icpassword =document.createElement("input")
-form.appendChild(icpassword)
-icpassword.setAttribute("class","")
-icpassword.setAttribute("id","")
-icpassword.setAttribute("placeholder","cpassword")
-console.log("ciao")
+  /////////-------CREO l'INPUT PASSWORD-----//////////////////
+  let ipassword = document.createElement("input");
+  form.appendChild(ipassword);
+  ipassword.setAttribute("class", "text");
+  ipassword.setAttribute("id", "");
+  ipassword.setAttribute("placeholder", "Password");
 
-let submit=document.createElement("input")
+  /////////-------CREO l'INPUT CONTROLLO PASSWORD-----//////////////////
+  let icpassword = document.createElement("input");
+  form.appendChild(icpassword);
+  icpassword.setAttribute("class", "text");
+  icpassword.setAttribute("id", "");
+  icpassword.setAttribute("placeholder", "Ripeti la password");
 
-form.appendChild(submit)
-let st=document.createTextNode("Submit")
-submit.appendChild(st)
-submit.setAttribute("id","tasto")
-submit.setAttribute("type","submit")
-submit.addEventListener("click",function(){
-let nome=""
-//leggo il NOME
-nome=inome.value
-console.log(nome)
-for (let i = 0; i < nome.length; i++) {
-    if
-    
-    
-}
+  //////////-----CREO IL SUBMIT-----////////////
+  let tasto = document.createElement("input");
+  form.appendChild(tasto);
+  let st = document.createTextNode("Submit");
+  tasto.appendChild(st);
+  tasto.setAttribute("id", "tasto");
+  tasto.setAttribute("type", "submit");
+ 
 
-})
+  //////////-----EVENT LISTENER------/////////////////
 
-
-
-
-
-
-
-}); */
-
-str1 = "ciaossooaau";
-str2 = "provaaoou";
-comuni = "";
-
-
-for (let i = 0; i < str1.length; i++) {
-    let carattere = str1[i];
-    if (str2.indexOf(carattere) !== -1 && comuni.indexOf(carattere) === -1) {
+  tasto.addEventListener("keydown", function (e) {
+    console.log(e)
+   if (e.key== 'Enter') { alert("enter pressed")
         
-        comuni += carattere;
+      /////-----CONTROLLO il NOME-----////////
+      if (validatenome(inome.value) == true) {
+        inome.classList.add("iconfirmed2");
+      } else {
+        inome.classList.add("ierror2");
+      }
+
+      ///////---CONTROLLO IL COGNOME-----////////
+
+      if (validatenome(icognome.value) == true) {
+        icognome.classList.add("iconfirmed2");
+      } else {
+        icognome.classList.add("ierror2");
+      }
+
+      //////-------VALIDO L'EMAIL-------/////////
+
+      if (validateEmail(iemail.value) == true) {
+        iemail.classList.add("iconfirmed2");
+      } else iemail.classList.add("ierror2");
+
+      ///////----VALIDO AL PASSWORD----////////
+
+      if (validatePassword(ipassword.value) == true) {
+        ipassword.classList.add("iconfirmed2");
+      }
+      ipassword.classList.add("ierror2");
+
+      /////////------CONTROLLO LE PASSWORD-----////////
+
+      if (
+        validatePassword(ipassword.value) == true &&
+        ipassword.value == icpassword.value
+      ) {
+        icpassword.classList.add("iconfirmed2");
+      } else {
+        icpassword.classList.add("ierror2");
+      }
     }
+  });
+});
+
+
+  ///////////////////////--------FUNZIONI--------------/////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+/////////////////////----VALIDAZIONE NOME E COGNOME---//////////////////////////////
+function validatenome(nome) {
+  let lettere = ["q","w","e","r","t","y","u","i","o","p","l","k","j","h","g","f","d","s","a","z","x","c","v","b","n","m",
+  "Q","W","E","R","T","Y","U","I","O","P","L","K","J","H","G","F","D","S","A","Z","X","C","V","B","N","M"
+];
+  let ok = false;
+  for (let i = 0; i < nome.length; i++) {
+    if (lettere.includes(nome[i])) {
+      ok = true;
+    } else {
+      ok = false;
+      break;
+    }
+  }
+  if (ok == true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+//////////////////-----VALIDAZIONE EMAIL----/////////////
+function validateEmail(mail) {
+  let v = false;
+  let c = false;
+  let sn = 0;
+  let sn2 = "";
+
+  for (let i = 0; i < mail.length; i++) {
+    if (mail[i] == "@") {
+      sn++;
+      if (sn > 1 || sn < 1) {
+        v = false;
+      } else if (mail[i] == "@" && i > 0) v = true;
+    }
+  }
+  c = true;
+  for (let j = 0; j < mail.length; j++) {
+    if (mail[j] == "." && j == mail.length - 1) {
+      c = false;
+    }
+  }
+  for (let p = 0; p < mail.length; p++) {
+    if (mail[p] === "@" || mail[p] === ".") {
+      sn2 += mail[p];
+    }
+  }
+  if (sn2 === ".@" || sn2 === "@") {
+    c = false;
+  }
+  if (sn2 == ".@.") {
+    c = true;
+  }
+  if (v && c == true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log("soluzione con funzioni: " + comuni);
-console.log(2+"2")
+////////////////////-----VALIDAZIONE PASSWORD----//////////////////
+function validatePassword(password) {
+  let caratteriObbligatori = ["!", "*", "?", "#"];
+  let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  for (let i = 0; i < password.length; i++) {
+    if (password.length > 9) {
+      if (password.length <= 30) {
+        if (password.includes(numeri[i])) {
+          if (password.includes(caratteriObbligatori[i])) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+    }
+  }
+}

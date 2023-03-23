@@ -1,26 +1,29 @@
 #contenitore{
-    width: 500px;
+    width: 200px;
     display: flex;
-    height: 300px;
+    height:200px;
     flex-direction: column;
     flex-wrap: wrap;
+    gap:0.75rem
 }
 body input{
+    border: 1px solid grey;
     border-radius:5px
+    
 }
 
 :disabled::placeholder{
     color: grey;
 }
-.ifocused:focus{
+.text:focus{
+    border:1px solid cornflowerblue;
  
-    background-color: lightblue;
-    border-color: blue;
-   
+    background-color: rgb(235, 248, 252);
     
 } 
-.ihover:hover {
-    box-shadow: 3px 3px 3px grey;
+.text:hover {
+    box-shadow: 1px 1px 3px cornflowerblue;
+    border-color: cornflowerblue;
 }
 .ierror2{
         border-color:red
