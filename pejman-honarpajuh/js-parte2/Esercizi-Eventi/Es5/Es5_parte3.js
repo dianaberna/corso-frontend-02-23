@@ -1,4 +1,4 @@
-console.log('Esercizio 5 parte2----------');
+console.log('Esercizio 5 parte3----------');
 
 window.addEventListener("load", function () {
     // Div contenitore collegato a Body
