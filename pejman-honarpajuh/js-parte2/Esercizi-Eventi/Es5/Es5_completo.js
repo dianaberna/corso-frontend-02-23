@@ -1,4 +1,4 @@
-console.log('Esercizio 5 parte3----------');
+console.log('Esercizio 5 parte4----------');
 
 window.addEventListener("load", function () {
     // Div contenitore collegato a Body
@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
     inputname = document.createElement('input');
     inputname.setAttribute('type', 'text');
     inputname.setAttribute('id', 'nomeInput');
-    inputname.setAttribute('class', 'myinput error conferm')
+    inputname.setAttribute('class', 'myinput')
     inputname.setAttribute('value', '');
     inputname.setAttribute('placeholder', 'Nome')
     form.appendChild(inputname);
@@ -39,7 +39,7 @@ window.addEventListener("load", function () {
     let inputcognome = document.createElement('input');
     inputcognome.setAttribute('type', 'text');
     inputcognome.setAttribute('id', 'cognomeInput');
-    inputcognome.setAttribute('class', 'myinput error conferm')
+    inputcognome.setAttribute('class', 'myinput')
     inputcognome.setAttribute('value', '');
     inputcognome.setAttribute('placeholder', 'Cognome');
     form.appendChild(inputcognome);
@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
     let inputemail = document.createElement('input');
     inputemail.setAttribute('type', 'text');
     inputemail.setAttribute('id', 'emailInput');
-    inputemail.setAttribute('class', 'myinput error conferm')
+    inputemail.setAttribute('class', 'myinput')
     inputemail.setAttribute('value', '');
     inputemail.setAttribute('placeholder', 'Email');
     //inputemail.setAttribute('disabled','disabled')
@@ -71,9 +71,9 @@ window.addEventListener("load", function () {
     form.appendChild(lebalpassw);
 
     let inputpassw = document.createElement('input');
-    inputpassw.setAttribute('type', 'password');
+    inputpassw.setAttribute('type', 'text');
     inputpassw.setAttribute('id', 'passwInput');
-    inputpassw.setAttribute('class', 'myinput error conferm')
+    inputpassw.setAttribute('class', 'myinput')
     inputpassw.setAttribute('value', '');
     inputpassw.setAttribute('placeholder', 'Password');
     //inputpassw.setAttribute('disabled','disabled')
@@ -91,14 +91,14 @@ window.addEventListener("load", function () {
     let inputconfermapassw = document.createElement('input');
     inputconfermapassw.setAttribute('type', 'password');
     inputconfermapassw.setAttribute('id', 'confpasswInput');
-    inputconfermapassw.setAttribute('class', 'myinput error conferm')
+    inputconfermapassw.setAttribute('class', 'myinput')
     inputconfermapassw.setAttribute('value', '');
     inputconfermapassw.setAttribute('placeholder', 'Conferma password');
     //inputconfermapassw.setAttribute('disabled','disabled')
     form.appendChild(inputconfermapassw);
     // Creare Label per errori del input password
     let lebalErrore = document.createElement('label');
-    lebalErrore.setAttribute('for','input');
+    lebalErrore.setAttribute('for', 'input');
     lebalErrore.textContent = 'Password deve contenre:'
 
     let brlebalErrore = document.createElement('br');
@@ -106,28 +106,28 @@ window.addEventListener("load", function () {
     form.appendChild(lebalErrore);
     //Creare div sotto lebalErrore per 
     let div1 = document.createElement('div');
-    div1.setAttribute('id','div1');
-    div1.setAttribute('class','red')
+    div1.setAttribute('id', 'div1');
+    div1.setAttribute('class', 'red')
     div1.textContent = 'Password deve contenere almeno un carattere speciale'
     form.appendChild(div1);
-   
+
     let div2 = document.createElement('div');
-    div2.setAttribute('id','div2');
-    div2.setAttribute('class','red')
+    div2.setAttribute('id', 'div2');
+    div2.setAttribute('class', 'red')
     div2.textContent = 'Password deve contenere almeno un numero'
     form.appendChild(div2);
-  
+
     let div3 = document.createElement('div');
-    div3.setAttribute('id','div3');
-    div3.setAttribute('class','red')
+    div3.setAttribute('id', 'div3');
+    div3.setAttribute('class', 'red')
     div3.textContent = 'Password deve avere Min 10 e Max 30 caratteri'
     form.appendChild(div3);
 
     // Creare Input Button di submit e collegare a Form
     let inputButton = document.createElement('input');
-    inputButton.setAttribute('type','button');
-    inputButton.setAttribute('id','btn');
-    inputButton.setAttribute('value','Submit form');
+    inputButton.setAttribute('type', 'button');
+    inputButton.setAttribute('id', 'btn');
+    inputButton.setAttribute('value', 'Submit form');
     form.appendChild(inputButton);
 
 
@@ -143,12 +143,12 @@ window.addEventListener("load", function () {
                 if (Arraycartte.includes(valorenome.value[i]) || ArreyNumber.includes(valorenome.value[i])) {
                     flag = false;
                     // break;
-                } 
-            }if(flag){
-                valorenome.style = 'outline-color: green;border-color:green;'
-            }else{
+                }
+            } if (flag) {
+                valorenome.style = 'outline-color: green;background-color: #e1ffec;'
+            } else {
                 valorenome.value = 'errore';
-                valorenome.style = 'outline-color: red;border-color: red;'
+                valorenome.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
             }
         }
 
@@ -160,12 +160,12 @@ window.addEventListener("load", function () {
             for (let i = 0; i < valorecognome.value.length; i++) {
                 if (Arraycartte.includes(valorecognome.value[i]) || ArreyNumber.includes(valorecognome.value[i])) {
                     flag = false;
-                } 
-            }if(flag){
-                valorecognome.style = 'outline-color: green;border-color:green;'
-            }else{
+                }
+            } if (flag) {
+                valorecognome.style = 'outline-color: green;background-color: #e1ffec;'
+            } else {
                 valorecognome.value = 'errore';
-                valorecognome.style = 'outline-color: red;border-color: red;'
+                valorecognome.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
             }
         }
 
@@ -184,12 +184,12 @@ window.addEventListener("load", function () {
                 ) {
                     flag = false;
 
-                } 
-            }if(flag){
-                valoreEmail.style = 'outline-color: green;border-color:green;'
-            }else{
+                }
+            } if (flag) {
+                valoreEmail.style = 'outline-color: green;background-color: #e1ffec;'
+            } else {
                 valoreEmail.value = 'errore';
-                    valoreEmail.style = 'outline-color: red;border-color: red;'
+                valoreEmail.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
             }
         }
 
@@ -202,36 +202,42 @@ window.addEventListener("load", function () {
     let valorediv3 = document.getElementById('div3')
     inputpassw.addEventListener("keydown", function (e) {
         if (e.key == "Enter") {
-            flag = true;
+            flagC = true; flagN = true; flagLu = true;
             for (let i = 0; i < valorepassword.value.length; i++) {
-
-                if (
-                    valorepassword.value.includes(Arraycartte[i]) &&
-                    valorepassword.value.includes(ArreyNumber[i]) &&
-                    (valorepassword.value.length >= 10 && valorepassword.value.length <= 30)
-
-                ) {
-                    flag = true;
-                    break;
-                } else flag = false;
-
-            } if (flag) {
-                valorepassword = document.getElementById('passwInput')
-                valorepassword.style = 'outline-color: green;border-color:green;'
-                valorediv1.textContent = 'Password contiene carattere speciale';
-                valorediv1.style = 'color: green'
-                valorediv2.textContent = 'Password contiene i numeri';
-                valorediv2.style = 'color: green'
-                valorediv3.textContent = 'Password ha caratteri richiesti';
-                valorediv3.style = 'color: green'
-
-            } else {
-                valorepassword.value = 'errore';
                 valorepassword.style = 'outline-color: red;border-color: red;'
-                
-               // console.log('non ok');
+                if (valorepassword.value.includes(Arraycartte[i])) {
+                    valorediv1.textContent = 'Password contiene carattere speciale';
+                    valorepassword.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
+                    valorediv1.style = 'color: green'
+                    flagC = true;
+                    console.log(valorepassword.value)
+                }
+                if (valorepassword.value.includes(ArreyNumber[i])) {
+                    valorediv2.textContent = 'Password contiene i numeri';
+                    valorepassword.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
+                    valorediv2.style = 'color: green'
+                    flagN = true;
+                }
+                if ((valorepassword.value.length >= 10 && valorepassword.value.length <= 30)) {
+                    valorediv3.textContent = 'Password ha caratteri richiesti';
+                    valorepassword.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
+                    valorediv3.style = 'color: green'
+                    flagLu = true;
+                } else {
+                    flagC = false; flagN = false; flagLu = false;
+                }
+
+
+            } if (flagC && flagN && flagLu) {
+                valorepassword = document.getElementById('passwInput')
+                valorepassword.style = 'outline-color: green;background-color: #e1ffec;'
+            } else {
+                //alert('valore inserito inavlido')
+                valorepassword.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
             }
+
         }
+
 
     })
 
@@ -239,33 +245,30 @@ window.addEventListener("load", function () {
     let valoreconfPass = document.getElementById('confpasswInput')
     inputconfermapassw.addEventListener("keydown", function (e) {
         if (e.key == "Enter") {
-            if (valorepassword.value === valoreconfPass.value) {    
-                valoreconfPass.style = 'outline-color: green;border-color:green;'
+            if (valorepassword.value === valoreconfPass.value) {
+                valoreconfPass.style = 'outline-color: green;background-color: #e1ffec;'
             } else {
-                valoreconfPass.value = 'errore';
-                valoreconfPass.style = 'outline-color: red;border-color: red;'
+                alert('valore inserito inavlido')
+                valoreconfPass.value = '';
+                valoreconfPass.style = 'outline-color: red;background-color: rgb(255, 211, 211);'
             }
         }
 
     })
 
-    // Condizioni per Button di submit 
-  /*   let valoreButtonsubmit = document.getElementById('btn');
-    inputButton.addEventListener("keydown",function(e){
-        e.preventDefault() = valoreButtonsubmit;
-        if (e.key == "Enter") {
-            e.preventDefault() 
-        }
-        
-    }) */
-
-     // Condizioni per Form e button di submit 
+    // Condizioni per Form e button di submit 
     let valoreForm = document.getElementById('form')
-    valoreForm.addEventListener('submit',function(e){
+    valoreForm.addEventListener('submit', function (e) {
         e.preventDefault()
     })
 
 
 
 
+
+
+
+
 });
+
+
