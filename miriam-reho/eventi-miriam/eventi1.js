@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
     // Fase 2: creare il BG del body
     // Fase 3: creare il blocco colore
     let rgb = "rgb( " + r + " , " + g + " , " + b + " )"
+    
     console.log(rgb)
     document.body.style.backgroundColor = rgb
 
