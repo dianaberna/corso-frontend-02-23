@@ -2,11 +2,20 @@ window.addEventListener("load", async () => {
     let risultato = await meteo();
     let bod = document.querySelector("body");
     let timeArr=risultato.hourly.time;
-    console.log(timeArr);
-   
-    for (let i=0; i< timeArr.lenght;i++){
-        console.log(risultato.hourly.time[i]);
-        console.log("ciao");
+    let temperaturaArr=risultato.hourly.temperature_2m;
+
+    console.log(risultato);
+    
+    for (let i=0; i< timeArr.length;i++){
+        let table = document.querySelector("table");
+        let tr = document.createElement("tr");
+        let td = document.createElement("td");
+        let tdT= document.createElement("td");
+        td.innerHTML=timeArr[i];
+        tdT.innerHTML=temperaturaArr[i];
+        table.appendChild(tr);
+        tr.appendChild(td);
+        tr.appendChild(tdT);
     }
     
 
