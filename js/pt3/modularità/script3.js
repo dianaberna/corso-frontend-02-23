@@ -1,3 +1,5 @@
+console.log("file3")
+
 function funzione1file3(){
     console.log("sono in funzione 1 file3")
 }
