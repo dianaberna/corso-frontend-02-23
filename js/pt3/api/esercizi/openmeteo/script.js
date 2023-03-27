@@ -7,7 +7,7 @@ window.addEventListener("load", async function () {
     button.textContent = "Cerca"
     button.addEventListener("click", async () => {
 
-        //elimino select e tabelle già presenti
+        //elimino select e tabelle già presentiv --> da aggiornare 
         document.getElementsByTagName("select")[0] ? document.getElementsByTagName("select")[0].remove() : null
         document.getElementsByTagName("table")[0] ? document.getElementsByTagName("table")[0].remove() : null
         
@@ -20,8 +20,8 @@ window.addEventListener("load", async function () {
             let datiOpzione = JSON.parse(e.target.value) 
             // let datiOpzione = dropdownRisultati.value
             // .json()  -> da stringa a json pulendo tutti i dati che non ci servono dalla risposta della promise
-            // JSON.parse() -> da stringa a json 
-            // JSON.strigify() -> da json a stringa
+            // JSON.parse() -> da stringa a oggetto 
+            // JSON.strigify() -> da oggetto a stringa
             let latitude = datiOpzione.latitude
             let longitude = datiOpzione.longitude
             let risultatoApiOpenMeteo = await recuperoDatiOpenMeteo(latitude, longitude);

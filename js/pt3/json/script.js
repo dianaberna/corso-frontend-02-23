@@ -5,8 +5,8 @@ import miaVariabile from './dati.json' assert { type: 'json' };
  * JSON.stringify(root); -> dato un oggetto json si trasforma in stringa
 */
 
-let convertoMiaVariabile = JSON.stringify(miaVariabile)
 console.log(miaVariabile)
+let convertoMiaVariabile = JSON.stringify(miaVariabile)
 console.log(convertoMiaVariabile)
 console.log(JSON.parse(convertoMiaVariabile))
 
