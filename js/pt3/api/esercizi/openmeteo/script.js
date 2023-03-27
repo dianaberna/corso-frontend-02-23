@@ -6,11 +6,16 @@ window.addEventListener("load", async function () {
     let button = document.createElement("button")
     button.textContent = "Cerca"
     button.addEventListener("click", async () => {
+
+        //elimino select e tabelle già presenti
+        document.getElementsByTagName("select")[0] ? document.getElementsByTagName("select")[0].remove() : null
+        document.getElementsByTagName("table")[0] ? document.getElementsByTagName("table")[0].remove() : null
         
         let risultatoPrimaAPI = await recuperoDatiGeocoding(input.value)
         console.log(risultatoPrimaAPI)
         console.log(risultatoPrimaAPI.results)
         let dropdownRisultati = document.createElement("select")
+
         dropdownRisultati.addEventListener("change", async (e) => {
             let datiOpzione = JSON.parse(e.target.value) 
             // let datiOpzione = dropdownRisultati.value
@@ -35,6 +40,7 @@ window.addEventListener("load", async function () {
             
             dropdownRisultati.appendChild(option)
         });
+        input.value = ""
     })
 
     document.body.appendChild(button)
@@ -91,28 +97,31 @@ async function recuperoDatiGeocoding(value){
 function generaTabellaRisultato(risultatoApiOpenMeteo){
     let arrayOrari = risultatoApiOpenMeteo.hourly.time;
     let arrayTemperature = risultatoApiOpenMeteo.hourly.temperature_2m;
+    let nuovoDiv = document.createElement("div")
+    document.body.appendChild(nuovoDiv)
+    for(let numGiorni=0; numGiorni < 3; numGiorni++){
+        console.log("numGiorni: "+numGiorni)
+        let tabella = creaNodo({posizione: document.body, nomeTag: "table"})
+        let rigaIntestazione = document.createElement("tr");
+        creaNodo({posizione: rigaIntestazione, nomeTag: "th", testo: "time"})
+        let colonna2Intestazione = document.createElement("th");
+        colonna2Intestazione.textContent = "temperature_2m";
+        rigaIntestazione.appendChild(colonna2Intestazione);
+        tabella.appendChild(rigaIntestazione);
+        nuovoDiv.appendChild(tabella);
     
-    let tabella = creaNodo({posizione: document.body, nomeTag: "table"})
-    let rigaIntestazione = document.createElement("tr");
-    creaNodo({posizione: rigaIntestazione, nomeTag: "th", testo: "time"})
-    /* colonna1Intestazione.textContent = "time";
-    rigaIntestazione.appendChild(colonna1Intestazione); */
-    let colonna2Intestazione = document.createElement("th");
-    colonna2Intestazione.textContent = "temperature_2m";
-    rigaIntestazione.appendChild(colonna2Intestazione);
-    tabella.appendChild(rigaIntestazione);
-    document.body.appendChild(tabella);
-
-    for (let i = 0; i < arrayOrari.length; i++) {
-        let riga = document.createElement("tr");
-        let colonna1 = document.createElement("td");
-        colonna1.textContent = arrayOrari[i];
-        riga.appendChild(colonna1);
-        let colonna2 = document.createElement("td");
-        colonna2.textContent = arrayTemperature[i];
-        riga.appendChild(colonna2);
-        tabella.appendChild(riga);
+        for (let i = (numGiorni*24); i < 24 + (numGiorni*24); i++) {
+            let riga = document.createElement("tr");
+            let colonna1 = document.createElement("td");
+            colonna1.textContent = arrayOrari[i];
+            riga.appendChild(colonna1);
+            let colonna2 = document.createElement("td");
+            colonna2.textContent = arrayTemperature[i];
+            riga.appendChild(colonna2);
+            tabella.appendChild(riga);
+        }
     }
+    
 }
 
 
