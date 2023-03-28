@@ -14,7 +14,7 @@ window.addEventListener("load", async function(){
 
 
 
-async function recuperoDatiOpenMeteo() {
+async function recuperoDatiOpenMeteo(lat, lon) {
     return await fetch("https://api.open-meteo.com/v1/forecast?"+"")
         .then((response) => {
             console.log(response)

@@ -5,3 +5,22 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.nomeCorretto {
+outline-color: green;
+border-color: green;
+}
+.nomeErrato {
+outline-color: red;
+border-color: red;
+}
+.cognomeCorretto {
+    outline-color: green;
+    border-color: green;
+
+}
+.cognomeErrato {
+    outline-color: red;
+    border-color: red;
+
+}
