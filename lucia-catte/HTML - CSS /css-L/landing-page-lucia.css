@@ -141,6 +141,7 @@ button{
     padding: 0 5rem 0 5rem;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .why > div > div{

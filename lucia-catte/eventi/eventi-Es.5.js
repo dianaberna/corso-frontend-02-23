@@ -85,7 +85,6 @@ window.addEventListener("load", function () {
     div2.appendChild(inputConf); 
 
 
-
 })
 
 

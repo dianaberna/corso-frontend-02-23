@@ -6,68 +6,109 @@ console.log("siamo nell' esecizio 5")
 
 window.addEventListener("load", function () {
     
-    /*//div contenitore
-    let div = document.createElement("div");
-    document.body.appendChild(div)*/
+    //form generale
+    let form = document.createElement("form");
+        document.body.appendChild(form)
+        form.setAttribute("id", "mioForm")
+        form.addEventListener("submit", function () {
+            e.preventDefault() // blocca il ricaricamento della pagina
+            let inputnome = document.getElementsByTagName("input")[0]
+            
 
-    //div contenitore primi 4
+
+    })
+
+    //div nome
     let div1 = document.createElement("div")
-    document.body.appendChild(div1)
-    div1.setAttribute("class", "div1")
-
-    let testoNome = document.createElement("h5");
-    testoNome.textContent = "Nome";
-    div1.appendChild(testoNome);
+        form.appendChild(div1)
+        div1.setAttribute("class", "div1")
+    let labelNome = document.createElement("label");
+        labelNome.textContent = "Nome:";
+        div1.appendChild(labelNome);
     let inputNome = document.createElement("input");
-    inputNome.setAttribute("type", "text","id", "nome");
-    inputNome.textContent = "Inserisci il nome"
-    div1.appendChild(inputNome); 
+        inputNome.setAttribute("type", "text");
+        inputNome.setAttribute("id", "nome");
+        inputNome.textContent = "Inserisci il nome"
+        div1.appendChild(inputNome); 
 
-    let testoCognome = document.createElement("h5");
-    testoCognome.textContent = "Cognome";
-    div1.appendChild(testoCognome);
+    //div cognome
+    let div2 = document.createElement("div")
+        form.appendChild(div2)
+        div2.setAttribute("class", "div2")
+    let labelCognome = document.createElement("label");
+        labelCognome.textContent = "Cognome:";
+        div2.appendChild(labelCognome);
     let inputCognome = document.createElement("input");
-    inputCognome.setAttribute("type", "text","id", "cognome");
-    inputCognome.textContent = "Inserisci il cognome"
-    div1.appendChild(inputCognome); 
-
-    let testoEmail = document.createElement("h5");
-    testoEmail.textContent = "Email";
-    div1.appendChild(testoEmail);
+        inputCognome.setAttribute("type", "text");
+        inputCognome.setAttribute("id", "cognome");
+        inputCognome.textContent = "Inserisci il cognome"
+        div2.appendChild(inputCognome);
+    
+    //div email
+    let div3 = document.createElement("div")
+    form.appendChild(div3)
+    let labelEmail = document.createElement("label");
+    labelEmail.textContent = "Email:";
+    div3.appendChild(labelEmail);
     let inputEmail = document.createElement("input");
-    inputEmail.setAttribute("type", "text", "id", "email");
+    inputEmail.setAttribute("type", "text");
+    inputEmail.setAttribute("id", "email");
     inputEmail.textContent = "Inserisci la tua email"
-    div1.appendChild(inputEmail); 
+    div3.appendChild(inputEmail); 
 
-    let testoPwd = document.createElement("h5");
-    testoPwd.textContent = "Password";
-    div1.appendChild(testoPwd);
+    //div password
+    let div4 = document.createElement("div")
+    form.appendChild(div4)
+    let labelPwd = document.createElement("label");
+    labelPwd.textContent = "Password:";
+    div4.appendChild(labelPwd);
     let inputPwd = document.createElement("input");
-    inputPwd.setAttribute("type", "text", "id", "pssw");
+    inputPwd.setAttribute("type", "text");
+    inputPwd.setAttribute("id", "pwd");
     inputPwd.textContent = "Inserisci la password"
-    div1.appendChild(inputPwd); 
+    div4.appendChild(inputPwd);
 
-    let testoConfPwd= document.createElement("h5");
-    testoConfPwd.textContent = "Conferma Password";
-    div1.appendChild(testoConfPwd);
+    /*let occhio = document.createElement("input")
+    occhio.setAttribute("type", "button") 
+    occhio.setAttribute("id", "mostraPassword");
+    occhio.textContent = "x"
+    inputPwd.appendChild(occhio);*/
+    
+    //div conferma password
+    let div5 = document.createElement("div")
+    form.appendChild(div5)  
+    let labelConfPwd= document.createElement("label");
+    labelConfPwd.textContent = "Conferma Password:";
+    div5.appendChild(labelConfPwd);
     let inputConfPwd = document.createElement("input");
-    inputConfPwd.setAttribute("type", "text", "id", "confermapssw");
+    inputConfPwd.setAttribute("type", "text");
+    inputConfPwd.setAttribute("id", "confermapwd");
     inputConfPwd.textContent = "Reinserisci la password"
-    div1.appendChild(inputConfPwd); 
+    div5.appendChild(inputConfPwd); 
 
+    //invio
     let pulsante = document.createElement("button");
-    div1.appendChild(pulsante);
+    form.appendChild(pulsante);
     pulsante.textContent = "Invio";
+    pulsante.setAttribute("type", "submit");
 
     
-
-
-
-
-    
-
-
 
 
 
 })
+
+/*let stringa = "ciao 123";
+let trovato = false;
+
+    for (let i = 0; i < stringa.length; i++){
+
+        for (let numero = 0; numero < 10; numero++)
+        
+        if (stringa[i] == numero){
+            console.log(trovato)
+            trovato = true;
+        } 
+
+    }
+    console.log(trovato)*/
