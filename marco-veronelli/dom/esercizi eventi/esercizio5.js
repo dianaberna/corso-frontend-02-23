@@ -14,6 +14,7 @@ pdefault.appendChild(tdefault)
 let idefault=document.createElement("input")
 idefault.setAttribute("id","idefault")
 divdefault.appendChild(idefault)
+
 //creo input e p focused
 let divfocused=document.createElement("div")
 div.appendChild(divfocused)
@@ -119,6 +120,7 @@ idisabled.setAttribute("id","idisabled")
 idisabled.setAttribute("placeholder","nope")
 divdisabled.appendChild(idisabled)
 idisabled.disabled=true
+
 //creo input e p confirmed
 let divconfirmed=document.createElement("div")
 div.appendChild(divconfirmed)

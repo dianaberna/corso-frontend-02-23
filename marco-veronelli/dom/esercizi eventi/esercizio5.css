@@ -1,4 +1,5 @@
-#contenitore{
+
+#form{
     width: 200px;
     display: flex;
     height:200px;
@@ -11,6 +12,12 @@ body input{
     border-radius:5px
     
 }
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
 
 :disabled::placeholder{
     color: grey;
@@ -18,20 +25,24 @@ body input{
 .text:focus{
     border:1px solid cornflowerblue;
  
-    background-color: rgb(235, 248, 252);
+    background-color: rgb(241, 252, 255);
+    outline:0;
     
 } 
 .text:hover {
-    box-shadow: 1px 1px 3px cornflowerblue;
+    box-shadow: 1px 1px 3px rgb(186, 210, 253);
     border-color: cornflowerblue;
 }
 .ierror2{
-        border-color:red
+        border-color:rgb(255, 0, 38)
     }
 .iconfirmed2{
-        border-color:green
+        border-color:rgb(37, 194, 37)
     }
-    .ientered2{
+.ientered2{
         border-color: antiquewhite;
     }
-  
+  #tasto{
+    outline:0;
+
+  }
