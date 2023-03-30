@@ -2,27 +2,30 @@
 
 //Funzione 2
 // esempioObject = [{
-//     dest_position: "destinazione_tag",
+//     dest_position: destinazione_tag,
 //     tag: "nome_tag",
 //     text: "testo_elemento",
-//     link: "linkelemento"
-//     }
+//     link: "linkelemento",
+//     class: classe,
+//     class: id,
 // ];
 
 function createNode(elementObject = {}){
     let element;
     let text_el;
-    
+
     for(let i = 0; i < elementObject.length; i++){
         element = document.createElement(elementObject[i].tag);
+        
+        if(elementObject[i].text){
+            if(elementObject[i].text.length != 0){
+                text_el = document.createTextNode(elementObject[i].text);
+                element.appendChild(text_el);
+            }
+        }
 
-        if(elementObject[i].text.length != 0){
-            text_el = document.createTextNode(elementObject[i].text);
-            element.appendChild(text_el);
-         }
-
-
-         if(elementObject[i].link.length != 0){
+         
+         if(elementObject[i].link){
             if(elementObject[i].tag != "a"){
                 let el_a = document.createElement("a")
                 el_a.appendChild(text_el);
@@ -33,6 +36,14 @@ function createNode(elementObject = {}){
             else {
                 element.setAttribute("href", elementObject[i].link);  
             }
+         }
+
+
+         if(elementObject[i].class){
+            element.setAttribute("class", elementObject[i].class)
+         }
+         if(elementObject.id){
+            element.setAttribute("class", elementObject.class)
          }
 
          elementObject[i].dest_position.appendChild(element);
@@ -46,14 +57,12 @@ function createNode(elementObject = {}){
 object_nav= [{
     dest_position: document.body,
     tag: "nav",
-    text: "",
-    link: ""
 }];
 let el_nav = createNode(object_nav);
 
 
 //Logo
-object_logo= [{
+let object_logo= [{
     dest_position: el_nav,
     tag: "a",
     text: "MyPage",
@@ -63,19 +72,18 @@ createNode(object_logo);
 
 
 //Menu
-
 //ul
-object_ul= [{
+let object_ul= [{
     dest_position: el_nav,
     tag: "ul",
-    text: "",
-    link: ""
 }];
 let el_ul = createNode(object_ul);
 
-object_li = [
+let object_li = [
     {dest_position: el_ul, tag: "li", text: "Home", link: "index.html"},
     {dest_position: el_ul, tag: "li", text: "Why", link: "why.html"},
     {dest_position: el_ul, tag: "li", text: "How", link: "how.html"},
 ];
 createNode(object_li)
+
+
