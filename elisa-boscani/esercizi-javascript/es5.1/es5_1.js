@@ -24,6 +24,9 @@ for (let index = 0; index < arrayInput.length; index++) {
   let titolo = document.createElement("label");
   titolo.innerHTML = arrayInput[index];
   form.appendChild(titolo);
+  let input = document.createElement("input");
+
+  form.appendChild(input);
   // CREO INPUT //
   let tipo;
   switch (arrayInput[index]) {
@@ -42,51 +45,38 @@ for (let index = 0; index < arrayInput.length; index++) {
       tipo = "text";
       break;
   }
-
-  let input = document.createElement("input");
   input.type = tipo;
+  input.className = arrayInput[index];
+  if (input.className === "Nome" || input.className === "Cognome") {
+    input.addEventListener("input", function (event) {
+      var regName = /^[A-Za-z]+$/;
+      let inputValue = event.target.value;
 
-  form.appendChild(input);
-
-  /* input.addEventListener("change", function () {
-    controlloNome(input.value);
-  }); */
-
-  /* function controlloNome(valore) {
-  let arrayValore = valore.split("");
-  console.log("arrayValore:", arrayValore);
-  let condizione = arrayValore.find((carattere) => {
-    console.log("carattere", carattere);
-
-    if (carattere === "!" /* || carattere === "*" || carattere === "?" */ /* ) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-
-  console.log("condizione", condizione);
-  if (condizione !== true) {
-    console.log("corretto");
-  } else {
-    console.log("sbagliato");
-  }  */
-  function checkForm(frm) {
-    form.addEventListener("submit", function (event) {
-      /* event.preventDefault();
-      var nameValue = "text"; */
-      /* var nameField = form.elements["text"]; */
-      /* var nameValue = nameField.value; */
-      var regex =
-        /^([a-zA-Z\xE0\xE8\xE9\xF9\xF2\xEC\x27]\s?)+$/; /* new RegExp */ /* \/^[a-zA-Z\\s]*$\/ */
-      if (!checkPatternChars("text", frm.text.value, regex)) {
-        console.log("il nome è sbagliato");
+      if (!regName.test(inputValue)) {
+        /*  input.className = "Cognome";
+        input.className = "Nome"; */
+        input.className = "Nome2";
+        console.log("sbagliato");
       } else {
-        console.log("il nome è giusto");
-        console.log("il nome è giusto");
-        frm.name.focus();
-        return false;
+        input.className = "Nome1";
+        console.log("giusto");
       }
     });
+  }
+
+  let domini = ["gmail", "hotmail", "outlook"];
+  function validitaEmail(email) {
+    let cont = "";
+    if (email.includes("@") && email.includes(".")) {
+      cont = email.indexOf("@");
+      for (let i = 0; i < email.length; i++) {
+        /* for (let i = 0; i < domini.length; i++) { */
+        while (email[i + 1] != ".") {
+          if (typeof cont[i--] == "string" && typeof cont[i++] == "stringa") {
+          }
+        }
+        i++;
+      }
+    }
   }
 }

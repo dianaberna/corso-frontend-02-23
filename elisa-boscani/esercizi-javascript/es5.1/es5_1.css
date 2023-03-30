@@ -22,6 +22,9 @@ input {
   height: 1.3rem;
 }
 
-.errore {
+.Nome1 {
+  border: 0.125rem solid green;
+}
+.Nome2 {
   border: 0.125rem solid red;
 }
