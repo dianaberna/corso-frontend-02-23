@@ -86,18 +86,50 @@ array.forEach(elemento => console.log(elemento))
 console.log("---")
 
 // Traditional anonymous function
-(function (a) {
+/* (function (a) {
     return a + 100;
-  });
+  }); */
   
   // 1. Remove the word "function" and place arrow between the argument and opening body bracket
-  (a) => 
+  /* (a) => 
     a + 100;
-  ;
+  ; */
   
   // 2. Remove the body braces and word "return" — the return is implied.
-  (a) => a + 100;
+  /* (a) => a + 100; */
   
   // 3. Remove the parameter parentheses
-  a => a + 100;
+  /* a => a + 100; */
   
+
+
+function restituisciArray(a, b){
+    let array = [a, b]
+    return array
+} 
+
+let nuovoarray = restituisciArray(2, 3)
+console.log(nuovoarray)
+
+console.log("---")
+let array1 = [1, 2, 3]
+let array2 = array1
+
+let array3 = []
+for(let i=0; i<array1.length; i++){
+    array3.push(array1[i])
+}
+console.log(array3)
+
+let array4 = [...array1]
+console.log(array4)
+
+// non crea un nuovo array (array2) uguale ad array1
+// js crea un collegamento dalla variabile array2 alla variabile array1
+console.log(array1)
+console.log(array2)
+array2.push(5)
+console.log(array1)
+console.log(array2)
+console.log(array3)
+console.log(array4)
