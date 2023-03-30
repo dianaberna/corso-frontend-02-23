@@ -189,7 +189,7 @@ h3{
 
 /* RECENSIONI */
 #recensioni{
-    padding: 7.5rem 6.25rem;
+    padding: 7.5rem 1.25rem;
 }
 
 #recensioni > div{
@@ -203,7 +203,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 3.125rem
+    gap: 2rem
 }
 
 .boxrecensioni > div{
