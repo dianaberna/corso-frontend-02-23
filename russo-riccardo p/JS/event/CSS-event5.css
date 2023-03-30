@@ -1,16 +1,41 @@
 
 
-#div{
-    display: block;    
-    margin: 0px 50rem 0 0 ;    
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;    
+    /* margin: 0px 50rem 0 0 ;     */
+    /* width: 25%; */
     border-style: solid;
     border-radius: 10px;
     border-color: blue; 
     background-color: rgb(221, 213, 213)
 }
 
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 
-#input:hover{
+.error {
+    border : 1px solid red;
+}
+
+.correct{
+    border: 1px solid green;
+}
+
+div > h2 {
+    color:aqua
+}
+
+div > input:hover{
     border-color: rgb(0, 148, 247);
 }
+
