@@ -8,7 +8,6 @@
     <style>
         body{
             position: relative;
-            
         }
         .body-stop{
             overflow: hidden;
@@ -30,13 +29,23 @@
             cursor: pointer;
             z-index: 2;
             position: relative;
+            /*è esattamente l'area che ricopre le tre linee nere*/
+            height: 25px;
+            width: 40px;
+            /*eliminare lo stile di default del button*/
+            background-color: transparent;
+            /* background-color: yellow; */
+            border: 0;
+        }
+        .hamburger.close{
+            height: 35px;
         }
         
         .hamburger span{
             height: 5px;
             width: 40px;
-            background-color: black;
-            display: block;
+           /*  background-color: black; */
+           /*  display: block; */
             margin-bottom: 5px;
             right: 0px;
             position: absolute;
@@ -44,12 +53,15 @@
 
         .hamburger span:nth-child(1){
             top: 0px;
+            background-color: red;
         }
         .hamburger span:nth-child(2){
             top: 10px;
+            background-color: green;
         }
         .hamburger span:nth-child(3){
             top: 20px;
+            background-color: blue;
         }
 
         .hamburger span:nth-child(1), .hamburger span:nth-child(3){
@@ -60,54 +72,79 @@
         
         .hamburger span:nth-child(1).close{
             rotate: 45deg;
-          
+            top: 15px;
         }
         .hamburger span:nth-child(2).close{
             display: none;
-            
-            
         }
         .hamburger span:nth-child(3).close{
             rotate: -45deg;            
-            top: 0px;
+            top: 15px;
         }
-        .menu{
-            list-style-type: none;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100vw;
-            height: 100vh;
-            white-space: nowrap;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-        .menu li{
- 
-        }
+        
+
         .show{
             display: flex;
             position: fixed;
         }
-        .hide{
-            display: none;
+        
+
+        @media screen and (max-width: 479px) {
+            .menu{
+                list-style-type: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                white-space: nowrap;
+                /*  background-color: pink; */
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                z-index: 1;
+            }
+            .hide{
+                display: none;
+            }
         }
+
+        @media screen and (min-width: 480px) {
+            body{
+                background-color:antiquewhite;
+            }
+            .hamburger{
+                display: none;
+            }
+            .hide{
+                display: block;
+            }
+            .menu{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                margin: 0;
+                z-index: 1;
+            } 
+        }
+
+        
     </style>
 </head>
 <body class="body-play">
     <nav>
         <h1>Titolo prova</h1>
-        <div>
-            <div class="hamburger">
+        <nav>
+            <button class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
             <ul class="menu hide">
                 <li>
                     <a href="#">voce 1</a>
@@ -119,7 +156,7 @@
                     <a href="#">voce 3</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </nav>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
@@ -134,6 +171,9 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur illum blanditiis, nesciunt, quis illo facere voluptas suscipit qui, quibusdam odio ullam eaque sapiente nulla necessitatibus id fugit quia dolorum?</p>
+<!--     <a href="##">link</a>
+    <button>pulsante</button> -->
+    
     <script src="script.js"></script>
 </body>
 </html>
