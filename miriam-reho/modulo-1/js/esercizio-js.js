@@ -823,3 +823,22 @@ console.log(
 // -------------------------------------------------
 
 console.log("------- OGGETTI Es18: Calcola il prezzo totale dei generi alimentari")
+
+
+// -------------------------------------------------
+
+console.log("prova numeri in un array")
+
+let roba = "ciao123?%"
+
+for (let i = 0; i < roba.length; i++) {
+    
+    let numero = Number(roba[i])
+
+    if (roba[i] == numero) {
+        console.log("sono un numero")
+    } else {
+        console.log ("non sono un numero")
+    }
+
+}
