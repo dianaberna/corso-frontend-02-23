@@ -1,0 +1,417 @@
+/* /* /*
+    selettore {
+        proprietà: valore;
+        proprietà: valore;
+    }
+*/
+
+/* body{
+    background-color: rgb(187, 240, 222);
+    color: blue;   
+}
+h1, h2, h3{
+    color: blueviolet;
+} */
+
+/*
+    per indicare un id usa #nomeid{}
+    per indicare una class usa .nomeclass{}
+    questi avranno importanza sul resto, id in cima,
+    poi class, poi i cimbinatori
+    */
+
+/* #Sezione4blocchi{
+    font-size: 25px;
+} */
+
+/* combinatori discendenti: tutti i disegnenti 
+del main, figli e nipoti
+*/
+
+/* main p{
+    background-color: bisque;
+} */
+
+/* combinatori figli: tutti i figli,
+non anche nipoti
+in parole povere: tutti i p, figli di un div...*/
+/* 
+div > p{
+    background-color:cornflowerblue;
+} */
+
+/* fratello generico: scritto con la ~ (alt+5) 
+tutti i tag che scelgo che sono fratelli di un 
+altro selezionato
+in parole povere: tutti i p successivi sulla stessa
+riga di uno span....*/
+
+/* span ~ p{
+    background-color: darkcyan;
+} 
+
+padding: top r/l bottom
+box shadow: x y blur(indicato con px per x e px per y oppure colore ecc)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Lexend', sans-serif;
+    color: #1d1b1f;
+    margin: 0;
+}
+
+/* NAV */
+
+nav{
+    padding:1.625rem 6.25rem;
+    display:flex;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.25rem 0;
+}
+
+header svg{
+    position: absolute;
+    z-index: -1;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 4.25rem;
+    text-align: center;
+    margin-bottom:1rem;
+    padding: 0 21rem;
+}
+
+#sottotitolo{
+    color: #706D73;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button{
+    font-family: inherit;
+    padding: 1rem 1.25rem;
+    border: .0625rem solid #1D1B1F;
+    border-radius: 0.25rem;
+    background: #F0F0F0;
+    margin-top: 1rem;
+    box-shadow: #1D1B1F .25rem .25rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem
+}
+
+/* MAIN */
+#whyuse{
+    padding: 7.5rem 6.25rem;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#whyusebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#whyusebox > div{
+    width: 22.5rem;
+    padding: 2rem 1.5rem;
+}
+
+.loghibox{
+    text-align: center;
+}
+
+#whyuse p{
+    color: #706D73;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* PARTNER */
+#partner{
+    padding: 6.25rem  5rem;
+    background-color: #F0F0F0;
+}
+
+.loghipartner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+/* RECENSIONI */
+#recensioni{
+    padding: 7.5rem 1.25rem;
+}
+
+#recensioni > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem
+}
+
+.boxrecensioni{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem
+}
+
+.boxrecensioni > div{
+border-radius: 0.5rem;
+border: #1D1B1F solid 0.1rem;
+background-color:#EBEBEB;
+width: 20.5rem;
+}
+
+.boxrecensioni img{
+    width: 100%;
+    height: auto;
+}
+
+img + div{
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+#recensioni p{
+    color: #302E32;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#recensioni span{
+    font-size: .875rem;
+    font-weight: 500;
+    color:#302E32;
+}
+
+#recensioni :last-child{
+    color: #706D73;
+}
+
+/* HOW WORK */
+
+#howwork{
+    padding: 7.5rem;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.steps div{
+    border: #1D1B1F solid .0625rem;
+    border-radius: .5rem;
+    width: 40rem;
+    padding: 0 1.25rem;
+    position: relative;
+}
+
+.steps span{
+    border: #1D1B1F solid .0625rem;
+    border-radius: .5rem;
+    padding: .625rem;
+    background-color: white;
+    position: absolute;
+    top: -1.3rem;
+    left: -1.3rem;
+}
+
+.steps p{
+    color: #706D73;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* resto di h3 impostato in whyuse */
+.steps h3{
+    text-align: left;
+}
+
+/* CREATE PERFECT */
+#createperfect{
+    padding: 3.75rem 5rem;
+    background-color:#F0F0F0;
+}
+
+#createperfect h2, #createperfect h3{
+    text-align: left;
+}
+
+#createperfect h3{
+    color: #302E32;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #1D1B1F;
+    color: #F0F0F0;
+    padding: 1.625rem 6.25rem;
+}
+
+footer img{
+    margin-top: 1.875rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contatti > div{
+    display: flex;
+    gap: 5rem;
+}
+
+footer hr{
+    border: 1px solid #FBFAFC;
+    margin-bottom: 1.25rem;
+}
+
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    list-style: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+footer li{
+    color: #D3D0D6;
+}
+
+.social{
+    display: flex;
+    justify-content: end;
+    gap: 1.25rem;
+}
+
+/* ---------- MEDIA QUERY ---------- */
+/*  480px: Mobile devices --> mobile first
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px ...  —  Extra large screens, TV 
+*/ 
+
+@media screen and (max-width:480px){
+    
+    h1{ 
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    #sottotitolo{
+        font-size: 1.125rem;
+    }
+
+    nav{
+        padding: 1.8125rem 1rem;
+        position: sticky;
+    }
+
+    nav > ul{
+        display: none;
+    }
+
+    #whyuse{
+        padding:1rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #whyusebox > div{
+        padding: 2rem 3rem;
+    }
+
+    #partner h2{
+        display: none;
+    }
+
+    #partner{
+        padding: 5rem 0;
+    }
+
+    #recensioni{
+        padding: 2rem 0;
+    }
+}
+
