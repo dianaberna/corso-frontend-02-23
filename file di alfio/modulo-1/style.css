@@ -45,13 +45,14 @@ nav li {
 
 }
 
+
+
+/*header */
 header>h1 {
     font-weight: 700;
     font-size: 3rem;
     color: #1D1B1F;
 }
-
-/*header */
 header>img {
     position: absolute;
     width: 240px;
@@ -88,7 +89,7 @@ button {
     align-items: center;
     gap: 0.5rem;
 }
-
+/*main
 /*why use my page section*/
 .primo {
     display: flex;
@@ -223,11 +224,11 @@ button {
 }
 
 .img2 {
-    background-image: url(img/Video\ \(1\).jpg);
+    background-image: url("img/Video\ \(1\).jpg");
 }
 
 .img3 {
-    background-image: url(img/Video\ \(2\).jpg);
+    background-image: url("img/Video\ \(2\).jpg");
 }
 
 .card p,

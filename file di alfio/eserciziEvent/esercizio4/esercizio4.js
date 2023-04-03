@@ -42,29 +42,6 @@ for (i = 0; i < 16; i++) {
     )}
 
 
-// function calcolatrice() {
-
-//     switch (operatore) {
-//         case "+":
-//             console.log(bottone.value + numero2)
-//             break;
-//         case "-":
-//             console.log(numero - numero2)
-//             break;
-//         case "*":
-//             console.log(numero * numero2)
-//             break;
-//         case "/":
-//             if (numero2 == 0) {
-//                 console.log("Impossibile dividere per 0!")
-//                 break;
-//             } else {
-//                 console.log(numero / numero2)
-//                 break;
-//             }
-//     }
-// }
-
 
 
 

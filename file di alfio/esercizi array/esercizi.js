@@ -737,6 +737,7 @@ function email(a) {
     cont = 0;
     cont2 = 0;
     array["@gmail","@hotmail"]
+    
     for (let i = 1; i < a.length; i++) {
 
         switch (a[i]) {
@@ -752,8 +753,6 @@ function email(a) {
     if (cont == 1 && cont2 >= 1) {
         console.log("email valida")
         for (let i = 1; i < a.length; i++){}
-
-
 
     } else {
         console.log("email non valida")
