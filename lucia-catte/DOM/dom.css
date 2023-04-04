@@ -1,0 +1,409 @@
+body{
+    background-color: #fbfafc;
+    font-family: 'Lexend', sans-serif;
+    color: #1d1b1f;
+}
+
+html, body{
+    margin: 0;
+    
+}
+
+/* barra di navigazione */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    /*position: sticky;*/
+    top: 0;
+    /* 
+        position: fixed;
+        width: calc(100% - 100px);
+    */
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*griglia background header*/
+header svg{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+/*sezione header*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem 4rem;
+    gap: 2rem;
+    
+}
+
+/*Basic landing page for big dream*/
+header h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+/*Minimal, responsive and accessible*/
+header h1 ~ p{
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    
+}
+
+/* bottone dell'header */
+button{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    padding: 1rem 1.25rem;
+
+    
+
+    font-family: inherit;
+    background-color: #F0F0F0;
+    border: 1px solid black;
+    border-radius: .25rem;
+    box-shadow: .25rem .25rem 0 black;
+}
+
+/*ogni titolo della sezione why*/
+.why h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* Why use our MyPage */
+
+.why h2{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+/* prima sezione */
+
+.why{
+    padding: 4.5rem 0;
+    
+}
+
+.why > div{
+    display: flex;
+    padding: 0 5rem 0 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.why > div > div{
+    
+    padding: 1.5rem;
+}
+
+.why > div > div > div{
+    text-align: center;
+}
+ 
+/* div contenente la sezione partners*/
+
+.Partner h2{
+    display: none;
+}
+.Partner{
+    background-color: #F0F0F0;
+    padding: 2rem 0;
+    
+}
+
+.Partner > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 4rem 2rem 4rem;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    
+}
+
+/* sezione card recensioni/section testimonial */
+
+section#testimonial{
+    padding: 1rem;
+    
+}
+
+section#testimonial h2{
+    text-align: center;
+}
+section#testimonial > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+    gap: 2rem;
+}
+
+section#testimonial > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+section#testimonial .card {
+    border: 1px solid black;
+    border-radius: 8px;
+    
+    color: #302e32;
+}
+
+section#testimonial .card .descrizione {
+    color: #706d73;
+}
+
+section#testimonial .card > div {
+    padding: 1rem;
+}
+
+section#testimonial svg{
+    contain: 100%;
+}
+
+#frecce, #card3{
+    display: none;
+}
+
+/* sezione 3 cards con i numeretti*/
+
+/* allineamento del titolo al centro */
+
+#how h2{
+    text-align: center;
+}
+
+/* imposto il div contenitore della sezione senza il titolo*/
+#how > div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    gap: 3rem;
+    
+    align-items: center;
+}
+
+/* specifiche delle singole card */
+#how > div > div{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+/* allineo i singolo titolini dentro le card a sinistra*/
+#how h3{
+    text-align: left;
+}
+
+/* allineo al centro i paragrafi dentro le cards */
+#how > p{
+    text-align: center;
+}
+
+/* imposto i numeretti con bordo, sfondo, scritta e posizione del quadrato*/
+#how span{
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: white;
+    position: absolute; /* per ogni absolute ci va un relative nel contenitore che lo contiene*/
+    top: -1.5rem;
+    left: -1.5rem;
+}
+
+/* sezione finale con il bottone */
+
+#lastsection {
+    background-color: #F0F0F0;
+    /* padding: 2rem 6.25rem; */
+    padding: 2rem 2rem;
+    display: flex;
+    gap: .625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#lastsection h2{
+    text-align: left;
+    font-size: 2.5rem;
+    color: #1D1B1F;
+}
+
+#lastsection h3{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #302e32;
+}
+
+/* imposto l'intera sezione del footer*/
+footer{
+    background-color: #1D1B1F;
+    color: #D3D0D6;
+    padding: 1rem;
+}
+/*imposto il contenitore del footer*/
+footer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+/* imposto lo span*/
+footer > div > #title{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 2rem;
+}
+/*imposto gli h5*/
+footer h5{
+    font-size: 1rem;
+    margin-top: 0;
+}
+/*imposto l'elenco senza i dot, tolgo il padding e imposto il size del font*/
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}
+/*imposto il colore e il padding di sotto alle scritte dentro l'elenco*/
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+/* imposto il flex ai div dentro il div genitore*/
+footer > div > div{
+    display: flex;
+    gap: 2rem;
+
+}
+
+footer #elenchi{
+    flex-direction: column;
+}
+
+
+footer > div a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer > div #title{
+    font-weight: 600;
+}
+
+footer hr{
+    border: solid 1px #FBFAFC;
+}
+
+footer > div > span{
+    font-size: .875rem;
+    color: #D3D0D6;
+
+}
+.fa-brands{
+    font-size: 1.25rem; 
+}
+
+
+/*@media screen and (min-width: 481px) and (max-width: 768px){
+    
+    body{
+        background-color: beige;
+    }
+    
+    nav svg{
+        display: none;
+    }
+
+    nav span{
+        font-size: 1.25rem;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        font-size: .875rem;
+        gap: 48px;
+    }
+
+    header {
+        padding: 3.75rem 0rem;
+    }
+
+    header h1{
+        font-size: 4.25rem;
+    }
+
+    
+
+}*/
+
+
+/*
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    body{
+        background-color: blueviolet;
+    }
+    #Home{
+        font-size: 4.25rem;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1084px){
+    
+    body{
+        background-color: chocolate; 
+    }
+    #Home{
+        padding: 30px;
+        font-size: 4.25rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1200px){
+    
+  
+    
+}*/

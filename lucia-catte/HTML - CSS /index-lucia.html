@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage corso di Lucia Catte</title>
+</head>
+<body>
+    <!-- questo serve a mettere un commento-->
+    <header>
+       Intestazione HTML
+       <hr>
+       <br> 
+    </header>
+    <main>
+        <section>
+            <h1>HTML</h1>
+            <h2>HyperText Markup Language</h2>
+            <div>
+            <ul>
+                <li>Lista puntata</li>
+                <li>Cosa è HTML</li>
+                <li>Elementi HTML</li>
+                <li>Attributi HTML</li>
+            </ul>
+            </div>
+            <span><p>questo è uno span </p></span>
+            <ol>
+                <li>Lista numerata</li>
+                <li>Cosa è HTML</li>
+                <li>Elementi HTML</li>
+                <li>Attributi HTML</li>
+            </ol>
+            
+            <a href="https://docs.google.com/presentation/d/1Hvx67slor2ltym-VDFDoamjYNOb2xfx6wZqBsddO5ig/edit?usp=sharing">Diapositive di HTML</a>
+        </section>
+    </main><hr>
+    
+    <section>
+        <h4>Cosa è HTML?</h4>
+        <p>HTML è lo scheletro di un sito web</p>
+        <img src="https://media.istockphoto.com/id/1408445036/it/foto/programmazione-di-pagine-web-con-codice-html-e-css-su-un-computer-desktop.jpg?b=1&s=170667a&w=0&k=20&c=K9tdzxveSAJywJkMF7LLsv39kdJyyqzQL1Om_Dg02cI=" alt="Questo è un gatto" width="100px" >
+        
+    </section><hr>
+
+    <section>
+        <h5><em><b>HTML</b></em> ha diversi elementi</h5>
+        <table>
+            <thead>
+                <th>
+                <tr>
+                    <td>titolo colonna 1</td>
+                    <td>titolo colonna 2</td>
+                </tr>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        colonna 1</td>
+                    <td>colonna 2</td>
+                </tr>
+                <tr>
+                    <td>
+                        colonna 1</td>
+                    <td>colonna 2</td>
+                </tr>
+                <tr>
+                    <td>
+                        colonna 1</td>
+                    <td>colonna 2</td>
+                </tr>
+
+            </tbody>
+            
+        </table>
+    </section><hr>
+
+    <section>
+        <h6>Cosa sono gli attributi?</h6>
+    </section><hr>
+
+    <details>
+        <summary>
+            Apri il menù a tendina
+        </summary>
+        Questo è il menù
+    </details><hr>
+    <h2>Form</h2>
+        <form action="#" method="get" name="formContatti">
+        
+            <label for="nome">Nome:</label>
+            <input id="nome" class="" type="text" placeholder="Lucia" name="nome" required><br>
+            <label for="cognome">Cognome:</label>
+            <input id="cognome" class="" type="text" placeholder="Catte" name="cognome" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="range">Range di prezzo:</label>
+            <input type="range" id="range" min="0" max="100"><br>
+            <label for="tempo">Orario</label>
+            <input type="time" id="tempo"><br>
+            <label for="data">Data:</label>
+            <input type="date" id="data"><br>
+            <label for="dataeora">Data e ora</label>
+            <input type="datetime-local" id="dataeora"><br>
+            <input type="month">
+            <input type="week">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" >
+            <br>
+            <h3>Radio e checkbox</h3>
+            <h4>Seleziona colore:</h4>
+            <br>
+            <label for="rossoradio">
+                <input type="radio" name="coloreradio" value="rosso" id="rossoradio"> 
+                <span>rosso</span>
+            </label>
+
+            <label for="bluradio">
+                <input type="radio" name="coloreradio" value="blu" id="bluradio"> 
+                <span>blu</span>
+            </label>
+
+            <label for="gialloradio">
+                <input type="radio" name="coloreradio" value="giallo" id="gialloradio"> 
+                <span>giallo</span>
+            </label>
+
+            <label for="verderadio">
+                <input type="radio" name="coloreradio" value="verde" id="verderadio"> 
+                <span>verde</span>
+            </label>
+            <br>
+            <label>Seleziona colore:</label>
+            <label for="rossocheckbox">
+                <input type="checkbox" name="colorecheckbox" value="rosso" id="rossocheckbox"> 
+                <span>rosso</span>
+            </label>
+            <label for="blucheckbox">
+                <input type="checkbox" name="colorecheckbox" value="blu" id="blucheckbox"> 
+                <span>blu</span>
+            </label>
+            <label for="giallocheckbox">
+                <input type="checkbox" name="colorecheckbox" value="giallo" id="giallocheckbox"> 
+                <span>giallo</span>
+            </label>
+            <label for="verdecheckbox">
+                <input type="checkbox" name="colorecheckbox" value="verde" id="verdecheckbox"> 
+                <span>verde</span>
+            </label>
+
+            <h3>Pulsanti</h3>
+            <h4>Comparazione button e input</h4>
+            <input type="button" value="ciao sono un pulsante">
+            <button type="button">ciao sono un pulsante</button>
+            <br>
+            <h4>Pulsanti vuoti</h4>
+            <button type="button"></button>
+            <input type="button" value="">
+            <br>
+            <h4>Pulsanti submit/reset</h4>
+            <input type="submit">
+            <button type="submit">Invia i dati</button>
+            <br>
+            <h4>Pulsante reset</h4>
+            <input type="reset">
+            <br>
+            <h4>Pulsante con immagine</h4>
+            <button>
+                <img width="100px" alt="immagine" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png"/>
+            </button>
+            <input type="image" alt="" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png">
+            <h4>Tutti gli altri input</h4>
+            <input type="color">
+            <input type="file"><br>
+            <input type="hidden">
+            <input type="url">
+            <input type="tel">
+            <input type="number">
+        </form>
+        <h2>Secondo form </h2>
+        <form action="#" method="get" name="formaNuovo">
+            <input type="text">
+            <input type="text">
+            <input type="submit">
+            <input type="reset">
+        </form>
+    
+
+    <footer>
+        <p>Copyright </p>
+    </footer>
+    
+</body>
+</html>
