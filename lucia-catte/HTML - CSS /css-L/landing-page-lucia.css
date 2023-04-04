@@ -34,11 +34,7 @@ nav {
     z-index: 1;
     border-bottom: 1px solid black;
 }
-/* la griglia di background nell header*/
-nav svg{
-    align-content: space-between;
-    top: -2rem;
-}
+
 
 /* l'elenco in alto a destra della barra di navigazione*/
 nav ul{
