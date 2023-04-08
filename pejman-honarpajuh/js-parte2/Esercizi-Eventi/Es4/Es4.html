@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #fondo {
+            width: 13.75rem;
+            height: 12.875rem;
+            background-color: rgb(246, 237, 237);
+        }
+
+
+        .conteiner{
+            width: 12.5rem;
+            height: 6.25rem;
+            margin-left: .625rem;
+            margin-top: 2rem;
+           /*  border: 1px solid gray; */
+            
+        }
+        #display {
+            height: 1.2rem;
+            width: 10.2rem;
+            margin-top: 1rem;
+            margin-left: .625rem;
+            border-style: none;
+            border-radius: 4px;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 2px;
+            grid-row-gap: 2px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .delet {
+            background-color: rgb(131, 178, 207);
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+        .delet:hover {
+            background-color: rgb(84, 145, 184);
+        }
+        .number {
+            background-color: rgb(187, 184, 184);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .number:hover {
+            background-color: gray;
+        }
+        .uguale {
+            background-color: rgb(14, 112, 173);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .uguale:hover {
+            background-color: rgb(8, 87, 136);;
+        }
+        .div1 {
+            grid-area: 1 / 1 / 5 / 5;
+            
+        }
+
+       #button2 {
+            grid-area: 1 / 1 / 2 / 2;
+     
+        }
+
+       #button3 {
+            grid-area: 1 / 2 / 2 / 3;
+            }
+
+       #button4 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+       #button5 {
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+       #button6 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+       #button7 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+       #button8 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+       #button9 {
+            grid-area: 2 / 4 / 3 / 5;
+        }
+
+       #button10 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+       #button11 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+       #button12 {
+            grid-area: 3 / 3 / 4 / 4;
+        }
+
+       #button13 {
+            grid-area: 3 / 4 / 4 / 5;
+        }
+
+       #button14 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+       #button15 {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+
+       #button16 {
+            grid-area: 4 / 3 / 5 / 4;
+        }
+
+       #button17 {
+            grid-area: 4 / 4 / 5 / 5;
+        }
+    </style>
+    <!-- <script src="/pejman-honarpajuh/js-parte2/Esercizi-Eventi/Es4/Es4.js"></script> -->
+    <!-- <script src="/pejman-honarpajuh/js-parte2/Esercizi-Eventi/Es4/Es4_2.js"></script> -->
+    <script src="/pejman-honarpajuh/js-parte2/Esercizi-Eventi/Es4/Es4_ok.js"></script>
+    <title>Es4 calcolatrice</title>
+</head>
+<body>
+    <div id="fondo">
+        <form id="form">
+            <input type="text" id = "display" value=""  placeholder="0" readonly>
+            <span> <button id = 'button1' class="delet" >C</button> </span>
+        </form>
+        
+        <div class = 'conteiner'>
+           
+            <div class="parent">         
+                <button id="button2"  class="number " value="7">7 </button>
+                <button id="button3"  class="number " value="8">8 </button>
+                <button id="button4"  class="number " value="9">9 </button>
+                <button id="button5"  class="number " value="/">/ </button>
+                <button id="button6"  class="number " value="4">4 </button>
+                <button id="button7"  class="number " value="5">5 </button>
+                <button id="button8"  class="number " value="6">6 </button>
+                <button id="button9"  class="number " value="*">* </button>
+                <button id="button10"  class=" number" value="1">1 </button>
+                <button id="button11"  class=" number" value="2">2 </button>
+                <button id="button12"  class=" number" value="3">3 </button>
+                <button id="button13"  class=" number" value="-">- </button>
+                <button id="button14"  class=" number" value="0">0 </button>
+                <button id="button15"  class=" number" value=".">. </button>
+                <button id="button16"  class=" uguale" value="=">= </button>
+                <button id="button17"  class=" number" value="+">+</button>
+            </div>
+        </div>
+        <span id="span1"> </span>
+        <span id="span2"> </span>
+     </div>
+</body>
+</html>

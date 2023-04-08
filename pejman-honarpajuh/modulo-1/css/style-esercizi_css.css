@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+html,body {
+    margin: 0;
+}
+
+/************************************/
+/************** Navbar **************/
+/************************************/
+
+nav {
+    margin: 0;
+    margin-top: 2rem;
+    height: 4.5rem;
+    display:flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    position: sticky;
+    top: 0rem ;
+    background-color: #F0F0F0;
+    z-index: 2;
+}
+nav a {
+    padding-left: 2rem;
+    color:#1D1B1F ;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav > a {
+    display: flex;
+    
+}
+nav > div {
+    display:flex;
+    align-items: center;
+   }
+nav .menu {
+    padding-left: 12rem;
+}
+
+/************************************/
+/************** Body **************/
+/************************************/    
+   
+body {
+    font-family: 'Lexend', sans-serif;
+    /* width: 100%;
+    margin:  0; */
+    background-color: #FBFAFC;
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+/************************************/
+/************** Header **************/
+/************************************/
+header {
+    /* border:1px solid #1D1B1F;  */
+    text-align: center;
+    padding-bottom: 6.25rem; 
+    margin-top: 5rem;
+}
+header .header {
+    padding: 0 1rem;
+    background-image: url(/pejman-honarpajuh/modulo-1/img/griglie.png);
+    background-repeat: no-repeat;
+    background-position: 50% 12%;
+}
+h1 ~ p {
+    color:#706D73;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+button {
+    font-family: inherit;
+    border: 1px solid #1D1B1F;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    box-shadow: 4px 4px 0px #1D1B1F;
+    cursor: pointer;
+}
+/************************************/
+/*************** Main ***************/
+/************************************/
+main{
+
+    text-align: center;
+}
+
+/*********** Sectione main **********/
+/************************************/
+.why_use {
+    background-color: #FBFAFC;
+    padding-bottom: 7.5rem; 
+}
+
+  .flex_col {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+  }
+  .flex_row > div {
+     text-align: center;
+}
+
+.flex_row {
+    width: 22.5rem;
+    padding: 1.5rem;
+}
+
+.why_use  p {
+    text-align: left;
+    padding: 1.25rem 1.25rem;
+    color: #706D73;
+}
+/********** Sectione partner ********/
+/************************************/
+.partner {
+    /* border:1px solid #1aa078; */
+    /* margin: 0 auto;
+    width: 100%; */
+    height:  233;
+    background-color: #F0F0F0;
+
+}
+.partner .img-partner {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 7rem
+    
+}
+
+/****** Sectione our-customers ******/
+/************************************/
+.our-customers {
+    height: 46.125rem;
+    margin-bottom: 11rem;
+}
+
+.our-customers h2 {
+    padding-bottom: 1rem;
+}
+.flex-cont {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.aticol {
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 8px;
+    background-color: #EBEBEB;
+    width: 20.5rem; 
+}
+.aticol span {
+    display: block;
+    text-align: left;
+    padding-left: 1.2rem;
+    padding-bottom: 0.4rem;
+    color: #706D73;
+}
+.aticol a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #1D1B1F;
+    padding-left: 1.2rem;
+    padding-bottom: 0.4rem;
+}
+.one {
+    background-image: url(/pejman-honarpajuh/modulo-1/img/foto-1.png);
+    background-repeat: no-repeat;
+    height: 80%;
+}
+.two {
+    background-image: url(/pejman-honarpajuh/modulo-1/img/foto-2.png);
+    background-repeat: no-repeat;
+}
+.tree {
+    background-image: url(/pejman-honarpajuh/modulo-1/img/foto-3.png);
+    background-repeat: no-repeat;
+    height: 80%;
+}
+.aticol p {
+    padding-top: 12rem;
+    text-align: left;
+    padding-left: 1.2rem;
+    padding-bottom: 1rem;
+}
+.one p {
+    padding-bottom: 2.3rem;
+}
+.flex-cont img {
+    cursor: pointer;
+}
+
+/******** Sectione how-does *********/
+/************************************/
+.how-does {
+    /* border:1px solid #48f77c; */
+    /* margin: 0 auto;
+    text-align: center;
+    width: 100%; */
+}
+.how-does span {
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-color: whitesmoke;
+    padding: .5rem;
+    /* margin-left: -0.9375rem; */
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+
+}
+.how-does > div {
+    border: 1px solid black;
+    border-radius: .5rem;;
+    width: 19.625rem;
+    margin: 5rem auto;
+    /* height: 9.687rem; */
+    text-align: left;
+    position: relative;
+}
+.how-does h3 {
+    margin: 0.25rem 1.25rem 1.5rem 1.25rem;
+}
+.how-does p {
+    margin:0rem 0rem 1.5rem 1.25rem;
+}
+
+/******* Sectione top-footer ********/
+/************************************/
+.top-footer {
+    /* border:1px solid #a048f7; */
+    /* margin: 0 auto;
+    width: 100%; */
+    text-align: left;
+    height:  24.5rem;
+    background-color: #F0F0F0;
+}
+.top-footer div {
+    padding: 1.75rem 2rem;
+}
+.top-footer h2 {
+    width: 80%;
+}
+.btn-footer {
+    background-image:url(/pejman-honarpajuh/modulo-1/img/freccia.png);
+    background-repeat: no-repeat;
+    background-position: 91% 56%;
+    padding-right: 2rem;
+}
+/************************************/
+/************** Footer **************/
+/************************************/
+footer {
+    background-color: #1D1B1F;
+    color: #ffffff;
+    padding: 2rem 1.75rem;
+}
+footer hr {
+    border: 1px solid #FBFAFC;
+}
+.footer-conteiner {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0rem;
+    flex-wrap: wrap;
+    gap: 5rem;
+    text-align: left;
+}
+.footer-conteiner > a {
+    text-decoration: none;
+    color: #F0F0F0;
+ }
+.footer-conteiner h5 {
+    font-size: 1rem;
+     margin-top: 0;
+} 
+.footer-conteiner .contact {
+    text-align: left;
+}
+.list h5 a {
+    font-size: 1rem;
+    color: #D3D0D6;
+    text-decoration: none;
+}
+.footer-conteiner ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 400;
+}  
+.footer-conteiner li  a {
+    text-decoration: none;
+    color: #F0F0F0;
+ }
+
+.footer-conteiner .my-page {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-conteiner .my-page a {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+.footer-conteiner > div > a {
+    padding-left: 1rem;
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+footer ul > li{
+    padding-bottom: 1.5rem;
+    color: #D3D0D6;
+}
+.fa-brands {
+    font-size: 1.5625rem;
+}
+
+footer .social {
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .social div > a > i {
+   padding-right: 1.5rem;
+   color: #F0F0F0;
+   padding-top: 1rem;
+}
+.social > span {
+    text-align: left;
+}
+
+@media screen and (min-width: 0) and (max-width: 481px){
+    div.flex-cont {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    div.two , img.col-1 {
+        display: none;
+    }
+     nav .menu + div > a {
+    display: none;
+    } 
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    div.flex-cont {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    div.two , img.col-1 {
+        display: none;
+    }
+    nav > div{
+        padding-right: 6rem;
+    }
+    .top-footer>div {
+        padding: 2rem 6.25rem;
+    }
+    nav>a {
+        padding-left: 6rem;
+    }
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-customers {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 2rem 1.75rem;
+    }
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    footer > .footer-conteiner > div {
+        display: flex;
+        gap: 2rem;
+    }
+    footer .social {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .menu{
+        display: none;
+    }
+   
+}
+
+
+@media screen and (min-width: 769px){
+    h1{
+        font-size: 4.25rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    section.img-partner {
+        flex-wrap: nowrap;
+    }
+    .how-does>div {
+        width: 40rem;
+    }
+    nav > div{
+        padding-right: 6rem;
+    }
+    .top-footer>div {
+        padding: 2rem 6.25rem;
+    }
+    nav>a {
+        padding-left: 6rem;
+    }
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-customers {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 2rem 1.75rem;
+    }
+    .footer-conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    footer > .footer-conteiner > div {
+        display: flex;
+        gap: 2rem;
+    }
+    footer .social {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .menu{
+        display: none;
+    }
+}   
