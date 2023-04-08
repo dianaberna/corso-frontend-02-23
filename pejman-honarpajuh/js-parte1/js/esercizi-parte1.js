@@ -714,3 +714,11 @@ cont.sort()
 return cont
 }
 console.log(ordinAsci1('borgo'))
+
+
+//prova
+console.log('prova-------------------')
+
+let x= ['ciao', 'sono','io']
+x.splice(1,1)
+console.log(x)
