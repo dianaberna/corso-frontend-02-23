@@ -1,0 +1,202 @@
+
+/**============================================
+ *                   Menu
+ *=============================================**/
+.Menu{
+    padding-right: 1rem;
+}
+
+
+
+
+/**============================================
+ *               Hamburgher Menu
+ *=============================================**/
+#hamburgher{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#hamburgher span{
+    width: 70%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 99px;
+    position: absolute;
+}
+
+#hamburgher span:nth-child(1){
+    top:25%;
+    transition: all 0.30s ease-out;
+}
+#hamburgher span:nth-child(2){
+    top:45%;
+}
+#hamburgher span:nth-child(3){
+    top:65%;
+    transition: all 0.30s ease-out;
+}
+
+
+/* Hamburgher Open */
+#hamburgher.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: 50%;
+    transition: all 0.30s ease-out;
+}
+#hamburgher.open span:nth-child(2){
+    opacity: 0;
+}
+#hamburgher.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 50%;
+    transition: all 0.30s ease-out;
+}
+
+
+
+
+
+/**============================================
+ *               Menu Content
+ *=============================================**/
+.hidden {
+    display: none;
+}
+
+
+/* .menu-title{
+    font-family: "Brush Script MT", cursive, sans-serif;
+} */
+
+
+.menu-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--bg-menu-content);
+    z-index: 1000;
+    animation: slideMenuContent 1.5s ease 0s 1 normal forwards;
+    font-size: var(--normal-text) !important;
+}
+
+
+.menu-content ul{
+    list-style: none;
+    padding: 1rem;
+
+}
+
+.menu-content li{
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+}
+
+.menu-content li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/**============================================
+ *               Animations
+ *=============================================**/
+ /* SlideMenuContent */
+ @keyframes slideMenuContent {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+
+
+
+
+/**============================================
+ *               Media Screen
+ *=============================================**/
+/* Tablet */
+@media (min-width: 768px){
+    .menu-content{
+        font-size: 20px;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1024px){
+
+    #hamburgher{
+        display: none;
+    }
+
+    .menu-content{
+        top: 0;
+        position: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: unset;
+        animation: unset;
+        height: unset;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .menu-content ul{
+        display: flex;
+        gap: 1rem;
+    }
+    .menu-content li{
+        margin: unset;
+        
+    }
+
+
+
+    .menu-content li a{
+        position: relative;
+        transition: color 0.3s;
+    }
+    .menu-content li a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        background: var(--primary-color);
+        transition: width 0.3s;
+        bottom: -5px;
+        left: 0;
+    }
+    .menu-content li a:hover::after{
+        width: 100%;
+        border-radius: 0 99px 99px 0;
+        filter: drop-shadow(10px 0px 0px var(--third-color));
+    }
+
+    .menu-title{
+        display: none;
+    }
+
+
+
+}

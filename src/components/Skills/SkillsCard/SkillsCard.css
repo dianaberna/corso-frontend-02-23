@@ -1,0 +1,28 @@
+.Card{
+    border: solid 1px var(--third-color);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 80%;
+    height: auto;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 4px 4px 4px 2px var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+}
+
+.Card i{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: var(--icon-small);
+}
+
+.card-title{
+    font-style: italic;
+}
+
+.card-desc{
+    color: lightgray;
+    font-size: 13px;
+}

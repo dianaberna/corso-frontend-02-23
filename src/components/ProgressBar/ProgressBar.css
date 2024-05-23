@@ -1,0 +1,15 @@
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0df;
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid lightgra */
+  }
+  
+  .progress-bar__fill {
+    height: 100%;
+    background-color: #76c7c0;
+    /* background-color: var(--primary-color); */
+    transition: width 0.2s ease-in-out;
+  }

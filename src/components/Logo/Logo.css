@@ -1,0 +1,16 @@
+.Logo{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+
+/* Media Screen */
+
+/* Desktop */
+@media (min-width: 1024px){
+    .Logo{
+        display: none;
+    }
+}

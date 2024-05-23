@@ -1,0 +1,39 @@
+
+/**============================================
+ *               Footer
+ *=============================================**/
+ .Footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav ul{
+    list-style: none;
+}
+
+.footer-nav ul li a{
+    color: gray;
+    text-decoration: none;
+
+}
+
+.footer-body{
+    border-top: 1px solid var(--bg2-color);
+    padding: 1rem 2rem 2rem 2rem;
+    color: gray;
+    font-size: 13px;
+}
+

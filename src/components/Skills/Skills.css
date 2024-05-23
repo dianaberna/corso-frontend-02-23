@@ -1,0 +1,86 @@
+/**============================================
+ *               Skills
+ *=============================================**/
+ .Skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap:2rem;
+ }
+ 
+ .cards-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+ }
+
+ .skills-title{
+    font-style: italic;
+ }
+
+
+ .skills-container{
+    border: solid 1px var(--third-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.skills-header{
+    border-bottom: solid 1px var(--third-color);
+    padding:1rem;
+
+}
+
+.skills-body{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.tech-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tech-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tech-header span{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+
+.tech-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-body i{
+    font-size: var(--icon-small);
+}
+
+
+/**============================================
+ *               Animation
+ *=============================================**/
+ @keyframes skillsAnim {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

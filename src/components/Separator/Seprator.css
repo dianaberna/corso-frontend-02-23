@@ -1,0 +1,116 @@
+.wavy-separator {
+    width: 100%;
+    filter: drop-shadow(0px -5px 2px var(--third-color));
+    animation: flameAnimation 2s infinite alternate;
+  }
+  
+  .wavy-separator svg {
+    display: block;
+  }
+
+  /* Flame Animation */
+  @keyframes flameAnimation {
+    0% {
+      filter: drop-shadow(0px -5px 2px var(--third-color));
+    }
+    50% {
+      filter: drop-shadow(0px -7px 4px var(--third-color));
+    }
+    100% {
+      filter: drop-shadow(0px -5px 2px var(--third-color));
+    }
+  }
+
+  /* Wave Animation */
+  @keyframes waveAnimation {
+    0% {
+      filter: drop-shadow(-10px -5px 2px var(--third-color));
+    }
+    50% {
+      filter: drop-shadow(10px -5px 2px var(--third-color));
+    }
+    100% {
+      filter: drop-shadow(-10px -5px 2px var(--third-color));
+    }
+  }
+
+/* Sparkle Animation */
+@keyframes sparkleAnimation {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0px -15px 4px var(--third-color));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0px -15px 10px var(--third-color));
+  }
+}
+
+
+/* Bounce Animation */
+@keyframes bounceAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* Flicker Animation */
+@keyframes flickerAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  10%, 90% {
+    opacity: 0.8;
+  }
+  20%, 80% {
+    opacity: 0.6;
+  }
+  30%, 70% {
+    opacity: 0.4;
+  }
+  40%, 60% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Pulse Animation */
+@keyframes pulseAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+/* Slide Animation */
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Rotate Animation */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
