@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+  #output {
+    width: 100%;
+    font-size: 24px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+  
+  #container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+    margin-top: 12px;
+}
+  
+  button {
+    font-size: 24px;
+    padding: 12px;
+}
+  
+  #scontrino {
+    margin-top: 12px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+  #uguale {
+    background-color: blue;
+    color: white;
+}
+  .colore{
+    background-color: white;
+    color: black;
+  }
