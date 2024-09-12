@@ -1,0 +1,48 @@
+
+#form{
+    width: 200px;
+    display: flex;
+    height:200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:0.75rem
+}
+body input{
+    border: 1px solid grey;
+    border-radius:5px
+    
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+:disabled::placeholder{
+    color: grey;
+}
+.text:focus{
+    border:1px solid cornflowerblue;
+ 
+    background-color: rgb(241, 252, 255);
+    outline:0;
+    
+} 
+.text:hover {
+    box-shadow: 1px 1px 3px rgb(186, 210, 253);
+    border-color: cornflowerblue;
+}
+.ierror2{
+        border-color:rgb(255, 0, 38)
+    }
+.iconfirmed2{
+        border-color:rgb(37, 194, 37)
+    }
+.ientered2{
+        border-color: antiquewhite;
+    }
+  #tasto{
+    outline:0;
+
+  }
