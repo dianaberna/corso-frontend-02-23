@@ -1,0 +1,153 @@
+body{
+    font-family:monospace;
+    border : 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #1D1B1F;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    direction: right;
+    
+   
+
+}
+
+nav ul li{
+    margin-left :.625rem
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header button{
+    box-shadow: -1.25rem 1rem 1.5625rem 1.6875rem rgba(0,0,0,0.1);
+}
+header h1{
+    text-align: center;
+}
+.s1 {
+    padding: 9.375rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.s1 > h2{
+    text-align: center;
+    margin-top: 6.25rem;
+}
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.625rem;
+    justify-content: space-around;
+}
+.carte>div{
+    max-width: 15.625rem;
+    margin-bottom: -3.125rem;
+   
+}
+.partner{
+    margin-top: 3.125rem;
+    padding: 3.125rem;
+    padding-top: 0.3125rem;
+    text-align: center;
+    background-color: #F0F0F0;
+    
+}
+.imgCont{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.customers{
+    margin-bottom: 3.125rem;
+}
+.customers > h2 {
+    text-align: center;
+}
+.customers .cards{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.customers .cards > div{
+    border: .0625rem black solid;
+    border-radius: 1.25rem;
+    width: 15.625rem;
+    text-align: center;
+}
+.cards a{
+    text-decoration: none;
+}
+.floatingCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 3.125rem;
+}
+.floatingCards > div{
+    border: black solid;
+    border-radius: 1.25rem;
+    width: 31.25rem;
+
+}
+.floatingCards span{
+    border: black solid;
+    background-color: black;
+    color: #F0F0F0;
+    border-radius: .3125rem;
+}
+.preFotter{
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem;
+    padding-top: 0;
+    padding-left: 0;
+    background-color: #F0F0F0;
+}
+.endFotter{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: #1D1B1F;
+    color: whitesmoke;
+    padding: 3.125rem;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.content > a{
+ text-decoration: none;
+ color: whitesmoke;
+ 
+}
+.rightContent{
+    display: flex;
+    gap: 3.125rem;
+}
+.rightContent .contacts{
+    display: flex;
+    flex-direction: column;
+}
+.rightContent .myPage ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
