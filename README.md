@@ -13,6 +13,10 @@ Elenco partecipanti:
 - Lucia Catte
 - Mattia Schifano
 - Elisa Boscani
+<<<<<<< HEAD
+- Elisa Boscanigit
+=======
+>>>>>>> 33ec652f4d569f027dc4ad5e453f064410747bce
 - Federica Iuvara
 - Miriam Reho
 - Alessia Falanga
@@ -38,4 +42,7 @@ Elenco partecipanti:
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
+<<<<<<< HEAD
+=======
 - Michele Sabatino
+>>>>>>> 235e0176317c8962d3a28b50c6dc565d13aa2c4b
