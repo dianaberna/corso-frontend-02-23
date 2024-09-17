@@ -1,0 +1,541 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Lexend:wght@300;400;500;600&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+
+.onVisible {
+    visibility: visible;
+}
+
+
+
+/* COLOR */
+:root{
+    --lgray: #706D73;
+    --lblack: #1D1B1F;
+    --gray_card: #302E32;
+    --bg_footer: #1D1B1F;
+}
+
+
+/* h1, h2, h3, h4, h5 {
+    color: var(--lblack)
+} */
+
+
+
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    
+}
+
+nav > ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--lblack);
+}
+
+
+
+
+
+
+/* HEADER */
+header > div{
+    padding: 3.75rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header .hero_bg{
+    background-image: url('/gianluigi-leo/html-css/new_landingpage/assets/Vectorhero.png');
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+    z-index: -1;
+}
+
+header > div > h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--lblack);
+}
+
+header > div > p{
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--lgray);
+}
+
+
+
+
+
+/* BUTTON */
+button {
+    font-weight: 600;
+    font-family: inherit;
+    border: 1px solid #1D1B1F;
+    box-shadow: 4px 4px 0px #1D1B1F;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    gap: 0.5rem;
+    background: #f0f0f0;
+
+}
+
+
+
+
+
+
+
+/* MAIN */
+
+
+/* SECTION WHY */
+main .section_why{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+main .section_why > h2{
+    color: var(--lblack);
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-bottom: 3rem;
+}
+
+
+main .container_article {
+    display: flex;
+    flex-direction: column;
+    width: 20.5rem;
+    
+    
+}
+
+main .container_article div{
+    padding: 1.5rem 1rem;
+}
+
+main .container_article > div h3{
+    color: var(--lblack);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+
+}
+main .container_article > div p{
+    color: var(--lgray);
+    text-align: left;
+
+}
+
+
+
+
+
+/* SECTION PARTNER */
+main .section_partner {
+    background-color: #F0F0F0;
+    padding: 2.5rem 1rem;
+}
+main .section_partner > h2 {
+    visibility: hidden;
+}
+
+main .section_partner > .container_partner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2.5rem;
+}
+
+
+
+
+/* SECTION Our */
+main .section_our {
+    padding: 4rem 1rem;
+}
+
+main .section_our > h2 {
+    color: var(--lblack);
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+
+}
+
+main .onArrow{
+    visibility: hidden;
+}
+
+
+main .container_cards{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+main .container_cards > .div_card {
+    background: #F0F0F0;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid var(--lgray);
+    width: 20.5rem;
+}
+
+main .container_cards .description_card{
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+
+main .container_cards p{
+    color: var(--gray_card);
+}
+
+main .container_cards .span_card{
+    display: block;
+    font-weight: 500;
+    font-size: .875rem;
+    color: var(--lblack);
+}
+
+main .container_cards .span_wcard{
+    font-weight: 500;
+    font-size: .875rem;
+    color: var(--lgray);
+}
+
+
+
+
+
+
+
+/* SECTION HOW */
+main .section_how{
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+main .section_how > h2 {
+    color: var(--lblack);
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+main .section_how > h5 {
+    color: var(--gray_card);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+main .container_how{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+main .container_how .div_how{
+    border-radius: 8px;
+    border: 1px solid #1C2B33;
+    width: 19.625rem;
+    text-align: left;
+    padding: 1.5rem 1rem;
+    position:relative;  
+}
+
+main .container_how .span_how{
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: white;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    border: 1px solid black;
+}
+
+main .container_how > .div_how h3{
+    color: var(--lblack);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+main .container_how > .div_how p{
+    color: var(--lgray);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* SECTION PERF */
+main .section_perf {
+    text-align: left;
+    padding: 3rem 3rem;
+    background: #F0F0F0;
+}
+
+main .section_perf > h2{
+    color: var(--lblack);
+    font-weight: 700;
+    font-size: 2.5rem;
+    
+}
+main .section_perf > h4{
+    color: var(--gray_card);
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: var(--bg_footer);
+}
+
+footer .container_footer {
+    padding: 2.5rem 1rem 0 1rem;
+}
+
+footer .container_footer a{
+    text-decoration: none;
+}
+
+footer .container_footer > a{
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+footer .container_footer > a{
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+footer .container_nFooter ul > h5 {
+    color: #FBFAFC;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+footer .container_nFooter ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer .container_nFooter li{
+    padding-bottom: 1.5rem;
+}
+
+footer .container_nFooter a{
+    text-decoration: none;
+    color: #D3D0D6;
+    
+}
+
+footer .container_copyright {
+    padding: 1rem 1rem 2.5rem 1rem;
+}
+
+footer .container_copyright > span{
+    color: #D3D0D6;
+    font-weight: 400;
+    font-size: .875rem;
+}
+
+footer .image_footer{
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.fa-brands {
+    font-size: 1.5625rem;
+    color:white;
+}
+
+footer hr{
+    margin: 0 1rem;
+}
+
+
+
+
+
+
+/* MEDIAQUERY */
+
+/* IPAD/TABLET/DESKTOP  */
+@media screen and (min-width: 481px){
+
+    /* (FORMATTED TEXT FOR ALL SCREEN) */
+    header > div > h1{ font-size: 4.25rem; }
+    header > div > p{ font-size: 1.25rem; }
+
+    main .section_why > h2{ font-size: 3rem; }
+    main .section_our > h2{ font-size: 3rem; }
+
+    main .section_how > h2{ font-size: 3rem; }
+    main .section_how > h5{ font-size: 1.25rem; }
+
+    main .section_perf > h2{ font-size: 3rem; }
+    main .section_perf > h4{ font-size: 32px; }
+
+    /* ARTICLE */
+    main .container_article{
+        flex-direction: row;
+        width: 40rem;
+        gap: 5rem;
+    }
+
+
+
+    /* HOW */
+    main .container_how > .div_how{
+
+        width: 25rem;
+    }
+
+    /* FOOTER */
+    footer .container_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container_nFooter {
+        display: flex;
+        gap: 2rem
+
+    }
+
+    footer .container_nFooter ul{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    footer .container_nFooter ul > h5{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    footer .container_copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .image_footer{
+        padding-top: 0;
+    }
+
+    
+    
+}
+
+
+/* IPAD/TABLET (ONLY TABLET) */
+@media screen and (min-width: 482px) and (max-width: 768px){
+
+
+    /* PARTNER */
+    main .section_partner .container_partner{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* CARD */
+    main .container_cards{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .onVisible{
+        visibility: hidden;
+    }
+        
+}
+
+
+
+/* More Screen */
+@media screen and (min-width: 769px) {
+
+    /* PARTNER */
+    main .section_partner{
+        text-align: center;
+    }
+    main .section_partner .container_partner{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    main .section_partner > h2 {
+        visibility: visible;
+        padding-bottom: 1rem;
+    }
+
+     /* HOW */
+     main .container_how > .div_how{
+        width: 40rem;
+    }
+
+    /* CARD */
+    main .container_cards{
+        flex-direction: row;
+        align-items: flex-start;
+        /* width: 20.5rem */
+    }
+
+    .onVisible{
+        visibility: visible;
+    }
+
+    main .onArrow{
+        visibility: visible;
+    }
+    main .arrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    
+    
+    
+}

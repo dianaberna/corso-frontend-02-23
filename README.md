@@ -38,4 +38,3 @@ Elenco partecipanti:
 - Alfio Battiato
 - Jasmine Pizzino
 - Flavio Lovisa
-- Michele Sabatino
