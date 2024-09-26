@@ -1,0 +1,72 @@
+body {
+    background-color: blue;
+    color: black;
+}
+
+p{
+    background-color: yellow;
+}
+
+
+h1, h2, h3, h4{
+    color: red;
+}
+
+
+footer{
+    background-color: cyan;
+}
+
+main{
+    background-color: darkkhaki;
+}
+
+
+
+
+/* selettori semplici id, class*/
+
+/* #speciale{
+    background-color: green;
+}
+
+
+.rosso{
+    background-color: red;
+} */
+
+
+/* selettori combinatori */
+
+/* discendente*/
+
+main p{
+    background-color: orange;
+}
+
+
+/* figlio */
+
+main > p{
+    background-color: deeppink;
+    border: solid black 5px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+} 
+
+
+/* fratello generico
+   mac -> option + 5
+*/
+
+/* div ~ p{
+    background-color: green;
+} */
+
+
+/* fratello adiacente */
+
+/* div + p{
+    background-color: white;
+} */

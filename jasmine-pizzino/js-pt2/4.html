@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calcolatrice con scontrino</title>
+  </head>
+  <body>
+    <h1>Calcolatrice con scontrino</h1>
+    <table>
+      <tr>
+        <td><input type="text" id="scontrino" readonly></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="aggiungiNumero('1')"></td>
+        <td><input type="button" value="2" onclick="aggiungiNumero('2')"></td>
+        <td><input type="button" value="3" onclick="aggiungiNumero('3')"></td>
+        <td><input type="button" value="+" onclick="aggiungiOperatore('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="aggiungiNumero('4')"></td>
+        <td><input type="button" value="5" onclick="aggiungiNumero('5')"></td>
+        <td><input type="button" value="6" onclick="aggiungiNumero('6')"></td>
+        <td><input type="button" value="-" onclick="aggiungiOperatore('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="aggiungiNumero('7')"></td>
+        <td><input type="button" value="8" onclick="aggiungiNumero('8')"></td>
+        <td><input type="button" value="9" onclick="aggiungiNumero('9')"></td>
+        <td><input type="button" value="*" onclick="aggiungiOperatore('*')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="aggiungiNumero('0')"></td>
+        <td><input type="button" value="." onclick="aggiungiNumero('.')"></td>
+        <td><input type="button" value="=" onclick="calcola()"></td>
+        <td><input type="button" value="/" onclick="aggiungiOperatore('/')"></td>
+      </tr>
+      <tr>
+        <td colspan="4"><input type="button" value="Cancella" onclick="cancella()"></td>
+      </tr>
+    </table>
+    <script>
+        var scontrinoString = ''; // variabile per contenere la stringa dello scontrino
+
+function aggiungiNumero(numero) {
+  scontrinoString += numero; // aggiungi il numero alla stringa dello scontrino
+  document.getElementById('scontrino').value = scontrinoString; // visualizza la stringa dello scontrino nel campo di input
+}
+
+function aggiungiOperatore(operatore) {
+  scontrinoString += ' ' + operatore + ' '; // aggiungi l'operatore alla stringa dello scontrino, con spazi per separarlo dai numeri
+  document.getElementById('scontrino').value = scontrinoString; // visualizza la stringa dello scontrino nel campo di input
+}
+
+function calcola() {
+  var risultato = eval(scontrinoString); // usa la funzione eval per calcolare il risultato della stringa dello scontrino
+  scontrinoString += ' = ' + risultato; // aggiungi il risultato alla stringa dello scontrino
+  document.getElementById('scontrino').value = scontrinoString; // visualizza la stringa dello scontrino nel campo di input
+}
+
+function cancella() {
+  scontrinoString = ''; // resetta la stringa dello scontrino
+  document.getElementById('scontrino').value = ''; // resetta il campo di input
+}
+
+    </script>
+  </body>
+</html>

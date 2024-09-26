@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calcolatrice</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #calculator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      #result {
+        width: 300px;
+        height: 50px;
+        padding: 10px;
+        font-size: 24px;
+        text-align: right;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+      }
+
+      .row {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .btn {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        margin: 0 5px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #ccc;
+      }
+
+      .btn.operator {
+        background-color: #f0ad4e;
+        color: #fff;
+        border-color: #eea236;
+      }
+
+      .btn.operator:hover {
+        background-color: #eea236;
+      }
+
+      #history {
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        font-size: 16px;
+        text-align: right;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        overflow-y: scroll;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="result">0</div>
+      <div class="row">
+        <div class="btn" data-value="7">7</div>
+        <div class="btn" data-value="8">8</div>
+        <div class="btn" data-value="9">9</div>
+        <div class="btn operator" data-value="/">/</div>
+      </div>
+      <div class="row">
+        <div class="btn" data-value="4">4</div>
+        <div class="btn" data-value="5">5</div>
+        <div class="btn" data-value="6">6</div>
+        <div class="btn operator" data-value="*">*</div>
+      </div>
+      <div class="row">
+        <div class="btn" data-value="1">1</div>
+        <div class="btn" data-value="2">2</div>
+        <div class="btn" data-value="3">3</div>
+        <div class="btn operator" data-value="-">-</div>
+      </div>
+      <div class="row">
+        <div class="btn" data-value="0">0</div>
+        <div class="btn" data-value=".">.</div>
+        <div class="btn operator" data-value="+">+</div>
+        <div class="btn" id="equals" data-value="=">=</div>
+      </div>
+      <div id="history"></div>
+    </div>
+
+    <script>
+            const resultEl = document.getElementById("result");
+      const historyEl = document.getElementById("history");
+
+      function appendHistory(value) {
+        const p = document.createElement("p");
+        p.textContent = value;
+        historyEl.appendChild(p);
+      }
+
+      function clearHistory() {
+        historyEl.innerHTML = "";
+      }
+
+      function updateResult(value) {
+        resultEl.value = value;
+      }
+
+      function addToResult(value) {
+        resultEl.value += value;
+      }
+
+      function calculate() {
+        try {
+          const result = eval(resultEl.value);
+          appendHistory(resultEl.value + " = " + result);
+          updateResult(result);
+        } catch (error) {
+          alert("Invalid expression");
+        }
+      }
+
+      function clearResult() {
+        resultEl.value = "";
+      }
+
+      function backspace() {
+        resultEl.value = resultEl.value.slice(0, -1);
+      }
+
+      const buttons = document.querySelectorAll(".btn");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const buttonValue = event.target.value;
+          switch (buttonValue) {
+            case "clear":
+              clearResult();
+              break;
+            case "backspace":
+              backspace();
+              break;
+            case "equal":
+              calculate();
+              break;
+            default:
+              addToResult(buttonValue);
+              break;
+          }
+        });
+      });
+
