@@ -1,0 +1,26 @@
+{
+    "nome" : "scuola",
+    "scuola" : "media",
+    "insegnanti" : [
+        {
+            "nome" : "anna",
+            "cognome" : "rossi",
+            "MaterieInsegnate" : ["storia","italiano"]
+        },
+        {
+            "nome" : "rosa",
+            "cognome" : "blu",
+            "MaterieInsegnate" : ["inglese","geografia"]
+        }
+    ],
+    "alunni" : [
+        {
+            "nome":"andrea",
+            "cognome":"alunno1"
+        },
+        {
+            "nome":"carlo",
+            "cognome":"alunno2"
+        }
+    ]
+}

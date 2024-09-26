@@ -1,0 +1,13 @@
+input{
+    border-color: rgb(219, 217, 217);
+    border-radius: 3px;
+}
+input:hover{
+    border-color: rgb(237, 235, 235);
+    border-radius: 3px;
+}
+input:focus{
+    border-color: rgb(252, 157, 33);
+    border-radius: 3px;
+    color: brown;
+}

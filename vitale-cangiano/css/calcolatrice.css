@@ -1,0 +1,23 @@
+body>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.prima{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prima>button{
+    width: 2.5rem;
+}
+#uguale{
+    background-color: blue;
+    color: aliceblue;
+}
