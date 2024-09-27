@@ -1,0 +1,26 @@
+#principale{
+    margin-top: 30px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nomeCorretto {
+outline-color: green;
+border-color: green;
+}
+.nomeErrato {
+outline-color: red;
+border-color: red;
+}
+.cognomeCorretto {
+    outline-color: green;
+    border-color: green;
+
+}
+.cognomeErrato {
+    outline-color: red;
+    border-color: red;
+
+}

@@ -1,0 +1,15 @@
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 2rem 6.25rem;
+}
+
+header h1 ~ p {
+    color: #706d73;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
