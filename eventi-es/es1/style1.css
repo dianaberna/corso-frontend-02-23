@@ -1,0 +1,13 @@
+body {
+   
+}
+
+#colore {
+    height: 30px;
+    width: 10%;
+    margin: 3rem;
+    padding: 1.5rem;
+    border: black solid 1px;
+    color: black;
+    background-color: lightgrey;
+}
