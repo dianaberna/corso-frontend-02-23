@@ -1,0 +1,109 @@
+Pagina 2 - landing page
+
+>img/link
+>>nav
+    >>lista
+        >>button
+            >>button
+
+>>header
+ >>h1
+  >>p
+   >>input
+
+>>apertura main
+    >>section
+      >>div
+        >>h2
+            >>link
+>>div
+    >>h3
+    >>h3
+    >>h4
+        >>span
+        >>span
+        >>span
+     >>h3
+        >>span
+     >>h3
+     
+>img/link
+>>div
+    >>h5
+    >>h5
+    >>h5
+    >>h5
+>div
+    >span
+    >span
+    >span
+    >span
+>div
+    >span
+    >span
+    >span
+    >span
+>div
+    >span
+    >span
+    >span
+    >span
+
+>span
+    >>h3
+>span
+    >>h3
+>img/link
+    >>span
+        >>h3
+
+>>button
+    >>chiusura sezione
+
+>>apertura sezione
+    >>div
+        >>h6
+            >>link
+
+>>div
+    >>img-link
+        >>link
+            >>img
+            >>img
+            >>img
+            >>img
+            >>img
+                >span
+    >>img-link
+        >>link
+            >>img
+            >>img
+            >>img
+            >>img
+            >>img
+                >span
+                
+    >>img-link
+        >>link
+            >>img
+            >>img
+            >>img
+            >>img
+            >>img
+                >span
+                        
+    >>img-link
+        >>link
+            >>img
+            >>img
+            >>img
+            >>img
+            >>img
+                >span
+
+>chiusura sezione
+
+>chiusura main
+
+>apertura footer
+    >chiusura footer
