@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    align-items: start;
+}
+
+body >div {
+
+    border: 1px solid black;
+    border-radius: 5px;
+  
+  
+    width: 410px;
+   margin: 10px;
+
+}
+
+
+ body > div > button{
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.521);
+    border: 1px solid grey ;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    width: 80px;  
+    height: 60px;
+    padding: 45px; 
+    margin: 5px; 
+   
+    
+}
+
+body >div> input  
+{  
+    width: 99%;
+    font-size: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: right;
+
+}  
+.clear {
+    padding: 15px;
+    width: 390px;
+    border-radius: 15px;
+    background-color: red;
+    
+    
+}
+
+ #scontrino{
+    background-color:rgb(20, 20, 20);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 15px;
+}

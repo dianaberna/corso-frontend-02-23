@@ -1,0 +1,17 @@
+/* @media (hover: hover) {
+   
+    #Hover:hover {
+      color: white;
+      background: black;
+    }
+} */
+.Hover:hover{
+    color: black;
+    background-color: yellow;
+}
+.Hover>input:hover{
+    background-color: blueviolet;
+}
+.Disabled>input[type="text"]:disabled:disabled{
+    background:darkblue;
+}
